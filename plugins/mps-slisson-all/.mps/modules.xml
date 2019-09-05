@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" folder="selection" />
+      <modulePath path="$PROJECT_DIR$/mps-apache-commons/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="apache-commons" />
+      <modulePath path="$PROJECT_DIR$/mps-apache-commons/solutions/org.apache.commons/org.apache.commons.msd" folder="apache-commons" />
+      <modulePath path="$PROJECT_DIR$/mps-hacks/languages/de.itemis.mps.nativelibs/de.itemis.mps.nativelibs.mpl" folder="hacks.nativelibs" />
+      <modulePath path="$PROJECT_DIR$/mps-hacks/languages/de.slisson.mps.dynsmodel/de.slisson.mps.dynsmodel.mpl" folder="hacks" />
+      <modulePath path="$PROJECT_DIR$/mps-hacks/languages/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="hacks.reflection" />
+      <modulePath path="$PROJECT_DIR$/mps-hacks/solutions/de.itemis.mps.nativelibs.loader/de.itemis.mps.nativelibs.loader.msd" folder="hacks.nativelibs" />
+      <modulePath path="$PROJECT_DIR$/mps-hacks/solutions/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="hacks.reflection" />
+      <modulePath path="$PROJECT_DIR$/mps-hacks/solutions/de.slisson.mps.reflection.sandbox/de.slisson.mps.reflection.sandbox.msd" folder="hacks.reflection" />
+      <modulePath path="$PROJECT_DIR$/mps-math/languages/de.itemis.mps.editor.math.demolang/de.itemis.mps.editor.math.demolang.mpl" folder="math" />
+      <modulePath path="$PROJECT_DIR$/mps-math/languages/de.itemis.mps.editor.math.java/de.itemis.mps.editor.math.java.mpl" folder="math" />
+      <modulePath path="$PROJECT_DIR$/mps-math/languages/de.itemis.mps.editor.math.notations/de.itemis.mps.editor.math.notations.mpl" folder="math" />
+      <modulePath path="$PROJECT_DIR$/mps-math/languages/de.itemis.mps.editor.math/de.itemis.mps.editor.math.mpl" folder="math" />
+      <modulePath path="$PROJECT_DIR$/mps-math/solutions/de.itemis.mps.editor.math.runtime/de.itemis.mps.editor.math.runtime.msd" folder="math" />
+      <modulePath path="$PROJECT_DIR$/mps-math/solutions/de.itemis.mps.editor.math.sandbox/de.itemis.mps.editor.math.sandbox.msd" folder="math" />
+      <modulePath path="$PROJECT_DIR$/mps-math/solutions/de.itemis.mps.editor.math.symbols/de.itemis.mps.editor.math.symbols.msd" folder="math" />
+      <modulePath path="$PROJECT_DIR$/mps-multiline/languages/demolang/demolang.mpl" folder="multiline" />
+      <modulePath path="$PROJECT_DIR$/mps-multiline/languages/multiline/multiline.mpl" folder="multiline" />
+      <modulePath path="$PROJECT_DIR$/mps-multiline/solutions/de.slisson.mps.editor.multiline.runtime/runtime.msd" folder="multiline" />
+      <modulePath path="$PROJECT_DIR$/mps-multiline/solutions/de.slisson.mps.editor.multiline.sandbox/de.slisson.mps.editor.multiline.sandbox.msd" folder="multiline" />
+      <modulePath path="$PROJECT_DIR$/mps-richtext/languages/de.slisson.richtext.customcell/de.slisson.richtext.customcell.mpl" folder="richtext" />
+      <modulePath path="$PROJECT_DIR$/mps-richtext/languages/javadoc/javadoc.mpl" folder="richtext" />
+      <modulePath path="$PROJECT_DIR$/mps-richtext/languages/richtext/richtext.mpl" folder="richtext" />
+      <modulePath path="$PROJECT_DIR$/mps-richtext/solutions/de.slisson.mps.richtext.sandbox/de.slisson.mps.richtext.sandbox.msd" folder="richtext" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="selection" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.all.build/de.slisson.mps.all.build.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

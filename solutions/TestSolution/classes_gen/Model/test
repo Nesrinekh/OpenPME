@@ -1,0 +1,2 @@
+// Initialize the library
+    openfpm_init(&argc,&argv);

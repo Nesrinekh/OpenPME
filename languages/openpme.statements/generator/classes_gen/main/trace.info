@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="8,0,13,0" name="main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:524bc462-16e6-497e-9ae3-e08d70ce1180(main@generator)/694935992172379339">
+    <file name="QueriesGenerated.java">
+      <scope id="694935992172379341" at="10,102,10,102" />
+    </file>
+  </root>
+</debug-info>
+

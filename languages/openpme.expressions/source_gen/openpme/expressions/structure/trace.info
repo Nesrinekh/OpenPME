@@ -2,13 +2,13 @@
 <debug-info version="2">
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="10,0,21,0" name="openpme.expressions.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,43,0" name="openpme.expressions.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,26,0" name="openpme.expressions.structure.LanguageConceptSwitch" />
+      <unit at="10,0,40,0" name="openpme.expressions.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,39,0" name="openpme.expressions.structure.StructureAspectDescriptor" />
+      <unit at="14,0,105,0" name="openpme.expressions.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

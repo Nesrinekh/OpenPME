@@ -9,9 +9,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
+  public static final int DivExpr = 0;
+  public static final int Expression = 1;
+  public static final int Literal = 2;
+  public static final int MinusExpr = 3;
+  public static final int MulExpr = 4;
+  public static final int PlusExpr = 5;
+  public static final int RealLiteral = 6;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL);
+    builder.put(0x4b8b96c3273f0ffeL, DivExpr);
+    builder.put(0x5d47753368733a88L, Expression);
+    builder.put(0x5d47753368735b7eL, Literal);
+    builder.put(0x4b8b96c3273f0fffL, MinusExpr);
+    builder.put(0x4b8b96c3273f1000L, MulExpr);
+    builder.put(0x4b8b96c3273f1001L, PlusExpr);
+    builder.put(0x5d47753368735b7fL, RealLiteral);
     myIndex = builder.seal();
   }
 

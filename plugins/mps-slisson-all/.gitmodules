@@ -1,0 +1,24 @@
+[submodule "mps-multiline"]
+	path = mps-multiline
+	url = https://github.com/slisson/mps-multiline.git
+	branch = master
+	ignore = dirty
+
+[submodule "mps-math"]
+	path = mps-math
+	url = https://github.com/slisson/mps-math.git
+	branch = master
+	ignore = dirty
+
+[submodule "mps-apache-commons"]
+	path = mps-apache-commons
+	url=https://github.com/slisson/mps-apache-commons.git
+	ignore = dirty
+
+[submodule "mps-hacks"]
+	path = mps-hacks
+	url = https://github.com/slisson/mps-hacks.git
+	ignore = dirty
+[submodule "mps-richtext"]
+	path = mps-richtext
+	url = https://github.com/slisson/mps-richtext.git
