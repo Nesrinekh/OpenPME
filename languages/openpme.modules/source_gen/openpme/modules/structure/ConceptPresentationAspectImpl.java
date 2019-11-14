@@ -4,15 +4,15 @@ package openpme.modules.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_Initialization = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Simulation = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Visualization = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_Initialization;
+  private ConceptPresentation props_Module;
+  private ConceptPresentation props_Simulation;
+  private ConceptPresentation props_Visualization;
 
   @Override
   @Nullable
@@ -20,12 +20,32 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.Initialization:
+        if (props_Initialization == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Initialization");
+          props_Initialization = cpb.create();
+        }
         return props_Initialization;
       case LanguageConceptSwitch.Module:
+        if (props_Module == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Module");
+          props_Module = cpb.create();
+        }
         return props_Module;
       case LanguageConceptSwitch.Simulation:
+        if (props_Simulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Simulation");
+          props_Simulation = cpb.create();
+        }
         return props_Simulation;
       case LanguageConceptSwitch.Visualization:
+        if (props_Visualization == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Visualization");
+          props_Visualization = cpb.create();
+        }
         return props_Visualization;
     }
     return null;

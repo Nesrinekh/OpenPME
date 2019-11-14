@@ -1,0 +1,14 @@
+double f_xex2(double x) { return x * exp(-x * x); }
+
+double f_xex2(Point<1, double> &x) {
+  return x.get(0) * exp(-x.get(0) * x.get(0));
+}
+
+double derf_xex2(Point<1, double> &x) {
+  return (1 - 2.0 * x.get(0) * x.get(0)) * exp(-x.get(0) * x.get(0));
+}
+
+double Lapf_xex2(Point<1, double> &x) {
+  return 2.0 * x.get(0) * (2.0 * x.get(0) * x.get(0) - 3.0) *
+         exp(-x.get(0) * x.get(0));
+}

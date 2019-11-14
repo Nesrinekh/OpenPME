@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:d5e2442b-039e-493b-b466-e933a1705c19:openpme.analysis" version="0" />
     <language slang="l:2b72d3f1-4643-4aec-8f26-2599b23e0e1b:openpme.base" version="0" />
     <language slang="l:66673400-467e-48d2-ace0-6f708d2ef66d:openpme.core" version="0" />

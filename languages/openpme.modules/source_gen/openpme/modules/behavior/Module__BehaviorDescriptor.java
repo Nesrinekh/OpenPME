@@ -5,8 +5,6 @@ package openpme.modules.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry;
-import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
@@ -22,9 +20,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class Module__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f7eb4L, "openpme.modules.structure.Module");
-  private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Void> preprocess_iddkQEiESdQs = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("preprocess").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("dkQEiESdQs").registry(REGISTRY).build();
+  public static final SMethod<Void> preprocess_iddkQEiESdQs = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("preprocess").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("dkQEiESdQs").build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preprocess_iddkQEiESdQs);
 
@@ -35,7 +32,6 @@ public final class Module__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ Module__BehaviorDescriptor() {
-    super(REGISTRY);
   }
 
   @Override

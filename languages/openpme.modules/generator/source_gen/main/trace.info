@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="7,0,10,0" name="main.QueriesGenerated" />
+      <unit at="71,0,74,0" name="main.QueriesGenerated$CONCEPTS" />
+      <unit at="65,0,70,0" name="main.QueriesGenerated$LINKS" />
+      <unit at="48,0,64,0" name="main.QueriesGenerated$SCB" />
+      <unit at="22,0,75,0" name="main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:f581d02c-dd1a-4837-ba62-04dba82e43f2(main@generator)/7436269412206922722">
+    <file name="QueriesGenerated.java">
+      <node id="7436269412206924021" at="28,112,29,66" concept="0" />
+      <node id="7436269412206925264" at="29,66,30,62" concept="0" />
+      <node id="7436269412206929094" at="30,62,31,65" concept="0" />
+      <node id="7436269412206922722" at="36,14,37,57" concept="0" />
+      <node id="7436269412206922722" at="56,15,57,58" concept="0" />
+      <node id="7436269412206922722" at="57,58,58,17" concept="2" />
+      <node id="7436269412206922733" at="27,85,32,5" concept="1" />
+      <node id="7436269412206922723" at="27,0,34,0" concept="3" trace="mappingScript_CodeBlock_2#(Ljetbrains/mps/generator/template/MappingScriptContext;)V" />
+      <scope id="7436269412206922722" at="56,15,58,17" />
+      <scope id="7436269412206922736" at="28,112,31,65" />
+      <scope id="7436269412206922724" at="27,85,32,5" />
+      <scope id="7436269412206922733" at="27,85,32,5">
+        <var name="phase" id="7436269412206922734" />
+      </scope>
+      <scope id="7436269412206922723" at="27,0,34,0">
+        <var name="_context" id="7436269412206922723" />
+      </scope>
     </file>
   </root>
 </debug-info>

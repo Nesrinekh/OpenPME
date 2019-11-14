@@ -13,20 +13,26 @@
   </languages>
   <imports />
   <registry>
-    <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
-      <concept id="5480087935281175740" name="openpme.statements.structure.test" flags="ng" index="cmV9d" />
-      <concept id="6721469832529928009" name="openpme.statements.structure.Statement" flags="ng" index="Pd2DU" />
-    </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+    <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
+      <concept id="5443610339528609846" name="openpme.modules.structure.Visualization" flags="ng" index="1GH8rP" />
+      <concept id="5443610339528609845" name="openpme.modules.structure.Simulation" flags="ng" index="1GH8rQ" />
+      <concept id="5443610339528609844" name="openpme.modules.structure.Initialization" flags="ng" index="1GH8rR" />
+      <concept id="5443610339528638132" name="openpme.modules.structure.Module" flags="ng" index="1GHexR">
+        <child id="5443610339528638190" name="simulation" index="1GHewH" />
+        <child id="5443610339528638197" name="visualization" index="1GHewQ" />
+        <child id="5443610339528638133" name="initialization" index="1GHexQ" />
       </concept>
-      <concept id="2565736246230036154" name="jetbrains.mps.lang.core.structure.ExportScopeModule" flags="ig" index="24uvOZ" />
     </language>
   </registry>
-  <node concept="Pd2DU" id="4KdbJ50lDML">
-    <node concept="24uvOZ" id="4KdbJ50lDMM" role="lGtFl" />
+  <node concept="1GHexR" id="6sMVU6wHwo8">
+    <node concept="1GH8rR" id="6sMVU6wHwo9" role="1GHexQ" />
+    <node concept="1GH8rQ" id="6sMVU6wHwoa" role="1GHewH" />
+    <node concept="1GH8rP" id="6sMVU6wHwob" role="1GHewQ" />
   </node>
-  <node concept="cmV9d" id="A$U9Dr4mK6" />
+  <node concept="1GHexR" id="6z0p_feLWgY">
+    <node concept="1GH8rR" id="6z0p_feLWgZ" role="1GHexQ" />
+    <node concept="1GH8rQ" id="6z0p_feLWh0" role="1GHewH" />
+    <node concept="1GH8rP" id="6z0p_feLWh1" role="1GHewQ" />
+  </node>
 </model>
 

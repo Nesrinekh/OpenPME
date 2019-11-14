@@ -6,12 +6,19 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Module_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f7eb4L, 0x4b8b96c3273f7eb5L, "initialization"));
+
+
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.simulation$_Jf9));
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink simulation$_Jf9 = MetaAdapterFactory.getContainmentLink(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f7eb4L, 0x4b8b96c3273f7eeeL, "simulation");
   }
 }

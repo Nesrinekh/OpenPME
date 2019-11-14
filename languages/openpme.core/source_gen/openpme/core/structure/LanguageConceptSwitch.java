@@ -9,9 +9,39 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
+  public static final int ArrowExpression = 0;
+  public static final int CellList = 1;
+  public static final int DifferentialOperator = 2;
+  public static final int Interpolate = 3;
+  public static final int JacobianOperator = 4;
+  public static final int LaplacianOperator = 5;
+  public static final int OnGrid = 6;
+  public static final int OnParticle = 7;
+  public static final int PowerExpression = 8;
+  public static final int RandomNumberExpression = 9;
+  public static final int SqrtExpression = 10;
+  public static final int StartLoop = 11;
+  public static final int StopLoop = 12;
+  public static final int VerletList = 13;
+  public static final int dtLoop = 14;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x66673400467e48d2L, 0xace06f708d2ef66dL);
+    builder.put(0x6732efa1a0b5963dL, ArrowExpression);
+    builder.put(0x6732efa1a0b596f2L, CellList);
+    builder.put(0x6732efa1a0b5963eL, DifferentialOperator);
+    builder.put(0x6732efa1a0b5964aL, Interpolate);
+    builder.put(0x6732efa1a0b5963fL, JacobianOperator);
+    builder.put(0x6732efa1a0b59640L, LaplacianOperator);
+    builder.put(0x6732efa1a0b596f0L, OnGrid);
+    builder.put(0x6732efa1a0b596f1L, OnParticle);
+    builder.put(0x6732efa1a0b59641L, PowerExpression);
+    builder.put(0x6732efa1a0b59642L, RandomNumberExpression);
+    builder.put(0x6732efa1a0b59643L, SqrtExpression);
+    builder.put(0x6732efa1a0b596f5L, StartLoop);
+    builder.put(0x6732efa1a0b596f6L, StopLoop);
+    builder.put(0x6732efa1a0b596f3L, VerletList);
+    builder.put(0x6732efa1a0b596f4L, dtLoop);
     myIndex = builder.seal();
   }
 

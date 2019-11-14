@@ -10,7 +10,9 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_ElseIfStatement = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Expression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IfStatement = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_RealLiteral = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Statement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TimeLoopStatement = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_test = new ConceptPresentationBuilder().create();
@@ -22,8 +24,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.ElseIfStatement:
         return props_ElseIfStatement;
+      case LanguageConceptSwitch.Expression:
+        return props_Expression;
       case LanguageConceptSwitch.IfStatement:
         return props_IfStatement;
+      case LanguageConceptSwitch.RealLiteral:
+        return props_RealLiteral;
       case LanguageConceptSwitch.Statement:
         return props_Statement;
       case LanguageConceptSwitch.TimeLoopStatement:

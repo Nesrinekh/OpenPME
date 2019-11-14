@@ -8,97 +8,204 @@ import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptDivExpr = createDescriptorForDivExpr();
-  /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
-  /*package*/ final ConceptDescriptor myConceptLiteral = createDescriptorForLiteral();
-  /*package*/ final ConceptDescriptor myConceptMinusExpr = createDescriptorForMinusExpr();
-  /*package*/ final ConceptDescriptor myConceptMulExpr = createDescriptorForMulExpr();
-  /*package*/ final ConceptDescriptor myConceptPlusExpr = createDescriptorForPlusExpr();
-  /*package*/ final ConceptDescriptor myConceptRealLiteral = createDescriptorForRealLiteral();
-  private final LanguageConceptSwitch myConceptIndex;
+  /*package*/ final ConceptDescriptor myConceptAddition = createDescriptorForAddition();
+  /*package*/ final ConceptDescriptor myConceptAndExpression = createDescriptorForAndExpression();
+  /*package*/ final ConceptDescriptor myConceptDivision = createDescriptorForDivision();
+  /*package*/ final ConceptDescriptor myConceptEqual = createDescriptorForEqual();
+  /*package*/ final ConceptDescriptor myConceptGreater = createDescriptorForGreater();
+  /*package*/ final ConceptDescriptor myConceptGreaterEqual = createDescriptorForGreaterEqual();
+  /*package*/ final ConceptDescriptor myConceptLess = createDescriptorForLess();
+  /*package*/ final ConceptDescriptor myConceptLessEqual = createDescriptorForLessEqual();
+  /*package*/ final ConceptDescriptor myConceptModulo = createDescriptorForModulo();
+  /*package*/ final ConceptDescriptor myConceptMultiplication = createDescriptorForMultiplication();
+  /*package*/ final ConceptDescriptor myConceptNotEqual = createDescriptorForNotEqual();
+  /*package*/ final ConceptDescriptor myConceptNotExpression = createDescriptorForNotExpression();
+  /*package*/ final ConceptDescriptor myConceptOrExpression = createDescriptorForOrExpression();
+  /*package*/ final ConceptDescriptor myConceptSubtraction = createDescriptorForSubtraction();
+  /*package*/ final ConceptDescriptor myConceptUnaryMinus = createDescriptorForUnaryMinus();
+  /*package*/ final ConceptDescriptor myConceptUnaryPlus = createDescriptorForUnaryPlus();
+  private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
-    myConceptIndex = new LanguageConceptSwitch();
+    myIndexSwitch = new LanguageConceptSwitch();
+  }
+
+
+  @Override
+  public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
+    deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDivExpr, myConceptExpression, myConceptLiteral, myConceptMinusExpr, myConceptMulExpr, myConceptPlusExpr, myConceptRealLiteral);
+    return Arrays.asList(myConceptAddition, myConceptAndExpression, myConceptDivision, myConceptEqual, myConceptGreater, myConceptGreaterEqual, myConceptLess, myConceptLessEqual, myConceptModulo, myConceptMultiplication, myConceptNotEqual, myConceptNotExpression, myConceptOrExpression, myConceptSubtraction, myConceptUnaryMinus, myConceptUnaryPlus);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
-    switch (myConceptIndex.index(id)) {
-      case LanguageConceptSwitch.DivExpr:
-        return myConceptDivExpr;
-      case LanguageConceptSwitch.Expression:
-        return myConceptExpression;
-      case LanguageConceptSwitch.Literal:
-        return myConceptLiteral;
-      case LanguageConceptSwitch.MinusExpr:
-        return myConceptMinusExpr;
-      case LanguageConceptSwitch.MulExpr:
-        return myConceptMulExpr;
-      case LanguageConceptSwitch.PlusExpr:
-        return myConceptPlusExpr;
-      case LanguageConceptSwitch.RealLiteral:
-        return myConceptRealLiteral;
+    switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Addition:
+        return myConceptAddition;
+      case LanguageConceptSwitch.AndExpression:
+        return myConceptAndExpression;
+      case LanguageConceptSwitch.Division:
+        return myConceptDivision;
+      case LanguageConceptSwitch.Equal:
+        return myConceptEqual;
+      case LanguageConceptSwitch.Greater:
+        return myConceptGreater;
+      case LanguageConceptSwitch.GreaterEqual:
+        return myConceptGreaterEqual;
+      case LanguageConceptSwitch.Less:
+        return myConceptLess;
+      case LanguageConceptSwitch.LessEqual:
+        return myConceptLessEqual;
+      case LanguageConceptSwitch.Modulo:
+        return myConceptModulo;
+      case LanguageConceptSwitch.Multiplication:
+        return myConceptMultiplication;
+      case LanguageConceptSwitch.NotEqual:
+        return myConceptNotEqual;
+      case LanguageConceptSwitch.NotExpression:
+        return myConceptNotExpression;
+      case LanguageConceptSwitch.OrExpression:
+        return myConceptOrExpression;
+      case LanguageConceptSwitch.Subtraction:
+        return myConceptSubtraction;
+      case LanguageConceptSwitch.UnaryMinus:
+        return myConceptUnaryMinus;
+      case LanguageConceptSwitch.UnaryPlus:
+        return myConceptUnaryPlus;
       default:
         return null;
     }
   }
 
-  /*package*/ int internalIndex(SAbstractConcept c) {
-    return myConceptIndex.index(c);
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList();
   }
 
-  private static ConceptDescriptor createDescriptorForDivExpr() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "DivExpr", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x4b8b96c3273f0ffeL);
+  /*package*/ int internalIndex(SAbstractConcept c) {
+    return myIndexSwitch.index(c);
+  }
+
+  private static ConceptDescriptor createDescriptorForAddition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Addition", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b597ffL);
     b.class_(false, false, false);
-    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/5443610339528609790");
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138815");
+    b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForExpression() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x5d47753368733a88L);
-    b.class_(false, true, false);
-    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/6721469832529918600");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForLiteral() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Literal", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x5d47753368735b7eL);
+  private static ConceptDescriptor createDescriptorForAndExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "AndExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b5983dL);
     b.class_(false, false, false);
-    b.super_("openpme.expressions.structure.Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x5d47753368733a88L);
-    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/6721469832529927038");
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138877");
+    b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForMinusExpr() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "MinusExpr", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x4b8b96c3273f0fffL);
+  private static ConceptDescriptor createDescriptorForDivision() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Division", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59802L);
     b.class_(false, false, false);
-    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/5443610339528609791");
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138818");
+    b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForMulExpr() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "MulExpr", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x4b8b96c3273f1000L);
+  private static ConceptDescriptor createDescriptorForEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Equal", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59804L);
     b.class_(false, false, false);
-    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/5443610339528609792");
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138820");
+    b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForPlusExpr() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "PlusExpr", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x4b8b96c3273f1001L);
+  private static ConceptDescriptor createDescriptorForGreater() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Greater", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59807L);
     b.class_(false, false, false);
-    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/5443610339528609793");
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138823");
+    b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForRealLiteral() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "RealLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x5d47753368735b7fL);
-    b.class_(false, true, false);
-    b.super_("openpme.expressions.structure.Literal", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x5d47753368735b7eL);
-    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/6721469832529927039");
+  private static ConceptDescriptor createDescriptorForGreaterEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "GreaterEqual", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59809L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138825");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLess() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Less", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59806L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138822");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "LessEqual", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59808L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138824");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForModulo() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Modulo", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59803L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138819");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMultiplication() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Multiplication", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59801L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138817");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNotEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "NotEqual", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59805L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138821");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNotExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "NotExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b5983cL);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138876");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForOrExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "OrExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b5983eL);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138878");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSubtraction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Subtraction", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59800L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138816");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUnaryMinus() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "UnaryMinus", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b597f8L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138808");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUnaryPlus() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "UnaryPlus", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b597f7L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138807");
+    b.version(2);
     return b.create();
   }
 }

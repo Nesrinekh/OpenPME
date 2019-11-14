@@ -13,7 +13,9 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptElseIfStatement = createDescriptorForElseIfStatement();
+  /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
+  /*package*/ final ConceptDescriptor myConceptRealLiteral = createDescriptorForRealLiteral();
   /*package*/ final ConceptDescriptor myConceptStatement = createDescriptorForStatement();
   /*package*/ final ConceptDescriptor myConceptTimeLoopStatement = createDescriptorForTimeLoopStatement();
   /*package*/ final ConceptDescriptor myConcepttest = createDescriptorFortest();
@@ -25,7 +27,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptElseIfStatement, myConceptIfStatement, myConceptStatement, myConceptTimeLoopStatement, myConcepttest);
+    return Arrays.asList(myConceptElseIfStatement, myConceptExpression, myConceptIfStatement, myConceptRealLiteral, myConceptStatement, myConceptTimeLoopStatement, myConcepttest);
   }
 
   @Override
@@ -34,8 +36,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myConceptIndex.index(id)) {
       case LanguageConceptSwitch.ElseIfStatement:
         return myConceptElseIfStatement;
+      case LanguageConceptSwitch.Expression:
+        return myConceptExpression;
       case LanguageConceptSwitch.IfStatement:
         return myConceptIfStatement;
+      case LanguageConceptSwitch.RealLiteral:
+        return myConceptRealLiteral;
       case LanguageConceptSwitch.Statement:
         return myConceptStatement;
       case LanguageConceptSwitch.TimeLoopStatement:
@@ -57,15 +63,27 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609788");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "Expression", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+    b.class_(false, false, false);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/7436269412207147491");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIfStatement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "IfStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4b8b96c3273f0ffbL);
     b.class_(false, false, false);
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609787");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForRealLiteral() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "RealLiteral", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e4L);
+    b.class_(false, false, false);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/7436269412207147492");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForStatement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x5d47753368735f49L);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/6721469832529928009");
     return b.create();
   }
@@ -77,7 +95,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorFortest() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "test", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4c0d2ef140569cbcL);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5480087935281175740");
     return b.create();
   }

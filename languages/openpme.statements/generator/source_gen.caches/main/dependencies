@@ -2,7 +2,6 @@
 <dependenciesRoot>
   <dependency className="main.QueriesGenerated" file="QueriesGenerated.java">
     <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
-    <classNode dependClassName="jetbrains.mps.generator.template.MappingScriptContext" />
   </dependency>
 </dependenciesRoot>
 
