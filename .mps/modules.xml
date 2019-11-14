@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/openpme.analysis/openpme.analysis.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/openpme.base/openpme.base.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/openpme.core/openpme.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/openpme.ctrl/openpme.ctrl.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/openpme.expressions/openpme.expressions.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/openpme.modules/openpme.modules.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/openpme.physunits/openpme.physunits.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/openpme.statements/openpme.statements.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
