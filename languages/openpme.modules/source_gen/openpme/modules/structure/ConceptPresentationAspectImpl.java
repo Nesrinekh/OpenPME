@@ -22,14 +22,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Initialization:
         if (props_Initialization == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Initialization");
+          cpb.rawPresentation("initialization");
           props_Initialization = cpb.create();
         }
         return props_Initialization;
       case LanguageConceptSwitch.Module:
         if (props_Module == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Module");
+          cpb.presentationByName();
           props_Module = cpb.create();
         }
         return props_Module;
@@ -43,7 +43,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Visualization:
         if (props_Visualization == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Visualization");
+          cpb.rawPresentation("visualisation");
           props_Visualization = cpb.create();
         }
         return props_Visualization;

@@ -6,14 +6,23 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -72,6 +81,18 @@
     <property role="TrG5h" value="Equal" />
     <property role="3GE5qa" value="comparison" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7Ouveptjg9B" role="1TKVEi">
+      <property role="IQ2ns" value="9015780832891961959" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="leftValue" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    </node>
+    <node concept="1TJgyj" id="7Ouveptjg9D" role="1TKVEi">
+      <property role="IQ2ns" value="9015780832891961961" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rightValue" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHpw5">
     <property role="EcuMT" value="7436269412207138821" />
@@ -119,6 +140,12 @@
     <property role="EcuMT" value="7436269412207138878" />
     <property role="TrG5h" value="OrExpression" />
     <property role="3GE5qa" value="logical" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5MzX6ckupdA">
+    <property role="EcuMT" value="6675447779075658598" />
+    <property role="TrG5h" value="GeneralExpression" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

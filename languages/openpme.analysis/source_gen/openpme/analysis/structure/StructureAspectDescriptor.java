@@ -8,24 +8,16 @@ import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
-import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptHerbieAnnotation = createDescriptorForHerbieAnnotation();
   /*package*/ final ConceptDescriptor myConceptRangeAnnotation = createDescriptorForRangeAnnotation();
-  private final LanguageConceptSwitch myIndexSwitch;
+  private final LanguageConceptSwitch myConceptIndex;
 
   public StructureAspectDescriptor() {
-    myIndexSwitch = new LanguageConceptSwitch();
-  }
-
-
-  @Override
-  public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
-    deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
-    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
+    myConceptIndex = new LanguageConceptSwitch();
   }
 
   @Override
@@ -36,7 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
-    switch (myIndexSwitch.index(id)) {
+    switch (myConceptIndex.index(id)) {
       case LanguageConceptSwitch.HerbieAnnotation:
         return myConceptHerbieAnnotation;
       case LanguageConceptSwitch.RangeAnnotation:
@@ -46,13 +38,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     }
   }
 
-  @Override
-  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList();
-  }
-
   /*package*/ int internalIndex(SAbstractConcept c) {
-    return myIndexSwitch.index(c);
+    return myConceptIndex.index(c);
   }
 
   private static ConceptDescriptor createDescriptorForHerbieAnnotation() {
@@ -60,17 +47,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("jetbrains.mps.lang.core.structure.NodeAttribute", 0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da54L);
     b.origin("r:4c57e75d-fecf-4ba1-9c7d-6fa99b103c50(openpme.analysis.structure)/6721469832529918443");
-    b.version(2);
-    b.aggregate("inputError", 0x5d47753368735b30L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e4L).optional(true).ordered(true).multiple(false).origin("6721469832529926960").done();
-    b.aggregate("outputError", 0x5d47753368735f0bL).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e4L).optional(true).ordered(true).multiple(false).origin("6721469832529927947").done();
-    b.aggregate("replacement", 0x5d47753368735f10L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x5d47753368735f49L).optional(true).ordered(true).multiple(false).origin("6721469832529927952").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRangeAnnotation() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.analysis", "RangeAnnotation", 0xd5e2442b039e493bL, 0xb466e933a1705c19L, 0x6732efa1a0b59639L);
     b.class_(false, false, false);
     b.origin("r:4c57e75d-fecf-4ba1-9c7d-6fa99b103c50(openpme.analysis.structure)/7436269412207138361");
-    b.version(2);
     return b.create();
   }
 }

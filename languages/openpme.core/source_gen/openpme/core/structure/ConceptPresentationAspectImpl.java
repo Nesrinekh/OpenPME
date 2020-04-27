@@ -10,18 +10,60 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ArrowExpression;
+  private ConceptPresentation props_BoundryConditions;
+  private ConceptPresentation props_Box;
   private ConceptPresentation props_CellList;
+  private ConceptPresentation props_Continuous;
+  private ConceptPresentation props_CutoffRadius;
+  private ConceptPresentation props_Delta;
   private ConceptPresentation props_DifferentialOperator;
+  private ConceptPresentation props_Dimension;
+  private ConceptPresentation props_Discrete;
+  private ConceptPresentation props_Discretize;
+  private ConceptPresentation props_Domain;
+  private ConceptPresentation props_Epsilon;
+  private ConceptPresentation props_Force;
+  private ConceptPresentation props_Ghost;
+  private ConceptPresentation props_Grid;
+  private ConceptPresentation props_InitialConditions;
   private ConceptPresentation props_Interpolate;
   private ConceptPresentation props_JacobianOperator;
+  private ConceptPresentation props_KineticEnergy;
+  private ConceptPresentation props_Lambda;
   private ConceptPresentation props_LaplacianOperator;
+  private ConceptPresentation props_ListOfCommLoopC;
+  private ConceptPresentation props_ListOfCommLoopD;
+  private ConceptPresentation props_ListOfContinuousComm;
+  private ConceptPresentation props_ListOfDiscreteComm;
+  private ConceptPresentation props_ListOfPhysicalNotations;
+  private ConceptPresentation props_ListOfPhysicalQuantities;
+  private ConceptPresentation props_NonPeriodic;
+  private ConceptPresentation props_NonUniform;
+  private ConceptPresentation props_Nu;
+  private ConceptPresentation props_Omega;
   private ConceptPresentation props_OnGrid;
   private ConceptPresentation props_OnParticle;
+  private ConceptPresentation props_Particle;
+  private ConceptPresentation props_Periodic;
+  private ConceptPresentation props_Phi;
+  private ConceptPresentation props_PhysicalQuantity;
+  private ConceptPresentation props_PotentialEnergy;
   private ConceptPresentation props_PowerExpression;
+  private ConceptPresentation props_Psi;
   private ConceptPresentation props_RandomNumberExpression;
+  private ConceptPresentation props_Rho;
+  private ConceptPresentation props_Sigma;
   private ConceptPresentation props_SqrtExpression;
   private ConceptPresentation props_StartLoop;
   private ConceptPresentation props_StopLoop;
+  private ConceptPresentation props_Tau;
+  private ConceptPresentation props_TimeLoopC;
+  private ConceptPresentation props_TimeLoopD;
+  private ConceptPresentation props_TypeOfBoundry;
+  private ConceptPresentation props_TypeOfInitialCond;
+  private ConceptPresentation props_TypeOfSimulation;
+  private ConceptPresentation props_Uniform;
+  private ConceptPresentation props_Vectorial;
   private ConceptPresentation props_VerletList;
   private ConceptPresentation props_dtLoop;
 
@@ -37,13 +79,48 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ArrowExpression = cpb.create();
         }
         return props_ArrowExpression;
+      case LanguageConceptSwitch.BoundryConditions:
+        if (props_BoundryConditions == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("BoundryConditions");
+          props_BoundryConditions = cpb.create();
+        }
+        return props_BoundryConditions;
+      case LanguageConceptSwitch.Box:
+        if (props_Box == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Box");
+          props_Box = cpb.create();
+        }
+        return props_Box;
       case LanguageConceptSwitch.CellList:
         if (props_CellList == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("CellList");
+          cpb.rawPresentation("celllist");
           props_CellList = cpb.create();
         }
         return props_CellList;
+      case LanguageConceptSwitch.Continuous:
+        if (props_Continuous == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("continuous");
+          props_Continuous = cpb.create();
+        }
+        return props_Continuous;
+      case LanguageConceptSwitch.CutoffRadius:
+        if (props_CutoffRadius == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("cutoffradius");
+          props_CutoffRadius = cpb.create();
+        }
+        return props_CutoffRadius;
+      case LanguageConceptSwitch.Delta:
+        if (props_Delta == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Delta");
+          props_Delta = cpb.create();
+        }
+        return props_Delta;
       case LanguageConceptSwitch.DifferentialOperator:
         if (props_DifferentialOperator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -51,6 +128,69 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DifferentialOperator = cpb.create();
         }
         return props_DifferentialOperator;
+      case LanguageConceptSwitch.Dimension:
+        if (props_Dimension == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Dimension");
+          props_Dimension = cpb.create();
+        }
+        return props_Dimension;
+      case LanguageConceptSwitch.Discrete:
+        if (props_Discrete == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("discrete");
+          props_Discrete = cpb.create();
+        }
+        return props_Discrete;
+      case LanguageConceptSwitch.Discretize:
+        if (props_Discretize == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Discretize");
+          props_Discretize = cpb.create();
+        }
+        return props_Discretize;
+      case LanguageConceptSwitch.Domain:
+        if (props_Domain == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Domain");
+          props_Domain = cpb.create();
+        }
+        return props_Domain;
+      case LanguageConceptSwitch.Epsilon:
+        if (props_Epsilon == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Epsilon");
+          props_Epsilon = cpb.create();
+        }
+        return props_Epsilon;
+      case LanguageConceptSwitch.Force:
+        if (props_Force == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("force");
+          props_Force = cpb.create();
+        }
+        return props_Force;
+      case LanguageConceptSwitch.Ghost:
+        if (props_Ghost == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Ghost");
+          props_Ghost = cpb.create();
+        }
+        return props_Ghost;
+      case LanguageConceptSwitch.Grid:
+        if (props_Grid == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Grid");
+          props_Grid = cpb.create();
+        }
+        return props_Grid;
+      case LanguageConceptSwitch.InitialConditions:
+        if (props_InitialConditions == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("InitialConditions");
+          props_InitialConditions = cpb.create();
+        }
+        return props_InitialConditions;
       case LanguageConceptSwitch.Interpolate:
         if (props_Interpolate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -65,6 +205,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JacobianOperator = cpb.create();
         }
         return props_JacobianOperator;
+      case LanguageConceptSwitch.KineticEnergy:
+        if (props_KineticEnergy == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("KineticEnergy");
+          props_KineticEnergy = cpb.create();
+        }
+        return props_KineticEnergy;
+      case LanguageConceptSwitch.Lambda:
+        if (props_Lambda == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Lambda");
+          props_Lambda = cpb.create();
+        }
+        return props_Lambda;
       case LanguageConceptSwitch.LaplacianOperator:
         if (props_LaplacianOperator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -72,20 +226,119 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_LaplacianOperator = cpb.create();
         }
         return props_LaplacianOperator;
+      case LanguageConceptSwitch.ListOfCommLoopC:
+        if (props_ListOfCommLoopC == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfCommLoopC = cpb.create();
+        }
+        return props_ListOfCommLoopC;
+      case LanguageConceptSwitch.ListOfCommLoopD:
+        if (props_ListOfCommLoopD == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfCommLoopD = cpb.create();
+        }
+        return props_ListOfCommLoopD;
+      case LanguageConceptSwitch.ListOfContinuousComm:
+        if (props_ListOfContinuousComm == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfContinuousComm = cpb.create();
+        }
+        return props_ListOfContinuousComm;
+      case LanguageConceptSwitch.ListOfDiscreteComm:
+        if (props_ListOfDiscreteComm == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfDiscreteComm = cpb.create();
+        }
+        return props_ListOfDiscreteComm;
+      case LanguageConceptSwitch.ListOfPhysicalNotations:
+        if (props_ListOfPhysicalNotations == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfPhysicalNotations = cpb.create();
+        }
+        return props_ListOfPhysicalNotations;
+      case LanguageConceptSwitch.ListOfPhysicalQuantities:
+        if (props_ListOfPhysicalQuantities == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfPhysicalQuantities = cpb.create();
+        }
+        return props_ListOfPhysicalQuantities;
+      case LanguageConceptSwitch.NonPeriodic:
+        if (props_NonPeriodic == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("non_periodic");
+          props_NonPeriodic = cpb.create();
+        }
+        return props_NonPeriodic;
+      case LanguageConceptSwitch.NonUniform:
+        if (props_NonUniform == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("non_uniform");
+          props_NonUniform = cpb.create();
+        }
+        return props_NonUniform;
+      case LanguageConceptSwitch.Nu:
+        if (props_Nu == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Nu");
+          props_Nu = cpb.create();
+        }
+        return props_Nu;
+      case LanguageConceptSwitch.Omega:
+        if (props_Omega == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Omega");
+          props_Omega = cpb.create();
+        }
+        return props_Omega;
       case LanguageConceptSwitch.OnGrid:
         if (props_OnGrid == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("OnGrid");
+          cpb.rawPresentation("ongrid");
           props_OnGrid = cpb.create();
         }
         return props_OnGrid;
       case LanguageConceptSwitch.OnParticle:
         if (props_OnParticle == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("OnParticle");
+          cpb.rawPresentation("onparticle");
           props_OnParticle = cpb.create();
         }
         return props_OnParticle;
+      case LanguageConceptSwitch.Particle:
+        if (props_Particle == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Particle");
+          props_Particle = cpb.create();
+        }
+        return props_Particle;
+      case LanguageConceptSwitch.Periodic:
+        if (props_Periodic == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("periodic");
+          props_Periodic = cpb.create();
+        }
+        return props_Periodic;
+      case LanguageConceptSwitch.Phi:
+        if (props_Phi == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Phi");
+          props_Phi = cpb.create();
+        }
+        return props_Phi;
+      case LanguageConceptSwitch.PhysicalQuantity:
+        if (props_PhysicalQuantity == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("physical_quantity");
+          props_PhysicalQuantity = cpb.create();
+        }
+        return props_PhysicalQuantity;
+      case LanguageConceptSwitch.PotentialEnergy:
+        if (props_PotentialEnergy == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PotentialEnergy");
+          props_PotentialEnergy = cpb.create();
+        }
+        return props_PotentialEnergy;
       case LanguageConceptSwitch.PowerExpression:
         if (props_PowerExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -93,6 +346,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PowerExpression = cpb.create();
         }
         return props_PowerExpression;
+      case LanguageConceptSwitch.Psi:
+        if (props_Psi == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Psi");
+          props_Psi = cpb.create();
+        }
+        return props_Psi;
       case LanguageConceptSwitch.RandomNumberExpression:
         if (props_RandomNumberExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -100,6 +360,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RandomNumberExpression = cpb.create();
         }
         return props_RandomNumberExpression;
+      case LanguageConceptSwitch.Rho:
+        if (props_Rho == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Rho");
+          props_Rho = cpb.create();
+        }
+        return props_Rho;
+      case LanguageConceptSwitch.Sigma:
+        if (props_Sigma == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Sigma");
+          props_Sigma = cpb.create();
+        }
+        return props_Sigma;
       case LanguageConceptSwitch.SqrtExpression:
         if (props_SqrtExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -121,10 +395,63 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_StopLoop = cpb.create();
         }
         return props_StopLoop;
+      case LanguageConceptSwitch.Tau:
+        if (props_Tau == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Tau");
+          props_Tau = cpb.create();
+        }
+        return props_Tau;
+      case LanguageConceptSwitch.TimeLoopC:
+        if (props_TimeLoopC == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TimeLoop");
+          props_TimeLoopC = cpb.create();
+        }
+        return props_TimeLoopC;
+      case LanguageConceptSwitch.TimeLoopD:
+        if (props_TimeLoopD == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TimeLoop");
+          props_TimeLoopD = cpb.create();
+        }
+        return props_TimeLoopD;
+      case LanguageConceptSwitch.TypeOfBoundry:
+        if (props_TypeOfBoundry == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_TypeOfBoundry = cpb.create();
+        }
+        return props_TypeOfBoundry;
+      case LanguageConceptSwitch.TypeOfInitialCond:
+        if (props_TypeOfInitialCond == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_TypeOfInitialCond = cpb.create();
+        }
+        return props_TypeOfInitialCond;
+      case LanguageConceptSwitch.TypeOfSimulation:
+        if (props_TypeOfSimulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_TypeOfSimulation = cpb.create();
+        }
+        return props_TypeOfSimulation;
+      case LanguageConceptSwitch.Uniform:
+        if (props_Uniform == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("uniform");
+          props_Uniform = cpb.create();
+        }
+        return props_Uniform;
+      case LanguageConceptSwitch.Vectorial:
+        if (props_Vectorial == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Vectorial");
+          props_Vectorial = cpb.create();
+        }
+        return props_Vectorial;
       case LanguageConceptSwitch.VerletList:
         if (props_VerletList == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("VerletList");
+          cpb.rawPresentation("verletlist");
           props_VerletList = cpb.create();
         }
         return props_VerletList;

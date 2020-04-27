@@ -6,10 +6,14 @@ import jetbrains.mps.smodel.language.LanguageRuntime;
 import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
+import openpme.core.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import openpme.core.structure.ConceptPresentationAspectImpl;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   private final SLanguageId myId;
@@ -34,6 +38,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
+    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("d89a1f94-2b10-40d1-a01e-560f94e501d7"), "openpme.statements"));
   }
 
   @Override
@@ -41,11 +46,17 @@ public class Language extends LanguageRuntime {
 
 
     // AP: legacy part, must be migrated from switch: please use lang.descriptor mapping label 
+    if (aspectClass == EditorAspectDescriptor.class) {
+      return aspectClass.cast(new EditorAspectDescriptorImpl());
+    }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new openpme.core.structure.StructureAspectDescriptor());
     }
     if (aspectClass == ConceptPresentationAspect.class) {
       return aspectClass.cast(new ConceptPresentationAspectImpl());
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return aspectClass.cast(new openpme.core.textGen.TextGenAspectDescriptor());
     }
     return null;
   }

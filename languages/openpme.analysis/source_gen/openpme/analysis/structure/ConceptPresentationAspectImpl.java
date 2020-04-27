@@ -4,13 +4,13 @@ package openpme.analysis.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_HerbieAnnotation;
-  private ConceptPresentation props_RangeAnnotation;
+  private final ConceptPresentation props_HerbieAnnotation = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_RangeAnnotation = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -18,18 +18,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.HerbieAnnotation:
-        if (props_HerbieAnnotation == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("HerbieAnnotation");
-          props_HerbieAnnotation = cpb.create();
-        }
         return props_HerbieAnnotation;
       case LanguageConceptSwitch.RangeAnnotation:
-        if (props_RangeAnnotation == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("RangeAnnotation");
-          props_RangeAnnotation = cpb.create();
-        }
         return props_RangeAnnotation;
     }
     return null;

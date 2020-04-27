@@ -55,6 +55,9 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="d5e2442b-039e-493b-b466-e933a1705c19(openpme.analysis)" version="0" />
         <module reference="40d9dc37-0a4b-4b14-8a5a-50ef69ecd791(openpme.analysis#6721469832529906049)" version="0" />
+        <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
+        <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
+        <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
         <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="0" />
         <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
         <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="0" />
@@ -136,6 +139,9 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="d5e2442b-039e-493b-b466-e933a1705c19(openpme.analysis)" version="0" />
+    <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
+    <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
+    <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
     <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="0" />
     <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
     <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="0" />

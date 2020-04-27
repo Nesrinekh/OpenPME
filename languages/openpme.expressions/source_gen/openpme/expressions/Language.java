@@ -7,6 +7,8 @@ import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
+import openpme.expressions.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import openpme.expressions.structure.ConceptPresentationAspectImpl;
@@ -41,6 +43,9 @@ public class Language extends LanguageRuntime {
 
 
     // AP: legacy part, must be migrated from switch: please use lang.descriptor mapping label 
+    if (aspectClass == EditorAspectDescriptor.class) {
+      return aspectClass.cast(new EditorAspectDescriptorImpl());
+    }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new openpme.expressions.structure.StructureAspectDescriptor());
     }

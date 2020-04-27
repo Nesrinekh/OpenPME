@@ -39,6 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
   }
 
   @Override
@@ -122,6 +123,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138820");
     b.version(2);
+    b.aggregate("leftValue", 0x7d1e7ce65d4d0267L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(true).ordered(true).multiple(false).origin("9015780832891961959").done();
+    b.aggregate("rightValue", 0x7d1e7ce65d4d0269L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(true).ordered(true).multiple(false).origin("9015780832891961961").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGreater() {
