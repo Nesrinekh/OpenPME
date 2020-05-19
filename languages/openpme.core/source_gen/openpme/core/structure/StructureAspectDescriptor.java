@@ -28,15 +28,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDomain = createDescriptorForDomain();
   /*package*/ final ConceptDescriptor myConceptEpsilon = createDescriptorForEpsilon();
   /*package*/ final ConceptDescriptor myConceptForce = createDescriptorForForce();
+  /*package*/ final ConceptDescriptor myConceptForeach = createDescriptorForForeach();
   /*package*/ final ConceptDescriptor myConceptGhost = createDescriptorForGhost();
   /*package*/ final ConceptDescriptor myConceptGrid = createDescriptorForGrid();
   /*package*/ final ConceptDescriptor myConceptHybrid = createDescriptorForHybrid();
+  /*package*/ final ConceptDescriptor myConceptInitParticles = createDescriptorForInitParticles();
   /*package*/ final ConceptDescriptor myConceptInitialConditions = createDescriptorForInitialConditions();
   /*package*/ final ConceptDescriptor myConceptInterpolate = createDescriptorForInterpolate();
   /*package*/ final ConceptDescriptor myConceptJacobianOperator = createDescriptorForJacobianOperator();
   /*package*/ final ConceptDescriptor myConceptKineticEnergy = createDescriptorForKineticEnergy();
   /*package*/ final ConceptDescriptor myConceptLambda = createDescriptorForLambda();
   /*package*/ final ConceptDescriptor myConceptLaplacianOperator = createDescriptorForLaplacianOperator();
+  /*package*/ final ConceptDescriptor myConceptListOfCommForeach = createDescriptorForListOfCommForeach();
   /*package*/ final ConceptDescriptor myConceptListOfCommLoopC = createDescriptorForListOfCommLoopC();
   /*package*/ final ConceptDescriptor myConceptListOfCommLoopD = createDescriptorForListOfCommLoopD();
   /*package*/ final ConceptDescriptor myConceptListOfContinuousComm = createDescriptorForListOfContinuousComm();
@@ -57,8 +60,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPhysicalQuantity = createDescriptorForPhysicalQuantity();
   /*package*/ final ConceptDescriptor myConceptPotentialEnergy = createDescriptorForPotentialEnergy();
   /*package*/ final ConceptDescriptor myConceptPowerExpression = createDescriptorForPowerExpression();
+  /*package*/ final ConceptDescriptor myConceptProperty = createDescriptorForProperty();
   /*package*/ final ConceptDescriptor myConceptPsi = createDescriptorForPsi();
   /*package*/ final ConceptDescriptor myConceptRandomNumberExpression = createDescriptorForRandomNumberExpression();
+  /*package*/ final ConceptDescriptor myConceptRemesh = createDescriptorForRemesh();
   /*package*/ final ConceptDescriptor myConceptRho = createDescriptorForRho();
   /*package*/ final ConceptDescriptor myConceptSigma = createDescriptorForSigma();
   /*package*/ final ConceptDescriptor myConceptSqrtExpression = createDescriptorForSqrtExpression();
@@ -72,9 +77,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTypeOfSimulation = createDescriptorForTypeOfSimulation();
   /*package*/ final ConceptDescriptor myConceptUniform = createDescriptorForUniform();
   /*package*/ final ConceptDescriptor myConceptVectorial = createDescriptorForVectorial();
+  /*package*/ final ConceptDescriptor myConceptVelocity = createDescriptorForVelocity();
   /*package*/ final ConceptDescriptor myConceptVerletList = createDescriptorForVerletList();
   /*package*/ final ConceptDescriptor myConceptVisualizeDomDecomp = createDescriptorForVisualizeDomDecomp();
   /*package*/ final ConceptDescriptor myConceptVisualizeParticles = createDescriptorForVisualizeParticles();
+  /*package*/ final ConceptDescriptor myConceptVorticity = createDescriptorForVorticity();
   /*package*/ final ConceptDescriptor myConceptdtLoop = createDescriptorFordtLoop();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -93,7 +100,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptArrowExpression, myConceptBoundryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForce, myConceptGhost, myConceptGrid, myConceptHybrid, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptKineticEnergy, myConceptLambda, myConceptLaplacianOperator, myConceptListOfCommLoopC, myConceptListOfCommLoopD, myConceptListOfContinuousComm, myConceptListOfDiscreteComm, myConceptListOfHybridComm, myConceptListOfPhysicalNotations, myConceptListOfPhysicalQuantities, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumOfParticles, myConceptOmega, myConceptOnGrid, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPotentialEnergy, myConceptPowerExpression, myConceptPsi, myConceptRandomNumberExpression, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptStartLoop, myConceptStopLoop, myConceptTau, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundry, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles, myConceptdtLoop);
+    return Arrays.asList(myConceptArrowExpression, myConceptBoundryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForce, myConceptForeach, myConceptGhost, myConceptGrid, myConceptHybrid, myConceptInitParticles, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptKineticEnergy, myConceptLambda, myConceptLaplacianOperator, myConceptListOfCommForeach, myConceptListOfCommLoopC, myConceptListOfCommLoopD, myConceptListOfContinuousComm, myConceptListOfDiscreteComm, myConceptListOfHybridComm, myConceptListOfPhysicalNotations, myConceptListOfPhysicalQuantities, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumOfParticles, myConceptOmega, myConceptOnGrid, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPotentialEnergy, myConceptPowerExpression, myConceptProperty, myConceptPsi, myConceptRandomNumberExpression, myConceptRemesh, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptStartLoop, myConceptStopLoop, myConceptTau, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundry, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVelocity, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles, myConceptVorticity, myConceptdtLoop);
   }
 
   @Override
@@ -128,12 +135,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEpsilon;
       case LanguageConceptSwitch.Force:
         return myConceptForce;
+      case LanguageConceptSwitch.Foreach:
+        return myConceptForeach;
       case LanguageConceptSwitch.Ghost:
         return myConceptGhost;
       case LanguageConceptSwitch.Grid:
         return myConceptGrid;
       case LanguageConceptSwitch.Hybrid:
         return myConceptHybrid;
+      case LanguageConceptSwitch.InitParticles:
+        return myConceptInitParticles;
       case LanguageConceptSwitch.InitialConditions:
         return myConceptInitialConditions;
       case LanguageConceptSwitch.Interpolate:
@@ -146,6 +157,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptLambda;
       case LanguageConceptSwitch.LaplacianOperator:
         return myConceptLaplacianOperator;
+      case LanguageConceptSwitch.ListOfCommForeach:
+        return myConceptListOfCommForeach;
       case LanguageConceptSwitch.ListOfCommLoopC:
         return myConceptListOfCommLoopC;
       case LanguageConceptSwitch.ListOfCommLoopD:
@@ -186,10 +199,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPotentialEnergy;
       case LanguageConceptSwitch.PowerExpression:
         return myConceptPowerExpression;
+      case LanguageConceptSwitch.Property:
+        return myConceptProperty;
       case LanguageConceptSwitch.Psi:
         return myConceptPsi;
       case LanguageConceptSwitch.RandomNumberExpression:
         return myConceptRandomNumberExpression;
+      case LanguageConceptSwitch.Remesh:
+        return myConceptRemesh;
       case LanguageConceptSwitch.Rho:
         return myConceptRho;
       case LanguageConceptSwitch.Sigma:
@@ -216,12 +233,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptUniform;
       case LanguageConceptSwitch.Vectorial:
         return myConceptVectorial;
+      case LanguageConceptSwitch.Velocity:
+        return myConceptVelocity;
       case LanguageConceptSwitch.VerletList:
         return myConceptVerletList;
       case LanguageConceptSwitch.VisualizeDomDecomp:
         return myConceptVisualizeDomDecomp;
       case LanguageConceptSwitch.VisualizeParticles:
         return myConceptVisualizeParticles;
+      case LanguageConceptSwitch.Vorticity:
+        return myConceptVorticity;
       case LanguageConceptSwitch.dtLoop:
         return myConceptdtLoop;
       default:
@@ -281,6 +302,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610641350");
     b.version(2);
+    b.aggregate("init_particles", 0x1cbe89376bd34a6cL).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34860L).optional(false).ordered(true).multiple(false).origin("2071243749762222700").done();
     b.aggregate("continuous_body", 0x7d1e7ce65d4e45a2L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4e45a1L).optional(false).ordered(true).multiple(true).origin("9015780832892044706").done();
     b.alias("continuous");
     return b.create();
@@ -322,6 +344,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610641351");
     b.version(2);
+    b.aggregate("init_particles", 0x1cbe89376bd34ad1L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34860L).optional(false).ordered(true).multiple(false).origin("2071243749762222801").done();
     b.aggregate("discrete_body", 0x7d1e7ce65d4d0070L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4d0072L).optional(false).ordered(true).multiple(true).origin("9015780832891961456").done();
     b.alias("discrete");
     return b.create();
@@ -360,6 +383,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("force");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForForeach() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Foreach", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34861L);
+    b.class_(false, false, false);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762222177");
+    b.version(2);
+    b.aggregate("iterable", 0x1cbe89376bd34989L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34862L).optional(false).ordered(true).multiple(false).origin("2071243749762222473").done();
+    b.aggregate("body", 0x1cbe89376bd3498bL).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34988L).optional(false).ordered(true).multiple(false).origin("2071243749762222475").done();
+    b.alias("Foreach loop");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForGhost() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Ghost", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653cec8d87dL);
     b.class_(false, false, false);
@@ -382,7 +415,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762183144");
     b.version(2);
+    b.aggregate("init_particles", 0x1cbe89376bd34b4fL).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34860L).optional(false).ordered(true).multiple(false).origin("2071243749762222927").done();
+    b.aggregate("hybrid_body", 0x1cbe89376bd34b51L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd2afe9L).optional(false).ordered(true).multiple(true).origin("2071243749762222929").done();
     b.alias("hybrid");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInitParticles() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "InitParticles", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34860L);
+    b.class_(false, false, false);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762222176");
+    b.version(2);
+    b.aggregate("init_particles", 0x1cbe89376bd6268dL).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34861L).optional(false).ordered(true).multiple(false).origin("2071243749762410125").done();
+    b.alias("InitializationOfParticles");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInitialConditions() {
@@ -427,6 +471,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "LaplacianOperator", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x6732efa1a0b59640L);
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7436269412207138368");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForListOfCommForeach() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "ListOfCommForeach", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34988L);
+    b.class_(false, true, false);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762222472");
     b.version(2);
     return b.create();
   }
@@ -548,11 +599,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForParticle() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Particle", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4e45deL);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Particle", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34862L);
     b.class_(false, false, false);
-    b.super_("openpme.core.structure.ListOfContinuousComm", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4e45a1L);
-    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/9015780832892044766");
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762222178");
     b.version(2);
+    b.aggregate("name", 0x1cbe89376bd4989fL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL).optional(false).ordered(true).multiple(false).origin("2071243749762308255").done();
+    b.aggregate("posx", 0x1cbe89376bd49894L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(false).ordered(true).multiple(false).origin("2071243749762308244").done();
+    b.aggregate("posz", 0x1cbe89376bd49896L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(false).ordered(true).multiple(false).origin("2071243749762308246").done();
+    b.aggregate("property", 0x1cbe89376bd49899L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L).optional(false).ordered(true).multiple(true).origin("2071243749762308249").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPeriodic() {
@@ -597,6 +651,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForProperty() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Property", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L);
+    b.class_(false, true, false);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762308243");
+    b.version(2);
+    b.alias("particle property");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPsi() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Psi", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4d017fL);
     b.class_(false, false, false);
@@ -609,6 +671,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "RandomNumberExpression", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x6732efa1a0b59642L);
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7436269412207138370");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRemesh() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Remesh", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34c09L);
+    b.class_(false, false, false);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762223113");
     b.version(2);
     return b.create();
   }
@@ -721,6 +790,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForVelocity() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Velocity", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd4989dL);
+    b.class_(false, false, false);
+    b.super_("openpme.core.structure.Property", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762308253");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForVerletList() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "VerletList", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x6732efa1a0b596f3L);
     b.class_(false, false, false);
@@ -746,6 +823,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/6675447779075658713");
     b.version(2);
     b.aggregate("ParticlesFile", 0x5ca3f463147993daL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL).optional(false).ordered(true).multiple(false).origin("6675447779075658714").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForVorticity() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Vorticity", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd4989eL);
+    b.class_(false, false, false);
+    b.super_("openpme.core.structure.Property", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762308254");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorFordtLoop() {

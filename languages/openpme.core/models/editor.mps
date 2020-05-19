@@ -39,7 +39,6 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0" />
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -244,12 +243,28 @@
     <property role="3GE5qa" value="simulation.discrete" />
     <ref role="1XX52x" to="r2co:6z0p_feMAv7" resolve="Discrete" />
     <node concept="3EZMnI" id="7Ouveptjg2g" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="PMmxH" id="7Ouveptjg2q" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="VechU" id="7Ouveptjg2s" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
         <node concept="ljvvj" id="7Ouveptjg3h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1MYyjtFOOFt" role="3EZMnx">
+        <node concept="3F1sOY" id="1MYyjtFOOFO" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:1MYyjtFOOFh" resolve="init_particles" />
+        </node>
+        <node concept="VPM3Z" id="1MYyjtFOOFv" role="3F10Kt" />
+        <node concept="l2Vlx" id="1MYyjtFOOFy" role="2iSdaV" />
+        <node concept="ljvvj" id="1MYyjtFOOGH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOOGY" role="3EZMnx">
+        <node concept="ljvvj" id="1MYyjtFOOHd" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -260,7 +275,11 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="5MzX6ckupds" role="3EZMnx" />
+      <node concept="3F0ifn" id="5MzX6ckupds" role="3EZMnx">
+        <node concept="ljvvj" id="1MYyjtFOOID" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="7Ouveptjg2j" role="2iSdaV" />
     </node>
   </node>
@@ -402,6 +421,7 @@
     <property role="3GE5qa" value="simulation.continuous" />
     <ref role="1XX52x" to="r2co:6z0p_feMAv6" resolve="Continuous" />
     <node concept="3EZMnI" id="7Ouveptj$n1" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="PMmxH" id="7Ouveptj$n8" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <node concept="ljvvj" id="7Ouveptj$nh" role="3F10Kt">
@@ -411,6 +431,21 @@
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
       </node>
+      <node concept="3EZMnI" id="1MYyjtFOOEq" role="3EZMnx">
+        <node concept="VPM3Z" id="1MYyjtFOOEs" role="3F10Kt" />
+        <node concept="3F1sOY" id="1MYyjtFOOEJ" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:1MYyjtFOODG" resolve="init_particles" />
+        </node>
+        <node concept="l2Vlx" id="1MYyjtFOOEv" role="2iSdaV" />
+        <node concept="ljvvj" id="1MYyjtFOOEG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOOF0" role="3EZMnx">
+        <node concept="ljvvj" id="1MYyjtFOOFf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F2HdR" id="5MzX6ckui1d" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:7Ouveptj$my" resolve="continuous_body" />
         <node concept="l2Vlx" id="5MzX6ckui1g" role="2czzBx" />
@@ -418,7 +453,11 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="5MzX6ckupdb" role="3EZMnx" />
+      <node concept="3F0ifn" id="5MzX6ckupdb" role="3EZMnx">
+        <node concept="ljvvj" id="1MYyjtFOOIB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="7Ouveptj$n4" role="2iSdaV" />
     </node>
   </node>
@@ -775,7 +814,12 @@
   <node concept="24kQdi" id="1MYyjtFOOxY">
     <property role="3GE5qa" value="simulation.particles" />
     <ref role="1XX52x" to="r2co:1MYyjtFOOxy" resolve="Particle" />
-    <node concept="3EYTF0" id="1MYyjtFOOxZ" role="2wV5jI" />
+    <node concept="3EZMnI" id="1MYyjtFP9y$" role="2wV5jI">
+      <node concept="3F1sOY" id="1MYyjtFP9yF" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1MYyjtFP9yv" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="1MYyjtFP9yB" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="1MYyjtFOOAD">
     <property role="3GE5qa" value="simulation.foreachLoop" />
@@ -830,6 +874,59 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1MYyjtFOOAI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1MYyjtFOOHJ">
+    <property role="3GE5qa" value="simulation.hybrid" />
+    <ref role="1XX52x" to="r2co:1MYyjtFOEZC" resolve="Hybrid" />
+    <node concept="3EZMnI" id="1MYyjtFOOIF" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="PMmxH" id="1MYyjtFOOIM" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="ljvvj" id="1MYyjtFOOK0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1MYyjtFOOIR" role="3EZMnx">
+        <node concept="VPM3Z" id="1MYyjtFOOIT" role="3F10Kt" />
+        <node concept="3F1sOY" id="1MYyjtFOOJa" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:1MYyjtFOOHf" resolve="init_particles" />
+        </node>
+        <node concept="l2Vlx" id="1MYyjtFOOIW" role="2iSdaV" />
+        <node concept="ljvvj" id="1MYyjtFOOK2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOOJx" role="3EZMnx">
+        <node concept="ljvvj" id="1MYyjtFOOK5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1MYyjtFOOJd" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1MYyjtFOOHh" resolve="hybrid_body" />
+        <node concept="l2Vlx" id="1MYyjtFOOJg" role="2czzBx" />
+        <node concept="ljvvj" id="1MYyjtFOOK7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOOJP" role="3EZMnx" />
+      <node concept="l2Vlx" id="1MYyjtFOOII" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1MYyjtFPKWh">
+    <property role="3GE5qa" value="simulation.initParticles" />
+    <ref role="1XX52x" to="r2co:1MYyjtFOOxw" resolve="InitParticles" />
+    <node concept="3EZMnI" id="1MYyjtFPKWj" role="2wV5jI">
+      <node concept="3F1sOY" id="1MYyjtFPKWq" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1MYyjtFPyqd" resolve="init_particles" />
+        <node concept="ljvvj" id="1MYyjtFPKY9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1MYyjtFPKYb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1MYyjtFPKWm" role="2iSdaV" />
     </node>
   </node>
 </model>

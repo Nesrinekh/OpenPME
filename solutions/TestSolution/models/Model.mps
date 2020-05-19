@@ -38,14 +38,31 @@
       <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni" />
       <concept id="7548145485610641351" name="openpme.core.structure.Discrete" flags="ng" index="2A2w6k">
         <child id="9015780832891961456" name="discrete_body" index="wkRMm" />
+        <child id="2071243749762222801" name="init_particles" index="1RrsfA" />
       </concept>
       <concept id="7548145485610641350" name="openpme.core.structure.Continuous" flags="ng" index="2A2w6l">
         <child id="9015780832892044706" name="continuous_body" index="wk3_4" />
       </concept>
       <concept id="7436269412207138546" name="openpme.core.structure.CellList" flags="ng" index="37xR_j" />
+      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$" />
+      <concept id="2071243749762222472" name="openpme.core.structure.ListOfCommForeach" flags="ng" index="1Rrs2Z" />
+      <concept id="2071243749762222178" name="openpme.core.structure.Particle" flags="ng" index="1Rrs5l">
+        <child id="2071243749762308246" name="posz" index="1Rqx6x" />
+        <child id="2071243749762308244" name="posx" index="1Rqx6z" />
+        <child id="2071243749762308255" name="name" index="1Rqx6C" />
+        <child id="2071243749762308249" name="property" index="1Rqx6I" />
+      </concept>
+      <concept id="2071243749762222177" name="openpme.core.structure.Foreach" flags="ng" index="1Rrs5m">
+        <child id="2071243749762222475" name="body" index="1Rrs2W" />
+        <child id="2071243749762222473" name="iterable" index="1Rrs2Y" />
+      </concept>
+      <concept id="2071243749762222176" name="openpme.core.structure.InitParticles" flags="ng" index="1Rrs5n">
+        <child id="2071243749762410125" name="init_particles" index="1RqaYU" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
+      <concept id="1068431790191" name="jetbrains.mps.baseLanguage.structure.Expression" flags="nn" index="33vP2n" />
     </language>
     <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
       <concept id="5443610339528609846" name="openpme.modules.structure.Visualization" flags="ng" index="1GH8rP" />
@@ -102,6 +119,17 @@
           <node concept="37xR_j" id="5MzX6ckui13" role="wkoSe" />
         </node>
         <node concept="wkRMk" id="5MzX6ckui02" role="wkRMm" />
+        <node concept="1Rrs5n" id="1MYyjtFPUED" role="1RrsfA">
+          <node concept="1Rrs5m" id="1MYyjtFPUEE" role="1RqaYU">
+            <node concept="1Rrs5l" id="1MYyjtFPUEF" role="1Rrs2Y">
+              <node concept="33vP2n" id="1MYyjtFPUEG" role="1Rqx6C" />
+              <node concept="10OMs4" id="1MYyjtFPUEH" role="1Rqx6z" />
+              <node concept="10OMs4" id="1MYyjtFPUEI" role="1Rqx6x" />
+              <node concept="1Rqx6$" id="1MYyjtFPUEJ" role="1Rqx6I" />
+            </node>
+            <node concept="1Rrs2Z" id="1MYyjtFPUEK" role="1Rrs2W" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

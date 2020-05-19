@@ -13,18 +13,19 @@ public final class LanguageConceptSwitch {
   public static final int AndExpression = 1;
   public static final int Division = 2;
   public static final int Equal = 3;
-  public static final int Greater = 4;
-  public static final int GreaterEqual = 5;
-  public static final int Less = 6;
-  public static final int LessEqual = 7;
-  public static final int Modulo = 8;
-  public static final int Multiplication = 9;
-  public static final int NotEqual = 10;
-  public static final int NotExpression = 11;
-  public static final int OrExpression = 12;
-  public static final int Subtraction = 13;
-  public static final int UnaryMinus = 14;
-  public static final int UnaryPlus = 15;
+  public static final int GeneralExpression = 4;
+  public static final int Greater = 5;
+  public static final int GreaterEqual = 6;
+  public static final int Less = 7;
+  public static final int LessEqual = 8;
+  public static final int Modulo = 9;
+  public static final int Multiplication = 10;
+  public static final int NotEqual = 11;
+  public static final int NotExpression = 12;
+  public static final int OrExpression = 13;
+  public static final int Subtraction = 14;
+  public static final int UnaryMinus = 15;
+  public static final int UnaryPlus = 16;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL);
@@ -32,6 +33,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x6732efa1a0b5983dL, AndExpression);
     builder.put(0x6732efa1a0b59802L, Division);
     builder.put(0x6732efa1a0b59804L, Equal);
+    builder.put(0x5ca3f46314799366L, GeneralExpression);
     builder.put(0x6732efa1a0b59807L, Greater);
     builder.put(0x6732efa1a0b59809L, GreaterEqual);
     builder.put(0x6732efa1a0b59806L, Less);

@@ -23,15 +23,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Domain;
   private ConceptPresentation props_Epsilon;
   private ConceptPresentation props_Force;
+  private ConceptPresentation props_Foreach;
   private ConceptPresentation props_Ghost;
   private ConceptPresentation props_Grid;
   private ConceptPresentation props_Hybrid;
+  private ConceptPresentation props_InitParticles;
   private ConceptPresentation props_InitialConditions;
   private ConceptPresentation props_Interpolate;
   private ConceptPresentation props_JacobianOperator;
   private ConceptPresentation props_KineticEnergy;
   private ConceptPresentation props_Lambda;
   private ConceptPresentation props_LaplacianOperator;
+  private ConceptPresentation props_ListOfCommForeach;
   private ConceptPresentation props_ListOfCommLoopC;
   private ConceptPresentation props_ListOfCommLoopD;
   private ConceptPresentation props_ListOfContinuousComm;
@@ -52,8 +55,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PhysicalQuantity;
   private ConceptPresentation props_PotentialEnergy;
   private ConceptPresentation props_PowerExpression;
+  private ConceptPresentation props_Property;
   private ConceptPresentation props_Psi;
   private ConceptPresentation props_RandomNumberExpression;
+  private ConceptPresentation props_Remesh;
   private ConceptPresentation props_Rho;
   private ConceptPresentation props_Sigma;
   private ConceptPresentation props_SqrtExpression;
@@ -67,9 +72,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_TypeOfSimulation;
   private ConceptPresentation props_Uniform;
   private ConceptPresentation props_Vectorial;
+  private ConceptPresentation props_Velocity;
   private ConceptPresentation props_VerletList;
   private ConceptPresentation props_VisualizeDomDecomp;
   private ConceptPresentation props_VisualizeParticles;
+  private ConceptPresentation props_Vorticity;
   private ConceptPresentation props_dtLoop;
 
   @Override
@@ -175,6 +182,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Force = cpb.create();
         }
         return props_Force;
+      case LanguageConceptSwitch.Foreach:
+        if (props_Foreach == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Foreach loop");
+          props_Foreach = cpb.create();
+        }
+        return props_Foreach;
       case LanguageConceptSwitch.Ghost:
         if (props_Ghost == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -196,6 +210,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Hybrid = cpb.create();
         }
         return props_Hybrid;
+      case LanguageConceptSwitch.InitParticles:
+        if (props_InitParticles == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("InitializationOfParticles");
+          props_InitParticles = cpb.create();
+        }
+        return props_InitParticles;
       case LanguageConceptSwitch.InitialConditions:
         if (props_InitialConditions == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -238,6 +259,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_LaplacianOperator = cpb.create();
         }
         return props_LaplacianOperator;
+      case LanguageConceptSwitch.ListOfCommForeach:
+        if (props_ListOfCommForeach == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfCommForeach = cpb.create();
+        }
+        return props_ListOfCommForeach;
       case LanguageConceptSwitch.ListOfCommLoopC:
         if (props_ListOfCommLoopC == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -371,6 +398,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PowerExpression = cpb.create();
         }
         return props_PowerExpression;
+      case LanguageConceptSwitch.Property:
+        if (props_Property == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Property = cpb.create();
+        }
+        return props_Property;
       case LanguageConceptSwitch.Psi:
         if (props_Psi == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -385,6 +418,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RandomNumberExpression = cpb.create();
         }
         return props_RandomNumberExpression;
+      case LanguageConceptSwitch.Remesh:
+        if (props_Remesh == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Remesh");
+          props_Remesh = cpb.create();
+        }
+        return props_Remesh;
       case LanguageConceptSwitch.Rho:
         if (props_Rho == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -473,6 +513,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Vectorial = cpb.create();
         }
         return props_Vectorial;
+      case LanguageConceptSwitch.Velocity:
+        if (props_Velocity == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Velocity");
+          props_Velocity = cpb.create();
+        }
+        return props_Velocity;
       case LanguageConceptSwitch.VerletList:
         if (props_VerletList == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -494,6 +541,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_VisualizeParticles = cpb.create();
         }
         return props_VisualizeParticles;
+      case LanguageConceptSwitch.Vorticity:
+        if (props_Vorticity == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Vorticity");
+          props_Vorticity = cpb.create();
+        }
+        return props_Vorticity;
       case LanguageConceptSwitch.dtLoop:
         if (props_dtLoop == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
