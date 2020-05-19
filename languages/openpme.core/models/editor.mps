@@ -48,7 +48,6 @@
         <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -342,7 +341,7 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="7Ouveptjjov" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:7Ouveptjjo8" resolve="force_value" />
+        <ref role="1NtTu8" to="r2co:7Ouveptjjo8" resolve="value" />
       </node>
       <node concept="l2Vlx" id="7Ouveptjjod" role="2iSdaV" />
     </node>
@@ -713,19 +712,14 @@
     <property role="3GE5qa" value="simulation.discrete" />
     <ref role="1XX52x" to="r2co:7Ouveptjg9_" resolve="KineticEnergy" />
     <node concept="3EZMnI" id="5MzX6cksAe9" role="2wV5jI">
-      <node concept="3F0A7n" id="5MzX6ckthzE" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5MzX6ckthzw" resolve="physical_quantity_value" />
-        <node concept="ljvvj" id="5MzX6ckthzK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="3F0ifn" id="1MYyjtFPUG7" role="3EZMnx">
+        <property role="3F0ifm" value="KE" />
       </node>
-      <node concept="3F0ifn" id="5MzX6cksAeg" role="3EZMnx">
-        <node concept="pVoyu" id="5MzX6cksAej" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="5MzX6cksAeo" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+      <node concept="3F0ifn" id="1MYyjtFPUGd" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="1MYyjtFPUGq" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1MYyjtFPUG0" resolve="value" />
       </node>
       <node concept="l2Vlx" id="5MzX6cksAec" role="2iSdaV" />
     </node>
@@ -927,6 +921,22 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1MYyjtFPKWm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1MYyjtFPUFn">
+    <property role="3GE5qa" value="simulation.discrete" />
+    <ref role="1XX52x" to="r2co:7Ouveptjg9$" resolve="PotentialEnergy" />
+    <node concept="3EZMnI" id="1MYyjtFPUFp" role="2wV5jI">
+      <node concept="3F0ifn" id="1MYyjtFPUFw" role="3EZMnx">
+        <property role="3F0ifm" value="E" />
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFPUFA" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="1MYyjtFPUFV" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1MYyjtFPUFI" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="1MYyjtFPUFs" role="2iSdaV" />
     </node>
   </node>
 </model>

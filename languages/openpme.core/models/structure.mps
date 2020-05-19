@@ -335,7 +335,8 @@
     <node concept="1TJgyj" id="7Ouveptjjo8" role="1TKVEi">
       <property role="IQ2ns" value="9015780832891975176" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="force_value" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
     </node>
   </node>
@@ -406,12 +407,26 @@
     <property role="3GE5qa" value="simulation.discrete" />
     <property role="TrG5h" value="PotentialEnergy" />
     <ref role="1TJDcQ" node="7Ouveptjg3s" resolve="ListOfPhysicalQuantities" />
+    <node concept="1TJgyj" id="1MYyjtFPUFI" role="1TKVEi">
+      <property role="IQ2ns" value="2071243749762509550" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptjg9_">
     <property role="EcuMT" value="9015780832891961957" />
     <property role="3GE5qa" value="simulation.discrete" />
     <property role="TrG5h" value="KineticEnergy" />
     <ref role="1TJDcQ" node="7Ouveptjg3s" resolve="ListOfPhysicalQuantities" />
+    <node concept="1TJgyj" id="1MYyjtFPUG0" role="1TKVEi">
+      <property role="IQ2ns" value="2071243749762509568" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHppa">
     <property role="EcuMT" value="7436269412207138378" />

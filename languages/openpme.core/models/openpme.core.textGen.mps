@@ -936,7 +936,7 @@
             <node concept="2OqwBi" id="7OuveptjOrf" role="lb14g">
               <node concept="117lpO" id="7OuveptjOrd" role="2Oq$k0" />
               <node concept="3TrEf2" id="7OuveptjOra" role="2OqNvi">
-                <ref role="3Tt5mk" to="r2co:7Ouveptjjo8" resolve="force_value" />
+                <ref role="3Tt5mk" to="r2co:7Ouveptjjo8" resolve="value" />
               </node>
             </node>
           </node>

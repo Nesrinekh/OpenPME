@@ -22,7 +22,6 @@
       <concept id="9015780832891961558" name="openpme.core.structure.PhysicalQuantity" flags="ng" index="wkRKK">
         <child id="9015780832891961562" name="physical_quantity_name" index="wkRKW" />
       </concept>
-      <concept id="9015780832891961564" name="openpme.core.structure.ListOfPhysicalQuantities" flags="ng" index="wkRKU" />
       <concept id="9015780832891961458" name="openpme.core.structure.ListOfDiscreteComm" flags="ng" index="wkRMk" />
       <concept id="9015780832891961957" name="openpme.core.structure.KineticEnergy" flags="ng" index="wkRU3" />
       <concept id="7548145485610539131" name="openpme.core.structure.BoundryConditions" flags="ng" index="2A2bSC" />
@@ -107,7 +106,7 @@
     <node concept="1GH8rQ" id="5MzX6ckuhZW" role="1GHewH">
       <node concept="2A2w6k" id="5MzX6ckui00" role="2A2w7f">
         <node concept="wkRKK" id="5MzX6ckui09" role="wkRMm">
-          <node concept="wkRKU" id="5MzX6ckui0d" role="wkRKW" />
+          <node concept="wkRU3" id="1MYyjtFPUET" role="wkRKW" />
         </node>
         <node concept="wkoS1" id="5MzX6ckui0k" role="wkRMm">
           <node concept="37xR_j" id="5MzX6ckui0s" role="wkoSe" />
