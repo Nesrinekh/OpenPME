@@ -379,7 +379,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.ListOfPhysicalQuantities", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4d00dcL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/9015780832891961565");
     b.version(2);
-    b.aggregate("force_value", 0x7d1e7ce65d4d3608L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(true).ordered(true).multiple(false).origin("9015780832891975176").done();
+    b.aggregate("value", 0x7d1e7ce65d4d3608L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(false).origin("9015780832891975176").done();
     b.alias("force");
     return b.create();
   }
@@ -458,6 +458,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.ListOfPhysicalQuantities", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4d00dcL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/9015780832891961957");
     b.version(2);
+    b.aggregate("value", 0x1cbe89376bd7ab00L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(false).origin("2071243749762509568").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLambda() {
@@ -642,6 +643,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.ListOfPhysicalQuantities", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4d00dcL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/9015780832891961956");
     b.version(2);
+    b.aggregate("value", 0x1cbe89376bd7aaeeL).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(false).origin("2071243749762509550").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPowerExpression() {

@@ -10,6 +10,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -50,7 +51,7 @@
     <node concept="M6xJ_" id="5P7tjdCsNDg" role="lGtFl">
       <property role="Hh88m" value="herbie" />
       <node concept="trNpa" id="6sMVU6wHseA" role="EQaZv">
-        <ref role="trN6q" to="5oki:6sMVU6wHrBz" resolve="Expression" />
+        <ref role="trN6q" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
       </node>
     </node>
     <node concept="1TJgyj" id="5P7tjdCsPGK" role="1TKVEi">
@@ -69,7 +70,7 @@
       <property role="IQ2ns" value="6721469832529927952" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="replacement" />
-      <ref role="20lvS9" to="5oki:5P7tjdCsPX9" resolve="Statement" />
+      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHpoT">

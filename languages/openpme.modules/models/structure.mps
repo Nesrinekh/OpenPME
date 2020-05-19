@@ -93,7 +93,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="num_particles" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="r2co:1MYyjtFOAuc" resolve="num_particles" />
+      <ref role="20lvS9" to="r2co:1MYyjtFOAuc" resolve="NumOfParticles" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfL0P">

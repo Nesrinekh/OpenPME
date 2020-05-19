@@ -24,7 +24,12 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
+import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 /*package*/ class TimeLoopD_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -54,7 +59,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createCollection_1());
     editorCell.addEditorCell(createConstant_6());
-    editorCell.addEditorCell(createCollection_3());
+    editorCell.addEditorCell(createRefNodeList_0());
     editorCell.addEditorCell(createConstant_7());
     editorCell.addEditorCell(createConstant_8());
     return editorCell;
@@ -312,70 +317,66 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_3() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_gz3tos_d0");
+  private EditorCell createRefNodeList_0() {
+    AbstractCellListHandler handler = new loopD_bodyListHandler_gz3tos_d0(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_loopD_body");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, false);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createRefNode_3());
+    editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private EditorCell createRefNode_3() {
-    SingleRoleCellProvider provider = new loopD_bodySingleRoleHandler_gz3tos_a3a(myNode, LINKS.loopD_body$a0ew, getEditorContext());
-    return provider.createCell();
-  }
-  private static class loopD_bodySingleRoleHandler_gz3tos_a3a extends SingleRoleCellProvider {
+  private static class loopD_bodyListHandler_gz3tos_d0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public loopD_bodySingleRoleHandler_gz3tos_a3a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(containmentLink, context);
+    public loopD_bodyListHandler_gz3tos_d0(SNode ownerNode, EditorContext context) {
+      super(context, false);
       myNode = ownerNode;
     }
 
-    @Override
     @NotNull
     public SNode getNode() {
       return myNode;
     }
-
-    protected EditorCell createChildCell(SNode child) {
-      EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.loopD_body$a0ew, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.loopD_body$a0ew, child));
-      installCellInfo(child, editorCell, false);
-      return editorCell;
+    public SContainmentLink getSLink() {
+      return LINKS.loopD_body$a0ew;
+    }
+    public SAbstractConcept getChildSConcept() {
+      return CONCEPTS.ListOfCommLoopD$4L;
     }
 
-
-
-    private void installCellInfo(SNode child, EditorCell editorCell, boolean isEmpty) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
-      }
-      if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.loopD_body$a0ew);
-      }
+    public EditorCell createNodeCell(SNode elementNode) {
+      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
+      installElementCellActions(elementNode, elementCell, false);
+      return elementCell;
     }
-    @Override
-    protected EditorCell createEmptyCell() {
+    public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.loopD_body$a0ew));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(loopD_bodyListHandler_gz3tos_d0.this.getNode(), LINKS.loopD_body$a0ew));
       try {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_loopD_body");
-        installCellInfo(null, editorCell, true);
-        setCellContext(editorCell);
-        return editorCell;
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell();
+        installElementCellActions(null, emptyCell, true);
+        setCellContext(emptyCell);
+        return emptyCell;
       } finally {
         getCellFactory().popCellContext();
       }
     }
-    protected String getNoTargetText() {
-      return "<no loopD_body>";
+    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
+        }
+      }
     }
   }
   private EditorCell createConstant_7() {
@@ -405,5 +406,9 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     /*package*/ static final SContainmentLink dt$a0iR = MetaAdapterFactory.getContainmentLink(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4ff2e7L, 0x7d1e7ce65d4ff2f1L, "dt");
     /*package*/ static final SContainmentLink stop$a0gV = MetaAdapterFactory.getContainmentLink(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4ff2e7L, 0x7d1e7ce65d4ff2edL, "stop");
     /*package*/ static final SContainmentLink loopD_body$a0ew = MetaAdapterFactory.getContainmentLink(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4ff2e7L, 0x7d1e7ce65d4ff2e8L, "loopD_body");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept ListOfCommLoopD$4L = MetaAdapterFactory.getConcept(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4e45e4L, "openpme.core.structure.ListOfCommLoopD");
   }
 }
