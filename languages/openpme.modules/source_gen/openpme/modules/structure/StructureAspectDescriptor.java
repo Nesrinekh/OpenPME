@@ -72,6 +72,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("initial_conditions", 0x68c06653cec8fe28L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653cec8d87cL).optional(false).ordered(true).multiple(false).origin("7548145485610548776").done();
     b.aggregate("cutoff_radius", 0x68c06653cec8fe2dL).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653cec8d87eL).optional(false).ordered(true).multiple(false).origin("7548145485610548781").done();
     b.aggregate("ghost", 0x68c06653cec8fe33L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653cec8d87dL).optional(false).ordered(true).multiple(false).origin("7548145485610548787").done();
+    b.aggregate("num_particles", 0x1cbe89376bd2af31L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd2678cL).optional(false).ordered(true).multiple(false).origin("2071243749762182961").done();
     b.alias("initialization");
     return b.create();
   }

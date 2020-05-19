@@ -12,6 +12,6 @@ public class Simulation_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
 
-    tgs.append("\"this the simulation phas\"");
+    tgs.append("\"this the simulation phase\"");
   }
 }
