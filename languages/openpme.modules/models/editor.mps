@@ -267,6 +267,21 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="1MYyjtFOEXx" role="3EZMnx">
+        <property role="3F0ifm" value="num_particles:" />
+        <node concept="lj46D" id="1MYyjtFOEZt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="1MYyjtFOEZ$" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1MYyjtFOEYN" role="3EZMnx">
+        <ref role="1NtTu8" to="3x5m:1MYyjtFOEWL" resolve="num_particles" />
+        <node concept="ljvvj" id="1MYyjtFOEZv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6z0p_feMg0H" role="3EZMnx">
         <node concept="ljvvj" id="6z0p_feMg1R" role="3F10Kt">
           <property role="VOm3f" value="true" />

@@ -209,7 +209,7 @@
   <node concept="312cEu" id="0">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="BoundryConditions_TextGen" />
-    <property role="3GE5qa" value="Initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundry" />
     <node concept="3Tm1VV" id="1" role="1B3o_S">
       <node concept="cd27G" id="5" role="lGtFl">
         <node concept="3u3nmq" id="6" role="cd27D">
@@ -393,7 +393,7 @@
   <node concept="312cEu" id="17">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Box_TextGen" />
-    <property role="3GE5qa" value="Initialization.domain" />
+    <property role="3GE5qa" value="initialization.domain" />
     <node concept="3Tm1VV" id="18" role="1B3o_S">
       <node concept="cd27G" id="1c" role="lGtFl">
         <node concept="3u3nmq" id="1d" role="cd27D">
@@ -2314,7 +2314,7 @@
   <node concept="312cEu" id="cZ">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="CutoffRadius_TextGen" />
-    <property role="3GE5qa" value="Initialization" />
+    <property role="3GE5qa" value="initialization" />
     <node concept="3Tm1VV" id="d0" role="1B3o_S">
       <node concept="cd27G" id="d4" role="lGtFl">
         <node concept="3u3nmq" id="d5" role="cd27D">
@@ -2498,7 +2498,7 @@
   <node concept="312cEu" id="e6">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Dimension_TextGen" />
-    <property role="3GE5qa" value="Initialization" />
+    <property role="3GE5qa" value="initialization" />
     <node concept="3Tm1VV" id="e7" role="1B3o_S">
       <node concept="cd27G" id="eb" role="lGtFl">
         <node concept="3u3nmq" id="ec" role="cd27D">
@@ -3331,7 +3331,7 @@
   <node concept="312cEu" id="jg">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Domain_TextGen" />
-    <property role="3GE5qa" value="Initialization.domain" />
+    <property role="3GE5qa" value="initialization.domain" />
     <node concept="3Tm1VV" id="jh" role="1B3o_S">
       <node concept="cd27G" id="jl" role="lGtFl">
         <node concept="3u3nmq" id="jm" role="cd27D">
@@ -4569,7 +4569,7 @@
   <node concept="312cEu" id="q0">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Ghost_TextGen" />
-    <property role="3GE5qa" value="Initialization" />
+    <property role="3GE5qa" value="initialization" />
     <node concept="3Tm1VV" id="q1" role="1B3o_S">
       <node concept="cd27G" id="q5" role="lGtFl">
         <node concept="3u3nmq" id="q6" role="cd27D">
@@ -4753,7 +4753,7 @@
   <node concept="312cEu" id="r7">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="InitialConditions_TextGen" />
-    <property role="3GE5qa" value="Initialization.InitialCond" />
+    <property role="3GE5qa" value="initialization.InitialCond" />
     <node concept="3Tm1VV" id="r8" role="1B3o_S">
       <node concept="cd27G" id="rc" role="lGtFl">
         <node concept="3u3nmq" id="rd" role="cd27D">
@@ -5265,7 +5265,7 @@
   <node concept="312cEu" id="uc">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="NonPeriodic_TextGen" />
-    <property role="3GE5qa" value="Initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundry" />
     <node concept="3Tm1VV" id="ud" role="1B3o_S">
       <node concept="cd27G" id="uh" role="lGtFl">
         <node concept="3u3nmq" id="ui" role="cd27D">
@@ -5706,7 +5706,7 @@
   <node concept="312cEu" id="wW">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="NonUniform_TextGen" />
-    <property role="3GE5qa" value="Initialization.InitialCond" />
+    <property role="3GE5qa" value="initialization.InitialCond" />
     <node concept="3Tm1VV" id="wX" role="1B3o_S">
       <node concept="cd27G" id="x1" role="lGtFl">
         <node concept="3u3nmq" id="x2" role="cd27D">
@@ -6475,7 +6475,7 @@
   <node concept="312cEu" id="_E">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Periodic_TextGen" />
-    <property role="3GE5qa" value="Initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundry" />
     <node concept="3Tm1VV" id="_F" role="1B3o_S">
       <node concept="cd27G" id="_J" role="lGtFl">
         <node concept="3u3nmq" id="_K" role="cd27D">
@@ -8573,7 +8573,7 @@
   <node concept="312cEu" id="MA">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="TypeOfBoundry_TextGen" />
-    <property role="3GE5qa" value="Initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundry" />
     <node concept="3Tm1VV" id="MB" role="1B3o_S">
       <node concept="cd27G" id="MF" role="lGtFl">
         <node concept="3u3nmq" id="MG" role="cd27D">
@@ -8737,7 +8737,7 @@
   <node concept="312cEu" id="N_">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="TypeOfInitialCond_TextGen" />
-    <property role="3GE5qa" value="Initialization.InitialCond" />
+    <property role="3GE5qa" value="initialization.InitialCond" />
     <node concept="3Tm1VV" id="NA" role="1B3o_S">
       <node concept="cd27G" id="NE" role="lGtFl">
         <node concept="3u3nmq" id="NF" role="cd27D">
@@ -9065,7 +9065,7 @@
   <node concept="312cEu" id="Pz">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Uniform_TextGen" />
-    <property role="3GE5qa" value="Initialization.InitialCond" />
+    <property role="3GE5qa" value="initialization.InitialCond" />
     <node concept="3Tm1VV" id="P$" role="1B3o_S">
       <node concept="cd27G" id="PC" role="lGtFl">
         <node concept="3u3nmq" id="PD" role="cd27D">

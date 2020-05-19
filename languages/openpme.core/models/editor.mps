@@ -39,6 +39,7 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0" />
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -126,8 +127,11 @@
   <node concept="24kQdi" id="6z0p_feM$o4">
     <property role="3GE5qa" value="initialization" />
     <ref role="1XX52x" to="r2co:6z0p_feMdxT" resolve="Dimension" />
-    <node concept="3F1sOY" id="6z0p_feM$o6" role="2wV5jI">
-      <ref role="1NtTu8" to="r2co:6z0p_feMkr8" resolve="dimension" />
+    <node concept="3EZMnI" id="1MYyjtFOAuQ" role="2wV5jI">
+      <node concept="l2Vlx" id="1MYyjtFOAuR" role="2iSdaV" />
+      <node concept="3F1sOY" id="1MYyjtFOAuU" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:6z0p_feMkr8" resolve="dimension" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6z0p_feMAuU">
@@ -432,7 +436,7 @@
     <node concept="3EZMnI" id="7OuveptjT93" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="7OuveptjT9a" role="3EZMnx">
-        <property role="3F0ifm" value="time loop" />
+        <property role="3F0ifm" value="timeloop" />
         <node concept="ljvvj" id="7OuveptjT9i" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -519,6 +523,18 @@
         </node>
         <node concept="lj46D" id="7OuveptjTlo" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOOyD" role="3EZMnx">
+        <property role="3F0ifm" value="end timeloop" />
+        <node concept="lj46D" id="1MYyjtFOOzj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="1MYyjtFOOzl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="1MYyjtFOOzs" role="3F10Kt">
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F0ifn" id="7OuveptjTlY" role="3EZMnx">
@@ -619,6 +635,18 @@
         </node>
         <node concept="lj46D" id="7Ouveptk527" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOO$7" role="3EZMnx">
+        <property role="3F0ifm" value="end timeloop" />
+        <node concept="ljvvj" id="1MYyjtFOO_U" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1MYyjtFOO_W" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="1MYyjtFOOA3" role="3F10Kt">
+          <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F0ifn" id="7Ouveptk52D" role="3EZMnx">
@@ -732,6 +760,76 @@
       <node concept="ljvvj" id="5MzX6ckupgO" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1MYyjtFOAuE">
+    <property role="3GE5qa" value="initialization" />
+    <ref role="1XX52x" to="r2co:1MYyjtFOAuc" resolve="NumOfParticles" />
+    <node concept="3EZMnI" id="1MYyjtFOAuG" role="2wV5jI">
+      <node concept="3F1sOY" id="1MYyjtFOAuN" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1MYyjtFOAud" resolve="num_particles" />
+      </node>
+      <node concept="l2Vlx" id="1MYyjtFOAuJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1MYyjtFOOxY">
+    <property role="3GE5qa" value="simulation.particles" />
+    <ref role="1XX52x" to="r2co:1MYyjtFOOxy" resolve="Particle" />
+    <node concept="3EYTF0" id="1MYyjtFOOxZ" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="1MYyjtFOOAD">
+    <property role="3GE5qa" value="simulation.foreachLoop" />
+    <ref role="1XX52x" to="r2co:1MYyjtFOOxx" resolve="Foreach" />
+    <node concept="3EZMnI" id="1MYyjtFOOAF" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="3F0ifn" id="1MYyjtFOOAM" role="3EZMnx">
+        <property role="3F0ifm" value="foreach particle  " />
+        <node concept="lj46D" id="1MYyjtFOOBP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="1MYyjtFOOCQ" role="3F10Kt">
+          <property role="Vb096" value="fLwANPu/blue" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1MYyjtFOOAS" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1MYyjtFOOA9" resolve="iterable" />
+        <node concept="ljvvj" id="1MYyjtFOOBj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1MYyjtFOOBU" role="3EZMnx">
+        <node concept="l2Vlx" id="1MYyjtFOOBV" role="2iSdaV" />
+        <node concept="3F1sOY" id="1MYyjtFOOBe" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:1MYyjtFOOAb" resolve="body" />
+          <node concept="ljvvj" id="1MYyjtFOOBy" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="1MYyjtFOOBR" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="lj46D" id="1MYyjtFOOC9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOOBr" role="3EZMnx">
+        <property role="3F0ifm" value="end foreach" />
+        <node concept="lj46D" id="1MYyjtFOOCb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="1MYyjtFOOCE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="1MYyjtFOOCY" role="3F10Kt">
+          <property role="Vb096" value="fLwANPu/blue" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MYyjtFOOCr" role="3EZMnx">
+        <node concept="ljvvj" id="1MYyjtFOOCH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1MYyjtFOOAI" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -88,6 +88,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="r2co:6z0p_feMdxX" resolve="Ghost" />
     </node>
+    <node concept="1TJgyj" id="1MYyjtFOEWL" role="1TKVEi">
+      <property role="IQ2ns" value="2071243749762182961" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="num_particles" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="r2co:1MYyjtFOAuc" resolve="num_particles" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfL0P">
     <property role="EcuMT" value="5443610339528609845" />

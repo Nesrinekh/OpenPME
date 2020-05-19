@@ -25,6 +25,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Force;
   private ConceptPresentation props_Ghost;
   private ConceptPresentation props_Grid;
+  private ConceptPresentation props_Hybrid;
   private ConceptPresentation props_InitialConditions;
   private ConceptPresentation props_Interpolate;
   private ConceptPresentation props_JacobianOperator;
@@ -35,11 +36,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ListOfCommLoopD;
   private ConceptPresentation props_ListOfContinuousComm;
   private ConceptPresentation props_ListOfDiscreteComm;
+  private ConceptPresentation props_ListOfHybridComm;
   private ConceptPresentation props_ListOfPhysicalNotations;
   private ConceptPresentation props_ListOfPhysicalQuantities;
   private ConceptPresentation props_NonPeriodic;
   private ConceptPresentation props_NonUniform;
   private ConceptPresentation props_Nu;
+  private ConceptPresentation props_NumOfParticles;
   private ConceptPresentation props_Omega;
   private ConceptPresentation props_OnGrid;
   private ConceptPresentation props_OnParticle;
@@ -65,6 +68,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Uniform;
   private ConceptPresentation props_Vectorial;
   private ConceptPresentation props_VerletList;
+  private ConceptPresentation props_VisualizeDomDecomp;
+  private ConceptPresentation props_VisualizeParticles;
   private ConceptPresentation props_dtLoop;
 
   @Override
@@ -184,6 +189,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Grid = cpb.create();
         }
         return props_Grid;
+      case LanguageConceptSwitch.Hybrid:
+        if (props_Hybrid == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("hybrid");
+          props_Hybrid = cpb.create();
+        }
+        return props_Hybrid;
       case LanguageConceptSwitch.InitialConditions:
         if (props_InitialConditions == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -250,6 +262,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ListOfDiscreteComm = cpb.create();
         }
         return props_ListOfDiscreteComm;
+      case LanguageConceptSwitch.ListOfHybridComm:
+        if (props_ListOfHybridComm == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ListOfHybridComm = cpb.create();
+        }
+        return props_ListOfHybridComm;
       case LanguageConceptSwitch.ListOfPhysicalNotations:
         if (props_ListOfPhysicalNotations == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -283,6 +301,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Nu = cpb.create();
         }
         return props_Nu;
+      case LanguageConceptSwitch.NumOfParticles:
+        if (props_NumOfParticles == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("number of particles");
+          props_NumOfParticles = cpb.create();
+        }
+        return props_NumOfParticles;
       case LanguageConceptSwitch.Omega:
         if (props_Omega == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -455,6 +480,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_VerletList = cpb.create();
         }
         return props_VerletList;
+      case LanguageConceptSwitch.VisualizeDomDecomp:
+        if (props_VisualizeDomDecomp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("VisualizeDomDecomp");
+          props_VisualizeDomDecomp = cpb.create();
+        }
+        return props_VisualizeDomDecomp;
+      case LanguageConceptSwitch.VisualizeParticles:
+        if (props_VisualizeParticles == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("VisualizeParticles");
+          props_VisualizeParticles = cpb.create();
+        }
+        return props_VisualizeParticles;
       case LanguageConceptSwitch.dtLoop:
         if (props_dtLoop == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

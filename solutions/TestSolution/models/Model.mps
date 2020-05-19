@@ -14,7 +14,7 @@
   <imports />
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
-      <concept id="9015780832892044766" name="openpme.core.structure.Particle" flags="ng" index="wk3$S" />
+      <concept id="9015780832892044764" name="openpme.core.structure.Vectorial" flags="ng" index="wk3$U" />
       <concept id="9015780832892044705" name="openpme.core.structure.ListOfContinuousComm" flags="ng" index="wk3_7" />
       <concept id="9015780832892154599" name="openpme.core.structure.TimeLoopD" flags="ng" index="wkoS1">
         <child id="9015780832892154600" name="loopD_body" index="wkoSe" />
@@ -116,8 +116,8 @@
       <node concept="2A2bSI" id="5MzX6ckrLWC" role="2A29xw" />
     </node>
     <node concept="1GH8rQ" id="5MzX6ckrLWD" role="1GHewH">
-      <node concept="2A2w6k" id="5MzX6ckrLWF" role="2A2w7f">
-        <node concept="wkoS1" id="5MzX6ckrSdl" role="wkRMm" />
+      <node concept="2A2w6l" id="1MYyjtFOOxq" role="2A2w7f">
+        <node concept="wk3_7" id="1MYyjtFOOxs" role="wk3_4" />
       </node>
     </node>
     <node concept="1GH8rP" id="5MzX6ckrLWE" role="1GHewQ" />
@@ -139,7 +139,7 @@
     <node concept="1GH8rQ" id="5MzX6cksiUk" role="1GHewH">
       <node concept="2A2w6l" id="_2cifcFZrQ" role="2A2w7f">
         <node concept="wk3_7" id="_2cifcFZrS" role="wk3_4" />
-        <node concept="wk3$S" id="_2cifcFZsh" role="wk3_4" />
+        <node concept="wk3$U" id="_2cifcFZsm" role="wk3_4" />
         <node concept="wk3_7" id="_2cifcFZs3" role="wk3_4" />
       </node>
     </node>
