@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <product version="3" modelHash="cxercnza7tayf1o3rxvukiyp3kh68x5">
+=======
+<product version="3" modelHash="-e0tnxw9okz8eubdy42dlhim15igovpp">
+>>>>>>> 8f925839eaf33b993f768f39d7ab6f2893eb76c1
   <files names="EditorAspectDescriptorImpl.java:Initialization_Editor.java:Initialization_EditorBuilder_a.java:Module_Editor.java:Module_EditorBuilder_a.java:Simulation_Editor.java:Simulation_EditorBuilder_a.java:Visualization_Editor.java:Visualization_EditorBuilder_a.java" />
 </product>
 

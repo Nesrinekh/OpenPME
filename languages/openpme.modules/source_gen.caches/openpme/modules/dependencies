@@ -10,11 +10,9 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode dependClassName="openpme.modules.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="openpme.modules.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="openpme.modules.structure.StructureAspectDescriptor" />
-    <classNode dependClassName="openpme.modules.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>

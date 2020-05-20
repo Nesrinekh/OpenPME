@@ -4,71 +4,10 @@ package main;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.impl.query.QueryProviderBase;
-import jetbrains.mps.generator.template.MappingScriptContext;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import java.util.Map;
-import jetbrains.mps.generator.impl.query.ScriptCodeBlock;
-import java.util.HashMap;
-import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.generator.impl.query.QueryKey;
-import jetbrains.mps.generator.impl.GenerationFailureException;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SConcept;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
   public QueriesGenerated() {
     super(1);
-  }
-  public static void mappingScript_CodeBlock_2(final MappingScriptContext _context) {
-    for (SNode phase : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.Module$qN))) {
-      SLinkOperations.getTarget(phase, LINKS.initialization$_HQw);
-      SLinkOperations.getTarget(phase, LINKS.simulation$_Jf9);
-      SLinkOperations.getTarget(phase, LINKS.visualization$_Jiy);
-    }
-  }
-  private final Map<String, ScriptCodeBlock> mscbMethods = new HashMap<String, ScriptCodeBlock>();
-  {
-    int i = 0;
-    mscbMethods.put("7436269412206922722", new SCB(i++));
-  }
-  @Override
-  @NotNull
-  public ScriptCodeBlock getScriptCodeBlock(@NotNull QueryKey identity) {
-    final String id = identity.getTemplateNode().getNodeId().toString();
-    if (!(mscbMethods.containsKey(id))) {
-      return super.getScriptCodeBlock(identity);
-    }
-    return mscbMethods.get(id);
-  }
-  private static class SCB implements ScriptCodeBlock {
-    private final int methodKey;
-    public SCB(int methodKey) {
-      this.methodKey = methodKey;
-    }
-    @Override
-    public void invoke(MappingScriptContext ctx) throws GenerationFailureException {
-      switch (methodKey) {
-        case 0:
-          QueriesGenerated.mappingScript_CodeBlock_2(ctx);
-          return;
-        default:
-          throw new GenerationFailureException(String.format("There's no code block with method index %d ", methodKey));
-      }
-    }
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink initialization$_HQw = MetaAdapterFactory.getContainmentLink(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f7eb4L, 0x4b8b96c3273f7eb5L, "initialization");
-    /*package*/ static final SContainmentLink simulation$_Jf9 = MetaAdapterFactory.getContainmentLink(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f7eb4L, 0x4b8b96c3273f7eeeL, "simulation");
-    /*package*/ static final SContainmentLink visualization$_Jiy = MetaAdapterFactory.getContainmentLink(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f7eb4L, 0x4b8b96c3273f7ef5L, "visualization");
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept Module$qN = MetaAdapterFactory.getConcept(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f7eb4L, "openpme.modules.structure.Module");
   }
 }
