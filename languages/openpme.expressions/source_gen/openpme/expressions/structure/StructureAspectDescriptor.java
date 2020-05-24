@@ -4,6 +4,8 @@ package openpme.expressions.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptor;
+import jetbrains.mps.smodel.runtime.ConstrainedStringDatatypeDescriptorImpl;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
@@ -17,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAndExpression = createDescriptorForAndExpression();
   /*package*/ final ConceptDescriptor myConceptDivision = createDescriptorForDivision();
   /*package*/ final ConceptDescriptor myConceptEqual = createDescriptorForEqual();
+  /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptGeneralExpression = createDescriptorForGeneralExpression();
   /*package*/ final ConceptDescriptor myConceptGreater = createDescriptorForGreater();
   /*package*/ final ConceptDescriptor myConceptGreaterEqual = createDescriptorForGreaterEqual();
@@ -30,6 +33,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSubtraction = createDescriptorForSubtraction();
   /*package*/ final ConceptDescriptor myConceptUnaryMinus = createDescriptorForUnaryMinus();
   /*package*/ final ConceptDescriptor myConceptUnaryPlus = createDescriptorForUnaryPlus();
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeFloatingNumberString = new ConstrainedStringDatatypeDescriptorImpl(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x55480d35723f9461L, "FloatingNumberString", "r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/6145176214748238945", "(-?)(\\d+|\\d*.\\d+)");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeSimpleNumberString = new ConstrainedStringDatatypeDescriptorImpl(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x235a2369e76404b3L, "SimpleNumberString", "r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/2547387476992066739", "[\\+\\-]?(\\d+)");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -45,7 +50,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddition, myConceptAndExpression, myConceptDivision, myConceptEqual, myConceptGeneralExpression, myConceptGreater, myConceptGreaterEqual, myConceptLess, myConceptLessEqual, myConceptModulo, myConceptMultiplication, myConceptNotEqual, myConceptNotExpression, myConceptOrExpression, myConceptSubtraction, myConceptUnaryMinus, myConceptUnaryPlus);
+    return Arrays.asList(myConceptAddition, myConceptAndExpression, myConceptDivision, myConceptEqual, myConceptExpression, myConceptGeneralExpression, myConceptGreater, myConceptGreaterEqual, myConceptLess, myConceptLessEqual, myConceptModulo, myConceptMultiplication, myConceptNotEqual, myConceptNotExpression, myConceptOrExpression, myConceptSubtraction, myConceptUnaryMinus, myConceptUnaryPlus);
   }
 
   @Override
@@ -60,6 +65,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDivision;
       case LanguageConceptSwitch.Equal:
         return myConceptEqual;
+      case LanguageConceptSwitch.Expression:
+        return myConceptExpression;
       case LanguageConceptSwitch.GeneralExpression:
         return myConceptGeneralExpression;
       case LanguageConceptSwitch.Greater:
@@ -93,7 +100,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList();
+    return Arrays.asList(myCSDatatypeFloatingNumberString, myCSDatatypeSimpleNumberString);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -128,6 +135,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("leftValue", 0x7d1e7ce65d4d0267L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(true).ordered(true).multiple(false).origin("9015780832891961959").done();
     b.aggregate("rightValue", 0x7d1e7ce65d4d0269L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(true).ordered(true).multiple(false).origin("9015780832891961961").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L);
+    b.class_(false, false, false);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/2525416462909175106");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGeneralExpression() {
