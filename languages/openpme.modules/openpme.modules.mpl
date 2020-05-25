@@ -43,7 +43,6 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="990507d3-3527-4c54-bfe9-0ca3c9c6247a(com.dslfoundry.plaintextgen)" version="0" />
         <module reference="766348f7-6a67-4b85-9323-384840132299(de.itemis.mps.editor.math)" version="0" />
-        <module reference="a9a7bf57-15e6-4d28-adc1-be146e415fe5(de.itemis.mps.editor.math.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
         <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
@@ -135,7 +134,11 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="990507d3-3527-4c54-bfe9-0ca3c9c6247a(com.dslfoundry.plaintextgen)" version="0" />
     <module reference="766348f7-6a67-4b85-9323-384840132299(de.itemis.mps.editor.math)" version="0" />
-    <module reference="a9a7bf57-15e6-4d28-adc1-be146e415fe5(de.itemis.mps.editor.math.runtime)" version="0" />
+    <module reference="ad43ad83-7356-4c72-888b-881fea736282(de.ppme.base)" version="0" />
+    <module reference="63e1a497-af15-4608-bf36-c0aa0aaf901b(de.ppme.core)" version="0" />
+    <module reference="58df54a5-af81-48d5-bb5c-9db2412768a4(de.ppme.expressions)" version="0" />
+    <module reference="a206eff4-e667-4146-8006-8cce4ef80954(de.ppme.modules)" version="0" />
+    <module reference="7d7a484c-83ab-4a7c-b9f3-8672c02bd0f6(de.ppme.statements)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
