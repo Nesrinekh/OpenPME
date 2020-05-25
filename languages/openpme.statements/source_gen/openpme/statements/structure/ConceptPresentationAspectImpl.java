@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_RealLiteral;
   private ConceptPresentation props_TimeLoopStatement;
+  private ConceptPresentation props_VariableDeclaration;
 
   @Override
   @Nullable
@@ -54,6 +55,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TimeLoopStatement = cpb.create();
         }
         return props_TimeLoopStatement;
+      case LanguageConceptSwitch.VariableDeclaration:
+        if (props_VariableDeclaration == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("VariableDeclaration");
+          props_VariableDeclaration = cpb.create();
+        }
+        return props_VariableDeclaration;
     }
     return null;
   }

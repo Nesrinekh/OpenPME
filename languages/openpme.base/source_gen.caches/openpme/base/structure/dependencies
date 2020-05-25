@@ -3,7 +3,9 @@
   <dependency className="openpme.base.structure.ConceptPresentationAspectImpl">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentation" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="openpme.base.structure.LanguageConceptSwitch" />
     <classNode dependClassName="openpme.base.structure.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
@@ -23,6 +25,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.DataTypeDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" />
     <classNode dependClassName="openpme.base.structure.LanguageConceptSwitch" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />

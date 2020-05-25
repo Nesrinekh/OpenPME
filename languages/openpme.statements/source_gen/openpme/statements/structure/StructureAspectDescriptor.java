@@ -18,6 +18,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
   /*package*/ final ConceptDescriptor myConceptRealLiteral = createDescriptorForRealLiteral();
   /*package*/ final ConceptDescriptor myConceptTimeLoopStatement = createDescriptorForTimeLoopStatement();
+  /*package*/ final ConceptDescriptor myConceptVariableDeclaration = createDescriptorForVariableDeclaration();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -32,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptElseIfStatement, myConceptGeneralStatement, myConceptIfStatement, myConceptRealLiteral, myConceptTimeLoopStatement);
+    return Arrays.asList(myConceptElseIfStatement, myConceptGeneralStatement, myConceptIfStatement, myConceptRealLiteral, myConceptTimeLoopStatement, myConceptVariableDeclaration);
   }
 
   @Override
@@ -49,6 +50,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRealLiteral;
       case LanguageConceptSwitch.TimeLoopStatement:
         return myConceptTimeLoopStatement;
+      case LanguageConceptSwitch.VariableDeclaration:
+        return myConceptVariableDeclaration;
       default:
         return null;
     }
@@ -95,6 +98,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "TimeLoopStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4b8b96c3273f0ffdL);
     b.class_(false, false, false);
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609789");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForVariableDeclaration() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "VariableDeclaration", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x2b8bd5caeb92e1aL);
+    b.class_(false, false, false);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/196114789556629018");
     b.version(2);
     return b.create();
   }

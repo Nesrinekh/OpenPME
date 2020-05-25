@@ -147,8 +147,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForGeneralExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "GeneralExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x5ca3f46314799366L);
     b.class_(false, true, false);
+    b.parent(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x4b64b50fb2fc7720L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L);
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/6675447779075658598");
     b.version(2);
+    b.aggregate("init", 0x2b8bd5caeb92e1bL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x5ca3f46314799366L).optional(true).ordered(true).multiple(false).origin("196114789556629019").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGreater() {
