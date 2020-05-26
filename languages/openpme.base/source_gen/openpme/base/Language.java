@@ -7,6 +7,13 @@ import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import jetbrains.mps.core.aspects.constraints.rules.RulesConstraintsAspect;
+import openpme.base.constraints.GeneratedRulesConstraintsAspect;
+import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
+import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
+import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
+import openpme.base.structure.ConceptPresentationAspectImpl;
 
 public class Language extends LanguageRuntime {
   private final SLanguageId myId;
@@ -35,9 +42,24 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
+    if (aspectClass.isAssignableFrom(RulesConstraintsAspect.class)) {
+      return aspectClass.cast(new GeneratedRulesConstraintsAspect());
+    }
 
 
     // AP: legacy part, must be migrated from switch: please use lang.descriptor mapping label 
+    if (aspectClass == BehaviorAspectDescriptor.class) {
+      return aspectClass.cast(new openpme.base.behavior.BehaviorAspectDescriptor());
+    }
+    if (aspectClass == ConstraintsAspectDescriptor.class) {
+      return aspectClass.cast(new openpme.base.constraints.ConstraintsAspectDescriptor());
+    }
+    if (aspectClass == StructureAspectDescriptor.class) {
+      return aspectClass.cast(new openpme.base.structure.StructureAspectDescriptor());
+    }
+    if (aspectClass == ConceptPresentationAspect.class) {
+      return aspectClass.cast(new ConceptPresentationAspectImpl());
+    }
     return null;
   }
 }
