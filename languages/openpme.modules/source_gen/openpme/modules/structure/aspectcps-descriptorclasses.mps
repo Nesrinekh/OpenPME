@@ -1816,9 +1816,7 @@
                     </node>
                     <node concept="liA8E" id="a2" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean)" resolve="optional" />
-                      <node concept="3clFbT" id="ac" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
+                      <node concept="3clFbT" id="ac" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="liA8E" id="a0" role="2OqNvi">
@@ -1881,9 +1879,7 @@
                     </node>
                     <node concept="liA8E" id="aq" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean)" resolve="optional" />
-                      <node concept="3clFbT" id="a$" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
+                      <node concept="3clFbT" id="a$" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="liA8E" id="ao" role="2OqNvi">
@@ -1946,9 +1942,7 @@
                     </node>
                     <node concept="liA8E" id="aM" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean)" resolve="optional" />
-                      <node concept="3clFbT" id="aW" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
+                      <node concept="3clFbT" id="aW" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="liA8E" id="aK" role="2OqNvi">
