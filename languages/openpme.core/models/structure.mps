@@ -624,7 +624,7 @@
   <node concept="1TIwiD" id="1MYyjtFOAuc">
     <property role="EcuMT" value="2071243749762164620" />
     <property role="3GE5qa" value="initialization" />
-    <property role="TrG5h" value="NumOfParticles" />
+    <property role="TrG5h" value="NumParticles" />
     <property role="34LRSv" value="number of particles" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1MYyjtFOAud" role="1TKVEi">
