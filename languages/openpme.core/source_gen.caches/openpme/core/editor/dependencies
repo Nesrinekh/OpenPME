@@ -239,7 +239,7 @@
     <classNode dependClassName="openpme.core.editor.NonPeriodic_Editor" />
     <classNode dependClassName="openpme.core.editor.NonUniform_Editor" />
     <classNode dependClassName="openpme.core.editor.Nu_Editor" />
-    <classNode dependClassName="openpme.core.editor.NumOfParticles_Editor" />
+    <classNode dependClassName="openpme.core.editor.NumParticles_Editor" />
     <classNode dependClassName="openpme.core.editor.Omega_Editor" />
     <classNode dependClassName="openpme.core.editor.Particle_Editor" />
     <classNode dependClassName="openpme.core.editor.Periodic_Editor" />
@@ -580,14 +580,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="openpme.core.editor.NumOfParticles_Editor">
+  <dependency className="openpme.core.editor.NumParticles_Editor">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="openpme.core.editor.NumOfParticles_EditorBuilder_a" />
+    <classNode dependClassName="openpme.core.editor.NumParticles_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="openpme.core.editor.NumOfParticles_EditorBuilder_a">
+  <dependency className="openpme.core.editor.NumParticles_EditorBuilder_a">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />

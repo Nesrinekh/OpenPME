@@ -58,7 +58,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 19:
         return Collections.<ConceptEditor>singletonList(new Nu_Editor());
       case 20:
-        return Collections.<ConceptEditor>singletonList(new NumOfParticles_Editor());
+        return Collections.<ConceptEditor>singletonList(new NumParticles_Editor());
       case 21:
         return Collections.<ConceptEditor>singletonList(new Omega_Editor());
       case 22:

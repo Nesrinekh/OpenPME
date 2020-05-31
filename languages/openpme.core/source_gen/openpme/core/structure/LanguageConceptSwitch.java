@@ -45,7 +45,7 @@ public final class LanguageConceptSwitch {
   public static final int NonPeriodic = 33;
   public static final int NonUniform = 34;
   public static final int Nu = 35;
-  public static final int NumOfParticles = 36;
+  public static final int NumParticles = 36;
   public static final int Omega = 37;
   public static final int OnGrid = 38;
   public static final int OnParticle = 39;
@@ -117,7 +117,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x68c06653ceca6794L, NonPeriodic);
     builder.put(0x68c06653ceca6799L, NonUniform);
     builder.put(0x7d1e7ce65d4d017bL, Nu);
-    builder.put(0x1cbe89376bd2678cL, NumOfParticles);
+    builder.put(0x1cbe89376bd2678cL, NumParticles);
     builder.put(0x7d1e7ce65d4d0180L, Omega);
     builder.put(0x6732efa1a0b596f0L, OnGrid);
     builder.put(0x6732efa1a0b596f1L, OnParticle);
