@@ -21,12 +21,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAndExpression = createDescriptorForAndExpression();
   /*package*/ final ConceptDescriptor myConceptAssignmentExpression = createDescriptorForAssignmentExpression();
   /*package*/ final ConceptDescriptor myConceptBinaryExpression = createDescriptorForBinaryExpression();
+  /*package*/ final ConceptDescriptor myConceptBooleanLiteral = createDescriptorForBooleanLiteral();
   /*package*/ final ConceptDescriptor myConceptComparisonExpression = createDescriptorForComparisonExpression();
   /*package*/ final ConceptDescriptor myConceptDecimalLiteral = createDescriptorForDecimalLiteral();
   /*package*/ final ConceptDescriptor myConceptDivisionExpression = createDescriptorForDivisionExpression();
   /*package*/ final ConceptDescriptor myConceptEqualityComparisonExpression = createDescriptorForEqualityComparisonExpression();
   /*package*/ final ConceptDescriptor myConceptEqualsExpression = createDescriptorForEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
+  /*package*/ final ConceptDescriptor myConceptFalseLiteral = createDescriptorForFalseLiteral();
   /*package*/ final ConceptDescriptor myConceptGreaterEqualsExpression = createDescriptorForGreaterEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptGreaterExpression = createDescriptorForGreaterExpression();
   /*package*/ final ConceptDescriptor myConceptIntegerLiteral = createDescriptorForIntegerLiteral();
@@ -44,6 +46,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptScientificNumberLiteral = createDescriptorForScientificNumberLiteral();
   /*package*/ final ConceptDescriptor myConceptStringLiteral = createDescriptorForStringLiteral();
   /*package*/ final ConceptDescriptor myConceptSubtractionExpression = createDescriptorForSubtractionExpression();
+  /*package*/ final ConceptDescriptor myConceptTrueLiteral = createDescriptorForTrueLiteral();
   /*package*/ final ConceptDescriptor myConceptUnaryExpression = createDescriptorForUnaryExpression();
   /*package*/ final ConceptDescriptor myConceptUnaryMinus = createDescriptorForUnaryMinus();
   /*package*/ final ConceptDescriptor myConceptUnaryPlus = createDescriptorForUnaryPlus();
@@ -65,7 +68,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptComparisonExpression, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVectorElementAccess, myConceptVectorLiteral);
+    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptComparisonExpression, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVectorElementAccess, myConceptVectorLiteral);
   }
 
   @Override
@@ -80,6 +83,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAssignmentExpression;
       case LanguageConceptSwitch.BinaryExpression:
         return myConceptBinaryExpression;
+      case LanguageConceptSwitch.BooleanLiteral:
+        return myConceptBooleanLiteral;
       case LanguageConceptSwitch.ComparisonExpression:
         return myConceptComparisonExpression;
       case LanguageConceptSwitch.DecimalLiteral:
@@ -92,6 +97,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEqualsExpression;
       case LanguageConceptSwitch.Expression:
         return myConceptExpression;
+      case LanguageConceptSwitch.FalseLiteral:
+        return myConceptFalseLiteral;
       case LanguageConceptSwitch.GreaterEqualsExpression:
         return myConceptGreaterEqualsExpression;
       case LanguageConceptSwitch.GreaterExpression:
@@ -126,6 +133,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptStringLiteral;
       case LanguageConceptSwitch.SubtractionExpression:
         return myConceptSubtractionExpression;
+      case LanguageConceptSwitch.TrueLiteral:
+        return myConceptTrueLiteral;
       case LanguageConceptSwitch.UnaryExpression:
         return myConceptUnaryExpression;
       case LanguageConceptSwitch.UnaryMinus:
@@ -186,6 +195,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("right", 0x72d99ef7d6698cfaL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L).optional(false).ordered(true).multiple(false).origin("8275820577561349370").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForBooleanLiteral() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "BooleanLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66b9389L);
+    b.class_(false, false, false);
+    b.super_("openpme.expressions.structure.Literal", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a9748L);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/8275820577561482121");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForComparisonExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "ComparisonExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d669c6b6L);
     b.class_(false, false, false);
@@ -233,6 +250,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L);
     b.class_(false, false, false);
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/2525416462909175106");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFalseLiteral() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "FalseLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66b938dL);
+    b.class_(false, false, false);
+    b.super_("openpme.expressions.structure.BooleanLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66b9389L);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/8275820577561482125");
     b.version(2);
     return b.create();
   }
@@ -385,6 +410,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138816");
     b.version(2);
     b.alias("-");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTrueLiteral() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "TrueLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66b938aL);
+    b.class_(false, false, false);
+    b.super_("openpme.expressions.structure.BooleanLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66b9389L);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/8275820577561482122");
+    b.version(2);
+    b.property("value", 0x72d99ef7d66b938bL).type(PrimitiveTypeId.BOOLEAN).origin("8275820577561482123").done();
+    b.alias("true");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForUnaryExpression() {
