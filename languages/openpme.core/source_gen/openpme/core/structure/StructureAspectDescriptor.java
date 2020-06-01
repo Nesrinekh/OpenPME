@@ -50,7 +50,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptNonPeriodic = createDescriptorForNonPeriodic();
   /*package*/ final ConceptDescriptor myConceptNonUniform = createDescriptorForNonUniform();
   /*package*/ final ConceptDescriptor myConceptNu = createDescriptorForNu();
-  /*package*/ final ConceptDescriptor myConceptNumOfParticles = createDescriptorForNumOfParticles();
+  /*package*/ final ConceptDescriptor myConceptNumParticles = createDescriptorForNumParticles();
   /*package*/ final ConceptDescriptor myConceptOmega = createDescriptorForOmega();
   /*package*/ final ConceptDescriptor myConceptOnGrid = createDescriptorForOnGrid();
   /*package*/ final ConceptDescriptor myConceptOnParticle = createDescriptorForOnParticle();
@@ -96,11 +96,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     deps.extendedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
     deps.aggregatedLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
     deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
+    deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptArrowExpression, myConceptBoundryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForce, myConceptForeach, myConceptGhost, myConceptGrid, myConceptHybrid, myConceptInitParticles, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptKineticEnergy, myConceptLambda, myConceptLaplacianOperator, myConceptListOfCommForeach, myConceptListOfCommLoopC, myConceptListOfCommLoopD, myConceptListOfContinuousComm, myConceptListOfDiscreteComm, myConceptListOfHybridComm, myConceptListOfPhysicalNotations, myConceptListOfPhysicalQuantities, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumOfParticles, myConceptOmega, myConceptOnGrid, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPotentialEnergy, myConceptPowerExpression, myConceptProperty, myConceptPsi, myConceptRandomNumberExpression, myConceptRemesh, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptStartLoop, myConceptStopLoop, myConceptTau, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundry, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVelocity, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles, myConceptVorticity, myConceptdtLoop);
+    return Arrays.asList(myConceptArrowExpression, myConceptBoundryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForce, myConceptForeach, myConceptGhost, myConceptGrid, myConceptHybrid, myConceptInitParticles, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptKineticEnergy, myConceptLambda, myConceptLaplacianOperator, myConceptListOfCommForeach, myConceptListOfCommLoopC, myConceptListOfCommLoopD, myConceptListOfContinuousComm, myConceptListOfDiscreteComm, myConceptListOfHybridComm, myConceptListOfPhysicalNotations, myConceptListOfPhysicalQuantities, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumParticles, myConceptOmega, myConceptOnGrid, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPotentialEnergy, myConceptPowerExpression, myConceptProperty, myConceptPsi, myConceptRandomNumberExpression, myConceptRemesh, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptStartLoop, myConceptStopLoop, myConceptTau, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundry, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVelocity, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles, myConceptVorticity, myConceptdtLoop);
   }
 
   @Override
@@ -179,8 +180,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNonUniform;
       case LanguageConceptSwitch.Nu:
         return myConceptNu;
-      case LanguageConceptSwitch.NumOfParticles:
-        return myConceptNumOfParticles;
+      case LanguageConceptSwitch.NumParticles:
+        return myConceptNumParticles;
       case LanguageConceptSwitch.Omega:
         return myConceptOmega;
       case LanguageConceptSwitch.OnGrid:
@@ -564,12 +565,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForNumOfParticles() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "NumOfParticles", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd2678cL);
+  private static ConceptDescriptor createDescriptorForNumParticles() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "NumParticles", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd2678cL);
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762164620");
     b.version(2);
-    b.aggregate("num_particles", 0x1cbe89376bd2678dL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L).optional(false).ordered(true).multiple(false).origin("2071243749762164621").done();
+    b.aggregate("num_particles", 0x1cbe89376bd2678dL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a9749L).optional(false).ordered(true).multiple(false).origin("2071243749762164621").done();
     b.alias("number of particles");
     return b.create();
   }

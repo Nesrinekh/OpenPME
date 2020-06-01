@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules" version="0" />
+    <use id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions" version="0" />
     <engage id="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f" name="openpme.cpp" />
   </languages>
   <imports />
@@ -18,12 +19,14 @@
       <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
       <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d" />
-      <concept id="2071243749762164620" name="openpme.core.structure.NumOfParticles" flags="ng" index="1RreUV">
+      <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
     </language>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+    <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
+      <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY">
+        <property id="8275820577561417546" name="value" index="2$GKAX" />
+      </concept>
     </language>
     <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
       <concept id="5443610339528609846" name="openpme.modules.structure.Visualization" flags="ng" index="1GH8rP" />
@@ -51,25 +54,27 @@
       </concept>
     </language>
   </registry>
-  <node concept="1GHexR" id="1aNABc34lw8">
+  <node concept="1GHexR" id="7bpBJvmqTaD">
     <property role="TrG5h" value="lennard" />
-    <node concept="1GH8rR" id="1aNABc34x0q" role="1GHexQ">
-      <node concept="2A2bSE" id="1aNABc34x0r" role="2A29xc" />
-      <node concept="2A2bSD" id="1aNABc34x0s" role="2A29xM">
-        <node concept="2A2uni" id="1aNABc34x0t" role="2A2ukG" />
+    <node concept="1GH8rR" id="7bpBJvmqTaE" role="1GHexQ">
+      <node concept="2A2bSE" id="7bpBJvmqTaF" role="2A29xc" />
+      <node concept="2A2bSD" id="7bpBJvmqTaG" role="2A29xM">
+        <node concept="2A2uni" id="7bpBJvmqTaH" role="2A2ukG" />
       </node>
-      <node concept="2A2bSC" id="1aNABc34x0u" role="2A29xR" />
-      <node concept="2A2bSJ" id="1aNABc34x0v" role="2A29xV" />
-      <node concept="2A2bSH" id="1aNABc34x0w" role="2A29xY" />
-      <node concept="2A2bSI" id="1aNABc34x0x" role="2A29xw" />
-      <node concept="1RreUV" id="1aNABc34x0y" role="1Rr2o6">
-        <node concept="10Oyi0" id="1aNABc34x0z" role="1RreUU" />
+      <node concept="2A2bSC" id="7bpBJvmqTaI" role="2A29xR" />
+      <node concept="2A2bSJ" id="7bpBJvmqTaJ" role="2A29xV" />
+      <node concept="2A2bSH" id="7bpBJvmqTaK" role="2A29xY" />
+      <node concept="2A2bSI" id="7bpBJvmqTaL" role="2A29xw" />
+      <node concept="1RreUV" id="7bpBJvmqTaM" role="1Rr2o6">
+        <node concept="2$GKAY" id="7bpBJvmqTaU" role="1RreUU">
+          <property role="2$GKAX" value="1000" />
+        </node>
       </node>
     </node>
-    <node concept="1GH8rQ" id="1aNABc34x0I" role="1GHewH">
-      <node concept="2A2w7d" id="1aNABc352r8" role="2A2w7f" />
+    <node concept="1GH8rQ" id="7bpBJvmqTaO" role="1GHewH">
+      <node concept="2A2w7d" id="7bpBJvmqTe7" role="2A2w7f" />
     </node>
-    <node concept="1GH8rP" id="1aNABc34x1R" role="1GHewQ" />
+    <node concept="1GH8rP" id="7bpBJvmqTaQ" role="1GHewQ" />
   </node>
 </model>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-dij5ctlep9nin3a4x4sg0ozx8u8c625">
-  <files names="EditorAspectDescriptorImpl.java:Equal_Editor.java:Equal_EditorBuilder_a.java" />
+<product version="3" modelHash="-3j7wxwzw9tjadqcmvrjbb2w1ytkzr87">
+  <files names="BinaryExpression_Editor.java:BinaryExpression_EditorBuilder_a.java:BooleanLiteral_Editor.java:BooleanLiteral_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:IntegerLiteral_Editor.java:IntegerLiteral_EditorBuilder_a.java:ParenthesizedExpression_Editor.java:ParenthesizedExpression_EditorBuilder_a.java:ScientificNumberLiteral_Editor.java:ScientificNumberLiteral_EditorBuilder_a.java:StringLiteral_Editor.java:StringLiteral_EditorBuilder_a.java:UnaryExpression_Editor.java:UnaryExpression_EditorBuilder_a.java:VectorElementAccess_Editor.java:VectorElementAccess_EditorBuilder_a.java:VectorLiteral_Editor.java:VectorLiteral_EditorBuilder_a.java" />
 </product>
 

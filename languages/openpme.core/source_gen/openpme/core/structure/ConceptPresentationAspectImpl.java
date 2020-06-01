@@ -45,7 +45,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_NonPeriodic;
   private ConceptPresentation props_NonUniform;
   private ConceptPresentation props_Nu;
-  private ConceptPresentation props_NumOfParticles;
+  private ConceptPresentation props_NumParticles;
   private ConceptPresentation props_Omega;
   private ConceptPresentation props_OnGrid;
   private ConceptPresentation props_OnParticle;
@@ -328,13 +328,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Nu = cpb.create();
         }
         return props_Nu;
-      case LanguageConceptSwitch.NumOfParticles:
-        if (props_NumOfParticles == null) {
+      case LanguageConceptSwitch.NumParticles:
+        if (props_NumParticles == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("number of particles");
-          props_NumOfParticles = cpb.create();
+          props_NumParticles = cpb.create();
         }
-        return props_NumOfParticles;
+        return props_NumParticles;
       case LanguageConceptSwitch.Omega:
         if (props_Omega == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
