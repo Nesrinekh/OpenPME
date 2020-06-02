@@ -11,6 +11,8 @@
   <imports>
     <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -98,11 +100,6 @@
       <ref role="20lvS9" node="70bNw4gtx2g" resolve="StatementList" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4Ib_GcBfKZX">
-    <property role="EcuMT" value="5443610339528609789" />
-    <property role="TrG5h" value="TimeLoopStatement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="1TIwiD" id="6sMVU6wHrBz">
     <property role="EcuMT" value="7436269412207147491" />
     <property role="TrG5h" value="Statement" />
@@ -118,6 +115,24 @@
     <property role="TrG5h" value="VariableDeclaration" />
     <property role="3GE5qa" value="variables" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="70bNw4gtDwu" role="PzmwI">
+      <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="70bNw4gtDwz" role="PzmwI">
+      <ref role="PrY4T" to="dm0:aSJlMIIiSA" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="70bNw4gtDyl" role="PzmwI">
+      <ref role="PrY4T" to="caxt:70bNw4gtDwF" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="70bNw4gtDyv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="70bNw4gtDz9" role="1TKVEi">
+      <property role="IQ2ns" value="8073773260958243017" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="init" />
+      <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    </node>
   </node>
   <node concept="PlHQZ" id="70bNw4gtmOZ">
     <property role="EcuMT" value="8073773260958166335" />
@@ -154,6 +169,30 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="70bNw4gtG_u">
+    <property role="EcuMT" value="8073773260958255454" />
+    <property role="TrG5h" value="AbstractForStatement" />
+    <property role="3GE5qa" value="loops" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="70bNw4gtG_v" resolve="AbstractLoopStatement" />
+  </node>
+  <node concept="1TIwiD" id="70bNw4gtG_v">
+    <property role="EcuMT" value="8073773260958255455" />
+    <property role="3GE5qa" value="loops" />
+    <property role="TrG5h" value="AbstractLoopStatement" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="70bNw4gtG_w" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="70bNw4gtG_y" role="1TKVEi">
+      <property role="IQ2ns" value="8073773260958255458" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="70bNw4gtx2g" resolve="StatementList" />
     </node>
   </node>
 </model>

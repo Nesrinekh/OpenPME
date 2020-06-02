@@ -55,6 +55,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -112,6 +115,13 @@
     <ref role="13h7C2" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
     <node concept="13hLZK" id="70bNw4gtx4l" role="13h7CW">
       <node concept="3clFbS" id="70bNw4gtx4m" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="70bNw4gtG_Z">
+    <property role="3GE5qa" value="loops" />
+    <ref role="13h7C2" to="5oki:70bNw4gtG_v" resolve="AbstractLoopStatement" />
+    <node concept="13hLZK" id="70bNw4gtGA0" role="13h7CW">
+      <node concept="3clFbS" id="70bNw4gtGA1" role="2VODD2" />
     </node>
   </node>
 </model>
