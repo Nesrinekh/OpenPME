@@ -27,36 +27,22 @@
       <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
       <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni" />
       <concept id="7548145485610641350" name="openpme.core.structure.Continuous" flags="ng" index="2A2w6l">
-        <child id="9015780832892044706" name="continuous_body" index="wk3_4" />
-        <child id="2071243749762222700" name="init_particles" index="1Rrsdr" />
+        <child id="9015780832892044706" name="body" index="wk3_4" />
+      </concept>
+      <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
+        <child id="8483536403556912288" name="init_particles" index="SClZ9" />
       </concept>
       <concept id="8483536403556804640" name="openpme.core.structure.TimeLoop" flags="ng" index="SCFH9">
         <child id="8483536403556804650" name="stop" index="SCFH3" />
         <child id="8483536403556804645" name="dt" index="SCFHc" />
         <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
-      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$" />
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
-      <concept id="2071243749762222472" name="openpme.core.structure.ListOfCommForeach" flags="ng" index="1Rrs2Z" />
-      <concept id="2071243749762222178" name="openpme.core.structure.Particle" flags="ng" index="1Rrs5l">
-        <child id="2071243749762308246" name="posz" index="1Rqx6x" />
-        <child id="2071243749762308244" name="posx" index="1Rqx6z" />
-        <child id="2071243749762308255" name="name" index="1Rqx6C" />
-        <child id="2071243749762308249" name="property" index="1Rqx6I" />
-      </concept>
-      <concept id="2071243749762222177" name="openpme.core.structure.Foreach" flags="ng" index="1Rrs5m">
-        <child id="2071243749762222475" name="body" index="1Rrs2W" />
-        <child id="2071243749762222473" name="iterable" index="1Rrs2Y" />
-      </concept>
-      <concept id="2071243749762222176" name="openpme.core.structure.InitParticles" flags="ng" index="1Rrs5n">
-        <child id="2071243749762410125" name="init_particles" index="1RqaYU" />
-      </concept>
+      <concept id="2071243749762222176" name="openpme.core.structure.InitParticles" flags="ng" index="1Rrs5n" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
-      <concept id="1068431790191" name="jetbrains.mps.baseLanguage.structure.Expression" flags="nn" index="33vP2n" />
       <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
         <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
@@ -109,30 +95,20 @@
         </node>
       </node>
     </node>
-    <node concept="1GH8rQ" id="7bpBJvmqTaO" role="1GHewH">
-      <node concept="2A2w6l" id="5j_cUcJSE_4" role="2A2w7f">
-        <node concept="1Rrs5n" id="5j_cUcJSE_6" role="1Rrsdr">
-          <node concept="1Rrs5m" id="5j_cUcJSE_8" role="1RqaYU">
-            <node concept="1Rrs5l" id="5j_cUcJSE_a" role="1Rrs2Y">
-              <node concept="33vP2n" id="5j_cUcJSE_c" role="1Rqx6C" />
-              <node concept="10OMs4" id="5j_cUcJSE_e" role="1Rqx6z" />
-              <node concept="10OMs4" id="5j_cUcJSE_g" role="1Rqx6x" />
-              <node concept="1Rqx6$" id="5j_cUcJSE_i" role="1Rqx6I" />
-            </node>
-            <node concept="1Rrs2Z" id="5j_cUcJSE_k" role="1Rrs2W" />
+    <node concept="1GH8rQ" id="7mV$Q_d6VWQ" role="1GHewH">
+      <node concept="2A2w6l" id="7mV$Q_d735D" role="2A2w7f">
+        <node concept="wk3$6" id="7mV$Q_d735N" role="wk3_4">
+          <node concept="3b6qkQ" id="7mV$Q_d735P" role="SCFHc">
+            <property role="$nhwW" value="0.1" />
+          </node>
+          <node concept="2$GKAY" id="7mV$Q_d735R" role="SCFHe">
+            <property role="2$GKAX" value="0" />
+          </node>
+          <node concept="2$GKAY" id="7mV$Q_d735T" role="SCFH3">
+            <property role="2$GKAX" value="10" />
           </node>
         </node>
-        <node concept="wk3$6" id="7mV$Q_d6EUJ" role="wk3_4">
-          <node concept="3b6qkQ" id="7mV$Q_d6EUK" role="SCFHc">
-            <property role="$nhwW" value="1.2" />
-          </node>
-          <node concept="2$GKAY" id="7mV$Q_d6EUL" role="SCFHe">
-            <property role="2$GKAX" value="3" />
-          </node>
-          <node concept="2$GKAY" id="7mV$Q_d6EUM" role="SCFH3">
-            <property role="2$GKAX" value="4" />
-          </node>
-        </node>
+        <node concept="1Rrs5n" id="7mV$Q_d735H" role="SClZ9" />
       </node>
     </node>
     <node concept="1GH8rP" id="7bpBJvmqTaQ" role="1GHewQ" />

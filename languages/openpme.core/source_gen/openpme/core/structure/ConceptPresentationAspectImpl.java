@@ -22,7 +22,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Discretize;
   private ConceptPresentation props_Domain;
   private ConceptPresentation props_Epsilon;
-  private ConceptPresentation props_Force;
   private ConceptPresentation props_Foreach;
   private ConceptPresentation props_Ghost;
   private ConceptPresentation props_Grid;
@@ -30,19 +29,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ICommand;
   private ConceptPresentation props_ICommandC;
   private ConceptPresentation props_ICommandD;
+  private ConceptPresentation props_ICommandH;
   private ConceptPresentation props_ILoop;
   private ConceptPresentation props_InitParticles;
   private ConceptPresentation props_InitialConditions;
   private ConceptPresentation props_Interpolate;
   private ConceptPresentation props_JacobianOperator;
-  private ConceptPresentation props_KineticEnergy;
   private ConceptPresentation props_Lambda;
   private ConceptPresentation props_LaplacianOperator;
-  private ConceptPresentation props_ListOfCommForeach;
-  private ConceptPresentation props_ListOfCommLoopD;
-  private ConceptPresentation props_ListOfHybridComm;
   private ConceptPresentation props_ListOfPhysicalNotations;
-  private ConceptPresentation props_ListOfPhysicalQuantities;
+  private ConceptPresentation props_Loop;
   private ConceptPresentation props_NonPeriodic;
   private ConceptPresentation props_NonUniform;
   private ConceptPresentation props_Nu;
@@ -54,7 +50,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Periodic;
   private ConceptPresentation props_Phi;
   private ConceptPresentation props_PhysicalQuantity;
-  private ConceptPresentation props_PotentialEnergy;
   private ConceptPresentation props_PowerExpression;
   private ConceptPresentation props_Property;
   private ConceptPresentation props_Psi;
@@ -63,8 +58,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Rho;
   private ConceptPresentation props_Sigma;
   private ConceptPresentation props_SqrtExpression;
-  private ConceptPresentation props_StartLoop;
-  private ConceptPresentation props_StopLoop;
   private ConceptPresentation props_Tau;
   private ConceptPresentation props_TimeLoop;
   private ConceptPresentation props_TimeLoopC;
@@ -79,7 +72,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_VisualizeDomDecomp;
   private ConceptPresentation props_VisualizeParticles;
   private ConceptPresentation props_Vorticity;
-  private ConceptPresentation props_dtLoop;
 
   @Override
   @Nullable
@@ -177,13 +169,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Epsilon = cpb.create();
         }
         return props_Epsilon;
-      case LanguageConceptSwitch.Force:
-        if (props_Force == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("force");
-          props_Force = cpb.create();
-        }
-        return props_Force;
       case LanguageConceptSwitch.Foreach:
         if (props_Foreach == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -230,6 +215,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ICommandD = cpb.create();
         }
         return props_ICommandD;
+      case LanguageConceptSwitch.ICommandH:
+        if (props_ICommandH == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ICommandH = cpb.create();
+        }
+        return props_ICommandH;
       case LanguageConceptSwitch.ILoop:
         if (props_ILoop == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -264,13 +255,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JacobianOperator = cpb.create();
         }
         return props_JacobianOperator;
-      case LanguageConceptSwitch.KineticEnergy:
-        if (props_KineticEnergy == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("KineticEnergy");
-          props_KineticEnergy = cpb.create();
-        }
-        return props_KineticEnergy;
       case LanguageConceptSwitch.Lambda:
         if (props_Lambda == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -285,36 +269,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_LaplacianOperator = cpb.create();
         }
         return props_LaplacianOperator;
-      case LanguageConceptSwitch.ListOfCommForeach:
-        if (props_ListOfCommForeach == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ListOfCommForeach = cpb.create();
-        }
-        return props_ListOfCommForeach;
-      case LanguageConceptSwitch.ListOfCommLoopD:
-        if (props_ListOfCommLoopD == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ListOfCommLoopD = cpb.create();
-        }
-        return props_ListOfCommLoopD;
-      case LanguageConceptSwitch.ListOfHybridComm:
-        if (props_ListOfHybridComm == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ListOfHybridComm = cpb.create();
-        }
-        return props_ListOfHybridComm;
       case LanguageConceptSwitch.ListOfPhysicalNotations:
         if (props_ListOfPhysicalNotations == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_ListOfPhysicalNotations = cpb.create();
         }
         return props_ListOfPhysicalNotations;
-      case LanguageConceptSwitch.ListOfPhysicalQuantities:
-        if (props_ListOfPhysicalQuantities == null) {
+      case LanguageConceptSwitch.Loop:
+        if (props_Loop == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ListOfPhysicalQuantities = cpb.create();
+          props_Loop = cpb.create();
         }
-        return props_ListOfPhysicalQuantities;
+        return props_Loop;
       case LanguageConceptSwitch.NonPeriodic:
         if (props_NonPeriodic == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -392,13 +358,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PhysicalQuantity = cpb.create();
         }
         return props_PhysicalQuantity;
-      case LanguageConceptSwitch.PotentialEnergy:
-        if (props_PotentialEnergy == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("PotentialEnergy");
-          props_PotentialEnergy = cpb.create();
-        }
-        return props_PotentialEnergy;
       case LanguageConceptSwitch.PowerExpression:
         if (props_PowerExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -454,20 +413,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SqrtExpression = cpb.create();
         }
         return props_SqrtExpression;
-      case LanguageConceptSwitch.StartLoop:
-        if (props_StartLoop == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("StartLoop");
-          props_StartLoop = cpb.create();
-        }
-        return props_StartLoop;
-      case LanguageConceptSwitch.StopLoop:
-        if (props_StopLoop == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("StopLoop");
-          props_StopLoop = cpb.create();
-        }
-        return props_StopLoop;
       case LanguageConceptSwitch.Tau:
         if (props_Tau == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -562,13 +507,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Vorticity = cpb.create();
         }
         return props_Vorticity;
-      case LanguageConceptSwitch.dtLoop:
-        if (props_dtLoop == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("dtLoop");
-          props_dtLoop = cpb.create();
-        }
-        return props_dtLoop;
     }
     return null;
   }
