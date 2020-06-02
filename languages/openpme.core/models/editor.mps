@@ -143,8 +143,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7OuveptiXd_">
-    <property role="3GE5qa" value="initialization.boundry" />
-    <ref role="1XX52x" to="r2co:6z0p_feMdxV" resolve="BoundryConditions" />
+    <property role="3GE5qa" value="initialization.boundary" />
+    <ref role="1XX52x" to="r2co:6z0p_feMdxV" resolve="BoundaryConditions" />
     <node concept="3EZMnI" id="7OuveptiXdE" role="2wV5jI">
       <node concept="3F1sOY" id="7OuveptiXdN" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:6z0p_feMAug" resolve="Boundry" />
@@ -153,7 +153,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7OuveptiXeh">
-    <property role="3GE5qa" value="initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundary" />
     <ref role="1XX52x" to="r2co:6z0p_feMAuk" resolve="NonPeriodic" />
     <node concept="3EZMnI" id="7OuveptiXej" role="2wV5jI">
       <node concept="PMmxH" id="7OuveptiXeq" role="3EZMnx">
@@ -163,7 +163,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7OuveptiXeR">
-    <property role="3GE5qa" value="initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundary" />
     <ref role="1XX52x" to="r2co:6z0p_feMAuj" resolve="Periodic" />
     <node concept="3EZMnI" id="7OuveptiXeT" role="2wV5jI">
       <node concept="PMmxH" id="7OuveptiXf0" role="3EZMnx">
@@ -211,8 +211,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7Ouveptj1c1">
-    <property role="3GE5qa" value="initialization.boundry" />
-    <ref role="1XX52x" to="r2co:6z0p_feMAui" resolve="TypeOfBoundry" />
+    <property role="3GE5qa" value="initialization.boundary" />
+    <ref role="1XX52x" to="r2co:6z0p_feMAui" resolve="TypeOfBoundary" />
     <node concept="3EZMnI" id="7Ouveptj1c3" role="2wV5jI">
       <node concept="3F0ifn" id="7Ouveptj1ca" role="3EZMnx" />
       <node concept="l2Vlx" id="7Ouveptj1c6" role="2iSdaV" />
