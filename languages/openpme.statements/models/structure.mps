@@ -17,6 +17,7 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -25,6 +26,13 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -70,6 +78,25 @@
   <node concept="PlHQZ" id="70bNw4gtmOZ">
     <property role="EcuMT" value="8073773260958166335" />
     <property role="TrG5h" value="GlobalVariableDeclarationProvider" />
+  </node>
+  <node concept="1TIwiD" id="70bNw4gtx2g">
+    <property role="EcuMT" value="8073773260958208144" />
+    <property role="TrG5h" value="StatementList" />
+    <property role="R4oN_" value="statement list" />
+    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="70bNw4gtx2h" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="70bNw4gtx2m" role="PzmwI">
+      <ref role="PrY4T" node="70bNw4gtmOZ" resolve="GlobalVariableDeclarationProvider" />
+    </node>
+    <node concept="1TJgyj" id="70bNw4gtx2q" role="1TKVEi">
+      <property role="IQ2ns" value="8073773260958208154" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="statements" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6sMVU6wHrBz" resolve="Statement" />
+    </node>
   </node>
 </model>
 
