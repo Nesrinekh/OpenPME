@@ -23,6 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FalseLiteral;
   private ConceptPresentation props_GreaterEqualsExpression;
   private ConceptPresentation props_GreaterExpression;
+  private ConceptPresentation props_ITyped;
   private ConceptPresentation props_IntegerLiteral;
   private ConceptPresentation props_LessEqualsExpression;
   private ConceptPresentation props_LessExpression;
@@ -39,6 +40,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_StringLiteral;
   private ConceptPresentation props_SubtractionExpression;
   private ConceptPresentation props_TrueLiteral;
+  private ConceptPresentation props_Type;
   private ConceptPresentation props_UnaryExpression;
   private ConceptPresentation props_UnaryMinus;
   private ConceptPresentation props_UnaryPlus;
@@ -152,6 +154,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GreaterExpression = cpb.create();
         }
         return props_GreaterExpression;
+      case LanguageConceptSwitch.ITyped:
+        if (props_ITyped == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ITyped = cpb.create();
+        }
+        return props_ITyped;
       case LanguageConceptSwitch.IntegerLiteral:
         if (props_IntegerLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -269,6 +277,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TrueLiteral = cpb.create();
         }
         return props_TrueLiteral;
+      case LanguageConceptSwitch.Type:
+        if (props_Type == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Type = cpb.create();
+        }
+        return props_Type;
       case LanguageConceptSwitch.UnaryExpression:
         if (props_UnaryExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

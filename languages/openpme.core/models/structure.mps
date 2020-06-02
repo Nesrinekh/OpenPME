@@ -20,8 +20,15 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -270,7 +277,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="continuous_body" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7Ouveptj$mx" resolve="ListOfContinuousComm" />
+      <ref role="20lvS9" node="7mV$Q_d6oGv" resolve="ICommandC" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z0p_feMAv7">
@@ -291,28 +298,23 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="discrete_body" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7Ouveptjg1M" resolve="ListOfDiscreteComm" />
+      <ref role="20lvS9" node="7mV$Q_d6oGr" resolve="ICommandD" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="7Ouveptjg1M">
-    <property role="EcuMT" value="9015780832891961458" />
-    <property role="3GE5qa" value="simulation.discrete" />
-    <property role="TrG5h" value="ListOfDiscreteComm" />
-    <property role="R5$K7" value="true" />
-    <property role="34LRSv" value="listofdiscretecommands" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg3m">
     <property role="EcuMT" value="9015780832891961558" />
     <property role="3GE5qa" value="simulation.discrete" />
     <property role="TrG5h" value="PhysicalQuantity" />
     <property role="34LRSv" value="physical_quantity" />
-    <ref role="1TJDcQ" node="7Ouveptjg1M" resolve="ListOfDiscreteComm" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="1TJgyj" id="7Ouveptjg3q" role="1TKVEi">
       <property role="IQ2ns" value="9015780832891961562" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="physical_quantity_name" />
       <ref role="20lvS9" node="7Ouveptjg3s" resolve="ListOfPhysicalQuantities" />
+    </node>
+    <node concept="PrWs8" id="7mV$Q_d6oGI" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGr" resolve="ICommandD" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptjg3s">
@@ -433,117 +435,91 @@
     <property role="EcuMT" value="7436269412207138378" />
     <property role="TrG5h" value="Interpolate" />
     <property role="3GE5qa" value="simulation.continuous.loopC" />
-    <ref role="1TJDcQ" node="7Ouveptj$nz" resolve="ListOfCommLoopC" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="7mV$Q_d6oG$" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHprK">
     <property role="EcuMT" value="7436269412207138544" />
     <property role="3GE5qa" value="simulation.continuous.loopC" />
     <property role="TrG5h" value="OnGrid" />
     <property role="34LRSv" value="ongrid" />
-    <ref role="1TJDcQ" node="7Ouveptj$nz" resolve="ListOfCommLoopC" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="7mV$Q_d6oGA" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHprL">
     <property role="EcuMT" value="7436269412207138545" />
     <property role="3GE5qa" value="simulation.continuous.loopC" />
     <property role="TrG5h" value="OnParticle" />
     <property role="34LRSv" value="onparticle" />
-    <ref role="1TJDcQ" node="7Ouveptj$nz" resolve="ListOfCommLoopC" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="7mV$Q_d6oGC" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHprM">
     <property role="EcuMT" value="7436269412207138546" />
     <property role="3GE5qa" value="simulation.discrete.loopD" />
     <property role="TrG5h" value="CellList" />
     <property role="34LRSv" value="celllist" />
-    <ref role="1TJDcQ" node="7Ouveptj$n$" resolve="ListOfCommLoopD" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="7mV$Q_d6oGG" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGr" resolve="ICommandD" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHprN">
     <property role="EcuMT" value="7436269412207138547" />
     <property role="3GE5qa" value="simulation.discrete.loopD" />
     <property role="TrG5h" value="VerletList" />
     <property role="34LRSv" value="verletlist" />
-    <ref role="1TJDcQ" node="7Ouveptj$n$" resolve="ListOfCommLoopD" />
-  </node>
-  <node concept="1TIwiD" id="6sMVU6wHprO">
-    <property role="EcuMT" value="7436269412207138548" />
-    <property role="3GE5qa" value="simulation.timeLoopLimits" />
-    <property role="TrG5h" value="dtLoop" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="6sMVU6wHprP">
-    <property role="EcuMT" value="7436269412207138549" />
-    <property role="3GE5qa" value="simulation.timeLoopLimits" />
-    <property role="TrG5h" value="StartLoop" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="6sMVU6wHprQ">
-    <property role="EcuMT" value="7436269412207138550" />
-    <property role="3GE5qa" value="simulation.timeLoopLimits" />
-    <property role="TrG5h" value="StopLoop" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="7Ouveptj$mx">
-    <property role="EcuMT" value="9015780832892044705" />
-    <property role="3GE5qa" value="simulation.continuous" />
-    <property role="TrG5h" value="ListOfContinuousComm" />
-    <property role="34LRSv" value="ListOfContinuousCommands" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="7mV$Q_d6oGM" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGr" resolve="ICommandD" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptj$ns">
     <property role="EcuMT" value="9015780832892044764" />
     <property role="3GE5qa" value="simulation.continuous" />
     <property role="TrG5h" value="Vectorial" />
-    <ref role="1TJDcQ" node="7Ouveptj$mx" resolve="ListOfContinuousComm" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="7mV$Q_d6oGE" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptj$nt">
     <property role="EcuMT" value="9015780832892044765" />
     <property role="3GE5qa" value="simulation.continuous" />
     <property role="TrG5h" value="Grid" />
-    <ref role="1TJDcQ" node="7Ouveptj$mx" resolve="ListOfContinuousComm" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="PrWs8" id="7mV$Q_d6oGy" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptj$nv">
     <property role="EcuMT" value="9015780832892044767" />
     <property role="3GE5qa" value="simulation.continuous" />
     <property role="TrG5h" value="Discretize" />
-    <ref role="1TJDcQ" node="7Ouveptj$mx" resolve="ListOfContinuousComm" />
+    <ref role="1TJDcQ" node="6z0p_feMAuu" resolve="TypeOfSimulation" />
   </node>
   <node concept="1TIwiD" id="7Ouveptj$nw">
     <property role="EcuMT" value="9015780832892044768" />
     <property role="3GE5qa" value="simulation.continuous.loopC" />
     <property role="TrG5h" value="TimeLoopC" />
     <property role="34LRSv" value="TimeLoop" />
-    <ref role="1TJDcQ" node="7Ouveptj$mx" resolve="ListOfContinuousComm" />
-    <node concept="1TJgyj" id="7Ouveptj$nx" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892044769" />
+    <ref role="1TJDcQ" node="7mV$Q_d6iww" resolve="TimeLoop" />
+    <node concept="1TJgyj" id="7mV$Q_d6ixS" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403556804728" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="loopC_body" />
-      <ref role="20lvS9" node="7Ouveptj$nz" resolve="ListOfCommLoopC" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7mV$Q_d6oGv" resolve="ICommandC" />
     </node>
-    <node concept="1TJgyj" id="7OuveptjT8q" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892129818" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="start" />
-      <ref role="20lvS9" node="6sMVU6wHprP" resolve="StartLoop" />
+    <node concept="PrWs8" id="7mV$Q_d6uLk" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
     </node>
-    <node concept="1TJgyj" id="7OuveptjT8t" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892129821" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="stop" />
-      <ref role="20lvS9" node="6sMVU6wHprQ" resolve="StopLoop" />
-    </node>
-    <node concept="1TJgyj" id="7OuveptjT8x" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892129825" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dt" />
-      <ref role="20lvS9" node="6sMVU6wHprO" resolve="dtLoop" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7Ouveptj$nz">
-    <property role="EcuMT" value="9015780832892044771" />
-    <property role="3GE5qa" value="simulation.continuous.loopC" />
-    <property role="TrG5h" value="ListOfCommLoopC" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7Ouveptj$n$">
     <property role="EcuMT" value="9015780832892044772" />
@@ -557,31 +533,16 @@
     <property role="3GE5qa" value="simulation.discrete.loopD" />
     <property role="TrG5h" value="TimeLoopD" />
     <property role="34LRSv" value="TimeLoop" />
-    <ref role="1TJDcQ" node="7Ouveptjg1M" resolve="ListOfDiscreteComm" />
-    <node concept="1TJgyj" id="7OuveptjZbC" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892154600" />
+    <ref role="1TJDcQ" node="7mV$Q_d6iww" resolve="TimeLoop" />
+    <node concept="1TJgyj" id="7mV$Q_d6ixX" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403556804733" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="loopD_body" />
+      <property role="20kJfa" value="body" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7Ouveptj$n$" resolve="ListOfCommLoopD" />
+      <ref role="20lvS9" node="7mV$Q_d6oGr" resolve="ICommandD" />
     </node>
-    <node concept="1TJgyj" id="7OuveptjZbE" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892154602" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="start" />
-      <ref role="20lvS9" node="6sMVU6wHprP" resolve="StartLoop" />
-    </node>
-    <node concept="1TJgyj" id="7OuveptjZbH" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892154605" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="stop" />
-      <ref role="20lvS9" node="6sMVU6wHprQ" resolve="StopLoop" />
-    </node>
-    <node concept="1TJgyj" id="7OuveptjZbL" role="1TKVEi">
-      <property role="IQ2ns" value="9015780832892154609" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dt" />
-      <ref role="20lvS9" node="6sMVU6wHprO" resolve="dtLoop" />
+    <node concept="PrWs8" id="7mV$Q_d6oGK" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6oGr" resolve="ICommandD" />
     </node>
   </node>
   <node concept="1TIwiD" id="5MzX6cksiVg">
@@ -766,6 +727,70 @@
     <property role="3GE5qa" value="simulation.particles" />
     <property role="TrG5h" value="Vorticity" />
     <ref role="1TJDcQ" node="1MYyjtFP9yj" resolve="Property" />
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d6iww">
+    <property role="EcuMT" value="8483536403556804640" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="TimeLoop" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="7mV$Q_d6iw_" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403556804645" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dt" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
+    </node>
+    <node concept="1TJgyj" id="7mV$Q_d6iwB" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403556804647" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="start" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    </node>
+    <node concept="1TJgyj" id="7mV$Q_d6iwE" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403556804650" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stop" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    </node>
+    <node concept="PrWs8" id="7mV$Q_d6iy2" role="PzmwI">
+      <ref role="PrY4T" node="7mV$Q_d6ixZ" resolve="ILoop" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7mV$Q_d6ixZ">
+    <property role="EcuMT" value="8483536403556804735" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="ILoop" />
+    <node concept="1TJgyj" id="7mV$Q_d6iy0" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403556804736" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7mV$Q_d6oGq" resolve="ICommand" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7mV$Q_d6oGq">
+    <property role="EcuMT" value="8483536403556829978" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="ICommand" />
+  </node>
+  <node concept="PlHQZ" id="7mV$Q_d6oGr">
+    <property role="EcuMT" value="8483536403556829979" />
+    <property role="3GE5qa" value="simulation.discrete" />
+    <property role="TrG5h" value="ICommandD" />
+    <node concept="PrWs8" id="7mV$Q_d6oGs" role="PrDN$">
+      <ref role="PrY4T" node="7mV$Q_d6oGq" resolve="ICommand" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7mV$Q_d6oGv">
+    <property role="EcuMT" value="8483536403556829983" />
+    <property role="3GE5qa" value="simulation.continuous" />
+    <property role="TrG5h" value="ICommandC" />
+    <node concept="PrWs8" id="7mV$Q_d6oGw" role="PrDN$">
+      <ref role="PrY4T" node="7mV$Q_d6oGq" resolve="ICommand" />
+    </node>
   </node>
 </model>
 

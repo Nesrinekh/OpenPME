@@ -14,6 +14,7 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIIdentifierNamedConcept = createDescriptorForIIdentifierNamedConcept();
+  /*package*/ final ConceptDescriptor myConceptIReference = createDescriptorForIReference();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -28,7 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptIIdentifierNamedConcept);
+    return Arrays.asList(myConceptIIdentifierNamedConcept, myConceptIReference);
   }
 
   @Override
@@ -37,6 +38,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.IIdentifierNamedConcept:
         return myConceptIIdentifierNamedConcept;
+      case LanguageConceptSwitch.IReference:
+        return myConceptIReference;
       default:
         return null;
     }
@@ -56,6 +59,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.interface_();
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)/196114789556629030");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.base", "IReference", 0x2b72d3f146434aecL, 0x8f262599b23e0e1bL, 0x700bce01107697ccL);
+    b.interface_();
+    b.origin("r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)/8073773260958242764");
     b.version(2);
     return b.create();
   }

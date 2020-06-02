@@ -13,11 +13,14 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAbstractForStatement = createDescriptorForAbstractForStatement();
+  /*package*/ final ConceptDescriptor myConceptAbstractLoopStatement = createDescriptorForAbstractLoopStatement();
   /*package*/ final ConceptDescriptor myConceptElseIfStatement = createDescriptorForElseIfStatement();
-  /*package*/ final ConceptDescriptor myConceptGeneralStatement = createDescriptorForGeneralStatement();
+  /*package*/ final ConceptDescriptor myConceptExpressionStatement = createDescriptorForExpressionStatement();
+  /*package*/ final ConceptDescriptor myConceptGlobalVariableDeclarationProvider = createDescriptorForGlobalVariableDeclarationProvider();
   /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
-  /*package*/ final ConceptDescriptor myConceptRealLiteral = createDescriptorForRealLiteral();
-  /*package*/ final ConceptDescriptor myConceptTimeLoopStatement = createDescriptorForTimeLoopStatement();
+  /*package*/ final ConceptDescriptor myConceptStatement = createDescriptorForStatement();
+  /*package*/ final ConceptDescriptor myConceptStatementList = createDescriptorForStatementList();
   /*package*/ final ConceptDescriptor myConceptVariableDeclaration = createDescriptorForVariableDeclaration();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -29,27 +32,34 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptElseIfStatement, myConceptGeneralStatement, myConceptIfStatement, myConceptRealLiteral, myConceptTimeLoopStatement, myConceptVariableDeclaration);
+    return Arrays.asList(myConceptAbstractForStatement, myConceptAbstractLoopStatement, myConceptElseIfStatement, myConceptExpressionStatement, myConceptGlobalVariableDeclarationProvider, myConceptIfStatement, myConceptStatement, myConceptStatementList, myConceptVariableDeclaration);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.AbstractForStatement:
+        return myConceptAbstractForStatement;
+      case LanguageConceptSwitch.AbstractLoopStatement:
+        return myConceptAbstractLoopStatement;
       case LanguageConceptSwitch.ElseIfStatement:
         return myConceptElseIfStatement;
-      case LanguageConceptSwitch.GeneralStatement:
-        return myConceptGeneralStatement;
+      case LanguageConceptSwitch.ExpressionStatement:
+        return myConceptExpressionStatement;
+      case LanguageConceptSwitch.GlobalVariableDeclarationProvider:
+        return myConceptGlobalVariableDeclarationProvider;
       case LanguageConceptSwitch.IfStatement:
         return myConceptIfStatement;
-      case LanguageConceptSwitch.RealLiteral:
-        return myConceptRealLiteral;
-      case LanguageConceptSwitch.TimeLoopStatement:
-        return myConceptTimeLoopStatement;
+      case LanguageConceptSwitch.Statement:
+        return myConceptStatement;
+      case LanguageConceptSwitch.StatementList:
+        return myConceptStatementList;
       case LanguageConceptSwitch.VariableDeclaration:
         return myConceptVariableDeclaration;
       default:
@@ -66,46 +76,93 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForElseIfStatement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "ElseIfStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4b8b96c3273f0ffcL);
-    b.class_(false, false, false);
-    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609788");
+  private static ConceptDescriptor createDescriptorForAbstractForStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "AbstractForStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce011076c95eL);
+    b.class_(false, true, false);
+    b.super_("openpme.statements.structure.AbstractLoopStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce011076c95fL);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/8073773260958255454");
     b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForGeneralStatement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "GeneralStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+  private static ConceptDescriptor createDescriptorForAbstractLoopStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "AbstractLoopStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce011076c95fL);
     b.class_(false, true, false);
-    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/7436269412207147491");
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/8073773260958255455");
+    b.version(2);
+    b.aggregate("body", 0x700bce011076c962L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110761090L).optional(false).ordered(true).multiple(false).origin("8073773260958255458").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForElseIfStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "ElseIfStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4b8b96c3273f0ffcL);
+    b.class_(false, false, false);
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609788");
+    b.version(2);
+    b.aggregate("condition", 0x700bce0110769773L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L).optional(false).ordered(true).multiple(false).origin("8073773260958242675").done();
+    b.aggregate("body", 0x700bce0110769775L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110761090L).optional(false).ordered(true).multiple(false).origin("8073773260958242677").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExpressionStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "ExpressionStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce01107610caL);
+    b.class_(false, false, false);
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/8073773260958208202");
+    b.version(2);
+    b.aggregate("expression", 0x700bce01107610cbL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L).optional(false).ordered(true).multiple(false).origin("8073773260958208203").done();
+    b.alias("<expr>");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGlobalVariableDeclarationProvider() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "GlobalVariableDeclarationProvider", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110756d3fL);
+    b.interface_();
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/8073773260958166335");
     b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIfStatement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "IfStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4b8b96c3273f0ffbL);
     b.class_(false, false, false);
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609787");
     b.version(2);
+    b.aggregate("condition", 0x700bce011076111fL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L).optional(false).ordered(true).multiple(false).origin("8073773260958208287").done();
+    b.aggregate("ifTrue", 0x700bce0110761121L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110761090L).optional(false).ordered(true).multiple(false).origin("8073773260958208289").done();
+    b.aggregate("ElseIfClause", 0x700bce0110761124L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4b8b96c3273f0ffcL).optional(true).ordered(true).multiple(true).origin("8073773260958208292").done();
+    b.aggregate("ifFalse", 0x700bce0110761128L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110761090L).optional(true).ordered(true).multiple(false).origin("8073773260958208296").done();
+    b.alias("if");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForRealLiteral() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "RealLiteral", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e4L);
-    b.class_(false, false, false);
-    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/7436269412207147492");
+  private static ConceptDescriptor createDescriptorForStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+    b.class_(false, true, false);
+    b.parent(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110756d3fL);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/7436269412207147491");
     b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForTimeLoopStatement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "TimeLoopStatement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x4b8b96c3273f0ffdL);
+  private static ConceptDescriptor createDescriptorForStatementList() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "StatementList", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110761090L);
     b.class_(false, false, false);
-    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609789");
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
+    b.parent(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x700bce0110756d3fL);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/8073773260958208144");
     b.version(2);
+    b.aggregate("statements", 0x700bce011076109aL).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(true).ordered(true).multiple(true).origin("8073773260958208154").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVariableDeclaration() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "VariableDeclaration", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x2b8bd5caeb92e1aL);
     b.class_(false, false, false);
+    b.parent(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x4b64b50fb2fc7720L);
+    b.parent(0x2b72d3f146434aecL, 0x8f262599b23e0e1bL, 0x2b8bd5caeb92e26L);
+    b.parent(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x700bce011076982bL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/196114789556629018");
     b.version(2);
+    b.aggregate("init", 0x700bce01107698c9L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L).optional(true).ordered(true).multiple(false).origin("8073773260958243017").done();
     return b.create();
   }
 }

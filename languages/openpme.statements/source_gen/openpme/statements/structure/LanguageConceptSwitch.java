@@ -9,20 +9,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int ElseIfStatement = 0;
-  public static final int GeneralStatement = 1;
-  public static final int IfStatement = 2;
-  public static final int RealLiteral = 3;
-  public static final int TimeLoopStatement = 4;
-  public static final int VariableDeclaration = 5;
+  public static final int AbstractForStatement = 0;
+  public static final int AbstractLoopStatement = 1;
+  public static final int ElseIfStatement = 2;
+  public static final int ExpressionStatement = 3;
+  public static final int GlobalVariableDeclarationProvider = 4;
+  public static final int IfStatement = 5;
+  public static final int Statement = 6;
+  public static final int StatementList = 7;
+  public static final int VariableDeclaration = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L);
+    builder.put(0x700bce011076c95eL, AbstractForStatement);
+    builder.put(0x700bce011076c95fL, AbstractLoopStatement);
     builder.put(0x4b8b96c3273f0ffcL, ElseIfStatement);
-    builder.put(0x6732efa1a0b5b9e3L, GeneralStatement);
+    builder.put(0x700bce01107610caL, ExpressionStatement);
+    builder.put(0x700bce0110756d3fL, GlobalVariableDeclarationProvider);
     builder.put(0x4b8b96c3273f0ffbL, IfStatement);
-    builder.put(0x6732efa1a0b5b9e4L, RealLiteral);
-    builder.put(0x4b8b96c3273f0ffdL, TimeLoopStatement);
+    builder.put(0x6732efa1a0b5b9e3L, Statement);
+    builder.put(0x700bce0110761090L, StatementList);
     builder.put(0x2b8bd5caeb92e1aL, VariableDeclaration);
     myIndex = builder.seal();
   }

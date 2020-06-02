@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_IIdentifierNamedConcept;
+  private ConceptPresentation props_IReference;
 
   @Override
   @Nullable
@@ -22,6 +23,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IIdentifierNamedConcept = cpb.create();
         }
         return props_IIdentifierNamedConcept;
+      case LanguageConceptSwitch.IReference:
+        if (props_IReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IReference = cpb.create();
+        }
+        return props_IReference;
     }
     return null;
   }

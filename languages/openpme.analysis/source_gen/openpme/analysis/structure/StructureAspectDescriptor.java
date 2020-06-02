@@ -25,7 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
-    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
+    deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
     deps.aggregatedLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
   }
 
@@ -62,8 +62,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("jetbrains.mps.lang.core.structure.NodeAttribute", 0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da54L);
     b.origin("r:4c57e75d-fecf-4ba1-9c7d-6fa99b103c50(openpme.analysis.structure)/6721469832529918443");
     b.version(2);
-    b.aggregate("inputError", 0x5d47753368735b30L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e4L).optional(true).ordered(true).multiple(false).origin("6721469832529926960").done();
-    b.aggregate("outputError", 0x5d47753368735f0bL).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e4L).optional(true).ordered(true).multiple(false).origin("6721469832529927947").done();
+    b.aggregate("inputError", 0x5d47753368735b30L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97faL).optional(true).ordered(true).multiple(false).origin("6721469832529926960").done();
+    b.aggregate("outputError", 0x5d47753368735f0bL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97faL).optional(true).ordered(true).multiple(false).origin("6721469832529927947").done();
     b.aggregate("replacement", 0x5d47753368735f10L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b215L).optional(true).ordered(true).multiple(false).origin("6721469832529927952").done();
     return b.create();
   }

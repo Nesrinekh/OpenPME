@@ -31,6 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFalseLiteral = createDescriptorForFalseLiteral();
   /*package*/ final ConceptDescriptor myConceptGreaterEqualsExpression = createDescriptorForGreaterEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptGreaterExpression = createDescriptorForGreaterExpression();
+  /*package*/ final ConceptDescriptor myConceptITyped = createDescriptorForITyped();
   /*package*/ final ConceptDescriptor myConceptIntegerLiteral = createDescriptorForIntegerLiteral();
   /*package*/ final ConceptDescriptor myConceptLessEqualsExpression = createDescriptorForLessEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptLessExpression = createDescriptorForLessExpression();
@@ -47,6 +48,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptStringLiteral = createDescriptorForStringLiteral();
   /*package*/ final ConceptDescriptor myConceptSubtractionExpression = createDescriptorForSubtractionExpression();
   /*package*/ final ConceptDescriptor myConceptTrueLiteral = createDescriptorForTrueLiteral();
+  /*package*/ final ConceptDescriptor myConceptType = createDescriptorForType();
   /*package*/ final ConceptDescriptor myConceptUnaryExpression = createDescriptorForUnaryExpression();
   /*package*/ final ConceptDescriptor myConceptUnaryMinus = createDescriptorForUnaryMinus();
   /*package*/ final ConceptDescriptor myConceptUnaryPlus = createDescriptorForUnaryPlus();
@@ -68,7 +70,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptComparisonExpression, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVectorElementAccess, myConceptVectorLiteral);
+    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptComparisonExpression, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptITyped, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptType, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVectorElementAccess, myConceptVectorLiteral);
   }
 
   @Override
@@ -103,6 +105,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGreaterEqualsExpression;
       case LanguageConceptSwitch.GreaterExpression:
         return myConceptGreaterExpression;
+      case LanguageConceptSwitch.ITyped:
+        return myConceptITyped;
       case LanguageConceptSwitch.IntegerLiteral:
         return myConceptIntegerLiteral;
       case LanguageConceptSwitch.LessEqualsExpression:
@@ -135,6 +139,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSubtractionExpression;
       case LanguageConceptSwitch.TrueLiteral:
         return myConceptTrueLiteral;
+      case LanguageConceptSwitch.Type:
+        return myConceptType;
       case LanguageConceptSwitch.UnaryExpression:
         return myConceptUnaryExpression;
       case LanguageConceptSwitch.UnaryMinus:
@@ -279,6 +285,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias(">");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForITyped() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "ITyped", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x700bce011076982bL);
+    b.interface_();
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/8073773260958242859");
+    b.version(2);
+    b.aggregate("type", 0x700bce011076982cL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x700bce011076982eL).optional(true).ordered(true).multiple(false).origin("8073773260958242860").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIntegerLiteral() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "IntegerLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a9749L);
     b.class_(false, false, false);
@@ -420,6 +434,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("value", 0x72d99ef7d66b938bL).type(PrimitiveTypeId.BOOLEAN).origin("8275820577561482123").done();
     b.alias("true");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "Type", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x700bce011076982eL);
+    b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x11f8a0774f2L);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/8073773260958242862");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForUnaryExpression() {

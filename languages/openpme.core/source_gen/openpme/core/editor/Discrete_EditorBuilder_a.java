@@ -28,7 +28,7 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 /*package*/ class Discrete_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -171,7 +171,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.discrete_body$Pge3;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.ListOfDiscreteComm$1L;
+      return CONCEPTS.ICommandD$g5;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -221,6 +221,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept ListOfDiscreteComm$1L = MetaAdapterFactory.getConcept(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4d0072L, "openpme.core.structure.ListOfDiscreteComm");
+    /*package*/ static final SInterfaceConcept ICommandD$g5 = MetaAdapterFactory.getInterfaceConcept(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x75bb93694d198b1bL, "openpme.core.structure.ICommandD");
   }
 }

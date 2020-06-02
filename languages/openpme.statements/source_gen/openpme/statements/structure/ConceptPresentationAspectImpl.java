@@ -9,11 +9,14 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_AbstractForStatement;
+  private ConceptPresentation props_AbstractLoopStatement;
   private ConceptPresentation props_ElseIfStatement;
-  private ConceptPresentation props_GeneralStatement;
+  private ConceptPresentation props_ExpressionStatement;
+  private ConceptPresentation props_GlobalVariableDeclarationProvider;
   private ConceptPresentation props_IfStatement;
-  private ConceptPresentation props_RealLiteral;
-  private ConceptPresentation props_TimeLoopStatement;
+  private ConceptPresentation props_Statement;
+  private ConceptPresentation props_StatementList;
   private ConceptPresentation props_VariableDeclaration;
 
   @Override
@@ -21,6 +24,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.AbstractForStatement:
+        if (props_AbstractForStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractForStatement = cpb.create();
+        }
+        return props_AbstractForStatement;
+      case LanguageConceptSwitch.AbstractLoopStatement:
+        if (props_AbstractLoopStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractLoopStatement = cpb.create();
+        }
+        return props_AbstractLoopStatement;
       case LanguageConceptSwitch.ElseIfStatement:
         if (props_ElseIfStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -28,37 +43,46 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ElseIfStatement = cpb.create();
         }
         return props_ElseIfStatement;
-      case LanguageConceptSwitch.GeneralStatement:
-        if (props_GeneralStatement == null) {
+      case LanguageConceptSwitch.ExpressionStatement:
+        if (props_ExpressionStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_GeneralStatement = cpb.create();
+          cpb.shortDesc("an expression statement");
+          cpb.rawPresentation("<expr>");
+          props_ExpressionStatement = cpb.create();
         }
-        return props_GeneralStatement;
+        return props_ExpressionStatement;
+      case LanguageConceptSwitch.GlobalVariableDeclarationProvider:
+        if (props_GlobalVariableDeclarationProvider == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_GlobalVariableDeclarationProvider = cpb.create();
+        }
+        return props_GlobalVariableDeclarationProvider;
       case LanguageConceptSwitch.IfStatement:
         if (props_IfStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("IfStatement");
+          cpb.rawPresentation("if");
           props_IfStatement = cpb.create();
         }
         return props_IfStatement;
-      case LanguageConceptSwitch.RealLiteral:
-        if (props_RealLiteral == null) {
+      case LanguageConceptSwitch.Statement:
+        if (props_Statement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("RealLiteral");
-          props_RealLiteral = cpb.create();
+          cpb.shortDesc("an empty statement");
+          props_Statement = cpb.create();
         }
-        return props_RealLiteral;
-      case LanguageConceptSwitch.TimeLoopStatement:
-        if (props_TimeLoopStatement == null) {
+        return props_Statement;
+      case LanguageConceptSwitch.StatementList:
+        if (props_StatementList == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TimeLoopStatement");
-          props_TimeLoopStatement = cpb.create();
+          cpb.shortDesc("statement list");
+          cpb.rawPresentation("StatementList");
+          props_StatementList = cpb.create();
         }
-        return props_TimeLoopStatement;
+        return props_StatementList;
       case LanguageConceptSwitch.VariableDeclaration:
         if (props_VariableDeclaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("VariableDeclaration");
+          cpb.presentationByName();
           props_VariableDeclaration = cpb.create();
         }
         return props_VariableDeclaration;
