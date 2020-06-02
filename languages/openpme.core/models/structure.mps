@@ -113,14 +113,14 @@
   </node>
   <node concept="1TIwiD" id="6z0p_feMdxV">
     <property role="EcuMT" value="7548145485610539131" />
-    <property role="3GE5qa" value="initialization.boundry" />
-    <property role="TrG5h" value="BoundryConditions" />
+    <property role="3GE5qa" value="initialization.boundary" />
+    <property role="TrG5h" value="BoundaryConditions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6z0p_feMAug" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610641296" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="Boundry" />
-      <ref role="20lvS9" node="6z0p_feMAui" resolve="TypeOfBoundry" />
+      <ref role="20lvS9" node="6z0p_feMAui" resolve="TypeOfBoundary" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z0p_feMdxW">
@@ -204,24 +204,24 @@
   </node>
   <node concept="1TIwiD" id="6z0p_feMAui">
     <property role="EcuMT" value="7548145485610641298" />
-    <property role="3GE5qa" value="initialization.boundry" />
-    <property role="TrG5h" value="TypeOfBoundry" />
+    <property role="3GE5qa" value="initialization.boundary" />
+    <property role="TrG5h" value="TypeOfBoundary" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6z0p_feMAuj">
     <property role="EcuMT" value="7548145485610641299" />
-    <property role="3GE5qa" value="initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundary" />
     <property role="TrG5h" value="Periodic" />
     <property role="34LRSv" value="periodic" />
-    <ref role="1TJDcQ" node="6z0p_feMAui" resolve="TypeOfBoundry" />
+    <ref role="1TJDcQ" node="6z0p_feMAui" resolve="TypeOfBoundary" />
   </node>
   <node concept="1TIwiD" id="6z0p_feMAuk">
     <property role="EcuMT" value="7548145485610641300" />
-    <property role="3GE5qa" value="initialization.boundry" />
+    <property role="3GE5qa" value="initialization.boundary" />
     <property role="TrG5h" value="NonPeriodic" />
     <property role="34LRSv" value="non_periodic" />
-    <ref role="1TJDcQ" node="6z0p_feMAui" resolve="TypeOfBoundry" />
+    <ref role="1TJDcQ" node="6z0p_feMAui" resolve="TypeOfBoundary" />
   </node>
   <node concept="1TIwiD" id="6z0p_feMAun">
     <property role="EcuMT" value="7548145485610641303" />
@@ -320,7 +320,7 @@
     <property role="3GE5qa" value="simulation.discrete" />
     <property role="TrG5h" value="ListOfPhysicalQuantities" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="1TJgyi" id="5MzX6ckthzw" role="1TKVEl">
       <property role="IQ2nx" value="6675447779075365088" />
       <property role="TrG5h" value="physical_quantity_value" />
@@ -338,7 +338,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptjg4M">
@@ -352,7 +352,7 @@
     <property role="TrG5h" value="ListOfPhysicalNotations" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="1TJgyj" id="5MzX6cksGGj" role="1TKVEi">
       <property role="IQ2ns" value="6675447779075214099" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -413,7 +413,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptjg9_">
@@ -426,7 +426,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="6sMVU6wHppa">
@@ -600,7 +600,7 @@
     <property role="EcuMT" value="6675447779075658563" />
     <property role="TrG5h" value="VisualizeDomDecomp" />
     <property role="3GE5qa" value="visualization" />
-    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="1TJgyj" id="5MzX6ckupdB" role="1TKVEi">
       <property role="IQ2ns" value="6675447779075658599" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -613,7 +613,7 @@
     <property role="EcuMT" value="6675447779075658713" />
     <property role="3GE5qa" value="visualization" />
     <property role="TrG5h" value="VisualizeParticles" />
-    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="GeneralStatement" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="1TJgyj" id="5MzX6ckupfq" role="1TKVEi">
       <property role="IQ2ns" value="6675447779075658714" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

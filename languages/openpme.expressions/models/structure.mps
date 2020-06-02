@@ -18,12 +18,18 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -360,6 +366,27 @@
     <property role="3GE5qa" value="literals.boolean" />
     <property role="TrG5h" value="FalseLiteral" />
     <ref role="1TJDcQ" node="7bpBJvmqTe9" resolve="BooleanLiteral" />
+  </node>
+  <node concept="PlHQZ" id="70bNw4gtDwF">
+    <property role="EcuMT" value="8073773260958242859" />
+    <property role="TrG5h" value="ITyped" />
+    <property role="3GE5qa" value="types" />
+    <node concept="1TJgyj" id="70bNw4gtDwG" role="1TKVEi">
+      <property role="IQ2ns" value="8073773260958242860" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="70bNw4gtDwI" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="70bNw4gtDwI">
+    <property role="EcuMT" value="8073773260958242862" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="Type" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="70bNw4gtDwL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
   </node>
 </model>
 
