@@ -108,5 +108,11 @@
       <node concept="3clFbS" id="70bNw4gtpU6" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="70bNw4gtx4k">
+    <ref role="13h7C2" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
+    <node concept="13hLZK" id="70bNw4gtx4l" role="13h7CW">
+      <node concept="3clFbS" id="70bNw4gtx4m" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
