@@ -195,5 +195,20 @@
       <ref role="20lvS9" node="70bNw4gtx2g" resolve="StatementList" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2fc2f1uxV6Z">
+    <property role="EcuMT" value="2579446515047575999" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="VariableReference" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="PrWs8" id="2fc2f1uy660" role="PzmwI">
+      <ref role="PrY4T" to="caxt:2fc2f1uxV70" resolve="IVariableReference" />
+    </node>
+    <node concept="1TJgyj" id="2fc2f1uy662" role="1TKVEi">
+      <property role="IQ2ns" value="2579446515047620994" />
+      <property role="20kJfa" value="variableDeclaration" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+    </node>
+  </node>
 </model>
 

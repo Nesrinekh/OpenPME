@@ -7,6 +7,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
+    <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -24,7 +25,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -392,7 +395,7 @@
   <node concept="1TIwiD" id="7mV$Q_d7Dfn">
     <property role="EcuMT" value="8483536403557159895" />
     <property role="TrG5h" value="ParticleAccess" />
-    <property role="3GE5qa" value="var" />
+    <property role="3GE5qa" value="variables" />
     <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
     <node concept="1TJgyj" id="7mV$Q_d7Dfo" role="1TKVEi">
       <property role="IQ2ns" value="8483536403557159896" />
@@ -404,7 +407,7 @@
   <node concept="1TIwiD" id="7mV$Q_d7Dfq">
     <property role="EcuMT" value="8483536403557159898" />
     <property role="TrG5h" value="ContainerAccess" />
-    <property role="3GE5qa" value="var" />
+    <property role="3GE5qa" value="variables" />
     <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
     <node concept="1TJgyj" id="7mV$Q_d7Dfr" role="1TKVEi">
       <property role="IQ2ns" value="8483536403557159899" />
@@ -415,7 +418,7 @@
   </node>
   <node concept="1TIwiD" id="7mV$Q_d7Dft">
     <property role="EcuMT" value="8483536403557159901" />
-    <property role="3GE5qa" value="var" />
+    <property role="3GE5qa" value="variables" />
     <property role="TrG5h" value="VariableAccess" />
     <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
     <node concept="1TJgyj" id="7mV$Q_d7Dfu" role="1TKVEi">
@@ -503,6 +506,14 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="VerletListType" />
     <ref role="1TJDcQ" node="7mV$Q_d7Dhr" resolve="ParticleListType" />
+  </node>
+  <node concept="PlHQZ" id="2fc2f1uxV70">
+    <property role="EcuMT" value="2579446515047576000" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="IVariableReference" />
+    <node concept="PrWs8" id="2fc2f1uxV71" role="PrDN$">
+      <ref role="PrY4T" to="dm0:70bNw4gtDvc" resolve="IReference" />
+    </node>
   </node>
 </model>
 

@@ -22,6 +22,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptStatement = createDescriptorForStatement();
   /*package*/ final ConceptDescriptor myConceptStatementList = createDescriptorForStatementList();
   /*package*/ final ConceptDescriptor myConceptVariableDeclaration = createDescriptorForVariableDeclaration();
+  /*package*/ final ConceptDescriptor myConceptVariableReference = createDescriptorForVariableReference();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -32,12 +33,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.extendedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
     deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractForStatement, myConceptAbstractLoopStatement, myConceptElseIfStatement, myConceptExpressionStatement, myConceptGlobalVariableDeclarationProvider, myConceptIfStatement, myConceptStatement, myConceptStatementList, myConceptVariableDeclaration);
+    return Arrays.asList(myConceptAbstractForStatement, myConceptAbstractLoopStatement, myConceptElseIfStatement, myConceptExpressionStatement, myConceptGlobalVariableDeclarationProvider, myConceptIfStatement, myConceptStatement, myConceptStatementList, myConceptVariableDeclaration, myConceptVariableReference);
   }
 
   @Override
@@ -62,6 +64,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptStatementList;
       case LanguageConceptSwitch.VariableDeclaration:
         return myConceptVariableDeclaration;
+      case LanguageConceptSwitch.VariableReference:
+        return myConceptVariableReference;
       default:
         return null;
     }
@@ -163,6 +167,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/196114789556629018");
     b.version(2);
     b.aggregate("init", 0x700bce01107698c9L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L).optional(true).ordered(true).multiple(false).origin("8073773260958243017").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForVariableReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "VariableReference", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x23cc08f05e87b1bfL);
+    b.class_(false, false, false);
+    b.super_("openpme.expressions.structure.Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L);
+    b.parent(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x23cc08f05e87b1c0L);
+    b.origin("r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/2579446515047575999");
+    b.version(2);
+    b.associate("variableDeclaration", 0x23cc08f05e886182L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x4b64b50fb2fc7720L).optional(false).origin("2579446515047620994").done();
     return b.create();
   }
 }

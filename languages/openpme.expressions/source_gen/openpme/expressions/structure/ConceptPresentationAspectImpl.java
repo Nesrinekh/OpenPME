@@ -27,6 +27,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_GreaterEqualsExpression;
   private ConceptPresentation props_GreaterExpression;
   private ConceptPresentation props_ITyped;
+  private ConceptPresentation props_IVariableReference;
   private ConceptPresentation props_IntegerLiteral;
   private ConceptPresentation props_LessEqualsExpression;
   private ConceptPresentation props_LessExpression;
@@ -191,6 +192,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ITyped = cpb.create();
         }
         return props_ITyped;
+      case LanguageConceptSwitch.IVariableReference:
+        if (props_IVariableReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IVariableReference = cpb.create();
+        }
+        return props_IVariableReference;
       case LanguageConceptSwitch.IntegerLiteral:
         if (props_IntegerLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

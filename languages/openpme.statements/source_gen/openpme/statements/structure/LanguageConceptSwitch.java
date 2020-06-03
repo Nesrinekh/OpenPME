@@ -18,6 +18,7 @@ public final class LanguageConceptSwitch {
   public static final int Statement = 6;
   public static final int StatementList = 7;
   public static final int VariableDeclaration = 8;
+  public static final int VariableReference = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L);
@@ -30,6 +31,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x6732efa1a0b5b9e3L, Statement);
     builder.put(0x700bce0110761090L, StatementList);
     builder.put(0x2b8bd5caeb92e1aL, VariableDeclaration);
+    builder.put(0x23cc08f05e87b1bfL, VariableReference);
     myIndex = builder.seal();
   }
 

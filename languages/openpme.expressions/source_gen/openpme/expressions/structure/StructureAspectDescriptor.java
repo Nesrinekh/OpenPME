@@ -35,6 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGreaterEqualsExpression = createDescriptorForGreaterEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptGreaterExpression = createDescriptorForGreaterExpression();
   /*package*/ final ConceptDescriptor myConceptITyped = createDescriptorForITyped();
+  /*package*/ final ConceptDescriptor myConceptIVariableReference = createDescriptorForIVariableReference();
   /*package*/ final ConceptDescriptor myConceptIntegerLiteral = createDescriptorForIntegerLiteral();
   /*package*/ final ConceptDescriptor myConceptLessEqualsExpression = createDescriptorForLessEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptLessExpression = createDescriptorForLessExpression();
@@ -77,11 +78,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.extendedLanguage(0x2b72d3f146434aecL, 0x8f262599b23e0e1bL, "openpme.base");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptCellListType, myConceptComparisonExpression, myConceptContainerAccess, myConceptContainerType, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptITyped, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptMesh, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptParticleAccess, myConceptParticleListType, myConceptParticleType, myConceptPrimitiveType, myConceptPropertyType, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptType, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVariableAccess, myConceptVectorElementAccess, myConceptVectorLiteral, myConceptVerletListType);
+    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptCellListType, myConceptComparisonExpression, myConceptContainerAccess, myConceptContainerType, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptITyped, myConceptIVariableReference, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptMesh, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptParticleAccess, myConceptParticleListType, myConceptParticleType, myConceptPrimitiveType, myConceptPropertyType, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptType, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVariableAccess, myConceptVectorElementAccess, myConceptVectorLiteral, myConceptVerletListType);
   }
 
   @Override
@@ -124,6 +126,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGreaterExpression;
       case LanguageConceptSwitch.ITyped:
         return myConceptITyped;
+      case LanguageConceptSwitch.IVariableReference:
+        return myConceptIVariableReference;
       case LanguageConceptSwitch.IntegerLiteral:
         return myConceptIntegerLiteral;
       case LanguageConceptSwitch.LessEqualsExpression:
@@ -350,6 +354,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/8073773260958242859");
     b.version(2);
     b.aggregate("type", 0x700bce011076982cL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x700bce011076982eL).optional(true).ordered(true).multiple(false).origin("8073773260958242860").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIVariableReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "IVariableReference", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x23cc08f05e87b1c0L);
+    b.interface_();
+    b.parent(0x2b72d3f146434aecL, 0x8f262599b23e0e1bL, 0x700bce01107697ccL);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/2579446515047576000");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIntegerLiteral() {

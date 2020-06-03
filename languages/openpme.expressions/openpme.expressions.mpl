@@ -70,7 +70,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="true">d5e2442b-039e-493b-b466-e933a1705c19(openpme.analysis)</dependency>
-    <dependency reexport="true">2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)</dependency>
     <dependency reexport="true">66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)</dependency>
     <dependency reexport="true">57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)</dependency>
     <dependency reexport="true">9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</dependency>
@@ -153,6 +152,8 @@
     <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
     <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

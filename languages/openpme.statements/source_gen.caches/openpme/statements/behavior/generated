@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-cuc2rbxs3v5rksmj69b5sd6navviuaw">
-  <files names="AbstractLoopStatement__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:ExpressionStatement__BehaviorDescriptor.java:GlobalVariableDeclarationProvider__BehaviorDescriptor.java:Statement__BehaviorDescriptor.java" />
+<product version="3" modelHash="bltfk6xk7d9941uym0t7abwzhz9sigz">
+  <files names="AbstractLoopStatement__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:ExpressionStatement__BehaviorDescriptor.java:GlobalVariableDeclarationProvider__BehaviorDescriptor.java:Statement__BehaviorDescriptor.java:VariableReference__BehaviorDescriptor.java" />
 </product>
 
