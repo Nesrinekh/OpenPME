@@ -11,8 +11,29 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1153952380246:jetbrains.mps.baseLanguage.structure.TryStatement" />
   <root>
+    <file name="ContainerAccess_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="openpme.expressions.editor.ContainerAccess_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="openpme.expressions.editor.ContainerAccess_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="openpme.expressions.editor.ContainerAccess_SubstituteMenu$SMP_ReferenceScope_auqaix_a" />
+      <unit at="68,0,89,0" name="openpme.expressions.editor.ContainerAccess_SubstituteMenu$SMP_Subconcepts_auqaix_b" />
+      <unit at="26,0,98,0" name="openpme.expressions.editor.ContainerAccess_SubstituteMenu" />
+    </file>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="15,0,47,0" name="openpme.expressions.editor.EditorAspectDescriptorImpl" />
+      <unit at="16,0,64,0" name="openpme.expressions.editor.EditorAspectDescriptorImpl" />
+    </file>
+    <file name="ParticleAccess_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="openpme.expressions.editor.ParticleAccess_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="openpme.expressions.editor.ParticleAccess_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="openpme.expressions.editor.ParticleAccess_SubstituteMenu$SMP_ReferenceScope_xyd1yv_a" />
+      <unit at="68,0,89,0" name="openpme.expressions.editor.ParticleAccess_SubstituteMenu$SMP_Subconcepts_xyd1yv_b" />
+      <unit at="26,0,98,0" name="openpme.expressions.editor.ParticleAccess_SubstituteMenu" />
+    </file>
+    <file name="VariableAccess_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="openpme.expressions.editor.VariableAccess_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="openpme.expressions.editor.VariableAccess_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="openpme.expressions.editor.VariableAccess_SubstituteMenu$SMP_ReferenceScope_pws7q4_a" />
+      <unit at="68,0,89,0" name="openpme.expressions.editor.VariableAccess_SubstituteMenu$SMP_Subconcepts_pws7q4_b" />
+      <unit at="26,0,98,0" name="openpme.expressions.editor.VariableAccess_SubstituteMenu" />
     </file>
   </root>
   <root nodeRef="r:fd709585-29f4-4f5b-b248-58d9313ed5fc(openpme.expressions.editor)/8275820577561349385">

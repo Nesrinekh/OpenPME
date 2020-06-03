@@ -16,6 +16,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -437,9 +438,6 @@
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="1MYyjtFOOAM" role="3EZMnx">
         <property role="3F0ifm" value="foreach particle  " />
-        <node concept="lj46D" id="1MYyjtFOOBP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="VechU" id="1MYyjtFOOCQ" role="3F10Kt">
           <property role="Vb096" value="fLwANPu/blue" />
         </node>
@@ -454,20 +452,17 @@
         <node concept="3F2HdR" id="7mV$Q_d6LTc" role="3EZMnx">
           <ref role="1NtTu8" to="r2co:7mV$Q_d6iy0" resolve="body" />
           <node concept="l2Vlx" id="7mV$Q_d6LTe" role="2czzBx" />
+          <node concept="lj46D" id="7mV$Q_d8kVY" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="l2Vlx" id="1MYyjtFOOBV" role="2iSdaV" />
-        <node concept="lj46D" id="1MYyjtFOOC9" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="ljvvj" id="7mV$Q_d6LTt" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="1MYyjtFOOBr" role="3EZMnx">
         <property role="3F0ifm" value="end foreach" />
-        <node concept="lj46D" id="1MYyjtFOOCb" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="ljvvj" id="1MYyjtFOOCE" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -558,21 +553,28 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="7mV$Q_d6iyB" role="3EZMnx">
-        <node concept="ljvvj" id="7mV$Q_d6iyC" role="3F10Kt">
+      <node concept="3F0ifn" id="7mV$Q_d7U74" role="3EZMnx">
+        <node concept="ljvvj" id="7mV$Q_d7U88" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="lj46D" id="7mV$Q_d6iyD" role="3F10Kt">
+        <node concept="lj46D" id="7mV$Q_d7ZOr" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F2HdR" id="7mV$Q_d6iyE" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:7mV$Q_d6iy0" resolve="body" />
-        <node concept="l2Vlx" id="7mV$Q_d6iyF" role="2czzBx" />
-        <node concept="lj46D" id="7mV$Q_d6iyG" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      <node concept="3EZMnI" id="7mV$Q_d85FB" role="3EZMnx">
+        <node concept="l2Vlx" id="7mV$Q_d85FC" role="2iSdaV" />
+        <node concept="3F2HdR" id="7mV$Q_d85EQ" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:7mV$Q_d6iy0" resolve="body" />
+          <node concept="2iRkQZ" id="7mV$Q_d85ET" role="2czzBx" />
+          <node concept="VPM3Z" id="7mV$Q_d85EU" role="3F10Kt" />
+          <node concept="ljvvj" id="7mV$Q_d85Fw" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="7mV$Q_d85Fz" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
-        <node concept="ljvvj" id="7mV$Q_d6iyH" role="3F10Kt">
+        <node concept="lj46D" id="7mV$Q_d85Gn" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -708,6 +710,69 @@
       </node>
       <node concept="3F0ifn" id="7mV$Q_d6VYQ" role="3EZMnx" />
       <node concept="l2Vlx" id="7mV$Q_d6VYR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7IxY">
+    <property role="3GE5qa" value="simulation.command.continuous" />
+    <ref role="1XX52x" to="r2co:7Ouveptj$nv" resolve="Discretize" />
+    <node concept="3F0ifn" id="7mV$Q_d7Iy0" role="2wV5jI">
+      <property role="3F0ifm" value="Dicretize" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7IxL">
+    <property role="3GE5qa" value="simulation.command.continuous" />
+    <ref role="1XX52x" to="r2co:7Ouveptj$nt" resolve="Grid" />
+    <node concept="3F0ifn" id="7mV$Q_d7IxN" role="2wV5jI">
+      <property role="3F0ifm" value="Grid" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7Ix$">
+    <property role="3GE5qa" value="simulation.command.continuous" />
+    <ref role="1XX52x" to="r2co:7Ouveptj$ns" resolve="Vectorial" />
+    <node concept="3F0ifn" id="7mV$Q_d7IxA" role="2wV5jI">
+      <property role="3F0ifm" value="Vectorial" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7Ixn">
+    <property role="3GE5qa" value="simulation.command.continuous" />
+    <ref role="1XX52x" to="r2co:6sMVU6wHprL" resolve="OnParticle" />
+    <node concept="3F0ifn" id="7mV$Q_d7Ixp" role="2wV5jI">
+      <property role="3F0ifm" value="OnParticle" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7Ixa">
+    <property role="3GE5qa" value="simulation.command.continuous" />
+    <ref role="1XX52x" to="r2co:6sMVU6wHprK" resolve="OnGrid" />
+    <node concept="3F0ifn" id="7mV$Q_d7Ixc" role="2wV5jI">
+      <property role="3F0ifm" value="OnGrid" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7IwX">
+    <property role="3GE5qa" value="simulation.command.continuous" />
+    <ref role="1XX52x" to="r2co:6sMVU6wHppa" resolve="Interpolate" />
+    <node concept="3F0ifn" id="7mV$Q_d7IwZ" role="2wV5jI">
+      <property role="3F0ifm" value="Interpolate" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7IyD">
+    <property role="3GE5qa" value="simulation.command.continuous" />
+    <ref role="1XX52x" to="r2co:1MYyjtFOOK9" resolve="Remesh" />
+    <node concept="3F0ifn" id="7mV$Q_d7IyF" role="2wV5jI">
+      <property role="3F0ifm" value="Remesh" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7IyQ">
+    <property role="3GE5qa" value="simulation.command.discrete" />
+    <ref role="1XX52x" to="r2co:6sMVU6wHprM" resolve="CellList" />
+    <node concept="3F0ifn" id="7mV$Q_d7IyS" role="2wV5jI">
+      <property role="3F0ifm" value="CellList" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mV$Q_d7Iz3">
+    <property role="3GE5qa" value="simulation.command.discrete" />
+    <ref role="1XX52x" to="r2co:6sMVU6wHprN" resolve="VerletList" />
+    <node concept="3F0ifn" id="7mV$Q_d7Iz5" role="2wV5jI">
+      <property role="3F0ifm" value="VerletList" />
     </node>
   </node>
 </model>
