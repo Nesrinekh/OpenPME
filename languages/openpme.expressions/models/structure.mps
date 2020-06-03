@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -387,6 +388,114 @@
     <node concept="PrWs8" id="70bNw4gtDwL" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dfn">
+    <property role="EcuMT" value="8483536403557159895" />
+    <property role="TrG5h" value="ParticleAccess" />
+    <property role="3GE5qa" value="var" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="7mV$Q_d7Dfo" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403557159896" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dfq">
+    <property role="EcuMT" value="8483536403557159898" />
+    <property role="TrG5h" value="ContainerAccess" />
+    <property role="3GE5qa" value="var" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="7mV$Q_d7Dfr" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403557159899" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dft">
+    <property role="EcuMT" value="8483536403557159901" />
+    <property role="3GE5qa" value="var" />
+    <property role="TrG5h" value="VariableAccess" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="7mV$Q_d7Dfu" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403557159902" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dfw">
+    <property role="EcuMT" value="8483536403557159904" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="Mesh" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dfx">
+    <property role="EcuMT" value="8483536403557159905" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="PrimitiveType" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Df$">
+    <property role="EcuMT" value="8483536403557159908" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ParticleType" />
+    <property role="34LRSv" value="particle" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+    <node concept="1TJgyj" id="7mV$Q_d7Df_" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403557159909" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nameOfParticle" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7bpBJvmqDtw" resolve="StringLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7DfB">
+    <property role="EcuMT" value="8483536403557159911" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="PropertyType" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+    <node concept="1TJgyj" id="7mV$Q_d7DfC" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403557159912" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dtype" />
+      <ref role="20lvS9" node="70bNw4gtDwI" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dhm">
+    <property role="EcuMT" value="8483536403557160022" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ContainerType" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+    <node concept="1TJgyj" id="7mV$Q_d7Dhp" role="1TKVEi">
+      <property role="IQ2ns" value="8483536403557160025" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="componentType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="70bNw4gtDwI" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dhr">
+    <property role="EcuMT" value="8483536403557160027" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ParticleListType" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dhu">
+    <property role="EcuMT" value="8483536403557160030" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="CellListType" />
+    <ref role="1TJDcQ" node="7mV$Q_d7Dhr" resolve="ParticleListType" />
+  </node>
+  <node concept="1TIwiD" id="7mV$Q_d7Dhv">
+    <property role="EcuMT" value="8483536403557160031" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="VerletListType" />
+    <ref role="1TJDcQ" node="7mV$Q_d7Dhr" resolve="ParticleListType" />
   </node>
 </model>
 
