@@ -14,7 +14,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AssignmentExpression;
   private ConceptPresentation props_BinaryExpression;
   private ConceptPresentation props_BooleanLiteral;
+  private ConceptPresentation props_CellListType;
   private ConceptPresentation props_ComparisonExpression;
+  private ConceptPresentation props_ContainerAccess;
+  private ConceptPresentation props_ContainerType;
   private ConceptPresentation props_DecimalLiteral;
   private ConceptPresentation props_DivisionExpression;
   private ConceptPresentation props_EqualityComparisonExpression;
@@ -28,6 +31,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_LessEqualsExpression;
   private ConceptPresentation props_LessExpression;
   private ConceptPresentation props_Literal;
+  private ConceptPresentation props_Mesh;
   private ConceptPresentation props_ModuloExpression;
   private ConceptPresentation props_MultiplicationExpression;
   private ConceptPresentation props_NotEqualsExpression;
@@ -35,6 +39,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_OrExpression;
   private ConceptPresentation props_OrderedComparisonExpression;
   private ConceptPresentation props_ParenthesizedExpression;
+  private ConceptPresentation props_ParticleAccess;
+  private ConceptPresentation props_ParticleListType;
+  private ConceptPresentation props_ParticleType;
+  private ConceptPresentation props_PrimitiveType;
+  private ConceptPresentation props_PropertyType;
   private ConceptPresentation props_RealLiteral;
   private ConceptPresentation props_ScientificNumberLiteral;
   private ConceptPresentation props_StringLiteral;
@@ -44,8 +53,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_UnaryExpression;
   private ConceptPresentation props_UnaryMinus;
   private ConceptPresentation props_UnaryPlus;
+  private ConceptPresentation props_VariableAccess;
   private ConceptPresentation props_VectorElementAccess;
   private ConceptPresentation props_VectorLiteral;
+  private ConceptPresentation props_VerletListType;
 
   @Override
   @Nullable
@@ -88,6 +99,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BooleanLiteral = cpb.create();
         }
         return props_BooleanLiteral;
+      case LanguageConceptSwitch.CellListType:
+        if (props_CellListType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("CellListType");
+          props_CellListType = cpb.create();
+        }
+        return props_CellListType;
       case LanguageConceptSwitch.ComparisonExpression:
         if (props_ComparisonExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -95,6 +113,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ComparisonExpression = cpb.create();
         }
         return props_ComparisonExpression;
+      case LanguageConceptSwitch.ContainerAccess:
+        if (props_ContainerAccess == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x75bb93694d1e93daL, 0x75bb93694d1e93dbL, "ref", "", "");
+          props_ContainerAccess = cpb.create();
+        }
+        return props_ContainerAccess;
+      case LanguageConceptSwitch.ContainerType:
+        if (props_ContainerType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ContainerType = cpb.create();
+        }
+        return props_ContainerType;
       case LanguageConceptSwitch.DecimalLiteral:
         if (props_DecimalLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -190,6 +221,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Literal = cpb.create();
         }
         return props_Literal;
+      case LanguageConceptSwitch.Mesh:
+        if (props_Mesh == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Mesh");
+          props_Mesh = cpb.create();
+        }
+        return props_Mesh;
       case LanguageConceptSwitch.ModuloExpression:
         if (props_ModuloExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -242,6 +280,39 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ParenthesizedExpression = cpb.create();
         }
         return props_ParenthesizedExpression;
+      case LanguageConceptSwitch.ParticleAccess:
+        if (props_ParticleAccess == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x75bb93694d1e93d7L, 0x75bb93694d1e93d8L, "ref", "", "");
+          props_ParticleAccess = cpb.create();
+        }
+        return props_ParticleAccess;
+      case LanguageConceptSwitch.ParticleListType:
+        if (props_ParticleListType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ParticleListType = cpb.create();
+        }
+        return props_ParticleListType;
+      case LanguageConceptSwitch.ParticleType:
+        if (props_ParticleType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("particle");
+          props_ParticleType = cpb.create();
+        }
+        return props_ParticleType;
+      case LanguageConceptSwitch.PrimitiveType:
+        if (props_PrimitiveType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_PrimitiveType = cpb.create();
+        }
+        return props_PrimitiveType;
+      case LanguageConceptSwitch.PropertyType:
+        if (props_PropertyType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PropertyType");
+          props_PropertyType = cpb.create();
+        }
+        return props_PropertyType;
       case LanguageConceptSwitch.RealLiteral:
         if (props_RealLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -304,6 +375,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_UnaryPlus = cpb.create();
         }
         return props_UnaryPlus;
+      case LanguageConceptSwitch.VariableAccess:
+        if (props_VariableAccess == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x75bb93694d1e93ddL, 0x75bb93694d1e93deL, "ref", "", "");
+          props_VariableAccess = cpb.create();
+        }
+        return props_VariableAccess;
       case LanguageConceptSwitch.VectorElementAccess:
         if (props_VectorElementAccess == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -318,6 +396,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_VectorLiteral = cpb.create();
         }
         return props_VectorLiteral;
+      case LanguageConceptSwitch.VerletListType:
+        if (props_VerletListType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("VerletListType");
+          props_VerletListType = cpb.create();
+        }
+        return props_VerletListType;
     }
     return null;
   }
