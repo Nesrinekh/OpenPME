@@ -25,8 +25,12 @@
       <concept id="7548145485610539129" name="openpme.core.structure.Dimension" flags="ng" index="2A2bSE">
         <child id="7548145485610567368" name="dimension" index="2A2i2r" />
       </concept>
-      <concept id="7548145485610539134" name="openpme.core.structure.CutoffRadius" flags="ng" index="2A2bSH" />
-      <concept id="7548145485610539133" name="openpme.core.structure.Ghost" flags="ng" index="2A2bSI" />
+      <concept id="7548145485610539134" name="openpme.core.structure.CutoffRadius" flags="ng" index="2A2bSH">
+        <child id="7548145485610591343" name="cutoffradius_value" index="2A2s8W" />
+      </concept>
+      <concept id="7548145485610539133" name="openpme.core.structure.Ghost" flags="ng" index="2A2bSI">
+        <child id="9015780832891892387" name="ghost_value" index="wloT5" />
+      </concept>
       <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
       <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni">
         <child id="7548145485610582929" name="y1" index="2A2un2" />
@@ -47,6 +51,9 @@
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
       <concept id="2071243749762222176" name="openpme.core.structure.InitParticles" flags="ng" index="1Rrs5n" />
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
       <concept id="2202684092498276280" name="openpme.expressions.structure.FloatType" flags="ng" index="rkISV" />
@@ -125,8 +132,14 @@
         <node concept="2A2w70" id="1Uhwoc5TFC2" role="2A2w73" />
       </node>
       <node concept="2A2bSJ" id="7bpBJvmqTaJ" role="2A29xV" />
-      <node concept="2A2bSH" id="7bpBJvmqTaK" role="2A29xY" />
-      <node concept="2A2bSI" id="7bpBJvmqTaL" role="2A29xw" />
+      <node concept="2A2bSH" id="7bpBJvmqTaK" role="2A29xY">
+        <node concept="2$GK$c" id="1Uhwoc5WV$f" role="2A2s8W">
+          <property role="2$GK$b" value="0.3" />
+        </node>
+      </node>
+      <node concept="2A2bSI" id="7bpBJvmqTaL" role="2A29xw">
+        <node concept="10OMs4" id="1Uhwoc5W1gG" role="wloT5" />
+      </node>
       <node concept="1RreUV" id="7bpBJvmqTaM" role="1Rr2o6">
         <node concept="2$GKAY" id="7bpBJvmqTaU" role="1RreUU">
           <property role="2$GKAX" value="1000" />

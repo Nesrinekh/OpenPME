@@ -159,7 +159,8 @@
       <property role="IQ2ns" value="7548145485610591343" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cutoffradius_value" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z0p_feMoe1">

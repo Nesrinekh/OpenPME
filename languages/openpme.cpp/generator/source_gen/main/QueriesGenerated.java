@@ -39,28 +39,34 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static SNode sourceNodeQuery_3_0(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.x0$Z6vw);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.cutoff_radius$VXY8), LINKS.cutoffradius_value$nhkN);
   }
   public static SNode sourceNodeQuery_3_1(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.y0$Z6wX);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.x0$Z6vw);
   }
   public static SNode sourceNodeQuery_3_2(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.z0$Z6G_);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.y0$Z6wX);
   }
   public static SNode sourceNodeQuery_3_3(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.x1$Z6Ix);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.z0$Z6G_);
   }
   public static SNode sourceNodeQuery_3_4(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.y1$Z6KW);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.x1$Z6Ix);
   }
   public static SNode sourceNodeQuery_3_5(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.z1$Z6Y1);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.y1$Z6KW);
   }
   public static SNode sourceNodeQuery_3_6(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.dimension$VXz0), LINKS.dimension$$M1v);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.domain_size$VXzY), LINKS.domain$Igba), LINKS.z1$Z6Y1);
   }
   public static SNode sourceNodeQuery_3_7(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.dimension$VXz0), LINKS.dimension$$M1v);
+  }
+  public static SNode sourceNodeQuery_3_8(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.boundary_conditions$VXJA), LINKS.Boundary$IFgp);
+  }
+  public static SNode sourceNodeQuery_3_9(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.dimension$VXz0), LINKS.dimension$$M1v);
   }
   public static SNode mapSrcMacro_map_2_0(final MapSrcMacroContext _context) {
     SNode decl = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696c66eL, "openpme.cpp.structure.VariableDeclaration"));
@@ -173,6 +179,7 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, SourceNodeQuery> snqMethods = new HashMap<String, SourceNodeQuery>();
   {
     int i = 0;
+    snqMethods.put("2202684092501374925", new SNQ(i++));
     snqMethods.put("2202684092500131014", new SNQ(i++));
     snqMethods.put("2202684092500380632", new SNQ(i++));
     snqMethods.put("2202684092500382970", new SNQ(i++));
@@ -181,6 +188,7 @@ public class QueriesGenerated extends QueryProviderBase {
     snqMethods.put("2202684092500384335", new SNQ(i++));
     snqMethods.put("2202684092500589656", new SNQ(i++));
     snqMethods.put("2202684092500764107", new SNQ(i++));
+    snqMethods.put("2202684092501202054", new SNQ(i++));
   }
   @NotNull
   @Override
@@ -215,6 +223,10 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.sourceNodeQuery_3_6(ctx);
         case 7:
           return QueriesGenerated.sourceNodeQuery_3_7(ctx);
+        case 8:
+          return QueriesGenerated.sourceNodeQuery_3_8(ctx);
+        case 9:
+          return QueriesGenerated.sourceNodeQuery_3_9(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -284,6 +296,8 @@ public class QueriesGenerated extends QueryProviderBase {
   }
 
   private static final class LINKS {
+    /*package*/ static final SContainmentLink cutoff_radius$VXY8 = MetaAdapterFactory.getContainmentLink(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f1034L, 0x68c06653cec8fe2dL, "cutoff_radius");
+    /*package*/ static final SContainmentLink cutoffradius_value$nhkN = MetaAdapterFactory.getContainmentLink(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653cec8d87eL, 0x68c06653cec9a46fL, "cutoffradius_value");
     /*package*/ static final SContainmentLink domain_size$VXzY = MetaAdapterFactory.getContainmentLink(0x735a5c6f97514d40L, 0x91fe215faa5468a6L, 0x4b8b96c3273f1034L, 0x68c06653cec8fe21L, "domain_size");
     /*package*/ static final SContainmentLink domain$Igba = MetaAdapterFactory.getContainmentLink(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653cec8d87aL, 0x68c06653cec9837fL, "domain");
     /*package*/ static final SContainmentLink x0$Z6vw = MetaAdapterFactory.getContainmentLink(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653cec98381L, 0x68c06653cec98382L, "x0");

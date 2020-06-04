@@ -75,7 +75,9 @@
       </concept>
       <concept id="1980357867516530927" name="openpme.cpp.structure.FloatLiteral" flags="ng" index="3I0Fgj" />
       <concept id="1980357867516498563" name="openpme.cpp.structure.FloatType" flags="ng" index="3I0NpZ" />
-      <concept id="2891901930128721518" name="openpme.cpp.structure.VariableDeclaration" flags="ng" index="3IHdWl" />
+      <concept id="2891901930128721518" name="openpme.cpp.structure.VariableDeclaration" flags="ng" index="3IHdWl">
+        <child id="2891901930128727951" name="initialization" index="3IHcrO" />
+      </concept>
       <concept id="2891901930128721537" name="openpme.cpp.structure.File" flags="ng" index="3IHdZU">
         <child id="2891901930128722431" name="statement" index="3IHd24" />
       </concept>
@@ -646,6 +648,32 @@
     <property role="TrG5h" value="weave_Initialization" />
     <ref role="3gUMe" to="3x5m:4Ib_GcBfL0O" resolve="Initialization" />
     <node concept="3jcgYH" id="1Uhwoc5QJB5" role="13RCb5">
+      <node concept="3IHdWl" id="1Uhwoc5Wivw" role="3jcgYG">
+        <property role="TrG5h" value="r_cut" />
+        <node concept="3I0NpZ" id="1Uhwoc5WFlA" role="3jdG5C" />
+        <node concept="raruj" id="1Uhwoc5WiMx" role="lGtFl" />
+        <node concept="3Wj40E" id="1Uhwoc5WFv9" role="3IHcrO">
+          <node concept="29HgVG" id="1Uhwoc5WFvc" role="lGtFl">
+            <node concept="3NFfHV" id="1Uhwoc5WFvd" role="3NFExx">
+              <node concept="3clFbS" id="1Uhwoc5WFve" role="2VODD2">
+                <node concept="3clFbF" id="1Uhwoc5WFvk" role="3cqZAp">
+                  <node concept="2OqwBi" id="1Uhwoc5WFGX" role="3clFbG">
+                    <node concept="2OqwBi" id="1Uhwoc5WFvf" role="2Oq$k0">
+                      <node concept="3TrEf2" id="1Uhwoc5WFvi" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3x5m:6z0p_feMfSH" resolve="cutoff_radius" />
+                      </node>
+                      <node concept="30H73N" id="1Uhwoc5WFvj" role="2Oq$k0" />
+                    </node>
+                    <node concept="3TrEf2" id="1Uhwoc5WFRn" role="2OqNvi">
+                      <ref role="3Tt5mk" to="r2co:6z0p_feMqhJ" resolve="cutoffradius_value" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1zdIym" id="1Uhwoc5R4hm" role="3jcgYG">
         <property role="TrG5h" value="box" />
         <node concept="raruj" id="1Uhwoc5R4hq" role="lGtFl" />
@@ -990,6 +1018,41 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="1zdIym" id="1Uhwoc5VLOD" role="3jcgYG">
+        <property role="TrG5h" value="ghost" />
+        <node concept="rYoy5" id="1Uhwoc5VM6P" role="rYoOA">
+          <property role="TrG5h" value="Ghost" />
+          <node concept="2HIXHn" id="1Uhwoc5VM6S" role="3vqI9i">
+            <node concept="3IIGHT" id="1Uhwoc5VM6U" role="2HIXHg">
+              <property role="3IIGHX" value="3" />
+              <node concept="29HgVG" id="1Uhwoc5W1i5" role="lGtFl">
+                <node concept="3NFfHV" id="1Uhwoc5W1i6" role="3NFExx">
+                  <node concept="3clFbS" id="1Uhwoc5W1i7" role="2VODD2">
+                    <node concept="3clFbF" id="1Uhwoc5W1id" role="3cqZAp">
+                      <node concept="2OqwBi" id="1Uhwoc5W1q2" role="3clFbG">
+                        <node concept="2OqwBi" id="1Uhwoc5W1i8" role="2Oq$k0">
+                          <node concept="3TrEf2" id="1Uhwoc5W1ib" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3x5m:6z0p_feMfSv" resolve="dimension" />
+                          </node>
+                          <node concept="30H73N" id="1Uhwoc5W1ic" role="2Oq$k0" />
+                        </node>
+                        <node concept="3TrEf2" id="1Uhwoc5W1ry" role="2OqNvi">
+                          <ref role="3Tt5mk" to="r2co:6z0p_feMkr8" resolve="dimension" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3I0NpZ" id="1Uhwoc5VM6Z" role="2HIXHg" />
+          </node>
+        </node>
+        <node concept="raruj" id="1Uhwoc5W1i2" role="lGtFl" />
+        <node concept="3IHsDY" id="1Uhwoc5WV_k" role="1zdIyp">
+          <ref role="3IHsDX" node="1Uhwoc5Wivw" resolve="r_cut" />
         </node>
       </node>
     </node>

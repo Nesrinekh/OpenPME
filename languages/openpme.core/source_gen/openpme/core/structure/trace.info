@@ -1066,8 +1066,8 @@
       <node id="7548145485610539134" at="293,159,294,34" concept="0" />
       <node id="7548145485610539134" at="294,34,295,99" concept="0" />
       <node id="7548145485610539134" at="295,99,296,17" concept="0" />
-      <node id="7548145485610591343" at="296,17,297,205" concept="0" />
-      <node id="7548145485610539134" at="297,205,298,28" concept="0" />
+      <node id="7548145485610591343" at="296,17,297,212" concept="0" />
+      <node id="7548145485610539134" at="297,212,298,28" concept="0" />
       <node id="7548145485610539134" at="298,28,299,22" concept="4" />
       <node id="7548145485610539134" at="292,0,301,0" concept="6" trace="createDescriptorForCutoffRadius#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="7548145485610539134" at="114,46,115,37" />

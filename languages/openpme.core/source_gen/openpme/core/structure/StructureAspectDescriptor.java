@@ -294,7 +294,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610539134");
     b.version(2);
-    b.aggregate("cutoffradius_value", 0x68c06653cec9a46fL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610591343").done();
+    b.aggregate("cutoffradius_value", 0x68c06653cec9a46fL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(false).ordered(true).multiple(false).origin("7548145485610591343").done();
     b.alias("cutoffradius");
     return b.create();
   }
