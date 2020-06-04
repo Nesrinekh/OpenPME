@@ -515,5 +515,11 @@
       <ref role="PrY4T" to="dm0:70bNw4gtDvc" resolve="IReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1Uhwoc5KQYS">
+    <property role="EcuMT" value="2202684092498276280" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="FloatType" />
+    <ref role="1TJDcQ" node="7mV$Q_d7Dfx" resolve="PrimitiveType" />
+  </node>
 </model>
 
