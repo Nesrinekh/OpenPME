@@ -272,7 +272,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7mV$Q_d6oGv" resolve="ICommandC" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z0p_feMAv7">
@@ -286,7 +286,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7mV$Q_d6oGr" resolve="ICommandD" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Ouveptjg3m">
@@ -541,7 +541,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7mV$Q_d6GLe" resolve="ICommandH" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     </node>
   </node>
   <node concept="1TIwiD" id="1MYyjtFOOxw">

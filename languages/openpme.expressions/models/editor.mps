@@ -174,5 +174,19 @@
       <node concept="l2Vlx" id="7bpBJvmqTer" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1Uhwoc5KQZ1">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="caxt:1Uhwoc5KQYS" resolve="FloatType" />
+    <node concept="3F0ifn" id="1Uhwoc5KQZ3" role="2wV5jI">
+      <property role="3F0ifm" value="float" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Uhwoc5Lx4W">
+    <property role="3GE5qa" value="literals.real" />
+    <ref role="1XX52x" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
+    <node concept="3F0A7n" id="1Uhwoc5Lx4Y" role="2wV5jI">
+      <ref role="1NtTu8" to="caxt:7bpBJvmqDvW" resolve="value" />
+    </node>
+  </node>
 </model>
 

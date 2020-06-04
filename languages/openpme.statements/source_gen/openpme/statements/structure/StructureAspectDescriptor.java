@@ -160,6 +160,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForVariableDeclaration() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.statements", "VariableDeclaration", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x2b8bd5caeb92e1aL);
     b.class_(false, false, false);
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
     b.parent(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x4b64b50fb2fc7720L);
     b.parent(0x2b72d3f146434aecL, 0x8f262599b23e0e1bL, 0x2b8bd5caeb92e26L);
     b.parent(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x700bce011076982bL);

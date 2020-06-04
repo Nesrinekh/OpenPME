@@ -24,6 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EqualsExpression;
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_FalseLiteral;
+  private ConceptPresentation props_FloatType;
   private ConceptPresentation props_GreaterEqualsExpression;
   private ConceptPresentation props_GreaterExpression;
   private ConceptPresentation props_ITyped;
@@ -170,6 +171,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FalseLiteral = cpb.create();
         }
         return props_FalseLiteral;
+      case LanguageConceptSwitch.FloatType:
+        if (props_FloatType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FloatType");
+          props_FloatType = cpb.create();
+        }
+        return props_FloatType;
       case LanguageConceptSwitch.GreaterEqualsExpression:
         if (props_GreaterEqualsExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

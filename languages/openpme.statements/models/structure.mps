@@ -114,7 +114,7 @@
     <property role="EcuMT" value="196114789556629018" />
     <property role="TrG5h" value="VariableDeclaration" />
     <property role="3GE5qa" value="variables" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
     <node concept="PrWs8" id="70bNw4gtDwu" role="PzmwI">
       <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
     </node>

@@ -15,7 +15,7 @@
       <unit at="10,0,46,0" name="openpme.statements.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,183,0" name="openpme.statements.structure.StructureAspectDescriptor" />
+      <unit at="15,0,184,0" name="openpme.statements.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/196114789556629018">
@@ -40,20 +40,21 @@
       <node id="196114789556629018" at="65,53,66,44" concept="4" />
       <node id="196114789556629018" at="160,77,161,171" concept="3" />
       <node id="196114789556629018" at="161,171,162,34" concept="0" />
-      <node id="196114789556629018" at="162,34,163,76" concept="0" />
-      <node id="196114789556629018" at="163,76,164,75" concept="0" />
-      <node id="196114789556629018" at="164,75,165,76" concept="0" />
-      <node id="196114789556629018" at="165,76,166,76" concept="0" />
-      <node id="196114789556629018" at="166,76,167,104" concept="0" />
-      <node id="196114789556629018" at="167,104,168,17" concept="0" />
-      <node id="8073773260958243017" at="168,17,169,197" concept="0" />
-      <node id="196114789556629018" at="169,197,170,22" concept="4" />
-      <node id="196114789556629018" at="160,0,172,0" concept="6" trace="createDescriptorForVariableDeclaration#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="196114789556629018" at="162,34,163,118" concept="0" />
+      <node id="196114789556629018" at="163,118,164,76" concept="0" />
+      <node id="196114789556629018" at="164,76,165,75" concept="0" />
+      <node id="196114789556629018" at="165,75,166,76" concept="0" />
+      <node id="196114789556629018" at="166,76,167,76" concept="0" />
+      <node id="196114789556629018" at="167,76,168,104" concept="0" />
+      <node id="196114789556629018" at="168,104,169,17" concept="0" />
+      <node id="8073773260958243017" at="169,17,170,197" concept="0" />
+      <node id="196114789556629018" at="170,197,171,22" concept="4" />
+      <node id="196114789556629018" at="160,0,173,0" concept="6" trace="createDescriptorForVariableDeclaration#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="196114789556629018" at="65,53,66,44" />
-      <scope id="196114789556629018" at="160,77,170,22">
+      <scope id="196114789556629018" at="160,77,171,22">
         <var name="b" id="196114789556629018" />
       </scope>
-      <scope id="196114789556629018" at="160,0,172,0" />
+      <scope id="196114789556629018" at="160,0,173,0" />
     </file>
   </root>
   <root nodeRef="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/2579446515047575999">
@@ -76,20 +77,20 @@
     <file name="StructureAspectDescriptor.java">
       <node id="2579446515047575999" at="25,0,26,0" concept="1" trace="myConceptVariableReference" />
       <node id="2579446515047575999" at="67,51,68,42" concept="4" />
-      <node id="2579446515047575999" at="172,75,173,170" concept="3" />
-      <node id="2579446515047575999" at="173,170,174,34" concept="0" />
-      <node id="2579446515047575999" at="174,34,175,120" concept="0" />
-      <node id="2579446515047575999" at="175,120,176,76" concept="0" />
-      <node id="2579446515047575999" at="176,76,177,105" concept="0" />
-      <node id="2579446515047575999" at="177,105,178,17" concept="0" />
-      <node id="2579446515047620994" at="178,17,179,183" concept="0" />
-      <node id="2579446515047575999" at="179,183,180,22" concept="4" />
-      <node id="2579446515047575999" at="172,0,182,0" concept="6" trace="createDescriptorForVariableReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2579446515047575999" at="173,75,174,170" concept="3" />
+      <node id="2579446515047575999" at="174,170,175,34" concept="0" />
+      <node id="2579446515047575999" at="175,34,176,120" concept="0" />
+      <node id="2579446515047575999" at="176,120,177,76" concept="0" />
+      <node id="2579446515047575999" at="177,76,178,105" concept="0" />
+      <node id="2579446515047575999" at="178,105,179,17" concept="0" />
+      <node id="2579446515047620994" at="179,17,180,183" concept="0" />
+      <node id="2579446515047575999" at="180,183,181,22" concept="4" />
+      <node id="2579446515047575999" at="173,0,183,0" concept="6" trace="createDescriptorForVariableReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2579446515047575999" at="67,51,68,42" />
-      <scope id="2579446515047575999" at="172,75,180,22">
+      <scope id="2579446515047575999" at="173,75,181,22">
         <var name="b" id="2579446515047575999" />
       </scope>
-      <scope id="2579446515047575999" at="172,0,182,0" />
+      <scope id="2579446515047575999" at="173,0,183,0" />
     </file>
   </root>
   <root nodeRef="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)/5443610339528609787">
