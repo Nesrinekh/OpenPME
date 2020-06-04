@@ -1,8 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="8,0,14,0" name="main.QueriesGenerated" />
+      <unit at="193,0,196,0" name="main.QueriesGenerated$CONCEPTS" />
+      <unit at="188,0,192,0" name="main.QueriesGenerated$LINKS" />
+      <unit at="197,0,203,0" name="main.QueriesGenerated$PROPS" />
+      <unit at="139,0,156,0" name="main.QueriesGenerated$SNQ" />
+      <unit at="170,0,187,0" name="main.QueriesGenerated$IMQ" />
+      <unit at="89,0,124,0" name="main.QueriesGenerated$WRQ" />
+      <unit at="33,0,204,0" name="main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:d7b09e09-e041-4c74-b4f0-774f3e0f1e49(main@generator)/1347590532277214866">
+    <file name="QueriesGenerated.java">
+      <node id="2202684092498495806" at="44,94,45,160" concept="2" />
+      <node id="2202684092498614346" at="47,80,48,186" concept="1" />
+      <node id="2202684092498614648" at="48,186,49,126" concept="0" />
+      <node id="2202684092498620855" at="49,126,50,18" concept="2" />
+      <node id="2202684092498495473" at="59,14,60,57" concept="0" />
+      <node id="2202684092498495473" at="97,15,98,22" concept="2" />
+      <node id="2202684092498495473" at="106,15,107,68" concept="2" />
+      <node id="2202684092498495473" at="117,15,118,22" concept="2" />
+      <node id="2202684092498614216" at="157,3,158,54" concept="0" />
+      <node id="2202684092498614216" at="178,15,179,61" concept="2" />
+      <node id="2202684092498495475" at="44,0,47,0" concept="3" trace="weavingRule_ContextQuery_1_0#(Ljetbrains/mps/generator/template/WeavingMappingRuleContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2202684092498614217" at="47,0,52,0" concept="3" trace="insertMacro_Query_1_0#(Ljetbrains/mps/generator/template/InsertMacroContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2202684092498495476" at="44,94,45,160" />
+      <scope id="2202684092498495473" at="97,15,98,22" />
+      <scope id="2202684092498495473" at="106,15,107,68" />
+      <scope id="2202684092498495473" at="117,15,118,22" />
+      <scope id="2202684092498614216" at="178,15,179,61" />
+      <scope id="2202684092498495475" at="44,0,47,0">
+        <var name="_context" id="2202684092498495475" />
+      </scope>
+      <scope id="2202684092498614218" at="47,80,50,18">
+        <var name="decLit" id="2202684092498614349" />
+      </scope>
+      <scope id="2202684092498614217" at="47,0,52,0">
+        <var name="_context" id="2202684092498614217" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:d7b09e09-e041-4c74-b4f0-774f3e0f1e49(main@generator)/2202684092498495798">
+    <file name="QueriesGenerated.java">
+      <node id="2202684092498500756" at="38,92,39,74" concept="2" />
+      <node id="2202684092498502448" at="41,92,42,74" concept="2" />
+      <node id="2202684092498693858" at="52,80,53,188" concept="1" />
+      <node id="2202684092498694137" at="53,188,54,125" concept="0" />
+      <node id="2202684092498701012" at="54,125,55,16" concept="2" />
+      <node id="2202684092498500749" at="126,14,127,56" concept="0" />
+      <node id="2202684092498502441" at="127,56,128,56" concept="0" />
+      <node id="2202684092498500749" at="147,15,148,59" concept="2" />
+      <node id="2202684092498502441" at="149,15,150,59" concept="2" />
+      <node id="2202684092498705176" at="158,54,159,54" concept="0" />
+      <node id="2202684092498705176" at="180,15,181,61" concept="2" />
+      <node id="2202684092498500749" at="38,0,41,0" concept="3" trace="sourceNodeQuery_2_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2202684092498502441" at="41,0,44,0" concept="3" trace="sourceNodeQuery_2_1#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2202684092498705177" at="52,0,57,0" concept="3" trace="insertMacro_Query_2_0#(Ljetbrains/mps/generator/template/InsertMacroContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2202684092498500750" at="38,92,39,74" />
+      <scope id="2202684092498502442" at="41,92,42,74" />
+      <scope id="2202684092498500749" at="147,15,148,59" />
+      <scope id="2202684092498502441" at="149,15,150,59" />
+      <scope id="2202684092498705176" at="180,15,181,61" />
+      <scope id="2202684092498500749" at="38,0,41,0">
+        <var name="_context" id="2202684092498500749" />
+      </scope>
+      <scope id="2202684092498502441" at="41,0,44,0">
+        <var name="_context" id="2202684092498502441" />
+      </scope>
+      <scope id="2202684092498705178" at="52,80,55,16">
+        <var name="name" id="2202684092498693861" />
+      </scope>
+      <scope id="2202684092498705177" at="52,0,57,0">
+        <var name="_context" id="2202684092498705177" />
+      </scope>
     </file>
   </root>
 </debug-info>

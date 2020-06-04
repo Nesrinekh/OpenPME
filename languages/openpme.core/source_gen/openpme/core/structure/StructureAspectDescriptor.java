@@ -28,7 +28,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEpsilon = createDescriptorForEpsilon();
   /*package*/ final ConceptDescriptor myConceptForeach = createDescriptorForForeach();
   /*package*/ final ConceptDescriptor myConceptGhost = createDescriptorForGhost();
-  /*package*/ final ConceptDescriptor myConceptGrid = createDescriptorForGrid();
   /*package*/ final ConceptDescriptor myConceptHybrid = createDescriptorForHybrid();
   /*package*/ final ConceptDescriptor myConceptICommand = createDescriptorForICommand();
   /*package*/ final ConceptDescriptor myConceptICommandC = createDescriptorForICommandC();
@@ -43,12 +42,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptLaplacianOperator = createDescriptorForLaplacianOperator();
   /*package*/ final ConceptDescriptor myConceptListOfPhysicalNotations = createDescriptorForListOfPhysicalNotations();
   /*package*/ final ConceptDescriptor myConceptLoop = createDescriptorForLoop();
+  /*package*/ final ConceptDescriptor myConceptMesh = createDescriptorForMesh();
   /*package*/ final ConceptDescriptor myConceptNonPeriodic = createDescriptorForNonPeriodic();
   /*package*/ final ConceptDescriptor myConceptNonUniform = createDescriptorForNonUniform();
   /*package*/ final ConceptDescriptor myConceptNu = createDescriptorForNu();
   /*package*/ final ConceptDescriptor myConceptNumParticles = createDescriptorForNumParticles();
   /*package*/ final ConceptDescriptor myConceptOmega = createDescriptorForOmega();
-  /*package*/ final ConceptDescriptor myConceptOnGrid = createDescriptorForOnGrid();
+  /*package*/ final ConceptDescriptor myConceptOnMesh = createDescriptorForOnMesh();
   /*package*/ final ConceptDescriptor myConceptOnParticle = createDescriptorForOnParticle();
   /*package*/ final ConceptDescriptor myConceptParticle = createDescriptorForParticle();
   /*package*/ final ConceptDescriptor myConceptPeriodic = createDescriptorForPeriodic();
@@ -88,12 +88,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
     deps.extendedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
     deps.aggregatedLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
+    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
     deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptArrowExpression, myConceptBoundaryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForeach, myConceptGhost, myConceptGrid, myConceptHybrid, myConceptICommand, myConceptICommandC, myConceptICommandD, myConceptICommandH, myConceptILoop, myConceptInitParticles, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptLambda, myConceptLaplacianOperator, myConceptListOfPhysicalNotations, myConceptLoop, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumParticles, myConceptOmega, myConceptOnGrid, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPowerExpression, myConceptProperty, myConceptPsi, myConceptRandomNumberExpression, myConceptRemesh, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptTau, myConceptTimeLoop, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundary, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVelocity, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles, myConceptVorticity);
+    return Arrays.asList(myConceptArrowExpression, myConceptBoundaryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForeach, myConceptGhost, myConceptHybrid, myConceptICommand, myConceptICommandC, myConceptICommandD, myConceptICommandH, myConceptILoop, myConceptInitParticles, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptLambda, myConceptLaplacianOperator, myConceptListOfPhysicalNotations, myConceptLoop, myConceptMesh, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumParticles, myConceptOmega, myConceptOnMesh, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPowerExpression, myConceptProperty, myConceptPsi, myConceptRandomNumberExpression, myConceptRemesh, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptTau, myConceptTimeLoop, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundary, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVelocity, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles, myConceptVorticity);
   }
 
   @Override
@@ -130,8 +131,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptForeach;
       case LanguageConceptSwitch.Ghost:
         return myConceptGhost;
-      case LanguageConceptSwitch.Grid:
-        return myConceptGrid;
       case LanguageConceptSwitch.Hybrid:
         return myConceptHybrid;
       case LanguageConceptSwitch.ICommand:
@@ -160,6 +159,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptListOfPhysicalNotations;
       case LanguageConceptSwitch.Loop:
         return myConceptLoop;
+      case LanguageConceptSwitch.Mesh:
+        return myConceptMesh;
       case LanguageConceptSwitch.NonPeriodic:
         return myConceptNonPeriodic;
       case LanguageConceptSwitch.NonUniform:
@@ -170,8 +171,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNumParticles;
       case LanguageConceptSwitch.Omega:
         return myConceptOmega;
-      case LanguageConceptSwitch.OnGrid:
-        return myConceptOnGrid;
+      case LanguageConceptSwitch.OnMesh:
+        return myConceptOnMesh;
       case LanguageConceptSwitch.OnParticle:
         return myConceptOnParticle;
       case LanguageConceptSwitch.Particle:
@@ -284,7 +285,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610641350");
     b.version(2);
-    b.aggregate("body", 0x7d1e7ce65d4e45a2L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x75bb93694d198b1fL).optional(false).ordered(true).multiple(true).origin("9015780832892044706").done();
+    b.aggregate("body", 0x7d1e7ce65d4e45a2L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(true).origin("9015780832892044706").done();
     b.alias("continuous");
     return b.create();
   }
@@ -325,7 +326,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610641351");
     b.version(2);
-    b.aggregate("body", 0x7d1e7ce65d4d0070L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x75bb93694d198b1bL).optional(false).ordered(true).multiple(true).origin("9015780832891961456").done();
+    b.aggregate("body", 0x7d1e7ce65d4d0070L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(true).origin("9015780832891961456").done();
     b.alias("discrete");
     return b.create();
   }
@@ -374,22 +375,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("ghost_value", 0x7d1e7ce65d4bf2a3L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("9015780832891892387").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForGrid() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Grid", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4e45ddL);
-    b.class_(false, false, false);
-    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
-    b.parent(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x75bb93694d198b1fL);
-    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/9015780832892044765");
-    b.version(2);
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForHybrid() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Hybrid", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd2afe8L);
     b.class_(false, false, false);
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762183144");
     b.version(2);
-    b.aggregate("body", 0x1cbe89376bd34b51L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x75bb93694d1acc4eL).optional(false).ordered(true).multiple(true).origin("2071243749762222929").done();
+    b.aggregate("body", 0x1cbe89376bd34b51L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(true).origin("2071243749762222929").done();
     b.alias("hybrid");
     return b.create();
   }
@@ -496,6 +488,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForMesh() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Mesh", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x7d1e7ce65d4e45ddL);
+    b.class_(false, false, false);
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
+    b.parent(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x75bb93694d198b1fL);
+    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/9015780832892044765");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForNonPeriodic() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "NonPeriodic", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca6794L);
     b.class_(false, false, false);
@@ -539,8 +540,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForOnGrid() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "OnGrid", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x6732efa1a0b596f0L);
+  private static ConceptDescriptor createDescriptorForOnMesh() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "OnMesh", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x6732efa1a0b596f0L);
     b.class_(false, false, false);
     b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
     b.parent(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x75bb93694d198b1fL);

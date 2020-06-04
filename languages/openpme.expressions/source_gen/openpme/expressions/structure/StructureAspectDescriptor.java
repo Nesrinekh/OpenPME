@@ -32,6 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEqualsExpression = createDescriptorForEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptFalseLiteral = createDescriptorForFalseLiteral();
+  /*package*/ final ConceptDescriptor myConceptFloatType = createDescriptorForFloatType();
   /*package*/ final ConceptDescriptor myConceptGreaterEqualsExpression = createDescriptorForGreaterEqualsExpression();
   /*package*/ final ConceptDescriptor myConceptGreaterExpression = createDescriptorForGreaterExpression();
   /*package*/ final ConceptDescriptor myConceptITyped = createDescriptorForITyped();
@@ -83,7 +84,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptCellListType, myConceptComparisonExpression, myConceptContainerAccess, myConceptContainerType, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptITyped, myConceptIVariableReference, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptMesh, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptParticleAccess, myConceptParticleListType, myConceptParticleType, myConceptPrimitiveType, myConceptPropertyType, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptType, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVariableAccess, myConceptVectorElementAccess, myConceptVectorLiteral, myConceptVerletListType);
+    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptCellListType, myConceptComparisonExpression, myConceptContainerAccess, myConceptContainerType, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptFloatType, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptITyped, myConceptIVariableReference, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptMesh, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptParticleAccess, myConceptParticleListType, myConceptParticleType, myConceptPrimitiveType, myConceptPropertyType, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptType, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVariableAccess, myConceptVectorElementAccess, myConceptVectorLiteral, myConceptVerletListType);
   }
 
   @Override
@@ -120,6 +121,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptExpression;
       case LanguageConceptSwitch.FalseLiteral:
         return myConceptFalseLiteral;
+      case LanguageConceptSwitch.FloatType:
+        return myConceptFloatType;
       case LanguageConceptSwitch.GreaterEqualsExpression:
         return myConceptGreaterEqualsExpression;
       case LanguageConceptSwitch.GreaterExpression:
@@ -327,6 +330,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("openpme.expressions.structure.BooleanLiteral", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66b9389L);
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/8275820577561482125");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFloatType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "FloatType", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x1e91818305c36fb8L);
+    b.class_(false, false, false);
+    b.super_("openpme.expressions.structure.PrimitiveType", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x75bb93694d1e93e1L);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/2202684092498276280");
     b.version(2);
     return b.create();
   }
