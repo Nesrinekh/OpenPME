@@ -721,7 +721,7 @@
   </node>
   <node concept="24kQdi" id="7mV$Q_d7IxL">
     <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="1XX52x" to="r2co:7Ouveptj$nt" resolve="Grid" />
+    <ref role="1XX52x" to="r2co:7Ouveptj$nt" resolve="Mesh" />
     <node concept="3F0ifn" id="7mV$Q_d7IxN" role="2wV5jI">
       <property role="3F0ifm" value="Grid" />
     </node>
@@ -742,7 +742,7 @@
   </node>
   <node concept="24kQdi" id="7mV$Q_d7Ixa">
     <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="1XX52x" to="r2co:6sMVU6wHprK" resolve="OnGrid" />
+    <ref role="1XX52x" to="r2co:6sMVU6wHprK" resolve="OnMesh" />
     <node concept="3F0ifn" id="7mV$Q_d7Ixc" role="2wV5jI">
       <property role="3F0ifm" value="OnGrid" />
     </node>

@@ -380,7 +380,7 @@
   <node concept="1TIwiD" id="6sMVU6wHprK">
     <property role="EcuMT" value="7436269412207138544" />
     <property role="3GE5qa" value="simulation.command.continuous" />
-    <property role="TrG5h" value="OnGrid" />
+    <property role="TrG5h" value="OnMesh" />
     <property role="34LRSv" value="ongrid" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="PrWs8" id="7mV$Q_d6oGA" role="PzmwI">
@@ -429,7 +429,7 @@
   <node concept="1TIwiD" id="7Ouveptj$nt">
     <property role="EcuMT" value="9015780832892044765" />
     <property role="3GE5qa" value="simulation.command.continuous" />
-    <property role="TrG5h" value="Grid" />
+    <property role="TrG5h" value="Mesh" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="PrWs8" id="7mV$Q_d6oGy" role="PzmwI">
       <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
