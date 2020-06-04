@@ -93,7 +93,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ArrayDeclaration:
         if (props_ArrayDeclaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ArrayDeclaration");
+          cpb.presentationByName();
           props_ArrayDeclaration = cpb.create();
         }
         return props_ArrayDeclaration;
@@ -107,7 +107,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ArrayParameterDeclaration:
         if (props_ArrayParameterDeclaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ArrayParameterDeclaration");
+          cpb.presentationByName();
           props_ArrayParameterDeclaration = cpb.create();
         }
         return props_ArrayParameterDeclaration;
@@ -154,7 +154,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BaseVariableDeclaration:
         if (props_BaseVariableDeclaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("BaseVariableDeclaration");
+          cpb.presentationByName();
           props_BaseVariableDeclaration = cpb.create();
         }
         return props_BaseVariableDeclaration;
@@ -182,7 +182,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ClassInstanceDecl:
         if (props_ClassInstanceDecl == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ClassInstanceDecl");
+          cpb.presentationByName();
           props_ClassInstanceDecl = cpb.create();
         }
         return props_ClassInstanceDecl;
@@ -196,7 +196,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ConstexprDeclaration:
         if (props_ConstexprDeclaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ConstexprDeclaration");
+          cpb.presentationByName();
           props_ConstexprDeclaration = cpb.create();
         }
         return props_ConstexprDeclaration;
@@ -390,7 +390,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ParameterDeclaration:
         if (props_ParameterDeclaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ParameterDeclaration");
+          cpb.presentationByName();
           props_ParameterDeclaration = cpb.create();
         }
         return props_ParameterDeclaration;
@@ -515,7 +515,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.UnkownClassType:
         if (props_UnkownClassType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("UnkownClassType");
+          cpb.presentationByName();
           props_UnkownClassType = cpb.create();
         }
         return props_UnkownClassType;
@@ -529,7 +529,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.VariableDeclaration:
         if (props_VariableDeclaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("VariableDeclaration");
+          cpb.presentationByName();
           props_VariableDeclaration = cpb.create();
         }
         return props_VariableDeclaration;

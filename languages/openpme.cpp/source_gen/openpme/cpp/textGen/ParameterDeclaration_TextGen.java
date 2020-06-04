@@ -20,15 +20,15 @@ public class ParameterDeclaration_TextGen extends TextGenDescriptorBase {
     if (SPropertyOperations.getBoolean(ctx.getPrimaryInput(), PROPS.isReferenceParameter$qT5E)) {
       tgs.append("&");
     }
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.varName$tPdv));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$tAp1));
   }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink type$OamM = MetaAdapterFactory.getContainmentLink(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x50a50a0b83935605L, 0x50a50a0b8393cb63L, "type");
-    /*package*/ static final SContainmentLink varName$tPdv = MetaAdapterFactory.getContainmentLink(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x50a50a0b83935605L, 0x22a0749b91ed3a50L, "varName");
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty isReferenceParameter$qT5E = MetaAdapterFactory.getProperty(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x4f2266e99642d624L, 0x51af5ed79d451d7eL, "isReferenceParameter");
+    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

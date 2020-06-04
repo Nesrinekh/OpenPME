@@ -63,9 +63,9 @@
     <node concept="1TJgyj" id="6z0p_feMfS$" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610548772" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="boundry_conditions" />
+      <property role="20kJfa" value="boundary_conditions" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="r2co:6z0p_feMdxV" resolve="BoundryConditions" />
+      <ref role="20lvS9" to="r2co:6z0p_feMdxV" resolve="BoundaryConditions" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMfSC" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610548776" />
@@ -93,7 +93,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="num_particles" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="r2co:1MYyjtFOAuc" resolve="NumOfParticles" />
+      <ref role="20lvS9" to="r2co:1MYyjtFOAuc" resolve="NumParticles" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfL0P">

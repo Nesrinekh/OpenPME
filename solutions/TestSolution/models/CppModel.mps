@@ -16,18 +16,30 @@
   <imports />
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
-      <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC" />
+      <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
+        <child id="7548145485610641296" name="Boundary" index="2A2w73" />
+      </concept>
       <concept id="7548145485610539130" name="openpme.core.structure.Domain" flags="ng" index="2A2bSD">
         <child id="7548145485610582911" name="domain" index="2A2ukG" />
       </concept>
-      <concept id="7548145485610539129" name="openpme.core.structure.Dimension" flags="ng" index="2A2bSE" />
+      <concept id="7548145485610539129" name="openpme.core.structure.Dimension" flags="ng" index="2A2bSE">
+        <child id="7548145485610567368" name="dimension" index="2A2i2r" />
+      </concept>
       <concept id="7548145485610539134" name="openpme.core.structure.CutoffRadius" flags="ng" index="2A2bSH" />
       <concept id="7548145485610539133" name="openpme.core.structure.Ghost" flags="ng" index="2A2bSI" />
       <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
-      <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni" />
+      <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni">
+        <child id="7548145485610582929" name="y1" index="2A2un2" />
+        <child id="7548145485610582935" name="z1" index="2A2un4" />
+        <child id="7548145485610582914" name="x0" index="2A2unh" />
+        <child id="7548145485610582917" name="y0" index="2A2unm" />
+        <child id="7548145485610582920" name="z0" index="2A2unr" />
+        <child id="7548145485610582924" name="x1" index="2A2unv" />
+      </concept>
       <concept id="7548145485610641351" name="openpme.core.structure.Discrete" flags="ng" index="2A2w6k">
         <child id="9015780832891961456" name="body" index="wkRMm" />
       </concept>
+      <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
         <child id="8483536403556912288" name="init_particles" index="SClZ9" />
       </concept>
@@ -62,7 +74,7 @@
         <child id="7548145485610548767" name="dimension" index="2A29xc" />
         <child id="7548145485610548787" name="ghost" index="2A29xw" />
         <child id="7548145485610548769" name="domain_size" index="2A29xM" />
-        <child id="7548145485610548772" name="boundry_conditions" index="2A29xR" />
+        <child id="7548145485610548772" name="boundary_conditions" index="2A29xR" />
         <child id="7548145485610548776" name="initial_conditions" index="2A29xV" />
         <child id="7548145485610548781" name="cutoff_radius" index="2A29xY" />
         <child id="2071243749762182961" name="num_particles" index="1Rr2o6" />
@@ -82,11 +94,36 @@
   <node concept="1GHexR" id="7bpBJvmqTaD">
     <property role="TrG5h" value="lennard" />
     <node concept="1GH8rR" id="7bpBJvmqTaE" role="1GHexQ">
-      <node concept="2A2bSE" id="7bpBJvmqTaF" role="2A29xc" />
-      <node concept="2A2bSD" id="7bpBJvmqTaG" role="2A29xM">
-        <node concept="2A2uni" id="7bpBJvmqTaH" role="2A2ukG" />
+      <node concept="2A2bSE" id="7bpBJvmqTaF" role="2A29xc">
+        <node concept="2$GKAY" id="1Uhwoc5UG3L" role="2A2i2r">
+          <property role="2$GKAX" value="3" />
+        </node>
       </node>
-      <node concept="2A2bSC" id="7bpBJvmqTaI" role="2A29xR" />
+      <node concept="2A2bSD" id="7bpBJvmqTaG" role="2A29xM">
+        <node concept="2A2uni" id="7bpBJvmqTaH" role="2A2ukG">
+          <node concept="2$GK$c" id="1Uhwoc5SSpK" role="2A2unm">
+            <property role="2$GK$b" value="0.0" />
+          </node>
+          <node concept="2$GK$c" id="1Uhwoc5SSpM" role="2A2unh">
+            <property role="2$GK$b" value="0.0" />
+          </node>
+          <node concept="2$GK$c" id="1Uhwoc5SSpO" role="2A2unr">
+            <property role="2$GK$b" value="0.0" />
+          </node>
+          <node concept="2$GK$c" id="1Uhwoc5SSpQ" role="2A2unv">
+            <property role="2$GK$b" value="1.0" />
+          </node>
+          <node concept="2$GK$c" id="1Uhwoc5SSpS" role="2A2un2">
+            <property role="2$GK$b" value="1.0" />
+          </node>
+          <node concept="2$GK$c" id="1Uhwoc5SSpU" role="2A2un4">
+            <property role="2$GK$b" value="1.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2A2bSC" id="7bpBJvmqTaI" role="2A29xR">
+        <node concept="2A2w70" id="1Uhwoc5TFC2" role="2A2w73" />
+      </node>
       <node concept="2A2bSJ" id="7bpBJvmqTaJ" role="2A29xV" />
       <node concept="2A2bSH" id="7bpBJvmqTaK" role="2A29xY" />
       <node concept="2A2bSI" id="7bpBJvmqTaL" role="2A29xw" />

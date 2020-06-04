@@ -135,7 +135,7 @@
     <ref role="1XX52x" to="r2co:6z0p_feMdxV" resolve="BoundaryConditions" />
     <node concept="3EZMnI" id="7OuveptiXdE" role="2wV5jI">
       <node concept="3F1sOY" id="7OuveptiXdN" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:6z0p_feMAug" resolve="Boundry" />
+        <ref role="1NtTu8" to="r2co:6z0p_feMAug" resolve="Boundary" />
       </node>
       <node concept="l2Vlx" id="7OuveptiXdF" role="2iSdaV" />
     </node>
@@ -196,14 +196,6 @@
     <node concept="3EZMnI" id="7Ouveptj1bs" role="2wV5jI">
       <node concept="3F0ifn" id="7Ouveptj1bz" role="3EZMnx" />
       <node concept="l2Vlx" id="7Ouveptj1bv" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptj1c1">
-    <property role="3GE5qa" value="initialization.boundary" />
-    <ref role="1XX52x" to="r2co:6z0p_feMAui" resolve="TypeOfBoundary" />
-    <node concept="3EZMnI" id="7Ouveptj1c3" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptj1ca" role="3EZMnx" />
-      <node concept="l2Vlx" id="7Ouveptj1c6" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="7Ouveptjb$n">
@@ -774,6 +766,14 @@
     <ref role="1XX52x" to="r2co:6sMVU6wHprN" resolve="VerletList" />
     <node concept="3F0ifn" id="7mV$Q_d7Iz5" role="2wV5jI">
       <property role="3F0ifm" value="VerletList" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Ouveptj1c1">
+    <property role="3GE5qa" value="initialization.boundary" />
+    <ref role="1XX52x" to="r2co:6z0p_feMAui" resolve="TypeOfBoundary" />
+    <node concept="3EZMnI" id="7Ouveptj1c3" role="2wV5jI">
+      <node concept="3F0ifn" id="7Ouveptj1ca" role="3EZMnx" />
+      <node concept="l2Vlx" id="7Ouveptj1c6" role="2iSdaV" />
     </node>
   </node>
 </model>

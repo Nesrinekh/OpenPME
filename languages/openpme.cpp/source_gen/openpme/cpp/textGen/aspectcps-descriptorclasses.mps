@@ -9,6 +9,7 @@
     <import index="ao3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.text(MPS.Core/)" />
     <import index="tpcf" ref="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <import index="yfwt" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.text.rt(MPS.Core/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lfpi" ref="r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)" />
@@ -662,7 +663,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2G" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="2K" role="37wK5m">
                 <node concept="2OqwBi" id="2M" role="2Oq$k0">
                   <node concept="37vLTw" id="2P" role="2Oq$k0">
@@ -677,11 +678,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="2N" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:2awt9IhVjDg" resolve="varName" />
+                <node concept="3TrcHB" id="2N" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="2T" role="lGtFl">
                     <node concept="3u3nmq" id="2U" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909235690" />
+                      <property role="3u3nmv" value="2202684092499748160" />
                     </node>
                   </node>
                 </node>
@@ -1844,7 +1845,7 @@
               </node>
             </node>
             <node concept="liA8E" id="9W" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="a0" role="37wK5m">
                 <node concept="2OqwBi" id="a2" role="2Oq$k0">
                   <node concept="37vLTw" id="a5" role="2Oq$k0">
@@ -1859,11 +1860,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="a3" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:2awt9IhVjDg" resolve="varName" />
+                <node concept="3TrcHB" id="a3" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="a9" role="lGtFl">
                     <node concept="3u3nmq" id="aa" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909286358" />
+                      <property role="3u3nmv" value="2202684092499753245" />
                     </node>
                   </node>
                 </node>
@@ -3052,10 +3053,10 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="hi" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:1HVDfNPw2YL" resolve="boundary" />
+                  <ref role="3Tt5mk" to="lfpi:1Uhwoc5U8h_" resolve="boundary" />
                   <node concept="cd27G" id="ho" role="lGtFl">
                     <node concept="3u3nmq" id="hp" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909202017" />
+                      <property role="3u3nmv" value="2202684092500707295" />
                     </node>
                   </node>
                 </node>
@@ -3487,7 +3488,7 @@
               </node>
             </node>
             <node concept="liA8E" id="jX" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="k1" role="37wK5m">
                 <node concept="2OqwBi" id="k3" role="2Oq$k0">
                   <node concept="37vLTw" id="k6" role="2Oq$k0">
@@ -3502,11 +3503,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="k4" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:42J9p0zACiN" resolve="varName" />
+                <node concept="3TrcHB" id="k4" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="ka" role="lGtFl">
                     <node concept="3u3nmq" id="kb" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909291082" />
+                      <property role="3u3nmv" value="2202684092499820457" />
                     </node>
                   </node>
                 </node>
@@ -4143,7 +4144,7 @@
               </node>
             </node>
             <node concept="liA8E" id="nZ" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="o3" role="37wK5m">
                 <node concept="2OqwBi" id="o5" role="2Oq$k0">
                   <node concept="2OqwBi" id="o8" role="2Oq$k0">
@@ -4173,11 +4174,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="o6" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:42J9p0zACiN" resolve="varName" />
+                <node concept="3TrcHB" id="o6" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="oi" role="lGtFl">
                     <node concept="3u3nmq" id="oj" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909249848" />
+                      <property role="3u3nmv" value="2202684092499822072" />
                     </node>
                   </node>
                 </node>
@@ -4476,7 +4477,7 @@
               </node>
             </node>
             <node concept="liA8E" id="q4" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="q8" role="37wK5m">
                 <node concept="2OqwBi" id="qa" role="2Oq$k0">
                   <node concept="37vLTw" id="qd" role="2Oq$k0">
@@ -4491,11 +4492,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="qb" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:2awt9IhVjDg" resolve="varName" />
+                <node concept="3TrcHB" id="qb" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="qh" role="lGtFl">
                     <node concept="3u3nmq" id="qi" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909243974" />
+                      <property role="3u3nmv" value="2202684092499754945" />
                     </node>
                   </node>
                 </node>
@@ -13291,7 +13292,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1eh" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="1el" role="37wK5m">
                 <node concept="2OqwBi" id="1en" role="2Oq$k0">
                   <node concept="37vLTw" id="1eq" role="2Oq$k0">
@@ -13306,11 +13307,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="1eo" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:2awt9IhVjDg" resolve="varName" />
+                <node concept="3TrcHB" id="1eo" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="1eu" role="lGtFl">
                     <node concept="3u3nmq" id="1ev" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909230345" />
+                      <property role="3u3nmv" value="2202684092499744176" />
                     </node>
                   </node>
                 </node>
@@ -17875,7 +17876,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1Em" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="1Eq" role="37wK5m">
                 <node concept="2OqwBi" id="1Es" role="2Oq$k0">
                   <node concept="37vLTw" id="1Ev" role="2Oq$k0">
@@ -17890,11 +17891,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="1Et" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:U5MXwlv4du" resolve="className" />
+                <node concept="3TrcHB" id="1Et" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="1Ez" role="lGtFl">
                     <node concept="3u3nmq" id="1E$" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909221620" />
+                      <property role="3u3nmv" value="2202684092499961568" />
                     </node>
                   </node>
                 </node>
@@ -19059,7 +19060,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1LI" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="1LM" role="37wK5m">
                 <node concept="2OqwBi" id="1LO" role="2Oq$k0">
                   <node concept="37vLTw" id="1LR" role="2Oq$k0">
@@ -19074,11 +19075,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="1LP" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:2awt9IhVjDg" resolve="varName" />
+                <node concept="3TrcHB" id="1LP" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="1LV" role="lGtFl">
                     <node concept="3u3nmq" id="1LW" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909224435" />
+                      <property role="3u3nmv" value="2202684092499682521" />
                     </node>
                   </node>
                 </node>
@@ -19463,7 +19464,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1Oa" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode)" resolve="appendNode" />
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <node concept="2OqwBi" id="1Oe" role="37wK5m">
                 <node concept="2OqwBi" id="1Og" role="2Oq$k0">
                   <node concept="2OqwBi" id="1Oj" role="2Oq$k0">
@@ -19493,11 +19494,11 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="1Oh" role="2OqNvi">
-                  <ref role="3Tt5mk" to="lfpi:2awt9IhVjDg" resolve="varName" />
+                <node concept="3TrcHB" id="1Oh" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   <node concept="cd27G" id="1Ot" role="lGtFl">
                     <node concept="3u3nmq" id="1Ou" role="cd27D">
-                      <property role="3u3nmv" value="2525416462909227602" />
+                      <property role="3u3nmv" value="2202684092499743198" />
                     </node>
                   </node>
                 </node>

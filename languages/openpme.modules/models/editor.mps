@@ -217,7 +217,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6z0p_feMfW1" role="3EZMnx">
-        <ref role="1NtTu8" to="3x5m:6z0p_feMfS$" resolve="boundry_conditions" />
+        <ref role="1NtTu8" to="3x5m:6z0p_feMfS$" resolve="boundary_conditions" />
         <node concept="ljvvj" id="6z0p_feMfXs" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
