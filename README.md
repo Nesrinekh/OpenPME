@@ -7,3 +7,8 @@ library (http://openfpm.mpi-cbg.de). OpenPME provides a high-level way of implem
 OpenPME runs on MPS 2019.2.4
 You can download it from here https://confluence.jetbrains.com/display/MPS/Download+MPS+2019.2
 
+## Dependencies
+To install missing dependencies go to
+ 
+    Preferences > Plugins > search for `MPS Math Editor` (install dependencies if requested)
+
