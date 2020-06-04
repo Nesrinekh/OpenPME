@@ -18,7 +18,7 @@
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
       <concept id="9015780832892044768" name="openpme.core.structure.TimeLoopC" flags="ng" index="wk3$6" />
       <concept id="9015780832892044767" name="openpme.core.structure.Discretize" flags="ng" index="wk3$T" />
-      <concept id="9015780832892044765" name="openpme.core.structure.Grid" flags="ng" index="wk3$V" />
+      <concept id="9015780832892044765" name="openpme.core.structure.Mesh" flags="ng" index="wk3$V" />
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC" />
       <concept id="7548145485610539130" name="openpme.core.structure.Domain" flags="ng" index="2A2bSD">
         <child id="7548145485610582911" name="domain" index="2A2ukG" />
@@ -42,24 +42,12 @@
         <child id="8483536403556804645" name="dt" index="SCFHc" />
         <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
-      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$" />
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
-      </concept>
-      <concept id="2071243749762222178" name="openpme.core.structure.Particle" flags="ng" index="1Rrs5l">
-        <child id="2071243749762308246" name="posz" index="1Rqx6x" />
-        <child id="2071243749762308244" name="posx" index="1Rqx6z" />
-        <child id="2071243749762308255" name="name" index="1Rqx6C" />
-        <child id="2071243749762308249" name="property" index="1Rqx6I" />
-      </concept>
-      <concept id="2071243749762222177" name="openpme.core.structure.Foreach" flags="ng" index="1Rrs5m">
-        <child id="2071243749762222473" name="iterable" index="1Rrs2Y" />
       </concept>
       <concept id="2071243749762222176" name="openpme.core.structure.InitParticles" flags="ng" index="1Rrs5n" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
-      <concept id="1068431790191" name="jetbrains.mps.baseLanguage.structure.Expression" flags="nn" index="33vP2n" />
       <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
         <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
@@ -126,15 +114,6 @@
           </node>
           <node concept="wk3$T" id="7mV$Q_d7OeD" role="SCFJD" />
           <node concept="wk3$V" id="7mV$Q_d7OeM" role="SCFJD" />
-          <node concept="1Rrs5m" id="7mV$Q_d8boK" role="SCFJD">
-            <node concept="1Rrs5l" id="7mV$Q_d8boM" role="1Rrs2Y">
-              <node concept="33vP2n" id="7mV$Q_d8boO" role="1Rqx6C" />
-              <node concept="10OMs4" id="7mV$Q_d8boQ" role="1Rqx6z" />
-              <node concept="10OMs4" id="7mV$Q_d8boS" role="1Rqx6x" />
-              <node concept="1Rqx6$" id="7mV$Q_d8boU" role="1Rqx6I" />
-            </node>
-            <node concept="wk3$T" id="7mV$Q_d8kVW" role="SCFJD" />
-          </node>
           <node concept="wk3$T" id="7mV$Q_d8bpe" role="SCFJD" />
         </node>
         <node concept="1Rrs5n" id="7mV$Q_d735H" role="SClZ9" />

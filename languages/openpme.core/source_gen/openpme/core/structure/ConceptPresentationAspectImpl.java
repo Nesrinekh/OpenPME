@@ -24,7 +24,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Epsilon;
   private ConceptPresentation props_Foreach;
   private ConceptPresentation props_Ghost;
-  private ConceptPresentation props_Grid;
   private ConceptPresentation props_Hybrid;
   private ConceptPresentation props_ICommand;
   private ConceptPresentation props_ICommandC;
@@ -39,12 +38,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_LaplacianOperator;
   private ConceptPresentation props_ListOfPhysicalNotations;
   private ConceptPresentation props_Loop;
+  private ConceptPresentation props_Mesh;
   private ConceptPresentation props_NonPeriodic;
   private ConceptPresentation props_NonUniform;
   private ConceptPresentation props_Nu;
   private ConceptPresentation props_NumParticles;
   private ConceptPresentation props_Omega;
-  private ConceptPresentation props_OnGrid;
+  private ConceptPresentation props_OnMesh;
   private ConceptPresentation props_OnParticle;
   private ConceptPresentation props_Particle;
   private ConceptPresentation props_Periodic;
@@ -183,13 +183,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Ghost = cpb.create();
         }
         return props_Ghost;
-      case LanguageConceptSwitch.Grid:
-        if (props_Grid == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Grid");
-          props_Grid = cpb.create();
-        }
-        return props_Grid;
       case LanguageConceptSwitch.Hybrid:
         if (props_Hybrid == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -281,6 +274,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Loop = cpb.create();
         }
         return props_Loop;
+      case LanguageConceptSwitch.Mesh:
+        if (props_Mesh == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Mesh");
+          props_Mesh = cpb.create();
+        }
+        return props_Mesh;
       case LanguageConceptSwitch.NonPeriodic:
         if (props_NonPeriodic == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -316,13 +316,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Omega = cpb.create();
         }
         return props_Omega;
-      case LanguageConceptSwitch.OnGrid:
-        if (props_OnGrid == null) {
+      case LanguageConceptSwitch.OnMesh:
+        if (props_OnMesh == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("ongrid");
-          props_OnGrid = cpb.create();
+          props_OnMesh = cpb.create();
         }
-        return props_OnGrid;
+        return props_OnMesh;
       case LanguageConceptSwitch.OnParticle:
         if (props_OnParticle == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

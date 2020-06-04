@@ -259,17 +259,17 @@
     <classNode dependClassName="openpme.core.editor.Epsilon_Editor" />
     <classNode dependClassName="openpme.core.editor.Foreach_Editor" />
     <classNode dependClassName="openpme.core.editor.Ghost_Editor" />
-    <classNode dependClassName="openpme.core.editor.Grid_Editor" />
     <classNode dependClassName="openpme.core.editor.Hybrid_Editor" />
     <classNode dependClassName="openpme.core.editor.InitParticles_Editor" />
     <classNode dependClassName="openpme.core.editor.InitialConditions_Editor" />
     <classNode dependClassName="openpme.core.editor.Interpolate_Editor" />
+    <classNode dependClassName="openpme.core.editor.Mesh_Editor" />
     <classNode dependClassName="openpme.core.editor.NonPeriodic_Editor" />
     <classNode dependClassName="openpme.core.editor.NonUniform_Editor" />
     <classNode dependClassName="openpme.core.editor.Nu_Editor" />
     <classNode dependClassName="openpme.core.editor.NumParticles_Editor" />
     <classNode dependClassName="openpme.core.editor.Omega_Editor" />
-    <classNode dependClassName="openpme.core.editor.OnGrid_Editor" />
+    <classNode dependClassName="openpme.core.editor.OnMesh_Editor" />
     <classNode dependClassName="openpme.core.editor.OnParticle_Editor" />
     <classNode dependClassName="openpme.core.editor.Particle_Editor" />
     <classNode dependClassName="openpme.core.editor.Periodic_Editor" />
@@ -375,22 +375,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="openpme.core.editor.Grid_Editor">
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="openpme.core.editor.Grid_EditorBuilder_a" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="openpme.core.editor.Grid_EditorBuilder_a">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
   <dependency className="openpme.core.editor.Hybrid_Editor">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
@@ -480,6 +464,22 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="openpme.core.editor.Interpolate_EditorBuilder_a">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="openpme.core.editor.Mesh_Editor">
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="openpme.core.editor.Mesh_EditorBuilder_a" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="openpme.core.editor.Mesh_EditorBuilder_a">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
@@ -585,14 +585,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="openpme.core.editor.OnGrid_Editor">
+  <dependency className="openpme.core.editor.OnMesh_Editor">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="openpme.core.editor.OnGrid_EditorBuilder_a" />
+    <classNode dependClassName="openpme.core.editor.OnMesh_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="openpme.core.editor.OnGrid_EditorBuilder_a">
+  <dependency className="openpme.core.editor.OnMesh_EditorBuilder_a">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />

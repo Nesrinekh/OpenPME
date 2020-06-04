@@ -2959,7 +2959,7 @@
     </file>
   </root>
   <root nodeRef="r:5b7c677a-ef6e-47a8-a93d-f0a25887ec12(openpme.core.editor)/8483536403557181514">
-    <file name="OnGrid_Editor.java">
+    <file name="OnMesh_Editor.java">
       <node id="8483536403557181514" at="11,79,12,72" concept="6" />
       <node id="8483536403557181514" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="8483536403557181514" at="11,79,12,72" />
@@ -2967,9 +2967,9 @@
         <var name="editorContext" id="8483536403557181514" />
         <var name="node" id="8483536403557181514" />
       </scope>
-      <unit id="8483536403557181514" at="10,0,15,0" name="openpme.core.editor.OnGrid_Editor" />
+      <unit id="8483536403557181514" at="10,0,15,0" name="openpme.core.editor.OnMesh_Editor" />
     </file>
-    <file name="OnGrid_EditorBuilder_a.java">
+    <file name="OnMesh_EditorBuilder_a.java">
       <node id="8483536403557181514" at="16,86,17,19" concept="8" />
       <node id="8483536403557181514" at="17,19,18,18" concept="1" />
       <node id="8483536403557181514" at="23,26,24,18" concept="6" />
@@ -2982,7 +2982,7 @@
       <node id="8483536403557181516" at="36,34,37,22" concept="6" />
       <node id="8483536403557181514" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="8483536403557181514" at="27,0,30,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8483536403557181514" at="16,0,20,0" concept="0" trace="OnGrid_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8483536403557181514" at="16,0,20,0" concept="0" trace="OnMesh_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8483536403557181514" at="21,0,26,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8483536403557181516" at="31,0,39,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="8483536403557181514" at="23,26,24,18" />
@@ -2998,7 +2998,7 @@
         <var name="editorCell" id="8483536403557181516" />
       </scope>
       <scope id="8483536403557181516" at="31,0,39,0" />
-      <unit id="8483536403557181514" at="12,0,40,0" name="openpme.core.editor.OnGrid_EditorBuilder_a" />
+      <unit id="8483536403557181514" at="12,0,40,0" name="openpme.core.editor.OnMesh_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:5b7c677a-ef6e-47a8-a93d-f0a25887ec12(openpme.core.editor)/8483536403557181527">
@@ -3088,7 +3088,7 @@
     </file>
   </root>
   <root nodeRef="r:5b7c677a-ef6e-47a8-a93d-f0a25887ec12(openpme.core.editor)/8483536403557181553">
-    <file name="Grid_Editor.java">
+    <file name="Mesh_Editor.java">
       <node id="8483536403557181553" at="11,79,12,70" concept="6" />
       <node id="8483536403557181553" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="8483536403557181553" at="11,79,12,70" />
@@ -3096,9 +3096,9 @@
         <var name="editorContext" id="8483536403557181553" />
         <var name="node" id="8483536403557181553" />
       </scope>
-      <unit id="8483536403557181553" at="10,0,15,0" name="openpme.core.editor.Grid_Editor" />
+      <unit id="8483536403557181553" at="10,0,15,0" name="openpme.core.editor.Mesh_Editor" />
     </file>
-    <file name="Grid_EditorBuilder_a.java">
+    <file name="Mesh_EditorBuilder_a.java">
       <node id="8483536403557181553" at="16,84,17,19" concept="8" />
       <node id="8483536403557181553" at="17,19,18,18" concept="1" />
       <node id="8483536403557181553" at="23,26,24,18" concept="6" />
@@ -3111,7 +3111,7 @@
       <node id="8483536403557181555" at="36,34,37,22" concept="6" />
       <node id="8483536403557181553" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="8483536403557181553" at="27,0,30,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8483536403557181553" at="16,0,20,0" concept="0" trace="Grid_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8483536403557181553" at="16,0,20,0" concept="0" trace="Mesh_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8483536403557181553" at="21,0,26,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8483536403557181555" at="31,0,39,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="8483536403557181553" at="23,26,24,18" />
@@ -3127,7 +3127,7 @@
         <var name="editorCell" id="8483536403557181555" />
       </scope>
       <scope id="8483536403557181555" at="31,0,39,0" />
-      <unit id="8483536403557181553" at="12,0,40,0" name="openpme.core.editor.Grid_EditorBuilder_a" />
+      <unit id="8483536403557181553" at="12,0,40,0" name="openpme.core.editor.Mesh_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:5b7c677a-ef6e-47a8-a93d-f0a25887ec12(openpme.core.editor)/8483536403557181566">
