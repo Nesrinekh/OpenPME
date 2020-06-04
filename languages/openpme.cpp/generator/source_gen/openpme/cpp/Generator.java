@@ -34,8 +34,9 @@ public class Generator extends TemplateModuleInterpreted2 {
 
   @Override
   public Collection<SLanguage> getTargetLanguages() {
-    SLanguage[] rv = new SLanguage[1];
-    rv[0] = MetaAdapterFactory.getLanguage(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, "openpme.cpp");
+    SLanguage[] rv = new SLanguage[2];
+    rv[0] = MetaAdapterFactory.getLanguage(0x66673400467e48d2L, 0xace06f708d2ef66dL, "openpme.core");
+    rv[1] = MetaAdapterFactory.getLanguage(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, "openpme.cpp");
     return Arrays.asList(rv);
   }
 

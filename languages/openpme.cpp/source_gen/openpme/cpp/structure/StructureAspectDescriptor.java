@@ -93,6 +93,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.aggregatedLanguage(0x66673400467e48d2L, 0xace06f708d2ef66dL, "openpme.core");
     deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
   }
 
@@ -350,9 +351,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.cpp", "BaseVariableDeclaration", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x50a50a0b83935605L);
     b.class_(false, false, false);
     b.super_("openpme.cpp.structure.Statement", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696c5c9L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)/5811061938759882245");
     b.version(2);
-    b.aggregate("varName", 0x22a0749b91ed3a50L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L).optional(false).ordered(true).multiple(false).origin("2495122405080250960").done();
     b.aggregate("type", 0x50a50a0b8393cb63L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc69a7c7fL).optional(false).ordered(true).multiple(false).origin("5811061938759912291").done();
     return b.create();
   }
@@ -372,7 +373,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.cpp.structure.Expression", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L);
     b.origin("r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)/1980357867516997552");
     b.version(2);
-    b.aggregate("boundary", 0x1b7ba4fcf5802fb1L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x1b7ba4fcf5802fb0L).optional(false).ordered(true).multiple(false).origin("1980357867516997553").done();
+    b.aggregate("boundary", 0x1e91818305e88465L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca6792L).optional(false).ordered(true).multiple(false).origin("2202684092500706405").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCharType() {
@@ -387,10 +388,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.cpp", "ClassInstanceDecl", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x40af25902399cd06L);
     b.class_(false, false, false);
     b.super_("openpme.cpp.structure.Statement", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696c5c9L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)/4660985440354553094");
     b.version(2);
     b.aggregate("classType", 0xe85cbd8157c46feL).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc69a7c7fL).optional(false).ordered(true).multiple(false).origin("1046466617367348990").done();
-    b.aggregate("varName", 0x40af2590239a84b3L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L).optional(false).ordered(true).multiple(false).origin("4660985440354600115").done();
     b.aggregate("initArgs", 0x40af25902399cd09L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L).optional(true).ordered(true).multiple(true).origin("4660985440354553097").done();
     return b.create();
   }
@@ -805,9 +806,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("openpme.cpp.structure.Type", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc69a7c7fL);
     b.parent(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x73b331baacd9d3e7L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)/1046466617367348061");
     b.version(2);
-    b.aggregate("className", 0xe85cbd8157c435eL).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L).optional(false).ordered(true).multiple(false).origin("1046466617367348062").done();
     b.aggregate("package", 0xe85cbd8157c4363L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0xe85cbd81578d3f7L).optional(true).ordered(true).multiple(false).origin("1046466617367348067").done();
     return b.create();
   }

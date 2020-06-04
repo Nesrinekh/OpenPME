@@ -87,9 +87,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
     deps.extendedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
-    deps.aggregatedLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
-    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
     deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
+    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
+    deps.aggregatedLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
   }
 
   @Override
@@ -253,7 +253,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610539131");
     b.version(2);
-    b.aggregate("Boundry", 0x68c06653ceca6790L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca6792L).optional(true).ordered(true).multiple(false).origin("7548145485610641296").done();
+    b.aggregate("Boundary", 0x68c06653ceca6790L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca6792L).optional(true).ordered(true).multiple(false).origin("7548145485610641296").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBox() {
@@ -261,12 +261,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610582913");
     b.version(2);
-    b.aggregate("x0", 0x68c06653cec98382L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610582914").done();
-    b.aggregate("y0", 0x68c06653cec98385L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610582917").done();
-    b.aggregate("z0", 0x68c06653cec98388L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610582920").done();
-    b.aggregate("x1", 0x68c06653cec9838cL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610582924").done();
-    b.aggregate("y1", 0x68c06653cec98391L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610582929").done();
-    b.aggregate("z1", 0x68c06653cec98397L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610582935").done();
+    b.aggregate("x0", 0x68c06653cec98382L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(true).ordered(true).multiple(false).origin("7548145485610582914").done();
+    b.aggregate("y0", 0x68c06653cec98385L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(true).ordered(true).multiple(false).origin("7548145485610582917").done();
+    b.aggregate("z0", 0x68c06653cec98388L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(true).ordered(true).multiple(false).origin("7548145485610582920").done();
+    b.aggregate("x1", 0x68c06653cec9838cL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(true).ordered(true).multiple(false).origin("7548145485610582924").done();
+    b.aggregate("y1", 0x68c06653cec98391L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(true).ordered(true).multiple(false).origin("7548145485610582929").done();
+    b.aggregate("z1", 0x68c06653cec98397L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(true).ordered(true).multiple(false).origin("7548145485610582935").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCellList() {
@@ -294,7 +294,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610539134");
     b.version(2);
-    b.aggregate("cutoffradius_value", 0x68c06653cec9a46fL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL).optional(true).ordered(true).multiple(false).origin("7548145485610591343").done();
+    b.aggregate("cutoffradius_value", 0x68c06653cec9a46fL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a97fbL).optional(false).ordered(true).multiple(false).origin("7548145485610591343").done();
     b.alias("cutoffradius");
     return b.create();
   }
@@ -317,7 +317,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610539129");
     b.version(2);
-    b.aggregate("dimension", 0x68c06653cec946c8L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1129778b846L).optional(true).ordered(true).multiple(false).origin("7548145485610567368").done();
+    b.aggregate("dimension", 0x68c06653cec946c8L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a9749L).optional(true).ordered(true).multiple(false).origin("7548145485610567368").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDiscrete() {

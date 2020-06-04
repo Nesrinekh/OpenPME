@@ -547,30 +547,30 @@
       <node id="7548145485610548971" at="233,108,234,40" concept="1" />
       <node id="7548145485610548971" at="234,40,235,34" concept="1" />
       <node id="7548145485610548971" at="235,34,236,22" concept="6" />
-      <node id="5443610339528708661" at="238,40,239,147" concept="5" />
-      <node id="5443610339528708661" at="239,147,240,33" concept="6" />
-      <node id="5443610339528708661" at="246,132,247,38" concept="8" />
+      <node id="5443610339528708661" at="238,40,239,149" concept="5" />
+      <node id="5443610339528708661" at="239,149,240,33" concept="6" />
+      <node id="5443610339528708661" at="246,133,247,38" concept="8" />
       <node id="5443610339528708661" at="247,38,248,25" concept="1" />
       <node id="5443610339528708661" at="253,28,254,20" concept="6" />
       <node id="5443610339528708661" at="257,55,258,76" concept="5" />
-      <node id="5443610339528708661" at="258,76,259,127" concept="1" />
-      <node id="5443610339528708661" at="259,127,260,130" concept="1" />
-      <node id="5443610339528708661" at="260,130,261,48" concept="1" />
+      <node id="5443610339528708661" at="258,76,259,128" concept="1" />
+      <node id="5443610339528708661" at="259,128,260,131" concept="1" />
+      <node id="5443610339528708661" at="260,131,261,48" concept="1" />
       <node id="5443610339528708661" at="261,48,262,24" concept="6" />
       <node id="5443610339528708661" at="268,118,269,137" concept="1" />
-      <node id="5443610339528708661" at="271,42,272,59" concept="1" />
+      <node id="5443610339528708661" at="271,42,272,60" concept="1" />
       <node id="5443610339528708661" at="273,7,274,36" concept="5" />
       <node id="7548145485610549084" at="274,36,275,62" concept="1" />
       <node id="5443610339528708661" at="275,62,276,42" concept="1" />
       <node id="5443610339528708661" at="279,44,280,41" concept="1" />
-      <node id="5443610339528708661" at="280,41,281,118" concept="1" />
+      <node id="5443610339528708661" at="280,41,281,119" concept="1" />
       <node id="5443610339528708661" at="282,11,283,56" concept="5" />
-      <node id="5443610339528708661" at="283,56,284,57" concept="1" />
-      <node id="5443610339528708661" at="284,57,285,48" concept="1" />
+      <node id="5443610339528708661" at="283,56,284,58" concept="1" />
+      <node id="5443610339528708661" at="284,58,285,48" concept="1" />
       <node id="5443610339528708661" at="285,48,286,35" concept="1" />
       <node id="5443610339528708661" at="286,35,287,26" concept="6" />
       <node id="5443610339528708661" at="288,17,289,42" concept="1" />
-      <node id="5443610339528708661" at="292,40,293,39" concept="6" />
+      <node id="5443610339528708661" at="292,40,293,40" concept="6" />
       <node id="7548145485610549068" at="296,41,297,112" concept="5" />
       <node id="7548145485610549068" at="297,112,298,47" concept="1" />
       <node id="7548145485610549068" at="298,47,299,34" concept="5" />
@@ -708,7 +708,7 @@
       <node id="7548145485610549293" at="574,34,575,22" concept="6" />
       <node id="5443610339528708661" at="579,0,580,0" concept="7" trace="dimension$VXz0" />
       <node id="5443610339528708661" at="580,0,581,0" concept="7" trace="domain_size$VXzY" />
-      <node id="5443610339528708661" at="581,0,582,0" concept="7" trace="boundry_conditions$VXJA" />
+      <node id="5443610339528708661" at="581,0,582,0" concept="7" trace="boundary_conditions$VXJA" />
       <node id="5443610339528708661" at="582,0,583,0" concept="7" trace="initial_conditions$VXLy" />
       <node id="5443610339528708661" at="583,0,584,0" concept="7" trace="cutoff_radius$VXY8" />
       <node id="5443610339528708661" at="584,0,585,0" concept="7" trace="ghost$VY12" />
@@ -749,7 +749,7 @@
       <node id="5443610339528708661" at="170,0,174,0" concept="4" trace="createRefNode_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5443610339528708661" at="178,0,182,0" concept="0" trace="domain_sizeSingleRoleHandler_x2svzq_f0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5443610339528708661" at="238,0,242,0" concept="4" trace="createRefNode_2#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5443610339528708661" at="246,0,250,0" concept="0" trace="boundry_conditionsSingleRoleHandler_x2svzq_h0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="5443610339528708661" at="246,0,250,0" concept="0" trace="boundary_conditionsSingleRoleHandler_x2svzq_h0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5443610339528708661" at="306,0,310,0" concept="4" trace="createRefNode_3#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5443610339528708661" at="314,0,318,0" concept="0" trace="initial_conditionsSingleRoleHandler_x2svzq_j0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5443610339528708661" at="374,0,378,0" concept="4" trace="createRefNode_4#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -775,7 +775,7 @@
       <node id="5443610339528708661" at="529,0,536,0" concept="4" trace="createChildCell#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5443610339528708661" at="145,109,154,7" concept="9" />
       <node id="5443610339528708661" at="213,111,222,7" concept="9" />
-      <node id="5443610339528708661" at="281,118,290,7" concept="9" />
+      <node id="5443610339528708661" at="281,119,290,7" concept="9" />
       <node id="5443610339528708661" at="349,118,358,7" concept="9" />
       <node id="5443610339528708661" at="417,113,426,7" concept="9" />
       <node id="5443610339528708661" at="485,105,494,7" concept="9" />
@@ -819,9 +819,9 @@
       <scope id="5443610339528708661" at="224,40,225,32" />
       <scope id="5443610339528708661" at="253,28,254,20" />
       <scope id="5443610339528708661" at="268,118,269,137" />
-      <scope id="5443610339528708661" at="271,42,272,59" />
+      <scope id="5443610339528708661" at="271,42,272,60" />
       <scope id="5443610339528708661" at="288,17,289,42" />
-      <scope id="5443610339528708661" at="292,40,293,39" />
+      <scope id="5443610339528708661" at="292,40,293,40" />
       <scope id="5443610339528708661" at="321,28,322,20" />
       <scope id="5443610339528708661" at="336,118,337,137" />
       <scope id="5443610339528708661" at="339,42,340,59" />
@@ -854,7 +854,7 @@
       <scope id="5443610339528708661" at="238,40,240,33">
         <var name="provider" id="5443610339528708661" />
       </scope>
-      <scope id="5443610339528708661" at="246,132,248,25" />
+      <scope id="5443610339528708661" at="246,133,248,25" />
       <scope id="5443610339528708661" at="306,40,308,33">
         <var name="provider" id="5443610339528708661" />
       </scope>
@@ -1123,7 +1123,7 @@
       <unit id="5443610339528708661" at="578,0,587,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$LINKS" />
       <unit id="5443610339528708661" at="106,0,160,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$dimensionSingleRoleHandler_x2svzq_d0" />
       <unit id="5443610339528708661" at="174,0,228,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$domain_sizeSingleRoleHandler_x2svzq_f0" />
-      <unit id="5443610339528708661" at="242,0,296,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$boundry_conditionsSingleRoleHandler_x2svzq_h0" />
+      <unit id="5443610339528708661" at="242,0,296,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$boundary_conditionsSingleRoleHandler_x2svzq_h0" />
       <unit id="5443610339528708661" at="310,0,364,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$initial_conditionsSingleRoleHandler_x2svzq_j0" />
       <unit id="5443610339528708661" at="378,0,432,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$cutoff_radiusSingleRoleHandler_x2svzq_l0" />
       <unit id="5443610339528708661" at="446,0,500,0" name="openpme.modules.editor.Initialization_EditorBuilder_a$ghostSingleRoleHandler_x2svzq_n0" />

@@ -19,6 +19,10 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
+      case LanguageConceptSwitch.NonPeriodic:
+        return new NonPeriodic_TextGen();
+      case LanguageConceptSwitch.Periodic:
+        return new Periodic_TextGen();
     }
     return null;
   }

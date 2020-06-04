@@ -13,10 +13,10 @@ public class BoundaryPPME_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.boundary$8qS0));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.boundary$kgSU));
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink boundary$8qS0 = MetaAdapterFactory.getContainmentLink(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x1b7ba4fcf5802fb0L, 0x1b7ba4fcf5802fb1L, "boundary");
+    /*package*/ static final SContainmentLink boundary$kgSU = MetaAdapterFactory.getContainmentLink(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x1b7ba4fcf5802fb0L, 0x1e91818305e88465L, "boundary");
   }
 }

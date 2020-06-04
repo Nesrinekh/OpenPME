@@ -84,26 +84,27 @@
       <scope id="1046466617367348080" at="124,49,125,45" />
     </file>
     <file name="UnkownClassType_TextGen.java">
-      <node id="1046466617367348080" at="14,54,15,55" concept="6" />
-      <node id="1046466617367348111" at="16,89,17,91" concept="2" />
-      <node id="1046466617367348121" at="18,5,19,91" concept="2" />
-      <node id="1046466617367348128" at="20,90,21,92" concept="2" />
-      <node id="1046466617367348080" at="26,0,27,0" concept="9" trace="package$Ux1r" />
-      <node id="1046466617367348080" at="27,0,28,0" concept="9" trace="className$UwZ0" />
-      <node id="1046466617367348080" at="28,0,29,0" concept="9" trace="template$gDp0" />
-      <node id="1046466617367348108" at="15,55,18,5" concept="4" />
-      <node id="1046466617367348125" at="19,91,22,5" concept="4" />
-      <node id="1046466617367348080" at="13,0,24,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="1046466617367348109" at="16,89,17,91" />
-      <scope id="1046466617367348126" at="20,90,21,92" />
-      <scope id="1046466617367348080" at="14,54,22,5">
+      <node id="1046466617367348080" at="16,54,17,55" concept="6" />
+      <node id="1046466617367348111" at="18,89,19,91" concept="2" />
+      <node id="1046466617367348121" at="20,5,21,86" concept="2" />
+      <node id="1046466617367348128" at="22,90,23,92" concept="2" />
+      <node id="1046466617367348080" at="28,0,29,0" concept="9" trace="package$Ux1r" />
+      <node id="1046466617367348080" at="29,0,30,0" concept="9" trace="template$gDp0" />
+      <node id="1046466617367348080" at="33,0,34,0" concept="9" trace="name$tAp1" />
+      <node id="1046466617367348108" at="17,55,20,5" concept="4" />
+      <node id="1046466617367348125" at="21,86,24,5" concept="4" />
+      <node id="1046466617367348080" at="15,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1046466617367348109" at="18,89,19,91" />
+      <scope id="1046466617367348126" at="22,90,23,92" />
+      <scope id="1046466617367348080" at="16,54,24,5">
         <var name="tgs" id="1046466617367348080" />
       </scope>
-      <scope id="1046466617367348080" at="13,0,24,0">
+      <scope id="1046466617367348080" at="15,0,26,0">
         <var name="ctx" id="1046466617367348080" />
       </scope>
-      <unit id="1046466617367348080" at="25,0,30,0" name="openpme.cpp.textGen.UnkownClassType_TextGen$LINKS" />
-      <unit id="1046466617367348080" at="12,0,31,0" name="openpme.cpp.textGen.UnkownClassType_TextGen" />
+      <unit id="1046466617367348080" at="32,0,35,0" name="openpme.cpp.textGen.UnkownClassType_TextGen$PROPS" />
+      <unit id="1046466617367348080" at="27,0,31,0" name="openpme.cpp.textGen.UnkownClassType_TextGen$LINKS" />
+      <unit id="1046466617367348080" at="14,0,36,0" name="openpme.cpp.textGen.UnkownClassType_TextGen" />
     </file>
   </root>
   <root nodeRef="r:ae583c5f-552e-4111-b987-ee4e0c60dec1(openpme.cpp.textGen)/1809487460004381554">
@@ -181,19 +182,20 @@
   </root>
   <root nodeRef="r:ae583c5f-552e-4111-b987-ee4e0c60dec1(openpme.cpp.textGen)/1809487460004411982">
     <file name="ClassInstanceReference_TextGen.java">
-      <node id="1809487460004411982" at="15,54,16,55" concept="6" />
-      <node id="1809487460004412026" at="16,55,17,145" concept="2" />
-      <node id="1809487460004411982" at="21,0,22,0" concept="9" trace="classDeclaration$5v4w" />
-      <node id="1809487460004411982" at="22,0,23,0" concept="9" trace="varName$Zc9q" />
-      <node id="1809487460004411982" at="14,0,19,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="1809487460004411982" at="15,54,17,145">
+      <node id="1809487460004411982" at="16,54,17,55" concept="6" />
+      <node id="1809487460004412026" at="17,55,18,142" concept="2" />
+      <node id="1809487460004411982" at="22,0,23,0" concept="9" trace="classDeclaration$5v4w" />
+      <node id="1809487460004411982" at="26,0,27,0" concept="9" trace="name$tAp1" />
+      <node id="1809487460004411982" at="15,0,20,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1809487460004411982" at="16,54,18,142">
         <var name="tgs" id="1809487460004411982" />
       </scope>
-      <scope id="1809487460004411982" at="14,0,19,0">
+      <scope id="1809487460004411982" at="15,0,20,0">
         <var name="ctx" id="1809487460004411982" />
       </scope>
-      <unit id="1809487460004411982" at="20,0,24,0" name="openpme.cpp.textGen.ClassInstanceReference_TextGen$LINKS" />
-      <unit id="1809487460004411982" at="13,0,25,0" name="openpme.cpp.textGen.ClassInstanceReference_TextGen" />
+      <unit id="1809487460004411982" at="21,0,24,0" name="openpme.cpp.textGen.ClassInstanceReference_TextGen$LINKS" />
+      <unit id="1809487460004411982" at="25,0,28,0" name="openpme.cpp.textGen.ClassInstanceReference_TextGen$PROPS" />
+      <unit id="1809487460004411982" at="14,0,29,0" name="openpme.cpp.textGen.ClassInstanceReference_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="1809487460004411982" at="46,56,47,52" concept="7" />
@@ -245,8 +247,8 @@
       <node id="1809487460004472191" at="16,54,17,55" concept="6" />
       <node id="1809487460004477668" at="17,55,18,86" concept="2" />
       <node id="1809487460004477672" at="18,86,19,20" concept="2" />
-      <node id="1809487460004477673" at="19,20,20,89" concept="2" />
-      <node id="1809487460004478756" at="20,89,21,20" concept="2" />
+      <node id="1809487460004477673" at="19,20,20,86" concept="2" />
+      <node id="1809487460004478756" at="20,86,21,20" concept="2" />
       <node id="1809487460004479641" at="22,86,23,150" concept="2" />
       <node id="1133127882858285432" at="24,5,25,20" concept="2" />
       <node id="1809487460004477680" at="26,96,27,24" concept="2" />
@@ -254,9 +256,9 @@
       <node id="1809487460004477691" at="29,5,30,20" concept="2" />
       <node id="1809487460004477692" at="30,20,31,18" concept="2" />
       <node id="1809487460004472191" at="35,0,36,0" concept="9" trace="type$OamM" />
-      <node id="1809487460004472191" at="36,0,37,0" concept="9" trace="varName$tPdv" />
-      <node id="1809487460004472191" at="37,0,38,0" concept="9" trace="size$YjSh" />
-      <node id="1809487460004472191" at="38,0,39,0" concept="9" trace="initialization$Rvu9" />
+      <node id="1809487460004472191" at="36,0,37,0" concept="9" trace="size$YjSh" />
+      <node id="1809487460004472191" at="37,0,38,0" concept="9" trace="initialization$Rvu9" />
+      <node id="1809487460004472191" at="41,0,42,0" concept="9" trace="name$tAp1" />
       <node id="1809487460004472191" at="42,0,43,0" concept="9" trace="value$fpdt" />
       <node id="1133127882858234843" at="21,20,24,5" concept="4" />
       <node id="1809487460004477677" at="25,20,29,5" concept="4" />
@@ -269,8 +271,8 @@
       <scope id="1809487460004472191" at="15,0,33,0">
         <var name="ctx" id="1809487460004472191" />
       </scope>
-      <unit id="1809487460004472191" at="41,0,44,0" name="openpme.cpp.textGen.ArrayDeclaration_TextGen$PROPS" />
-      <unit id="1809487460004472191" at="34,0,40,0" name="openpme.cpp.textGen.ArrayDeclaration_TextGen$LINKS" />
+      <unit id="1809487460004472191" at="40,0,44,0" name="openpme.cpp.textGen.ArrayDeclaration_TextGen$PROPS" />
+      <unit id="1809487460004472191" at="34,0,39,0" name="openpme.cpp.textGen.ArrayDeclaration_TextGen$LINKS" />
       <unit id="1809487460004472191" at="14,0,45,0" name="openpme.cpp.textGen.ArrayDeclaration_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
@@ -357,7 +359,7 @@
     <file name="BoundaryPPME_TextGen.java">
       <node id="1980357867516997555" at="14,54,15,55" concept="6" />
       <node id="1980357867516997599" at="15,55,16,90" concept="2" />
-      <node id="1980357867516997555" at="20,0,21,0" concept="9" trace="boundary$8qS0" />
+      <node id="1980357867516997555" at="20,0,21,0" concept="9" trace="boundary$kgSU" />
       <node id="1980357867516997555" at="13,0,18,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="1980357867516997555" at="14,54,16,90">
         <var name="tgs" id="1980357867516997555" />
@@ -418,28 +420,29 @@
       <scope id="2891901930128737230" at="128,53,129,49" />
     </file>
     <file name="VariableDeclaration_TextGen.java">
-      <node id="2891901930128737230" at="14,54,15,55" concept="6" />
-      <node id="2891901930128965389" at="15,55,16,86" concept="2" />
-      <node id="2891901930128974410" at="16,86,17,20" concept="2" />
-      <node id="2891901930128737274" at="17,20,18,89" concept="2" />
-      <node id="2891901930128747171" at="19,96,20,24" concept="2" />
-      <node id="2891901930128747258" at="20,24,21,98" concept="2" />
-      <node id="2891901930128750954" at="22,5,23,20" concept="2" />
-      <node id="2891901930128817653" at="23,20,24,18" concept="2" />
-      <node id="2891901930128737230" at="28,0,29,0" concept="9" trace="type$OamM" />
-      <node id="2891901930128737230" at="29,0,30,0" concept="9" trace="varName$tPdv" />
-      <node id="2891901930128737230" at="30,0,31,0" concept="9" trace="initialization$ttNe" />
-      <node id="2891901930128742699" at="18,89,22,5" concept="4" />
-      <node id="2891901930128737230" at="13,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="2891901930128742701" at="19,96,21,98" />
-      <scope id="2891901930128737230" at="14,54,24,18">
+      <node id="2891901930128737230" at="16,54,17,55" concept="6" />
+      <node id="2891901930128965389" at="17,55,18,86" concept="2" />
+      <node id="2891901930128974410" at="18,86,19,20" concept="2" />
+      <node id="2891901930128737274" at="19,20,20,86" concept="2" />
+      <node id="2891901930128747171" at="21,96,22,24" concept="2" />
+      <node id="2891901930128747258" at="22,24,23,98" concept="2" />
+      <node id="2891901930128750954" at="24,5,25,20" concept="2" />
+      <node id="2891901930128817653" at="25,20,26,18" concept="2" />
+      <node id="2891901930128737230" at="30,0,31,0" concept="9" trace="type$OamM" />
+      <node id="2891901930128737230" at="31,0,32,0" concept="9" trace="initialization$ttNe" />
+      <node id="2891901930128737230" at="35,0,36,0" concept="9" trace="name$tAp1" />
+      <node id="2891901930128742699" at="20,86,24,5" concept="4" />
+      <node id="2891901930128737230" at="15,0,28,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2891901930128742701" at="21,96,23,98" />
+      <scope id="2891901930128737230" at="16,54,26,18">
         <var name="tgs" id="2891901930128737230" />
       </scope>
-      <scope id="2891901930128737230" at="13,0,26,0">
+      <scope id="2891901930128737230" at="15,0,28,0">
         <var name="ctx" id="2891901930128737230" />
       </scope>
-      <unit id="2891901930128737230" at="27,0,32,0" name="openpme.cpp.textGen.VariableDeclaration_TextGen$LINKS" />
-      <unit id="2891901930128737230" at="12,0,33,0" name="openpme.cpp.textGen.VariableDeclaration_TextGen" />
+      <unit id="2891901930128737230" at="34,0,37,0" name="openpme.cpp.textGen.VariableDeclaration_TextGen$PROPS" />
+      <unit id="2891901930128737230" at="29,0,33,0" name="openpme.cpp.textGen.VariableDeclaration_TextGen$LINKS" />
+      <unit id="2891901930128737230" at="14,0,38,0" name="openpme.cpp.textGen.VariableDeclaration_TextGen" />
     </file>
   </root>
   <root nodeRef="r:ae583c5f-552e-4111-b987-ee4e0c60dec1(openpme.cpp.textGen)/2891901930128753161">
@@ -516,19 +519,20 @@
       <scope id="2891901930128805897" at="130,51,131,47" />
     </file>
     <file name="VariableReference_TextGen.java">
-      <node id="2891901930128805897" at="15,54,16,55" concept="6" />
-      <node id="2891901930128807372" at="16,55,17,149" concept="2" />
-      <node id="2891901930128805897" at="21,0,22,0" concept="9" trace="referenceDeclaration$p2g0" />
-      <node id="2891901930128805897" at="22,0,23,0" concept="9" trace="varName$tPdv" />
-      <node id="2891901930128805897" at="14,0,19,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="2891901930128805897" at="15,54,17,149">
+      <node id="2891901930128805897" at="16,54,17,55" concept="6" />
+      <node id="2891901930128807372" at="17,55,18,146" concept="2" />
+      <node id="2891901930128805897" at="22,0,23,0" concept="9" trace="referenceDeclaration$p2g0" />
+      <node id="2891901930128805897" at="26,0,27,0" concept="9" trace="name$tAp1" />
+      <node id="2891901930128805897" at="15,0,20,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2891901930128805897" at="16,54,18,146">
         <var name="tgs" id="2891901930128805897" />
       </scope>
-      <scope id="2891901930128805897" at="14,0,19,0">
+      <scope id="2891901930128805897" at="15,0,20,0">
         <var name="ctx" id="2891901930128805897" />
       </scope>
-      <unit id="2891901930128805897" at="20,0,24,0" name="openpme.cpp.textGen.VariableReference_TextGen$LINKS" />
-      <unit id="2891901930128805897" at="13,0,25,0" name="openpme.cpp.textGen.VariableReference_TextGen" />
+      <unit id="2891901930128805897" at="21,0,24,0" name="openpme.cpp.textGen.VariableReference_TextGen$LINKS" />
+      <unit id="2891901930128805897" at="25,0,28,0" name="openpme.cpp.textGen.VariableReference_TextGen$PROPS" />
+      <unit id="2891901930128805897" at="14,0,29,0" name="openpme.cpp.textGen.VariableReference_TextGen" />
     </file>
   </root>
   <root nodeRef="r:ae583c5f-552e-4111-b987-ee4e0c60dec1(openpme.cpp.textGen)/2891901930128830962">
@@ -617,44 +621,45 @@
   </root>
   <root nodeRef="r:ae583c5f-552e-4111-b987-ee4e0c60dec1(openpme.cpp.textGen)/4660985440354553099">
     <file name="ClassInstanceDecl_TextGen.java">
-      <node id="4660985440354553099" at="17,54,18,55" concept="6" />
-      <node id="1046466617367351061" at="18,55,19,91" concept="2" />
-      <node id="4660985440354602652" at="19,91,20,20" concept="2" />
-      <node id="4660985440354600365" at="20,20,21,89" concept="2" />
-      <node id="4660985440354603426" at="22,118,23,22" concept="2" />
-      <node id="4660985440354577887" at="24,7,25,109" concept="6" />
-      <node id="4660985440354577887" at="25,109,26,72" concept="6" />
-      <node id="4660985440354577887" at="27,39,28,31" concept="2" />
-      <node id="4660985440354577887" at="29,33,30,29" concept="2" />
-      <node id="4660985440354604043" at="33,7,34,22" concept="2" />
-      <node id="4660985440354582946" at="35,5,36,20" concept="2" />
-      <node id="1809487460004454364" at="36,20,37,18" concept="2" />
-      <node id="4660985440354553099" at="41,0,42,0" concept="9" trace="classType$VisL" />
-      <node id="4660985440354553099" at="42,0,43,0" concept="9" trace="varName$Zc9q" />
-      <node id="4660985440354553099" at="43,0,44,0" concept="9" trace="initArgs$Mbau" />
-      <node id="4660985440354577887" at="28,31,31,11" concept="4" />
-      <node id="4660985440354577887" at="26,72,32,9" concept="3" />
-      <node id="4660985440354577887" at="23,22,33,7" concept="0" />
-      <node id="4660985440354554994" at="21,89,35,5" concept="4" />
-      <node id="4660985440354553099" at="16,0,39,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="4660985440354577887" at="29,33,30,29" />
-      <scope id="4660985440354577887" at="27,39,31,11" />
-      <scope id="4660985440354577887" at="26,72,32,9">
+      <node id="4660985440354553099" at="19,54,20,55" concept="6" />
+      <node id="1046466617367351061" at="20,55,21,91" concept="2" />
+      <node id="4660985440354602652" at="21,91,22,20" concept="2" />
+      <node id="4660985440354600365" at="22,20,23,86" concept="2" />
+      <node id="4660985440354603426" at="24,118,25,22" concept="2" />
+      <node id="4660985440354577887" at="26,7,27,109" concept="6" />
+      <node id="4660985440354577887" at="27,109,28,72" concept="6" />
+      <node id="4660985440354577887" at="29,39,30,31" concept="2" />
+      <node id="4660985440354577887" at="31,33,32,29" concept="2" />
+      <node id="4660985440354604043" at="35,7,36,22" concept="2" />
+      <node id="4660985440354582946" at="37,5,38,20" concept="2" />
+      <node id="1809487460004454364" at="38,20,39,18" concept="2" />
+      <node id="4660985440354553099" at="43,0,44,0" concept="9" trace="classType$VisL" />
+      <node id="4660985440354553099" at="44,0,45,0" concept="9" trace="initArgs$Mbau" />
+      <node id="4660985440354553099" at="48,0,49,0" concept="9" trace="name$tAp1" />
+      <node id="4660985440354577887" at="30,31,33,11" concept="4" />
+      <node id="4660985440354577887" at="28,72,34,9" concept="3" />
+      <node id="4660985440354577887" at="25,22,35,7" concept="0" />
+      <node id="4660985440354554994" at="23,86,37,5" concept="4" />
+      <node id="4660985440354553099" at="18,0,41,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4660985440354577887" at="31,33,32,29" />
+      <scope id="4660985440354577887" at="29,39,33,11" />
+      <scope id="4660985440354577887" at="28,72,34,9">
         <var name="item" id="4660985440354577887" />
       </scope>
-      <scope id="4660985440354577887" at="24,7,32,9">
+      <scope id="4660985440354577887" at="26,7,34,9">
         <var name="collection" id="4660985440354577887" />
         <var name="lastItem" id="4660985440354577887" />
       </scope>
-      <scope id="4660985440354554996" at="22,118,34,22" />
-      <scope id="4660985440354553099" at="17,54,37,18">
+      <scope id="4660985440354554996" at="24,118,36,22" />
+      <scope id="4660985440354553099" at="19,54,39,18">
         <var name="tgs" id="4660985440354553099" />
       </scope>
-      <scope id="4660985440354553099" at="16,0,39,0">
+      <scope id="4660985440354553099" at="18,0,41,0">
         <var name="ctx" id="4660985440354553099" />
       </scope>
-      <unit id="4660985440354553099" at="40,0,45,0" name="openpme.cpp.textGen.ClassInstanceDecl_TextGen$LINKS" />
-      <unit id="4660985440354553099" at="15,0,46,0" name="openpme.cpp.textGen.ClassInstanceDecl_TextGen" />
+      <unit id="4660985440354553099" at="47,0,50,0" name="openpme.cpp.textGen.ClassInstanceDecl_TextGen$PROPS" />
+      <unit id="4660985440354553099" at="42,0,46,0" name="openpme.cpp.textGen.ClassInstanceDecl_TextGen$LINKS" />
+      <unit id="4660985440354553099" at="17,0,51,0" name="openpme.cpp.textGen.ClassInstanceDecl_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="4660985440354553099" at="44,51,45,47" concept="7" />
@@ -686,13 +691,13 @@
       <node id="5702233231638844975" at="16,54,17,55" concept="6" />
       <node id="5702233231638845004" at="17,55,18,86" concept="2" />
       <node id="5702233231638845008" at="18,86,19,20" concept="2" />
-      <node id="5702233231638845009" at="19,20,20,89" concept="2" />
-      <node id="5702233231638845013" at="20,89,21,20" concept="2" />
+      <node id="5702233231638845009" at="19,20,20,86" concept="2" />
+      <node id="5702233231638845013" at="20,86,21,20" concept="2" />
       <node id="5702233231638845017" at="22,86,23,150" concept="2" />
       <node id="5702233231638845030" at="24,5,25,20" concept="2" />
       <node id="5702233231638844975" at="29,0,30,0" concept="9" trace="type$OamM" />
-      <node id="5702233231638844975" at="30,0,31,0" concept="9" trace="varName$tPdv" />
-      <node id="5702233231638844975" at="31,0,32,0" concept="9" trace="size$OgGW" />
+      <node id="5702233231638844975" at="30,0,31,0" concept="9" trace="size$OgGW" />
+      <node id="5702233231638844975" at="34,0,35,0" concept="9" trace="name$tAp1" />
       <node id="5702233231638844975" at="35,0,36,0" concept="9" trace="value$fpdt" />
       <node id="5702233231638845014" at="21,20,24,5" concept="4" />
       <node id="5702233231638844975" at="15,0,27,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
@@ -703,8 +708,8 @@
       <scope id="5702233231638844975" at="15,0,27,0">
         <var name="ctx" id="5702233231638844975" />
       </scope>
-      <unit id="5702233231638844975" at="34,0,37,0" name="openpme.cpp.textGen.ArrayParameterDeclaration_TextGen$PROPS" />
-      <unit id="5702233231638844975" at="28,0,33,0" name="openpme.cpp.textGen.ArrayParameterDeclaration_TextGen$LINKS" />
+      <unit id="5702233231638844975" at="28,0,32,0" name="openpme.cpp.textGen.ArrayParameterDeclaration_TextGen$LINKS" />
+      <unit id="5702233231638844975" at="33,0,37,0" name="openpme.cpp.textGen.ArrayParameterDeclaration_TextGen$PROPS" />
       <unit id="5702233231638844975" at="14,0,38,0" name="openpme.cpp.textGen.ArrayParameterDeclaration_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
@@ -718,21 +723,21 @@
       <node id="5811061938759920817" at="17,55,18,86" concept="2" />
       <node id="5811061938759924237" at="18,86,19,20" concept="2" />
       <node id="5886027518146064611" at="20,97,21,22" concept="2" />
-      <node id="5886027518146066253" at="22,5,23,89" concept="2" />
+      <node id="5886027518146066253" at="22,5,23,86" concept="2" />
       <node id="5811061938759878926" at="27,0,28,0" concept="9" trace="type$OamM" />
-      <node id="5811061938759878926" at="28,0,29,0" concept="9" trace="varName$tPdv" />
-      <node id="5811061938759878926" at="32,0,33,0" concept="9" trace="isReferenceParameter$qT5E" />
+      <node id="5811061938759878926" at="31,0,32,0" concept="9" trace="isReferenceParameter$qT5E" />
+      <node id="5811061938759878926" at="32,0,33,0" concept="9" trace="name$tAp1" />
       <node id="5886027518146061030" at="19,20,22,5" concept="4" />
       <node id="5811061938759878926" at="15,0,25,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="5886027518146061032" at="20,97,21,22" />
-      <scope id="5811061938759878926" at="16,54,23,89">
+      <scope id="5811061938759878926" at="16,54,23,86">
         <var name="tgs" id="5811061938759878926" />
       </scope>
       <scope id="5811061938759878926" at="15,0,25,0">
         <var name="ctx" id="5811061938759878926" />
       </scope>
-      <unit id="5811061938759878926" at="31,0,34,0" name="openpme.cpp.textGen.ParameterDeclaration_TextGen$PROPS" />
-      <unit id="5811061938759878926" at="26,0,30,0" name="openpme.cpp.textGen.ParameterDeclaration_TextGen$LINKS" />
+      <unit id="5811061938759878926" at="26,0,29,0" name="openpme.cpp.textGen.ParameterDeclaration_TextGen$LINKS" />
+      <unit id="5811061938759878926" at="30,0,34,0" name="openpme.cpp.textGen.ParameterDeclaration_TextGen$PROPS" />
       <unit id="5811061938759878926" at="14,0,35,0" name="openpme.cpp.textGen.ParameterDeclaration_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
@@ -1338,29 +1343,30 @@
   </root>
   <root nodeRef="r:ae583c5f-552e-4111-b987-ee4e0c60dec1(openpme.cpp.textGen)/9182222408010495445">
     <file name="ConstexprDeclaration_TextGen.java">
-      <node id="9182222408010495445" at="14,54,15,55" concept="6" />
-      <node id="9182222408010497379" at="15,55,16,29" concept="2" />
-      <node id="9182222408010495468" at="16,29,17,86" concept="2" />
-      <node id="9182222408010495472" at="17,86,18,20" concept="2" />
-      <node id="9182222408010495473" at="18,20,19,89" concept="2" />
-      <node id="9182222408010495480" at="20,96,21,24" concept="2" />
-      <node id="9182222408010495481" at="21,24,22,98" concept="2" />
-      <node id="9182222408010495491" at="23,5,24,20" concept="2" />
-      <node id="9182222408010495492" at="24,20,25,18" concept="2" />
-      <node id="9182222408010495445" at="29,0,30,0" concept="9" trace="type$OamM" />
-      <node id="9182222408010495445" at="30,0,31,0" concept="9" trace="varName$tPdv" />
-      <node id="9182222408010495445" at="31,0,32,0" concept="9" trace="initialization$ttNe" />
-      <node id="9182222408010495477" at="19,89,23,5" concept="4" />
-      <node id="9182222408010495445" at="13,0,27,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="9182222408010495478" at="20,96,22,98" />
-      <scope id="9182222408010495445" at="14,54,25,18">
+      <node id="9182222408010495445" at="16,54,17,55" concept="6" />
+      <node id="9182222408010497379" at="17,55,18,29" concept="2" />
+      <node id="9182222408010495468" at="18,29,19,86" concept="2" />
+      <node id="9182222408010495472" at="19,86,20,20" concept="2" />
+      <node id="9182222408010495473" at="20,20,21,86" concept="2" />
+      <node id="9182222408010495480" at="22,96,23,24" concept="2" />
+      <node id="9182222408010495481" at="23,24,24,98" concept="2" />
+      <node id="9182222408010495491" at="25,5,26,20" concept="2" />
+      <node id="9182222408010495492" at="26,20,27,18" concept="2" />
+      <node id="9182222408010495445" at="31,0,32,0" concept="9" trace="type$OamM" />
+      <node id="9182222408010495445" at="32,0,33,0" concept="9" trace="initialization$ttNe" />
+      <node id="9182222408010495445" at="36,0,37,0" concept="9" trace="name$tAp1" />
+      <node id="9182222408010495477" at="21,86,25,5" concept="4" />
+      <node id="9182222408010495445" at="15,0,29,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="9182222408010495478" at="22,96,24,98" />
+      <scope id="9182222408010495445" at="16,54,27,18">
         <var name="tgs" id="9182222408010495445" />
       </scope>
-      <scope id="9182222408010495445" at="13,0,27,0">
+      <scope id="9182222408010495445" at="15,0,29,0">
         <var name="ctx" id="9182222408010495445" />
       </scope>
-      <unit id="9182222408010495445" at="28,0,33,0" name="openpme.cpp.textGen.ConstexprDeclaration_TextGen$LINKS" />
-      <unit id="9182222408010495445" at="12,0,34,0" name="openpme.cpp.textGen.ConstexprDeclaration_TextGen" />
+      <unit id="9182222408010495445" at="35,0,38,0" name="openpme.cpp.textGen.ConstexprDeclaration_TextGen$PROPS" />
+      <unit id="9182222408010495445" at="30,0,34,0" name="openpme.cpp.textGen.ConstexprDeclaration_TextGen$LINKS" />
+      <unit id="9182222408010495445" at="14,0,39,0" name="openpme.cpp.textGen.ConstexprDeclaration_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="9182222408010495445" at="48,54,49,50" concept="7" />

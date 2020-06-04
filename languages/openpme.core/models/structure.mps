@@ -7,9 +7,9 @@
   <imports>
     <import index="lifx" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.project.modules/module.jetbrains.mps.lang.structure@project_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
-    <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -97,7 +97,7 @@
       <property role="IQ2ns" value="7548145485610567368" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dimension" />
-      <ref role="20lvS9" to="tpee:hanubx6" resolve="IntegerLiteral" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z0p_feMdxU">
@@ -121,7 +121,7 @@
     <node concept="1TJgyj" id="6z0p_feMAug" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610641296" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="Boundry" />
+      <property role="20kJfa" value="Boundary" />
       <ref role="20lvS9" node="6z0p_feMAui" resolve="TypeOfBoundary" />
     </node>
   </node>
@@ -159,7 +159,8 @@
       <property role="IQ2ns" value="7548145485610591343" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cutoffradius_value" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z0p_feMoe1">
@@ -171,45 +172,38 @@
       <property role="IQ2ns" value="7548145485610582914" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="x0" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMoe5" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610582917" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="y0" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMoe8" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610582920" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="z0" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMoec" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610582924" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="x1" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMoeh" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610582929" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="y1" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMoen" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610582935" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="z1" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="6z0p_feMAui">
-    <property role="EcuMT" value="7548145485610641298" />
-    <property role="3GE5qa" value="initialization.boundary" />
-    <property role="TrG5h" value="TypeOfBoundary" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6z0p_feMAuj">
     <property role="EcuMT" value="7548145485610641299" />
@@ -709,6 +703,13 @@
     <node concept="PrWs8" id="7mV$Q_d6GLf" role="PrDN$">
       <ref role="PrY4T" node="7mV$Q_d6oGq" resolve="ICommand" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6z0p_feMAui">
+    <property role="EcuMT" value="7548145485610641298" />
+    <property role="3GE5qa" value="initialization.boundary" />
+    <property role="TrG5h" value="TypeOfBoundary" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
