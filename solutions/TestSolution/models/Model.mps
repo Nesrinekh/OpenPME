@@ -16,7 +16,7 @@
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
       <concept id="2202684092503991839" name="openpme.core.structure.InitParticleGrid" flags="ng" index="oyMus">
-        <child id="2202684092503991840" name="grid" index="oyMuz" />
+        <child id="2202684092503991840" name="grid_elements" index="oyMuz" />
         <child id="2202684092504257903" name="vector_dist" index="ozNjG" />
       </concept>
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
@@ -198,6 +198,12 @@
             <node concept="rpGDc" id="1Uhwoc64MBP" role="2$G18d">
               <property role="rpGDj" value="sigma" />
             </node>
+          </node>
+        </node>
+        <node concept="1Rqx6$" id="1Uhwoc6jgu8" role="rpc3L">
+          <property role="TrG5h" value="force" />
+          <node concept="2$GKAY" id="1Uhwoc6jgug" role="rpM2k">
+            <property role="2$GKAX" value="2" />
           </node>
         </node>
       </node>
