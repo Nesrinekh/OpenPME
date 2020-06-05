@@ -62,6 +62,7 @@
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
       <concept id="2202684092498276280" name="openpme.expressions.structure.FloatType" flags="ng" index="rkISV" />
+      <concept id="2202684092501714070" name="openpme.expressions.structure.VectorDistType" flags="ng" index="rpAkl" />
       <concept id="2202684092501674959" name="openpme.expressions.structure.UncheckedReference" flags="ng" index="rpGDc">
         <property id="2202684092501674960" name="ref" index="rpGDj" />
       </concept>
@@ -168,6 +169,10 @@
             <property role="2$GK$b" value="0.1" />
           </node>
         </node>
+        <node concept="2G0pd6" id="1Uhwoc5Y35Q" role="rpc0u">
+          <property role="TrG5h" value="vd" />
+          <node concept="rpAkl" id="1Uhwoc5Y35W" role="1wvloH" />
+        </node>
         <node concept="1Rqx6$" id="1Uhwoc5XKdE" role="rpc3L">
           <property role="TrG5h" value="velocity" />
           <node concept="37xRuw" id="1Uhwoc5XOIV" role="rpM2k">
@@ -177,6 +182,12 @@
             <node concept="rpGDc" id="1Uhwoc5XXYp" role="2$G181">
               <property role="rpGDj" value="sigma" />
             </node>
+          </node>
+        </node>
+        <node concept="1Rqx6$" id="1Uhwoc63IVl" role="rpc3L">
+          <property role="TrG5h" value="energy" />
+          <node concept="2$GK$c" id="1Uhwoc63IVt" role="rpM2k">
+            <property role="2$GK$b" value="1.0" />
           </node>
         </node>
         <node concept="1Rrs5n" id="1Uhwoc5Xpwg" role="SClZ9">

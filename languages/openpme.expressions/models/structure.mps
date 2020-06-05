@@ -519,6 +519,7 @@
     <property role="EcuMT" value="2202684092498276280" />
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="FloatType" />
+    <property role="34LRSv" value="float" />
     <ref role="1TJDcQ" node="7mV$Q_d7Dfx" resolve="PrimitiveType" />
   </node>
   <node concept="1TIwiD" id="1Uhwoc5XOJf">
@@ -530,6 +531,14 @@
       <property role="TrG5h" value="ref" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1Uhwoc5XYim">
+    <property role="EcuMT" value="2202684092501714070" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="VectorDistType" />
+    <property role="R4oN_" value="distriuted vector" />
+    <property role="34LRSv" value="vector_dist" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
   </node>
 </model>
 

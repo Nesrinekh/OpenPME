@@ -57,6 +57,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_UnaryPlus;
   private ConceptPresentation props_UncheckedReference;
   private ConceptPresentation props_VariableAccess;
+  private ConceptPresentation props_VectorDistType;
   private ConceptPresentation props_VectorElementAccess;
   private ConceptPresentation props_VectorLiteral;
   private ConceptPresentation props_VerletListType;
@@ -175,7 +176,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.FloatType:
         if (props_FloatType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("FloatType");
+          cpb.rawPresentation("float");
           props_FloatType = cpb.create();
         }
         return props_FloatType;
@@ -405,6 +406,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_VariableAccess = cpb.create();
         }
         return props_VariableAccess;
+      case LanguageConceptSwitch.VectorDistType:
+        if (props_VectorDistType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("distriuted vector");
+          cpb.rawPresentation("vector_dist");
+          props_VectorDistType = cpb.create();
+        }
+        return props_VectorDistType;
       case LanguageConceptSwitch.VectorElementAccess:
         if (props_VectorElementAccess == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
