@@ -63,6 +63,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptUnaryExpression = createDescriptorForUnaryExpression();
   /*package*/ final ConceptDescriptor myConceptUnaryMinus = createDescriptorForUnaryMinus();
   /*package*/ final ConceptDescriptor myConceptUnaryPlus = createDescriptorForUnaryPlus();
+  /*package*/ final ConceptDescriptor myConceptUncheckedReference = createDescriptorForUncheckedReference();
   /*package*/ final ConceptDescriptor myConceptVariableAccess = createDescriptorForVariableAccess();
   /*package*/ final ConceptDescriptor myConceptVectorElementAccess = createDescriptorForVectorElementAccess();
   /*package*/ final ConceptDescriptor myConceptVectorLiteral = createDescriptorForVectorLiteral();
@@ -84,7 +85,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptCellListType, myConceptComparisonExpression, myConceptContainerAccess, myConceptContainerType, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptFloatType, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptITyped, myConceptIVariableReference, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptMesh, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptParticleAccess, myConceptParticleListType, myConceptParticleType, myConceptPrimitiveType, myConceptPropertyType, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptType, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptVariableAccess, myConceptVectorElementAccess, myConceptVectorLiteral, myConceptVerletListType);
+    return Arrays.asList(myConceptAdditionExpression, myConceptAndExpression, myConceptAssignmentExpression, myConceptBinaryExpression, myConceptBooleanLiteral, myConceptCellListType, myConceptComparisonExpression, myConceptContainerAccess, myConceptContainerType, myConceptDecimalLiteral, myConceptDivisionExpression, myConceptEqualityComparisonExpression, myConceptEqualsExpression, myConceptExpression, myConceptFalseLiteral, myConceptFloatType, myConceptGreaterEqualsExpression, myConceptGreaterExpression, myConceptITyped, myConceptIVariableReference, myConceptIntegerLiteral, myConceptLessEqualsExpression, myConceptLessExpression, myConceptLiteral, myConceptMesh, myConceptModuloExpression, myConceptMultiplicationExpression, myConceptNotEqualsExpression, myConceptNotExpression, myConceptOrExpression, myConceptOrderedComparisonExpression, myConceptParenthesizedExpression, myConceptParticleAccess, myConceptParticleListType, myConceptParticleType, myConceptPrimitiveType, myConceptPropertyType, myConceptRealLiteral, myConceptScientificNumberLiteral, myConceptStringLiteral, myConceptSubtractionExpression, myConceptTrueLiteral, myConceptType, myConceptUnaryExpression, myConceptUnaryMinus, myConceptUnaryPlus, myConceptUncheckedReference, myConceptVariableAccess, myConceptVectorElementAccess, myConceptVectorLiteral, myConceptVerletListType);
   }
 
   @Override
@@ -183,6 +184,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptUnaryMinus;
       case LanguageConceptSwitch.UnaryPlus:
         return myConceptUnaryPlus;
+      case LanguageConceptSwitch.UncheckedReference:
+        return myConceptUncheckedReference;
       case LanguageConceptSwitch.VariableAccess:
         return myConceptVariableAccess;
       case LanguageConceptSwitch.VectorElementAccess:
@@ -295,7 +298,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForDivisionExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "DivisionExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59802L);
     b.class_(false, false, false);
-    b.super_("openpme.expressions.structure.Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L);
+    b.super_("openpme.expressions.structure.BinaryExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d6698cf3L);
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138818");
     b.version(2);
     b.alias("/");
@@ -430,7 +433,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForMultiplicationExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "MultiplicationExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x6732efa1a0b59801L);
     b.class_(false, false, false);
-    b.super_("openpme.expressions.structure.Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L);
+    b.super_("openpme.expressions.structure.BinaryExpression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d6698cf3L);
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138817");
     b.version(2);
     b.alias("*");
@@ -604,6 +607,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/7436269412207138807");
     b.version(2);
     b.alias("+");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUncheckedReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.expressions", "UncheckedReference", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x1e91818305f74bcfL);
+    b.class_(false, false, false);
+    b.super_("openpme.expressions.structure.Expression", 0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L);
+    b.origin("r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)/2202684092501674959");
+    b.version(2);
+    b.property("ref", 0x1e91818305f74bd0L).type(PrimitiveTypeId.STRING).origin("2202684092501674960").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVariableAccess() {

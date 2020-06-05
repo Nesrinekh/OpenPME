@@ -67,11 +67,9 @@ public final class LanguageConceptSwitch {
   public static final int TypeOfSimulation = 55;
   public static final int Uniform = 56;
   public static final int Vectorial = 57;
-  public static final int Velocity = 58;
-  public static final int VerletList = 59;
-  public static final int VisualizeDomDecomp = 60;
-  public static final int VisualizeParticles = 61;
-  public static final int Vorticity = 62;
+  public static final int VerletList = 58;
+  public static final int VisualizeDomDecomp = 59;
+  public static final int VisualizeParticles = 60;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x66673400467e48d2L, 0xace06f708d2ef66dL);
@@ -133,11 +131,9 @@ public final class LanguageConceptSwitch {
     builder.put(0x68c06653ceca679eL, TypeOfSimulation);
     builder.put(0x68c06653ceca6798L, Uniform);
     builder.put(0x7d1e7ce65d4e45dcL, Vectorial);
-    builder.put(0x1cbe89376bd4989dL, Velocity);
     builder.put(0x6732efa1a0b596f3L, VerletList);
     builder.put(0x5ca3f46314799343L, VisualizeDomDecomp);
     builder.put(0x5ca3f463147993d9L, VisualizeParticles);
-    builder.put(0x1cbe89376bd4989eL, Vorticity);
     myIndex = builder.seal();
   }
 

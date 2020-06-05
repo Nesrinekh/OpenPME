@@ -67,11 +67,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_TypeOfSimulation;
   private ConceptPresentation props_Uniform;
   private ConceptPresentation props_Vectorial;
-  private ConceptPresentation props_Velocity;
   private ConceptPresentation props_VerletList;
   private ConceptPresentation props_VisualizeDomDecomp;
   private ConceptPresentation props_VisualizeParticles;
-  private ConceptPresentation props_Vorticity;
 
   @Override
   @Nullable
@@ -368,6 +366,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Property:
         if (props_Property == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
           props_Property = cpb.create();
         }
         return props_Property;
@@ -472,13 +471,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Vectorial = cpb.create();
         }
         return props_Vectorial;
-      case LanguageConceptSwitch.Velocity:
-        if (props_Velocity == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Velocity");
-          props_Velocity = cpb.create();
-        }
-        return props_Velocity;
       case LanguageConceptSwitch.VerletList:
         if (props_VerletList == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -500,13 +492,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_VisualizeParticles = cpb.create();
         }
         return props_VisualizeParticles;
-      case LanguageConceptSwitch.Vorticity:
-        if (props_Vorticity == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Vorticity");
-          props_Vorticity = cpb.create();
-        }
-        return props_Vorticity;
     }
     return null;
   }

@@ -55,6 +55,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_UnaryExpression;
   private ConceptPresentation props_UnaryMinus;
   private ConceptPresentation props_UnaryPlus;
+  private ConceptPresentation props_UncheckedReference;
   private ConceptPresentation props_VariableAccess;
   private ConceptPresentation props_VectorElementAccess;
   private ConceptPresentation props_VectorLiteral;
@@ -390,6 +391,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_UnaryPlus = cpb.create();
         }
         return props_UnaryPlus;
+      case LanguageConceptSwitch.UncheckedReference:
+        if (props_UncheckedReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("UncheckedReference");
+          props_UncheckedReference = cpb.create();
+        }
+        return props_UncheckedReference;
       case LanguageConceptSwitch.VariableAccess:
         if (props_VariableAccess == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

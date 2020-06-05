@@ -55,10 +55,11 @@ public final class LanguageConceptSwitch {
   public static final int UnaryExpression = 43;
   public static final int UnaryMinus = 44;
   public static final int UnaryPlus = 45;
-  public static final int VariableAccess = 46;
-  public static final int VectorElementAccess = 47;
-  public static final int VectorLiteral = 48;
-  public static final int VerletListType = 49;
+  public static final int UncheckedReference = 46;
+  public static final int VariableAccess = 47;
+  public static final int VectorElementAccess = 48;
+  public static final int VectorLiteral = 49;
+  public static final int VerletListType = 50;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL);
@@ -108,6 +109,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x72d99ef7d6698cf2L, UnaryExpression);
     builder.put(0x6732efa1a0b597f8L, UnaryMinus);
     builder.put(0x6732efa1a0b597f7L, UnaryPlus);
+    builder.put(0x1e91818305f74bcfL, UncheckedReference);
     builder.put(0x75bb93694d1e93ddL, VariableAccess);
     builder.put(0x72d99ef7d66a979aL, VectorElementAccess);
     builder.put(0x72d99ef7d66a97e0L, VectorLiteral);

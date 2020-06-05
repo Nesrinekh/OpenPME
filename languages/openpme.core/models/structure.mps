@@ -613,20 +613,17 @@
     <property role="3GE5qa" value="simulation.particles" />
     <property role="TrG5h" value="Property" />
     <property role="34LRSv" value="particle property" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="1MYyjtFP9yt">
-    <property role="EcuMT" value="2071243749762308253" />
-    <property role="3GE5qa" value="simulation.particles" />
-    <property role="TrG5h" value="Velocity" />
-    <ref role="1TJDcQ" node="1MYyjtFP9yj" resolve="Property" />
-  </node>
-  <node concept="1TIwiD" id="1MYyjtFP9yu">
-    <property role="EcuMT" value="2071243749762308254" />
-    <property role="3GE5qa" value="simulation.particles" />
-    <property role="TrG5h" value="Vorticity" />
-    <ref role="1TJDcQ" node="1MYyjtFP9yj" resolve="Property" />
+    <node concept="PrWs8" id="1Uhwoc5XE4l" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1Uhwoc5XE4n" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092501631255" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="equation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7mV$Q_d6iww">
     <property role="EcuMT" value="8483536403556804640" />

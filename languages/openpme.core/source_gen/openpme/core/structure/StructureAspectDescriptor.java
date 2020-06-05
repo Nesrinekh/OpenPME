@@ -71,11 +71,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTypeOfSimulation = createDescriptorForTypeOfSimulation();
   /*package*/ final ConceptDescriptor myConceptUniform = createDescriptorForUniform();
   /*package*/ final ConceptDescriptor myConceptVectorial = createDescriptorForVectorial();
-  /*package*/ final ConceptDescriptor myConceptVelocity = createDescriptorForVelocity();
   /*package*/ final ConceptDescriptor myConceptVerletList = createDescriptorForVerletList();
   /*package*/ final ConceptDescriptor myConceptVisualizeDomDecomp = createDescriptorForVisualizeDomDecomp();
   /*package*/ final ConceptDescriptor myConceptVisualizeParticles = createDescriptorForVisualizeParticles();
-  /*package*/ final ConceptDescriptor myConceptVorticity = createDescriptorForVorticity();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -94,7 +92,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptArrowExpression, myConceptBoundaryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForeach, myConceptGhost, myConceptHybrid, myConceptICommand, myConceptICommandC, myConceptICommandD, myConceptICommandH, myConceptILoop, myConceptInitParticles, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptLambda, myConceptLaplacianOperator, myConceptListOfPhysicalNotations, myConceptLoop, myConceptMesh, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumParticles, myConceptOmega, myConceptOnMesh, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPowerExpression, myConceptProperty, myConceptPsi, myConceptRandomNumberExpression, myConceptRemesh, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptTau, myConceptTimeLoop, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundary, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVelocity, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles, myConceptVorticity);
+    return Arrays.asList(myConceptArrowExpression, myConceptBoundaryConditions, myConceptBox, myConceptCellList, myConceptContinuous, myConceptCutoffRadius, myConceptDelta, myConceptDifferentialOperator, myConceptDimension, myConceptDiscrete, myConceptDiscretize, myConceptDomain, myConceptEpsilon, myConceptForeach, myConceptGhost, myConceptHybrid, myConceptICommand, myConceptICommandC, myConceptICommandD, myConceptICommandH, myConceptILoop, myConceptInitParticles, myConceptInitialConditions, myConceptInterpolate, myConceptJacobianOperator, myConceptLambda, myConceptLaplacianOperator, myConceptListOfPhysicalNotations, myConceptLoop, myConceptMesh, myConceptNonPeriodic, myConceptNonUniform, myConceptNu, myConceptNumParticles, myConceptOmega, myConceptOnMesh, myConceptOnParticle, myConceptParticle, myConceptPeriodic, myConceptPhi, myConceptPhysicalQuantity, myConceptPowerExpression, myConceptProperty, myConceptPsi, myConceptRandomNumberExpression, myConceptRemesh, myConceptRho, myConceptSigma, myConceptSqrtExpression, myConceptTau, myConceptTimeLoop, myConceptTimeLoopC, myConceptTimeLoopD, myConceptTypeOfBoundary, myConceptTypeOfInitialCond, myConceptTypeOfSimulation, myConceptUniform, myConceptVectorial, myConceptVerletList, myConceptVisualizeDomDecomp, myConceptVisualizeParticles);
   }
 
   @Override
@@ -217,16 +215,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptUniform;
       case LanguageConceptSwitch.Vectorial:
         return myConceptVectorial;
-      case LanguageConceptSwitch.Velocity:
-        return myConceptVelocity;
       case LanguageConceptSwitch.VerletList:
         return myConceptVerletList;
       case LanguageConceptSwitch.VisualizeDomDecomp:
         return myConceptVisualizeDomDecomp;
       case LanguageConceptSwitch.VisualizeParticles:
         return myConceptVisualizeParticles;
-      case LanguageConceptSwitch.Vorticity:
-        return myConceptVorticity;
       default:
         return null;
     }
@@ -607,9 +601,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForProperty() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Property", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L);
-    b.class_(false, true, false);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762308243");
     b.version(2);
+    b.aggregate("equation", 0x1e91818305f6a117L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x230c14e48d9ff542L).optional(false).ordered(true).multiple(false).origin("2202684092501631255").done();
     b.alias("particle property");
     return b.create();
   }
@@ -744,14 +740,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForVelocity() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Velocity", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd4989dL);
-    b.class_(false, false, false);
-    b.super_("openpme.core.structure.Property", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L);
-    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762308253");
-    b.version(2);
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForVerletList() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "VerletList", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x6732efa1a0b596f3L);
     b.class_(false, false, false);
@@ -778,14 +766,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/6675447779075658713");
     b.version(2);
     b.aggregate("ParticlesFile", 0x5ca3f463147993daL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL).optional(false).ordered(true).multiple(false).origin("6675447779075658714").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForVorticity() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "Vorticity", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd4989eL);
-    b.class_(false, false, false);
-    b.super_("openpme.core.structure.Property", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L);
-    b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762308254");
-    b.version(2);
     return b.create();
   }
 }
