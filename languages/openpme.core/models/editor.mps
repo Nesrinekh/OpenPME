@@ -14,6 +14,7 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -472,16 +473,6 @@
       <node concept="l2Vlx" id="1MYyjtFOOAI" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1MYyjtFPKWh">
-    <property role="3GE5qa" value="simulation.initParticles" />
-    <ref role="1XX52x" to="r2co:1MYyjtFOOxw" resolve="InitParticles" />
-    <node concept="3EZMnI" id="1MYyjtFPKWj" role="2wV5jI">
-      <node concept="l2Vlx" id="1MYyjtFPKWm" role="2iSdaV" />
-      <node concept="3F0ifn" id="7mV$Q_d6QTW" role="3EZMnx">
-        <property role="3F0ifm" value="init particles" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="7mV$Q_d6iyc">
     <property role="3GE5qa" value="simulation.loop" />
     <ref role="1XX52x" to="r2co:7mV$Q_d6iww" resolve="TimeLoop" />
@@ -691,18 +682,8 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3EZMnI" id="1Uhwoc5Xk62" role="3EZMnx">
-        <node concept="VPM3Z" id="1Uhwoc5Xk63" role="3F10Kt" />
-        <node concept="3F1sOY" id="1Uhwoc5Xk64" role="3EZMnx">
-          <ref role="1NtTu8" to="r2co:7mV$Q_d6GMw" resolve="init_particles" />
-        </node>
-        <node concept="l2Vlx" id="1Uhwoc5Xk65" role="2iSdaV" />
-        <node concept="ljvvj" id="1Uhwoc5Xk66" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1Uhwoc5Xk67" role="3EZMnx">
-        <node concept="ljvvj" id="1Uhwoc5Xk68" role="3F10Kt">
+      <node concept="3F0ifn" id="1Uhwoc64GuU" role="3EZMnx">
+        <node concept="ljvvj" id="1Uhwoc64Gvc" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -740,6 +721,28 @@
         <ref role="1NtTu8" to="r2co:1Uhwoc5XE4n" resolve="equation" />
       </node>
       <node concept="l2Vlx" id="1Uhwoc5XE4A" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Uhwoc66S3G">
+    <property role="3GE5qa" value="simulation" />
+    <ref role="1XX52x" to="r2co:1Uhwoc66Eov" resolve="InitParticleGrid" />
+    <node concept="3EZMnI" id="1Uhwoc66S3L" role="2wV5jI">
+      <node concept="3F0ifn" id="1Uhwoc66S3N" role="3EZMnx">
+        <property role="3F0ifm" value="Init vector" />
+      </node>
+      <node concept="3F1sOY" id="1Uhwoc67FlS" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc67FlJ" resolve="vector_dist" />
+      </node>
+      <node concept="3F0ifn" id="1Uhwoc67Fm8" role="3EZMnx">
+        <property role="3F0ifm" value="on grid" />
+      </node>
+      <node concept="3F2HdR" id="1Uhwoc66S3V" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="r2co:1Uhwoc66Eow" resolve="grid" />
+        <node concept="l2Vlx" id="1Uhwoc66S3X" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="1Uhwoc66Ysf" role="3EZMnx" />
+      <node concept="l2Vlx" id="1Uhwoc66S3O" role="2iSdaV" />
     </node>
   </node>
 </model>

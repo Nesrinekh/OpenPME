@@ -30,7 +30,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ICommandD;
   private ConceptPresentation props_ICommandH;
   private ConceptPresentation props_ILoop;
-  private ConceptPresentation props_InitParticles;
+  private ConceptPresentation props_InitParticleGrid;
   private ConceptPresentation props_InitialConditions;
   private ConceptPresentation props_Interpolate;
   private ConceptPresentation props_JacobianOperator;
@@ -218,13 +218,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ILoop = cpb.create();
         }
         return props_ILoop;
-      case LanguageConceptSwitch.InitParticles:
-        if (props_InitParticles == null) {
+      case LanguageConceptSwitch.InitParticleGrid:
+        if (props_InitParticleGrid == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("InitializationOfParticles");
-          props_InitParticles = cpb.create();
+          cpb.shortDesc("init particles in vector_dist on a grid");
+          cpb.rawPresentation("InitParticleGrid");
+          props_InitParticleGrid = cpb.create();
         }
-        return props_InitParticles;
+        return props_InitParticleGrid;
       case LanguageConceptSwitch.InitialConditions:
         if (props_InitialConditions == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

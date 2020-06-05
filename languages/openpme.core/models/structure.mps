@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -26,6 +27,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -247,13 +249,6 @@
     <property role="3GE5qa" value="simulation.type" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
-    <node concept="1TJgyj" id="7mV$Q_d6GMw" role="1TKVEi">
-      <property role="IQ2ns" value="8483536403556912288" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="init_particles" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1MYyjtFOOxw" resolve="InitParticles" />
-    </node>
     <node concept="1TJgyj" id="1Uhwoc5Xk5M" role="1TKVEi">
       <property role="IQ2ns" value="2202684092501541234" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -531,20 +526,6 @@
     <property role="34LRSv" value="hybrid" />
     <ref role="1TJDcQ" node="6z0p_feMAuu" resolve="TypeOfSimulation" />
   </node>
-  <node concept="1TIwiD" id="1MYyjtFOOxw">
-    <property role="EcuMT" value="2071243749762222176" />
-    <property role="3GE5qa" value="simulation.initParticles" />
-    <property role="TrG5h" value="InitParticles" />
-    <property role="34LRSv" value="InitializationOfParticles" />
-    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
-    <node concept="1TJgyj" id="1Uhwoc5Xb1c" role="1TKVEi">
-      <property role="IQ2ns" value="2202684092501504076" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="gridSize" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1MYyjtFOOxx">
     <property role="EcuMT" value="2071243749762222177" />
     <property role="3GE5qa" value="simulation.loop" />
@@ -707,6 +688,28 @@
     <property role="TrG5h" value="TypeOfBoundary" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1Uhwoc66Eov">
+    <property role="EcuMT" value="2202684092503991839" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="InitParticleGrid" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="init particles in vector_dist on a grid" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="1Uhwoc67FlJ" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092504257903" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="vector_dist" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="1Uhwoc66Eow" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092503991840" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="grid" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    </node>
   </node>
 </model>
 

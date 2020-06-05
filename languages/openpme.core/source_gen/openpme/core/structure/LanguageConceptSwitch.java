@@ -30,7 +30,7 @@ public final class LanguageConceptSwitch {
   public static final int ICommandD = 18;
   public static final int ICommandH = 19;
   public static final int ILoop = 20;
-  public static final int InitParticles = 21;
+  public static final int InitParticleGrid = 21;
   public static final int InitialConditions = 22;
   public static final int Interpolate = 23;
   public static final int JacobianOperator = 24;
@@ -94,7 +94,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x75bb93694d198b1bL, ICommandD);
     builder.put(0x75bb93694d1acc4eL, ICommandH);
     builder.put(0x75bb93694d19287fL, ILoop);
-    builder.put(0x1cbe89376bd34860L, InitParticles);
+    builder.put(0x1e918183061aa61fL, InitParticleGrid);
     builder.put(0x68c06653cec8d87cL, InitialConditions);
     builder.put(0x6732efa1a0b5964aL, Interpolate);
     builder.put(0x6732efa1a0b5963fL, JacobianOperator);

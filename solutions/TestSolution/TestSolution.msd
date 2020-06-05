@@ -13,7 +13,6 @@
     <language slang="l:d5e2442b-039e-493b-b466-e933a1705c19:openpme.analysis" version="0" />
     <language slang="l:2b72d3f1-4643-4aec-8f26-2599b23e0e1b:openpme.base" version="0" />
     <language slang="l:66673400-467e-48d2-ace0-6f708d2ef66d:openpme.core" version="0" />
-    <language slang="l:6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f:openpme.cpp" version="0" />
     <language slang="l:57ffbfb9-59e3-41dd-b18a-216e532ec8e4:openpme.ctrl" version="0" />
     <language slang="l:9a51a2b4-83e4-4324-8cf8-4ee101121a3a:openpme.expressions" version="0" />
     <language slang="l:735a5c6f-9751-4d40-91fe-215faa5468a6:openpme.modules" version="0" />
