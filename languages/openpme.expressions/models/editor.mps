@@ -174,18 +174,24 @@
       <node concept="l2Vlx" id="7bpBJvmqTer" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1Uhwoc5KQZ1">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="caxt:1Uhwoc5KQYS" resolve="FloatType" />
-    <node concept="3F0ifn" id="1Uhwoc5KQZ3" role="2wV5jI">
-      <property role="3F0ifm" value="float" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1Uhwoc5Lx4W">
     <property role="3GE5qa" value="literals.real" />
     <ref role="1XX52x" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     <node concept="3F0A7n" id="1Uhwoc5Lx4Y" role="2wV5jI">
       <ref role="1NtTu8" to="caxt:7bpBJvmqDvW" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Uhwoc5XTdW">
+    <ref role="1XX52x" to="caxt:1Uhwoc5XOJf" resolve="UncheckedReference" />
+    <node concept="3F0A7n" id="1Uhwoc5XTdY" role="2wV5jI">
+      <ref role="1NtTu8" to="caxt:1Uhwoc5XOJg" resolve="ref" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Uhwoc5XYiD">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="caxt:70bNw4gtDwI" resolve="Type" />
+    <node concept="PMmxH" id="1Uhwoc5XYiF" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
