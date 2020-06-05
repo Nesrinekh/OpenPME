@@ -738,7 +738,7 @@
       </node>
       <node concept="3F2HdR" id="1Uhwoc66S3V" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="r2co:1Uhwoc66Eow" resolve="grid" />
+        <ref role="1NtTu8" to="r2co:1Uhwoc66Eow" resolve="grid_elements" />
         <node concept="l2Vlx" id="1Uhwoc66S3X" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="1Uhwoc66Ysf" role="3EZMnx" />

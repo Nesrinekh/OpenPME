@@ -508,7 +508,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.UncheckedReference:
         if (props_UncheckedReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("UncheckedReference");
+          cpb.presentationByName();
           props_UncheckedReference = cpb.create();
         }
         return props_UncheckedReference;

@@ -673,10 +673,10 @@
     </file>
     <file name="UncheckedReference_TextGen.java">
       <node id="4660985440354644170" at="14,54,15,55" concept="6" />
-      <node id="4660985440354644214" at="15,55,16,89" concept="2" />
-      <node id="4660985440354644170" at="20,0,21,0" concept="9" trace="refName$FWVw" />
+      <node id="4660985440354644214" at="15,55,16,86" concept="2" />
+      <node id="4660985440354644170" at="20,0,21,0" concept="9" trace="name$tAp1" />
       <node id="4660985440354644170" at="13,0,18,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="4660985440354644170" at="14,54,16,89">
+      <scope id="4660985440354644170" at="14,54,16,86">
         <var name="tgs" id="4660985440354644170" />
       </scope>
       <scope id="4660985440354644170" at="13,0,18,0">

@@ -12117,7 +12117,7 @@
                         <node concept="liA8E" id="17i" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long)" resolve="aggregate" />
                           <node concept="Xl_RD" id="17j" role="37wK5m">
-                            <property role="Xl_RC" value="grid" />
+                            <property role="Xl_RC" value="grid_elements" />
                           </node>
                           <node concept="1adDum" id="17k" role="37wK5m">
                             <property role="1adDun" value="0x1e918183061aa620L" />

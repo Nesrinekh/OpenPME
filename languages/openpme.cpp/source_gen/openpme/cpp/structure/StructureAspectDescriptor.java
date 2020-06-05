@@ -444,7 +444,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.cpp.structure.Expression", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L);
     b.origin("r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)/1809487460004350464");
     b.version(2);
-    b.aggregate("callee", 0x191c9741ff154a01L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x7f6dcea16e229213L).optional(false).ordered(true).multiple(false).origin("1809487460004350465").done();
+    b.aggregate("callee", 0x191c9741ff154a01L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L).optional(false).ordered(true).multiple(false).origin("1809487460004350465").done();
     b.aggregate("method", 0x191c9741ff154a03L).target(0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x191c9741ff154a0aL).optional(false).ordered(true).multiple(false).origin("1809487460004350467").done();
     return b.create();
   }
@@ -796,9 +796,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.cpp", "UncheckedReference", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x40af2590239b30c7L);
     b.class_(false, false, false);
     b.super_("openpme.cpp.structure.Expression", 0x6ebd153bbe954d8bL, 0xa7f3f07bf7fb7d8fL, 0x2822197bc696df92L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)/4660985440354644167");
     b.version(2);
-    b.property("refName", 0x40af2590239b30c8L).type(PrimitiveTypeId.STRING).origin("4660985440354644168").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForUnkownClassType() {

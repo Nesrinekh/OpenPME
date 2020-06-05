@@ -983,21 +983,21 @@
       <node id="2202684092504257928" at="125,100,126,47" concept="1" />
       <node id="2202684092504257928" at="126,47,127,34" concept="1" />
       <node id="2202684092504257928" at="127,34,128,22" concept="6" />
-      <node id="2202684092504047852" at="130,44,131,96" concept="5" />
-      <node id="2202684092504047852" at="131,96,132,91" concept="5" />
-      <node id="2202684092504047852" at="132,91,133,45" concept="1" />
-      <node id="2202684092504047852" at="133,45,134,51" concept="1" />
+      <node id="2202684092504047852" at="130,44,131,105" concept="5" />
+      <node id="2202684092504047852" at="131,105,132,91" concept="5" />
+      <node id="2202684092504047852" at="132,91,133,54" concept="1" />
+      <node id="2202684092504047852" at="133,54,134,51" concept="1" />
       <node id="2202684092504047852" at="134,51,135,22" concept="6" />
-      <node id="2202684092504047852" at="141,78,142,28" concept="8" />
+      <node id="2202684092504047852" at="141,87,142,28" concept="8" />
       <node id="2202684092504047852" at="142,28,143,25" concept="1" />
       <node id="2202684092504047852" at="147,28,148,20" concept="6" />
-      <node id="2202684092504047852" at="150,40,151,29" concept="6" />
+      <node id="2202684092504047852" at="150,40,151,38" concept="6" />
       <node id="2202684092504047852" at="153,48,154,40" concept="6" />
       <node id="2202684092504047852" at="157,57,158,83" concept="5" />
       <node id="2202684092504047852" at="158,83,159,65" concept="1" />
       <node id="2202684092504047852" at="159,65,160,25" concept="6" />
       <node id="2202684092504047852" at="162,41,163,41" concept="1" />
-      <node id="2202684092504047852" at="163,41,164,135" concept="1" />
+      <node id="2202684092504047852" at="163,41,164,153" concept="1" />
       <node id="2202684092504047852" at="165,11,166,36" concept="5" />
       <node id="2202684092504047852" at="166,36,167,44" concept="1" />
       <node id="2202684092504047852" at="167,44,168,57" concept="1" />
@@ -1023,7 +1023,7 @@
       <node id="2202684092504073999" at="203,47,204,34" concept="1" />
       <node id="2202684092504073999" at="204,34,205,22" concept="6" />
       <node id="2202684092504047852" at="209,0,210,0" concept="7" trace="vector_dist$bI95" />
-      <node id="2202684092504047852" at="210,0,211,0" concept="7" trace="grid$5WfF" />
+      <node id="2202684092504047852" at="210,0,211,0" concept="7" trace="grid_elements$5WfF" />
       <node id="2202684092504047852" at="214,0,215,0" concept="7" trace="IntegerLiteral$fG" />
       <node id="2202684092504047852" at="33,0,35,0" concept="2" trace="myNode" />
       <node id="2202684092504047852" at="74,0,76,0" concept="2" trace="myNode" />
@@ -1038,7 +1038,7 @@
       <node id="2202684092504047852" at="36,0,40,0" concept="0" trace="InitParticleGrid_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2202684092504047852" at="69,0,73,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2202684092504047852" at="77,0,81,0" concept="0" trace="vector_distSingleRoleHandler_ekwwag_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="2202684092504047852" at="141,0,145,0" concept="0" trace="gridListHandler_ekwwag_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2202684092504047852" at="141,0,145,0" concept="0" trace="grid_elementsListHandler_ekwwag_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2202684092504047852" at="146,0,150,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2202684092504047852" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2202684092504047852" at="82,0,87,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -1051,7 +1051,7 @@
       <node id="2202684092504047852" at="130,0,137,0" concept="4" trace="createRefNodeList_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2202684092504047852" at="98,0,106,0" concept="4" trace="installCellInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Z)V" />
       <node id="2202684092504047852" at="109,111,118,7" concept="9" />
-      <node id="2202684092504047852" at="164,135,173,7" concept="9" />
+      <node id="2202684092504047852" at="164,153,173,7" concept="9" />
       <node id="2202684092504047852" at="175,107,186,7" concept="3" />
       <node id="2202684092504047852" at="51,0,63,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2202684092504047852" at="188,0,200,0" concept="4" trace="createSeparatorCell#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1066,7 +1066,7 @@
       <scope id="2202684092504047852" at="116,17,117,42" />
       <scope id="2202684092504047852" at="120,40,121,32" />
       <scope id="2202684092504047852" at="147,28,148,20" />
-      <scope id="2202684092504047852" at="150,40,151,29" />
+      <scope id="2202684092504047852" at="150,40,151,38" />
       <scope id="2202684092504047852" at="153,48,154,40" />
       <scope id="2202684092504047852" at="171,17,172,42" />
       <scope id="2202684092504047852" at="183,122,184,146" />
@@ -1075,7 +1075,7 @@
         <var name="provider" id="2202684092504047852" />
       </scope>
       <scope id="2202684092504047852" at="77,125,79,25" />
-      <scope id="2202684092504047852" at="141,78,143,25" />
+      <scope id="2202684092504047852" at="141,87,143,25" />
       <scope id="2202684092504047852" at="47,0,50,0" />
       <scope id="2202684092504047852" at="120,0,123,0" />
       <scope id="2202684092504047852" at="150,0,153,0" />
@@ -1165,7 +1165,7 @@
       <unit id="2202684092504047852" at="213,0,216,0" name="openpme.core.editor.InitParticleGrid_EditorBuilder_a$CONCEPTS" />
       <unit id="2202684092504047852" at="208,0,212,0" name="openpme.core.editor.InitParticleGrid_EditorBuilder_a$LINKS" />
       <unit id="2202684092504047852" at="73,0,124,0" name="openpme.core.editor.InitParticleGrid_EditorBuilder_a$vector_distSingleRoleHandler_ekwwag_b0" />
-      <unit id="2202684092504047852" at="137,0,201,0" name="openpme.core.editor.InitParticleGrid_EditorBuilder_a$gridListHandler_ekwwag_d0" />
+      <unit id="2202684092504047852" at="137,0,201,0" name="openpme.core.editor.InitParticleGrid_EditorBuilder_a$grid_elementsListHandler_ekwwag_d0" />
       <unit id="2202684092504047852" at="32,0,217,0" name="openpme.core.editor.InitParticleGrid_EditorBuilder_a" />
     </file>
   </root>

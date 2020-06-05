@@ -422,7 +422,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2202684092503991839");
     b.version(2);
     b.aggregate("vector_dist", 0x1e918183061eb56fL).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x23cc08f05e87b1bfL).optional(false).ordered(true).multiple(false).origin("2202684092504257903").done();
-    b.aggregate("grid", 0x1e918183061aa620L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a9749L).optional(true).ordered(true).multiple(true).origin("2202684092503991840").done();
+    b.aggregate("grid_elements", 0x1e918183061aa620L).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a9749L).optional(true).ordered(true).multiple(true).origin("2202684092503991840").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInitialConditions() {

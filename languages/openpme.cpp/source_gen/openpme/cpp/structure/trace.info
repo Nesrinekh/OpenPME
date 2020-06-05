@@ -961,8 +961,8 @@
     <file name="ConceptPresentationAspectImpl.java">
       <node id="4660985440354644167" at="73,0,74,0" concept="1" trace="props_UncheckedReference" />
       <node id="4660985440354644167" at="509,47,510,76" concept="3" />
-      <node id="4660985440354644167" at="510,76,511,52" concept="0" />
-      <node id="4660985440354644167" at="511,52,512,50" concept="0" />
+      <node id="4660985440354644167" at="510,76,511,35" concept="0" />
+      <node id="4660985440354644167" at="511,35,512,50" concept="0" />
       <node id="4660985440354644167" at="513,9,514,40" concept="4" />
       <node id="4660985440354644167" at="508,52,513,9" concept="2" />
       <scope id="4660985440354644167" at="509,47,512,50">
@@ -980,10 +980,10 @@
       <node id="4660985440354644167" at="795,76,796,164" concept="3" />
       <node id="4660985440354644167" at="796,164,797,34" concept="0" />
       <node id="4660985440354644167" at="797,34,798,112" concept="0" />
-      <node id="4660985440354644167" at="798,112,799,98" concept="0" />
-      <node id="4660985440354644167" at="799,98,800,17" concept="0" />
-      <node id="4660985440354644168" at="800,17,801,113" concept="0" />
-      <node id="4660985440354644167" at="801,113,802,22" concept="4" />
+      <node id="4660985440354644167" at="798,112,799,71" concept="0" />
+      <node id="4660985440354644167" at="799,71,800,98" concept="0" />
+      <node id="4660985440354644167" at="800,98,801,17" concept="0" />
+      <node id="4660985440354644167" at="801,17,802,22" concept="4" />
       <node id="4660985440354644167" at="795,0,804,0" concept="6" trace="createDescriptorForUncheckedReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4660985440354644167" at="231,52,232,43" />
       <scope id="4660985440354644167" at="795,76,802,22">

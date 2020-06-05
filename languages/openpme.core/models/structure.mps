@@ -706,7 +706,7 @@
     <node concept="1TJgyj" id="1Uhwoc66Eow" role="1TKVEi">
       <property role="IQ2ns" value="2202684092503991840" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="grid" />
+      <property role="20kJfa" value="grid_elements" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>

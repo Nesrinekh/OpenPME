@@ -258,8 +258,8 @@
       <node id="2202684092503991839" at="421,118,422,99" concept="0" />
       <node id="2202684092503991839" at="422,99,423,17" concept="0" />
       <node id="2202684092504257903" at="423,17,424,205" concept="0" />
-      <node id="2202684092503991840" at="424,205,425,196" concept="0" />
-      <node id="2202684092503991839" at="425,196,426,22" concept="4" />
+      <node id="2202684092503991840" at="424,205,425,205" concept="0" />
+      <node id="2202684092503991839" at="425,205,426,22" concept="4" />
       <node id="2202684092503991839" at="418,0,428,0" concept="6" trace="createDescriptorForInitParticleGrid#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2202684092503991839" at="144,50,145,41" />
       <scope id="2202684092503991839" at="418,74,426,22">
