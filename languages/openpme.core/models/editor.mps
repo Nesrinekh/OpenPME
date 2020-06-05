@@ -593,118 +593,6 @@
       <node concept="l2Vlx" id="7mV$Q_d6iyP" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7mV$Q_d6VXn">
-    <property role="3GE5qa" value="simulation.type" />
-    <ref role="1XX52x" to="r2co:6z0p_feMAv6" resolve="Continuous" />
-    <node concept="3EZMnI" id="7mV$Q_d6VXp" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <node concept="PMmxH" id="7mV$Q_d6VXq" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="ljvvj" id="7mV$Q_d6VXr" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="7mV$Q_d6VXs" role="3EZMnx">
-        <node concept="VPM3Z" id="7mV$Q_d6VXt" role="3F10Kt" />
-        <node concept="3F1sOY" id="7mV$Q_d6VXu" role="3EZMnx">
-          <ref role="1NtTu8" to="r2co:7mV$Q_d6GMw" resolve="init_particles" />
-        </node>
-        <node concept="l2Vlx" id="7mV$Q_d6VXv" role="2iSdaV" />
-        <node concept="ljvvj" id="7mV$Q_d6VXw" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7mV$Q_d6VXx" role="3EZMnx">
-        <node concept="ljvvj" id="7mV$Q_d6VXy" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="7mV$Q_d6VXz" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:7Ouveptj$my" resolve="body" />
-        <node concept="l2Vlx" id="7mV$Q_d6VX$" role="2czzBx" />
-        <node concept="ljvvj" id="7mV$Q_d6VX_" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7mV$Q_d6VXA" role="3EZMnx" />
-      <node concept="l2Vlx" id="7mV$Q_d6VXB" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7mV$Q_d6VXZ">
-    <property role="3GE5qa" value="simulation.type" />
-    <ref role="1XX52x" to="r2co:6z0p_feMAv7" resolve="Discrete" />
-    <node concept="3EZMnI" id="7mV$Q_d6VY1" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <node concept="PMmxH" id="7mV$Q_d6VY2" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="ljvvj" id="7mV$Q_d6VY3" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="7mV$Q_d6VY4" role="3EZMnx">
-        <node concept="VPM3Z" id="7mV$Q_d6VY5" role="3F10Kt" />
-        <node concept="3F1sOY" id="7mV$Q_d6VY6" role="3EZMnx">
-          <ref role="1NtTu8" to="r2co:7mV$Q_d6GMw" resolve="init_particles" />
-        </node>
-        <node concept="l2Vlx" id="7mV$Q_d6VY7" role="2iSdaV" />
-        <node concept="ljvvj" id="7mV$Q_d6VY8" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7mV$Q_d6VY9" role="3EZMnx">
-        <node concept="ljvvj" id="7mV$Q_d6VYa" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="1Uhwoc5KVFt" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:7Ouveptjg1K" resolve="body" />
-        <node concept="2iRkQZ" id="1Uhwoc5KVFw" role="2czzBx" />
-        <node concept="VPM3Z" id="1Uhwoc5KVFx" role="3F10Kt" />
-        <node concept="ljvvj" id="1Uhwoc5KVGr" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7mV$Q_d6VYe" role="3EZMnx" />
-      <node concept="l2Vlx" id="7mV$Q_d6VYf" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7mV$Q_d6VYB">
-    <property role="3GE5qa" value="simulation.type" />
-    <ref role="1XX52x" to="r2co:1MYyjtFOEZC" resolve="Hybrid" />
-    <node concept="3EZMnI" id="7mV$Q_d6VYD" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <node concept="PMmxH" id="7mV$Q_d6VYE" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="ljvvj" id="7mV$Q_d6VYF" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3EZMnI" id="7mV$Q_d6VYG" role="3EZMnx">
-        <node concept="VPM3Z" id="7mV$Q_d6VYH" role="3F10Kt" />
-        <node concept="3F1sOY" id="7mV$Q_d6VYI" role="3EZMnx">
-          <ref role="1NtTu8" to="r2co:7mV$Q_d6GMw" resolve="init_particles" />
-        </node>
-        <node concept="l2Vlx" id="7mV$Q_d6VYJ" role="2iSdaV" />
-        <node concept="ljvvj" id="7mV$Q_d6VYK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7mV$Q_d6VYL" role="3EZMnx">
-        <node concept="ljvvj" id="7mV$Q_d6VYM" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="7mV$Q_d6VYN" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1MYyjtFOOHh" resolve="body" />
-        <node concept="l2Vlx" id="7mV$Q_d6VYO" role="2czzBx" />
-        <node concept="ljvvj" id="7mV$Q_d6VYP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7mV$Q_d6VYQ" role="3EZMnx" />
-      <node concept="l2Vlx" id="7mV$Q_d6VYR" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7mV$Q_d7IxY">
     <property role="3GE5qa" value="simulation.command.continuous" />
     <ref role="1XX52x" to="r2co:7Ouveptj$nv" resolve="Discretize" />
@@ -774,6 +662,68 @@
     <node concept="3EZMnI" id="7Ouveptj1c3" role="2wV5jI">
       <node concept="3F0ifn" id="7Ouveptj1ca" role="3EZMnx" />
       <node concept="l2Vlx" id="7Ouveptj1c6" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Uhwoc5Xk5X">
+    <property role="3GE5qa" value="simulation.type" />
+    <ref role="1XX52x" to="r2co:6z0p_feMAuu" resolve="TypeOfSimulation" />
+    <node concept="3EZMnI" id="1Uhwoc5Xk5Z" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="PMmxH" id="1Uhwoc5Xk60" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="ljvvj" id="1Uhwoc5Xk61" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1Uhwoc5XpwV" role="3EZMnx">
+        <property role="3F0ifm" value="Particle properties:" />
+        <node concept="ljvvj" id="1Uhwoc5Xpxb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1Uhwoc5Xpxu" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+        <node concept="l2Vlx" id="1Uhwoc5Xpxw" role="2czzBx" />
+        <node concept="ljvvj" id="1Uhwoc5XpxM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1Uhwoc5XpxO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1Uhwoc5Xk62" role="3EZMnx">
+        <node concept="VPM3Z" id="1Uhwoc5Xk63" role="3F10Kt" />
+        <node concept="3F1sOY" id="1Uhwoc5Xk64" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:7mV$Q_d6GMw" resolve="init_particles" />
+        </node>
+        <node concept="l2Vlx" id="1Uhwoc5Xk65" role="2iSdaV" />
+        <node concept="ljvvj" id="1Uhwoc5Xk66" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1Uhwoc5Xk67" role="3EZMnx">
+        <node concept="ljvvj" id="1Uhwoc5Xk68" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1Uhwoc5Xpyc" role="3EZMnx">
+        <property role="3F0ifm" value="Commands:" />
+        <node concept="ljvvj" id="1Uhwoc5Xpzc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1Uhwoc5X$wK" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk6t" resolve="body" />
+        <node concept="2iRkQZ" id="1Uhwoc5X$wN" role="2czzBx" />
+        <node concept="VPM3Z" id="1Uhwoc5X$wO" role="3F10Kt" />
+        <node concept="ljvvj" id="1Uhwoc5X$yf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1Uhwoc5X$$1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1Uhwoc5Xk6d" role="2iSdaV" />
     </node>
   </node>
 </model>

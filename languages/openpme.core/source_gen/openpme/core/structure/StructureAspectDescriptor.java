@@ -88,8 +88,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
     deps.extendedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
     deps.aggregatedLanguage(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, "openpme.expressions");
-    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
     deps.aggregatedLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
+    deps.aggregatedLanguage(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, "openpme.statements");
   }
 
   @Override
@@ -285,7 +285,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610641350");
     b.version(2);
-    b.aggregate("body", 0x7d1e7ce65d4e45a2L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(true).origin("9015780832892044706").done();
     b.alias("continuous");
     return b.create();
   }
@@ -326,7 +325,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610641351");
     b.version(2);
-    b.aggregate("body", 0x7d1e7ce65d4d0070L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(true).origin("9015780832891961456").done();
     b.alias("discrete");
     return b.create();
   }
@@ -381,7 +379,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("openpme.core.structure.TypeOfSimulation", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x68c06653ceca679eL);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762183144");
     b.version(2);
-    b.aggregate("body", 0x1cbe89376bd34b51L).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(false).ordered(true).multiple(true).origin("2071243749762222929").done();
     b.alias("hybrid");
     return b.create();
   }
@@ -427,8 +424,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForInitParticles() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("openpme.core", "InitParticles", 0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34860L);
     b.class_(false, false, false);
+    b.super_("openpme.statements.structure.Statement", 0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L);
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/2071243749762222176");
     b.version(2);
+    b.aggregate("gridSize", 0x1e91818305f4b04cL).target(0x9a51a2b483e44324L, 0x8cf84ee101121a3aL, 0x72d99ef7d66a9749L).optional(false).ordered(true).multiple(true).origin("2202684092501504076").done();
     b.alias("InitializationOfParticles");
     return b.create();
   }
@@ -722,6 +721,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)/7548145485610641310");
     b.version(2);
     b.aggregate("init_particles", 0x75bb93694d1acca0L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd34860L).optional(false).ordered(true).multiple(false).origin("8483536403556912288").done();
+    b.aggregate("properties", 0x1e91818305f54172L).target(0x66673400467e48d2L, 0xace06f708d2ef66dL, 0x1cbe89376bd49893L).optional(true).ordered(true).multiple(true).origin("2202684092501541234").done();
+    b.aggregate("body", 0x1e91818305f5419dL).target(0xd89a1f942b1040d1L, 0xa01e560f94e501d7L, 0x6732efa1a0b5b9e3L).optional(true).ordered(true).multiple(true).origin("2202684092501541277").done();
     b.alias("typeOfSimulation");
     return b.create();
   }
