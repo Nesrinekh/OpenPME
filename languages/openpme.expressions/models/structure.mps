@@ -7,6 +7,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
+    <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" implicit="true" />
     <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -156,6 +157,7 @@
   <node concept="1TIwiD" id="7bpBJvmqoNZ">
     <property role="EcuMT" value="8275820577561349375" />
     <property role="TrG5h" value="AssignmentExpression" />
+    <property role="34LRSv" value="=" />
     <ref role="1TJDcQ" node="7bpBJvmqoNN" resolve="BinaryExpression" />
   </node>
   <node concept="1TIwiD" id="7bpBJvmqoO0">
@@ -403,6 +405,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
+    <node concept="1TJgyj" id="1Uhwoc6$Kau" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092511879838" />
+      <property role="20kJfa" value="prop" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="r2co:1MYyjtFP9yj" resolve="Property" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7mV$Q_d7Dfq">
     <property role="EcuMT" value="8483536403557159898" />
@@ -539,6 +547,12 @@
     <property role="R4oN_" value="distriuted vector" />
     <property role="34LRSv" value="vector_dist" />
     <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="1Uhwoc6A2HE">
+    <property role="EcuMT" value="2202684092512217962" />
+    <property role="TrG5h" value="PlusAssignmentExpression" />
+    <property role="34LRSv" value="+=" />
+    <ref role="1TJDcQ" node="7bpBJvmqoNN" resolve="BinaryExpression" />
   </node>
 </model>
 

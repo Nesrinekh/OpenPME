@@ -496,13 +496,13 @@
     <property role="EcuMT" value="2071243749762222177" />
     <property role="3GE5qa" value="simulation.loop" />
     <property role="TrG5h" value="ParticleLoop" />
-    <property role="34LRSv" value="Foreach loop" />
+    <property role="34LRSv" value="Particle loop" />
     <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
-    <node concept="1TJgyj" id="1Uhwoc6xAe3" role="1TKVEi">
-      <property role="IQ2ns" value="2202684092511052675" />
+    <node concept="1TJgyj" id="1Uhwoc6_l$d" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092512033037" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="particle" />
-      <ref role="20lvS9" to="caxt:1Uhwoc5XOJf" resolve="UncheckedReference" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
     <node concept="1TJgyj" id="1MYyjtFOOA9" role="1TKVEi">
       <property role="IQ2ns" value="2071243749762222473" />
