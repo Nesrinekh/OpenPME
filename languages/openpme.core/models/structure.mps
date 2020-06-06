@@ -668,5 +668,29 @@
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2fc2f1u$gZ9">
+    <property role="EcuMT" value="2579446515048189897" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="TemporalPDE" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+  </node>
+  <node concept="1TIwiD" id="2fc2f1u$gZ8">
+    <property role="EcuMT" value="2579446515048189896" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="SpatialPDE" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+  </node>
+  <node concept="1TIwiD" id="2fc2f1u$gZa">
+    <property role="EcuMT" value="2579446515048189898" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="PDEStatement" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+  </node>
+  <node concept="1TIwiD" id="2fc2f1u$gZ7">
+    <property role="EcuMT" value="2579446515048189895" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="Kernel" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+  </node>
 </model>
 
