@@ -433,40 +433,6 @@
       <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7Ouveptj$nw">
-    <property role="EcuMT" value="9015780832892044768" />
-    <property role="3GE5qa" value="simulation.loop" />
-    <property role="TrG5h" value="TimeLoopC" />
-    <property role="34LRSv" value="TimeLoop" />
-    <ref role="1TJDcQ" node="7mV$Q_d6iww" resolve="TimeLoop" />
-    <node concept="1TJgyj" id="7mV$Q_d6ixS" role="1TKVEi">
-      <property role="IQ2ns" value="8483536403556804728" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7mV$Q_d6oGv" resolve="ICommandC" />
-    </node>
-    <node concept="PrWs8" id="7mV$Q_d6uLk" role="PzmwI">
-      <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7OuveptjZbB">
-    <property role="EcuMT" value="9015780832892154599" />
-    <property role="3GE5qa" value="simulation.loop" />
-    <property role="TrG5h" value="TimeLoopD" />
-    <property role="34LRSv" value="TimeLoop" />
-    <ref role="1TJDcQ" node="7mV$Q_d6iww" resolve="TimeLoop" />
-    <node concept="1TJgyj" id="7mV$Q_d6ixX" role="1TKVEi">
-      <property role="IQ2ns" value="8483536403556804733" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7mV$Q_d6oGr" resolve="ICommandD" />
-    </node>
-    <node concept="PrWs8" id="7mV$Q_d6oGK" role="PzmwI">
-      <ref role="PrY4T" node="7mV$Q_d6oGr" resolve="ICommandD" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5MzX6cksiVg">
     <property role="EcuMT" value="6675447779075108560" />
     <property role="3GE5qa" value="physicalNotations" />
@@ -529,15 +495,21 @@
   <node concept="1TIwiD" id="1MYyjtFOOxx">
     <property role="EcuMT" value="2071243749762222177" />
     <property role="3GE5qa" value="simulation.loop" />
-    <property role="TrG5h" value="Foreach" />
+    <property role="TrG5h" value="ParticleLoop" />
     <property role="34LRSv" value="Foreach loop" />
     <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
+    <node concept="1TJgyj" id="1Uhwoc6xAe3" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092511052675" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="particle" />
+      <ref role="20lvS9" to="caxt:1Uhwoc5XOJf" resolve="UncheckedReference" />
+    </node>
     <node concept="1TJgyj" id="1MYyjtFOOA9" role="1TKVEi">
       <property role="IQ2ns" value="2071243749762222473" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="iterable" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1MYyjtFOOxy" resolve="Particle" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
     <node concept="PrWs8" id="7mV$Q_d7zNJ" role="PzmwI">
       <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
@@ -609,15 +581,8 @@
   <node concept="1TIwiD" id="7mV$Q_d6iww">
     <property role="EcuMT" value="8483536403556804640" />
     <property role="3GE5qa" value="simulation.loop" />
-    <property role="R5$K7" value="true" />
     <property role="TrG5h" value="TimeLoop" />
     <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
-    <node concept="1TJgyj" id="7mV$Q_d6iw_" role="1TKVEi">
-      <property role="IQ2ns" value="8483536403556804645" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dt" />
-      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
-    </node>
     <node concept="1TJgyj" id="7mV$Q_d6iwB" role="1TKVEi">
       <property role="IQ2ns" value="8483536403556804647" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -629,18 +594,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="stop" />
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="7mV$Q_d6ixZ">
-    <property role="EcuMT" value="8483536403556804735" />
-    <property role="3GE5qa" value="simulation.loop" />
-    <property role="TrG5h" value="ILoop" />
-    <node concept="1TJgyj" id="7mV$Q_d6iy0" role="1TKVEi">
-      <property role="IQ2ns" value="8483536403556804736" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7mV$Q_d6oGq" resolve="ICommand" />
     </node>
   </node>
   <node concept="PlHQZ" id="7mV$Q_d6oGq">
@@ -670,8 +623,12 @@
     <property role="3GE5qa" value="simulation.loop" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
-    <node concept="PrWs8" id="7mV$Q_d6GL3" role="PzmwI">
-      <ref role="PrY4T" node="7mV$Q_d6ixZ" resolve="ILoop" />
+    <node concept="1TJgyj" id="1Uhwoc6omJJ" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092508629999" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     </node>
   </node>
   <node concept="PlHQZ" id="7mV$Q_d6GLe">
