@@ -23,7 +23,9 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -127,6 +129,9 @@
     <node concept="PrWs8" id="70bNw4gtDyv" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="1Uhwoc6Dq3Y" role="PzmwI">
+      <ref role="PrY4T" node="1Uhwoc6Dq3P" resolve="IParticleContainer" />
+    </node>
     <node concept="1TJgyj" id="70bNw4gtDz9" role="1TKVEi">
       <property role="IQ2ns" value="8073773260958243017" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -208,6 +213,20 @@
       <property role="20kJfa" value="variableDeclaration" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1Uhwoc6Dq3P">
+    <property role="EcuMT" value="2202684092513100021" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="IParticleContainer" />
+    <node concept="PrWs8" id="1Uhwoc6Dq3Q" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1Uhwoc6D_BP" role="1TKVEi">
+      <property role="IQ2ns" value="2202684092513147381" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="container" />
+      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
   </node>
 </model>

@@ -49,17 +49,29 @@
         <child id="2202684092501541277" name="body" index="rpc0u" />
         <child id="2202684092501541234" name="properties" index="rpc3L" />
       </concept>
+      <concept id="8483536403556912194" name="openpme.core.structure.Loop" flags="ng" index="SClWF">
+        <child id="2202684092508629999" name="body" index="oWeDG" />
+      </concept>
+      <concept id="8483536403556804640" name="openpme.core.structure.TimeLoop" flags="ng" index="SCFH9">
+        <child id="8483536403556804650" name="stop" index="SCFH3" />
+        <child id="8483536403556804647" name="start" index="SCFHe" />
+      </concept>
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="2202684092501631255" name="equation" index="rpM2k" />
       </concept>
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
+      <concept id="2071243749762222177" name="openpme.core.structure.ParticleLoop" flags="ng" index="1Rrs5m">
+        <child id="2202684092512033037" name="particle" index="o1dye" />
+        <child id="2071243749762222473" name="iterable" index="1Rrs2Y" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
+      <concept id="2202684092512217962" name="openpme.expressions.structure.PlusAssignmentExpression" flags="ng" index="o2qFD" />
       <concept id="2202684092498276280" name="openpme.expressions.structure.FloatType" flags="ng" index="rkISV" />
       <concept id="2202684092501714070" name="openpme.expressions.structure.VectorDistType" flags="ng" index="rpAkl" />
       <concept id="2202684092501674959" name="openpme.expressions.structure.UncheckedReference" flags="ng" index="rpGDc">
@@ -75,6 +87,13 @@
       <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY">
         <property id="8275820577561417546" name="value" index="2$GKAX" />
       </concept>
+      <concept id="8483536403557159901" name="openpme.expressions.structure.VariableAccess" flags="ng" index="SDg2O">
+        <reference id="8483536403557159902" name="ref" index="SDg2R" />
+      </concept>
+      <concept id="8483536403557159895" name="openpme.expressions.structure.ParticleAccess" flags="ng" index="SDg2Y">
+        <reference id="2202684092511879838" name="prop" index="o0Cct" />
+        <reference id="8483536403557159896" name="ref" index="SDg2L" />
+      </concept>
       <concept id="7436269412207138817" name="openpme.expressions.structure.MultiplicationExpression" flags="ng" index="37xRuw" />
       <concept id="8073773260958242859" name="openpme.expressions.structure.ITyped" flags="ng" index="1wvloE">
         <child id="8073773260958242860" name="type" index="1wvloH" />
@@ -83,6 +102,9 @@
     <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
+      </concept>
+      <concept id="8073773260958208202" name="openpme.statements.structure.ExpressionStatement" flags="ng" index="1wvtVb">
+        <child id="8073773260958208203" name="expression" index="1wvtVa" />
       </concept>
       <concept id="2579446515047575999" name="openpme.statements.structure.VariableReference" flags="ng" index="1XiV_f">
         <reference id="2579446515047620994" name="variableDeclaration" index="1Xh6_M" />
@@ -164,6 +186,13 @@
     </node>
     <node concept="1GH8rQ" id="7mV$Q_d6VWQ" role="1GHewH">
       <node concept="2A2w6k" id="1Uhwoc64MBy" role="2A2w7f">
+        <node concept="2G0pd6" id="1Uhwoc6Af23" role="rpc0u">
+          <property role="TrG5h" value="dt" />
+          <node concept="rkISV" id="1Uhwoc6Af2s" role="1wvloH" />
+          <node concept="2$GK$c" id="1Uhwoc6Af2x" role="1wvlr8">
+            <property role="2$GK$b" value="0.0005" />
+          </node>
+        </node>
         <node concept="2G0pd6" id="1Uhwoc64MBU" role="rpc0u">
           <property role="TrG5h" value="sigma" />
           <node concept="rkISV" id="1Uhwoc64MBX" role="1wvloH" />
@@ -187,6 +216,39 @@
           </node>
           <node concept="1XiV_f" id="1Uhwoc67L_8" role="ozNjG">
             <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+          </node>
+        </node>
+        <node concept="SCFH9" id="1Uhwoc6o_fu" role="rpc0u">
+          <node concept="2$GKAY" id="1Uhwoc6oFiM" role="SCFHe">
+            <property role="2$GKAX" value="0" />
+          </node>
+          <node concept="2$GKAY" id="1Uhwoc6oFiO" role="SCFH3">
+            <property role="2$GKAX" value="10" />
+          </node>
+          <node concept="1Rrs5m" id="1Uhwoc6_s1g" role="oWeDG">
+            <node concept="1XiV_f" id="1Uhwoc6_s1s" role="1Rrs2Y">
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+            </node>
+            <node concept="2G0pd6" id="1Uhwoc6_s1S" role="o1dye">
+              <property role="TrG5h" value="p" />
+            </node>
+            <node concept="1wvtVb" id="1Uhwoc6Af15" role="oWeDG">
+              <node concept="o2qFD" id="1Uhwoc6Af1h" role="1wvtVa">
+                <node concept="37xRuw" id="1Uhwoc6Af1v" role="2$G18d">
+                  <node concept="SDg2O" id="1Uhwoc6Af2$" role="2$G181">
+                    <ref role="SDg2R" node="1Uhwoc6Af23" resolve="dt" />
+                  </node>
+                  <node concept="SDg2Y" id="1Uhwoc6Af2B" role="2$G18d">
+                    <ref role="SDg2L" node="1Uhwoc6_s1S" resolve="p" />
+                    <ref role="o0Cct" node="1Uhwoc6jgu8" resolve="force" />
+                  </node>
+                </node>
+                <node concept="SDg2Y" id="1Uhwoc6A2Gx" role="2$G181">
+                  <ref role="o0Cct" node="1Uhwoc64MB_" resolve="velocity" />
+                  <ref role="SDg2L" node="1Uhwoc6_s1S" resolve="p" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1Rqx6$" id="1Uhwoc64MB_" role="rpc3L">
