@@ -13,6 +13,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
+    <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -227,6 +228,56 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="container" />
       <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1d1jgI8ORmn">
+    <property role="EcuMT" value="1387474872142362007" />
+    <property role="TrG5h" value="MapVectorDist" />
+    <property role="3GE5qa" value="openFPM" />
+    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="1d1jgI8ORmo" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872142362008" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="vector" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1d1jgI8ORmq">
+    <property role="EcuMT" value="1387474872142362010" />
+    <property role="TrG5h" value="ResyncGhostVectorDist" />
+    <property role="3GE5qa" value="openFPM" />
+    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="1d1jgI8ORmr" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872142362011" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="vector" />
+      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1d1jgI92mSZ">
+    <property role="EcuMT" value="1387474872145899071" />
+    <property role="3GE5qa" value="openFPM" />
+    <property role="TrG5h" value="UpdateCellList" />
+    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="1d1jgI92mTk" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872145899092" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="cellList" />
+      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1d1jgI93P9F">
+    <property role="EcuMT" value="1387474872146285163" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="PropertyReference" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="1d1jgI93P9G" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872146285164" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="r2co:1MYyjtFP9yj" resolve="Property" />
     </node>
   </node>
 </model>
