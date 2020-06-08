@@ -416,5 +416,29 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1d1jgI8Pqoa">
+    <ref role="1XX52x" to="5oki:1d1jgI8ORmq" resolve="ResyncGhostVectorDist" />
+    <node concept="3EZMnI" id="1d1jgI8Pqoh" role="2wV5jI">
+      <node concept="3F0ifn" id="1d1jgI8Pqoo" role="3EZMnx">
+        <property role="3F0ifm" value="Resync Ghost" />
+      </node>
+      <node concept="3F1sOY" id="1d1jgI8PqoG" role="3EZMnx">
+        <ref role="1NtTu8" to="5oki:1d1jgI8ORmr" resolve="vector" />
+      </node>
+      <node concept="l2Vlx" id="1d1jgI8Pqok" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1d1jgI8PB1X">
+    <ref role="1XX52x" to="5oki:1d1jgI8ORmn" resolve="MapVectorDist" />
+    <node concept="3EZMnI" id="1d1jgI8PB1Z" role="2wV5jI">
+      <node concept="3F0ifn" id="1d1jgI8PB26" role="3EZMnx">
+        <property role="3F0ifm" value="Map" />
+      </node>
+      <node concept="3F1sOY" id="1d1jgI8PB2g" role="3EZMnx">
+        <ref role="1NtTu8" to="5oki:1d1jgI8ORmo" resolve="vector" />
+      </node>
+      <node concept="l2Vlx" id="1d1jgI8PB22" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

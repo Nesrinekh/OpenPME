@@ -469,11 +469,6 @@
           <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
-      <node concept="3F0ifn" id="1MYyjtFOOCr" role="3EZMnx">
-        <node concept="ljvvj" id="1MYyjtFOOCH" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="l2Vlx" id="1MYyjtFOOAI" role="2iSdaV" />
     </node>
   </node>

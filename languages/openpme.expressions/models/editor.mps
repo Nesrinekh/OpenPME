@@ -204,16 +204,16 @@
     <property role="3GE5qa" value="variables" />
     <ref role="1XX52x" to="caxt:7mV$Q_d7Dfn" resolve="ParticleAccess" />
     <node concept="3EZMnI" id="1Uhwoc6$KaJ" role="2wV5jI">
-      <node concept="1iCGBv" id="1Uhwoc6$KaQ" role="3EZMnx">
+      <node concept="1iCGBv" id="6U$n9MUcvvK" role="3EZMnx">
         <ref role="1NtTu8" to="caxt:7mV$Q_d7Dfo" resolve="ref" />
-        <node concept="1sVBvm" id="1Uhwoc6$KaS" role="1sWHZn">
-          <node concept="3F0A7n" id="1Uhwoc6$KaZ" role="2wV5jI">
+        <node concept="1sVBvm" id="6U$n9MUcvvM" role="1sWHZn">
+          <node concept="3F0A7n" id="6U$n9MUdiGP" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="1Uhwoc6$Wo0" role="3EZMnx">
+      <node concept="3F0ifn" id="6U$n9MUdqq$" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
       </node>
       <node concept="1iCGBv" id="1Uhwoc6$Kbj" role="3EZMnx">
@@ -226,6 +226,22 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1Uhwoc6$KaM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1d1jgI8RonW">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="caxt:1d1jgI8Riqn" resolve="ParticlePositionAccess" />
+    <node concept="3EZMnI" id="1d1jgI8RonY" role="2wV5jI">
+      <node concept="3F1sOY" id="1d1jgI8Roo5" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI8Riqq" resolve="ref" />
+      </node>
+      <node concept="l2Vlx" id="1d1jgI8Roo1" role="2iSdaV" />
+      <node concept="3F0ifn" id="1d1jgI8Roob" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F0ifn" id="1d1jgI8Rooj" role="3EZMnx">
+        <property role="3F0ifm" value="pos" />
+      </node>
     </node>
   </node>
 </model>

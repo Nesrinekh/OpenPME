@@ -559,5 +559,23 @@
     <property role="34LRSv" value="+=" />
     <ref role="1TJDcQ" node="7bpBJvmqoNN" resolve="BinaryExpression" />
   </node>
+  <node concept="1TIwiD" id="1d1jgI8Riqn">
+    <property role="EcuMT" value="1387474872142997143" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="ParticlePositionAccess" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyi" id="1d1jgI8Riqo" role="1TKVEl">
+      <property role="IQ2nx" value="1387474872142997144" />
+      <property role="TrG5h" value="ndim" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="1d1jgI8Riqq" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872142997146" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
 </model>
 
