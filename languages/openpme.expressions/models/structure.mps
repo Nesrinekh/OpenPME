@@ -550,7 +550,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="VectorDistType" />
     <property role="R4oN_" value="distriuted vector" />
-    <property role="34LRSv" value="vector_dist" />
+    <property role="34LRSv" value="vector" />
     <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="1Uhwoc6A2HE">
@@ -576,6 +576,25 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1d1jgI8ZEta">
+    <property role="EcuMT" value="1387474872145192778" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="CreateCellList" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="1d1jgI8ZEtf" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872145192783" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="vector" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1d1jgI91Px3">
+    <property role="EcuMT" value="1387474872145762371" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="DoubleType" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
   </node>
 </model>
 
