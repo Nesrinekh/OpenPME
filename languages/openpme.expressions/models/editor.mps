@@ -8,6 +8,7 @@
   <imports>
     <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -204,24 +205,34 @@
     <property role="3GE5qa" value="variables" />
     <ref role="1XX52x" to="caxt:7mV$Q_d7Dfn" resolve="ParticleAccess" />
     <node concept="3EZMnI" id="1Uhwoc6$KaJ" role="2wV5jI">
-      <node concept="1iCGBv" id="6U$n9MUcvvK" role="3EZMnx">
-        <ref role="1NtTu8" to="caxt:7mV$Q_d7Dfo" resolve="ref" />
-        <node concept="1sVBvm" id="6U$n9MUcvvM" role="1sWHZn">
-          <node concept="3F0A7n" id="6U$n9MUdiGP" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1iCGBv" id="1d1jgI936ha" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI934Lt" resolve="ref" />
+        <node concept="1sVBvm" id="1d1jgI936hc" role="1sWHZn">
+          <node concept="1iCGBv" id="1d1jgI936hm" role="2wV5jI">
+            <ref role="1NtTu8" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+            <node concept="1sVBvm" id="1d1jgI936ho" role="1sWHZn">
+              <node concept="3F0A7n" id="1d1jgI936hv" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="6U$n9MUdqq$" role="3EZMnx">
+      <node concept="3F0ifn" id="1d1jgI93Hp_" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
       </node>
-      <node concept="1iCGBv" id="1Uhwoc6$Kbj" role="3EZMnx">
-        <ref role="1NtTu8" to="caxt:1Uhwoc6$Kau" resolve="prop" />
-        <node concept="1sVBvm" id="1Uhwoc6$Kbl" role="1sWHZn">
-          <node concept="3F0A7n" id="1Uhwoc6$Kbw" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="1iCGBv" id="1d1jgI93VKH" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI93VIX" resolve="prop" />
+        <node concept="1sVBvm" id="1d1jgI93VKJ" role="1sWHZn">
+          <node concept="1iCGBv" id="1d1jgI93VKW" role="2wV5jI">
+            <ref role="1NtTu8" to="5oki:1d1jgI93P9G" resolve="property" />
+            <node concept="1sVBvm" id="1d1jgI93VKY" role="1sWHZn">
+              <node concept="3F0A7n" id="1d1jgI93VL5" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -272,6 +283,39 @@
     <ref role="1XX52x" to="caxt:1d1jgI91Px3" resolve="DoubleType" />
     <node concept="3F0ifn" id="1d1jgI91Pxe" role="2wV5jI">
       <property role="3F0ifm" value="double" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1d1jgI94SlL">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="caxt:1d1jgI94LPV" resolve="PointType" />
+    <node concept="3F0ifn" id="1d1jgI94SlN" role="2wV5jI">
+      <property role="3F0ifm" value="point" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1d1jgI964GF">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="caxt:1d1jgI963we" resolve="CreateNeighborList" />
+    <node concept="3EZMnI" id="1d1jgI964GM" role="2wV5jI">
+      <node concept="3F0ifn" id="1d1jgI964GT" role="3EZMnx">
+        <property role="3F0ifm" value="Create neighbor list" />
+      </node>
+      <node concept="3F1sOY" id="1d1jgI964H3" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI963wf" resolve="ref" />
+      </node>
+      <node concept="3F0ifn" id="1d1jgI964Hb" role="3EZMnx">
+        <property role="3F0ifm" value="at" />
+      </node>
+      <node concept="3F1sOY" id="1d1jgI964Hl" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI963wh" resolve="position" />
+      </node>
+      <node concept="l2Vlx" id="1d1jgI964GP" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1d1jgI96ppZ">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="caxt:1d1jgI96ppQ" resolve="NeighborListType" />
+    <node concept="3F0ifn" id="1d1jgI96pq1" role="2wV5jI">
+      <property role="3F0ifm" value="NeighborList" />
     </node>
   </node>
 </model>
