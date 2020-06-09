@@ -94,6 +94,7 @@
         <child id="8275820577561349370" name="right" index="2$G18d" />
       </concept>
       <concept id="8275820577561349375" name="openpme.expressions.structure.AssignmentExpression" flags="ng" index="2$G188" />
+      <concept id="8275820577561364933" name="openpme.expressions.structure.EqualsExpression" flags="ng" index="2$G5sM" />
       <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
         <property id="8275820577561417724" name="value" index="2$GK$b" />
       </concept>
@@ -106,17 +107,22 @@
       </concept>
       <concept id="8483536403557160030" name="openpme.expressions.structure.CellListType" flags="ng" index="SDgsR" />
       <concept id="7436269412207138817" name="openpme.expressions.structure.MultiplicationExpression" flags="ng" index="37xRuw" />
+      <concept id="7436269412207138816" name="openpme.expressions.structure.SubtractionExpression" flags="ng" index="37xRux" />
       <concept id="8073773260958242859" name="openpme.expressions.structure.ITyped" flags="ng" index="1wvloE">
         <child id="8073773260958242860" name="type" index="1wvloH" />
       </concept>
     </language>
     <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
+      <concept id="1387474872151071397" name="openpme.statements.structure.Norm2" flags="ng" index="2q6huI">
+        <child id="1387474872151071415" name="parameter" index="2q6huW" />
+      </concept>
       <concept id="1387474872145899071" name="openpme.statements.structure.UpdateCellList" flags="ng" index="2qi2cO">
         <child id="1387474872145899092" name="cellList" index="2qi2dv" />
       </concept>
       <concept id="1387474872146285163" name="openpme.statements.structure.PropertyReference" flags="ng" index="2qjxXw">
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
       </concept>
+      <concept id="1387474872148681594" name="openpme.statements.structure.SkipIteration" flags="ng" index="2qsETL" />
       <concept id="1387474872142362010" name="openpme.statements.structure.ResyncGhostVectorDist" flags="ng" index="2r$zyh">
         <child id="1387474872142362011" name="vector" index="2r$zyg" />
       </concept>
@@ -126,8 +132,15 @@
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
       </concept>
+      <concept id="8073773260958208144" name="openpme.statements.structure.StatementList" flags="ng" index="1wvtUh">
+        <child id="8073773260958208154" name="statements" index="1wvtUr" />
+      </concept>
       <concept id="8073773260958208202" name="openpme.statements.structure.ExpressionStatement" flags="ng" index="1wvtVb">
         <child id="8073773260958208203" name="expression" index="1wvtVa" />
+      </concept>
+      <concept id="5443610339528609787" name="openpme.statements.structure.IfStatement" flags="ng" index="1GH9$S">
+        <child id="8073773260958208287" name="condition" index="1wvtWu" />
+        <child id="8073773260958208289" name="ifTrue" index="1wvtWw" />
       </concept>
       <concept id="2579446515047575999" name="openpme.statements.structure.VariableReference" flags="ng" index="1XiV_f">
         <reference id="2579446515047620994" name="variableDeclaration" index="1Xh6_M" />
@@ -302,6 +315,57 @@
                 </node>
                 <node concept="1XiV_f" id="1d1jgI96wdC" role="2qmnkq">
                   <ref role="1Xh6_M" node="1d1jgI94LPW" resolve="xp" />
+                </node>
+              </node>
+            </node>
+            <node concept="1Rrs5m" id="1d1jgI9a6IJ" role="oWeDG">
+              <node concept="1XiV_f" id="1d1jgI9a6J4" role="1Rrs2Y">
+                <ref role="1Xh6_M" node="1d1jgI96wcB" resolve="nlist" />
+              </node>
+              <node concept="2G0pd6" id="1d1jgI9a6J7" role="o1dye">
+                <property role="TrG5h" value="q" />
+              </node>
+              <node concept="1GH9$S" id="1d1jgI9hlOd" role="oWeDG">
+                <node concept="1wvtUh" id="1d1jgI9hlOh" role="1wvtWw">
+                  <node concept="2qsETL" id="1d1jgI9hlOv" role="1wvtUr" />
+                </node>
+                <node concept="2$G5sM" id="1d1jgI9gOxp" role="1wvtWu">
+                  <node concept="1XiV_f" id="1d1jgI9gOxq" role="2$G181">
+                    <ref role="1Xh6_M" node="1d1jgI9a6J7" resolve="q" />
+                  </node>
+                  <node concept="1XiV_f" id="1d1jgI9gOxr" role="2$G18d">
+                    <ref role="1Xh6_M" node="1d1jgI94LG9" resolve="p_force" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2G0pd6" id="1d1jgI9a8Ft" role="oWeDG">
+                <property role="TrG5h" value="xq" />
+                <node concept="2qk_1K" id="1d1jgI9a8Fv" role="1wvloH" />
+                <node concept="2rB6Is" id="1d1jgI9a8F$" role="1wvlr8">
+                  <node concept="1XiV_f" id="1d1jgI9a8FE" role="2rB6Ih">
+                    <ref role="1Xh6_M" node="1d1jgI9a6J7" resolve="q" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2G0pd6" id="1d1jgI9lAs8" role="oWeDG">
+                <property role="TrG5h" value="r" />
+                <node concept="2qk_1K" id="1d1jgI9lAsl" role="1wvloH" />
+                <node concept="37xRux" id="1d1jgI9lAsq" role="1wvlr8">
+                  <node concept="1XiV_f" id="1d1jgI9lAsD" role="2$G181">
+                    <ref role="1Xh6_M" node="1d1jgI94LPW" resolve="xp" />
+                  </node>
+                  <node concept="1XiV_f" id="1d1jgI9lAsG" role="2$G18d">
+                    <ref role="1Xh6_M" node="1d1jgI9a8Ft" resolve="xq" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2G0pd6" id="1d1jgI9m5Ee" role="oWeDG">
+                <property role="TrG5h" value="rn" />
+                <node concept="2qhxl8" id="1d1jgI9m5Ew" role="1wvloH" />
+                <node concept="2q6huI" id="1d1jgI9mkvk" role="1wvlr8">
+                  <node concept="1XiV_f" id="1d1jgI9mkvq" role="2q6huW">
+                    <ref role="1Xh6_M" node="1d1jgI9lAs8" resolve="r" />
+                  </node>
                 </node>
               </node>
             </node>

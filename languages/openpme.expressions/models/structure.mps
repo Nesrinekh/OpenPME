@@ -629,7 +629,8 @@
     <property role="EcuMT" value="1387474872146957942" />
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="NeighborListType" />
-    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+    <property role="34LRSv" value="NeighborList" />
+    <ref role="1TJDcQ" node="1Uhwoc5XYim" resolve="VectorDistType" />
   </node>
 </model>
 

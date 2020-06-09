@@ -311,12 +311,5 @@
       <node concept="l2Vlx" id="1d1jgI964GP" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1d1jgI96ppZ">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="caxt:1d1jgI96ppQ" resolve="NeighborListType" />
-    <node concept="3F0ifn" id="1d1jgI96pq1" role="2wV5jI">
-      <property role="3F0ifm" value="NeighborList" />
-    </node>
-  </node>
 </model>
 
