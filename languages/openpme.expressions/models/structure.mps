@@ -8,6 +8,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
     <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
+    <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -631,6 +632,25 @@
     <property role="TrG5h" value="NeighborListType" />
     <property role="34LRSv" value="NeighborList" />
     <ref role="1TJDcQ" node="1Uhwoc5XYim" resolve="VectorDistType" />
+  </node>
+  <node concept="1TIwiD" id="1d1jgI9nbUN">
+    <property role="EcuMT" value="1387474872151359155" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="CutoffRef" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="1d1jgI9nbUO" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872151359156" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="r2co:6z0p_feMdxY" resolve="CutoffRadius" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1d1jgI9oH$q">
+    <property role="EcuMT" value="1387474872151759130" />
+    <property role="3GE5qa" value="arithmetic" />
+    <property role="TrG5h" value="PowerExpression" />
+    <property role="34LRSv" value="^" />
+    <ref role="1TJDcQ" node="7bpBJvmqoNN" resolve="BinaryExpression" />
   </node>
 </model>
 

@@ -10,6 +10,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -309,6 +310,18 @@
         <ref role="1NtTu8" to="caxt:1d1jgI963wh" resolve="position" />
       </node>
       <node concept="l2Vlx" id="1d1jgI964GP" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1d1jgI9npzU">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="caxt:1d1jgI9nbUN" resolve="CutoffRef" />
+    <node concept="1iCGBv" id="1d1jgI9np$7" role="2wV5jI">
+      <ref role="1NtTu8" to="caxt:1d1jgI9nbUO" resolve="ref" />
+      <node concept="1sVBvm" id="1d1jgI9np$9" role="1sWHZn">
+        <node concept="3F1sOY" id="1d1jgI9np$g" role="2wV5jI">
+          <ref role="1NtTu8" to="r2co:6z0p_feMqhJ" resolve="cutoffradius_value" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

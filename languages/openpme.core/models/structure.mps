@@ -72,12 +72,6 @@
     <property role="TrG5h" value="LaplacianOperator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="6sMVU6wHpp1">
-    <property role="EcuMT" value="7436269412207138369" />
-    <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="PowerExpression" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="1TIwiD" id="6sMVU6wHpp2">
     <property role="EcuMT" value="7436269412207138370" />
     <property role="3GE5qa" value="expressions" />
@@ -691,6 +685,25 @@
     <property role="3GE5qa" value="simulation" />
     <property role="TrG5h" value="Kernel" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+  </node>
+  <node concept="1TIwiD" id="1d1jgI9zUI$">
+    <property role="EcuMT" value="1387474872154696612" />
+    <property role="3GE5qa" value="simulation.loop" />
+    <property role="TrG5h" value="NeighborhoodLoop" />
+    <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
+    <node concept="1TJgyj" id="1d1jgI9zUI_" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872154696613" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="particle" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="1d1jgI9zUIA" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872154696614" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="iterable" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
   </node>
 </model>
 

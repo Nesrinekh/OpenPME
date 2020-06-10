@@ -215,6 +215,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
     </node>
+    <node concept="1TJgyj" id="1d1jgI9quv8" role="1TKVEi">
+      <property role="IQ2ns" value="1387474872152221640" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ndim" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1Uhwoc6Dq3P">
     <property role="EcuMT" value="2202684092513100021" />
