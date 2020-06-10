@@ -693,5 +693,40 @@
       <node concept="l2Vlx" id="1Uhwoc66S3O" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1d1jgI9$CO2">
+    <property role="3GE5qa" value="simulation.loop" />
+    <ref role="1XX52x" to="r2co:1d1jgI9zUI$" resolve="NeighborhoodLoop" />
+    <node concept="3EZMnI" id="1d1jgI9$CO4" role="2wV5jI">
+      <node concept="3F0ifn" id="1d1jgI9$COb" role="3EZMnx">
+        <property role="3F0ifm" value="For particle" />
+      </node>
+      <node concept="3F1sOY" id="1d1jgI9$COh" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1d1jgI9zUI_" resolve="particle" />
+      </node>
+      <node concept="3F0ifn" id="1d1jgI9$COp" role="3EZMnx">
+        <property role="3F0ifm" value="in neighborhood" />
+      </node>
+      <node concept="3F1sOY" id="1d1jgI9$CP9" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1d1jgI9zUIA" resolve="iterable" />
+        <node concept="ljvvj" id="1d1jgI9$CPH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1d1jgI9$CPy" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc6omJJ" resolve="body" />
+        <node concept="l2Vlx" id="1d1jgI9$CP$" role="2czzBx" />
+        <node concept="lj46D" id="1d1jgI9$CPJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="1d1jgI9$CPX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1d1jgI9$CQ0" role="3EZMnx">
+        <property role="3F0ifm" value="end neighborhood" />
+      </node>
+      <node concept="l2Vlx" id="1d1jgI9$CO7" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
