@@ -305,7 +305,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="parameter" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
+      <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
     </node>
   </node>
 </model>

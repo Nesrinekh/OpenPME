@@ -652,5 +652,11 @@
     <property role="34LRSv" value="^" />
     <ref role="1TJDcQ" node="7bpBJvmqoNN" resolve="BinaryExpression" />
   </node>
+  <node concept="1TIwiD" id="5WMTRp7x65J">
+    <property role="EcuMT" value="6859799677630701935" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="ParticleAccessDimension" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+  </node>
 </model>
 
