@@ -40,9 +40,6 @@
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
-      <concept id="2071243749762222177" name="openpme.core.structure.ParticleLoop" flags="ng" index="1Rrs5m">
-        <child id="2071243749762222473" name="iterable" index="1Rrs2Y" />
-      </concept>
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
       <concept id="2202684092501674959" name="openpme.expressions.structure.UncheckedReference" flags="ng" index="rpGDc">
@@ -59,6 +56,7 @@
       <concept id="7436269412207138817" name="openpme.expressions.structure.MultiplicationExpression" flags="ng" index="37xRuw" />
     </language>
     <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
+      <concept id="7436269412207147491" name="openpme.statements.structure.Statement" flags="ng" index="37xPp2" />
       <concept id="2579446515047575999" name="openpme.statements.structure.VariableReference" flags="ng" index="1XiV_f" />
     </language>
     <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
@@ -88,6 +86,7 @@
     </language>
   </registry>
   <node concept="1GHexR" id="4iUJJSkvZwM">
+    <property role="TrG5h" value="test" />
     <node concept="1GH8rR" id="4iUJJSkvZwN" role="1GHexQ">
       <node concept="2A2bSE" id="4iUJJSkvZwO" role="2A29xc" />
       <node concept="2A2bSD" id="4iUJJSkvZwP" role="2A29xM">
@@ -122,9 +121,7 @@
             <property role="2$GKAX" value="2" />
           </node>
         </node>
-        <node concept="1Rrs5m" id="4iUJJSkw6Oc" role="rpc0u">
-          <node concept="1XiV_f" id="4iUJJSkw6Oe" role="1Rrs2Y" />
-        </node>
+        <node concept="37xPp2" id="4iUJJSkw70t" role="rpc0u" />
       </node>
     </node>
     <node concept="1GH8rP" id="4iUJJSkvZx0" role="1GHewQ" />
