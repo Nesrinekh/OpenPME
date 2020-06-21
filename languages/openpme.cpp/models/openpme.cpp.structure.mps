@@ -642,6 +642,11 @@
     <node concept="PrWs8" id="1Uhwoc5OPnZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="5WMTRp7LWH5" role="1TKVEl">
+      <property role="IQ2nx" value="6859799677635119941" />
+      <property role="TrG5h" value="isReference" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1$s_O7Z5MlU">
     <property role="EcuMT" value="1809487460004472186" />
@@ -679,11 +684,6 @@
     <property role="TrG5h" value="BaseParameterDeclaration" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="52_2wI3$Po5" resolve="BaseVariableDeclaration" />
-    <node concept="1TJgyi" id="56JnHuthhPY" role="1TKVEl">
-      <property role="IQ2nx" value="5886027518146059646" />
-      <property role="TrG5h" value="isReferenceParameter" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7XHNE5I6fkE">
     <property role="EcuMT" value="9182222408010495274" />

@@ -92,9 +92,6 @@
         <child id="5811061938759912291" name="type" index="3jdG5C" />
       </concept>
       <concept id="5702233231638844963" name="openpme.cpp.structure.ArrayParameterDeclaration" flags="ng" index="3pob3a" />
-      <concept id="5702233231638844964" name="openpme.cpp.structure.BaseParameterDeclaration" flags="ng" index="3pob3d">
-        <property id="5886027518146059646" name="isReferenceParameter" index="3cU$eD" />
-      </concept>
       <concept id="7051614529692166034" name="openpme.cpp.structure.ExpressionStatement" flags="ng" index="3u_bAv">
         <child id="7051614529692166035" name="expression" index="3u_bAu" />
       </concept>
@@ -563,13 +560,12 @@
           <ref role="2rW$FS" node="1aNABc341Um" resolve="main_argc" />
         </node>
       </node>
-      <node concept="3pob3a" id="1Uhwoc5S94v" role="3jcgYB">
+      <node concept="3pob3a" id="5WMTRp7MWgl" role="3jcgYB">
         <property role="TrG5h" value="argv" />
-        <property role="3cU$eD" value="true" />
-        <node concept="2uk3Oq" id="1Uhwoc5S94J" role="3jdG5C">
-          <node concept="3TzswV" id="1Uhwoc5S94K" role="2uk3Ot" />
+        <node concept="2uk3Oq" id="5WMTRp7MWg$" role="3jdG5C">
+          <node concept="3TzswV" id="5WMTRp7MWg_" role="2uk3Ot" />
         </node>
-        <node concept="2ZBi8u" id="1Uhwoc5S94P" role="lGtFl">
+        <node concept="2ZBi8u" id="5WMTRp7MWmi" role="lGtFl">
           <ref role="2rW$FS" node="1aNABc341Un" resolve="main_argv" />
         </node>
       </node>
@@ -585,8 +581,8 @@
               </node>
             </node>
             <node concept="2uaVo9" id="1Uhwoc6cS3P" role="1v3Ogw">
-              <node concept="3IHsDY" id="1Uhwoc6cS3Q" role="2NEkWO">
-                <ref role="3IHsDX" node="1Uhwoc5S94v" resolve="argv" />
+              <node concept="3IHsDY" id="5WMTRp7NjM6" role="2NEkWO">
+                <ref role="3IHsDX" node="5WMTRp7MWgl" resolve="argv" />
               </node>
             </node>
           </node>
