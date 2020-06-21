@@ -705,5 +705,18 @@
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5WMTRp7KMIV">
+    <property role="EcuMT" value="6859799677634816955" />
+    <property role="3GE5qa" value="simulation.command" />
+    <property role="TrG5h" value="SumPrintVariable" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="5WMTRp7KMIY" role="1TKVEi">
+      <property role="IQ2ns" value="6859799677634816958" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
 </model>
 
