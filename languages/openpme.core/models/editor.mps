@@ -729,5 +729,18 @@
       <node concept="l2Vlx" id="1d1jgI9$CO7" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5WMTRp7KMJ8">
+    <property role="3GE5qa" value="simulation.command" />
+    <ref role="1XX52x" to="r2co:5WMTRp7KMIV" resolve="SumPrintVariable" />
+    <node concept="3EZMnI" id="5WMTRp7KMJa" role="2wV5jI">
+      <node concept="3F0ifn" id="5WMTRp7KMJh" role="3EZMnx">
+        <property role="3F0ifm" value="Print" />
+      </node>
+      <node concept="3F1sOY" id="5WMTRp7KMJn" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5WMTRp7KMIY" resolve="ref" />
+      </node>
+      <node concept="l2Vlx" id="5WMTRp7KMJd" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

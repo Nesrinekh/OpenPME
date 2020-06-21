@@ -324,5 +324,52 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5WMTRp7xdvM">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="caxt:5WMTRp7x65J" resolve="ParticleAccessInDimension" />
+    <node concept="3EZMnI" id="5WMTRp7xdvO" role="2wV5jI">
+      <node concept="1iCGBv" id="5WMTRp7xdvP" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI934Lt" resolve="ref" />
+        <node concept="1sVBvm" id="5WMTRp7xdvQ" role="1sWHZn">
+          <node concept="1iCGBv" id="5WMTRp7xdvR" role="2wV5jI">
+            <ref role="1NtTu8" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+            <node concept="1sVBvm" id="5WMTRp7xdvS" role="1sWHZn">
+              <node concept="3F0A7n" id="5WMTRp7xdvT" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp7xdvU" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="1iCGBv" id="5WMTRp7xdvV" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI93VIX" resolve="prop" />
+        <node concept="1sVBvm" id="5WMTRp7xdvW" role="1sWHZn">
+          <node concept="1iCGBv" id="5WMTRp7xdvX" role="2wV5jI">
+            <ref role="1NtTu8" to="5oki:1d1jgI93P9G" resolve="property" />
+            <node concept="1sVBvm" id="5WMTRp7xdvY" role="1sWHZn">
+              <node concept="3F0A7n" id="5WMTRp7xdvZ" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp7xdxa" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F1sOY" id="5WMTRp7xdxA" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:1d1jgI970Cm" resolve="ndim" />
+      </node>
+      <node concept="3F0ifn" id="5WMTRp7xdy4" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="l2Vlx" id="5WMTRp7xdw0" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
