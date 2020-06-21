@@ -6531,5 +6531,17 @@
       </node>
     </node>
   </node>
+  <node concept="13MO4I" id="5WMTRp7KVbz">
+    <property role="3GE5qa" value="reduce.statements" />
+    <property role="TrG5h" value="reduce_SumVariableVcluster" />
+    <ref role="3gUMe" to="r2co:5WMTRp7KMIV" resolve="SumVariableVcluster" />
+    <node concept="3jcgYH" id="5WMTRp7KVb_" role="13RCb5">
+      <node concept="3IHdWl" id="5WMTRp7KVbJ" role="3jcgYG">
+        <property role="TrG5h" value="vcl" />
+        <node concept="huIs$" id="5WMTRp7KVbQ" role="3jdG5C" />
+        <node concept="raruj" id="5WMTRp7LkNZ" role="lGtFl" />
+      </node>
+    </node>
+  </node>
 </model>
 
