@@ -19,6 +19,9 @@
         <child id="2202684092503991840" name="grid_elements" index="oyMuz" />
         <child id="2202684092504257903" name="vector_dist" index="ozNjG" />
       </concept>
+      <concept id="6859799677634816955" name="openpme.core.structure.SumPrintVariable" flags="ng" index="oWsNd">
+        <child id="6859799677634816958" name="ref" index="oWsN8" />
+      </concept>
       <concept id="1387474872154696612" name="openpme.core.structure.NeighborhoodLoop" flags="ng" index="2qNIqJ">
         <child id="1387474872154696614" name="iterable" index="2qNIqH" />
         <child id="1387474872154696613" name="particle" index="2qNIqI" />
@@ -839,6 +842,11 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="oWsNd" id="5WMTRp7PMRF" role="oWeDG">
+            <node concept="1XiV_f" id="5WMTRp7PMV7" role="oWsN8">
+              <ref role="1Xh6_M" node="1d1jgI9SZfq" resolve="E" />
             </node>
           </node>
         </node>
