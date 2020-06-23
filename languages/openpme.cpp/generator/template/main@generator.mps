@@ -1204,6 +1204,22 @@
         <ref role="v9R2y" node="5WMTRp7KVbz" resolve="reduce_SumPrintVariable" />
       </node>
     </node>
+    <node concept="3aamgX" id="5WMTRp7Zn5l" role="3acgRq">
+      <ref role="30HIoZ" to="r2co:6z0p_feMAuj" resolve="Periodic" />
+      <node concept="gft3U" id="5WMTRp7ZnSN" role="1lVwrX">
+        <node concept="2NHKBS" id="5WMTRp7ZnST" role="gfFT$">
+          <property role="2NHKBZ" value="PERIODIC" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5WMTRp7ZnSV" role="3acgRq">
+      <ref role="30HIoZ" to="r2co:6z0p_feMAuk" resolve="NonPeriodic" />
+      <node concept="gft3U" id="5WMTRp7ZpcJ" role="1lVwrX">
+        <node concept="2NHKBS" id="5WMTRp7ZpcP" role="gfFT$">
+          <property role="2NHKBZ" value="NON_PERIODIC" />
+        </node>
+      </node>
+    </node>
     <node concept="30QchW" id="1Uhwoc5QJjy" role="30SoJX">
       <ref role="30HIoZ" to="3x5m:4Ib_GcBfL0O" resolve="Initialization" />
       <node concept="3gB$ML" id="1Uhwoc5QJj$" role="3gCiVm">
