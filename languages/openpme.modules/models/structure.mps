@@ -115,6 +115,18 @@
     <property role="3GE5qa" value="phases" />
     <property role="34LRSv" value="visualisation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3nFY7YwE2Mo" role="1TKVEi">
+      <property role="IQ2ns" value="3885472330577095832" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="VisParticles" />
+      <ref role="20lvS9" to="r2co:5MzX6ckupfp" resolve="VisualizeParticles" />
+    </node>
+    <node concept="1TJgyj" id="3nFY7YwE2Mq" role="1TKVEi">
+      <property role="IQ2ns" value="3885472330577095834" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="VisDomDecomp" />
+      <ref role="20lvS9" to="r2co:5MzX6ckupd3" resolve="VisualizeDomDecomp" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfRUO">
     <property role="EcuMT" value="5443610339528638132" />

@@ -353,6 +353,32 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F1sOY" id="3nFY7YwE2MC" role="3EZMnx">
+        <ref role="1NtTu8" to="3x5m:3nFY7YwE2Mo" resolve="VisParticles" />
+        <node concept="ljvvj" id="3nFY7YwE2MQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="3nFY7YwE2Nr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3nFY7YwE2NG" role="3EZMnx">
+        <node concept="lj46D" id="3nFY7YwE2NS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="3nFY7YwE2NU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3nFY7YwE2Ng" role="3EZMnx">
+        <ref role="1NtTu8" to="3x5m:3nFY7YwE2Mq" resolve="VisDomDecomp" />
+        <node concept="ljvvj" id="3nFY7YwE2Np" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="3nFY7YwE2Nu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="7OuveptjpJU" role="2iSdaV" />
     </node>
   </node>

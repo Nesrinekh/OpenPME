@@ -742,5 +742,25 @@
       <node concept="l2Vlx" id="5WMTRp7KMJd" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3nFY7YwF_aS">
+    <property role="3GE5qa" value="physicalNotations" />
+    <ref role="1XX52x" to="r2co:5MzX6cksiVg" resolve="Lambda" />
+    <node concept="3EZMnI" id="3nFY7YwF_aU" role="2wV5jI">
+      <node concept="3F0ifn" id="3nFY7YwF_b1" role="3EZMnx">
+        <property role="3F0ifm" value="λ" />
+      </node>
+      <node concept="l2Vlx" id="3nFY7YwF_aX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3nFY7YwF_bv">
+    <property role="3GE5qa" value="physicalNotations" />
+    <ref role="1XX52x" to="r2co:5MzX6cksiVh" resolve="Delta" />
+    <node concept="3EZMnI" id="3nFY7YwF_bx" role="2wV5jI">
+      <node concept="l2Vlx" id="3nFY7YwF_b$" role="2iSdaV" />
+      <node concept="3F0ifn" id="3nFY7YwF_bJ" role="3EZMnx">
+        <property role="3F0ifm" value="𝛿" />
+      </node>
+    </node>
+  </node>
 </model>
 

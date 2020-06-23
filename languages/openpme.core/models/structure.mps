@@ -293,6 +293,7 @@
     <property role="EcuMT" value="9015780832891961650" />
     <property role="TrG5h" value="Sigma" />
     <property role="3GE5qa" value="physicalNotations" />
+    <property role="34LRSv" value="σ" />
     <ref role="1TJDcQ" node="7Ouveptjg4N" resolve="ListOfPhysicalNotations" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg4N">
@@ -313,42 +314,49 @@
     <property role="EcuMT" value="9015780832891961723" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Nu" />
+    <property role="34LRSv" value="ν" />
     <ref role="1TJDcQ" node="7Ouveptjg4N" resolve="ListOfPhysicalNotations" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg5W">
     <property role="EcuMT" value="9015780832891961724" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Rho" />
+    <property role="34LRSv" value="ρ" />
     <ref role="1TJDcQ" node="7Ouveptjg4N" resolve="ListOfPhysicalNotations" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg5X">
     <property role="EcuMT" value="9015780832891961725" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Tau" />
+    <property role="34LRSv" value="τ" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg5Y">
     <property role="EcuMT" value="9015780832891961726" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Phi" />
+    <property role="34LRSv" value="φ" />
     <ref role="1TJDcQ" node="7Ouveptjg4N" resolve="ListOfPhysicalNotations" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg5Z">
     <property role="EcuMT" value="9015780832891961727" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Psi" />
+    <property role="34LRSv" value="ψ" />
     <ref role="1TJDcQ" node="7Ouveptjg4N" resolve="ListOfPhysicalNotations" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg60">
     <property role="EcuMT" value="9015780832891961728" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Omega" />
+    <property role="34LRSv" value="ω" />
     <ref role="1TJDcQ" node="7Ouveptjg4N" resolve="ListOfPhysicalNotations" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg8U">
     <property role="EcuMT" value="9015780832891961914" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Epsilon" />
+    <property role="34LRSv" value="ε" />
     <ref role="1TJDcQ" node="7Ouveptjg4N" resolve="ListOfPhysicalNotations" />
   </node>
   <node concept="1TIwiD" id="6sMVU6wHppa">
@@ -431,12 +439,14 @@
     <property role="EcuMT" value="6675447779075108560" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Lambda" />
+    <property role="34LRSv" value="λ" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5MzX6cksiVh">
     <property role="EcuMT" value="6675447779075108561" />
     <property role="3GE5qa" value="physicalNotations" />
     <property role="TrG5h" value="Delta" />
+    <property role="34LRSv" value="𝛿" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5MzX6ckupd3">
