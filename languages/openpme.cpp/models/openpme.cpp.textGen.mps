@@ -2204,5 +2204,34 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="5WMTRp818iP">
+    <property role="3GE5qa" value="Expression.Arithmetic" />
+    <ref role="WuzLi" to="lfpi:5WMTRp818iO" resolve="ModuloExpression" />
+    <node concept="11bSqf" id="5WMTRp818iQ" role="11c4hB">
+      <node concept="3clFbS" id="5WMTRp818iR" role="2VODD2">
+        <node concept="lc7rE" id="5WMTRp818ja" role="3cqZAp">
+          <node concept="l9hG8" id="5WMTRp818jw" role="lcghm">
+            <node concept="2OqwBi" id="5WMTRp818vj" role="lb14g">
+              <node concept="117lpO" id="5WMTRp818ko" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5WMTRp818FR" role="2OqNvi">
+                <ref role="3Tt5mk" to="lfpi:1Uhwoc6tyPa" resolve="left" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="5WMTRp818Md" role="lcghm">
+            <property role="lacIc" value=" % " />
+          </node>
+          <node concept="l9hG8" id="5WMTRp818Ob" role="lcghm">
+            <node concept="2OqwBi" id="5WMTRp818Zk" role="lb14g">
+              <node concept="117lpO" id="5WMTRp818Pv" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5WMTRp819bS" role="2OqNvi">
+                <ref role="3Tt5mk" to="lfpi:1Uhwoc6tyPc" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

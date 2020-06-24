@@ -371,5 +371,12 @@
       <node concept="l2Vlx" id="5WMTRp7xdw0" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5WMTRp839ha">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="caxt:5WMTRp839h1" resolve="IntegerType" />
+    <node concept="3F0ifn" id="5WMTRp839hc" role="2wV5jI">
+      <property role="3F0ifm" value="Integer" />
+    </node>
+  </node>
 </model>
 

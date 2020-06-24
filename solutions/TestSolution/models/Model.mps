@@ -15,6 +15,9 @@
   <imports />
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
+      <concept id="6859799677638878396" name="openpme.core.structure.WriteParticles" flags="ng" index="ncWfa">
+        <child id="6859799677638878397" name="container" index="ncWfb" />
+      </concept>
       <concept id="2202684092503991839" name="openpme.core.structure.InitParticleGrid" flags="ng" index="oyMus">
         <child id="2202684092503991840" name="grid_elements" index="oyMuz" />
         <child id="2202684092504257903" name="vector_dist" index="ozNjG" />
@@ -63,6 +66,9 @@
         <child id="8483536403556804650" name="stop" index="SCFH3" />
         <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
+      <concept id="6675447779075658713" name="openpme.core.structure.VisualizeParticles" flags="ng" index="18QAuU">
+        <child id="6675447779075658714" name="ParticlesFile" index="18QAuT" />
+      </concept>
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="2202684092501631255" name="equation" index="rpM2k" />
       </concept>
@@ -78,6 +84,7 @@
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
+      <concept id="6859799677639627841" name="openpme.expressions.structure.IntegerType" flags="ng" index="nfBcR" />
       <concept id="2202684092512217962" name="openpme.expressions.structure.PlusAssignmentExpression" flags="ng" index="o2qFD" />
       <concept id="6859799677630701935" name="openpme.expressions.structure.ParticleAccessInDimension" flags="ng" index="oHCop" />
       <concept id="1387474872151359155" name="openpme.expressions.structure.CutoffRef" flags="ng" index="2q7veS">
@@ -111,6 +118,9 @@
       <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
         <property id="8275820577561417724" name="value" index="2$GK$b" />
       </concept>
+      <concept id="8275820577561417568" name="openpme.expressions.structure.StringLiteral" flags="ng" index="2$GKAn">
+        <property id="8275820577561417569" name="value" index="2$GKAm" />
+      </concept>
       <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY">
         <property id="8275820577561417546" name="value" index="2$GKAX" />
       </concept>
@@ -122,6 +132,7 @@
       <concept id="8483536403557160030" name="openpme.expressions.structure.CellListType" flags="ng" index="SDgsR" />
       <concept id="7436269412207138817" name="openpme.expressions.structure.MultiplicationExpression" flags="ng" index="37xRuw" />
       <concept id="7436269412207138816" name="openpme.expressions.structure.SubtractionExpression" flags="ng" index="37xRux" />
+      <concept id="7436269412207138819" name="openpme.expressions.structure.ModuloExpression" flags="ng" index="37xRuy" />
       <concept id="7436269412207138818" name="openpme.expressions.structure.DivisionExpression" flags="ng" index="37xRuz" />
       <concept id="7436269412207138815" name="openpme.expressions.structure.AdditionExpression" flags="ng" index="37xRxu" />
       <concept id="8073773260958242859" name="openpme.expressions.structure.ITyped" flags="ng" index="1wvloE">
@@ -163,7 +174,9 @@
       </concept>
     </language>
     <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
-      <concept id="5443610339528609846" name="openpme.modules.structure.Visualization" flags="ng" index="1GH8rP" />
+      <concept id="5443610339528609846" name="openpme.modules.structure.Visualization" flags="ng" index="1GH8rP">
+        <child id="3885472330577095832" name="VisParticles" index="2lgXjB" />
+      </concept>
       <concept id="5443610339528609845" name="openpme.modules.structure.Simulation" flags="ng" index="1GH8rQ">
         <child id="7548145485610641308" name="simulation" index="2A2w7f" />
       </concept>
@@ -313,6 +326,13 @@
             <node concept="1XiV_f" id="1d1jgI8ZKH2" role="2rJYD4">
               <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
             </node>
+          </node>
+        </node>
+        <node concept="2G0pd6" id="5WMTRp839cU" role="rpc0u">
+          <property role="TrG5h" value="i" />
+          <node concept="nfBcR" id="5WMTRp83idU" role="1wvloH" />
+          <node concept="2$GKAY" id="5WMTRp83idZ" role="1wvlr8">
+            <property role="2$GKAX" value="0" />
           </node>
         </node>
         <node concept="SCFH9" id="1Uhwoc6o_fu" role="rpc0u">
@@ -844,9 +864,41 @@
               </node>
             </node>
           </node>
-          <node concept="oWsNd" id="5WMTRp7PMRF" role="oWeDG">
-            <node concept="1XiV_f" id="5WMTRp7PMV7" role="oWsN8">
-              <ref role="1Xh6_M" node="1d1jgI9SZfq" resolve="E" />
+          <node concept="1GH9$S" id="5WMTRp838Us" role="oWeDG">
+            <node concept="2$G5sM" id="5WMTRp8398s" role="1wvtWu">
+              <node concept="37xRuy" id="5WMTRp8398C" role="2$G181">
+                <node concept="1XiV_f" id="5WMTRp83ilu" role="2$G181">
+                  <ref role="1Xh6_M" node="5WMTRp839cU" resolve="i" />
+                </node>
+                <node concept="2$GKAY" id="5WMTRp8398L" role="2$G18d">
+                  <property role="2$GKAX" value="100" />
+                </node>
+              </node>
+              <node concept="2$GKAY" id="5WMTRp8398_" role="2$G18d">
+                <property role="2$GKAX" value="0" />
+              </node>
+            </node>
+            <node concept="1wvtUh" id="5WMTRp838Uw" role="1wvtWw">
+              <node concept="oWsNd" id="5WMTRp7PMRF" role="1wvtUr">
+                <node concept="1XiV_f" id="5WMTRp7PMV7" role="oWsN8">
+                  <ref role="1Xh6_M" node="1d1jgI9SZfq" resolve="E" />
+                </node>
+              </node>
+              <node concept="ncWfa" id="5WMTRp80w3f" role="1wvtUr">
+                <node concept="1XiV_f" id="5WMTRp80w6N" role="ncWfb">
+                  <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1wvtVb" id="5WMTRp83ih_" role="oWeDG">
+            <node concept="o2qFD" id="5WMTRp83ilc" role="1wvtVa">
+              <node concept="1XiV_f" id="5WMTRp83ilo" role="2$G181">
+                <ref role="1Xh6_M" node="5WMTRp839cU" resolve="i" />
+              </node>
+              <node concept="2$GKAY" id="5WMTRp83ilr" role="2$G18d">
+                <property role="2$GKAX" value="1" />
+              </node>
             </node>
           </node>
         </node>
@@ -869,7 +921,13 @@
         </node>
       </node>
     </node>
-    <node concept="1GH8rP" id="7bpBJvmqTaQ" role="1GHewQ" />
+    <node concept="1GH8rP" id="7bpBJvmqTaQ" role="1GHewQ">
+      <node concept="18QAuU" id="5WMTRp80iiS" role="2lgXjB">
+        <node concept="2$GKAn" id="5WMTRp80iiT" role="18QAuT">
+          <property role="2$GKAm" value="particles" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
