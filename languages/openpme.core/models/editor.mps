@@ -762,5 +762,18 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5WMTRp80ij7">
+    <property role="3GE5qa" value="simulation" />
+    <ref role="1XX52x" to="r2co:5WMTRp80iiW" resolve="WriteParticles" />
+    <node concept="3EZMnI" id="5WMTRp80ij9" role="2wV5jI">
+      <node concept="3F0ifn" id="5WMTRp80ijg" role="3EZMnx">
+        <property role="3F0ifm" value="Write particles from" />
+      </node>
+      <node concept="3F1sOY" id="5WMTRp80ijm" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5WMTRp80iiX" resolve="container" />
+      </node>
+      <node concept="l2Vlx" id="5WMTRp80ijc" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

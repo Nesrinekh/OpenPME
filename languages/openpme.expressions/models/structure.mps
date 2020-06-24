@@ -658,5 +658,11 @@
     <property role="TrG5h" value="ParticleAccessInDimension" />
     <ref role="1TJDcQ" node="7mV$Q_d7Dfn" resolve="ParticleAccess" />
   </node>
+  <node concept="1TIwiD" id="5WMTRp839h1">
+    <property role="EcuMT" value="6859799677639627841" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="IntegerType" />
+    <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+  </node>
 </model>
 

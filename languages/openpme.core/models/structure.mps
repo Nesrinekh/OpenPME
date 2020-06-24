@@ -6,10 +6,10 @@
   </languages>
   <imports>
     <import index="lifx" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.project.modules/module.jetbrains.mps.lang.structure@project_stub)" />
+    <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -477,7 +477,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="ParticlesFile" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="tpee:hP7QB7G" resolve="StringType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDtw" resolve="StringLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="1MYyjtFOAuc">
@@ -736,6 +736,19 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5WMTRp80iiW">
+    <property role="EcuMT" value="6859799677638878396" />
+    <property role="3GE5qa" value="simulation" />
+    <property role="TrG5h" value="WriteParticles" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="5WMTRp80iiX" role="1TKVEi">
+      <property role="IQ2ns" value="6859799677638878397" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
     </node>
   </node>
 </model>

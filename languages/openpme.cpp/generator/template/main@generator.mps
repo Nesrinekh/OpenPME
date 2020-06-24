@@ -26,6 +26,7 @@
         <child id="9182222408010621622" name="condition" index="htMKn" />
       </concept>
       <concept id="9182222408010377605" name="openpme.cpp.structure.AutoType" flags="ng" index="huIs$" />
+      <concept id="6859799677639099572" name="openpme.cpp.structure.ModuloExpression" flags="ng" index="ndAf2" />
       <concept id="2202684092505791709" name="openpme.cpp.structure.Comment" flags="ng" index="oDTPu">
         <property id="2202684092505791710" name="text" index="oDTPt" />
       </concept>
@@ -1218,6 +1219,12 @@
         <node concept="2NHKBS" id="5WMTRp7ZpcP" role="gfFT$">
           <property role="2NHKBZ" value="NON_PERIODIC" />
         </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5WMTRp84dM3" role="3acgRq">
+      <ref role="30HIoZ" to="r2co:5WMTRp80iiW" resolve="WriteParticles" />
+      <node concept="j$656" id="5WMTRp84e_D" role="1lVwrX">
+        <ref role="v9R2y" node="5WMTRp83xUn" resolve="reduce_WriteParticles" />
       </node>
     </node>
     <node concept="30QchW" id="1Uhwoc5QJjy" role="30SoJX">
@@ -6209,6 +6216,45 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="5WMTRp823Fk" role="3aUrZf">
+      <ref role="30HIoZ" to="caxt:6sMVU6wHpw3" resolve="ModuloExpression" />
+      <node concept="gft3U" id="5WMTRp823I8" role="1lVwrX">
+        <node concept="ndAf2" id="5WMTRp823Ie" role="gfFT$">
+          <node concept="3IIGHT" id="5WMTRp823Io" role="oTUN9">
+            <node concept="29HgVG" id="5WMTRp823Is" role="lGtFl">
+              <node concept="3NFfHV" id="5WMTRp823It" role="3NFExx">
+                <node concept="3clFbS" id="5WMTRp823Iu" role="2VODD2">
+                  <node concept="3clFbF" id="5WMTRp823I$" role="3cqZAp">
+                    <node concept="2OqwBi" id="5WMTRp823Iv" role="3clFbG">
+                      <node concept="3TrEf2" id="5WMTRp823Iy" role="2OqNvi">
+                        <ref role="3Tt5mk" to="caxt:7bpBJvmqoNQ" resolve="left" />
+                      </node>
+                      <node concept="30H73N" id="5WMTRp823Iz" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3IIGHT" id="5WMTRp823Oc" role="oTUNf">
+            <node concept="29HgVG" id="5WMTRp823OM" role="lGtFl">
+              <node concept="3NFfHV" id="5WMTRp823ON" role="3NFExx">
+                <node concept="3clFbS" id="5WMTRp823OO" role="2VODD2">
+                  <node concept="3clFbF" id="5WMTRp823OU" role="3cqZAp">
+                    <node concept="2OqwBi" id="5WMTRp823OP" role="3clFbG">
+                      <node concept="3TrEf2" id="5WMTRp823OS" role="2OqNvi">
+                        <ref role="3Tt5mk" to="caxt:7bpBJvmqoNU" resolve="right" />
+                      </node>
+                      <node concept="30H73N" id="5WMTRp823OT" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13MO4I" id="5WMTRp7FKLh">
     <property role="3GE5qa" value="reduce.statements" />
@@ -6585,6 +6631,13 @@
         <node concept="huIs$" id="5WMTRp7HIz7" role="gfFT$" />
       </node>
     </node>
+    <node concept="3aamgX" id="5WMTRp84Sxi" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="caxt:5WMTRp839h1" resolve="IntegerType" />
+      <node concept="gft3U" id="5WMTRp84SxR" role="1lVwrX">
+        <node concept="3II9cJ" id="5WMTRp84SxX" role="gfFT$" />
+      </node>
+    </node>
   </node>
   <node concept="13MO4I" id="5WMTRp7KVbz">
     <property role="3GE5qa" value="reduce.statements" />
@@ -6758,6 +6811,64 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="5WMTRp83xUn">
+    <property role="3GE5qa" value="reduce.statements" />
+    <property role="TrG5h" value="reduce_WriteParticles" />
+    <ref role="3gUMe" to="r2co:5WMTRp80iiW" resolve="WriteParticles" />
+    <node concept="3jcgYH" id="5WMTRp83xUp" role="13RCb5">
+      <node concept="3u_bAv" id="5WMTRp83xUt" role="3jcgYG">
+        <node concept="3A2tP1" id="5WMTRp83xU_" role="3u_bAu">
+          <node concept="1zd1ln" id="5WMTRp83xUI" role="3A2tP0">
+            <node concept="29HgVG" id="5WMTRp83xUM" role="lGtFl">
+              <node concept="3NFfHV" id="5WMTRp83xUN" role="3NFExx">
+                <node concept="3clFbS" id="5WMTRp83xUO" role="2VODD2">
+                  <node concept="3clFbF" id="5WMTRp83xUU" role="3cqZAp">
+                    <node concept="2OqwBi" id="5WMTRp83xUP" role="3clFbG">
+                      <node concept="3TrEf2" id="5WMTRp83xUS" role="2OqNvi">
+                        <ref role="3Tt5mk" to="r2co:5WMTRp80iiX" resolve="container" />
+                      </node>
+                      <node concept="30H73N" id="5WMTRp83xUT" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3A2tPb" id="5WMTRp83xUD" role="3A2tP2">
+            <property role="TrG5h" value="deleteGhost" />
+          </node>
+        </node>
+        <node concept="raruj" id="5WMTRp83xUz" role="lGtFl" />
+      </node>
+      <node concept="3u_bAv" id="5WMTRp83y63" role="3jcgYG">
+        <node concept="3A2tP1" id="5WMTRp83y6T" role="3u_bAu">
+          <node concept="1zd1ln" id="5WMTRp83y72" role="3A2tP0">
+            <node concept="29HgVG" id="5WMTRp83y76" role="lGtFl">
+              <node concept="3NFfHV" id="5WMTRp83y77" role="3NFExx">
+                <node concept="3clFbS" id="5WMTRp83y78" role="2VODD2">
+                  <node concept="3clFbF" id="5WMTRp83y7e" role="3cqZAp">
+                    <node concept="2OqwBi" id="5WMTRp83y79" role="3clFbG">
+                      <node concept="3TrEf2" id="5WMTRp83y7c" role="2OqNvi">
+                        <ref role="3Tt5mk" to="r2co:5WMTRp80iiX" resolve="container" />
+                      </node>
+                      <node concept="30H73N" id="5WMTRp83y7d" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3A2tPb" id="5WMTRp83y6X" role="3A2tP2">
+            <property role="TrG5h" value="write" />
+            <node concept="3IHuUZ" id="5WMTRp83ycQ" role="1v3Ogw">
+              <property role="3IHuUY" value="particles" />
+            </node>
+          </node>
+        </node>
+        <node concept="raruj" id="5WMTRp83y6R" role="lGtFl" />
       </node>
     </node>
   </node>
