@@ -1446,7 +1446,7 @@
           <node concept="2OqwBi" id="47KNQXwoAeJ" role="2GsD0m">
             <node concept="117lpO" id="47KNQXwoAeI" role="2Oq$k0" />
             <node concept="3Tsc0h" id="47KNQXwoAeF" role="2OqNvi">
-              <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+              <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
             </node>
           </node>
         </node>
@@ -1493,7 +1493,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="47KNQXwoAfU">
-    <property role="3GE5qa" value="simulation.particles" />
+    <property role="3GE5qa" value="simulation" />
     <ref role="WuzLi" to="r2co:1MYyjtFP9yj" resolve="Property" />
     <node concept="11bSqf" id="47KNQXwoAfV" role="11c4hB">
       <node concept="3clFbS" id="47KNQXwoAfW" role="2VODD2">
