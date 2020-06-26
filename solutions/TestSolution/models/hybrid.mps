@@ -35,7 +35,7 @@
       </concept>
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
-        <child id="2202684092501541234" name="propertiesParticle" index="rpc3L" />
+        <child id="2202684092501541234" name="properties" index="rpc3L" />
       </concept>
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="2202684092501631255" name="equation" index="rpM2k" />
