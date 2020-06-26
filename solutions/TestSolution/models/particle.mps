@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3072fcaf-5c27-4fa0-a235-1a4cc0bb3707(Model)">
+<model ref="r:3072fcaf-5c27-4fa0-a235-1a4cc0bb3707(particle)">
   <persistence version="9" />
   <languages>
     <use id="d5e2442b-039e-493b-b466-e933a1705c19" name="openpme.analysis" version="0" />
@@ -57,7 +57,7 @@
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
         <child id="2202684092501541277" name="body" index="rpc0u" />
-        <child id="2202684092501541234" name="properties" index="rpc3L" />
+        <child id="2202684092501541234" name="propertiesParticle" index="rpc3L" />
       </concept>
       <concept id="8483536403556912194" name="openpme.core.structure.Loop" flags="ng" index="SClWF">
         <child id="2202684092508629999" name="body" index="oWeDG" />
@@ -266,7 +266,7 @@
           </node>
         </node>
         <node concept="2G0pd6" id="1Uhwoc64MCb" role="rpc0u">
-          <property role="TrG5h" value="vd" />
+          <property role="TrG5h" value="particles" />
           <node concept="rpAkl" id="1Uhwoc64MCh" role="1wvloH" />
         </node>
         <node concept="oyMus" id="1Uhwoc67Fio" role="rpc0u">
@@ -280,7 +280,7 @@
             <property role="2$GKAX" value="10" />
           </node>
           <node concept="1XiV_f" id="1Uhwoc67L_8" role="ozNjG">
-            <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+            <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
           </node>
         </node>
         <node concept="2G0pd6" id="1d1jgI9SX$J" role="rpc0u">
@@ -324,7 +324,7 @@
           <node concept="SDgsR" id="1d1jgI8Z$n4" role="1wvloH" />
           <node concept="2rJYD1" id="1d1jgI8ZKGW" role="1wvlr8">
             <node concept="1XiV_f" id="1d1jgI8ZKH2" role="2rJYD4">
-              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
             </node>
           </node>
         </node>
@@ -344,7 +344,7 @@
           </node>
           <node concept="1Rrs5m" id="5WMTRp7_hE2" role="oWeDG">
             <node concept="1XiV_f" id="5WMTRp7_hE3" role="1Rrs2Y">
-              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
             </node>
             <node concept="2G0pd6" id="5WMTRp7_hE4" role="o1dye">
               <property role="TrG5h" value="p_evolve" />
@@ -404,12 +404,12 @@
           </node>
           <node concept="2r$zys" id="5WMTRp7_hEo" role="oWeDG">
             <node concept="1XiV_f" id="5WMTRp7_hEp" role="2r$zyj">
-              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
             </node>
           </node>
           <node concept="2r$zyh" id="5WMTRp7_hEq" role="oWeDG">
             <node concept="1XiV_f" id="5WMTRp7_hEr" role="2r$zyg">
-              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
             </node>
           </node>
           <node concept="2qi2cO" id="5WMTRp7Rk_g" role="oWeDG">
@@ -419,7 +419,7 @@
           </node>
           <node concept="1Rrs5m" id="1d1jgI94Fr$" role="oWeDG">
             <node concept="1XiV_f" id="1d1jgI94LG6" role="1Rrs2Y">
-              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
             </node>
             <node concept="2G0pd6" id="1d1jgI94LG9" role="o1dye">
               <property role="TrG5h" value="p_force" />
@@ -589,7 +589,7 @@
           </node>
           <node concept="1Rrs5m" id="1Uhwoc6_s1g" role="oWeDG">
             <node concept="1XiV_f" id="1Uhwoc6_s1s" role="1Rrs2Y">
-              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
             </node>
             <node concept="2G0pd6" id="1Uhwoc6_s1S" role="o1dye">
               <property role="TrG5h" value="p_evolve" />
@@ -671,7 +671,7 @@
           </node>
           <node concept="1Rrs5m" id="1d1jgI9SZje" role="oWeDG">
             <node concept="1XiV_f" id="1d1jgI9SZl9" role="1Rrs2Y">
-              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
             </node>
             <node concept="2G0pd6" id="1d1jgI9SZlc" role="o1dye">
               <property role="TrG5h" value="p_energy" />
@@ -886,7 +886,7 @@
               </node>
               <node concept="ncWfa" id="5WMTRp80w3f" role="1wvtUr">
                 <node concept="1XiV_f" id="5WMTRp80w6N" role="ncWfb">
-                  <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="vd" />
+                  <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
                 </node>
               </node>
             </node>

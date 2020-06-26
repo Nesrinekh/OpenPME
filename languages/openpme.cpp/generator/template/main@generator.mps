@@ -528,7 +528,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="1Uhwoc6i$yT" role="2OqNvi">
-                  <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+                  <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
                 </node>
               </node>
             </node>
@@ -2197,7 +2197,7 @@
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="1Uhwoc6pZLl" role="2OqNvi">
-                        <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+                        <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
                       </node>
                     </node>
                   </node>
@@ -2298,7 +2298,7 @@
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="1Uhwoc6pZM4" role="2OqNvi">
-                        <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+                        <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
                       </node>
                     </node>
                   </node>
@@ -2399,7 +2399,7 @@
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="1Uhwoc6pZMN" role="2OqNvi">
-                        <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+                        <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
                       </node>
                     </node>
                   </node>
@@ -2662,7 +2662,7 @@
                             </node>
                           </node>
                           <node concept="3Tsc0h" id="1Uhwoc6CBWD" role="2OqNvi">
-                            <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+                            <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
                           </node>
                         </node>
                       </node>
@@ -4802,7 +4802,7 @@
                                 </node>
                               </node>
                               <node concept="3Tsc0h" id="5WMTRp7_jRE" role="2OqNvi">
-                                <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+                                <ref role="3TtcxE" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
                               </node>
                             </node>
                           </node>
