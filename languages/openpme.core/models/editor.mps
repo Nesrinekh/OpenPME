@@ -623,7 +623,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="1Uhwoc62X6c" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="properties" />
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
         <node concept="2iRkQZ" id="1Uhwoc62X6f" role="2czzBx" />
         <node concept="VPM3Z" id="1Uhwoc62X6g" role="3F10Kt" />
         <node concept="ljvvj" id="1Uhwoc62X6Z" role="3F10Kt">
@@ -656,7 +656,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1Uhwoc5XE4x">
-    <property role="3GE5qa" value="simulation.particles" />
+    <property role="3GE5qa" value="simulation" />
     <ref role="1XX52x" to="r2co:1MYyjtFP9yj" resolve="Property" />
     <node concept="3EZMnI" id="1Uhwoc5XE4z" role="2wV5jI">
       <node concept="3F0A7n" id="1Uhwoc5XE4H" role="3EZMnx">
@@ -773,6 +773,117 @@
         <ref role="1NtTu8" to="r2co:5WMTRp80iiX" resolve="container" />
       </node>
       <node concept="l2Vlx" id="5WMTRp80ijc" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5WMTRp85xCw">
+    <property role="3GE5qa" value="simulation.type" />
+    <ref role="1XX52x" to="r2co:6z0p_feMAv7" resolve="Discrete" />
+    <node concept="3EZMnI" id="5WMTRp85xCy" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="PMmxH" id="5WMTRp85xCz" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="ljvvj" id="5WMTRp85xC$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp85xC_" role="3EZMnx">
+        <property role="3F0ifm" value="Particle properties:" />
+        <node concept="ljvvj" id="5WMTRp85xCA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5WMTRp85xCB" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
+        <node concept="2iRkQZ" id="5WMTRp85xCC" role="2czzBx" />
+        <node concept="VPM3Z" id="5WMTRp85xCD" role="3F10Kt" />
+        <node concept="ljvvj" id="5WMTRp85xCE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp85xCF" role="3EZMnx">
+        <node concept="ljvvj" id="5WMTRp85xCG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp85xCH" role="3EZMnx">
+        <property role="3F0ifm" value="Commands:" />
+        <node concept="ljvvj" id="5WMTRp85xCI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5WMTRp85xCJ" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk6t" resolve="body" />
+        <node concept="2iRkQZ" id="5WMTRp85xCK" role="2czzBx" />
+        <node concept="VPM3Z" id="5WMTRp85xCL" role="3F10Kt" />
+        <node concept="ljvvj" id="5WMTRp85xCM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5WMTRp85xCN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5WMTRp85xCO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5WMTRp85Jg_">
+    <property role="3GE5qa" value="simulation.type" />
+    <ref role="1XX52x" to="r2co:1MYyjtFOEZC" resolve="Hybrid" />
+    <node concept="3EZMnI" id="5WMTRp85JgB" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="PMmxH" id="5WMTRp85JgC" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="ljvvj" id="5WMTRp85JgD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp85JgE" role="3EZMnx">
+        <property role="3F0ifm" value="Particle properties:" />
+        <node concept="ljvvj" id="5WMTRp85JgF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5WMTRp85JgG" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
+        <node concept="2iRkQZ" id="5WMTRp85JgH" role="2czzBx" />
+        <node concept="VPM3Z" id="5WMTRp85JgI" role="3F10Kt" />
+        <node concept="ljvvj" id="5WMTRp85JgJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp85XM7" role="3EZMnx">
+        <property role="3F0ifm" value="Mesh properties" />
+        <node concept="ljvvj" id="5WMTRp85XMM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5WMTRp85XNw" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5WMTRp85JkF" resolve="propertiesMesh" />
+        <node concept="2iRkQZ" id="5WMTRp85XN$" role="2czzBx" />
+        <node concept="VPM3Z" id="5WMTRp85XN_" role="3F10Kt" />
+      </node>
+      <node concept="3F0ifn" id="5WMTRp85JgK" role="3EZMnx">
+        <node concept="ljvvj" id="5WMTRp85JgL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5WMTRp85JgM" role="3EZMnx">
+        <property role="3F0ifm" value="Commands:" />
+        <node concept="ljvvj" id="5WMTRp85JgN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5WMTRp85JgO" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk6t" resolve="body" />
+        <node concept="2iRkQZ" id="5WMTRp85JgP" role="2czzBx" />
+        <node concept="VPM3Z" id="5WMTRp85JgQ" role="3F10Kt" />
+        <node concept="ljvvj" id="5WMTRp85JgR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5WMTRp85JgS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5WMTRp85JgT" role="2iSdaV" />
     </node>
   </node>
 </model>
