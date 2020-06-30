@@ -35,6 +35,7 @@
       </concept>
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
+        <child id="6859799677640308011" name="propertiesMesh" index="n919t" />
         <child id="2202684092501541234" name="propertiesParticle" index="rpc3L" />
       </concept>
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
@@ -126,6 +127,18 @@
     </node>
     <node concept="1GH8rQ" id="5WMTRp86V6p" role="1GHewH">
       <node concept="1Rr2rv" id="5WMTRp86VDw" role="2A2w7f">
+        <node concept="1Rqx6$" id="5WMTRp87g8o" role="n919t">
+          <property role="TrG5h" value="vorticity" />
+          <node concept="2I$Y6A" id="5WMTRp87g8p" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="5WMTRp87g8s" role="n919t">
+          <property role="TrG5h" value="velocity" />
+          <node concept="2I$Y6A" id="5WMTRp87g8t" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="5WMTRp87g8y" role="n919t">
+          <property role="TrG5h" value="vortex_stretching" />
+          <node concept="2I$Y6A" id="5WMTRp87g8z" role="rpM2k" />
+        </node>
         <node concept="1Rqx6$" id="5WMTRp86Wf1" role="rpc3L">
           <property role="TrG5h" value="vorticity" />
           <node concept="2I$Y6A" id="5WMTRp86Wf2" role="rpM2k" />
@@ -137,6 +150,14 @@
         <node concept="1Rqx6$" id="5WMTRp86Wfb" role="rpc3L">
           <property role="TrG5h" value="rhs" />
           <node concept="2I$Y6A" id="5WMTRp86Wfc" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="1ILvEQj9ty$" role="rpc3L">
+          <property role="TrG5h" value="old_vorticity" />
+          <node concept="2I$Y6A" id="1ILvEQj9ty_" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="1ILvEQj9tyI" role="rpc3L">
+          <property role="TrG5h" value="old_position" />
+          <node concept="2I$Y6A" id="1ILvEQj9tyJ" role="rpM2k" />
         </node>
       </node>
     </node>
