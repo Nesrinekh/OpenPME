@@ -662,12 +662,6 @@
       <node concept="3F0A7n" id="1Uhwoc5XE4H" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="1Uhwoc5XE4N" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-      </node>
-      <node concept="3F1sOY" id="1Uhwoc5XE4V" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc5XE4n" resolve="equation" />
-      </node>
       <node concept="l2Vlx" id="1Uhwoc5XE4A" role="2iSdaV" />
     </node>
   </node>

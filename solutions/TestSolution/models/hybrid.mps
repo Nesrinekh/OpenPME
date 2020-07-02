@@ -2,10 +2,10 @@
 <model ref="r:c3b70aa9-91fd-46fd-bb92-f46c86cca024(hybrid)">
   <persistence version="9" />
   <languages>
-    <use id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules" version="0" />
-    <use id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions" version="0" />
-    <use id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core" version="0" />
-    <use id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements" version="0" />
+    <use id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules" version="-1" />
+    <use id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions" version="-1" />
+    <use id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core" version="-1" />
+    <use id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements" version="-1" />
     <engage id="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f" name="openpme.cpp" />
   </languages>
   <imports />
@@ -35,7 +35,9 @@
       </concept>
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
-        <child id="2202684092501541234" name="properties" index="rpc3L" />
+        <child id="6859799677640308011" name="propertiesMesh" index="n919t" />
+        <child id="2202684092501541277" name="body" index="rpc0u" />
+        <child id="2202684092501541234" name="propertiesParticle" index="rpc3L" />
       </concept>
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="2202684092501631255" name="equation" index="rpM2k" />
@@ -46,6 +48,11 @@
       </concept>
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
+      <concept id="1387474872145762371" name="openpme.expressions.structure.DoubleType" flags="ng" index="2qhxl8" />
+      <concept id="8275820577561349363" name="openpme.expressions.structure.BinaryExpression" flags="ng" index="2$G184">
+        <child id="8275820577561349366" name="left" index="2$G181" />
+        <child id="8275820577561349370" name="right" index="2$G18d" />
+      </concept>
       <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
         <property id="8275820577561417724" name="value" index="2$GK$b" />
       </concept>
@@ -53,6 +60,15 @@
         <property id="8275820577561417546" name="value" index="2$GKAX" />
       </concept>
       <concept id="2525416462909175106" name="openpme.expressions.structure.Expression" flags="ng" index="2I$Y6A" />
+      <concept id="7436269412207138818" name="openpme.expressions.structure.DivisionExpression" flags="ng" index="37xRuz" />
+      <concept id="8073773260958242859" name="openpme.expressions.structure.ITyped" flags="ng" index="1wvloE">
+        <child id="8073773260958242860" name="type" index="1wvloH" />
+      </concept>
+    </language>
+    <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
+      <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
+        <child id="8073773260958243017" name="init" index="1wvlr8" />
+      </concept>
     </language>
     <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
       <concept id="5443610339528609846" name="openpme.modules.structure.Visualization" flags="ng" index="1GH8rP" />
@@ -137,6 +153,38 @@
         <node concept="1Rqx6$" id="5WMTRp86Wfb" role="rpc3L">
           <property role="TrG5h" value="rhs" />
           <node concept="2I$Y6A" id="5WMTRp86Wfc" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="1ILvEQj9ty$" role="rpc3L">
+          <property role="TrG5h" value="old_vorticity" />
+          <node concept="2I$Y6A" id="1ILvEQj9ty_" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="1ILvEQj9tyI" role="rpc3L">
+          <property role="TrG5h" value="old_position" />
+          <node concept="2I$Y6A" id="1ILvEQj9tyJ" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="5WMTRp87g8o" role="n919t">
+          <property role="TrG5h" value="vorticity" />
+          <node concept="2I$Y6A" id="5WMTRp87g8p" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="5WMTRp87g8s" role="n919t">
+          <property role="TrG5h" value="velocity" />
+          <node concept="2I$Y6A" id="5WMTRp87g8t" role="rpM2k" />
+        </node>
+        <node concept="1Rqx6$" id="5WMTRp87g8y" role="n919t">
+          <property role="TrG5h" value="vortex_stretching" />
+          <node concept="2I$Y6A" id="5WMTRp87g8z" role="rpM2k" />
+        </node>
+        <node concept="2G0pd6" id="1ILvEQja89O" role="rpc0u">
+          <property role="TrG5h" value="nu" />
+          <node concept="37xRuz" id="1ILvEQja89X" role="1wvlr8">
+            <node concept="2$GK$c" id="1ILvEQja8a6" role="2$G181">
+              <property role="2$GK$b" value="1" />
+            </node>
+            <node concept="2$GK$c" id="1ILvEQja8a9" role="2$G18d">
+              <property role="2$GK$b" value="3000" />
+            </node>
+          </node>
+          <node concept="2qhxl8" id="1ILvEQja8ac" role="1wvloH" />
         </node>
       </node>
     </node>
