@@ -1010,24 +1010,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="47KNQXwoA5k">
-    <property role="3GE5qa" value="simulation.container" />
-    <ref role="WuzLi" to="r2co:1MYyjtFOOxy" resolve="Particle" />
-    <node concept="11bSqf" id="47KNQXwoA5l" role="11c4hB">
-      <node concept="3clFbS" id="47KNQXwoA5m" role="2VODD2">
-        <node concept="lc7rE" id="47KNQXwoA5v" role="3cqZAp">
-          <node concept="l9hG8" id="47KNQXwoA5t" role="lcghm">
-            <node concept="2OqwBi" id="47KNQXwoA5u" role="lb14g">
-              <node concept="117lpO" id="47KNQXwoA5s" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5BkNMNhjhIM" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="47KNQXwoA5W">
     <property role="3GE5qa" value="simulation.loop" />
     <ref role="WuzLi" to="r2co:1MYyjtFOOxx" resolve="ParticleLoop" />
