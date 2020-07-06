@@ -16,12 +16,14 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="709996738298806197" name="jetbrains.mps.lang.editor.structure.QueryFunction_SeparatorText" flags="in" index="2o9xnK" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -56,6 +58,20 @@
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -417,13 +433,36 @@
     </node>
   </node>
   <node concept="24kQdi" id="1MYyjtFOOxY">
-    <property role="3GE5qa" value="simulation.particles" />
+    <property role="3GE5qa" value="simulation.container" />
     <ref role="1XX52x" to="r2co:1MYyjtFOOxy" resolve="Particle" />
     <node concept="3EZMnI" id="1MYyjtFP9y$" role="2wV5jI">
-      <node concept="3F1sOY" id="1MYyjtFP9yF" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1MYyjtFP9yv" resolve="name" />
-      </node>
       <node concept="l2Vlx" id="1MYyjtFP9yB" role="2iSdaV" />
+      <node concept="3F0ifn" id="5BkNMNhkb2K" role="3EZMnx">
+        <property role="3F0ifm" value="p:" />
+      </node>
+      <node concept="3F0A7n" id="5BkNMNhjeTq" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhjeTv" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="5BkNMNhjeTL" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5BkNMNhkShw" resolve="property" />
+        <node concept="2iRfu4" id="5BkNMNhjeTO" role="2czzBx" />
+        <node concept="VPM3Z" id="5BkNMNhjeTP" role="3F10Kt" />
+        <node concept="2o9xnK" id="5BkNMNhjeTX" role="2gpyvW">
+          <node concept="3clFbS" id="5BkNMNhjeTY" role="2VODD2">
+            <node concept="3clFbF" id="5BkNMNhjeY$" role="3cqZAp">
+              <node concept="Xl_RD" id="5BkNMNhjeYz" role="3clFbG">
+                <property role="Xl_RC" value="," />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhkb2e" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1MYyjtFOOAD">
@@ -539,13 +578,6 @@
     <ref role="1XX52x" to="r2co:7Ouveptj$nv" resolve="Discretize" />
     <node concept="3F0ifn" id="7mV$Q_d7Iy0" role="2wV5jI">
       <property role="3F0ifm" value="Dicretize" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7mV$Q_d7IxL">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="1XX52x" to="r2co:7Ouveptj$nt" resolve="Mesh" />
-    <node concept="3F0ifn" id="7mV$Q_d7IxN" role="2wV5jI">
-      <property role="3F0ifm" value="Grid" />
     </node>
   </node>
   <node concept="24kQdi" id="7mV$Q_d7Ix$">
@@ -831,29 +863,38 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5WMTRp85JgE" role="3EZMnx">
-        <property role="3F0ifm" value="Particle properties:" />
+        <property role="3F0ifm" value="Particles:" />
         <node concept="ljvvj" id="5WMTRp85JgF" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F2HdR" id="5WMTRp85JgG" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
+        <ref role="1NtTu8" to="r2co:5BkNMNhjHBs" resolve="particle" />
         <node concept="2iRkQZ" id="5WMTRp85JgH" role="2czzBx" />
         <node concept="VPM3Z" id="5WMTRp85JgI" role="3F10Kt" />
         <node concept="ljvvj" id="5WMTRp85JgJ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="lj46D" id="5BkNMNhkDdk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5WMTRp85XM7" role="3EZMnx">
-        <property role="3F0ifm" value="Mesh properties" />
+        <property role="3F0ifm" value="Grids:" />
         <node concept="ljvvj" id="5WMTRp85XMM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F2HdR" id="5WMTRp85XNw" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5WMTRp85JkF" resolve="propertiesMesh" />
+        <ref role="1NtTu8" to="r2co:5BkNMNhkqfn" resolve="grid" />
         <node concept="2iRkQZ" id="5WMTRp85XN$" role="2czzBx" />
         <node concept="VPM3Z" id="5WMTRp85XN_" role="3F10Kt" />
+        <node concept="ljvvj" id="5BkNMNhkDdd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5BkNMNhkDdg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5WMTRp85JgK" role="3EZMnx">
         <node concept="ljvvj" id="5WMTRp85JgL" role="3F10Kt">
@@ -878,6 +919,64 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5WMTRp85JgT" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5BkNMNhjd_7">
+    <property role="3GE5qa" value="simulation.command" />
+    <ref role="1XX52x" to="r2co:5BkNMNhjd$P" resolve="SetProprety" />
+    <node concept="3EZMnI" id="5BkNMNhjd_9" role="2wV5jI">
+      <node concept="3F0ifn" id="5BkNMNhjdA2" role="3EZMnx">
+        <property role="3F0ifm" value="set" />
+      </node>
+      <node concept="3F1sOY" id="5BkNMNhjd_g" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5BkNMNhjd$Q" resolve="container" />
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhjd_m" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="5BkNMNhjd_u" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5BkNMNhjd$S" resolve="property" />
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhjd_C" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="5BkNMNhjd_O" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5BkNMNhjd$V" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="5BkNMNhjd_c" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5BkNMNhkaXi">
+    <property role="3GE5qa" value="simulation.container" />
+    <ref role="1XX52x" to="r2co:5BkNMNhjWhI" resolve="Grid" />
+    <node concept="3EZMnI" id="5BkNMNhkb2q" role="2wV5jI">
+      <node concept="3F0ifn" id="5BkNMNhkb2x" role="3EZMnx">
+        <property role="3F0ifm" value="g:" />
+      </node>
+      <node concept="3F0A7n" id="5BkNMNhkb30" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhkb38" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="5BkNMNhkb3i" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5BkNMNhkShw" resolve="property" />
+        <node concept="2iRfu4" id="5BkNMNhkb3l" role="2czzBx" />
+        <node concept="VPM3Z" id="5BkNMNhkb3m" role="3F10Kt" />
+        <node concept="2o9xnK" id="5BkNMNhkb3t" role="2gpyvW">
+          <node concept="3clFbS" id="5BkNMNhkb3u" role="2VODD2">
+            <node concept="3clFbF" id="5BkNMNhkb84" role="3cqZAp">
+              <node concept="Xl_RD" id="5BkNMNhkb83" role="3clFbG">
+                <property role="Xl_RC" value="," />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhkb9R" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="5BkNMNhkb2t" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -1011,7 +1011,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="47KNQXwoA5k">
-    <property role="3GE5qa" value="simulation.particles" />
+    <property role="3GE5qa" value="simulation.container" />
     <ref role="WuzLi" to="r2co:1MYyjtFOOxy" resolve="Particle" />
     <node concept="11bSqf" id="47KNQXwoA5l" role="11c4hB">
       <node concept="3clFbS" id="47KNQXwoA5m" role="2VODD2">
@@ -1019,8 +1019,8 @@
           <node concept="l9hG8" id="47KNQXwoA5t" role="lcghm">
             <node concept="2OqwBi" id="47KNQXwoA5u" role="lb14g">
               <node concept="117lpO" id="47KNQXwoA5s" role="2Oq$k0" />
-              <node concept="3TrEf2" id="47KNQXwoA5p" role="2OqNvi">
-                <ref role="3Tt5mk" to="r2co:1MYyjtFP9yv" resolve="name" />
+              <node concept="3TrcHB" id="5BkNMNhjhIM" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
@@ -1205,19 +1205,6 @@
         <node concept="lc7rE" id="47KNQXwoAax" role="3cqZAp">
           <node concept="la8eA" id="47KNQXwoAaw" role="lcghm">
             <property role="lacIc" value="Dicretize" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="47KNQXwoAaH">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="WuzLi" to="r2co:7Ouveptj$nt" resolve="Mesh" />
-    <node concept="11bSqf" id="47KNQXwoAaI" role="11c4hB">
-      <node concept="3clFbS" id="47KNQXwoAaJ" role="2VODD2">
-        <node concept="lc7rE" id="47KNQXwoAaM" role="3cqZAp">
-          <node concept="la8eA" id="47KNQXwoAaL" role="lcghm">
-            <property role="lacIc" value="Grid" />
           </node>
         </node>
       </node>

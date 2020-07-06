@@ -11,6 +11,10 @@
   <imports />
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
+      <concept id="6473026355835667551" name="openpme.core.structure.FieldContainer" flags="ng" index="28xOHN">
+        <child id="6473026355835667552" name="property" index="28xOHc" />
+      </concept>
+      <concept id="6473026355835421806" name="openpme.core.structure.Grid" flags="ng" index="28AKH2" />
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
         <child id="7548145485610641296" name="Boundary" index="2A2w73" />
       </concept>
@@ -35,6 +39,8 @@
       </concept>
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
+        <child id="6473026355835544535" name="grid" index="28xmNV" />
+        <child id="6473026355835361756" name="particle" index="28AxrK" />
         <child id="6859799677640308011" name="propertiesMesh" index="n919t" />
         <child id="2202684092501541277" name="body" index="rpc0u" />
         <child id="2202684092501541234" name="propertiesParticle" index="rpc3L" />
@@ -46,6 +52,7 @@
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
+      <concept id="2071243749762222178" name="openpme.core.structure.Particle" flags="ng" index="1Rrs5l" />
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
       <concept id="1387474872145762371" name="openpme.expressions.structure.DoubleType" flags="ng" index="2qhxl8" />
@@ -142,6 +149,20 @@
     </node>
     <node concept="1GH8rQ" id="5WMTRp86V6p" role="1GHewH">
       <node concept="1Rr2rv" id="5WMTRp86VDw" role="2A2w7f">
+        <node concept="1Rrs5l" id="5BkNMNhlBjK" role="28AxrK">
+          <property role="TrG5h" value="particles" />
+          <node concept="1Rqx6$" id="5BkNMNhlBjQ" role="28xOHc">
+            <property role="TrG5h" value="vorticity, veloctiy" />
+            <node concept="2I$Y6A" id="5BkNMNhlBjT" role="rpM2k" />
+          </node>
+        </node>
+        <node concept="28AKH2" id="5BkNMNhlBk7" role="28xmNV">
+          <property role="TrG5h" value="vort" />
+          <node concept="1Rqx6$" id="5BkNMNhlBk8" role="28xOHc">
+            <property role="TrG5h" value="vorticity" />
+            <node concept="2I$Y6A" id="5BkNMNhlBk9" role="rpM2k" />
+          </node>
+        </node>
         <node concept="1Rqx6$" id="5WMTRp86Wf1" role="rpc3L">
           <property role="TrG5h" value="vorticity" />
           <node concept="2I$Y6A" id="5WMTRp86Wf2" role="rpM2k" />
