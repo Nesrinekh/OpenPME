@@ -8,7 +8,17 @@ OpenPME runs on MPS 2019.2.4
 You can download it from here https://confluence.jetbrains.com/display/MPS/Download+MPS+2019.2
 
 ## Dependencies
-To install missing dependencies go to
- 
-    Preferences > Plugins > search for `MPS Math Editor` (install dependencies if requested)
+OpenPME needs two Plugins to be installed:
 
+* `MPS Math Editor` and
+* `com.dslfoundry.plaintextgen`.
+
+To install missing dependencies go to
+
+    Preferences > Plugins > search for <PLUGIN_NAME> (install dependencies if requested)
+
+on Mac or 
+
+    File > Settings > Plugins > search for <PLUGIN_NAME> (install dependencies if requested)
+    
+on Linux.
