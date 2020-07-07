@@ -272,9 +272,9 @@
     <node concept="1TJgyj" id="5BkNMNhkqfn" role="1TKVEi">
       <property role="IQ2ns" value="6473026355835544535" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="grid" />
+      <property role="20kJfa" value="mesh" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5BkNMNhjWhI" resolve="Grid" />
+      <ref role="20lvS9" node="5BkNMNhjWhI" resolve="Mesh" />
     </node>
     <node concept="1TJgyj" id="1Uhwoc5Xk6t" role="1TKVEi">
       <property role="IQ2ns" value="2202684092501541277" />
@@ -780,7 +780,7 @@
   <node concept="1TIwiD" id="5BkNMNhjWhI">
     <property role="EcuMT" value="6473026355835421806" />
     <property role="3GE5qa" value="simulation.container" />
-    <property role="TrG5h" value="Grid" />
+    <property role="TrG5h" value="Mesh" />
     <ref role="1TJDcQ" node="5BkNMNhkShv" resolve="FieldContainer" />
     <node concept="PrWs8" id="5BkNMNhjWi4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
