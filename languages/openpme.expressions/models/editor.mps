@@ -17,8 +17,10 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="709996738298806197" name="jetbrains.mps.lang.editor.structure.QueryFunction_SeparatorText" flags="in" index="2o9xnK" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -45,6 +47,20 @@
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -149,11 +165,26 @@
     <property role="3GE5qa" value="literals" />
     <ref role="1XX52x" to="caxt:7bpBJvmqDvw" resolve="VectorLiteral" />
     <node concept="3EZMnI" id="7bpBJvmqDvH" role="2wV5jI">
+      <node concept="3F0ifn" id="5BkNMNhwtDU" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
       <node concept="3F2HdR" id="7bpBJvmqDvO" role="3EZMnx">
         <ref role="1NtTu8" to="caxt:7bpBJvmqDvx" resolve="values" />
         <node concept="l2Vlx" id="7bpBJvmqDvR" role="2czzBx" />
+        <node concept="2o9xnK" id="5BkNMNhwtEg" role="2gpyvW">
+          <node concept="3clFbS" id="5BkNMNhwtEh" role="2VODD2">
+            <node concept="3clFbF" id="5BkNMNhwtIR" role="3cqZAp">
+              <node concept="Xl_RD" id="5BkNMNhwtIQ" role="3clFbG">
+                <property role="Xl_RC" value="," />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="l2Vlx" id="7bpBJvmqDvK" role="2iSdaV" />
+      <node concept="3F0ifn" id="5BkNMNhwtEa" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7bpBJvmqH31">

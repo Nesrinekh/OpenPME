@@ -798,6 +798,12 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1MYyjtFP9yj" resolve="Property" />
     </node>
+    <node concept="1TJgyj" id="5BkNMNhvq1s" role="1TKVEi">
+      <property role="IQ2ns" value="6473026355838427228" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="size" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvw" resolve="VectorLiteral" />
+    </node>
   </node>
 </model>
 
