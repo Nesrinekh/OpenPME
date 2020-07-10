@@ -859,25 +859,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="5WMTRp85xC_" role="3EZMnx">
-        <property role="3F0ifm" value="(depr) Particle properties:" />
-        <node concept="ljvvj" id="5WMTRp85xCA" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="5WMTRp85xCB" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
-        <node concept="2iRkQZ" id="5WMTRp85xCC" role="2czzBx" />
-        <node concept="VPM3Z" id="5WMTRp85xCD" role="3F10Kt" />
-        <node concept="ljvvj" id="5WMTRp85xCE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="5WMTRp85xCF" role="3EZMnx">
-        <node concept="ljvvj" id="5WMTRp85xCG" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="5WMTRp85xCH" role="3EZMnx">
         <property role="3F0ifm" value="Commands:" />
         <node concept="ljvvj" id="5WMTRp85xCI" role="3F10Kt">
