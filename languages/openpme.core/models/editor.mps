@@ -831,14 +831,36 @@
     <ref role="1XX52x" to="r2co:6z0p_feMAv7" resolve="Discrete" />
     <node concept="3EZMnI" id="5WMTRp85xCy" role="2wV5jI">
       <property role="S$Qs1" value="true" />
-      <node concept="PMmxH" id="5WMTRp85xCz" role="3EZMnx">
+      <node concept="PMmxH" id="5BkNMNhFikg" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="ljvvj" id="5WMTRp85xC$" role="3F10Kt">
+        <node concept="ljvvj" id="5BkNMNhFikh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhFiki" role="3EZMnx">
+        <property role="3F0ifm" value="Particle sets:" />
+        <node concept="ljvvj" id="5BkNMNhFikj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5BkNMNhFikk" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5BkNMNhjHBs" resolve="particle" />
+        <node concept="2iRkQZ" id="5BkNMNhFikl" role="2czzBx" />
+        <node concept="VPM3Z" id="5BkNMNhFikm" role="3F10Kt" />
+        <node concept="ljvvj" id="5BkNMNhFikn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5BkNMNhFiko" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5BkNMNhFikw" role="3EZMnx">
+        <node concept="ljvvj" id="5BkNMNhFikx" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="5WMTRp85xC_" role="3EZMnx">
-        <property role="3F0ifm" value="Particle properties:" />
+        <property role="3F0ifm" value="(depr) Particle properties:" />
         <node concept="ljvvj" id="5WMTRp85xCA" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

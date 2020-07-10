@@ -15,6 +15,10 @@
   <imports />
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
+      <concept id="6473026355835667551" name="openpme.core.structure.FieldContainer" flags="ng" index="28xOHN">
+        <child id="6473026355835667552" name="property" index="28xOHc" />
+        <child id="6473026355838427228" name="size" index="28EmXK" />
+      </concept>
       <concept id="6859799677638878396" name="openpme.core.structure.WriteParticles" flags="ng" index="ncWfa">
         <child id="6859799677638878397" name="container" index="ncWfb" />
       </concept>
@@ -56,6 +60,7 @@
       <concept id="7548145485610641351" name="openpme.core.structure.Discrete" flags="ng" index="2A2w6k" />
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
+        <child id="6473026355835361756" name="particle" index="28AxrK" />
         <child id="2202684092501541277" name="body" index="rpc0u" />
         <child id="2202684092501541234" name="propertiesParticle" index="rpc3L" />
       </concept>
@@ -75,6 +80,7 @@
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
+      <concept id="2071243749762222178" name="openpme.core.structure.Particle" flags="ng" index="1Rrs5l" />
       <concept id="2071243749762222177" name="openpme.core.structure.ParticleLoop" flags="ng" index="1Rrs5m">
         <child id="2202684092512033037" name="particle" index="o1dye" />
         <child id="2071243749762222473" name="iterable" index="1Rrs2Y" />
@@ -120,12 +126,16 @@
       <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
         <property id="8275820577561417724" name="value" index="2$GK$b" />
       </concept>
+      <concept id="8275820577561417696" name="openpme.expressions.structure.VectorLiteral" flags="ng" index="2$GK$n">
+        <child id="8275820577561417697" name="values" index="2$GK$m" />
+      </concept>
       <concept id="8275820577561417568" name="openpme.expressions.structure.StringLiteral" flags="ng" index="2$GKAn">
         <property id="8275820577561417569" name="value" index="2$GKAm" />
       </concept>
       <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY">
         <property id="8275820577561417546" name="value" index="2$GKAX" />
       </concept>
+      <concept id="2525416462909175106" name="openpme.expressions.structure.Expression" flags="ng" index="2I$Y6A" />
       <concept id="8483536403557159895" name="openpme.expressions.structure.ParticleAccess" flags="ng" index="SDg2Y">
         <child id="1387474872146087005" name="ref" index="2qjg5m" />
         <child id="1387474872146312125" name="prop" index="2qjJqQ" />
@@ -252,6 +262,28 @@
     </node>
     <node concept="1GH8rQ" id="7mV$Q_d6VWQ" role="1GHewH">
       <node concept="2A2w6k" id="1Uhwoc64MBy" role="2A2w7f">
+        <node concept="1Rrs5l" id="5BkNMNhFKT8" role="28AxrK">
+          <property role="TrG5h" value="particles_new" />
+          <node concept="1Rqx6$" id="5BkNMNhFKT9" role="28xOHc">
+            <property role="TrG5h" value="velo" />
+            <node concept="2I$Y6A" id="5BkNMNhFKTa" role="rpM2k" />
+          </node>
+          <node concept="1Rqx6$" id="5BkNMNhFKTe" role="28xOHc">
+            <property role="TrG5h" value="forc" />
+            <node concept="2I$Y6A" id="5BkNMNhFKTf" role="rpM2k" />
+          </node>
+          <node concept="2$GK$n" id="5BkNMNhFKTk" role="28EmXK">
+            <node concept="2$GKAY" id="5BkNMNhFKTo" role="2$GK$m">
+              <property role="2$GKAX" value="10" />
+            </node>
+            <node concept="2$GKAY" id="5BkNMNhFKTu" role="2$GK$m">
+              <property role="2$GKAX" value="10" />
+            </node>
+            <node concept="2$GKAY" id="5BkNMNhFKTA" role="2$GK$m">
+              <property role="2$GKAX" value="10" />
+            </node>
+          </node>
+        </node>
         <node concept="2G0pd6" id="1Uhwoc6Af23" role="rpc0u">
           <property role="TrG5h" value="dt" />
           <node concept="2qhxl8" id="1d1jgI91VNl" role="1wvloH" />
@@ -282,6 +314,16 @@
           </node>
           <node concept="1XiV_f" id="1Uhwoc67L_8" role="ozNjG">
             <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
+          </node>
+        </node>
+        <node concept="1wvtVb" id="2VozsUVIJFa" role="rpc0u">
+          <node concept="2$G188" id="2VozsUVIJJr" role="1wvtVa">
+            <node concept="1XiV_f" id="2VozsUVIJJH" role="2$G181">
+              <ref role="1Xh6_M" node="1Uhwoc64MCb" resolve="particles" />
+            </node>
+            <node concept="1XiV_f" id="2VozsUVIJJK" role="2$G18d">
+              <ref role="1Xh6_M" node="5BkNMNhFKT8" resolve="particles_new" />
+            </node>
           </node>
         </node>
         <node concept="2G0pd6" id="1d1jgI9SX$J" role="rpc0u">
