@@ -15,7 +15,7 @@
         <child id="6473026355835667552" name="property" index="28xOHc" />
         <child id="6473026355838427228" name="size" index="28EmXK" />
       </concept>
-      <concept id="6473026355835421806" name="openpme.core.structure.Grid" flags="ng" index="28AKH2" />
+      <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
         <child id="7548145485610641296" name="Boundary" index="2A2w73" />
       </concept>
@@ -42,7 +42,7 @@
       </concept>
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
-        <child id="6473026355835544535" name="grid" index="28xmNV" />
+        <child id="6473026355835544535" name="mesh" index="28xmNV" />
         <child id="6473026355835361756" name="particle" index="28AxrK" />
         <child id="2202684092501541277" name="body" index="rpc0u" />
       </concept>
@@ -197,6 +197,24 @@
           <node concept="1Rqx6$" id="5BkNMNhr9Zf" role="28xOHc">
             <property role="TrG5h" value="velocity" />
             <node concept="2I$Y6A" id="5BkNMNhr9Zg" role="rpM2k" />
+          </node>
+        </node>
+        <node concept="28AKH2" id="5BkNMNhEjTp" role="28xmNV">
+          <property role="TrG5h" value="velocity" />
+          <node concept="1Rqx6$" id="5BkNMNhEjTq" role="28xOHc">
+            <property role="TrG5h" value="vel" />
+            <node concept="2I$Y6A" id="5BkNMNhEjTr" role="rpM2k" />
+          </node>
+          <node concept="2$GK$n" id="5BkNMNhEjTA" role="28EmXK">
+            <node concept="2$GKAY" id="5BkNMNhEjTE" role="2$GK$m">
+              <property role="2$GKAX" value="96" />
+            </node>
+            <node concept="2$GKAY" id="5BkNMNhEjTK" role="2$GK$m">
+              <property role="2$GKAX" value="96" />
+            </node>
+            <node concept="2$GKAY" id="5BkNMNhEjTS" role="2$GK$m">
+              <property role="2$GKAX" value="96" />
+            </node>
           </node>
         </node>
       </node>
