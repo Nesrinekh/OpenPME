@@ -2,6 +2,7 @@
 <model ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)">
   <persistence version="9" />
   <languages>
+    <use id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -552,6 +553,32 @@
     <node concept="PrWs8" id="7mV$Q_d6GL5" role="PzmwI">
       <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
     </node>
+    <node concept="1TJgyj" id="2VozsUVPKax" role="1TKVEi">
+      <property role="IQ2ns" value="3375603839768396449" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="particles" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="2VozsUVPKaA" role="1TKVEi">
+      <property role="IQ2ns" value="3375603839768396454" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mesh" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="2VozsUW1hKn" role="1TKVEi">
+      <property role="IQ2ns" value="3375603839771417623" />
+      <property role="20kJfa" value="property_particle" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1MYyjtFP9yj" resolve="Property" />
+    </node>
+    <node concept="1TJgyj" id="2VozsUW1hKt" role="1TKVEi">
+      <property role="IQ2ns" value="3375603839771417629" />
+      <property role="20kJfa" value="property_mesh" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1MYyjtFP9yj" resolve="Property" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1MYyjtFP9yj">
     <property role="EcuMT" value="2071243749762308243" />
@@ -799,6 +826,25 @@
     </node>
     <node concept="PrWs8" id="5BkNMNhEk6H" role="PzmwI">
       <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2VozsUVPZeC">
+    <property role="EcuMT" value="3375603839768458152" />
+    <property role="3GE5qa" value="simulation.loop" />
+    <property role="TrG5h" value="GridLoop" />
+    <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
+    <node concept="1TJgyj" id="2VozsUVPZeD" role="1TKVEi">
+      <property role="IQ2ns" value="3375603839768458153" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="gridNode" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="2VozsUVPZeF" role="1TKVEi">
+      <property role="IQ2ns" value="3375603839768458155" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="iterable" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
   </node>
 </model>

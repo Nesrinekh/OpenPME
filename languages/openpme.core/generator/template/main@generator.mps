@@ -2,6 +2,7 @@
 <model ref="r:7d416475-2b49-4a05-bbc5-1c36716c2a04(main@generator)">
   <persistence version="9" />
   <languages>
+    <use id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
