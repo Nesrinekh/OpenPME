@@ -1244,19 +1244,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="47KNQXwoAc2">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="WuzLi" to="r2co:1MYyjtFOOK9" resolve="Remesh" />
-    <node concept="11bSqf" id="47KNQXwoAc3" role="11c4hB">
-      <node concept="3clFbS" id="47KNQXwoAc4" role="2VODD2">
-        <node concept="lc7rE" id="47KNQXwoAc7" role="3cqZAp">
-          <node concept="la8eA" id="47KNQXwoAc6" role="lcghm">
-            <property role="lacIc" value="Remesh" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="47KNQXwoAcj">
     <property role="3GE5qa" value="simulation.command.discrete" />
     <ref role="WuzLi" to="r2co:6sMVU6wHprM" resolve="CellList" />

@@ -54,6 +54,12 @@
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
       <concept id="2071243749762222178" name="openpme.core.structure.Particle" flags="ng" index="1Rrs5l" />
+      <concept id="2071243749762223113" name="openpme.core.structure.Remesh" flags="ng" index="1RrskY">
+        <reference id="3375603839771417629" name="property_mesh" index="2iRp7j" />
+        <reference id="3375603839771417623" name="property_particle" index="2iRp7p" />
+        <child id="3375603839768396454" name="mesh" index="2l3SXC" />
+        <child id="3375603839768396449" name="particles" index="2l3SXJ" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
@@ -82,6 +88,9 @@
     <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
+      </concept>
+      <concept id="2579446515047575999" name="openpme.statements.structure.VariableReference" flags="ng" index="1XiV_f">
+        <reference id="2579446515047620994" name="variableDeclaration" index="1Xh6_M" />
       </concept>
     </language>
     <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
@@ -187,6 +196,16 @@
             </node>
           </node>
           <node concept="2qhxl8" id="5BkNMNht8jg" role="1wvloH" />
+        </node>
+        <node concept="1RrskY" id="2VozsUW1yt_" role="rpc0u">
+          <ref role="2iRp7j" node="5BkNMNhv57H" resolve="vort" />
+          <ref role="2iRp7p" node="5BkNMNhr9Za" resolve="vorticity" />
+          <node concept="1XiV_f" id="2VozsUW1ytQ" role="2l3SXJ">
+            <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
+          </node>
+          <node concept="1XiV_f" id="2VozsUW1ytN" role="2l3SXC">
+            <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity" />
+          </node>
         </node>
         <node concept="1Rrs5l" id="5BkNMNhr9Z9" role="28AxrK">
           <property role="TrG5h" value="particles" />

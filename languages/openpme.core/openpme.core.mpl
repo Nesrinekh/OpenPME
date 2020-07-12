@@ -31,6 +31,9 @@
         <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="17" />
         <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
+        <language slang="l:2b72d3f1-4643-4aec-8f26-2599b23e0e1b:openpme.base" version="0" />
+        <language slang="l:9a51a2b4-83e4-4324-8cf8-4ee101121a3a:openpme.expressions" version="0" />
+        <language slang="l:d89a1f94-2b10-40d1-a01e-560f94e501d7:openpme.statements" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -77,7 +80,7 @@
     <dependency reexport="true">9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</dependency>
     <dependency reexport="true">735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)</dependency>
     <dependency reexport="true">dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)</dependency>
-    <dependency reexport="true">d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)</dependency>
+    <dependency reexport="false" scope="extend">d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)</dependency>
     <dependency reexport="true">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
   </dependencies>
@@ -124,6 +127,8 @@
     <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="4" />
+    <language slang="l:2b72d3f1-4643-4aec-8f26-2599b23e0e1b:openpme.base" version="0" />
+    <language slang="l:9a51a2b4-83e4-4324-8cf8-4ee101121a3a:openpme.expressions" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
