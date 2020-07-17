@@ -390,6 +390,34 @@
     <property role="TrG5h" value="Interpolate" />
     <property role="3GE5qa" value="simulation.command.continuous" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="5EGbNbOjHFp" role="1TKVEi">
+      <property role="IQ2ns" value="6533649055301425881" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sourceContainer" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="5EGbNbOjHFr" role="1TKVEi">
+      <property role="IQ2ns" value="6533649055301425883" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="targetContainer" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="5EGbNbOlbPk" role="1TKVEi">
+      <property role="IQ2ns" value="6533649055301811540" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sourceProperty" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:1d1jgI93P9F" resolve="PropertyReference" />
+    </node>
+    <node concept="1TJgyj" id="5EGbNbOlbPx" role="1TKVEi">
+      <property role="IQ2ns" value="6533649055301811553" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="targetProperty" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:1d1jgI93P9F" resolve="PropertyReference" />
+    </node>
     <node concept="PrWs8" id="7mV$Q_d6oG$" role="PzmwI">
       <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
     </node>

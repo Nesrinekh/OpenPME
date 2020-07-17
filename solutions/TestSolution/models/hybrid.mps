@@ -46,6 +46,16 @@
         <child id="6473026355835361756" name="particle" index="28AxrK" />
         <child id="2202684092501541277" name="body" index="rpc0u" />
       </concept>
+      <concept id="8483536403556912194" name="openpme.core.structure.Loop" flags="ng" index="SClWF">
+        <child id="2202684092508629999" name="body" index="oWeDG" />
+      </concept>
+      <concept id="8483536403556804640" name="openpme.core.structure.TimeLoop" flags="ng" index="SCFH9" />
+      <concept id="7436269412207138378" name="openpme.core.structure.Interpolate" flags="ng" index="37xRBF">
+        <child id="6533649055301425883" name="targetContainer" index="2ISJnD" />
+        <child id="6533649055301425881" name="sourceContainer" index="2ISJnF" />
+        <child id="6533649055301811553" name="targetProperty" index="2IY99j" />
+        <child id="6533649055301811540" name="sourceProperty" index="2IY99A" />
+      </concept>
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="2202684092501631255" name="equation" index="rpM2k" />
       </concept>
@@ -86,6 +96,9 @@
       </concept>
     </language>
     <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
+      <concept id="1387474872146285163" name="openpme.statements.structure.PropertyReference" flags="ng" index="2qjxXw">
+        <reference id="1387474872146285164" name="property" index="2qjxXB" />
+      </concept>
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
       </concept>
@@ -168,7 +181,7 @@
     <node concept="1GH8rQ" id="5BkNMNhr9YY" role="1GHewH">
       <node concept="1Rr2rv" id="5BkNMNhr9Z6" role="2A2w7f">
         <node concept="28AKH2" id="5BkNMNhv57G" role="28xmNV">
-          <property role="TrG5h" value="vorticity" />
+          <property role="TrG5h" value="vorticity_mesh" />
           <node concept="1Rqx6$" id="5BkNMNhv57H" role="28xOHc">
             <property role="TrG5h" value="vort" />
             <node concept="2I$Y6A" id="5BkNMNhv57I" role="rpM2k" />
@@ -204,7 +217,23 @@
             <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
           </node>
           <node concept="1XiV_f" id="2VozsUW1ytN" role="2l3SXC">
-            <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity" />
+            <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+          </node>
+        </node>
+        <node concept="SCFH9" id="2VozsUW4D3X" role="rpc0u">
+          <node concept="37xRBF" id="5EGbNbOlbR3" role="oWeDG">
+            <node concept="1XiV_f" id="5EGbNbOlbR9" role="2ISJnF">
+              <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
+            </node>
+            <node concept="1XiV_f" id="5EGbNbOltYD" role="2ISJnD">
+              <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+            </node>
+            <node concept="2qjxXw" id="5EGbNbOltYB" role="2IY99A">
+              <ref role="2qjxXB" node="5BkNMNhr9Za" resolve="vorticity" />
+            </node>
+            <node concept="2qjxXw" id="5EGbNbOltYG" role="2IY99j">
+              <ref role="2qjxXB" node="5BkNMNhv57H" resolve="vort" />
+            </node>
           </node>
         </node>
         <node concept="1Rrs5l" id="5BkNMNhr9Z9" role="28AxrK">
@@ -219,7 +248,7 @@
           </node>
         </node>
         <node concept="28AKH2" id="5BkNMNhEjTp" role="28xmNV">
-          <property role="TrG5h" value="velocity" />
+          <property role="TrG5h" value="velocity_mesh" />
           <node concept="1Rqx6$" id="5BkNMNhEjTq" role="28xOHc">
             <property role="TrG5h" value="vel" />
             <node concept="2I$Y6A" id="5BkNMNhEjTr" role="rpM2k" />

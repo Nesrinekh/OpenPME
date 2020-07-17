@@ -664,5 +664,25 @@
     <property role="TrG5h" value="IntegerType" />
     <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
   </node>
+  <node concept="1TIwiD" id="5EGbNbOlbNy">
+    <property role="EcuMT" value="6533649055301811426" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="MeshAccess" />
+    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="5EGbNbOlbNz" role="1TKVEi">
+      <property role="IQ2ns" value="6533649055301811427" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="meshReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="5EGbNbOlbN_" role="1TKVEi">
+      <property role="IQ2ns" value="6533649055301811429" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="propertyReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:1d1jgI93P9F" resolve="PropertyReference" />
+    </node>
+  </node>
 </model>
 
