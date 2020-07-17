@@ -875,5 +875,18 @@
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5EGbNbOlURS">
+    <property role="EcuMT" value="6533649055302004216" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="SolvePoisson" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="5EGbNbOlURT" role="1TKVEi">
+      <property role="IQ2ns" value="6533649055302004217" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="meshReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
 </model>
 

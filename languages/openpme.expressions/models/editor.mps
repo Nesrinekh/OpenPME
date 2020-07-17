@@ -409,5 +409,43 @@
       <property role="3F0ifm" value="Integer" />
     </node>
   </node>
+  <node concept="24kQdi" id="5EGbNbOlGZs">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="caxt:5EGbNbOlbNy" resolve="MeshAccess" />
+    <node concept="3EZMnI" id="5EGbNbOlGZu" role="2wV5jI">
+      <node concept="1iCGBv" id="5EGbNbOlGZv" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:5EGbNbOlbNz" resolve="meshReference" />
+        <node concept="1sVBvm" id="5EGbNbOlGZw" role="1sWHZn">
+          <node concept="1iCGBv" id="5EGbNbOlGZx" role="2wV5jI">
+            <ref role="1NtTu8" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+            <node concept="1sVBvm" id="5EGbNbOlGZy" role="1sWHZn">
+              <node concept="3F0A7n" id="5EGbNbOlGZz" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5EGbNbOlGZ$" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="1iCGBv" id="5EGbNbOlGZ_" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:5EGbNbOlbN_" resolve="propertyReference" />
+        <node concept="1sVBvm" id="5EGbNbOlGZA" role="1sWHZn">
+          <node concept="1iCGBv" id="5EGbNbOlGZB" role="2wV5jI">
+            <ref role="1NtTu8" to="5oki:1d1jgI93P9G" resolve="property" />
+            <node concept="1sVBvm" id="5EGbNbOlGZC" role="1sWHZn">
+              <node concept="3F0A7n" id="5EGbNbOlGZD" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5EGbNbOlGZE" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
