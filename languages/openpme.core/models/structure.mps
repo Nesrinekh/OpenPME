@@ -63,7 +63,7 @@
     <property role="EcuMT" value="7436269412207138366" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="DifferentialOperator" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="6sMVU6wHpoZ">
     <property role="EcuMT" value="7436269412207138367" />
@@ -75,7 +75,7 @@
     <property role="EcuMT" value="7436269412207138368" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="LaplacianOperator" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="6sMVU6wHpp2">
     <property role="EcuMT" value="7436269412207138370" />
@@ -887,6 +887,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5EGbNbOnnnv">
+    <property role="EcuMT" value="6533649055302383071" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="CrossProduct" />
+    <ref role="1TJDcQ" to="caxt:7bpBJvmqoNN" resolve="BinaryExpression" />
   </node>
 </model>
 

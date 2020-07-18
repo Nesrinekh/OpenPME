@@ -46,6 +46,7 @@
         <child id="6473026355835361756" name="particle" index="28AxrK" />
         <child id="2202684092501541277" name="body" index="rpc0u" />
       </concept>
+      <concept id="6533649055302383071" name="openpme.core.structure.CrossProduct" flags="ng" index="2IWlFH" />
       <concept id="6533649055302004216" name="openpme.core.structure.SolvePoisson" flags="ng" index="2IYSba">
         <child id="6533649055302004217" name="meshReference" index="2IYSbb" />
       </concept>
@@ -53,6 +54,8 @@
         <child id="2202684092508629999" name="body" index="oWeDG" />
       </concept>
       <concept id="8483536403556804640" name="openpme.core.structure.TimeLoop" flags="ng" index="SCFH9" />
+      <concept id="7436269412207138366" name="openpme.core.structure.DifferentialOperator" flags="ng" index="37xRAv" />
+      <concept id="7436269412207138368" name="openpme.core.structure.LaplacianOperator" flags="ng" index="37xRBx" />
       <concept id="7436269412207138378" name="openpme.core.structure.Interpolate" flags="ng" index="37xRBF">
         <child id="6533649055301425883" name="targetContainer" index="2ISJnD" />
         <child id="6533649055301425881" name="sourceContainer" index="2ISJnF" />
@@ -98,7 +101,13 @@
         <child id="6533649055301811427" name="meshReference" index="2IY9fh" />
         <child id="6533649055301811429" name="propertyReference" index="2IY9fn" />
       </concept>
+      <concept id="8483536403557159895" name="openpme.expressions.structure.ParticleAccess" flags="ng" index="SDg2Y">
+        <child id="1387474872146087005" name="ref" index="2qjg5m" />
+        <child id="1387474872146312125" name="prop" index="2qjJqQ" />
+      </concept>
+      <concept id="7436269412207138817" name="openpme.expressions.structure.MultiplicationExpression" flags="ng" index="37xRuw" />
       <concept id="7436269412207138818" name="openpme.expressions.structure.DivisionExpression" flags="ng" index="37xRuz" />
+      <concept id="7436269412207138815" name="openpme.expressions.structure.AdditionExpression" flags="ng" index="37xRxu" />
       <concept id="8073773260958242859" name="openpme.expressions.structure.ITyped" flags="ng" index="1wvloE">
         <child id="8073773260958242860" name="type" index="1wvloH" />
       </concept>
@@ -278,6 +287,80 @@
               </node>
             </node>
           </node>
+          <node concept="1wvtVb" id="5EGbNbOmMwk" role="oWeDG">
+            <node concept="2$G188" id="5EGbNbOmMwG" role="1wvtVa">
+              <node concept="2IY9fg" id="5EGbNbOmMwP" role="2$G181">
+                <node concept="1XiV_f" id="5EGbNbOmMwY" role="2IY9fh">
+                  <ref role="1Xh6_M" node="5BkNMNhEjTp" resolve="velocity_mesh" />
+                </node>
+                <node concept="2qjxXw" id="5EGbNbOmMx1" role="2IY9fn">
+                  <ref role="2qjxXB" node="5BkNMNhEjTq" resolve="vel" />
+                </node>
+              </node>
+              <node concept="2IWlFH" id="5EGbNbOnE1j" role="2$G18d">
+                <node concept="37xRAv" id="5EGbNbOnE1s" role="2$G181" />
+                <node concept="2IY9fg" id="5EGbNbOnE1v" role="2$G18d">
+                  <node concept="1XiV_f" id="5EGbNbOnE1C" role="2IY9fh">
+                    <ref role="1Xh6_M" node="5EGbNbOmvJn" resolve="phi" />
+                  </node>
+                  <node concept="2qjxXw" id="5EGbNbOnE1F" role="2IY9fn">
+                    <ref role="2qjxXB" node="5EGbNbOmvJo" resolve="vort-phi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1wvtVb" id="5EGbNbOnE38" role="oWeDG">
+            <node concept="2$G188" id="5EGbNbOnE3E" role="1wvtVa">
+              <node concept="SDg2Y" id="5EGbNbOnE4Q" role="2$G181">
+                <node concept="1XiV_f" id="5EGbNbOnE4Z" role="2qjg5m">
+                  <ref role="1Xh6_M" node="5EGbNbOnE4v" resolve="rhs" />
+                </node>
+                <node concept="2qjxXw" id="5EGbNbOnE52" role="2qjJqQ">
+                  <ref role="2qjxXB" node="5EGbNbOnE4w" resolve="vortex-stretching" />
+                </node>
+              </node>
+              <node concept="37xRxu" id="5EGbNbOnE55" role="2$G18d">
+                <node concept="37xRuw" id="5EGbNbOnWIE" role="2$G181">
+                  <node concept="37xRuw" id="5EGbNbOnWJ5" role="2$G181">
+                    <node concept="2IY9fg" id="5EGbNbOnWJe" role="2$G181">
+                      <node concept="1XiV_f" id="5EGbNbOnWJn" role="2IY9fh">
+                        <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+                      </node>
+                      <node concept="2qjxXw" id="5EGbNbOnWJq" role="2IY9fn">
+                        <ref role="2qjxXB" node="5BkNMNhv57H" resolve="vort" />
+                      </node>
+                    </node>
+                    <node concept="37xRAv" id="5EGbNbOnWJt" role="2$G18d" />
+                  </node>
+                  <node concept="2IY9fg" id="5EGbNbOnWIQ" role="2$G18d">
+                    <node concept="1XiV_f" id="5EGbNbOnWIZ" role="2IY9fh">
+                      <ref role="1Xh6_M" node="5BkNMNhEjTp" resolve="velocity_mesh" />
+                    </node>
+                    <node concept="2qjxXw" id="5EGbNbOnWJ2" role="2IY9fn">
+                      <ref role="2qjxXB" node="5BkNMNhEjTq" resolve="vel" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37xRuw" id="5EGbNbOnE5e" role="2$G18d">
+                  <node concept="1XiV_f" id="5EGbNbOnE5t" role="2$G181">
+                    <ref role="1Xh6_M" node="5BkNMNht8jc" resolve="nu" />
+                  </node>
+                  <node concept="37xRuw" id="5EGbNbOnE5w" role="2$G18d">
+                    <node concept="37xRBx" id="5EGbNbOnWIo" role="2$G181" />
+                    <node concept="2IY9fg" id="5EGbNbOnWIr" role="2$G18d">
+                      <node concept="1XiV_f" id="5EGbNbOnWI$" role="2IY9fh">
+                        <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+                      </node>
+                      <node concept="2qjxXw" id="5EGbNbOnWIB" role="2IY9fn">
+                        <ref role="2qjxXB" node="5BkNMNhv57H" resolve="vort" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1Rrs5l" id="5BkNMNhr9Z9" role="28AxrK">
           <property role="TrG5h" value="particles" />
@@ -313,6 +396,13 @@
           <node concept="1Rqx6$" id="5EGbNbOmvJo" role="28xOHc">
             <property role="TrG5h" value="vort-phi" />
             <node concept="2I$Y6A" id="5EGbNbOmvJp" role="rpM2k" />
+          </node>
+        </node>
+        <node concept="28AKH2" id="5EGbNbOnE4v" role="28xmNV">
+          <property role="TrG5h" value="rhs" />
+          <node concept="1Rqx6$" id="5EGbNbOnE4w" role="28xOHc">
+            <property role="TrG5h" value="vortex-stretching" />
+            <node concept="2I$Y6A" id="5EGbNbOnE4x" role="rpM2k" />
           </node>
         </node>
       </node>
