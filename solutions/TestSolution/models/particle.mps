@@ -69,9 +69,7 @@
       <concept id="6675447779075658713" name="openpme.core.structure.VisualizeParticles" flags="ng" index="18QAuU">
         <child id="6675447779075658714" name="ParticlesFile" index="18QAuT" />
       </concept>
-      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
-        <child id="2202684092501631255" name="equation" index="rpM2k" />
-      </concept>
+      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$" />
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
@@ -126,7 +124,6 @@
       <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY">
         <property id="8275820577561417546" name="value" index="2$GKAX" />
       </concept>
-      <concept id="2525416462909175106" name="openpme.expressions.structure.Expression" flags="ng" index="2I$Y6A" />
       <concept id="8483536403557159895" name="openpme.expressions.structure.ParticleAccess" flags="ng" index="SDg2Y">
         <child id="1387474872146087005" name="ref" index="2qjg5m" />
         <child id="1387474872146312125" name="prop" index="2qjJqQ" />
@@ -255,13 +252,11 @@
       <node concept="2A2w6k" id="1Uhwoc64MBy" role="2A2w7f">
         <node concept="1Rrs5l" id="5BkNMNhFKT8" role="28AxrK">
           <property role="TrG5h" value="particles" />
-          <node concept="1Rqx6$" id="5BkNMNhFKT9" role="28xOHc">
+          <node concept="1Rqx6$" id="5EGbNbOppVf" role="28xOHc">
             <property role="TrG5h" value="velocity" />
-            <node concept="2I$Y6A" id="5BkNMNhFKTa" role="rpM2k" />
           </node>
-          <node concept="1Rqx6$" id="5BkNMNhFKTe" role="28xOHc">
+          <node concept="1Rqx6$" id="5EGbNbOppVl" role="28xOHc">
             <property role="TrG5h" value="force" />
-            <node concept="2I$Y6A" id="5BkNMNhFKTf" role="rpM2k" />
           </node>
           <node concept="2$GK$n" id="5BkNMNhFKTk" role="28EmXK">
             <node concept="2$GKAY" id="5BkNMNhFKTo" role="2$GK$m">
@@ -361,8 +356,8 @@
                   <node concept="1XiV_f" id="5WMTRp7_hE8" role="2qjg5m">
                     <ref role="1Xh6_M" node="5WMTRp7_hE4" resolve="p_evolve" />
                   </node>
-                  <node concept="2qjxXw" id="2VozsUVLj9O" role="2qjJqQ">
-                    <ref role="2qjxXB" node="5BkNMNhFKT9" resolve="velocity" />
+                  <node concept="2qjxXw" id="5EGbNbOppVq" role="2qjJqQ">
+                    <ref role="2qjxXB" node="5EGbNbOppVf" resolve="velocity" />
                   </node>
                 </node>
                 <node concept="37xRuw" id="5WMTRp7_hEa" role="2$G18d">
@@ -378,8 +373,8 @@
                     <node concept="1XiV_f" id="5WMTRp7_hEd" role="2qjg5m">
                       <ref role="1Xh6_M" node="5WMTRp7_hE4" resolve="p_evolve" />
                     </node>
-                    <node concept="2qjxXw" id="2VozsUVLj9R" role="2qjJqQ">
-                      <ref role="2qjxXB" node="5BkNMNhFKTe" resolve="force" />
+                    <node concept="2qjxXw" id="5EGbNbOppVt" role="2qjJqQ">
+                      <ref role="2qjxXB" node="5EGbNbOppVl" resolve="force" />
                     </node>
                   </node>
                 </node>
@@ -400,8 +395,8 @@
                     <node concept="1XiV_f" id="5WMTRp7_hEm" role="2qjg5m">
                       <ref role="1Xh6_M" node="5WMTRp7_hE4" resolve="p_evolve" />
                     </node>
-                    <node concept="2qjxXw" id="2VozsUVLj9U" role="2qjJqQ">
-                      <ref role="2qjxXB" node="5BkNMNhFKT9" resolve="velocity" />
+                    <node concept="2qjxXw" id="5EGbNbOppVw" role="2qjJqQ">
+                      <ref role="2qjxXB" node="5EGbNbOppVf" resolve="velocity" />
                     </node>
                   </node>
                 </node>
@@ -445,8 +440,8 @@
                   <node concept="1XiV_f" id="1d1jgI955qw" role="2qjg5m">
                     <ref role="1Xh6_M" node="1d1jgI94LG9" resolve="p_force" />
                   </node>
-                  <node concept="2qjxXw" id="2VozsUVLj9X" role="2qjJqQ">
-                    <ref role="2qjxXB" node="5BkNMNhFKTe" resolve="force" />
+                  <node concept="2qjxXw" id="5EGbNbOppVz" role="2qjJqQ">
+                    <ref role="2qjxXB" node="5EGbNbOppVl" resolve="force" />
                   </node>
                 </node>
                 <node concept="2$GK$c" id="1d1jgI955qA" role="2$G18d">
@@ -576,8 +571,8 @@
                     <node concept="1XiV_f" id="1d1jgI9E_40" role="2qjg5m">
                       <ref role="1Xh6_M" node="1d1jgI94LG9" resolve="p_force" />
                     </node>
-                    <node concept="2qjxXw" id="2VozsUVLja0" role="2qjJqQ">
-                      <ref role="2qjxXB" node="5BkNMNhFKTe" resolve="force" />
+                    <node concept="2qjxXw" id="5EGbNbOppVA" role="2qjJqQ">
+                      <ref role="2qjxXB" node="5EGbNbOppVl" resolve="force" />
                     </node>
                   </node>
                   <node concept="1XiV_f" id="5WMTRp7wa3P" role="2$G18d">
@@ -606,8 +601,8 @@
                   <node concept="1XiV_f" id="1d1jgI942fq" role="2qjg5m">
                     <ref role="1Xh6_M" node="1Uhwoc6_s1S" resolve="p_evolve" />
                   </node>
-                  <node concept="2qjxXw" id="2VozsUVLjan" role="2qjJqQ">
-                    <ref role="2qjxXB" node="5BkNMNhFKT9" resolve="velocity" />
+                  <node concept="2qjxXw" id="5EGbNbOppXf" role="2qjJqQ">
+                    <ref role="2qjxXB" node="5EGbNbOppVf" resolve="velocity" />
                   </node>
                 </node>
                 <node concept="37xRuw" id="1d1jgI942fw" role="2$G18d">
@@ -623,8 +618,8 @@
                     <node concept="1XiV_f" id="1d1jgI942fS" role="2qjg5m">
                       <ref role="1Xh6_M" node="1Uhwoc6_s1S" resolve="p_evolve" />
                     </node>
-                    <node concept="2qjxXw" id="2VozsUVLja3" role="2qjJqQ">
-                      <ref role="2qjxXB" node="5BkNMNhFKTe" resolve="force" />
+                    <node concept="2qjxXw" id="5EGbNbOppXi" role="2qjJqQ">
+                      <ref role="2qjxXB" node="5EGbNbOppVl" resolve="force" />
                     </node>
                   </node>
                 </node>
@@ -817,8 +812,8 @@
                         <node concept="1XiV_f" id="5BkNMNhiR8N" role="2qjg5m">
                           <ref role="1Xh6_M" node="1d1jgI9SZlc" resolve="p_energy" />
                         </node>
-                        <node concept="2qjxXw" id="2VozsUVLjaa" role="2qjJqQ">
-                          <ref role="2qjxXB" node="5BkNMNhFKT9" resolve="velocity" />
+                        <node concept="2qjxXw" id="5EGbNbOppXl" role="2qjJqQ">
+                          <ref role="2qjxXB" node="5EGbNbOppVf" resolve="velocity" />
                         </node>
                         <node concept="2$GKAY" id="5BkNMNhiR8T" role="2qnkst">
                           <property role="2$GKAX" value="0" />
@@ -837,8 +832,8 @@
                           <node concept="1XiV_f" id="5BkNMNhiR8W" role="2qjg5m">
                             <ref role="1Xh6_M" node="1d1jgI9SZlc" resolve="p_energy" />
                           </node>
-                          <node concept="2qjxXw" id="2VozsUVLjad" role="2qjJqQ">
-                            <ref role="2qjxXB" node="5BkNMNhFKT9" resolve="velocity" />
+                          <node concept="2qjxXw" id="5EGbNbOppXo" role="2qjJqQ">
+                            <ref role="2qjxXB" node="5EGbNbOppVf" resolve="velocity" />
                           </node>
                           <node concept="2$GKAY" id="5BkNMNhiR8Y" role="2qnkst">
                             <property role="2$GKAX" value="1" />
@@ -853,8 +848,8 @@
                           <node concept="1XiV_f" id="5BkNMNhiR94" role="2qjg5m">
                             <ref role="1Xh6_M" node="1d1jgI9SZlc" resolve="p_energy" />
                           </node>
-                          <node concept="2qjxXw" id="2VozsUVLjag" role="2qjJqQ">
-                            <ref role="2qjxXB" node="5BkNMNhFKT9" resolve="velocity" />
+                          <node concept="2qjxXw" id="5EGbNbOppXr" role="2qjJqQ">
+                            <ref role="2qjxXB" node="5EGbNbOppVf" resolve="velocity" />
                           </node>
                           <node concept="2$GKAY" id="5BkNMNhiR96" role="2qnkst">
                             <property role="2$GKAX" value="2" />

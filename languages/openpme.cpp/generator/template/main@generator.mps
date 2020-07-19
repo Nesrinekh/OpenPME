@@ -1792,7 +1792,7 @@
   <node concept="13MO4I" id="1Uhwoc5Y3zj">
     <property role="TrG5h" value="weave_Discrete" />
     <property role="3GE5qa" value="weave" />
-    <ref role="3gUMe" to="r2co:6z0p_feMAv7" resolve="Discrete" />
+    <ref role="3gUMe" to="r2co:6z0p_feMAv7" resolve="ParticleBased" />
     <node concept="3jcgYH" id="5BkNMNhFMDD" role="13RCb5">
       <node concept="hsq1m" id="5BkNMNhFMDE" role="3jcgYG">
         <node concept="raruj" id="5BkNMNhFMDF" role="lGtFl" />
@@ -5917,7 +5917,7 @@
                 <node concept="1Q6Npb" id="2VozsUVDou6" role="2Oq$k0" />
                 <node concept="2SmgA7" id="2VozsUVDoG6" role="2OqNvi">
                   <node concept="chp4Y" id="2VozsUVDoGD" role="1dBWTz">
-                    <ref role="cht4Q" to="r2co:6z0p_feMAv7" resolve="Discrete" />
+                    <ref role="cht4Q" to="r2co:6z0p_feMAv7" resolve="ParticleBased" />
                   </node>
                 </node>
               </node>
@@ -7156,7 +7156,7 @@
     <property role="TrG5h" value="switch_TypeOfSimulation" />
     <node concept="3aamgX" id="5BkNMNhmDO6" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="r2co:6z0p_feMAv7" resolve="Discrete" />
+      <ref role="30HIoZ" to="r2co:6z0p_feMAv7" resolve="ParticleBased" />
       <node concept="j$656" id="5BkNMNhmDOa" role="1lVwrX">
         <ref role="v9R2y" node="1Uhwoc5Y3zj" resolve="weave_Discrete" />
       </node>
