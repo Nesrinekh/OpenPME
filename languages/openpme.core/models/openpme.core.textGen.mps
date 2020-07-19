@@ -1462,23 +1462,6 @@
               <node concept="117lpO" id="47KNQXwoAfZ" role="2Oq$k0" />
             </node>
           </node>
-          <node concept="la8eA" id="47KNQXwoAgf" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="la8eA" id="47KNQXwoAgi" role="lcghm">
-            <property role="lacIc" value="=" />
-          </node>
-          <node concept="la8eA" id="47KNQXwoAgv" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="l9hG8" id="47KNQXwoAgA" role="lcghm">
-            <node concept="2OqwBi" id="47KNQXwoAgB" role="lb14g">
-              <node concept="117lpO" id="47KNQXwoAg_" role="2Oq$k0" />
-              <node concept="3TrEf2" id="47KNQXwoAgy" role="2OqNvi">
-                <ref role="3Tt5mk" to="r2co:1Uhwoc5XE4n" resolve="equation" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>

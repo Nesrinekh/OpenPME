@@ -617,13 +617,6 @@
     <node concept="PrWs8" id="1Uhwoc5XE4l" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="1Uhwoc5XE4n" role="1TKVEi">
-      <property role="IQ2ns" value="2202684092501631255" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="equation" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
-    </node>
     <node concept="1TJgyi" id="5WMTRp7YmxH" role="1TKVEl">
       <property role="IQ2nx" value="6859799677638371437" />
       <property role="TrG5h" value="id" />
