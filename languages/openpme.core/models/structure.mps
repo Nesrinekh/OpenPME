@@ -287,15 +287,15 @@
   <node concept="1TIwiD" id="6z0p_feMAv6">
     <property role="EcuMT" value="7548145485610641350" />
     <property role="3GE5qa" value="simulation.type" />
-    <property role="TrG5h" value="Continuous" />
-    <property role="34LRSv" value="continuous" />
+    <property role="TrG5h" value="MeshBased" />
+    <property role="34LRSv" value="mesh-based" />
     <ref role="1TJDcQ" node="6z0p_feMAuu" resolve="TypeOfSimulation" />
   </node>
   <node concept="1TIwiD" id="6z0p_feMAv7">
     <property role="EcuMT" value="7548145485610641351" />
     <property role="3GE5qa" value="simulation.type" />
-    <property role="TrG5h" value="Discrete" />
-    <property role="34LRSv" value="discrete" />
+    <property role="TrG5h" value="ParticleBased" />
+    <property role="34LRSv" value="particle-based" />
     <ref role="1TJDcQ" node="6z0p_feMAuu" resolve="TypeOfSimulation" />
   </node>
   <node concept="1TIwiD" id="7Ouveptjg3m">

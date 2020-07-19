@@ -954,7 +954,7 @@
   </node>
   <node concept="24kQdi" id="5WMTRp85xCw">
     <property role="3GE5qa" value="simulation.type" />
-    <ref role="1XX52x" to="r2co:6z0p_feMAv7" resolve="Discrete" />
+    <ref role="1XX52x" to="r2co:6z0p_feMAv7" resolve="ParticleBased" />
     <node concept="3EZMnI" id="5WMTRp85xCy" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="PMmxH" id="5BkNMNhFikg" role="3EZMnx">
