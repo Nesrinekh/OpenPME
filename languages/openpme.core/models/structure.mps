@@ -803,5 +803,37 @@
       <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="jnrNESv$nm">
+    <property role="EcuMT" value="348869794138572246" />
+    <property role="3GE5qa" value="simulation.command" />
+    <property role="TrG5h" value="Copy" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="jnrNESv$nn" role="1TKVEi">
+      <property role="IQ2ns" value="348869794138572247" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="source" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="jnrNESv$np" role="1TKVEi">
+      <property role="IQ2ns" value="348869794138572249" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jnrNESvOU2">
+    <property role="EcuMT" value="348869794138640002" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="E" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="jnrNESvOUd" role="1TKVEi">
+      <property role="IQ2ns" value="348869794138640013" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exponent" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
+    </node>
+  </node>
 </model>
 

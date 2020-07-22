@@ -1028,5 +1028,90 @@
       <node concept="l2Vlx" id="5BkNMNhkb2t" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="jnrNESv$n$">
+    <property role="3GE5qa" value="simulation.command" />
+    <ref role="1XX52x" to="r2co:jnrNESv$nm" resolve="Copy" />
+    <node concept="3EZMnI" id="jnrNESv$nA" role="2wV5jI">
+      <node concept="3F0ifn" id="jnrNESv$nH" role="3EZMnx">
+        <property role="3F0ifm" value="copy from" />
+      </node>
+      <node concept="3F1sOY" id="jnrNESv$nN" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:jnrNESv$nn" resolve="source" />
+      </node>
+      <node concept="3F0ifn" id="jnrNESv$nV" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="3F1sOY" id="jnrNESv$ob" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:jnrNESv$np" resolve="target" />
+      </node>
+      <node concept="l2Vlx" id="jnrNESv$nD" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jnrNESv$op">
+    <property role="3GE5qa" value="simulation.type" />
+    <ref role="1XX52x" to="r2co:6z0p_feMAv6" resolve="Continuous" />
+    <node concept="3EZMnI" id="jnrNESv$or" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="PMmxH" id="jnrNESv$os" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="ljvvj" id="jnrNESv$ot" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="jnrNESv$o_" role="3EZMnx">
+        <property role="3F0ifm" value="Meshes:" />
+        <node concept="ljvvj" id="jnrNESv$oA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="jnrNESv$oB" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5BkNMNhkqfn" resolve="mesh" />
+        <node concept="2iRkQZ" id="jnrNESv$oC" role="2czzBx" />
+        <node concept="VPM3Z" id="jnrNESv$oD" role="3F10Kt" />
+        <node concept="ljvvj" id="jnrNESv$oE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="jnrNESv$oF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="jnrNESv$oG" role="3EZMnx">
+        <node concept="ljvvj" id="jnrNESv$oH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="jnrNESv$oI" role="3EZMnx">
+        <property role="3F0ifm" value="Commands:" />
+        <node concept="ljvvj" id="jnrNESv$oJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="jnrNESv$oK" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk6t" resolve="body" />
+        <node concept="2iRkQZ" id="jnrNESv$oL" role="2czzBx" />
+        <node concept="VPM3Z" id="jnrNESv$oM" role="3F10Kt" />
+        <node concept="ljvvj" id="jnrNESv$oN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="jnrNESv$oO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="jnrNESv$oP" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="jnrNESvOUb">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="r2co:jnrNESvOU2" resolve="E" />
+    <node concept="3EZMnI" id="jnrNESvOUf" role="2wV5jI">
+      <node concept="3F0ifn" id="jnrNESvOUm" role="3EZMnx">
+        <property role="3F0ifm" value="e ^" />
+      </node>
+      <node concept="3F1sOY" id="jnrNESvOUs" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:jnrNESvOUd" resolve="exponent" />
+      </node>
+      <node concept="l2Vlx" id="jnrNESvOUi" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -11,6 +11,10 @@
   <imports />
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
+      <concept id="6473026355835667551" name="openpme.core.structure.FieldContainer" flags="ng" index="28xOHN">
+        <child id="6473026355835667552" name="property" index="28xOHc" />
+      </concept>
+      <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC" />
       <concept id="7548145485610539130" name="openpme.core.structure.Domain" flags="ng" index="2A2bSD">
         <child id="7548145485610582911" name="domain" index="2A2ukG" />
@@ -23,13 +27,44 @@
       <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
       <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni" />
       <concept id="7548145485610641350" name="openpme.core.structure.Continuous" flags="ng" index="2A2w6l" />
+      <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
+        <child id="6473026355835544535" name="mesh" index="28xmNV" />
+        <child id="2202684092501541277" name="body" index="rpc0u" />
+      </concept>
+      <concept id="348869794138640002" name="openpme.core.structure.E" flags="ng" index="2WE26S">
+        <child id="348869794138640013" name="exponent" index="2WE26R" />
+      </concept>
+      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
+        <child id="2202684092501631255" name="equation" index="rpM2k" />
+      </concept>
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
-      <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c" />
+      <concept id="1387474872145762371" name="openpme.expressions.structure.DoubleType" flags="ng" index="2qhxl8" />
+      <concept id="8275820577561349363" name="openpme.expressions.structure.BinaryExpression" flags="ng" index="2$G184">
+        <child id="8275820577561349366" name="left" index="2$G181" />
+        <child id="8275820577561349370" name="right" index="2$G18d" />
+      </concept>
+      <concept id="8275820577561349375" name="openpme.expressions.structure.AssignmentExpression" flags="ng" index="2$G188" />
+      <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
+        <property id="8275820577561417724" name="value" index="2$GK$b" />
+      </concept>
       <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY" />
+      <concept id="2525416462909175106" name="openpme.expressions.structure.Expression" flags="ng" index="2I$Y6A" />
+      <concept id="7436269412207138817" name="openpme.expressions.structure.MultiplicationExpression" flags="ng" index="37xRuw" />
+      <concept id="8073773260958242859" name="openpme.expressions.structure.ITyped" flags="ng" index="1wvloE">
+        <child id="8073773260958242860" name="type" index="1wvloH" />
+      </concept>
+    </language>
+    <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
+      <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
+        <child id="8073773260958243017" name="init" index="1wvlr8" />
+      </concept>
+      <concept id="8073773260958208202" name="openpme.statements.structure.ExpressionStatement" flags="ng" index="1wvtVb">
+        <child id="8073773260958208203" name="expression" index="1wvtVa" />
+      </concept>
     </language>
     <language id="735a5c6f-9751-4d40-91fe-215faa5468a6" name="openpme.modules">
       <concept id="5443610339528609846" name="openpme.modules.structure.Visualization" flags="ng" index="1GH8rP" />
@@ -75,7 +110,80 @@
       </node>
     </node>
     <node concept="1GH8rQ" id="jnrNESv$lC" role="1GHewH">
-      <node concept="2A2w6l" id="jnrNESv$lF" role="2A2w7f" />
+      <node concept="2A2w6l" id="jnrNESv$lF" role="2A2w7f">
+        <node concept="2G0pd6" id="jnrNESvOTk" role="rpc0u">
+          <property role="TrG5h" value="dt" />
+          <node concept="2$GK$c" id="jnrNESvOTz" role="1wvlr8">
+            <property role="2$GK$b" value="1.0" />
+          </node>
+          <node concept="2qhxl8" id="jnrNESvOTx" role="1wvloH" />
+        </node>
+        <node concept="2G0pd6" id="jnrNESvOTF" role="rpc0u">
+          <property role="TrG5h" value="du" />
+          <node concept="2qhxl8" id="jnrNESvOTL" role="1wvloH" />
+          <node concept="37xRuw" id="jnrNESvOTQ" role="1wvlr8">
+            <node concept="2$GK$c" id="jnrNESvOTZ" role="2$G181">
+              <property role="2$GK$b" value="2.0" />
+            </node>
+            <node concept="2WE26S" id="jnrNESw5aJ" role="2$G18d">
+              <node concept="2$GK$c" id="jnrNESw5aM" role="2WE26R">
+                <property role="2$GK$b" value="-5" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2G0pd6" id="jnrNESwln6" role="rpc0u">
+          <property role="TrG5h" value="dv" />
+          <node concept="2WE26S" id="jnrNESwlnF" role="1wvlr8">
+            <node concept="2$GK$c" id="jnrNESwlnI" role="2WE26R">
+              <property role="2$GK$b" value="-5" />
+            </node>
+          </node>
+          <node concept="2qhxl8" id="jnrNESwlol" role="1wvloH" />
+        </node>
+        <node concept="2G0pd6" id="jnrNESwlnY" role="rpc0u">
+          <property role="TrG5h" value="K" />
+          <node concept="2$GK$c" id="jnrNESwlon" role="1wvlr8">
+            <property role="2$GK$b" value="0.053" />
+          </node>
+          <node concept="2qhxl8" id="jnrNESwloj" role="1wvloH" />
+        </node>
+        <node concept="2G0pd6" id="jnrNESwloq" role="rpc0u">
+          <property role="TrG5h" value="F" />
+          <node concept="2$GK$c" id="jnrNESwlor" role="1wvlr8">
+            <property role="2$GK$b" value="0.014" />
+          </node>
+          <node concept="2qhxl8" id="jnrNESwlos" role="1wvloH" />
+        </node>
+        <node concept="1wvtVb" id="jnrNESwlp5" role="rpc0u">
+          <node concept="2$G188" id="jnrNESwlpu" role="1wvtVa">
+            <node concept="2I$Y6A" id="jnrNESwlpw" role="2$G181" />
+            <node concept="2I$Y6A" id="jnrNESwlpy" role="2$G18d" />
+          </node>
+        </node>
+        <node concept="28AKH2" id="jnrNESvOSt" role="28xmNV">
+          <property role="TrG5h" value="old" />
+          <node concept="1Rqx6$" id="jnrNESvOSu" role="28xOHc">
+            <property role="TrG5h" value="Uo" />
+            <node concept="2I$Y6A" id="jnrNESvOSv" role="rpM2k" />
+          </node>
+          <node concept="1Rqx6$" id="jnrNESvOSF" role="28xOHc">
+            <property role="TrG5h" value="Vo" />
+            <node concept="2I$Y6A" id="jnrNESvOSG" role="rpM2k" />
+          </node>
+        </node>
+        <node concept="28AKH2" id="jnrNESvOSX" role="28xmNV">
+          <property role="TrG5h" value="new" />
+          <node concept="1Rqx6$" id="jnrNESvOT8" role="28xOHc">
+            <property role="TrG5h" value="Un" />
+            <node concept="2I$Y6A" id="jnrNESvOT9" role="rpM2k" />
+          </node>
+          <node concept="1Rqx6$" id="jnrNESvOTc" role="28xOHc">
+            <property role="TrG5h" value="Vn" />
+            <node concept="2I$Y6A" id="jnrNESvOTd" role="rpM2k" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1GH8rP" id="jnrNESv$lE" role="1GHewQ" />
   </node>
