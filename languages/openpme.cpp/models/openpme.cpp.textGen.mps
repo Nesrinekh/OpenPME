@@ -449,7 +449,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2awt9IhV7A_">
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="openPME" />
     <ref role="WuzLi" to="lfpi:2awt9IhPygL" resolve="ExpressionOpenPME" />
     <node concept="11bSqf" id="2awt9IhV7AA" role="11c4hB">
       <node concept="3clFbS" id="2awt9IhV7AB" role="2VODD2">
@@ -514,8 +514,8 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1HVDfNPw2YN">
-    <property role="3GE5qa" value="Expression" />
-    <ref role="WuzLi" to="lfpi:1HVDfNPw2YK" resolve="BoundaryPPME" />
+    <property role="3GE5qa" value="openPME" />
+    <ref role="WuzLi" to="lfpi:1HVDfNPw2YK" resolve="BoundaryOpenPME" />
     <node concept="11bSqf" id="1HVDfNPw2YO" role="11c4hB">
       <node concept="3clFbS" id="1HVDfNPw2YP" role="2VODD2">
         <node concept="lc7rE" id="1HVDfNPw2Z9" role="3cqZAp">
@@ -1322,9 +1322,6 @@
           </node>
         </node>
         <node concept="lc7rE" id="5WMTRp7M_sE" role="3cqZAp">
-          <node concept="la8eA" id="5WMTRp7M_A_" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
           <node concept="l9hG8" id="2wy6nJ6_KfU" role="lcghm">
             <node concept="2OqwBi" id="2wy6nJ6_Krb" role="lb14g">
               <node concept="117lpO" id="2wy6nJ6_KgM" role="2Oq$k0" />
@@ -2228,6 +2225,19 @@
                 <ref role="3Tt5mk" to="lfpi:1Uhwoc6tyPc" resolve="right" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2VozsUVONTZ">
+    <property role="3GE5qa" value="openPME" />
+    <ref role="WuzLi" to="lfpi:2VozsUVONT8" resolve="InitRing" />
+    <node concept="11bSqf" id="2VozsUVONU0" role="11c4hB">
+      <node concept="3clFbS" id="2VozsUVONU1" role="2VODD2">
+        <node concept="lc7rE" id="2VozsUVONUO" role="3cqZAp">
+          <node concept="la8eA" id="2VozsUVONVa" role="lcghm">
+            <property role="lacIc" value="\tconstexpr int nk = 32;\n\n\tfloat ak[nk];\n\tfloat bk[nk];\n\n\tfor (size_t i = 0 ; i &lt; nk ; i++)\n\t{\n\t     ak[i] = rand()/RAND_MAX;\n\t     bk[i] = rand()/RAND_MAX;\n\t}\n\n\t// We calculate the circuitation gamma\n\tfloat gamma = nu * tgtre;\n\tfloat rinv2 = 1.0f/(sigma*sigma);\n\tfloat max_vorticity = gamma*rinv2/M_PI;\n\n\t// We go through the grid to initialize the vortex\n\tauto it = gr.getDomainIterator();\n\n\twhile (it.isNext())\n\t{\n\t\tauto key_d = it.get();\n\t\tauto key = it.getGKey(key_d);\n\n        float tx = (key.get(x)-2)*gr.spacing(x) + domain.getLow(x);\n        float ty = (key.get(y)-2)*gr.spacing(y) + domain.getLow(y);\n        float tz = (key.get(z)-2)*gr.spacing(z) + domain.getLow(z);\n        float theta1 = atan2((ty-domain.getHigh(1)/2.0f),(tz-domain.getHigh(2)/2.0f));\n\n\n        float rad1r  = sqrt((ty-domain.getHigh(1)/2.0f)*(ty-domain.getHigh(1)/2.0f) + (tz-domain.getHigh(2)/2.0f)*(tz-domain.getHigh(2)/2.0f)) - ringr1;\n        float rad1t = tx - 1.0f;\n        float rad1sq = rad1r*rad1r + rad1t*rad1t;\n        float radstr = -exp(-rad1sq*rinv2)*rinv2*gamma/M_PI;\n        gr.template get&lt;vorticity&gt;(key_d)[x] = 0.0f;\n        gr.template get&lt;vorticity&gt;(key_d)[y] = -radstr * cos(theta1);\n        gr.template get&lt;vorticity&gt;(key_d)[z] = radstr * sin(theta1);\n\n        // kill the axis term\n\n        float rad1r_  = sqrt((ty-domain.getHigh(1)/2.0f)*(ty-domain.getHigh(1)/2.0f) + (tz-domain.getHigh(2)/2.0f)*(tz-domain.getHigh(2)/2.0f)) + ringr1;\n        float rad1sqTILDA = rad1sq*rinv2;\n        radstr = exp(-rad1sq*rinv2)*rinv2*gamma/M_PI;\n        gr.template get&lt;vorticity&gt;(key_d)[x] = 0.0f;\n        gr.template get&lt;vorticity&gt;(key_d)[y] = -radstr * cos(theta1);\n        gr.template get&lt;vorticity&gt;(key_d)[z] = radstr * sin(theta1);\n\n\t\t++it;\n\t}\n" />
           </node>
         </node>
       </node>

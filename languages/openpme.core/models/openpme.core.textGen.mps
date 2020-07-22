@@ -1244,19 +1244,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="47KNQXwoAc2">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="WuzLi" to="r2co:1MYyjtFOOK9" resolve="Remesh" />
-    <node concept="11bSqf" id="47KNQXwoAc3" role="11c4hB">
-      <node concept="3clFbS" id="47KNQXwoAc4" role="2VODD2">
-        <node concept="lc7rE" id="47KNQXwoAc7" role="3cqZAp">
-          <node concept="la8eA" id="47KNQXwoAc6" role="lcghm">
-            <property role="lacIc" value="Remesh" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="47KNQXwoAcj">
     <property role="3GE5qa" value="simulation.command.discrete" />
     <ref role="WuzLi" to="r2co:6sMVU6wHprM" resolve="CellList" />
@@ -1473,23 +1460,6 @@
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
               <node concept="117lpO" id="47KNQXwoAfZ" role="2Oq$k0" />
-            </node>
-          </node>
-          <node concept="la8eA" id="47KNQXwoAgf" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="la8eA" id="47KNQXwoAgi" role="lcghm">
-            <property role="lacIc" value="=" />
-          </node>
-          <node concept="la8eA" id="47KNQXwoAgv" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
-          <node concept="l9hG8" id="47KNQXwoAgA" role="lcghm">
-            <node concept="2OqwBi" id="47KNQXwoAgB" role="lb14g">
-              <node concept="117lpO" id="47KNQXwoAg_" role="2Oq$k0" />
-              <node concept="3TrEf2" id="47KNQXwoAgy" role="2OqNvi">
-                <ref role="3Tt5mk" to="r2co:1Uhwoc5XE4n" resolve="equation" />
-              </node>
             </node>
           </node>
         </node>
