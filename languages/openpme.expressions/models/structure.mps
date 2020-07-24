@@ -555,7 +555,7 @@
     <property role="EcuMT" value="2202684092512217962" />
     <property role="TrG5h" value="PlusAssignmentExpression" />
     <property role="34LRSv" value="+=" />
-    <ref role="1TJDcQ" node="7bpBJvmqoNN" resolve="BinaryExpression" />
+    <ref role="1TJDcQ" node="7bpBJvmqoNZ" resolve="AssignmentExpression" />
   </node>
   <node concept="1TIwiD" id="1d1jgI8Riqn">
     <property role="EcuMT" value="1387474872142997143" />

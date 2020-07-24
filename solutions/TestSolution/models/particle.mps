@@ -53,7 +53,7 @@
         <child id="7548145485610582920" name="z0" index="2A2unr" />
         <child id="7548145485610582924" name="x1" index="2A2unv" />
       </concept>
-      <concept id="7548145485610641351" name="openpme.core.structure.Discrete" flags="ng" index="2A2w6k" />
+      <concept id="7548145485610641351" name="openpme.core.structure.ParticleBased" flags="ng" index="2A2w6k" />
       <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
         <child id="6473026355835361756" name="particle" index="28AxrK" />
@@ -149,12 +149,6 @@
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
       </concept>
       <concept id="1387474872148681594" name="openpme.statements.structure.SkipIteration" flags="ng" index="2qsETL" />
-      <concept id="1387474872142362010" name="openpme.statements.structure.ResyncGhostVectorDist" flags="ng" index="2r$zyh">
-        <child id="1387474872142362011" name="vector" index="2r$zyg" />
-      </concept>
-      <concept id="1387474872142362007" name="openpme.statements.structure.MapVectorDist" flags="ng" index="2r$zys">
-        <child id="1387474872142362008" name="vector" index="2r$zyj" />
-      </concept>
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
       </concept>
@@ -401,16 +395,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="2r$zys" id="5WMTRp7_hEo" role="oWeDG">
-            <node concept="1XiV_f" id="2VozsUVJ3gV" role="2r$zyj">
-              <ref role="1Xh6_M" node="5BkNMNhFKT8" resolve="particles" />
-            </node>
-          </node>
-          <node concept="2r$zyh" id="5WMTRp7_hEq" role="oWeDG">
-            <node concept="1XiV_f" id="2VozsUVJ3gY" role="2r$zyg">
-              <ref role="1Xh6_M" node="5BkNMNhFKT8" resolve="particles" />
             </node>
           </node>
           <node concept="2qi2cO" id="5WMTRp7Rk_g" role="oWeDG">
