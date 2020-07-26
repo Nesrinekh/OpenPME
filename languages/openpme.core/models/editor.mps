@@ -1159,7 +1159,7 @@
   </node>
   <node concept="24kQdi" id="jnrNESv$op">
     <property role="3GE5qa" value="simulation.type" />
-    <ref role="1XX52x" to="r2co:6z0p_feMAv6" resolve="Continuous" />
+    <ref role="1XX52x" to="r2co:6z0p_feMAv6" resolve="MeshBased" />
     <node concept="3EZMnI" id="jnrNESv$or" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="PMmxH" id="jnrNESv$os" role="3EZMnx">
@@ -1330,6 +1330,25 @@
         </node>
       </node>
       <node concept="l2Vlx" id="2VozsUVPZeV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29Q0z7qeyvv">
+    <property role="3GE5qa" value="simulation.command" />
+    <ref role="1XX52x" to="r2co:29Q0z7qeyvk" resolve="SetMeshRW" />
+    <node concept="3EZMnI" id="29Q0z7qeyvx" role="2wV5jI">
+      <node concept="3F1sOY" id="29Q0z7qeyvC" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:29Q0z7qeyvl" resolve="meshReference" />
+      </node>
+      <node concept="3F0ifn" id="29Q0z7qeyvI" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F0ifn" id="29Q0z7qeyvQ" role="3EZMnx">
+        <property role="3F0ifm" value="access_r_w =" />
+      </node>
+      <node concept="3F0A7n" id="29Q0z7qeyw2" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:29Q0z7qeyw0" resolve="access_r_w" />
+      </node>
+      <node concept="l2Vlx" id="29Q0z7qeyv$" role="2iSdaV" />
     </node>
   </node>
 </model>
