@@ -919,5 +919,23 @@
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="29Q0z7qeyvk">
+    <property role="EcuMT" value="2483174657679304660" />
+    <property role="3GE5qa" value="simulation.command" />
+    <property role="TrG5h" value="SetMeshRW" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="29Q0z7qeyvl" role="1TKVEi">
+      <property role="IQ2ns" value="2483174657679304661" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="meshReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyi" id="29Q0z7qeyw0" role="1TKVEl">
+      <property role="IQ2nx" value="2483174657679304704" />
+      <property role="TrG5h" value="access_r_w" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 
