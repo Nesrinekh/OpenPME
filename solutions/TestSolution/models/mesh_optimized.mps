@@ -19,18 +19,30 @@
         <child id="6473026355835667552" name="property" index="28xOHc" />
       </concept>
       <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
-      <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC" />
+      <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
+        <child id="7548145485610641296" name="Boundary" index="2A2w73" />
+      </concept>
       <concept id="7548145485610539130" name="openpme.core.structure.Domain" flags="ng" index="2A2bSD">
         <child id="7548145485610582911" name="domain" index="2A2ukG" />
       </concept>
-      <concept id="7548145485610539129" name="openpme.core.structure.Dimension" flags="ng" index="2A2bSE" />
+      <concept id="7548145485610539129" name="openpme.core.structure.Dimension" flags="ng" index="2A2bSE">
+        <child id="7548145485610567368" name="dimension" index="2A2i2r" />
+      </concept>
       <concept id="7548145485610539134" name="openpme.core.structure.CutoffRadius" flags="ng" index="2A2bSH">
         <child id="7548145485610591343" name="cutoffradius_value" index="2A2s8W" />
       </concept>
       <concept id="7548145485610539133" name="openpme.core.structure.Ghost" flags="ng" index="2A2bSI" />
       <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
-      <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni" />
+      <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni">
+        <child id="7548145485610582929" name="y1" index="2A2un2" />
+        <child id="7548145485610582935" name="z1" index="2A2un4" />
+        <child id="7548145485610582914" name="x0" index="2A2unh" />
+        <child id="7548145485610582917" name="y0" index="2A2unm" />
+        <child id="7548145485610582920" name="z0" index="2A2unr" />
+        <child id="7548145485610582924" name="x1" index="2A2unv" />
+      </concept>
       <concept id="7548145485610641350" name="openpme.core.structure.MeshBased" flags="ng" index="2A2w6l" />
+      <concept id="7548145485610641299" name="openpme.core.structure.Periodic" flags="ng" index="2A2w70" />
       <concept id="7548145485610641310" name="openpme.core.structure.TypeOfSimulation" flags="ng" index="2A2w7d">
         <child id="6473026355835544535" name="mesh" index="28xmNV" />
         <child id="2202684092501541277" name="body" index="rpc0u" />
@@ -125,14 +137,41 @@
   <node concept="1GHexR" id="jnrNESv$ls">
     <property role="TrG5h" value="Gray Scott" />
     <node concept="1GH8rR" id="jnrNESv$lt" role="1GHexQ">
-      <node concept="2A2bSE" id="jnrNESv$lu" role="2A29xc" />
-      <node concept="2A2bSD" id="jnrNESv$lv" role="2A29xM">
-        <node concept="2A2uni" id="jnrNESv$lw" role="2A2ukG" />
+      <node concept="2A2bSE" id="jnrNESv$lu" role="2A29xc">
+        <node concept="2$GKAY" id="29Q0z7qfbYI" role="2A2i2r">
+          <property role="2$GKAX" value="3" />
+        </node>
       </node>
-      <node concept="2A2bSC" id="jnrNESv$lx" role="2A29xR" />
+      <node concept="2A2bSD" id="jnrNESv$lv" role="2A29xM">
+        <node concept="2A2uni" id="jnrNESv$lw" role="2A2ukG">
+          <node concept="2$GK$c" id="29Q0z7qfbYt" role="2A2unh">
+            <property role="2$GK$b" value="0.0" />
+          </node>
+          <node concept="2$GK$c" id="29Q0z7qfbYv" role="2A2unm">
+            <property role="2$GK$b" value="0.0" />
+          </node>
+          <node concept="2$GK$c" id="29Q0z7qfbYx" role="2A2unr">
+            <property role="2$GK$b" value="0.0" />
+          </node>
+          <node concept="2$GK$c" id="29Q0z7qfbYz" role="2A2unv">
+            <property role="2$GK$b" value="2.5" />
+          </node>
+          <node concept="2$GK$c" id="29Q0z7qfbY_" role="2A2un2">
+            <property role="2$GK$b" value="2.5" />
+          </node>
+          <node concept="2$GK$c" id="29Q0z7qfbYB" role="2A2un4">
+            <property role="2$GK$b" value="2.5" />
+          </node>
+        </node>
+      </node>
+      <node concept="2A2bSC" id="jnrNESv$lx" role="2A29xR">
+        <node concept="2A2w70" id="29Q0z7qfbYF" role="2A2w73" />
+      </node>
       <node concept="2A2bSJ" id="jnrNESv$ly" role="2A29xV" />
       <node concept="2A2bSH" id="jnrNESv$lz" role="2A29xY">
-        <node concept="2$GK$c" id="jnrNESv$l$" role="2A2s8W" />
+        <node concept="2$GK$c" id="29Q0z7qfbYq" role="2A2s8W">
+          <property role="2$GK$b" value="1" />
+        </node>
       </node>
       <node concept="2A2bSI" id="jnrNESv$l_" role="2A29xw" />
       <node concept="1RreUV" id="jnrNESv$lA" role="1Rr2o6">
