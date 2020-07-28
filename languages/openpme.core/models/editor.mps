@@ -1153,6 +1153,18 @@
       </node>
       <node concept="3F1sOY" id="5BkNMNhvqe7" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:5BkNMNhvq1s" resolve="size" />
+        <node concept="ljvvj" id="1ptR2ykoJsK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1ptR2ykoJsO" role="3EZMnx">
+        <property role="3F0ifm" value="access_r_w" />
+        <node concept="lj46D" id="1ptR2ykoJtS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1ptR2ykoJtx" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1ptR2ykoJnI" resolve="access" />
       </node>
       <node concept="l2Vlx" id="5BkNMNhkb2t" role="2iSdaV" />
     </node>

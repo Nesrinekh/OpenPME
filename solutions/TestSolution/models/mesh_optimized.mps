@@ -19,7 +19,9 @@
         <child id="6473026355835667552" name="property" index="28xOHc" />
         <child id="6473026355838427228" name="size" index="28EmXK" />
       </concept>
-      <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
+      <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2">
+        <child id="1611686308514821614" name="access" index="22fMB6" />
+      </concept>
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
         <child id="7548145485610641296" name="Boundary" index="2A2w73" />
       </concept>
@@ -75,6 +77,7 @@
         <child id="8275820577561349370" name="right" index="2$G18d" />
       </concept>
       <concept id="8275820577561349375" name="openpme.expressions.structure.AssignmentExpression" flags="ng" index="2$G188" />
+      <concept id="8275820577561482125" name="openpme.expressions.structure.FalseLiteral" flags="ng" index="2$GwPU" />
       <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
         <property id="8275820577561417724" name="value" index="2$GK$b" />
       </concept>
@@ -455,6 +458,7 @@
               <property role="2$GKAX" value="128" />
             </node>
           </node>
+          <node concept="2$GwPU" id="1ptR2ykpDtv" role="22fMB6" />
         </node>
       </node>
     </node>

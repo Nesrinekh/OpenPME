@@ -354,6 +354,7 @@
     <property role="EcuMT" value="8275820577561482121" />
     <property role="TrG5h" value="BooleanLiteral" />
     <property role="3GE5qa" value="literals.boolean" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="7bpBJvmqDt8" resolve="Literal" />
   </node>
   <node concept="1TIwiD" id="7bpBJvmqTea">
@@ -372,6 +373,7 @@
     <property role="EcuMT" value="8275820577561482125" />
     <property role="3GE5qa" value="literals.boolean" />
     <property role="TrG5h" value="FalseLiteral" />
+    <property role="34LRSv" value="false" />
     <ref role="1TJDcQ" node="7bpBJvmqTe9" resolve="BooleanLiteral" />
   </node>
   <node concept="PlHQZ" id="70bNw4gtDwF">
