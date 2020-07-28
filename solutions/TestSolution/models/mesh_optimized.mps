@@ -17,6 +17,7 @@
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
       <concept id="6473026355835667551" name="openpme.core.structure.FieldContainer" flags="ng" index="28xOHN">
         <child id="6473026355835667552" name="property" index="28xOHc" />
+        <child id="6473026355838427228" name="size" index="28EmXK" />
       </concept>
       <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
@@ -31,7 +32,9 @@
       <concept id="7548145485610539134" name="openpme.core.structure.CutoffRadius" flags="ng" index="2A2bSH">
         <child id="7548145485610591343" name="cutoffradius_value" index="2A2s8W" />
       </concept>
-      <concept id="7548145485610539133" name="openpme.core.structure.Ghost" flags="ng" index="2A2bSI" />
+      <concept id="7548145485610539133" name="openpme.core.structure.Ghost" flags="ng" index="2A2bSI">
+        <child id="9015780832891892387" name="ghost_value" index="wloT5" />
+      </concept>
       <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
       <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni">
         <child id="7548145485610582929" name="y1" index="2A2un2" />
@@ -59,9 +62,7 @@
       </concept>
       <concept id="7436269412207138368" name="openpme.core.structure.LaplacianOperator" flags="ng" index="37xRBx" />
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$" />
-      <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
-        <child id="2071243749762164621" name="num_particles" index="1RreUU" />
-      </concept>
+      <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV" />
       <concept id="2483174657679304660" name="openpme.core.structure.SetMeshRW" flags="ng" index="3Sj2n_">
         <child id="2483174657679304661" name="meshReference" index="3Sj2n$" />
       </concept>
@@ -76,6 +77,9 @@
       <concept id="8275820577561349375" name="openpme.expressions.structure.AssignmentExpression" flags="ng" index="2$G188" />
       <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
         <property id="8275820577561417724" name="value" index="2$GK$b" />
+      </concept>
+      <concept id="8275820577561417696" name="openpme.expressions.structure.VectorLiteral" flags="ng" index="2$GK$n">
+        <child id="8275820577561417697" name="values" index="2$GK$m" />
       </concept>
       <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY">
         <property id="8275820577561417546" name="value" index="2$GKAX" />
@@ -94,9 +98,6 @@
     <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
       <concept id="1387474872146285163" name="openpme.statements.structure.PropertyReference" flags="ng" index="2qjxXw">
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
-      </concept>
-      <concept id="1387474872142362010" name="openpme.statements.structure.ResyncGhostVectorDist" flags="ng" index="2r$zyh">
-        <child id="1387474872142362011" name="vector" index="2r$zyg" />
       </concept>
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
@@ -173,10 +174,12 @@
           <property role="2$GK$b" value="1" />
         </node>
       </node>
-      <node concept="2A2bSI" id="jnrNESv$l_" role="2A29xw" />
-      <node concept="1RreUV" id="jnrNESv$lA" role="1Rr2o6">
-        <node concept="2$GKAY" id="jnrNESv$lB" role="1RreUU" />
+      <node concept="2A2bSI" id="jnrNESv$l_" role="2A29xw">
+        <node concept="2$GK$c" id="1ptR2ykov6d" role="wloT5">
+          <property role="2$GK$b" value="1" />
+        </node>
       </node>
+      <node concept="1RreUV" id="jnrNESv$lA" role="1Rr2o6" />
     </node>
     <node concept="1GH8rQ" id="jnrNESv$lC" role="1GHewH">
       <node concept="2A2w6l" id="jnrNESv$lF" role="2A2w7f">
@@ -257,11 +260,6 @@
             <node concept="2$GK$c" id="jnrNESxGJt" role="2$G18d">
               <property role="2$GK$b" value="0.0" />
             </node>
-          </node>
-        </node>
-        <node concept="2r$zyh" id="jnrNESxGK1" role="rpc0u">
-          <node concept="1XiV_f" id="jnrNESxGKz" role="2r$zyg">
-            <ref role="1Xh6_M" node="jnrNESvOSt" resolve="species" />
           </node>
         </node>
         <node concept="SCFH9" id="jnrNESxGL8" role="rpc0u">
@@ -445,6 +443,17 @@
           </node>
           <node concept="1Rqx6$" id="jnrNESxGET" role="28xOHc">
             <property role="TrG5h" value="V" />
+          </node>
+          <node concept="2$GK$n" id="1ptR2ykoeWI" role="28EmXK">
+            <node concept="2$GKAY" id="1ptR2ykoeWR" role="2$GK$m">
+              <property role="2$GKAX" value="128" />
+            </node>
+            <node concept="2$GKAY" id="1ptR2ykoeWW" role="2$GK$m">
+              <property role="2$GKAX" value="128" />
+            </node>
+            <node concept="2$GKAY" id="1ptR2ykoeX4" role="2$GK$m">
+              <property role="2$GKAX" value="128" />
+            </node>
           </node>
         </node>
       </node>

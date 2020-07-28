@@ -147,7 +147,7 @@
       <property role="IQ2ns" value="9015780832891892387" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="ghost_value" />
-      <ref role="20lvS9" to="tpee:f_0OMvX" resolve="FloatType" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDvV" resolve="DecimalLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z0p_feMdxY">
@@ -530,7 +530,6 @@
       <property role="IQ2ns" value="2071243749762164621" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="num_particles" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
   </node>
