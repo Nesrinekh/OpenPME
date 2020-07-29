@@ -2,7 +2,7 @@
 <model ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions" version="0" />
+    <use id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -639,6 +639,12 @@
       <property role="20kJfa" value="stop" />
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
+    <node concept="1TJgyj" id="2whVLCSRloM" role="1TKVEi">
+      <property role="IQ2ns" value="2887351732023416370" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="timeSteppingScheme" />
+      <ref role="20lvS9" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7mV$Q_d6oGq">
     <property role="EcuMT" value="8483536403556829978" />
@@ -941,6 +947,19 @@
       <property role="TrG5h" value="access_r_w" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2whVLCSRlFk">
+    <property role="EcuMT" value="2887351732023417556" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="Euler" />
+    <ref role="1TJDcQ" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
+  </node>
+  <node concept="1TIwiD" id="2whVLCSRlFh">
+    <property role="EcuMT" value="2887351732023417553" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="TimeSteppingScheme" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
   </node>
 </model>
 
