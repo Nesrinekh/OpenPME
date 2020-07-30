@@ -948,18 +948,24 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2whVLCSRlFk">
-    <property role="EcuMT" value="2887351732023417556" />
-    <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="Euler" />
-    <ref role="1TJDcQ" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
-  </node>
   <node concept="1TIwiD" id="2whVLCSRlFh">
     <property role="EcuMT" value="2887351732023417553" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="TimeSteppingScheme" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="2whVLCSRlFk">
+    <property role="EcuMT" value="2887351732023417556" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="Euler" />
+    <ref role="1TJDcQ" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
+  </node>
+  <node concept="1TIwiD" id="2whVLCSSvJX">
+    <property role="EcuMT" value="2887351732023720957" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="RungeKutta2" />
+    <ref role="1TJDcQ" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
   </node>
 </model>
 
