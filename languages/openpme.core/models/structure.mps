@@ -967,5 +967,16 @@
     <property role="TrG5h" value="RungeKutta2" />
     <ref role="1TJDcQ" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
   </node>
+  <node concept="1TIwiD" id="2whVLCSSM_r">
+    <property role="EcuMT" value="2887351732023798107" />
+    <property role="3GE5qa" value="simulation.command" />
+    <property role="TrG5h" value="ReadFile" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyi" id="2whVLCSSM_s" role="1TKVEl">
+      <property role="IQ2nx" value="2887351732023798108" />
+      <property role="TrG5h" value="fileName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

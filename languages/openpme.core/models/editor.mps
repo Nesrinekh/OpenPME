@@ -1395,5 +1395,18 @@
       <property role="3F0ifm" value="Runge Kutta 2" />
     </node>
   </node>
+  <node concept="24kQdi" id="2whVLCSSM_A">
+    <property role="3GE5qa" value="simulation.command" />
+    <ref role="1XX52x" to="r2co:2whVLCSSM_r" resolve="ReadFile" />
+    <node concept="3EZMnI" id="2whVLCSSM_C" role="2wV5jI">
+      <node concept="3F0ifn" id="2whVLCSSM_J" role="3EZMnx">
+        <property role="3F0ifm" value="read file" />
+      </node>
+      <node concept="3F0A7n" id="2whVLCSSM_P" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2whVLCSSM_s" resolve="fileName" />
+      </node>
+      <node concept="l2Vlx" id="2whVLCSSM_F" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

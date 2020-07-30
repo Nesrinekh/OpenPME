@@ -21,6 +21,9 @@
       </concept>
       <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
       <concept id="2887351732023720957" name="openpme.core.structure.RungeKutta2" flags="ng" index="gW1jB" />
+      <concept id="2887351732023798107" name="openpme.core.structure.ReadFile" flags="ng" index="gWGp1">
+        <property id="2887351732023798108" name="fileName" index="gWGp6" />
+      </concept>
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
         <child id="7548145485610641296" name="Boundary" index="2A2w73" />
       </concept>
@@ -58,6 +61,8 @@
       </concept>
       <concept id="8483536403556804640" name="openpme.core.structure.TimeLoop" flags="ng" index="SCFH9">
         <child id="2887351732023416370" name="timeSteppingScheme" index="gNb$C" />
+        <child id="8483536403556804650" name="stop" index="SCFH3" />
+        <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
       <concept id="7436269412207138366" name="openpme.core.structure.DifferentialOperator" flags="ng" index="37xRAv" />
       <concept id="7436269412207138368" name="openpme.core.structure.LaplacianOperator" flags="ng" index="37xRBx" />
@@ -234,6 +239,21 @@
           <node concept="2qhxl8" id="5EGbNbOoyaS" role="1wvloH" />
           <node concept="2$GK$c" id="5EGbNbOoyeh" role="1wvlr8">
             <property role="2$GK$b" value="0.0125" />
+          </node>
+        </node>
+        <node concept="1wvtVb" id="2whVLCSTomk" role="rpc0u">
+          <node concept="2$G188" id="2whVLCSToot" role="1wvtVa">
+            <node concept="2IY9fg" id="2whVLCSTooD" role="2$G181">
+              <node concept="1XiV_f" id="2whVLCSTooM" role="2IY9fh">
+                <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+              </node>
+              <node concept="2qjxXw" id="2whVLCSTooP" role="2IY9fn">
+                <ref role="2qjxXB" node="5EGbNbOpmWF" resolve="vorticity_m" />
+              </node>
+            </node>
+            <node concept="gWGp1" id="2whVLCSTooS" role="2$G18d">
+              <property role="gWGp6" value="init_ring.csv" />
+            </node>
           </node>
         </node>
         <node concept="1RrskY" id="2VozsUW1yt_" role="rpc0u">
@@ -539,6 +559,12 @@
             </node>
           </node>
           <node concept="gW1jB" id="2whVLCSSMfn" role="gNb$C" />
+          <node concept="2$GKAY" id="2whVLCSSMt_" role="SCFHe">
+            <property role="2$GKAX" value="0" />
+          </node>
+          <node concept="2$GKAY" id="2whVLCSSMtB" role="SCFH3">
+            <property role="2$GKAX" value="5000" />
+          </node>
         </node>
         <node concept="1Rrs5l" id="5BkNMNhr9Z9" role="28AxrK">
           <property role="TrG5h" value="particles" />
