@@ -956,5 +956,11 @@
     <property role="TrG5h" value="Euler" />
     <ref role="1TJDcQ" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
   </node>
+  <node concept="1TIwiD" id="2whVLCSSvJX">
+    <property role="EcuMT" value="2887351732023720957" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="RungeKutta2" />
+    <ref role="1TJDcQ" node="2whVLCSRlFh" resolve="TimeSteppingScheme" />
+  </node>
 </model>
 

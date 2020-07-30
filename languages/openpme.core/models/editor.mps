@@ -1376,5 +1376,12 @@
       <property role="3F0ifm" value="Euler" />
     </node>
   </node>
+  <node concept="24kQdi" id="2whVLCSSvK6">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="r2co:2whVLCSSvJX" resolve="RungeKutta2" />
+    <node concept="3F0ifn" id="2whVLCSSvK8" role="2wV5jI">
+      <property role="3F0ifm" value="Runge Kutta 2" />
+    </node>
+  </node>
 </model>
 
