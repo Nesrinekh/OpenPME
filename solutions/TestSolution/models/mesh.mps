@@ -15,6 +15,7 @@
         <child id="6473026355835667552" name="property" index="28xOHc" />
       </concept>
       <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
+      <concept id="2887351732023417556" name="openpme.core.structure.Euler" flags="ng" index="gNbne" />
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
         <child id="7548145485610641296" name="Boundary" index="2A2w73" />
       </concept>
@@ -47,6 +48,7 @@
         <child id="2202684092508629999" name="body" index="oWeDG" />
       </concept>
       <concept id="8483536403556804640" name="openpme.core.structure.TimeLoop" flags="ng" index="SCFH9">
+        <child id="2887351732023416370" name="timeSteppingScheme" index="gNb$C" />
         <child id="8483536403556804650" name="stop" index="SCFH3" />
         <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
@@ -442,6 +444,7 @@
               <ref role="1Xh6_M" node="jnrNESvOSt" resolve="old" />
             </node>
           </node>
+          <node concept="gNbne" id="2whVLCSSv7a" role="gNb$C" />
         </node>
         <node concept="28AKH2" id="jnrNESvOSt" role="28xmNV">
           <property role="TrG5h" value="old" />
