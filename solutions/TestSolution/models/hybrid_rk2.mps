@@ -551,12 +551,6 @@
           <node concept="1Rqx6$" id="5EGbNbOpmXK" role="28xOHc">
             <property role="TrG5h" value="vortex-stretching" />
           </node>
-          <node concept="1Rqx6$" id="5EGbNbOpmYD" role="28xOHc">
-            <property role="TrG5h" value="old_vorticity" />
-          </node>
-          <node concept="1Rqx6$" id="5EGbNbOpmYP" role="28xOHc">
-            <property role="TrG5h" value="old_position" />
-          </node>
         </node>
         <node concept="28AKH2" id="5BkNMNhEjTp" role="28xmNV">
           <property role="TrG5h" value="velocity_mesh" />
