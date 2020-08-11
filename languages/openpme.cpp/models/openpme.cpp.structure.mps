@@ -461,6 +461,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2wy6nJ6_HYi" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="1fud6A15cJQ" role="1TKVEi">
+      <property role="IQ2ns" value="1431639359292230646" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="classifier" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1fud6A15cJV" resolve="Classifier" />
+    </node>
     <node concept="PrWs8" id="1Uhwoc5QJBc" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -638,6 +645,13 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2wy6nJ6ABLZ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="1fud6A18u0R" role="1TKVEi">
+      <property role="IQ2ns" value="1431639359293087799" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="classifier" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1fud6A15cJV" resolve="Classifier" />
     </node>
     <node concept="PrWs8" id="1Uhwoc5OPnZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -919,6 +933,18 @@
     <property role="3GE5qa" value="openPME" />
     <property role="TrG5h" value="InitRing" />
     <ref role="1TJDcQ" node="2wy6nJ6_Gn9" resolve="Statement" />
+  </node>
+  <node concept="1TIwiD" id="1fud6A15cJU">
+    <property role="EcuMT" value="1431639359292230650" />
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="StaticClassifier" />
+    <ref role="1TJDcQ" node="1fud6A15cJV" resolve="Classifier" />
+  </node>
+  <node concept="1TIwiD" id="1fud6A15cJV">
+    <property role="EcuMT" value="1431639359292230651" />
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="Classifier" />
+    <ref role="1TJDcQ" node="2wy6nJ6_HYi" resolve="Expression" />
   </node>
 </model>
 

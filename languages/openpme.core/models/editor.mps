@@ -1658,5 +1658,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1fud6A14e5e">
+    <property role="3GE5qa" value="initialization" />
+    <ref role="1XX52x" to="r2co:1fud6A14e55" resolve="FDStarStencil" />
+    <node concept="3F0ifn" id="1fud6A14e5l" role="2wV5jI">
+      <property role="3F0ifm" value="star stencil (finite differences)" />
+    </node>
+  </node>
 </model>
 
