@@ -9,11 +9,11 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" />
     <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
-    <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -24,9 +24,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -131,7 +129,7 @@
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
     <node concept="PrWs8" id="1Uhwoc6Dq3Y" role="PzmwI">
-      <ref role="PrY4T" node="1Uhwoc6Dq3P" resolve="IParticleContainer" />
+      <ref role="PrY4T" to="r2co:1Uhwoc6Dq3P" resolve="IParticleContainer" />
     </node>
     <node concept="1TJgyj" id="70bNw4gtDz9" role="1TKVEi">
       <property role="IQ2ns" value="8073773260958243017" />
@@ -222,90 +220,13 @@
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
   </node>
-  <node concept="PlHQZ" id="1Uhwoc6Dq3P">
-    <property role="EcuMT" value="2202684092513100021" />
-    <property role="3GE5qa" value="variables" />
-    <property role="TrG5h" value="IParticleContainer" />
-    <node concept="PrWs8" id="1Uhwoc6Dq3Q" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="1Uhwoc6D_BP" role="1TKVEi">
-      <property role="IQ2ns" value="2202684092513147381" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="container" />
-      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1d1jgI8ORmn">
-    <property role="EcuMT" value="1387474872142362007" />
-    <property role="TrG5h" value="MapVectorDist" />
-    <property role="3GE5qa" value="openFPM" />
-    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
-    <node concept="1TJgyj" id="1d1jgI8ORmo" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872142362008" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="vector" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1d1jgI8ORmq">
-    <property role="EcuMT" value="1387474872142362010" />
-    <property role="TrG5h" value="ResyncGhostVectorDist" />
-    <property role="3GE5qa" value="openFPM" />
-    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
-    <node concept="1TJgyj" id="1d1jgI8ORmr" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872142362011" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="vector" />
-      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1d1jgI92mSZ">
-    <property role="EcuMT" value="1387474872145899071" />
-    <property role="3GE5qa" value="openFPM" />
-    <property role="TrG5h" value="UpdateCellList" />
-    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
-    <node concept="1TJgyj" id="1d1jgI92mTk" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872145899092" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <property role="20kJfa" value="cellList" />
-      <ref role="20lvS9" node="2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1d1jgI93P9F">
-    <property role="EcuMT" value="1387474872146285163" />
-    <property role="3GE5qa" value="variables" />
-    <property role="TrG5h" value="PropertyReference" />
-    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
-    <node concept="1TJgyj" id="1d1jgI93P9G" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872146285164" />
-      <property role="20kJfa" value="property" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="r2co:1MYyjtFP9yj" resolve="Property" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1d1jgI9cYdU">
     <property role="EcuMT" value="1387474872148681594" />
     <property role="3GE5qa" value="loops" />
     <property role="TrG5h" value="SkipIteration" />
     <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
     <node concept="PrWs8" id="1d1jgI9d8e4" role="PzmwI">
-      <ref role="PrY4T" node="1Uhwoc6Dq3P" resolve="IParticleContainer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1d1jgI9m5E_">
-    <property role="EcuMT" value="1387474872151071397" />
-    <property role="3GE5qa" value="openFPM" />
-    <property role="TrG5h" value="Norm2" />
-    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
-    <node concept="1TJgyj" id="1d1jgI9m5ER" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872151071415" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="parameter" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
+      <ref role="PrY4T" to="r2co:1Uhwoc6Dq3P" resolve="IParticleContainer" />
     </node>
   </node>
 </model>

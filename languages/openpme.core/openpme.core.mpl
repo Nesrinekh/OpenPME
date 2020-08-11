@@ -32,8 +32,9 @@
         <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
         <language slang="l:2b72d3f1-4643-4aec-8f26-2599b23e0e1b:openpme.base" version="0" />
-        <language slang="l:9a51a2b4-83e4-4324-8cf8-4ee101121a3a:openpme.expressions" version="0" />
-        <language slang="l:d89a1f94-2b10-40d1-a01e-560f94e501d7:openpme.statements" version="0" />
+        <language slang="l:66673400-467e-48d2-ace0-6f708d2ef66d:openpme.core" version="0" />
+        <language slang="l:9a51a2b4-83e4-4324-8cf8-4ee101121a3a:openpme.expressions" version="2" />
+        <language slang="l:d89a1f94-2b10-40d1-a01e-560f94e501d7:openpme.statements" version="2" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -63,10 +64,10 @@
         <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
         <module reference="dfaa847b-effe-41ad-a78f-78e1b0ac41ef(openpme.core#6721469832529907355)" version="0" />
         <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
-        <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="0" />
+        <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="2" />
         <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
         <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
-        <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="0" />
+        <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="2" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -128,7 +129,9 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="4" />
     <language slang="l:2b72d3f1-4643-4aec-8f26-2599b23e0e1b:openpme.base" version="0" />
-    <language slang="l:9a51a2b4-83e4-4324-8cf8-4ee101121a3a:openpme.expressions" version="0" />
+    <language slang="l:66673400-467e-48d2-ace0-6f708d2ef66d:openpme.core" version="0" />
+    <language slang="l:9a51a2b4-83e4-4324-8cf8-4ee101121a3a:openpme.expressions" version="2" />
+    <language slang="l:d89a1f94-2b10-40d1-a01e-560f94e501d7:openpme.statements" version="2" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -159,13 +162,14 @@
     <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
     <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
     <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
-    <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="0" />
+    <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="2" />
     <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
     <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
-    <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="0" />
+    <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="2" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)</extendedLanguage>
+    <extendedLanguage>9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</extendedLanguage>
   </extendedLanguages>
 </language>
 
