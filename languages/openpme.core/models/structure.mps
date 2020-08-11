@@ -1277,5 +1277,18 @@
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1fud6A14e54">
+    <property role="EcuMT" value="1431639359291973956" />
+    <property role="3GE5qa" value="initialization" />
+    <property role="TrG5h" value="DiffOpDiscretizationScheme" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1fud6A14e55">
+    <property role="EcuMT" value="1431639359291973957" />
+    <property role="3GE5qa" value="initialization" />
+    <property role="TrG5h" value="FDStarStencil" />
+    <ref role="1TJDcQ" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
+  </node>
 </model>
 

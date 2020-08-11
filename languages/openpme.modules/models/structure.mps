@@ -95,6 +95,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="r2co:1MYyjtFOAuc" resolve="NumParticles" />
     </node>
+    <node concept="1TJgyj" id="1fud6A14EGN" role="1TKVEi">
+      <property role="IQ2ns" value="1431639359292091187" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="DiffOpDiscrScheme" />
+      <ref role="20lvS9" to="r2co:1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfL0P">
     <property role="EcuMT" value="5443610339528609845" />

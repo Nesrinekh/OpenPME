@@ -16,6 +16,7 @@
       </concept>
       <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
       <concept id="2887351732023417556" name="openpme.core.structure.Euler" flags="ng" index="gNbne" />
+      <concept id="1431639359291973957" name="openpme.core.structure.FDStarStencil" flags="ng" index="2iNHkG" />
       <concept id="1387474872146285163" name="openpme.core.structure.PropertyReference" flags="ng" index="2qjxXw">
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
       </concept>
@@ -113,6 +114,7 @@
         <child id="7548145485610641308" name="simulation" index="2A2w7f" />
       </concept>
       <concept id="5443610339528609844" name="openpme.modules.structure.Initialization" flags="ng" index="1GH8rR">
+        <child id="1431639359292091187" name="DiffOpDiscrScheme" index="2iN9Xq" />
         <child id="7548145485610548767" name="dimension" index="2A29xc" />
         <child id="7548145485610548787" name="ghost" index="2A29xw" />
         <child id="7548145485610548769" name="domain_size" index="2A29xM" />
@@ -176,6 +178,7 @@
       <node concept="1RreUV" id="jnrNESv$lA" role="1Rr2o6">
         <node concept="2$GKAY" id="jnrNESv$lB" role="1RreUU" />
       </node>
+      <node concept="2iNHkG" id="1fud6A14Hs$" role="2iN9Xq" />
     </node>
     <node concept="1GH8rQ" id="jnrNESv$lC" role="1GHewH">
       <node concept="2A2w6l" id="jnrNESv$lF" role="2A2w7f">

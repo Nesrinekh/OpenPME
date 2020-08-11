@@ -837,6 +837,21 @@
     <ref role="WuzLi" to="lfpi:42J9p0zAsO6" resolve="ClassInstanceDecl" />
     <node concept="11bSqf" id="42J9p0zAsOc" role="11c4hB">
       <node concept="3clFbS" id="42J9p0zAsOd" role="2VODD2">
+        <node concept="lc7rE" id="1fud6A15cVn" role="3cqZAp">
+          <node concept="l9S2W" id="1fud6A15cXO" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=" " />
+            <node concept="2OqwBi" id="1fud6A15d5U" role="lbANJ">
+              <node concept="117lpO" id="1fud6A15cYc" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1fud6A15dhU" role="2OqNvi">
+                <ref role="3TtcxE" to="lfpi:1fud6A15cJQ" resolve="classifier" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1fud6A15Zy_" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+        </node>
         <node concept="lc7rE" id="U5MXwlv4QN" role="3cqZAp">
           <node concept="l9hG8" id="U5MXwlv4Wl" role="lcghm">
             <node concept="2OqwBi" id="U5MXwlv5a3" role="lb14g">
@@ -1440,6 +1455,21 @@
     <ref role="WuzLi" to="lfpi:1$s_O7Z5MlU" resolve="ArrayDeclaration" />
     <node concept="11bSqf" id="1$s_O7Z5Mm0" role="11c4hB">
       <node concept="3clFbS" id="1$s_O7Z5Mm1" role="2VODD2">
+        <node concept="lc7rE" id="1fud6A18vqS" role="3cqZAp">
+          <node concept="l9S2W" id="1fud6A18vur" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=" " />
+            <node concept="2OqwBi" id="1fud6A18vCx" role="lbANJ">
+              <node concept="117lpO" id="1fud6A18vw7" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1fud6A18vQn" role="2OqNvi">
+                <ref role="3TtcxE" to="lfpi:1fud6A18u0R" resolve="classifier" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1fud6A18vSe" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+        </node>
         <node concept="lc7rE" id="1$s_O7Z5NFz" role="3cqZAp">
           <node concept="l9hG8" id="1$s_O7Z5NF$" role="lcghm">
             <node concept="2OqwBi" id="1$s_O7Z5NF_" role="lb14g">
@@ -2241,6 +2271,26 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1fud6A15cJW">
+    <property role="3GE5qa" value="Expression" />
+    <ref role="WuzLi" to="lfpi:1fud6A15cJU" resolve="StaticClassifier" />
+    <node concept="11bSqf" id="1fud6A15cJX" role="11c4hB">
+      <node concept="3clFbS" id="1fud6A15cJY" role="2VODD2">
+        <node concept="lc7rE" id="1fud6A15cKh" role="3cqZAp">
+          <node concept="la8eA" id="1fud6A15cKB" role="lcghm">
+            <property role="lacIc" value="static" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1fud6A18u0U">
+    <property role="3GE5qa" value="Variable" />
+    <ref role="WuzLi" to="lfpi:52_2wI3$Po5" resolve="BaseVariableDeclaration" />
+    <node concept="11bSqf" id="1fud6A18u0V" role="11c4hB">
+      <node concept="3clFbS" id="1fud6A18u0W" role="2VODD2" />
     </node>
   </node>
 </model>
