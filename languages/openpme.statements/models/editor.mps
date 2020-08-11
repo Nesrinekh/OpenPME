@@ -414,82 +414,11 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="1d1jgI8Pqoa">
-    <property role="3GE5qa" value="openFPM" />
-    <ref role="1XX52x" to="5oki:1d1jgI8ORmq" resolve="ResyncGhostVectorDist" />
-    <node concept="3EZMnI" id="1d1jgI8Pqoh" role="2wV5jI">
-      <node concept="3F0ifn" id="1d1jgI8Pqoo" role="3EZMnx">
-        <property role="3F0ifm" value="Resync Ghost" />
-      </node>
-      <node concept="3F1sOY" id="1d1jgI8PqoG" role="3EZMnx">
-        <ref role="1NtTu8" to="5oki:1d1jgI8ORmr" resolve="vector" />
-      </node>
-      <node concept="l2Vlx" id="1d1jgI8Pqok" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1d1jgI8PB1X">
-    <property role="3GE5qa" value="openFPM" />
-    <ref role="1XX52x" to="5oki:1d1jgI8ORmn" resolve="MapVectorDist" />
-    <node concept="3EZMnI" id="1d1jgI8PB1Z" role="2wV5jI">
-      <node concept="3F0ifn" id="1d1jgI8PB26" role="3EZMnx">
-        <property role="3F0ifm" value="Map" />
-      </node>
-      <node concept="3F1sOY" id="1d1jgI8PB2g" role="3EZMnx">
-        <ref role="1NtTu8" to="5oki:1d1jgI8ORmo" resolve="vector" />
-      </node>
-      <node concept="l2Vlx" id="1d1jgI8PB22" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1d1jgI92mT8">
-    <property role="3GE5qa" value="openFPM" />
-    <ref role="1XX52x" to="5oki:1d1jgI92mSZ" resolve="UpdateCellList" />
-    <node concept="3EZMnI" id="1d1jgI92mTd" role="2wV5jI">
-      <node concept="3F0ifn" id="1d1jgI92mTm" role="3EZMnx">
-        <property role="3F0ifm" value="Update CellList(" />
-      </node>
-      <node concept="3F1sOY" id="1d1jgI92mTw" role="3EZMnx">
-        <ref role="1NtTu8" to="5oki:1d1jgI92mTk" resolve="cellList" />
-      </node>
-      <node concept="3F0ifn" id="1d1jgI92mTC" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="l2Vlx" id="1d1jgI92mTg" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1d1jgI93VIF">
-    <property role="3GE5qa" value="variables" />
-    <ref role="1XX52x" to="5oki:1d1jgI93P9F" resolve="PropertyReference" />
-    <node concept="1iCGBv" id="1d1jgI93VIH" role="2wV5jI">
-      <ref role="1NtTu8" to="5oki:1d1jgI93P9G" resolve="property" />
-      <node concept="1sVBvm" id="1d1jgI93VIJ" role="1sWHZn">
-        <node concept="3F0A7n" id="1d1jgI93VIQ" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1d1jgI9cYe3">
     <property role="3GE5qa" value="loops" />
     <ref role="1XX52x" to="5oki:1d1jgI9cYdU" resolve="SkipIteration" />
     <node concept="3F0ifn" id="1d1jgI9cYe5" role="2wV5jI">
       <property role="3F0ifm" value="Skip iteration" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1d1jgI9m5EI">
-    <property role="3GE5qa" value="openFPM" />
-    <ref role="1XX52x" to="5oki:1d1jgI9m5E_" resolve="Norm2" />
-    <node concept="3EZMnI" id="1d1jgI9m5EK" role="2wV5jI">
-      <node concept="3F0ifn" id="1d1jgI9m5ET" role="3EZMnx">
-        <property role="3F0ifm" value="Norm2(" />
-      </node>
-      <node concept="l2Vlx" id="1d1jgI9m5EN" role="2iSdaV" />
-      <node concept="3F1sOY" id="1d1jgI9m5EZ" role="3EZMnx">
-        <ref role="1NtTu8" to="5oki:1d1jgI9m5ER" resolve="parameter" />
-      </node>
-      <node concept="3F0ifn" id="1d1jgI9m5F7" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
     </node>
   </node>
 </model>
