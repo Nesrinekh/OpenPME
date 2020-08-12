@@ -9883,11 +9883,6 @@
     <node concept="3aamgX" id="1pqOqlzins4" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
-      <node concept="gft3U" id="1pqOqlzizA7" role="1lVwrX">
-        <node concept="oDTPu" id="1pqOqlzizC9" role="gfFT$">
-          <property role="oDTPt" value="insert mesh loop here" />
-        </node>
-      </node>
       <node concept="30G5F_" id="1pqOqlzin$S" role="30HLyM">
         <node concept="3clFbS" id="1pqOqlzin$T" role="2VODD2">
           <node concept="3clFbJ" id="1pqOqlznyO4" role="3cqZAp">
@@ -9907,29 +9902,6 @@
                       <node concept="30H73N" id="1pqOqlznBqS" role="2Oq$k0" />
                       <node concept="3TrEf2" id="1pqOqlznClO" role="2OqNvi">
                         <ref role="3Tt5mk" to="5oki:70bNw4gtx3b" resolve="expression" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2xdQw9" id="1pqOqlzltGR" role="3cqZAp">
-                <property role="2xdLsb" value="h1akgim/info" />
-                <node concept="3cpWs3" id="1pqOqlzlv4m" role="9lYJi">
-                  <node concept="Xl_RD" id="1pqOqlzltGT" role="3uHU7B">
-                    <property role="Xl_RC" value="switch_ExprStatement: " />
-                  </node>
-                  <node concept="2OqwBi" id="1pqOqlzlv6F" role="3uHU7w">
-                    <node concept="2OqwBi" id="1pqOqlzlv6G" role="2Oq$k0">
-                      <node concept="3TrEf2" id="1pqOqlzn68I" role="2OqNvi">
-                        <ref role="3Tt5mk" to="caxt:7bpBJvmqoNQ" resolve="left" />
-                      </node>
-                      <node concept="37vLTw" id="1pqOqlznDAa" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1pqOqlznAau" resolve="assExpr" />
-                      </node>
-                    </node>
-                    <node concept="1mIQ4w" id="1pqOqlzlv6J" role="2OqNvi">
-                      <node concept="chp4Y" id="1pqOqlzlv6K" role="cj9EA">
-                        <ref role="cht4Q" to="r2co:5EGbNbOlbNy" resolve="MeshAccess" />
                       </node>
                     </node>
                   </node>
@@ -10011,6 +9983,25 @@
           </node>
           <node concept="3cpWs6" id="1pqOqlzizec" role="3cqZAp">
             <node concept="3clFbT" id="1pqOqlziz$6" role="3cqZAk" />
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="1pqOqlzoXHY" role="1lVwrX">
+        <node concept="10Nm6u" id="1pqOqlzoXLu" role="gfFT$">
+          <node concept="1sPUBX" id="1pqOqlzoXL_" role="lGtFl">
+            <ref role="v9R2y" node="1pqOqlzoONN" resolve="switch_Mesh_Assignment" />
+            <node concept="3NFfHV" id="1pqOqlzserG" role="1sPUBK">
+              <node concept="3clFbS" id="1pqOqlzserH" role="2VODD2">
+                <node concept="3clFbF" id="1pqOqlzsetJ" role="3cqZAp">
+                  <node concept="2OqwBi" id="1pqOqlzseCQ" role="3clFbG">
+                    <node concept="30H73N" id="1pqOqlzsetI" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1pqOqlzsePr" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5oki:70bNw4gtx3b" resolve="expression" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -10108,6 +10099,87 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="1pqOqlzoONN">
+    <property role="3GE5qa" value="switch" />
+    <property role="TrG5h" value="switch_Mesh_Assignment" />
+    <node concept="3aamgX" id="1pqOqlzoONO" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="caxt:7bpBJvmqoNZ" resolve="AssignmentExpression" />
+      <node concept="gft3U" id="1pqOqlzoX5J" role="1lVwrX">
+        <node concept="oDTPu" id="1pqOqlzoX7H" role="gfFT$">
+          <property role="oDTPt" value="diffop detected" />
+        </node>
+      </node>
+      <node concept="30G5F_" id="1pqOqlzoONS" role="30HLyM">
+        <node concept="3clFbS" id="1pqOqlzoONT" role="2VODD2">
+          <node concept="3SKdUt" id="1pqOqlzoVyB" role="3cqZAp">
+            <node concept="1PaTwC" id="1pqOqlzoVJr" role="3ndbpf">
+              <node concept="3oM_SD" id="1pqOqlzoVyE" role="1PaTwD">
+                <property role="3oM_SC" value="check" />
+              </node>
+              <node concept="3oM_SD" id="1pqOqlzoVzH" role="1PaTwD">
+                <property role="3oM_SC" value="for" />
+              </node>
+              <node concept="3oM_SD" id="1pqOqlzoV$b" role="1PaTwD">
+                <property role="3oM_SC" value="differential" />
+              </node>
+              <node concept="3oM_SD" id="1pqOqlzoVKn" role="1PaTwD">
+                <property role="3oM_SC" value="operators" />
+              </node>
+            </node>
+          </node>
+          <node concept="2xdQw9" id="1pqOqlzq_7i" role="3cqZAp">
+            <property role="2xdLsb" value="h1akgim/info" />
+            <node concept="3cpWs3" id="1pqOqlzq__S" role="9lYJi">
+              <node concept="Xl_RD" id="1pqOqlzq_7k" role="3uHU7B">
+                <property role="Xl_RC" value="switch_mesh_assignment" />
+              </node>
+              <node concept="2OqwBi" id="1pqOqlzrqqj" role="3uHU7w">
+                <node concept="2OqwBi" id="1pqOqlzrq3F" role="2Oq$k0">
+                  <node concept="30H73N" id="1pqOqlzrpNJ" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1pqOqlzrqgb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="caxt:7bpBJvmqoNU" resolve="right" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="1pqOqlzt19B" role="2OqNvi">
+                  <node concept="1xMEDy" id="1pqOqlzt19D" role="1xVPHs">
+                    <node concept="chp4Y" id="1pqOqlzt1pK" role="ri$Ld">
+                      <ref role="cht4Q" to="r2co:6sMVU6wHpp0" resolve="LaplacianOperator" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="1pqOqlzugyV" role="3cqZAp">
+            <node concept="2OqwBi" id="1pqOqlzuoYZ" role="3cqZAk">
+              <node concept="2OqwBi" id="1pqOqlzuiw6" role="2Oq$k0">
+                <node concept="2OqwBi" id="1pqOqlzuhul" role="2Oq$k0">
+                  <node concept="30H73N" id="1pqOqlzugRf" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1pqOqlzuhXx" role="2OqNvi">
+                    <ref role="3Tt5mk" to="caxt:7bpBJvmqoNU" resolve="right" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="1pqOqlzuizG" role="2OqNvi">
+                  <node concept="1xMEDy" id="1pqOqlzuizI" role="1xVPHs">
+                    <node concept="chp4Y" id="1pqOqlzukNG" role="ri$Ld">
+                      <ref role="cht4Q" to="r2co:6sMVU6wHpp0" resolve="LaplacianOperator" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3GX2aA" id="1pqOqlzve$S" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="gft3U" id="1pqOqlzpKpL" role="jxRDz">
+      <node concept="oDTPu" id="1pqOqlzpKrJ" role="gfFT$">
+        <property role="oDTPt" value="no diffop detected" />
       </node>
     </node>
   </node>
