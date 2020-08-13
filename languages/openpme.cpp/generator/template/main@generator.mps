@@ -170,7 +170,19 @@
       <concept id="7722987624705762204" name="openpme.cpp.structure.GreaterThanExpression" flags="ng" index="3WvFff" />
     </language>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
+      <concept id="3375603839768458152" name="openpme.core.structure.MeshLoop" flags="ng" index="2l3RTA">
+        <child id="3375603839768458155" name="iterable" index="2l3RT_" />
+        <child id="3375603839768458153" name="meshNode" index="2l3RTB" />
+      </concept>
+      <concept id="1387474872146285163" name="openpme.core.structure.PropertyReference" flags="ng" index="2qjxXw" />
       <concept id="7548145485610641300" name="openpme.core.structure.NonPeriodic" flags="ng" index="2A2w77" />
+      <concept id="6533649055301811426" name="openpme.core.structure.MeshAccess" flags="ng" index="2IY9fg">
+        <child id="6533649055301811427" name="meshReference" index="2IY9fh" />
+        <child id="6533649055301811429" name="propertyReference" index="2IY9fn" />
+      </concept>
+      <concept id="8483536403556912194" name="openpme.core.structure.Loop" flags="ng" index="SClWF">
+        <child id="2202684092508629999" name="body" index="oWeDG" />
+      </concept>
     </language>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
@@ -270,6 +282,14 @@
         <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
+      <concept id="8275820577561349363" name="openpme.expressions.structure.BinaryExpression" flags="ng" index="2$G184">
+        <child id="8275820577561349366" name="left" index="2$G181" />
+        <child id="8275820577561349370" name="right" index="2$G18d" />
+      </concept>
+      <concept id="8275820577561349375" name="openpme.expressions.structure.AssignmentExpression" flags="ng" index="2$G188" />
+      <concept id="8275820577561482122" name="openpme.expressions.structure.TrueLiteral" flags="ng" index="2$GwPX" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
@@ -393,6 +413,15 @@
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
       </concept>
       <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
+    </language>
+    <language id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements">
+      <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6" />
+      <concept id="8073773260958208202" name="openpme.statements.structure.ExpressionStatement" flags="ng" index="1wvtVb">
+        <child id="8073773260958208203" name="expression" index="1wvtVa" />
+      </concept>
+      <concept id="2579446515047575999" name="openpme.statements.structure.VariableReference" flags="ng" index="1XiV_f">
+        <reference id="2579446515047620994" name="variableDeclaration" index="1Xh6_M" />
+      </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
@@ -842,16 +871,15 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="1Uhwoc6rJy2" role="3acgRq">
-      <ref role="30HIoZ" to="r2co:7mV$Q_d6iww" resolve="TimeLoop" />
-      <node concept="j$656" id="1Uhwoc6rJMi" role="1lVwrX">
-        <ref role="v9R2y" node="1Uhwoc6r2iH" resolve="reduce_TimeLoop" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="1Uhwoc6xNQ2" role="3acgRq">
-      <ref role="30HIoZ" to="r2co:1MYyjtFOOxx" resolve="ParticleLoop" />
-      <node concept="j$656" id="1Uhwoc6y8hy" role="1lVwrX">
-        <ref role="v9R2y" node="1Uhwoc6y1o7" resolve="reduce_ParticleLoop_VectorDist" />
+    <node concept="3aamgX" id="1pqOqlzyqyw" role="3acgRq">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="r2co:7mV$Q_d6GL2" resolve="Loop" />
+      <node concept="gft3U" id="1pqOqlzyqFP" role="1lVwrX">
+        <node concept="10Nm6u" id="1pqOqlzyqFV" role="gfFT$">
+          <node concept="1sPUBX" id="1pqOqlzyqG1" role="lGtFl">
+            <ref role="v9R2y" node="1pqOqlzyqyo" resolve="switch_Loop" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="1d1jgI9$LpM" role="3acgRq">
@@ -9199,18 +9227,18 @@
   </node>
   <node concept="13MO4I" id="2VozsUVQVBx">
     <property role="3GE5qa" value="reduce.statements" />
-    <property role="TrG5h" value="reduce_GridLoop_TODO" />
-    <ref role="3gUMe" to="r2co:2VozsUVPZeC" resolve="GridLoop" />
+    <property role="TrG5h" value="reduce_MeshLoop" />
+    <ref role="3gUMe" to="r2co:2VozsUVPZeC" resolve="MeshLoop" />
     <node concept="3jcgYH" id="2VozsUVQVBz" role="13RCb5">
       <node concept="hsq1m" id="2VozsUVQVB$" role="3jcgYG">
         <node concept="raruj" id="2VozsUVQVB_" role="lGtFl" />
       </node>
       <node concept="oDTPu" id="2VozsUVQVBA" role="3jcgYG">
-        <property role="oDTPt" value="Grid loop" />
+        <property role="oDTPt" value="Mesh loop" />
         <node concept="raruj" id="2VozsUVQVBB" role="lGtFl" />
       </node>
       <node concept="3IHdWl" id="2VozsUVQVBC" role="3jcgYG">
-        <property role="TrG5h" value="gloop_iterator" />
+        <property role="TrG5h" value="mloop_iterator" />
         <node concept="huIs$" id="2VozsUVQVBD" role="3jdG5C" />
         <node concept="3A2tP1" id="2VozsUVQVBE" role="3IHcrO">
           <node concept="3A2tPb" id="2VozsUVQVBF" role="3A2tP2">
@@ -9268,7 +9296,7 @@
             <property role="TrG5h" value="isNext" />
           </node>
           <node concept="3IHsDY" id="2VozsUVQVC6" role="3A2tP0">
-            <ref role="3IHsDX" node="2VozsUVQVBC" resolve="gloop_iterator" />
+            <ref role="3IHsDX" node="2VozsUVQVBC" resolve="mloop_iterator" />
           </node>
         </node>
         <node concept="3jcgYH" id="2VozsUVQVC7" role="oXXnY">
@@ -9302,7 +9330,7 @@
                     <node concept="2OqwBi" id="2VozsUVQVCo" role="3clFbG">
                       <node concept="30H73N" id="2VozsUVQWWb" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2VozsUVQXez" role="2OqNvi">
-                        <ref role="3Tt5mk" to="r2co:2VozsUVPZeD" resolve="gridNode" />
+                        <ref role="3Tt5mk" to="r2co:2VozsUVPZeD" resolve="meshNode" />
                       </node>
                     </node>
                   </node>
@@ -9311,7 +9339,7 @@
             </node>
             <node concept="3A2tP1" id="2VozsUVQVCr" role="3IHcrO">
               <node concept="3IHsDY" id="2VozsUVQVCs" role="3A2tP0">
-                <ref role="3IHsDX" node="2VozsUVQVBC" resolve="gloop_iterator" />
+                <ref role="3IHsDX" node="2VozsUVQVBC" resolve="mloop_iterator" />
               </node>
               <node concept="3A2tPb" id="2VozsUVQVCt" role="3A2tP2">
                 <property role="TrG5h" value="get" />
@@ -9337,7 +9365,7 @@
           <node concept="3u_bAv" id="2VozsUVQVCA" role="3jcgYG">
             <node concept="oV8J0" id="2VozsUVQVCB" role="3u_bAu">
               <node concept="3IHsDY" id="2VozsUVQVCC" role="2NEkWO">
-                <ref role="3IHsDX" node="2VozsUVQVBC" resolve="gloop_iterator" />
+                <ref role="3IHsDX" node="2VozsUVQVBC" resolve="mloop_iterator" />
               </node>
             </node>
           </node>
@@ -10177,9 +10205,132 @@
         </node>
       </node>
     </node>
-    <node concept="gft3U" id="1pqOqlzpKpL" role="jxRDz">
-      <node concept="oDTPu" id="1pqOqlzpKrJ" role="gfFT$">
-        <property role="oDTPt" value="no diffop detected" />
+    <node concept="3aamgX" id="1pqOqlzx5hi" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="caxt:7bpBJvmqoNZ" resolve="AssignmentExpression" />
+      <node concept="gft3U" id="1pqOqlzx5x8" role="1lVwrX">
+        <node concept="2l3RTA" id="1pqOqlzx5xe" role="gfFT$">
+          <node concept="1wvtVb" id="1pqOqlzAoqB" role="oWeDG">
+            <node concept="2$G188" id="1pqOqlzAory" role="1wvtVa">
+              <node concept="2IY9fg" id="1pqOqlzAorF" role="2$G181">
+                <node concept="1XiV_f" id="1pqOqlzAorO" role="2IY9fh">
+                  <ref role="1Xh6_M" node="1pqOqlzx5xi" resolve="node" />
+                </node>
+                <node concept="2qjxXw" id="1pqOqlzAorJ" role="2IY9fn">
+                  <node concept="17VmuZ" id="1pqOqlzAoOY" role="lGtFl" />
+                </node>
+                <node concept="1pdMLZ" id="1pqOqlzAoUL" role="lGtFl">
+                  <node concept="15lBmy" id="1pqOqlzAoUN" role="15mYut">
+                    <node concept="3clFbS" id="1pqOqlzAoUO" role="2VODD2">
+                      <node concept="3clFbF" id="1pqOqlzAoV0" role="3cqZAp">
+                        <node concept="37vLTI" id="1pqOqlzApGr" role="3clFbG">
+                          <node concept="2OqwBi" id="1pqOqlzArLV" role="37vLTx">
+                            <node concept="2OqwBi" id="1pqOqlzAr8t" role="2Oq$k0">
+                              <node concept="1PxgMI" id="1pqOqlzAqQx" role="2Oq$k0">
+                                <property role="1BlNFB" value="true" />
+                                <node concept="chp4Y" id="1pqOqlzAqRE" role="3oSUPX">
+                                  <ref role="cht4Q" to="r2co:5EGbNbOlbNy" resolve="MeshAccess" />
+                                </node>
+                                <node concept="2OqwBi" id="1pqOqlzAqnh" role="1m5AlR">
+                                  <node concept="30H73N" id="1pqOqlzAq7p" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="1pqOqlzAqA1" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="caxt:7bpBJvmqoNQ" resolve="left" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="1pqOqlzArl8" role="2OqNvi">
+                                <ref role="3Tt5mk" to="r2co:5EGbNbOlbN_" resolve="propertyReference" />
+                              </node>
+                            </node>
+                            <node concept="1$rogu" id="1pqOqlzArZV" role="2OqNvi" />
+                          </node>
+                          <node concept="2OqwBi" id="1pqOqlzAp3K" role="37vLTJ">
+                            <node concept="3l3mFP" id="1pqOqlzAoUZ" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="1pqOqlzApe9" role="2OqNvi">
+                              <ref role="3Tt5mk" to="r2co:5EGbNbOlbN_" resolve="propertyReference" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2$GwPX" id="1pqOqlzAoJ2" role="2$G18d">
+                <node concept="29HgVG" id="1pqOqlzAoJ6" role="lGtFl">
+                  <node concept="3NFfHV" id="1pqOqlzAoJ7" role="3NFExx">
+                    <node concept="3clFbS" id="1pqOqlzAoJ8" role="2VODD2">
+                      <node concept="3clFbF" id="1pqOqlzAoJe" role="3cqZAp">
+                        <node concept="2OqwBi" id="1pqOqlzAoJ9" role="3clFbG">
+                          <node concept="3TrEf2" id="1pqOqlzAoJc" role="2OqNvi">
+                            <ref role="3Tt5mk" to="caxt:7bpBJvmqoNU" resolve="right" />
+                          </node>
+                          <node concept="30H73N" id="1pqOqlzAoJd" role="2Oq$k0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1XiV_f" id="1pqOqlzx5xk" role="2l3RT_">
+            <ref role="1Xh6_M" node="1pqOqlzx5xi" resolve="node" />
+            <node concept="29HgVG" id="1pqOqlzx9t_" role="lGtFl">
+              <node concept="3NFfHV" id="1pqOqlzx9tA" role="3NFExx">
+                <node concept="3clFbS" id="1pqOqlzx9tB" role="2VODD2">
+                  <node concept="3clFbF" id="1pqOqlzx9tH" role="3cqZAp">
+                    <node concept="2OqwBi" id="1pqOqlzxamd" role="3clFbG">
+                      <node concept="1PxgMI" id="1pqOqlzxa5B" role="2Oq$k0">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="1pqOqlzxa6w" role="3oSUPX">
+                          <ref role="cht4Q" to="r2co:5EGbNbOlbNy" resolve="MeshAccess" />
+                        </node>
+                        <node concept="2OqwBi" id="1pqOqlzx9tC" role="1m5AlR">
+                          <node concept="3TrEf2" id="1pqOqlzx9tF" role="2OqNvi">
+                            <ref role="3Tt5mk" to="caxt:7bpBJvmqoNQ" resolve="left" />
+                          </node>
+                          <node concept="30H73N" id="1pqOqlzx9tG" role="2Oq$k0" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="1pqOqlzxaxW" role="2OqNvi">
+                        <ref role="3Tt5mk" to="r2co:5EGbNbOlbNz" resolve="meshReference" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2G0pd6" id="1pqOqlzx5xi" role="2l3RTB">
+            <property role="TrG5h" value="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="1pqOqlzyqyo">
+    <property role="3GE5qa" value="switch" />
+    <property role="TrG5h" value="switch_Loop" />
+    <node concept="3aamgX" id="1pqOqlzyqMw" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="r2co:7mV$Q_d6iww" resolve="TimeLoop" />
+      <node concept="j$656" id="1pqOqlzyqMA" role="1lVwrX">
+        <ref role="v9R2y" node="1Uhwoc6r2iH" resolve="reduce_TimeLoop" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="1pqOqlzyqyp" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="r2co:1MYyjtFOOxx" resolve="ParticleLoop" />
+      <node concept="j$656" id="1pqOqlzyqyt" role="1lVwrX">
+        <ref role="v9R2y" node="1Uhwoc6y1o7" resolve="reduce_ParticleLoop_VectorDist" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="1pqOqlz_AcR" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="r2co:2VozsUVPZeC" resolve="MeshLoop" />
+      <node concept="j$656" id="1pqOqlz_AEl" role="1lVwrX">
+        <ref role="v9R2y" node="2VozsUVQVBx" resolve="reduce_MeshLoop" />
       </node>
     </node>
   </node>

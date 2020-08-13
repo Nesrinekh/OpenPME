@@ -915,12 +915,12 @@
   <node concept="1TIwiD" id="2VozsUVPZeC">
     <property role="EcuMT" value="3375603839768458152" />
     <property role="3GE5qa" value="simulation.loop" />
-    <property role="TrG5h" value="GridLoop" />
+    <property role="TrG5h" value="MeshLoop" />
     <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
     <node concept="1TJgyj" id="2VozsUVPZeD" role="1TKVEi">
       <property role="IQ2ns" value="3375603839768458153" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="gridNode" />
+      <property role="20kJfa" value="meshNode" />
       <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
     <node concept="1TJgyj" id="2VozsUVPZeF" role="1TKVEi">
