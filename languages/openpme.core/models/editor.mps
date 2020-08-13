@@ -1324,16 +1324,16 @@
   </node>
   <node concept="24kQdi" id="2VozsUVPZeQ">
     <property role="3GE5qa" value="simulation.loop" />
-    <ref role="1XX52x" to="r2co:2VozsUVPZeC" resolve="GridLoop" />
+    <ref role="1XX52x" to="r2co:2VozsUVPZeC" resolve="MeshLoop" />
     <node concept="3EZMnI" id="2VozsUVPZeS" role="2wV5jI">
       <node concept="3F0ifn" id="2VozsUVPZeZ" role="3EZMnx">
-        <property role="3F0ifm" value="for grid node" />
+        <property role="3F0ifm" value="for mesh node" />
         <node concept="VechU" id="2VozsUVPZgs" role="3F10Kt">
           <property role="Vb096" value="fLwANPu/blue" />
         </node>
       </node>
       <node concept="3F1sOY" id="2VozsUVPZf9" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:2VozsUVPZeD" resolve="gridNode" />
+        <ref role="1NtTu8" to="r2co:2VozsUVPZeD" resolve="meshNode" />
       </node>
       <node concept="3F0ifn" id="2VozsUVPZfh" role="3EZMnx">
         <property role="3F0ifm" value="in" />
