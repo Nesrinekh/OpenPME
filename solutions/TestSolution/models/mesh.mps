@@ -71,7 +71,9 @@
         <child id="348869794138572247" name="source" index="2WEiFH" />
       </concept>
       <concept id="7436269412207138368" name="openpme.core.structure.LaplacianOperator" flags="ng" index="37xRBx" />
-      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$" />
+      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
+        <child id="1610830325009524963" name="dimension" index="1PL7_6" />
+      </concept>
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
@@ -453,18 +455,30 @@
           <property role="TrG5h" value="old" />
           <node concept="1Rqx6$" id="jnrNESxGER" role="28xOHc">
             <property role="TrG5h" value="Uo" />
+            <node concept="2$GKAY" id="1pqOqlzDVXg" role="1PL7_6">
+              <property role="2$GKAX" value="1" />
+            </node>
           </node>
           <node concept="1Rqx6$" id="jnrNESxGET" role="28xOHc">
             <property role="TrG5h" value="Vo" />
+            <node concept="2$GKAY" id="1pqOqlzDVXi" role="1PL7_6">
+              <property role="2$GKAX" value="1" />
+            </node>
           </node>
         </node>
         <node concept="28AKH2" id="jnrNESvOSX" role="28xmNV">
           <property role="TrG5h" value="new" />
           <node concept="1Rqx6$" id="jnrNESxGEY" role="28xOHc">
             <property role="TrG5h" value="Un" />
+            <node concept="2$GKAY" id="1pqOqlzDVXk" role="1PL7_6">
+              <property role="2$GKAX" value="1" />
+            </node>
           </node>
           <node concept="1Rqx6$" id="jnrNESxGF0" role="28xOHc">
             <property role="TrG5h" value="Vn" />
+            <node concept="2$GKAY" id="1pqOqlzDVXu" role="1PL7_6">
+              <property role="2$GKAX" value="1" />
+            </node>
           </node>
         </node>
       </node>

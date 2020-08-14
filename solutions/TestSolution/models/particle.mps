@@ -99,7 +99,9 @@
       <concept id="6675447779075658713" name="openpme.core.structure.VisualizeParticles" flags="ng" index="18QAuU">
         <child id="6675447779075658714" name="ParticlesFile" index="18QAuT" />
       </concept>
-      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$" />
+      <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
+        <child id="1610830325009524963" name="dimension" index="1PL7_6" />
+      </concept>
       <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
         <child id="2071243749762164621" name="num_particles" index="1RreUU" />
       </concept>
@@ -241,9 +243,15 @@
           <property role="TrG5h" value="particles" />
           <node concept="1Rqx6$" id="5EGbNbOppVf" role="28xOHc">
             <property role="TrG5h" value="velocity" />
+            <node concept="2$GKAY" id="1pqOqlzFne0" role="1PL7_6">
+              <property role="2$GKAX" value="3" />
+            </node>
           </node>
           <node concept="1Rqx6$" id="5EGbNbOppVl" role="28xOHc">
             <property role="TrG5h" value="force" />
+            <node concept="2$GKAY" id="1pqOqlzDVXy" role="1PL7_6">
+              <property role="2$GKAX" value="3" />
+            </node>
           </node>
           <node concept="2$GK$n" id="5BkNMNhFKTk" role="28EmXK">
             <node concept="2$GKAY" id="5BkNMNhFKTo" role="2$GK$m">
