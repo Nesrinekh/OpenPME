@@ -1557,5 +1557,26 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="1pqOql$4ms1">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="WuzLi" to="r2co:jnrNESvOU2" resolve="E" />
+    <node concept="11bSqf" id="1pqOql$4ms2" role="11c4hB">
+      <node concept="3clFbS" id="1pqOql$4ms3" role="2VODD2">
+        <node concept="lc7rE" id="1pqOql$4msm" role="3cqZAp">
+          <node concept="la8eA" id="1pqOql$4msG" role="lcghm">
+            <property role="lacIc" value="1e" />
+          </node>
+          <node concept="l9hG8" id="1pqOql$4mt_" role="lcghm">
+            <node concept="2OqwBi" id="1pqOql$4mCH" role="lb14g">
+              <node concept="117lpO" id="1pqOql$4muu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1pqOql$4mNr" role="2OqNvi">
+                <ref role="3Tt5mk" to="r2co:jnrNESvOUd" resolve="exponent" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

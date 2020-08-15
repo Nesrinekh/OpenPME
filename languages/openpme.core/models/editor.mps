@@ -1331,13 +1331,14 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F2HdR" id="2VozsUVPZfL" role="3EZMnx">
+      <node concept="3F2HdR" id="1pqOqlzTnDA" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:1Uhwoc6omJJ" resolve="body" />
-        <node concept="l2Vlx" id="2VozsUVPZfN" role="2czzBx" />
-        <node concept="lj46D" id="2VozsUVPZfV" role="3F10Kt">
+        <node concept="2iRkQZ" id="1pqOqlzTnDD" role="2czzBx" />
+        <node concept="VPM3Z" id="1pqOqlzTnDE" role="3F10Kt" />
+        <node concept="ljvvj" id="1pqOqlzTnE5" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="ljvvj" id="2VozsUVPZg7" role="3F10Kt">
+        <node concept="lj46D" id="1pqOqlzTnE8" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -1650,6 +1651,53 @@
     <ref role="1XX52x" to="r2co:1fud6A14e55" resolve="FDStarStencil" />
     <node concept="3F0ifn" id="1fud6A14e5l" role="2wV5jI">
       <property role="3F0ifm" value="star stencil (finite differences)" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1pqOqlzNQ0Q">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="r2co:1pqOqlzNQ0D" resolve="MeshAccessInDimension" />
+    <node concept="3EZMnI" id="1pqOqlzNQ0S" role="2wV5jI">
+      <node concept="1iCGBv" id="1pqOqlzNQ0T" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5EGbNbOlbNz" resolve="meshReference" />
+        <node concept="1sVBvm" id="1pqOqlzNQ0U" role="1sWHZn">
+          <node concept="1iCGBv" id="1pqOqlzNQ0V" role="2wV5jI">
+            <ref role="1NtTu8" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+            <node concept="1sVBvm" id="1pqOqlzNQ0W" role="1sWHZn">
+              <node concept="3F0A7n" id="1pqOqlzNQ0X" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1pqOqlzNQ0Y" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="1iCGBv" id="1pqOqlzNQ0Z" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:5EGbNbOlbN_" resolve="propertyReference" />
+        <node concept="1sVBvm" id="1pqOqlzNQ10" role="1sWHZn">
+          <node concept="1iCGBv" id="1pqOqlzNQ11" role="2wV5jI">
+            <ref role="1NtTu8" to="r2co:1d1jgI93P9G" resolve="property" />
+            <node concept="1sVBvm" id="1pqOqlzNQ12" role="1sWHZn">
+              <node concept="3F0A7n" id="1pqOqlzNQ13" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1pqOqlzNQ14" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F1sOY" id="1pqOqlzNQ15" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1pqOqlzNQ0G" resolve="ndim" />
+      </node>
+      <node concept="3F0ifn" id="1pqOqlzNQ16" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="l2Vlx" id="1pqOqlzNQ17" role="2iSdaV" />
     </node>
   </node>
 </model>

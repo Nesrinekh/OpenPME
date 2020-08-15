@@ -1296,5 +1296,17 @@
     <property role="TrG5h" value="FDStarStencil" />
     <ref role="1TJDcQ" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
   </node>
+  <node concept="1TIwiD" id="1pqOqlzNQ0D">
+    <property role="EcuMT" value="1610830325012717609" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="MeshAccessInDimension" />
+    <ref role="1TJDcQ" node="5EGbNbOlbNy" resolve="MeshAccess" />
+    <node concept="1TJgyj" id="1pqOqlzNQ0G" role="1TKVEi">
+      <property role="IQ2ns" value="1610830325012717612" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ndim" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    </node>
+  </node>
 </model>
 
