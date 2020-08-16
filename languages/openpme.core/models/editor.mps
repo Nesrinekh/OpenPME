@@ -1577,13 +1577,24 @@
   </node>
   <node concept="24kQdi" id="1d1jgI8Pqoa">
     <property role="3GE5qa" value="openFPM" />
-    <ref role="1XX52x" to="r2co:1d1jgI8ORmq" resolve="ResyncGhostVectorDist" />
+    <ref role="1XX52x" to="r2co:1d1jgI8ORmq" resolve="ResyncGhost" />
     <node concept="3EZMnI" id="1d1jgI8Pqoh" role="2wV5jI">
       <node concept="3F0ifn" id="1d1jgI8Pqoo" role="3EZMnx">
         <property role="3F0ifm" value="Resync Ghost" />
       </node>
       <node concept="3F1sOY" id="1d1jgI8PqoG" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1d1jgI8ORmr" resolve="vector" />
+        <ref role="1NtTu8" to="r2co:1d1jgI8ORmr" resolve="fieldContainer" />
+      </node>
+      <node concept="3F0ifn" id="1pqOql$8fDN" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+      </node>
+      <node concept="3F2HdR" id="1pqOql$8fDg" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="r2co:1pqOql$8fCH" resolve="properties" />
+        <node concept="l2Vlx" id="1pqOql$8fDi" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="1pqOql$8fDv" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
       </node>
       <node concept="l2Vlx" id="1d1jgI8Pqok" role="2iSdaV" />
     </node>

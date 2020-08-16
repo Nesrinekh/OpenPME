@@ -1020,9 +1020,9 @@
       </node>
     </node>
     <node concept="3aamgX" id="1d1jgI8R3bB" role="3acgRq">
-      <ref role="30HIoZ" to="r2co:1d1jgI8ORmq" resolve="ResyncGhostVectorDist" />
+      <ref role="30HIoZ" to="r2co:1d1jgI8ORmq" resolve="ResyncGhost" />
       <node concept="j$656" id="5WMTRp7DEW1" role="1lVwrX">
-        <ref role="v9R2y" node="5WMTRp7DENI" resolve="reduce_ResyncGhostVectorDist" />
+        <ref role="v9R2y" node="5WMTRp7DENI" resolve="reduce_ResyncGhost" />
       </node>
     </node>
     <node concept="3aamgX" id="1d1jgI904Ax" role="3acgRq">
@@ -1177,6 +1177,40 @@
       <ref role="30HIoZ" to="r2co:jnrNESv$nm" resolve="Copy" />
       <node concept="j$656" id="1pqOql$3pto" role="1lVwrX">
         <ref role="v9R2y" node="1pqOql$3ptg" resolve="reduce_Copy" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="1pqOql$abqI" role="3acgRq">
+      <ref role="30HIoZ" to="r2co:1d1jgI93P9F" resolve="PropertyReference" />
+      <node concept="gft3U" id="1pqOql$ab$M" role="1lVwrX">
+        <node concept="1zd1ln" id="1pqOql$ab$S" role="gfFT$">
+          <node concept="1pdMLZ" id="1pqOql$ab$W" role="lGtFl">
+            <node concept="15lBmy" id="1pqOql$ab$Y" role="15mYut">
+              <node concept="3clFbS" id="1pqOql$ab$Z" role="2VODD2">
+                <node concept="3clFbF" id="1pqOql$ab_b" role="3cqZAp">
+                  <node concept="37vLTI" id="1pqOql$acic" role="3clFbG">
+                    <node concept="2OqwBi" id="1pqOql$acSd" role="37vLTx">
+                      <node concept="2OqwBi" id="1pqOql$actF" role="2Oq$k0">
+                        <node concept="30H73N" id="1pqOql$aciL" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="1pqOql$acEI" role="2OqNvi">
+                          <ref role="3Tt5mk" to="r2co:1d1jgI93P9G" resolve="property" />
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="1pqOql$ad4A" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="1pqOql$abKR" role="37vLTJ">
+                      <node concept="3l3mFP" id="1pqOql$ab_a" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="1pqOql$abXw" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="30QchW" id="1Uhwoc5QJjy" role="30SoJX">
@@ -5011,8 +5045,8 @@
   </node>
   <node concept="13MO4I" id="5WMTRp7DENI">
     <property role="3GE5qa" value="reduce.statements" />
-    <property role="TrG5h" value="reduce_ResyncGhostVectorDist" />
-    <ref role="3gUMe" to="r2co:1d1jgI8ORmq" resolve="ResyncGhostVectorDist" />
+    <property role="TrG5h" value="reduce_ResyncGhost" />
+    <ref role="3gUMe" to="r2co:1d1jgI8ORmq" resolve="ResyncGhost" />
     <node concept="3u_bAv" id="5WMTRp7DENK" role="13RCb5">
       <node concept="3A2tP1" id="5WMTRp7DENL" role="3u_bAu">
         <node concept="1zd1ln" id="5WMTRp7DENM" role="3A2tP0">
@@ -5022,7 +5056,7 @@
                 <node concept="3clFbF" id="5WMTRp7DENQ" role="3cqZAp">
                   <node concept="2OqwBi" id="5WMTRp7DENR" role="3clFbG">
                     <node concept="3TrEf2" id="5WMTRp7DENS" role="2OqNvi">
-                      <ref role="3Tt5mk" to="r2co:1d1jgI8ORmr" resolve="vector" />
+                      <ref role="3Tt5mk" to="r2co:1d1jgI8ORmr" resolve="fieldContainer" />
                     </node>
                     <node concept="30H73N" id="5WMTRp7E52o" role="2Oq$k0" />
                   </node>
@@ -5035,6 +5069,22 @@
           <property role="TrG5h" value="ghost_get" />
           <node concept="2HIXHn" id="5WMTRp7DENV" role="3vqI9i">
             <property role="2ugPEm" value="true" />
+            <node concept="3IIGHT" id="1pqOql$9eiJ" role="2HIXHg">
+              <node concept="2b32R4" id="1pqOql$9eiN" role="lGtFl">
+                <node concept="3JmXsc" id="1pqOql$9eiQ" role="2P8S$">
+                  <node concept="3clFbS" id="1pqOql$9eiR" role="2VODD2">
+                    <node concept="3clFbF" id="1pqOql$9eiX" role="3cqZAp">
+                      <node concept="2OqwBi" id="1pqOql$9eiS" role="3clFbG">
+                        <node concept="3Tsc0h" id="1pqOql$9eiV" role="2OqNvi">
+                          <ref role="3TtcxE" to="r2co:1pqOql$8fCH" resolve="properties" />
+                        </node>
+                        <node concept="30H73N" id="1pqOql$9eiW" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -9869,12 +9919,12 @@
               <node concept="3cpWsn" id="guEsMgWR7P" role="3cpWs9">
                 <property role="TrG5h" value="resync" />
                 <node concept="3Tqbb2" id="guEsMgWR7K" role="1tU5fm">
-                  <ref role="ehGHo" to="r2co:1d1jgI8ORmq" resolve="ResyncGhostVectorDist" />
+                  <ref role="ehGHo" to="r2co:1d1jgI8ORmq" resolve="ResyncGhost" />
                 </node>
                 <node concept="2ShNRf" id="guEsMgWRa_" role="33vP2m">
                   <node concept="3zrR0B" id="guEsMgWRaz" role="2ShVmc">
                     <node concept="3Tqbb2" id="guEsMgWRa$" role="3zrR0E">
-                      <ref role="ehGHo" to="r2co:1d1jgI8ORmq" resolve="ResyncGhostVectorDist" />
+                      <ref role="ehGHo" to="r2co:1d1jgI8ORmq" resolve="ResyncGhost" />
                     </node>
                   </node>
                 </node>
@@ -9898,7 +9948,7 @@
                     <ref role="3cqZAo" node="guEsMgWR7P" resolve="resync" />
                   </node>
                   <node concept="3TrEf2" id="guEsMgWR$1" role="2OqNvi">
-                    <ref role="3Tt5mk" to="r2co:1d1jgI8ORmr" resolve="vector" />
+                    <ref role="3Tt5mk" to="r2co:1d1jgI8ORmr" resolve="fieldContainer" />
                   </node>
                 </node>
               </node>
@@ -10339,40 +10389,6 @@
           </node>
           <node concept="3clFbJ" id="1pqOqlzUR85" role="3cqZAp">
             <node concept="3clFbS" id="1pqOqlzUR87" role="3clFbx">
-              <node concept="2xdQw9" id="1pqOqlzUT9B" role="3cqZAp">
-                <property role="2xdLsb" value="h1akgim/info" />
-                <node concept="3cpWs3" id="1pqOqlzUT9C" role="9lYJi">
-                  <node concept="Xl_RD" id="1pqOqlzUT9D" role="3uHU7B">
-                    <property role="Xl_RC" value="switch_mesh_assignment" />
-                  </node>
-                  <node concept="2OqwBi" id="1pqOqlzUT9E" role="3uHU7w">
-                    <node concept="2OqwBi" id="1pqOqlzUT9F" role="2Oq$k0">
-                      <node concept="1PxgMI" id="1pqOqlzUT9G" role="2Oq$k0">
-                        <property role="1BlNFB" value="true" />
-                        <node concept="chp4Y" id="1pqOqlzUT9H" role="3oSUPX">
-                          <ref role="cht4Q" to="caxt:7bpBJvmqoNZ" resolve="AssignmentExpression" />
-                        </node>
-                        <node concept="2OqwBi" id="1pqOqlzUT9I" role="1m5AlR">
-                          <node concept="30H73N" id="1pqOqlzUT9J" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="1pqOqlzUT9K" role="2OqNvi">
-                            <ref role="3Tt5mk" to="5oki:70bNw4gtx3b" resolve="expression" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="1pqOqlzUT9L" role="2OqNvi">
-                        <ref role="3Tt5mk" to="caxt:7bpBJvmqoNU" resolve="right" />
-                      </node>
-                    </node>
-                    <node concept="2Rf3mk" id="1pqOqlzUT9M" role="2OqNvi">
-                      <node concept="1xMEDy" id="1pqOqlzUT9N" role="1xVPHs">
-                        <node concept="chp4Y" id="1pqOqlzUT9O" role="ri$Ld">
-                          <ref role="cht4Q" to="r2co:6sMVU6wHpp0" resolve="LaplacianOperator" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs6" id="1pqOqlzUT9P" role="3cqZAp">
                 <node concept="2OqwBi" id="1pqOqlzUT9Q" role="3cqZAk">
                   <node concept="2OqwBi" id="1pqOqlzUT9R" role="2Oq$k0">

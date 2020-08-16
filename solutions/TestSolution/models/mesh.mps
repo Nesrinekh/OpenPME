@@ -21,8 +21,9 @@
       <concept id="1387474872146285163" name="openpme.core.structure.PropertyReference" flags="ng" index="2qjxXw">
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
       </concept>
-      <concept id="1387474872142362010" name="openpme.core.structure.ResyncGhostVectorDist" flags="ng" index="2r$zyh">
-        <child id="1387474872142362011" name="vector" index="2r$zyg" />
+      <concept id="1387474872142362010" name="openpme.core.structure.ResyncGhost" flags="ng" index="2r$zyh">
+        <child id="1387474872142362011" name="fieldContainer" index="2r$zyg" />
+        <child id="1610830325018065453" name="properties" index="1MuyI8" />
       </concept>
       <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
         <child id="7548145485610641296" name="Boundary" index="2A2w73" />
@@ -266,6 +267,12 @@
           <node concept="1XiV_f" id="jnrNESxGKz" role="2r$zyg">
             <ref role="1Xh6_M" node="jnrNESvOSt" resolve="Old" />
           </node>
+          <node concept="2qjxXw" id="1pqOql$9e73" role="1MuyI8">
+            <ref role="2qjxXB" node="jnrNESxGER" resolve="Uo" />
+          </node>
+          <node concept="2qjxXw" id="1pqOql$9e78" role="1MuyI8">
+            <ref role="2qjxXB" node="jnrNESxGET" resolve="Vo" />
+          </node>
         </node>
         <node concept="SCFH9" id="jnrNESxGL8" role="rpc0u">
           <node concept="2$GKAY" id="jnrNESxGLG" role="SCFHe">
@@ -449,6 +456,12 @@
             </node>
           </node>
           <node concept="2r$zyh" id="jnrNESxGWH" role="oWeDG">
+            <node concept="2qjxXw" id="1pqOql$8IRP" role="1MuyI8">
+              <ref role="2qjxXB" node="jnrNESxGER" resolve="Uo" />
+            </node>
+            <node concept="2qjxXw" id="1pqOql$8IRV" role="1MuyI8">
+              <ref role="2qjxXB" node="jnrNESxGET" resolve="Vo" />
+            </node>
             <node concept="1XiV_f" id="jnrNESxGXR" role="2r$zyg">
               <ref role="1Xh6_M" node="jnrNESvOSt" resolve="Old" />
             </node>

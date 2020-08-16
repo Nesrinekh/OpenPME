@@ -1208,14 +1208,21 @@
   </node>
   <node concept="1TIwiD" id="1d1jgI8ORmq">
     <property role="EcuMT" value="1387474872142362010" />
-    <property role="TrG5h" value="ResyncGhostVectorDist" />
+    <property role="TrG5h" value="ResyncGhost" />
     <property role="3GE5qa" value="openFPM" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="1TJgyj" id="1d1jgI8ORmr" role="1TKVEi">
       <property role="IQ2ns" value="1387474872142362011" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="vector" />
+      <property role="20kJfa" value="fieldContainer" />
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="1pqOql$8fCH" role="1TKVEi">
+      <property role="IQ2ns" value="1610830325018065453" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="properties" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1d1jgI93P9F" resolve="PropertyReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="1d1jgI92mSZ">
