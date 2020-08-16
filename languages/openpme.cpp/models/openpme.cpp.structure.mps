@@ -946,5 +946,18 @@
     <property role="TrG5h" value="Classifier" />
     <ref role="1TJDcQ" node="2wy6nJ6_HYi" resolve="Expression" />
   </node>
+  <node concept="1TIwiD" id="1pqOql$eZ3I">
+    <property role="EcuMT" value="1610830325019832558" />
+    <property role="3GE5qa" value="openPME" />
+    <property role="TrG5h" value="LaplacianDiscrete" />
+    <ref role="1TJDcQ" node="2wy6nJ6_HYi" resolve="Expression" />
+    <node concept="1TJgyj" id="1pqOql$eZ5r" role="1TKVEi">
+      <property role="IQ2ns" value="1610830325019832667" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="iterator" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2wy6nJ6_HYi" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
