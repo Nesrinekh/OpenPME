@@ -546,20 +546,7 @@
     <property role="3GE5qa" value="simulation.loop" />
     <property role="TrG5h" value="ParticleLoop" />
     <property role="34LRSv" value="Particle loop" />
-    <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
-    <node concept="1TJgyj" id="1Uhwoc6_l$d" role="1TKVEi">
-      <property role="IQ2ns" value="2202684092512033037" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="particle" />
-      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
-    </node>
-    <node concept="1TJgyj" id="1MYyjtFOOA9" role="1TKVEi">
-      <property role="IQ2ns" value="2071243749762222473" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="iterable" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
+    <ref role="1TJDcQ" node="28VDvkeJS67" resolve="FieldLoop" />
     <node concept="PrWs8" id="7mV$Q_d7zNJ" role="PzmwI">
       <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
     </node>
@@ -922,20 +909,7 @@
     <property role="EcuMT" value="3375603839768458152" />
     <property role="3GE5qa" value="simulation.loop" />
     <property role="TrG5h" value="MeshLoop" />
-    <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
-    <node concept="1TJgyj" id="2VozsUVPZeD" role="1TKVEi">
-      <property role="IQ2ns" value="3375603839768458153" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="meshNode" />
-      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
-    </node>
-    <node concept="1TJgyj" id="2VozsUVPZeF" role="1TKVEi">
-      <property role="IQ2ns" value="3375603839768458155" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="iterable" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
+    <ref role="1TJDcQ" node="28VDvkeJS67" resolve="FieldLoop" />
   </node>
   <node concept="1TIwiD" id="29Q0z7qeyvk">
     <property role="EcuMT" value="2483174657679304660" />
@@ -1314,6 +1288,32 @@
       <property role="20kJfa" value="ndim" />
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="28VDvkeJS67">
+    <property role="EcuMT" value="2466747692848480647" />
+    <property role="3GE5qa" value="simulation.loop" />
+    <property role="TrG5h" value="FieldLoop" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="7mV$Q_d6GL2" resolve="Loop" />
+    <node concept="1TJgyj" id="28VDvkeJS6a" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692848480650" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="node" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="28VDvkeJS6c" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692848480652" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="iterable" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28VDvkeTsGu">
+    <property role="EcuMT" value="2466747692850989854" />
+    <property role="3GE5qa" value="simulation.loop" />
+    <property role="TrG5h" value="StencilMeshLoop" />
+    <ref role="1TJDcQ" node="2VozsUVPZeC" resolve="MeshLoop" />
   </node>
 </model>
 

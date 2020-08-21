@@ -496,7 +496,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1Uhwoc6_s2v" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc6_l$d" resolve="particle" />
+        <ref role="1NtTu8" to="r2co:28VDvkeJS6a" resolve="node" />
       </node>
       <node concept="3F0ifn" id="1Uhwoc6xAeV" role="3EZMnx">
         <property role="3F0ifm" value="in" />
@@ -505,7 +505,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1MYyjtFOOAS" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1MYyjtFOOA9" resolve="iterable" />
+        <ref role="1NtTu8" to="r2co:28VDvkeJS6c" resolve="iterable" />
         <node concept="ljvvj" id="1MYyjtFOOBj" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1320,13 +1320,13 @@
         </node>
       </node>
       <node concept="3F1sOY" id="2VozsUVPZf9" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:2VozsUVPZeD" resolve="meshNode" />
+        <ref role="1NtTu8" to="r2co:28VDvkeJS6a" resolve="node" />
       </node>
       <node concept="3F0ifn" id="2VozsUVPZfh" role="3EZMnx">
         <property role="3F0ifm" value="in" />
       </node>
       <node concept="3F1sOY" id="2VozsUVPZfr" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:2VozsUVPZeF" resolve="iterable" />
+        <ref role="1NtTu8" to="r2co:28VDvkeJS6c" resolve="iterable" />
         <node concept="ljvvj" id="2VozsUVPZfB" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1709,6 +1709,48 @@
         <property role="3F0ifm" value="]" />
       </node>
       <node concept="l2Vlx" id="1pqOqlzNQ17" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="28VDvkeYSY1">
+    <property role="3GE5qa" value="simulation.loop" />
+    <ref role="1XX52x" to="r2co:28VDvkeTsGu" resolve="StencilMeshLoop" />
+    <node concept="3EZMnI" id="28VDvkeYSY3" role="2wV5jI">
+      <node concept="3F0ifn" id="28VDvkeYSY4" role="3EZMnx">
+        <property role="3F0ifm" value="for stencil mesh node" />
+        <node concept="VechU" id="28VDvkeYSY5" role="3F10Kt">
+          <property role="Vb096" value="fLwANPu/blue" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="28VDvkeYSY6" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkeJS6a" resolve="node" />
+      </node>
+      <node concept="3F0ifn" id="28VDvkeYSY7" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F1sOY" id="28VDvkeYSY8" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkeJS6c" resolve="iterable" />
+        <node concept="ljvvj" id="28VDvkeYSY9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="28VDvkeYSYa" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:1Uhwoc6omJJ" resolve="body" />
+        <node concept="2iRkQZ" id="28VDvkeYSYb" role="2czzBx" />
+        <node concept="VPM3Z" id="28VDvkeYSYc" role="3F10Kt" />
+        <node concept="ljvvj" id="28VDvkeYSYd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="28VDvkeYSYe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="28VDvkeYSYf" role="3EZMnx">
+        <property role="3F0ifm" value="end for" />
+        <node concept="VechU" id="28VDvkeYSYg" role="3F10Kt">
+          <property role="Vb096" value="fLwANPu/blue" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="28VDvkeYSYh" role="2iSdaV" />
     </node>
   </node>
 </model>
