@@ -1416,13 +1416,13 @@
     <ref role="1XX52x" to="r2co:7mV$Q_d7Dfn" resolve="ParticleAccess" />
     <node concept="3EZMnI" id="1Uhwoc6$KaJ" role="2wV5jI">
       <node concept="3F1sOY" id="5EGbNbOofyx" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1d1jgI934Lt" resolve="ref" />
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODU" resolve="variableReference" />
       </node>
       <node concept="3F0ifn" id="1d1jgI93Hp_" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
       </node>
       <node concept="3F1sOY" id="5EGbNbOofyI" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1d1jgI93VIX" resolve="prop" />
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODW" resolve="propertyReference" />
       </node>
       <node concept="l2Vlx" id="1Uhwoc6$KaM" role="2iSdaV" />
     </node>
@@ -1494,36 +1494,14 @@
     <property role="3GE5qa" value="variables" />
     <ref role="1XX52x" to="r2co:5WMTRp7x65J" resolve="ParticleAccessInDimension" />
     <node concept="3EZMnI" id="5WMTRp7xdvO" role="2wV5jI">
-      <node concept="1iCGBv" id="5WMTRp7xdvP" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1d1jgI934Lt" resolve="ref" />
-        <node concept="1sVBvm" id="5WMTRp7xdvQ" role="1sWHZn">
-          <node concept="1iCGBv" id="5WMTRp7xdvR" role="2wV5jI">
-            <ref role="1NtTu8" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
-            <node concept="1sVBvm" id="5WMTRp7xdvS" role="1sWHZn">
-              <node concept="3F0A7n" id="5WMTRp7xdvT" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3F1sOY" id="28VDvkf8SFJ" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODU" resolve="variableReference" />
       </node>
       <node concept="3F0ifn" id="5WMTRp7xdvU" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
       </node>
-      <node concept="1iCGBv" id="5WMTRp7xdvV" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1d1jgI93VIX" resolve="prop" />
-        <node concept="1sVBvm" id="5WMTRp7xdvW" role="1sWHZn">
-          <node concept="1iCGBv" id="5WMTRp7xdvX" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:1d1jgI93P9G" resolve="property" />
-            <node concept="1sVBvm" id="5WMTRp7xdvY" role="1sWHZn">
-              <node concept="3F0A7n" id="5WMTRp7xdvZ" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3F1sOY" id="28VDvkf8SG7" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODW" resolve="propertyReference" />
       </node>
       <node concept="3F0ifn" id="5WMTRp7xdxa" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1541,36 +1519,14 @@
     <property role="3GE5qa" value="variables" />
     <ref role="1XX52x" to="r2co:5EGbNbOlbNy" resolve="MeshAccess" />
     <node concept="3EZMnI" id="5EGbNbOlGZu" role="2wV5jI">
-      <node concept="1iCGBv" id="5EGbNbOlGZv" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5EGbNbOlbNz" resolve="meshReference" />
-        <node concept="1sVBvm" id="5EGbNbOlGZw" role="1sWHZn">
-          <node concept="1iCGBv" id="5EGbNbOlGZx" role="2wV5jI">
-            <ref role="1NtTu8" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
-            <node concept="1sVBvm" id="5EGbNbOlGZy" role="1sWHZn">
-              <node concept="3F0A7n" id="5EGbNbOlGZz" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3F1sOY" id="28VDvkf8OEe" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODU" resolve="variableReference" />
       </node>
       <node concept="3F0ifn" id="5EGbNbOlGZ$" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
       </node>
-      <node concept="1iCGBv" id="5EGbNbOlGZ_" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5EGbNbOlbN_" resolve="propertyReference" />
-        <node concept="1sVBvm" id="5EGbNbOlGZA" role="1sWHZn">
-          <node concept="1iCGBv" id="5EGbNbOlGZB" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:1d1jgI93P9G" resolve="property" />
-            <node concept="1sVBvm" id="5EGbNbOlGZC" role="1sWHZn">
-              <node concept="3F0A7n" id="5EGbNbOlGZD" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3F1sOY" id="28VDvkf8OES" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODW" resolve="propertyReference" />
       </node>
       <node concept="l2Vlx" id="5EGbNbOlGZE" role="2iSdaV" />
     </node>
@@ -1668,36 +1624,14 @@
     <property role="3GE5qa" value="variables" />
     <ref role="1XX52x" to="r2co:1pqOqlzNQ0D" resolve="MeshAccessInDimension" />
     <node concept="3EZMnI" id="1pqOqlzNQ0S" role="2wV5jI">
-      <node concept="1iCGBv" id="1pqOqlzNQ0T" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5EGbNbOlbNz" resolve="meshReference" />
-        <node concept="1sVBvm" id="1pqOqlzNQ0U" role="1sWHZn">
-          <node concept="1iCGBv" id="1pqOqlzNQ0V" role="2wV5jI">
-            <ref role="1NtTu8" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
-            <node concept="1sVBvm" id="1pqOqlzNQ0W" role="1sWHZn">
-              <node concept="3F0A7n" id="1pqOqlzNQ0X" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3F1sOY" id="28VDvkf8QM7" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODU" resolve="variableReference" />
       </node>
       <node concept="3F0ifn" id="1pqOqlzNQ0Y" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
       </node>
-      <node concept="1iCGBv" id="1pqOqlzNQ0Z" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5EGbNbOlbN_" resolve="propertyReference" />
-        <node concept="1sVBvm" id="1pqOqlzNQ10" role="1sWHZn">
-          <node concept="1iCGBv" id="1pqOqlzNQ11" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:1d1jgI93P9G" resolve="property" />
-            <node concept="1sVBvm" id="1pqOqlzNQ12" role="1sWHZn">
-              <node concept="3F0A7n" id="1pqOqlzNQ13" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="3F1sOY" id="28VDvkf8QMv" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODU" resolve="variableReference" />
       </node>
       <node concept="3F0ifn" id="1pqOqlzNQ14" role="3EZMnx">
         <property role="3F0ifm" value="[" />
@@ -1751,6 +1685,56 @@
         </node>
       </node>
       <node concept="l2Vlx" id="28VDvkeYSYh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="28VDvkfbPdm">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="r2co:28VDvkf8ODS" resolve="AccessInDimension" />
+    <node concept="3EZMnI" id="28VDvkfbPdo" role="2wV5jI">
+      <node concept="3F1sOY" id="28VDvkfbPdv" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkfbPdc" resolve="access" />
+      </node>
+      <node concept="3F0ifn" id="28VDvkfbPd_" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F1sOY" id="28VDvkfcD3A" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkfcyCk" resolve="ndim" />
+      </node>
+      <node concept="3F0ifn" id="28VDvkfbPdT" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="l2Vlx" id="28VDvkfbPdr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="28VDvkfrFIr">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="r2co:28VDvkfrFIi" resolve="StencilMeshAccess" />
+    <node concept="3EZMnI" id="28VDvkfrFIt" role="2wV5jI">
+      <node concept="3F0ifn" id="28VDvkfrFIG" role="3EZMnx">
+        <property role="3F0ifm" value="stencil" />
+        <node concept="VechU" id="28VDvkfrFIO" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5A/lightGray" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="28VDvkfrFIu" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODU" resolve="variableReference" />
+      </node>
+      <node concept="3F0ifn" id="28VDvkfrFIv" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="28VDvkfrFIw" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkf8ODW" resolve="propertyReference" />
+      </node>
+      <node concept="3F0ifn" id="28VDvkfwbLN" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+      </node>
+      <node concept="3F1sOY" id="28VDvkfwyAH" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:28VDvkfwyAl" resolve="index" />
+      </node>
+      <node concept="3F0ifn" id="28VDvkfwbM_" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+      </node>
+      <node concept="l2Vlx" id="28VDvkfrFIx" role="2iSdaV" />
     </node>
   </node>
 </model>

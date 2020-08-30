@@ -749,6 +749,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2wy6nJ6_Gn9" resolve="Statement" />
     </node>
+    <node concept="1TJgyj" id="28VDvkgXwtU" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692885608314" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dimension" />
+      <ref role="20lvS9" node="2wy6nJ6Ad82" resolve="IntegerLiteral" />
+    </node>
     <node concept="PrWs8" id="RieNzf0jtj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

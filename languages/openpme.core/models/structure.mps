@@ -1056,21 +1056,7 @@
     <property role="EcuMT" value="8483536403557159895" />
     <property role="TrG5h" value="ParticleAccess" />
     <property role="3GE5qa" value="variables" />
-    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
-    <node concept="1TJgyj" id="1d1jgI934Lt" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872146087005" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ref" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
-    <node concept="1TJgyj" id="1d1jgI93VIX" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872146312125" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="prop" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1d1jgI93P9F" resolve="PropertyReference" />
-    </node>
+    <ref role="1TJDcQ" node="28VDvkf8ODT" resolve="BaseAccess" />
   </node>
   <node concept="1TIwiD" id="7mV$Q_d7Dfq">
     <property role="EcuMT" value="8483536403557159898" />
@@ -1164,21 +1150,7 @@
     <property role="EcuMT" value="6533649055301811426" />
     <property role="3GE5qa" value="variables" />
     <property role="TrG5h" value="MeshAccess" />
-    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
-    <node concept="1TJgyj" id="5EGbNbOlbNz" role="1TKVEi">
-      <property role="IQ2ns" value="6533649055301811427" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="meshReference" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
-    <node concept="1TJgyj" id="5EGbNbOlbN_" role="1TKVEi">
-      <property role="IQ2ns" value="6533649055301811429" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="propertyReference" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1d1jgI93P9F" resolve="PropertyReference" />
-    </node>
+    <ref role="1TJDcQ" node="28VDvkf8ODT" resolve="BaseAccess" />
   </node>
   <node concept="1TIwiD" id="1d1jgI8ORmq">
     <property role="EcuMT" value="1387474872142362010" />
@@ -1314,6 +1286,64 @@
     <property role="3GE5qa" value="simulation.loop" />
     <property role="TrG5h" value="StencilMeshLoop" />
     <ref role="1TJDcQ" node="2VozsUVPZeC" resolve="MeshLoop" />
+    <node concept="1TJgyj" id="28VDvkgOqS8" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692883226120" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stencilPosition" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28VDvkf8ODS">
+    <property role="EcuMT" value="2466747692855020152" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="AccessInDimension" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="28VDvkfbPdc" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692855808844" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="access" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="28VDvkf8ODT" resolve="BaseAccess" />
+    </node>
+    <node concept="1TJgyj" id="28VDvkfcyCk" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692855994900" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ndim" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28VDvkf8ODT">
+    <property role="EcuMT" value="2466747692855020153" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="BaseAccess" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="28VDvkf8ODU" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692855020154" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="variableReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="28VDvkf8ODW" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692855020156" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="propertyReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1d1jgI93P9F" resolve="PropertyReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28VDvkfrFIi">
+    <property role="EcuMT" value="2466747692859964306" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="StencilMeshAccess" />
+    <ref role="1TJDcQ" node="5EGbNbOlbNy" resolve="MeshAccess" />
+    <node concept="1TJgyj" id="28VDvkfwyAl" role="1TKVEi">
+      <property role="IQ2ns" value="2466747692861237653" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="index" />
+      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    </node>
   </node>
 </model>
 
