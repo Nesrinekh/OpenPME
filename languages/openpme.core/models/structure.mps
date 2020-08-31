@@ -1344,6 +1344,12 @@
       <property role="20kJfa" value="index" />
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
+    <node concept="1TJgyj" id="3j27GztWvSZ" role="1TKVEi">
+      <property role="IQ2ns" value="3801634883520036415" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="containerReference" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3j27GztH3GS">
     <property role="EcuMT" value="3801634883515988792" />
