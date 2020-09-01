@@ -15775,8 +15775,8 @@
                 </node>
                 <node concept="37xRux" id="3j27GztQAAc" role="2$G18d">
                   <node concept="37xRuw" id="3j27GztQBuE" role="2$G18d">
-                    <node concept="2$GK$c" id="3j27GztQBAm" role="2$G181">
-                      <property role="2$GK$b" value="6" />
+                    <node concept="2$GK$c" id="3j27GzuInej" role="2$G181">
+                      <property role="2$GK$b" value="6.0" />
                     </node>
                     <node concept="H6eYd" id="3j27GztQBAp" role="2$G18d">
                       <node concept="HlhTB" id="3j27GztQBAq" role="H5fqT">
