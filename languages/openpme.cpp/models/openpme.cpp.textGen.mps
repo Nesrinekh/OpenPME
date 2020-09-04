@@ -2293,5 +2293,18 @@
       <node concept="3clFbS" id="1fud6A18u0W" role="2VODD2" />
     </node>
   </node>
+  <node concept="WtQ9Q" id="40ZbGzYMvGj">
+    <property role="3GE5qa" value="Type" />
+    <ref role="WuzLi" to="lfpi:40ZbGzYMvFX" resolve="LongIntType" />
+    <node concept="11bSqf" id="40ZbGzYMvGk" role="11c4hB">
+      <node concept="3clFbS" id="40ZbGzYMvGl" role="2VODD2">
+        <node concept="lc7rE" id="40ZbGzYMvGC" role="3cqZAp">
+          <node concept="la8eA" id="40ZbGzYMvGD" role="lcghm">
+            <property role="lacIc" value="long int" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

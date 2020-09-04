@@ -22,3 +22,7 @@ on Mac or
     File > Settings > Plugins > search for <PLUGIN_NAME> (install dependencies if requested)
     
 on Linux.
+
+# Resources
+
+Resources used in the examples are located in the /resources folder.
