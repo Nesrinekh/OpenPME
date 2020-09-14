@@ -389,7 +389,7 @@
   <node concept="1TIwiD" id="6sMVU6wHppa">
     <property role="EcuMT" value="7436269412207138378" />
     <property role="TrG5h" value="Interpolate" />
-    <property role="3GE5qa" value="simulation.command.continuous" />
+    <property role="3GE5qa" value="simulation.command" />
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="PrWs8" id="7mV$Q_d6oG$" role="PzmwI">
       <ref role="PrY4T" node="7mV$Q_d6oGv" resolve="ICommandC" />
@@ -1238,14 +1238,14 @@
   </node>
   <node concept="1TIwiD" id="1fud6A14e54">
     <property role="EcuMT" value="1431639359291973956" />
-    <property role="3GE5qa" value="initialization" />
+    <property role="3GE5qa" value="initialization.diffop_discretization" />
     <property role="TrG5h" value="DiffOpDiscretizationScheme" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1fud6A14e55">
     <property role="EcuMT" value="1431639359291973957" />
-    <property role="3GE5qa" value="initialization" />
+    <property role="3GE5qa" value="initialization.diffop_discretization" />
     <property role="TrG5h" value="FDStarStencil" />
     <ref role="1TJDcQ" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
   </node>
@@ -1403,6 +1403,19 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="caxt:7bpBJvmqDtw" resolve="StringLiteral" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="13xhPA6MJQo">
+    <property role="EcuMT" value="1216331824205856152" />
+    <property role="3GE5qa" value="initialization.interpolation" />
+    <property role="TrG5h" value="InterpolationScheme" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="13xhPA6MJQp">
+    <property role="EcuMT" value="1216331824205856153" />
+    <property role="3GE5qa" value="initialization.interpolation" />
+    <property role="TrG5h" value="MP4Interpolation" />
+    <ref role="1TJDcQ" node="13xhPA6MJQo" resolve="InterpolationScheme" />
   </node>
 </model>
 

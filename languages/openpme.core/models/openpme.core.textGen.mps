@@ -1154,19 +1154,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="47KNQXwoAbL">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="WuzLi" to="r2co:6sMVU6wHppa" resolve="Interpolate" />
-    <node concept="11bSqf" id="47KNQXwoAbM" role="11c4hB">
-      <node concept="3clFbS" id="47KNQXwoAbN" role="2VODD2">
-        <node concept="lc7rE" id="47KNQXwoAbQ" role="3cqZAp">
-          <node concept="la8eA" id="47KNQXwoAbP" role="lcghm">
-            <property role="lacIc" value="Interpolate" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="47KNQXwoAcj">
     <property role="3GE5qa" value="simulation.command.discrete" />
     <ref role="WuzLi" to="r2co:6sMVU6wHprM" resolve="CellList" />
@@ -1499,6 +1486,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="47KNQXwoAbL">
+    <property role="3GE5qa" value="simulation.command" />
+    <ref role="WuzLi" to="r2co:6sMVU6wHppa" resolve="Interpolate" />
+    <node concept="11bSqf" id="47KNQXwoAbM" role="11c4hB">
+      <node concept="3clFbS" id="47KNQXwoAbN" role="2VODD2" />
     </node>
   </node>
 </model>

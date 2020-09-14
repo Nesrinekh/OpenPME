@@ -101,6 +101,12 @@
       <property role="20kJfa" value="DiffOpDiscrScheme" />
       <ref role="20lvS9" to="r2co:1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
     </node>
+    <node concept="1TJgyj" id="13xhPA6MJQK" role="1TKVEi">
+      <property role="IQ2ns" value="1216331824205856176" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="InterpolationScheme" />
+      <ref role="20lvS9" to="r2co:13xhPA6MJQo" resolve="InterpolationScheme" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfL0P">
     <property role="EcuMT" value="5443610339528609845" />
