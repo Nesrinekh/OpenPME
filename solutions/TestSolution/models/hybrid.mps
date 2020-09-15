@@ -70,6 +70,10 @@
         <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
       <concept id="8483536403557159895" name="openpme.core.structure.ParticleAccess" flags="ng" index="SDg2Y" />
+      <concept id="4629470382766909934" name="openpme.core.structure.Load" flags="ng" index="2Zf4sA">
+        <child id="4629470382766909973" name="file" index="2Zf4jt" />
+        <child id="4629470382766909935" name="container" index="2Zf4sB" />
+      </concept>
       <concept id="7436269412207138366" name="openpme.core.structure.DifferentialOperator" flags="ng" index="37xRAv" />
       <concept id="7436269412207138368" name="openpme.core.structure.LaplacianOperator" flags="ng" index="37xRBx" />
       <concept id="7436269412207138378" name="openpme.core.structure.Interpolate" flags="ng" index="37xRBF">
@@ -105,6 +109,9 @@
       </concept>
       <concept id="8275820577561417696" name="openpme.expressions.structure.VectorLiteral" flags="ng" index="2$GK$n">
         <child id="8275820577561417697" name="values" index="2$GK$m" />
+      </concept>
+      <concept id="8275820577561417568" name="openpme.expressions.structure.StringLiteral" flags="ng" index="2$GKAn">
+        <property id="8275820577561417569" name="value" index="2$GKAm" />
       </concept>
       <concept id="8275820577561417545" name="openpme.expressions.structure.IntegerLiteral" flags="ng" index="2$GKAY">
         <property id="8275820577561417546" name="value" index="2$GKAX" />
@@ -190,7 +197,7 @@
       <node concept="2A2bSJ" id="5BkNMNhr9YS" role="2A29xV" />
       <node concept="2A2bSH" id="5BkNMNhr9YT" role="2A29xY">
         <node concept="2$GK$c" id="5BkNMNh_xBC" role="2A2s8W">
-          <property role="2$GK$b" value="1" />
+          <property role="2$GK$b" value="2" />
         </node>
       </node>
       <node concept="2A2bSI" id="5BkNMNhr9YV" role="2A29xw">
@@ -242,6 +249,14 @@
           <node concept="2qhxl8" id="5EGbNbOoyaS" role="1wvloH" />
           <node concept="2$GK$c" id="5EGbNbOoyeh" role="1wvlr8">
             <property role="2$GK$b" value="0.0125" />
+          </node>
+        </node>
+        <node concept="2Zf4sA" id="13xhPA7nRnc" role="rpc0u">
+          <node concept="1XiV_f" id="13xhPA7nRrg" role="2Zf4sB">
+            <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+          </node>
+          <node concept="2$GKAn" id="13xhPA7nRng" role="2Zf4jt">
+            <property role="2$GKAm" value="init_vort.hdf5" />
           </node>
         </node>
         <node concept="1RrskY" id="2VozsUW1yt_" role="rpc0u">
@@ -331,7 +346,7 @@
                   <ref role="1Xh6_M" node="5EGbNbOnE4v" resolve="rhs" />
                 </node>
                 <node concept="2qjxXw" id="49sT_KUowrD" role="H6eY9">
-                  <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex-stretching_m" />
+                  <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex_stretching_m" />
                 </node>
               </node>
               <node concept="37xRxu" id="5EGbNbOnE55" role="2$G18d">
@@ -382,7 +397,7 @@
                   <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
                 </node>
                 <node concept="2qjxXw" id="49sT_KUowsW" role="H6eY9">
-                  <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex-stretching" />
+                  <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex_stretching" />
                 </node>
               </node>
               <node concept="2$GK$c" id="5EGbNbOofok" role="2$G18d">
@@ -413,10 +428,10 @@
               <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
             </node>
             <node concept="2qjxXw" id="5EGbNbOpmXp" role="2IY99A">
-              <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex-stretching_m" />
+              <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex_stretching_m" />
             </node>
             <node concept="2qjxXw" id="5EGbNbOpmYz" role="2IY99j">
-              <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex-stretching" />
+              <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex_stretching" />
             </node>
           </node>
           <node concept="37xRBF" id="5EGbNbOoftQ" role="oWeDG">
@@ -469,7 +484,7 @@
                         <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
                       </node>
                       <node concept="2qjxXw" id="49sT_KUowuB" role="H6eY9">
-                        <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex-stretching" />
+                        <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex_stretching" />
                       </node>
                     </node>
                   </node>
@@ -620,7 +635,7 @@
                   <ref role="1Xh6_M" node="5EGbNbOnE4v" resolve="rhs" />
                 </node>
                 <node concept="2qjxXw" id="49sT_KUowwo" role="H6eY9">
-                  <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex-stretching_m" />
+                  <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex_stretching_m" />
                 </node>
               </node>
               <node concept="37xRxu" id="5EGbNbOpne6" role="2$G18d">
@@ -674,7 +689,7 @@
                   <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
                 </node>
                 <node concept="2qjxXw" id="49sT_KUowxv" role="H6eY9">
-                  <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex-stretching" />
+                  <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex_stretching" />
                 </node>
               </node>
             </node>
@@ -702,10 +717,10 @@
               <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
             </node>
             <node concept="2qjxXw" id="5EGbNbOpneA" role="2IY99A">
-              <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex-stretching_m" />
+              <ref role="2qjxXB" node="5EGbNbOpmXi" resolve="vortex_stretching_m" />
             </node>
             <node concept="2qjxXw" id="5EGbNbOpneB" role="2IY99j">
-              <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex-stretching" />
+              <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex_stretching" />
             </node>
           </node>
           <node concept="37xRBF" id="5EGbNbOpneC" role="oWeDG">
@@ -738,7 +753,7 @@
                         <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
                       </node>
                       <node concept="2qjxXw" id="49sT_KUowyg" role="H6eY9">
-                        <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex-stretching" />
+                        <ref role="2qjxXB" node="5EGbNbOpmXK" resolve="vortex_stretching" />
                       </node>
                     </node>
                   </node>
@@ -860,7 +875,7 @@
             </node>
           </node>
           <node concept="1Rqx6$" id="5EGbNbOpmXK" role="28xOHc">
-            <property role="TrG5h" value="vortex-stretching" />
+            <property role="TrG5h" value="vortex_stretching" />
             <node concept="2$GKAY" id="13xhPA6QiWB" role="1PL7_6">
               <property role="2$GKAX" value="3" />
             </node>
@@ -921,7 +936,7 @@
         <node concept="28AKH2" id="5EGbNbOnE4v" role="28xmNV">
           <property role="TrG5h" value="rhs" />
           <node concept="1Rqx6$" id="5EGbNbOpmXi" role="28xOHc">
-            <property role="TrG5h" value="vortex-stretching_m" />
+            <property role="TrG5h" value="vortex_stretching_m" />
             <node concept="2$GKAY" id="13xhPA6MJOE" role="1PL7_6">
               <property role="2$GKAX" value="3" />
             </node>
