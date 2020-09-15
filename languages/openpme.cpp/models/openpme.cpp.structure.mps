@@ -446,27 +446,13 @@
     <property role="EcuMT" value="4660985440354553094" />
     <property role="TrG5h" value="ClassInstanceDecl" />
     <property role="3GE5qa" value="Statement" />
-    <ref role="1TJDcQ" node="2wy6nJ6_Gn9" resolve="Statement" />
-    <node concept="1TJgyj" id="U5MXwlv4rY" role="1TKVEi">
-      <property role="IQ2ns" value="1046466617367348990" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="classType" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2wy6nJ6ABLZ" resolve="Type" />
-    </node>
+    <ref role="1TJDcQ" node="52_2wI3$Po5" resolve="BaseVariableDeclaration" />
     <node concept="1TJgyj" id="42J9p0zAsO9" role="1TKVEi">
       <property role="IQ2ns" value="4660985440354553097" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="initArgs" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2wy6nJ6_HYi" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="1fud6A15cJQ" role="1TKVEi">
-      <property role="IQ2ns" value="1431639359292230646" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="classifier" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1fud6A15cJV" resolve="Classifier" />
     </node>
     <node concept="PrWs8" id="1Uhwoc5QJBc" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -979,7 +965,11 @@
       <property role="IQ2ns" value="1216331824220294655" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="declarations" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="52_2wI3$Po5" resolve="BaseVariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="13xhPA7Juvj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
