@@ -971,5 +971,16 @@
     <property role="TrG5h" value="LongIntType" />
     <ref role="1TJDcQ" node="2wy6nJ6ABLZ" resolve="Type" />
   </node>
+  <node concept="1TIwiD" id="13xhPA7DORY">
+    <property role="EcuMT" value="1216331824220294654" />
+    <property role="TrG5h" value="StructDeclaration" />
+    <ref role="1TJDcQ" node="2wy6nJ6_Gn9" resolve="Statement" />
+    <node concept="1TJgyj" id="13xhPA7DORZ" role="1TKVEi">
+      <property role="IQ2ns" value="1216331824220294655" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="declarations" />
+      <ref role="20lvS9" node="52_2wI3$Po5" resolve="BaseVariableDeclaration" />
+    </node>
+  </node>
 </model>
 
