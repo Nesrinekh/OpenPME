@@ -972,5 +972,23 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="13xhPA7TAaN">
+    <property role="EcuMT" value="1216331824224428723" />
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="ConstClassifier" />
+    <ref role="1TJDcQ" node="1fud6A15cJV" resolve="Classifier" />
+  </node>
+  <node concept="1TIwiD" id="13xhPA7TAcA">
+    <property role="EcuMT" value="1216331824224428838" />
+    <property role="3GE5qa" value="Type" />
+    <property role="TrG5h" value="UnsignedInt" />
+    <ref role="1TJDcQ" node="2wy6nJ6ABLZ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="13xhPA81qAO">
+    <property role="EcuMT" value="1216331824226478516" />
+    <property role="3GE5qa" value="Type" />
+    <property role="TrG5h" value="BooleanType" />
+    <ref role="1TJDcQ" node="2wy6nJ6ABLZ" resolve="Type" />
+  </node>
 </model>
 

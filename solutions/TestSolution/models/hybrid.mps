@@ -256,7 +256,7 @@
             <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
           </node>
           <node concept="2$GKAn" id="13xhPA7nRng" role="2Zf4jt">
-            <property role="2$GKAm" value="init_vort.hdf5" />
+            <property role="2$GKAm" value="init_vort_double.hdf5" />
           </node>
         </node>
         <node concept="1RrskY" id="2VozsUW1yt_" role="rpc0u">
@@ -306,7 +306,7 @@
                   <ref role="1Xh6_M" node="5EGbNbOmvJn" resolve="phi" />
                 </node>
                 <node concept="2qjxXw" id="49sT_KUowq4" role="H6eY9">
-                  <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity" />
+                  <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity_phi" />
                 </node>
               </node>
               <node concept="2IYSba" id="5EGbNbOmvJU" role="2$G18d">
@@ -333,7 +333,7 @@
                     <ref role="1Xh6_M" node="5EGbNbOmvJn" resolve="phi" />
                   </node>
                   <node concept="2qjxXw" id="49sT_KUowqL" role="H6eY9">
-                    <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity" />
+                    <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity_phi" />
                   </node>
                 </node>
               </node>
@@ -595,7 +595,7 @@
                   <ref role="1Xh6_M" node="5EGbNbOmvJn" resolve="phi" />
                 </node>
                 <node concept="2qjxXw" id="49sT_KUowvq" role="H6eY9">
-                  <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity" />
+                  <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity_phi" />
                 </node>
               </node>
               <node concept="2IYSba" id="5EGbNbOpndP" role="2$G18d">
@@ -622,7 +622,7 @@
                     <ref role="1Xh6_M" node="5EGbNbOmvJn" resolve="phi" />
                   </node>
                   <node concept="2qjxXw" id="49sT_KUoww3" role="H6eY9">
-                    <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity" />
+                    <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity_phi" />
                   </node>
                 </node>
               </node>
@@ -916,7 +916,7 @@
         <node concept="28AKH2" id="5EGbNbOmvJn" role="28xmNV">
           <property role="TrG5h" value="phi" />
           <node concept="1Rqx6$" id="5EGbNbOpmX8" role="28xOHc">
-            <property role="TrG5h" value="velocity" />
+            <property role="TrG5h" value="velocity_phi" />
             <node concept="2$GKAY" id="13xhPA6MJOC" role="1PL7_6">
               <property role="2$GKAX" value="3" />
             </node>
