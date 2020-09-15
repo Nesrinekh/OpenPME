@@ -2393,7 +2393,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="13xhPA7TA8u">
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Classifier" />
     <ref role="WuzLi" to="lfpi:1fud6A15cJU" resolve="StaticClassifier" />
     <node concept="11bSqf" id="13xhPA7TA8v" role="11c4hB">
       <node concept="3clFbS" id="13xhPA7TA8w" role="2VODD2">
@@ -2406,7 +2406,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="13xhPA7TAaO">
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Classifier" />
     <ref role="WuzLi" to="lfpi:13xhPA7TAaN" resolve="ConstClassifier" />
     <node concept="11bSqf" id="13xhPA7TAaP" role="11c4hB">
       <node concept="3clFbS" id="13xhPA7TAaQ" role="2VODD2">
@@ -2439,6 +2439,19 @@
         <node concept="lc7rE" id="13xhPA81qBa" role="3cqZAp">
           <node concept="la8eA" id="13xhPA81qBw" role="lcghm">
             <property role="lacIc" value="bool" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="13xhPA88zaq">
+    <property role="3GE5qa" value="Expression.Classifier" />
+    <ref role="WuzLi" to="lfpi:13xhPA88zap" resolve="TypedefClassifier" />
+    <node concept="11bSqf" id="13xhPA88zar" role="11c4hB">
+      <node concept="3clFbS" id="13xhPA88zas" role="2VODD2">
+        <node concept="lc7rE" id="13xhPA88zaJ" role="3cqZAp">
+          <node concept="la8eA" id="13xhPA88zb5" role="lcghm">
+            <property role="lacIc" value="typedef" />
           </node>
         </node>
       </node>

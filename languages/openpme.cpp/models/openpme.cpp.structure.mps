@@ -928,13 +928,13 @@
   </node>
   <node concept="1TIwiD" id="1fud6A15cJU">
     <property role="EcuMT" value="1431639359292230650" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Classifier" />
     <property role="TrG5h" value="StaticClassifier" />
     <ref role="1TJDcQ" node="1fud6A15cJV" resolve="Classifier" />
   </node>
   <node concept="1TIwiD" id="1fud6A15cJV">
     <property role="EcuMT" value="1431639359292230651" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Classifier" />
     <property role="TrG5h" value="Classifier" />
     <ref role="1TJDcQ" node="2wy6nJ6_HYi" resolve="Expression" />
   </node>
@@ -974,7 +974,7 @@
   </node>
   <node concept="1TIwiD" id="13xhPA7TAaN">
     <property role="EcuMT" value="1216331824224428723" />
-    <property role="3GE5qa" value="Expression" />
+    <property role="3GE5qa" value="Expression.Classifier" />
     <property role="TrG5h" value="ConstClassifier" />
     <ref role="1TJDcQ" node="1fud6A15cJV" resolve="Classifier" />
   </node>
@@ -989,6 +989,12 @@
     <property role="3GE5qa" value="Type" />
     <property role="TrG5h" value="BooleanType" />
     <ref role="1TJDcQ" node="2wy6nJ6ABLZ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="13xhPA88zap">
+    <property role="EcuMT" value="1216331824228348569" />
+    <property role="3GE5qa" value="Expression.Classifier" />
+    <property role="TrG5h" value="TypedefClassifier" />
+    <ref role="1TJDcQ" node="1fud6A15cJV" resolve="Classifier" />
   </node>
 </model>
 

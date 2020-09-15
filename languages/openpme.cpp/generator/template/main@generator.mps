@@ -38,6 +38,7 @@
       <concept id="2202684092505791709" name="openpme.cpp.structure.Comment" flags="ng" index="oDTPu">
         <property id="2202684092505791710" name="text" index="oDTPt" />
       </concept>
+      <concept id="1216331824228348569" name="openpme.cpp.structure.TypedefClassifier" flags="ng" index="2oKRn0" />
       <concept id="6859799677635662204" name="openpme.cpp.structure.Cout" flags="ng" index="oSJoa">
         <child id="6859799677635662205" name="expr" index="oSJob" />
       </concept>
@@ -17997,6 +17998,11 @@
           <node concept="2iMJYj" id="13xhPA81qAE" role="2iZXhu" />
           <node concept="2n1MnE" id="13xhPA81qAK" role="2iZXhu" />
           <node concept="2oTeVH" id="13xhPA82Tmt" role="3jdG5C" />
+        </node>
+        <node concept="3IHdWl" id="13xhPA8a2af" role="2nhwEA">
+          <property role="TrG5h" value="stype" />
+          <node concept="2Nt2u1" id="13xhPA8a2bz" role="3jdG5C" />
+          <node concept="2oKRn0" id="13xhPA8a2bx" role="2iZXhu" />
         </node>
         <node concept="raruj" id="13xhPA7MvLa" role="lGtFl" />
       </node>
