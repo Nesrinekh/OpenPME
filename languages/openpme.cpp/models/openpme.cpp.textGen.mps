@@ -2457,5 +2457,40 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="13xhPA8lCQF">
+    <ref role="WuzLi" to="lfpi:13xhPA8lCQC" resolve="StructReference" />
+    <node concept="11bSqf" id="13xhPA8lCQG" role="11c4hB">
+      <node concept="3clFbS" id="13xhPA8lCQH" role="2VODD2">
+        <node concept="lc7rE" id="13xhPA8lCR0" role="3cqZAp">
+          <node concept="l9hG8" id="13xhPA8lCRm" role="lcghm">
+            <node concept="2OqwBi" id="13xhPA8lDC$" role="lb14g">
+              <node concept="2OqwBi" id="13xhPA8lD2u" role="2Oq$k0">
+                <node concept="117lpO" id="13xhPA8lCSe" role="2Oq$k0" />
+                <node concept="3TrEf2" id="13xhPA8lDf2" role="2OqNvi">
+                  <ref role="3Tt5mk" to="lfpi:13xhPA8lCQD" resolve="structDeclaration" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="13xhPA8lDQX" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="13xhPA8n9nD">
+    <property role="3GE5qa" value="Expression.Classifier" />
+    <ref role="WuzLi" to="lfpi:13xhPA8n9nC" resolve="ConstexprClassifier" />
+    <node concept="11bSqf" id="13xhPA8n9nE" role="11c4hB">
+      <node concept="3clFbS" id="13xhPA8n9nF" role="2VODD2">
+        <node concept="lc7rE" id="13xhPA8n9nY" role="3cqZAp">
+          <node concept="la8eA" id="13xhPA8n9ok" role="lcghm">
+            <property role="lacIc" value="constexpr" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
