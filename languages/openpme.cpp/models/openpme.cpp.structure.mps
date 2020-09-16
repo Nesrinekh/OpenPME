@@ -1001,6 +1001,7 @@
   <node concept="1TIwiD" id="13xhPA8lCQC">
     <property role="EcuMT" value="1216331824231779752" />
     <property role="TrG5h" value="StructReference" />
+    <property role="34LRSv" value="struct_ref" />
     <ref role="1TJDcQ" node="7XHNE5I8D8j" resolve="Reference" />
     <node concept="1TJgyj" id="13xhPA8lCQD" role="1TKVEi">
       <property role="IQ2ns" value="1216331824231779753" />
