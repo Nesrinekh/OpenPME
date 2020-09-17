@@ -12,6 +12,7 @@
   <registry>
     <language id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core">
       <concept id="6473026355835667551" name="openpme.core.structure.FieldContainer" flags="ng" index="28xOHN">
+        <reference id="1216331824240228253" name="ancestor" index="2odz34" />
         <child id="6473026355835667552" name="property" index="28xOHc" />
         <child id="6473026355838427228" name="size" index="28EmXK" />
       </concept>
@@ -862,6 +863,7 @@
         </node>
         <node concept="1Rrs5l" id="5BkNMNhr9Z9" role="28AxrK">
           <property role="TrG5h" value="particles" />
+          <ref role="2odz34" node="5BkNMNhv57G" resolve="vorticity_mesh" />
           <node concept="1Rqx6$" id="5EGbNbOpmWj" role="28xOHc">
             <property role="TrG5h" value="vorticity" />
             <node concept="2$GKAY" id="13xhPA6QiWz" role="1PL7_6">
