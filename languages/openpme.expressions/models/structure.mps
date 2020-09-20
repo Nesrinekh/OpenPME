@@ -154,6 +154,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2cc5eidBZl2" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="3t18JdYzj2P" role="1TKVEi">
+      <property role="IQ2ns" value="3981501974767808693" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="discetizationScheme" />
+      <ref role="20lvS9" to="r2co:1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7bpBJvmqoNZ">
     <property role="EcuMT" value="8275820577561349375" />
