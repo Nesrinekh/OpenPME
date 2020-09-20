@@ -83,6 +83,7 @@
         <child id="6533649055301811553" name="targetProperty" index="2IY99j" />
         <child id="6533649055301811540" name="sourceProperty" index="2IY99A" />
       </concept>
+      <concept id="3981501974764320933" name="openpme.core.structure.FiniteDifferences" flags="ng" index="195HDm" />
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="1610830325009524963" name="dimension" index="1PL7_6" />
       </concept>
@@ -141,6 +142,7 @@
         <child id="7548145485610641308" name="simulation" index="2A2w7f" />
       </concept>
       <concept id="5443610339528609844" name="openpme.modules.structure.Initialization" flags="ng" index="1GH8rR">
+        <child id="1431639359292091187" name="DiffOpDiscrScheme" index="2iN9Xq" />
         <child id="1216331824205856176" name="InterpolationScheme" index="2maVFD" />
         <child id="7548145485610548767" name="dimension" index="2A29xc" />
         <child id="7548145485610548787" name="ghost" index="2A29xw" />
@@ -210,6 +212,7 @@
         <node concept="2$GKAY" id="5BkNMNhr9YX" role="1RreUU" />
       </node>
       <node concept="2maVF0" id="13xhPA6OgJW" role="2maVFD" />
+      <node concept="195HDm" id="3t18JdYmX9r" role="2iN9Xq" />
     </node>
     <node concept="1GH8rQ" id="5BkNMNhr9YY" role="1GHewH">
       <node concept="1Rr2rv" id="5BkNMNhr9Z6" role="2A2w7f">

@@ -1656,7 +1656,7 @@
     <property role="3GE5qa" value="initialization.diffop_discretization" />
     <ref role="1XX52x" to="r2co:1fud6A14e55" resolve="FDStarStencil" />
     <node concept="3F0ifn" id="1fud6A14e5l" role="2wV5jI">
-      <property role="3F0ifm" value="star stencil (finite differences)" />
+      <property role="3F0ifm" value="FD stencil" />
     </node>
   </node>
   <node concept="24kQdi" id="1pqOqlzNQ0Q">
@@ -1838,6 +1838,16 @@
         <property role="3F0ifm" value="MP4" />
       </node>
       <node concept="l2Vlx" id="13xhPA6MJQD" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3t18JdYlZyI">
+    <property role="3GE5qa" value="initialization.diffop_discretization" />
+    <ref role="1XX52x" to="r2co:3t18JdYlZy_" resolve="FiniteDifferences" />
+    <node concept="3EZMnI" id="3t18JdYlZyK" role="2wV5jI">
+      <node concept="3F0ifn" id="3t18JdYlZyR" role="3EZMnx">
+        <property role="3F0ifm" value="Finite Differences" />
+      </node>
+      <node concept="l2Vlx" id="3t18JdYlZyN" role="2iSdaV" />
     </node>
   </node>
 </model>

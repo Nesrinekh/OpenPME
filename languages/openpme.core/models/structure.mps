@@ -1422,5 +1422,11 @@
     <property role="TrG5h" value="MP4Interpolation" />
     <ref role="1TJDcQ" node="13xhPA6MJQo" resolve="InterpolationScheme" />
   </node>
+  <node concept="1TIwiD" id="3t18JdYlZy_">
+    <property role="EcuMT" value="3981501974764320933" />
+    <property role="3GE5qa" value="initialization.diffop_discretization" />
+    <property role="TrG5h" value="FiniteDifferences" />
+    <ref role="1TJDcQ" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
+  </node>
 </model>
 
