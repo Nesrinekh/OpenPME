@@ -7,6 +7,7 @@
     <use id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core" version="-1" />
     <use id="d89a1f94-2b10-40d1-a01e-560f94e501d7" name="openpme.statements" version="2" />
     <engage id="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f" name="openpme.cpp" />
+    <engage id="66673400-467e-48d2-ace0-6f708d2ef66d" name="openpme.core" />
   </languages>
   <imports />
   <registry>

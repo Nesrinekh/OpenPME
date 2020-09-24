@@ -1850,5 +1850,27 @@
       <node concept="l2Vlx" id="3t18JdYlZyN" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3t18Je0ZnOf">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="r2co:3t18Je0ZnO1" resolve="MoveKeyAccess" />
+    <node concept="3EZMnI" id="3t18Je0ZnOh" role="2wV5jI">
+      <node concept="3F1sOY" id="3t18Je0ZRsO" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:3t18Je0ZRsE" resolve="accessInDimension" />
+      </node>
+      <node concept="3F0ifn" id="3t18Je0ZnOo" role="3EZMnx">
+        <property role="3F0ifm" value="move" />
+      </node>
+      <node concept="3F1sOY" id="3t18Je0ZnOu" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:3t18Je0ZnO2" resolve="moveDim" />
+      </node>
+      <node concept="3F0ifn" id="3t18Je0ZnOA" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="3t18Je0ZnOQ" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:3t18Je0ZnO4" resolve="moveStep" />
+      </node>
+      <node concept="l2Vlx" id="3t18Je0ZnOk" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
