@@ -921,12 +921,6 @@
     <property role="TrG5h" value="ModuloExpression" />
     <ref role="1TJDcQ" node="1Uhwoc6tyDG" resolve="BinaryExpression" />
   </node>
-  <node concept="1TIwiD" id="2VozsUVONT8">
-    <property role="EcuMT" value="3375603839768149576" />
-    <property role="3GE5qa" value="openPME" />
-    <property role="TrG5h" value="InitRing" />
-    <ref role="1TJDcQ" node="2wy6nJ6_Gn9" resolve="Statement" />
-  </node>
   <node concept="1TIwiD" id="1fud6A15cJU">
     <property role="EcuMT" value="1431639359292230650" />
     <property role="3GE5qa" value="Expression.Classifier" />
