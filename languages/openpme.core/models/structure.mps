@@ -909,6 +909,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
     </node>
+    <node concept="1TJgyj" id="$ntK$xx5Ms" role="1TKVEi">
+      <property role="IQ2ns" value="655123151906430108" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="propertyReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1d1jgI93P9F" resolve="PropertyReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2VozsUVPZeC">
     <property role="EcuMT" value="3375603839768458152" />

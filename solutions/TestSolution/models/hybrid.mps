@@ -62,6 +62,7 @@
       <concept id="6533649055302383071" name="openpme.core.structure.CrossProduct" flags="ng" index="2IWlFH" />
       <concept id="6533649055301811426" name="openpme.core.structure.MeshAccess" flags="ng" index="2IY9fg" />
       <concept id="6533649055302004216" name="openpme.core.structure.SolvePoisson" flags="ng" index="2IYSba">
+        <child id="655123151906430108" name="propertyReference" index="C$MIl" />
         <child id="6533649055302004217" name="meshReference" index="2IYSbb" />
       </concept>
       <concept id="8483536403556912194" name="openpme.core.structure.Loop" flags="ng" index="SClWF">
@@ -317,6 +318,9 @@
               <node concept="2IYSba" id="5EGbNbOmvJU" role="2$G18d">
                 <node concept="1XiV_f" id="5EGbNbOmvK0" role="2IYSbb">
                   <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+                </node>
+                <node concept="2qjxXw" id="$ntK$xxymN" role="C$MIl">
+                  <ref role="2qjxXB" node="5EGbNbOpmWF" resolve="vorticity_m" />
                 </node>
               </node>
             </node>
@@ -606,6 +610,9 @@
               <node concept="2IYSba" id="5EGbNbOpndP" role="2$G18d">
                 <node concept="1XiV_f" id="5EGbNbOpndQ" role="2IYSbb">
                   <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+                </node>
+                <node concept="2qjxXw" id="$ntK$xLkPh" role="C$MIl">
+                  <ref role="2qjxXB" node="5EGbNbOpmWF" resolve="vorticity_m" />
                 </node>
               </node>
             </node>

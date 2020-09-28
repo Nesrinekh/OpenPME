@@ -1345,6 +1345,12 @@
       <node concept="3F1sOY" id="5EGbNbOlUSi" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:5EGbNbOlURT" resolve="meshReference" />
       </node>
+      <node concept="3F0ifn" id="$ntK$xx5MA" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="$ntK$xx5MK" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:$ntK$xx5Ms" resolve="propertyReference" />
+      </node>
       <node concept="l2Vlx" id="5EGbNbOlUS8" role="2iSdaV" />
     </node>
   </node>
