@@ -1146,18 +1146,6 @@
       <ref role="20lvS9" node="6z0p_feMdxY" resolve="CutoffRadius" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5WMTRp7x65J">
-    <property role="EcuMT" value="6859799677630701935" />
-    <property role="3GE5qa" value="variables" />
-    <property role="TrG5h" value="ParticleAccessInDimension" />
-    <ref role="1TJDcQ" node="7mV$Q_d7Dfn" resolve="ParticleAccess" />
-    <node concept="1TJgyj" id="1d1jgI970Cm" role="1TKVEi">
-      <property role="IQ2ns" value="1387474872147118614" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ndim" />
-      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5EGbNbOlbNy">
     <property role="EcuMT" value="6533649055301811426" />
     <property role="3GE5qa" value="variables" />
@@ -1260,18 +1248,6 @@
     <property role="3GE5qa" value="initialization.diffop_discretization" />
     <property role="TrG5h" value="FDStarStencil" />
     <ref role="1TJDcQ" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
-  </node>
-  <node concept="1TIwiD" id="1pqOqlzNQ0D">
-    <property role="EcuMT" value="1610830325012717609" />
-    <property role="3GE5qa" value="variables" />
-    <property role="TrG5h" value="MeshAccessInDimension" />
-    <ref role="1TJDcQ" node="5EGbNbOlbNy" resolve="MeshAccess" />
-    <node concept="1TJgyj" id="1pqOqlzNQ0G" role="1TKVEi">
-      <property role="IQ2ns" value="1610830325012717612" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ndim" />
-      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
-    </node>
   </node>
   <node concept="1TIwiD" id="28VDvkeJS67">
     <property role="EcuMT" value="2466747692848480647" />
