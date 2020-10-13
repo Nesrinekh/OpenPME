@@ -208,7 +208,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6z0p_feMfVF" role="3EZMnx">
-        <property role="3F0ifm" value="boundry_conditions:" />
+        <property role="3F0ifm" value="boundary_conditions:" />
         <node concept="lj46D" id="6z0p_feMg20" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -297,8 +297,26 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="13xhPA6MTZB" role="3EZMnx">
+        <property role="3F0ifm" value="interpolation scheme" />
+        <node concept="lj46D" id="13xhPA6MU28" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="13xhPA6MU2g" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="13xhPA6MU1h" role="3EZMnx">
+        <ref role="1NtTu8" to="3x5m:13xhPA6MJQK" resolve="InterpolationScheme" />
+        <node concept="ljvvj" id="13xhPA6MU26" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6z0p_feMg0H" role="3EZMnx">
         <node concept="ljvvj" id="6z0p_feMg1R" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="13xhPA6MU2a" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

@@ -14,6 +14,12 @@
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</dependency>
+        <dependency reexport="false">735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)</dependency>
+        <dependency reexport="false">37682012-a10c-48e5-9da8-231cae8f5ad3(openpme.cpp#01)</dependency>
+        <dependency reexport="false">d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -63,6 +69,7 @@
         <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
         <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
         <module reference="dfaa847b-effe-41ad-a78f-78e1b0ac41ef(openpme.core#6721469832529907355)" version="0" />
+        <module reference="37682012-a10c-48e5-9da8-231cae8f5ad3(openpme.cpp#01)" version="0" />
         <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
         <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="2" />
         <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
