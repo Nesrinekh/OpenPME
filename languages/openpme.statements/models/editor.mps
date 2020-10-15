@@ -281,7 +281,7 @@
         <property role="3F0ifm" value="decl" />
         <ref role="1k5W1q" to="tpen:1zA_DOMARqB" resolve="BlockComment" />
         <node concept="VechU" id="1Uhwoc64Utf" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5_/gray" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="3F1sOY" id="70bNw4gtDzb" role="3EZMnx">

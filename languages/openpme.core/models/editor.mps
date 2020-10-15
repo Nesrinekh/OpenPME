@@ -24,7 +24,6 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -229,120 +228,6 @@
       <node concept="l2Vlx" id="7OuveptjdK7" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7Ouveptjg3T">
-    <property role="3GE5qa" value="simulation.command.discrete" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg3m" resolve="PhysicalQuantity" />
-    <node concept="3EZMnI" id="7Ouveptjg3V" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptjg42" role="3EZMnx">
-        <property role="3F0ifm" value="physical_quantity" />
-        <node concept="VechU" id="7OuveptjtNg" role="3F10Kt">
-          <property role="Vb096" value="fLwANPu/blue" />
-        </node>
-        <node concept="lj46D" id="7OuveptjtNM" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7Ouveptjg48" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-      </node>
-      <node concept="3F1sOY" id="7Ouveptjg4g" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:7Ouveptjg3q" resolve="physical_quantity_name" />
-        <node concept="ljvvj" id="7OuveptjtNK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7OuveptjtNP" role="3EZMnx">
-        <node concept="lj46D" id="5MzX6cksiW5" role="3F10Kt" />
-        <node concept="pVoyu" id="5MzX6cksiWa" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="5MzX6cksiWi" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjg3Y" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptjg5f">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg4M" resolve="Sigma" />
-    <node concept="3EZMnI" id="7Ouveptjg5h" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptjg5S" role="3EZMnx">
-        <property role="3F0ifm" value="σ" />
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjg5k" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptjg6s">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg5V" resolve="Nu" />
-    <node concept="3EZMnI" id="7Ouveptjmvv" role="2wV5jI">
-      <node concept="3F0ifn" id="7OuveptjmvJ" role="3EZMnx">
-        <property role="3F0ifm" value="ν" />
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjmvy" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptjg6T">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg5X" resolve="Tau" />
-    <node concept="3EZMnI" id="7Ouveptjg6V" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptjg72" role="3EZMnx">
-        <property role="3F0ifm" value="τ" />
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjg6Y" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptjg7w">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg60" resolve="Omega" />
-    <node concept="3EZMnI" id="7Ouveptjg7y" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptjg7D" role="3EZMnx">
-        <property role="3F0ifm" value="ω" />
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjg7_" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptjg87">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg5Y" resolve="Phi" />
-    <node concept="3EZMnI" id="7Ouveptjg89" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptjg8g" role="3EZMnx">
-        <property role="3F0ifm" value="φ" />
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjg8c" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptjg8I">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg5Z" resolve="Psi" />
-    <node concept="3EZMnI" id="7Ouveptjg8K" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptjg8R" role="3EZMnx">
-        <property role="3F0ifm" value="ψ" />
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjg8N" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Ouveptjg9m">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg8U" resolve="Epsilon" />
-    <node concept="3EZMnI" id="7Ouveptjg9o" role="2wV5jI">
-      <node concept="3F0ifn" id="7Ouveptjg9x" role="3EZMnx">
-        <property role="3F0ifm" value="ε" />
-      </node>
-      <node concept="l2Vlx" id="7Ouveptjg9r" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5MzX6cksiV7">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:7Ouveptjg5W" resolve="Rho" />
-    <node concept="3EZMnI" id="5MzX6cksiV9" role="2wV5jI">
-      <node concept="3F0ifn" id="5MzX6cksiVi" role="3EZMnx">
-        <property role="3F0ifm" value="ρ" />
-      </node>
-      <node concept="l2Vlx" id="5MzX6cksiVc" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5MzX6ckupe4">
     <property role="3GE5qa" value="visualization" />
     <ref role="1XX52x" to="r2co:5MzX6ckupd3" resolve="VisualizeDomDecomp" />
@@ -412,16 +297,6 @@
       <node concept="ljvvj" id="5MzX6ckupgO" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="1MYyjtFOAuE">
-    <property role="3GE5qa" value="initialization" />
-    <ref role="1XX52x" to="r2co:1MYyjtFOAuc" resolve="NumParticles" />
-    <node concept="3EZMnI" id="1MYyjtFOAuG" role="2wV5jI">
-      <node concept="3F1sOY" id="1MYyjtFOAuN" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1MYyjtFOAud" resolve="num_particles" />
-      </node>
-      <node concept="l2Vlx" id="1MYyjtFOAuJ" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1MYyjtFOOxY">
@@ -631,34 +506,6 @@
       <node concept="l2Vlx" id="7mV$Q_d6iyP" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7mV$Q_d7IxY">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="1XX52x" to="r2co:7Ouveptj$nv" resolve="Discretize" />
-    <node concept="3F0ifn" id="7mV$Q_d7Iy0" role="2wV5jI">
-      <property role="3F0ifm" value="Dicretize" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7mV$Q_d7Ix$">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="1XX52x" to="r2co:7Ouveptj$ns" resolve="Vectorial" />
-    <node concept="3F0ifn" id="7mV$Q_d7IxA" role="2wV5jI">
-      <property role="3F0ifm" value="Vectorial" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7mV$Q_d7Ixn">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="1XX52x" to="r2co:6sMVU6wHprL" resolve="OnParticle" />
-    <node concept="3F0ifn" id="7mV$Q_d7Ixp" role="2wV5jI">
-      <property role="3F0ifm" value="OnParticle" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7mV$Q_d7Ixa">
-    <property role="3GE5qa" value="simulation.command.continuous" />
-    <ref role="1XX52x" to="r2co:6sMVU6wHprK" resolve="OnMesh" />
-    <node concept="3F0ifn" id="7mV$Q_d7Ixc" role="2wV5jI">
-      <property role="3F0ifm" value="OnGrid" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7mV$Q_d7IwX">
     <property role="3GE5qa" value="simulation.command" />
     <ref role="1XX52x" to="r2co:6sMVU6wHppa" resolve="Interpolate" />
@@ -721,7 +568,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7mV$Q_d7IyD">
-    <property role="3GE5qa" value="simulation.command.continuous" />
+    <property role="3GE5qa" value="simulation.command" />
     <ref role="1XX52x" to="r2co:1MYyjtFOOK9" resolve="Remesh" />
     <node concept="3EZMnI" id="2VozsUVPKaF" role="2wV5jI">
       <node concept="3F0ifn" id="2VozsUVPKaM" role="3EZMnx">
@@ -793,76 +640,12 @@
       <node concept="l2Vlx" id="2VozsUVPKaI" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7mV$Q_d7IyQ">
-    <property role="3GE5qa" value="simulation.command.discrete" />
-    <ref role="1XX52x" to="r2co:6sMVU6wHprM" resolve="CellList" />
-    <node concept="3F0ifn" id="7mV$Q_d7IyS" role="2wV5jI">
-      <property role="3F0ifm" value="CellList" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7mV$Q_d7Iz3">
-    <property role="3GE5qa" value="simulation.command.discrete" />
-    <ref role="1XX52x" to="r2co:6sMVU6wHprN" resolve="VerletList" />
-    <node concept="3F0ifn" id="7mV$Q_d7Iz5" role="2wV5jI">
-      <property role="3F0ifm" value="VerletList" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7Ouveptj1c1">
     <property role="3GE5qa" value="initialization.boundary" />
     <ref role="1XX52x" to="r2co:6z0p_feMAui" resolve="TypeOfBoundary" />
     <node concept="3EZMnI" id="7Ouveptj1c3" role="2wV5jI">
       <node concept="3F0ifn" id="7Ouveptj1ca" role="3EZMnx" />
       <node concept="l2Vlx" id="7Ouveptj1c6" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1Uhwoc5Xk5X">
-    <property role="3GE5qa" value="simulation.type" />
-    <ref role="1XX52x" to="r2co:6z0p_feMAuu" resolve="TypeOfSimulation" />
-    <node concept="3EZMnI" id="1Uhwoc5Xk5Z" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <node concept="PMmxH" id="1Uhwoc5Xk60" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <node concept="ljvvj" id="1Uhwoc5Xk61" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1Uhwoc5XpwV" role="3EZMnx">
-        <property role="3F0ifm" value="Particle properties:" />
-        <node concept="ljvvj" id="1Uhwoc5Xpxb" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="1Uhwoc62X6c" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk5M" resolve="propertiesParticle" />
-        <node concept="2iRkQZ" id="1Uhwoc62X6f" role="2czzBx" />
-        <node concept="VPM3Z" id="1Uhwoc62X6g" role="3F10Kt" />
-        <node concept="ljvvj" id="1Uhwoc62X6Z" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1Uhwoc64GuU" role="3EZMnx">
-        <node concept="ljvvj" id="1Uhwoc64Gvc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1Uhwoc5Xpyc" role="3EZMnx">
-        <property role="3F0ifm" value="Commands:" />
-        <node concept="ljvvj" id="1Uhwoc5Xpzc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="1Uhwoc5X$wK" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc5Xk6t" resolve="body" />
-        <node concept="2iRkQZ" id="1Uhwoc5X$wN" role="2czzBx" />
-        <node concept="VPM3Z" id="1Uhwoc5X$wO" role="3F10Kt" />
-        <node concept="ljvvj" id="1Uhwoc5X$yf" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="1Uhwoc5X$$1" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="1Uhwoc5Xk6d" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1Uhwoc5XE4x">
@@ -882,7 +665,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1Uhwoc66S3G">
-    <property role="3GE5qa" value="simulation" />
+    <property role="3GE5qa" value="simulation.command" />
     <ref role="1XX52x" to="r2co:1Uhwoc66Eov" resolve="InitParticleGrid" />
     <node concept="3EZMnI" id="1Uhwoc66S3L" role="2wV5jI">
       <node concept="3F0ifn" id="1Uhwoc66S3N" role="3EZMnx">
@@ -952,28 +735,8 @@
       <node concept="l2Vlx" id="5WMTRp7KMJd" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3nFY7YwF_aS">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:5MzX6cksiVg" resolve="Lambda" />
-    <node concept="3EZMnI" id="3nFY7YwF_aU" role="2wV5jI">
-      <node concept="3F0ifn" id="3nFY7YwF_b1" role="3EZMnx">
-        <property role="3F0ifm" value="λ" />
-      </node>
-      <node concept="l2Vlx" id="3nFY7YwF_aX" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="3nFY7YwF_bv">
-    <property role="3GE5qa" value="physicalNotations" />
-    <ref role="1XX52x" to="r2co:5MzX6cksiVh" resolve="Delta" />
-    <node concept="3EZMnI" id="3nFY7YwF_bx" role="2wV5jI">
-      <node concept="l2Vlx" id="3nFY7YwF_b$" role="2iSdaV" />
-      <node concept="3F0ifn" id="3nFY7YwF_bJ" role="3EZMnx">
-        <property role="3F0ifm" value="𝛿" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="5WMTRp80ij7">
-    <property role="3GE5qa" value="simulation" />
+    <property role="3GE5qa" value="simulation.command" />
     <ref role="1XX52x" to="r2co:5WMTRp80iiW" resolve="WriteParticles" />
     <node concept="3EZMnI" id="5WMTRp80ij9" role="2wV5jI">
       <node concept="3F0ifn" id="5WMTRp80ijg" role="3EZMnx">
@@ -986,7 +749,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5WMTRp85xCw">
-    <property role="3GE5qa" value="simulation.type" />
+    <property role="3GE5qa" value="simulation.simluationType" />
     <ref role="1XX52x" to="r2co:6z0p_feMAv7" resolve="ParticleBased" />
     <node concept="3EZMnI" id="5WMTRp85xCy" role="2wV5jI">
       <property role="S$Qs1" value="true" />
@@ -1019,7 +782,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5WMTRp85xCH" role="3EZMnx">
-        <property role="3F0ifm" value="Commands:" />
+        <property role="3F0ifm" value="body:" />
         <node concept="ljvvj" id="5WMTRp85xCI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1039,7 +802,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5WMTRp85Jg_">
-    <property role="3GE5qa" value="simulation.type" />
+    <property role="3GE5qa" value="simulation.simluationType" />
     <ref role="1XX52x" to="r2co:1MYyjtFOEZC" resolve="Hybrid" />
     <node concept="3EZMnI" id="5WMTRp85JgB" role="2wV5jI">
       <property role="S$Qs1" value="true" />
@@ -1089,7 +852,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5WMTRp85JgM" role="3EZMnx">
-        <property role="3F0ifm" value="Commands:" />
+        <property role="3F0ifm" value="Body:" />
         <node concept="ljvvj" id="5WMTRp85JgN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1106,31 +869,6 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5WMTRp85JgT" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5BkNMNhjd_7">
-    <property role="3GE5qa" value="simulation.command" />
-    <ref role="1XX52x" to="r2co:5BkNMNhjd$P" resolve="SetProprety" />
-    <node concept="3EZMnI" id="5BkNMNhjd_9" role="2wV5jI">
-      <node concept="3F0ifn" id="5BkNMNhjdA2" role="3EZMnx">
-        <property role="3F0ifm" value="set" />
-      </node>
-      <node concept="3F1sOY" id="5BkNMNhjd_g" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5BkNMNhjd$Q" resolve="container" />
-      </node>
-      <node concept="3F0ifn" id="5BkNMNhjd_m" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-      </node>
-      <node concept="3F1sOY" id="5BkNMNhjd_u" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5BkNMNhjd$S" resolve="property" />
-      </node>
-      <node concept="3F0ifn" id="5BkNMNhjd_C" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-      </node>
-      <node concept="3F1sOY" id="5BkNMNhjd_O" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5BkNMNhjd$V" resolve="value" />
-      </node>
-      <node concept="l2Vlx" id="5BkNMNhjd_c" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5BkNMNhkaXi">
@@ -1215,7 +953,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="jnrNESv$op">
-    <property role="3GE5qa" value="simulation.type" />
+    <property role="3GE5qa" value="simulation.simluationType" />
     <ref role="1XX52x" to="r2co:6z0p_feMAv6" resolve="MeshBased" />
     <node concept="3EZMnI" id="jnrNESv$or" role="2wV5jI">
       <property role="S$Qs1" value="true" />
@@ -1248,7 +986,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="jnrNESv$oI" role="3EZMnx">
-        <property role="3F0ifm" value="Commands:" />
+        <property role="3F0ifm" value="Body:" />
         <node concept="ljvvj" id="jnrNESv$oJ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1268,8 +1006,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="jnrNESvOUb">
-    <property role="3GE5qa" value="expressions" />
-    <ref role="1XX52x" to="r2co:jnrNESvOU2" resolve="E" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:jnrNESvOU2" resolve="Exponential" />
     <node concept="3EZMnI" id="jnrNESvOUf" role="2wV5jI">
       <node concept="3F0ifn" id="jnrNESvOUm" role="3EZMnx">
         <property role="3F0ifm" value="e ^" />
@@ -1300,7 +1038,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5EGbNbOmwdt">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="simulation.expressions" />
     <ref role="1XX52x" to="r2co:6sMVU6wHpoY" resolve="DifferentialOperator" />
     <node concept="3EZMnI" id="5EGbNbOmwdv" role="2wV5jI">
       <node concept="3F0ifn" id="5EGbNbOmwdE" role="3EZMnx">
@@ -1310,7 +1048,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5EGbNbOnnnC">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="simulation.expressions" />
     <ref role="1XX52x" to="r2co:5EGbNbOnnnv" resolve="CrossProduct" />
     <node concept="3EZMnI" id="5EGbNbOnnnE" role="2wV5jI">
       <node concept="3F1sOY" id="5EGbNbOnnnL" role="3EZMnx">
@@ -1326,7 +1064,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5EGbNbOnE5L">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="simulation.expressions" />
     <ref role="1XX52x" to="r2co:6sMVU6wHpp0" resolve="LaplacianOperator" />
     <node concept="3EZMnI" id="5EGbNbOnE5N" role="2wV5jI">
       <node concept="3F0ifn" id="5EGbNbOnE5U" role="3EZMnx">
@@ -1336,7 +1074,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5EGbNbOlUS3">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="simulation.expressions" />
     <ref role="1XX52x" to="r2co:5EGbNbOlURS" resolve="SolvePoisson" />
     <node concept="3EZMnI" id="5EGbNbOlUS5" role="2wV5jI">
       <node concept="3F0ifn" id="5EGbNbOlUSc" role="3EZMnx">
@@ -1416,30 +1154,17 @@
     </node>
   </node>
   <node concept="24kQdi" id="2whVLCSRlFt">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="simulation.expressions" />
     <ref role="1XX52x" to="r2co:2whVLCSRlFk" resolve="Euler" />
     <node concept="3F0ifn" id="2whVLCSRlFv" role="2wV5jI">
       <property role="3F0ifm" value="Euler" />
     </node>
   </node>
   <node concept="24kQdi" id="2whVLCSSvK6">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="simulation.expressions" />
     <ref role="1XX52x" to="r2co:2whVLCSSvJX" resolve="RungeKutta2" />
     <node concept="3F0ifn" id="2whVLCSSvK8" role="2wV5jI">
       <property role="3F0ifm" value="Runge Kutta 2" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2whVLCSSM_A">
-    <property role="3GE5qa" value="simulation.command" />
-    <ref role="1XX52x" to="r2co:2whVLCSSM_r" resolve="ReadFile" />
-    <node concept="3EZMnI" id="2whVLCSSM_C" role="2wV5jI">
-      <node concept="3F0ifn" id="2whVLCSSM_J" role="3EZMnx">
-        <property role="3F0ifm" value="read file" />
-      </node>
-      <node concept="3F0A7n" id="2whVLCSSM_P" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:2whVLCSSM_s" resolve="fileName" />
-      </node>
-      <node concept="l2Vlx" id="2whVLCSSM_F" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI8Z$ne">
@@ -1457,7 +1182,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1Uhwoc6$Kas">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:7mV$Q_d7Dfn" resolve="ParticleAccess" />
     <node concept="3EZMnI" id="1Uhwoc6$KaJ" role="2wV5jI">
       <node concept="3F1sOY" id="5EGbNbOofyx" role="3EZMnx">
@@ -1473,7 +1198,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI8RonW">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:1d1jgI8Riqn" resolve="ParticlePositionAccess" />
     <node concept="3EZMnI" id="1d1jgI8RonY" role="2wV5jI">
       <node concept="3F1sOY" id="1d1jgI8Roo5" role="3EZMnx">
@@ -1489,7 +1214,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI8ZEtp">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:1d1jgI8ZEta" resolve="CreateCellList" />
     <node concept="3EZMnI" id="1d1jgI8ZEtu" role="2wV5jI">
       <node concept="3F0ifn" id="1d1jgI8ZEtw" role="3EZMnx">
@@ -1505,7 +1230,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI964GF">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:1d1jgI963we" resolve="CreateNeighborList" />
     <node concept="3EZMnI" id="1d1jgI964GM" role="2wV5jI">
       <node concept="3F0ifn" id="1d1jgI964GT" role="3EZMnx">
@@ -1524,7 +1249,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI9npzU">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:1d1jgI9nbUN" resolve="CutoffRef" />
     <node concept="1iCGBv" id="1d1jgI9np$7" role="2wV5jI">
       <ref role="1NtTu8" to="r2co:1d1jgI9nbUO" resolve="ref" />
@@ -1536,7 +1261,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5EGbNbOlGZs">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:5EGbNbOlbNy" resolve="MeshAccess" />
     <node concept="3EZMnI" id="5EGbNbOlGZu" role="2wV5jI">
       <node concept="3F1sOY" id="28VDvkf8OEe" role="3EZMnx">
@@ -1552,7 +1277,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI8Pqoa">
-    <property role="3GE5qa" value="openFPM" />
+    <property role="3GE5qa" value="OpenFPM" />
     <ref role="1XX52x" to="r2co:1d1jgI8ORmq" resolve="ResyncGhost" />
     <node concept="3EZMnI" id="1d1jgI8Pqoh" role="2wV5jI">
       <node concept="3F0ifn" id="1d1jgI8Pqoo" role="3EZMnx">
@@ -1576,7 +1301,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI92mT8">
-    <property role="3GE5qa" value="openFPM" />
+    <property role="3GE5qa" value="OpenFPM" />
     <ref role="1XX52x" to="r2co:1d1jgI92mSZ" resolve="UpdateCellList" />
     <node concept="3EZMnI" id="1d1jgI92mTd" role="2wV5jI">
       <node concept="3F0ifn" id="1d1jgI92mTm" role="3EZMnx">
@@ -1592,7 +1317,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI8PB1X">
-    <property role="3GE5qa" value="openFPM" />
+    <property role="3GE5qa" value="OpenFPM" />
     <ref role="1XX52x" to="r2co:1d1jgI8ORmn" resolve="MapVectorDist" />
     <node concept="3EZMnI" id="1d1jgI8PB1Z" role="2wV5jI">
       <node concept="3F0ifn" id="1d1jgI8PB26" role="3EZMnx">
@@ -1605,7 +1330,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI9m5EI">
-    <property role="3GE5qa" value="openFPM" />
+    <property role="3GE5qa" value="OpenFPM" />
     <ref role="1XX52x" to="r2co:1d1jgI9m5E_" resolve="Norm2" />
     <node concept="3EZMnI" id="1d1jgI9m5EK" role="2wV5jI">
       <node concept="3F0ifn" id="1d1jgI9m5ET" role="3EZMnx">
@@ -1621,7 +1346,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1d1jgI93VIF">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:1d1jgI93P9F" resolve="PropertyReference" />
     <node concept="1iCGBv" id="1d1jgI93VIH" role="2wV5jI">
       <ref role="1NtTu8" to="r2co:1d1jgI93P9G" resolve="property" />
@@ -1683,7 +1408,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="28VDvkfbPdm">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:28VDvkf8ODS" resolve="AccessInDimension" />
     <node concept="3EZMnI" id="28VDvkfbPdo" role="2wV5jI">
       <node concept="3F1sOY" id="28VDvkfbPdv" role="3EZMnx">
@@ -1702,7 +1427,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="28VDvkfrFIr">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:28VDvkfrFIi" resolve="StencilMeshAccess" />
     <node concept="3EZMnI" id="28VDvkfrFIt" role="2wV5jI">
       <node concept="3F0ifn" id="28VDvkfrFIG" role="3EZMnx">
@@ -1733,7 +1458,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3j27GztH3H6">
-    <property role="3GE5qa" value="openFPM" />
+    <property role="3GE5qa" value="OpenFPM" />
     <ref role="1XX52x" to="r2co:3j27GztH3GS" resolve="Spacing" />
     <node concept="3EZMnI" id="3j27GztH3H8" role="2wV5jI">
       <node concept="3F1sOY" id="3j27GztH3Hi" role="3EZMnx">
@@ -1755,7 +1480,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="40ZbGzYG4zI">
-    <property role="3GE5qa" value="simulation" />
+    <property role="3GE5qa" value="simulation.command" />
     <ref role="1XX52x" to="r2co:40ZbGzYG4zz" resolve="WriteMesh" />
     <node concept="3EZMnI" id="40ZbGzYG4zK" role="2wV5jI">
       <node concept="3F0ifn" id="40ZbGzYG4zL" role="3EZMnx">
@@ -1768,8 +1493,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="40ZbGzZ0QC2">
-    <property role="3GE5qa" value="simulation" />
-    <ref role="1XX52x" to="r2co:40ZbGzZ0QBI" resolve="Load" />
+    <property role="3GE5qa" value="simulation.command" />
+    <ref role="1XX52x" to="r2co:40ZbGzZ0QBI" resolve="LoadFromFile" />
     <node concept="3EZMnI" id="40ZbGzZ0QC4" role="2wV5jI">
       <node concept="3F0ifn" id="40ZbGzZ0QCb" role="3EZMnx">
         <property role="3F0ifm" value="Load" />
@@ -1807,7 +1532,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3t18Je0ZnOf">
-    <property role="3GE5qa" value="variables" />
+    <property role="3GE5qa" value="simulation.expressions.access" />
     <ref role="1XX52x" to="r2co:3t18Je0ZnO1" resolve="MoveKeyAccess" />
     <node concept="3EZMnI" id="3t18Je0ZnOh" role="2wV5jI">
       <node concept="3F1sOY" id="3t18Je0ZRsO" role="3EZMnx">

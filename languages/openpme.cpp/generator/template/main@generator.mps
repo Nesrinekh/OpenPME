@@ -1545,7 +1545,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="40ZbGzZ47x2" role="3acgRq">
-      <ref role="30HIoZ" to="r2co:40ZbGzZ0QBI" resolve="Load" />
+      <ref role="30HIoZ" to="r2co:40ZbGzZ0QBI" resolve="LoadFromFile" />
       <node concept="j$656" id="40ZbGzZ47Q8" role="1lVwrX">
         <ref role="v9R2y" node="40ZbGzZ1eQR" resolve="reduce_Load" />
       </node>
@@ -19766,7 +19766,7 @@
   <node concept="13MO4I" id="40ZbGzZ1eQR">
     <property role="3GE5qa" value="reduce.statements" />
     <property role="TrG5h" value="reduce_Load" />
-    <ref role="3gUMe" to="r2co:40ZbGzZ0QBI" resolve="Load" />
+    <ref role="3gUMe" to="r2co:40ZbGzZ0QBI" resolve="LoadFromFile" />
     <node concept="3u_bAv" id="40ZbGzZ1eV8" role="13RCb5">
       <node concept="3A2tP1" id="40ZbGzZ1eV9" role="3u_bAu">
         <node concept="1zd1ln" id="40ZbGzZ1eVa" role="3A2tP0">

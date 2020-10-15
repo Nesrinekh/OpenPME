@@ -77,7 +77,6 @@
   <dependencies>
     <dependency reexport="true">766348f7-6a67-4b85-9323-384840132299(de.itemis.mps.editor.math)</dependency>
     <dependency reexport="true">735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)</dependency>
-    <dependency reexport="true">d5e2442b-039e-493b-b466-e933a1705c19(openpme.analysis)</dependency>
     <dependency reexport="true">66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)</dependency>
     <dependency reexport="true">57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)</dependency>
     <dependency reexport="true">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
