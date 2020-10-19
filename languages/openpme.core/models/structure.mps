@@ -17,7 +17,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -644,14 +643,6 @@
     <property role="TrG5h" value="VerletListType" />
     <ref role="1TJDcQ" node="7mV$Q_d7Dhr" resolve="ParticleListType" />
   </node>
-  <node concept="1TIwiD" id="1Uhwoc5XYim">
-    <property role="EcuMT" value="2202684092501714070" />
-    <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="VectorDistType" />
-    <property role="R4oN_" value="distriuted vector" />
-    <property role="34LRSv" value="vector" />
-    <ref role="1TJDcQ" to="caxt:70bNw4gtDwI" resolve="Type" />
-  </node>
   <node concept="1TIwiD" id="1d1jgI94LPV">
     <property role="EcuMT" value="1387474872146533755" />
     <property role="3GE5qa" value="types" />
@@ -663,7 +654,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="NeighborListType" />
     <property role="34LRSv" value="NeighborList" />
-    <ref role="1TJDcQ" node="1Uhwoc5XYim" resolve="VectorDistType" />
+    <ref role="1TJDcQ" node="7mV$Q_d7Dhr" resolve="ParticleListType" />
   </node>
   <node concept="1TIwiD" id="7mV$Q_d7Dfn">
     <property role="EcuMT" value="8483536403557159895" />
