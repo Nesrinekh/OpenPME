@@ -88,18 +88,17 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="r2co:6z0p_feMdxX" resolve="Ghost" />
     </node>
-    <node concept="1TJgyj" id="1MYyjtFOEWL" role="1TKVEi">
-      <property role="IQ2ns" value="2071243749762182961" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="num_particles" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="r2co:1MYyjtFOAuc" resolve="NumParticles" />
-    </node>
     <node concept="1TJgyj" id="1fud6A14EGN" role="1TKVEi">
       <property role="IQ2ns" value="1431639359292091187" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="DiffOpDiscrScheme" />
       <ref role="20lvS9" to="r2co:1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
+    </node>
+    <node concept="1TJgyj" id="13xhPA6MJQK" role="1TKVEi">
+      <property role="IQ2ns" value="1216331824205856176" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="InterpolationScheme" />
+      <ref role="20lvS9" to="r2co:13xhPA6MJQo" resolve="InterpolationScheme" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfL0P">

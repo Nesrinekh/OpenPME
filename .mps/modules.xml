@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/openpme.analysis/openpme.analysis.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/openpme.base/openpme.base.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/openpme.core/openpme.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/openpme.cpp/openpme.cpp.mpl" folder="" />
