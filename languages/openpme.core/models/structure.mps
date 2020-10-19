@@ -445,27 +445,6 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="1Uhwoc66Eov">
-    <property role="EcuMT" value="2202684092503991839" />
-    <property role="3GE5qa" value="simulation.command" />
-    <property role="TrG5h" value="InitParticleGrid" />
-    <property role="R4oN_" value="init particles in vector_dist on a grid" />
-    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
-    <node concept="1TJgyj" id="1Uhwoc67FlJ" role="1TKVEi">
-      <property role="IQ2ns" value="2202684092504257903" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="vector_dist" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
-    </node>
-    <node concept="1TJgyj" id="1Uhwoc66Eow" role="1TKVEi">
-      <property role="IQ2ns" value="2202684092503991840" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="grid_elements" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1d1jgI9zUI$">
     <property role="EcuMT" value="1387474872154696612" />
     <property role="3GE5qa" value="simulation.loop" />

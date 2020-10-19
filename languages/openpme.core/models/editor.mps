@@ -664,28 +664,6 @@
       <node concept="l2Vlx" id="1Uhwoc5XE4A" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1Uhwoc66S3G">
-    <property role="3GE5qa" value="simulation.command" />
-    <ref role="1XX52x" to="r2co:1Uhwoc66Eov" resolve="InitParticleGrid" />
-    <node concept="3EZMnI" id="1Uhwoc66S3L" role="2wV5jI">
-      <node concept="3F0ifn" id="1Uhwoc66S3N" role="3EZMnx">
-        <property role="3F0ifm" value="Init vector" />
-      </node>
-      <node concept="3F1sOY" id="1Uhwoc67FlS" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:1Uhwoc67FlJ" resolve="vector_dist" />
-      </node>
-      <node concept="3F0ifn" id="1Uhwoc67Fm8" role="3EZMnx">
-        <property role="3F0ifm" value="on grid" />
-      </node>
-      <node concept="3F2HdR" id="1Uhwoc66S3V" role="3EZMnx">
-        <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="r2co:1Uhwoc66Eow" resolve="grid_elements" />
-        <node concept="l2Vlx" id="1Uhwoc66S3X" role="2czzBx" />
-      </node>
-      <node concept="3F0ifn" id="1Uhwoc66Ysf" role="3EZMnx" />
-      <node concept="l2Vlx" id="1Uhwoc66S3O" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1d1jgI9$CO2">
     <property role="3GE5qa" value="simulation.loop" />
     <ref role="1XX52x" to="r2co:1d1jgI9zUI$" resolve="NeighborhoodLoop" />
