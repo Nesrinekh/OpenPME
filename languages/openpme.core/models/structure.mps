@@ -997,33 +997,6 @@
     <property role="TrG5h" value="FiniteDifferences" />
     <ref role="1TJDcQ" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
   </node>
-  <node concept="1TIwiD" id="3t18Je0ZnO1">
-    <property role="EcuMT" value="3981501974808722689" />
-    <property role="3GE5qa" value="simulation.expressions.access" />
-    <property role="TrG5h" value="MoveKeyAccess" />
-    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
-    <node concept="1TJgyj" id="3t18Je0ZRsE" role="1TKVEi">
-      <property role="IQ2ns" value="3981501974808852266" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="accessInDimension" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="28VDvkf8ODS" resolve="AccessInDimension" />
-    </node>
-    <node concept="1TJgyj" id="3t18Je0ZnO2" role="1TKVEi">
-      <property role="IQ2ns" value="3981501974808722690" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="moveDim" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
-    </node>
-    <node concept="1TJgyj" id="3t18Je0ZnO4" role="1TKVEi">
-      <property role="IQ2ns" value="3981501974808722692" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="moveStep" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3t18Je1lBHk">
     <property role="EcuMT" value="3981501974814554964" />
     <property role="3GE5qa" value="simulation.expressions.access" />
