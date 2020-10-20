@@ -4931,7 +4931,7 @@
         <node concept="3jcgYH" id="5WMTRp7O14m" role="1gT_T$">
           <node concept="oSJoa" id="5WMTRp7O3T8" role="3jcgYG">
             <node concept="3IHuUZ" id="5WMTRp7O3Tb" role="oSJob">
-              <property role="3IHuUY" value="Energy: " />
+              <property role="3IHuUY" value="Output: " />
             </node>
             <node concept="1zd1ln" id="5WMTRp7O3W7" role="oSJob">
               <node concept="29HgVG" id="5WMTRp7OqgI" role="lGtFl">
