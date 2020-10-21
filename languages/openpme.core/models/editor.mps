@@ -1509,5 +1509,31 @@
       <node concept="l2Vlx" id="3t18JdYlZyN" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6GPUbLlwY8L">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:6GPUbLlwY8m" resolve="Curl" />
+    <node concept="3EZMnI" id="6GPUbLlwY8N" role="2wV5jI">
+      <node concept="3F0ifn" id="6GPUbLlwY8Y" role="3EZMnx">
+        <property role="3F0ifm" value="▽ ×" />
+      </node>
+      <node concept="3F1sOY" id="6GPUbLlwY94" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:6GPUbLlwY8n" resolve="operand" />
+      </node>
+      <node concept="l2Vlx" id="6GPUbLlwY8Q" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6GPUbLlHbzX">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:6GPUbLlHbzO" resolve="Laplace" />
+    <node concept="3EZMnI" id="6GPUbLlHbzZ" role="2wV5jI">
+      <node concept="3F0ifn" id="6GPUbLlHb$0" role="3EZMnx">
+        <property role="3F0ifm" value="Δ" />
+      </node>
+      <node concept="3F1sOY" id="6GPUbLlHb$a" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:6GPUbLlHb$5" resolve="operand" />
+      </node>
+      <node concept="l2Vlx" id="6GPUbLlHb$1" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

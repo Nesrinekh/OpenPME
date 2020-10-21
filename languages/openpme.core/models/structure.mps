@@ -1017,5 +1017,31 @@
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6GPUbLlwY8m">
+    <property role="EcuMT" value="7725336631410156054" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="Curl" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="6GPUbLlwY8n" role="1TKVEi">
+      <property role="IQ2ns" value="7725336631410156055" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operand" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="28VDvkf8ODT" resolve="BaseAccess" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6GPUbLlHbzO">
+    <property role="EcuMT" value="7725336631413356788" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="Laplace" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="6GPUbLlHb$5" role="1TKVEi">
+      <property role="IQ2ns" value="7725336631413356805" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operand" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="28VDvkf8ODT" resolve="BaseAccess" />
+    </node>
+  </node>
 </model>
 
