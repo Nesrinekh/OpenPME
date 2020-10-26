@@ -1056,16 +1056,16 @@
     <ref role="1XX52x" to="r2co:5EGbNbOlURS" resolve="SolvePoisson" />
     <node concept="3EZMnI" id="5EGbNbOlUS5" role="2wV5jI">
       <node concept="3F0ifn" id="5EGbNbOlUSc" role="3EZMnx">
-        <property role="3F0ifm" value="Solve poisson" />
+        <property role="3F0ifm" value="Solve poisson on" />
       </node>
-      <node concept="3F1sOY" id="5EGbNbOlUSi" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:5EGbNbOlURT" resolve="meshReference" />
+      <node concept="3F1sOY" id="2cSOkSJQuMs" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2cSOkSJQuM3" resolve="sourceMesh" />
       </node>
-      <node concept="3F0ifn" id="$ntK$xx5MA" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
+      <node concept="3F0ifn" id="2cSOkSJQuME" role="3EZMnx">
+        <property role="3F0ifm" value="copy to" />
       </node>
-      <node concept="3F1sOY" id="$ntK$xx5MK" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:$ntK$xx5Ms" resolve="propertyReference" />
+      <node concept="3F1sOY" id="2cSOkSJQuMU" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2cSOkSJQuM7" resolve="targetMesh" />
       </node>
       <node concept="l2Vlx" id="5EGbNbOlUS8" role="2iSdaV" />
     </node>
