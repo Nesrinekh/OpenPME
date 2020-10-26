@@ -1517,7 +1517,7 @@
         <property role="3F0ifm" value="▽ ×" />
       </node>
       <node concept="3F1sOY" id="6GPUbLlwY94" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:6GPUbLlwY8n" resolve="operand" />
+        <ref role="1NtTu8" to="r2co:2cSOkSJWruz" resolve="operand" />
       </node>
       <node concept="l2Vlx" id="6GPUbLlwY8Q" role="2iSdaV" />
     </node>
@@ -1530,7 +1530,7 @@
         <property role="3F0ifm" value="Δ" />
       </node>
       <node concept="3F1sOY" id="6GPUbLlHb$a" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:6GPUbLlHb$5" resolve="operand" />
+        <ref role="1NtTu8" to="r2co:2cSOkSJWruz" resolve="operand" />
       </node>
       <node concept="l2Vlx" id="6GPUbLlHb$1" role="2iSdaV" />
     </node>

@@ -18,6 +18,9 @@
         <child id="6473026355838427228" name="size" index="28EmXK" />
       </concept>
       <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
+      <concept id="2538008523765299102" name="openpme.core.structure.BaseDifferentialOperator" flags="ng" index="cMmrg">
+        <child id="2538008523765299107" name="operand" index="cMmrH" />
+      </concept>
       <concept id="1216331824205856153" name="openpme.core.structure.MP4Interpolation" flags="ng" index="2maVF0" />
       <concept id="1387474872146285163" name="openpme.core.structure.PropertyReference" flags="ng" index="2qjxXw">
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
@@ -73,9 +76,8 @@
         <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
       <concept id="8483536403557159895" name="openpme.core.structure.ParticleAccess" flags="ng" index="SDg2Y" />
-      <concept id="7725336631410156054" name="openpme.core.structure.Curl" flags="ng" index="YHwEE">
-        <child id="7725336631410156055" name="operand" index="YHwEF" />
-      </concept>
+      <concept id="7725336631413356788" name="openpme.core.structure.Laplace" flags="ng" index="Ywl18" />
+      <concept id="7725336631410156054" name="openpme.core.structure.Curl" flags="ng" index="YHwEE" />
       <concept id="4629470382766909934" name="openpme.core.structure.LoadFromFile" flags="ng" index="2Zf4sA">
         <child id="4629470382766909973" name="file" index="2Zf4jt" />
         <child id="4629470382766909935" name="container" index="2Zf4sB" />
@@ -330,12 +332,12 @@
                   <ref role="2qjxXB" node="5EGbNbOpmWV" resolve="velocity_m" />
                 </node>
               </node>
-              <node concept="YHwEE" id="6GPUbLlxhXg" role="2$G18d">
-                <node concept="2IY9fg" id="6GPUbLlxhXs" role="YHwEF">
-                  <node concept="1XiV_f" id="6GPUbLlxhXF" role="H6eYf">
+              <node concept="YHwEE" id="2cSOkSJXgBo" role="2$G18d">
+                <node concept="2IY9fg" id="2cSOkSJXgB$" role="cMmrH">
+                  <node concept="1XiV_f" id="2cSOkSJXgBN" role="H6eYf">
                     <ref role="1Xh6_M" node="5EGbNbOmvJn" resolve="phi" />
                   </node>
-                  <node concept="2qjxXw" id="6GPUbLlxhXI" role="H6eY9">
+                  <node concept="2qjxXw" id="2cSOkSJXgBQ" role="H6eY9">
                     <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity_phi" />
                   </node>
                 </node>
@@ -389,13 +391,12 @@
                 <node concept="1XiV_f" id="2cSOkSJWqVe" role="2$G181">
                   <ref role="1Xh6_M" node="5BkNMNht8jc" resolve="nu" />
                 </node>
-                <node concept="37xRuw" id="2cSOkSJWqVf" role="2$G18d">
-                  <node concept="37xRBx" id="2cSOkSJWqVg" role="2$G181" />
-                  <node concept="2IY9fg" id="2cSOkSJWqVh" role="2$G18d">
-                    <node concept="1XiV_f" id="2cSOkSJWqVi" role="H6eYf">
+                <node concept="Ywl18" id="2cSOkSK1fyG" role="2$G18d">
+                  <node concept="2IY9fg" id="2cSOkSK1fz8" role="cMmrH">
+                    <node concept="1XiV_f" id="2cSOkSK1fzn" role="H6eYf">
                       <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
                     </node>
-                    <node concept="2qjxXw" id="2cSOkSJWqVj" role="H6eY9">
+                    <node concept="2qjxXw" id="2cSOkSK1fzq" role="H6eY9">
                       <ref role="2qjxXB" node="5EGbNbOpmWF" resolve="vorticity_m" />
                     </node>
                   </node>
