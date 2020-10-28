@@ -65,7 +65,6 @@
         <child id="2466747692855020156" name="propertyReference" index="H6eY9" />
         <child id="2466747692855020154" name="variableReference" index="H6eYf" />
       </concept>
-      <concept id="6533649055302383071" name="openpme.core.structure.CrossProduct" flags="ng" index="2IWlFH" />
       <concept id="6533649055301811426" name="openpme.core.structure.MeshAccess" flags="ng" index="2IY9fg" />
       <concept id="6533649055302004216" name="openpme.core.structure.SolvePoisson" flags="ng" index="2IYSba">
         <child id="2538008523763739783" name="targetMesh" index="cSjR9" />
@@ -85,7 +84,6 @@
         <child id="4629470382766909973" name="file" index="2Zf4jt" />
         <child id="4629470382766909935" name="container" index="2Zf4sB" />
       </concept>
-      <concept id="7436269412207138366" name="openpme.core.structure.DifferentialOperator" flags="ng" index="37xRAv" />
       <concept id="7436269412207138378" name="openpme.core.structure.Interpolate" flags="ng" index="37xRBF">
         <child id="6533649055301425883" name="targetContainer" index="2ISJnD" />
         <child id="6533649055301425881" name="sourceContainer" index="2ISJnF" />
@@ -619,23 +617,22 @@
               </node>
             </node>
           </node>
-          <node concept="1wvtVb" id="5EGbNbOpndR" role="oWeDG">
-            <node concept="2$G188" id="5EGbNbOpndS" role="1wvtVa">
-              <node concept="2IY9fg" id="49sT_KUowvt" role="2$G181">
-                <node concept="1XiV_f" id="49sT_KUowvG" role="H6eYf">
+          <node concept="1wvtVb" id="2cSOkSKoni2" role="oWeDG">
+            <node concept="2$G188" id="2cSOkSKoni3" role="1wvtVa">
+              <node concept="2IY9fg" id="2cSOkSKoni4" role="2$G181">
+                <node concept="1XiV_f" id="2cSOkSKoni5" role="H6eYf">
                   <ref role="1Xh6_M" node="5BkNMNhEjTp" resolve="velocity_mesh" />
                 </node>
-                <node concept="2qjxXw" id="49sT_KUowvJ" role="H6eY9">
+                <node concept="2qjxXw" id="2cSOkSKoni6" role="H6eY9">
                   <ref role="2qjxXB" node="5EGbNbOpmWV" resolve="velocity_m" />
                 </node>
               </node>
-              <node concept="2IWlFH" id="5EGbNbOpndW" role="2$G18d">
-                <node concept="37xRAv" id="5EGbNbOpndX" role="2$G181" />
-                <node concept="2IY9fg" id="49sT_KUowvR" role="2$G18d">
-                  <node concept="1XiV_f" id="49sT_KUoww0" role="H6eYf">
+              <node concept="YHwEE" id="2cSOkSKoni7" role="2$G18d">
+                <node concept="2IY9fg" id="2cSOkSKoni8" role="cMmrH">
+                  <node concept="1XiV_f" id="2cSOkSKoni9" role="H6eYf">
                     <ref role="1Xh6_M" node="5EGbNbOmvJn" resolve="phi" />
                   </node>
-                  <node concept="2qjxXw" id="49sT_KUoww3" role="H6eY9">
+                  <node concept="2qjxXw" id="2cSOkSKonia" role="H6eY9">
                     <ref role="2qjxXB" node="5EGbNbOpmX8" resolve="velocity_phi" />
                   </node>
                 </node>
