@@ -10,7 +10,6 @@
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1013,32 +1012,6 @@
         <ref role="1NtTu8" to="r2co:jnrNESv$np" resolve="target" />
       </node>
       <node concept="l2Vlx" id="jnrNESv$nD" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5EGbNbOmwdt">
-    <property role="3GE5qa" value="simulation.expressions" />
-    <ref role="1XX52x" to="r2co:6sMVU6wHpoY" resolve="DifferentialOperator" />
-    <node concept="3EZMnI" id="5EGbNbOmwdv" role="2wV5jI">
-      <node concept="3F0ifn" id="5EGbNbOmwdE" role="3EZMnx">
-        <property role="3F0ifm" value="▽" />
-      </node>
-      <node concept="l2Vlx" id="5EGbNbOmwdy" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5EGbNbOnnnC">
-    <property role="3GE5qa" value="simulation.expressions" />
-    <ref role="1XX52x" to="r2co:5EGbNbOnnnv" resolve="CrossProduct" />
-    <node concept="3EZMnI" id="5EGbNbOnnnE" role="2wV5jI">
-      <node concept="3F1sOY" id="5EGbNbOnnnL" role="3EZMnx">
-        <ref role="1NtTu8" to="caxt:7bpBJvmqoNQ" resolve="left" />
-      </node>
-      <node concept="3F0ifn" id="5EGbNbOnnnR" role="3EZMnx">
-        <property role="3F0ifm" value="×" />
-      </node>
-      <node concept="3F1sOY" id="5EGbNbOnnnZ" role="3EZMnx">
-        <ref role="1NtTu8" to="caxt:7bpBJvmqoNU" resolve="right" />
-      </node>
-      <node concept="l2Vlx" id="5EGbNbOnnnH" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5EGbNbOnE5L">
