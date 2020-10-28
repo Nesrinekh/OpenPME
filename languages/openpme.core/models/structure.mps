@@ -1049,5 +1049,24 @@
       <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2cSOkSK1n0$">
+    <property role="EcuMT" value="2538008523766591524" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="Gradient" />
+    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="BaseDifferentialOperator" />
+  </node>
+  <node concept="1TIwiD" id="2cSOkSK1n0R">
+    <property role="EcuMT" value="2538008523766591543" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="GradientWithFactor" />
+    <ref role="1TJDcQ" node="2cSOkSK1n0$" resolve="Gradient" />
+    <node concept="1TJgyj" id="2cSOkSK1n0S" role="1TKVEi">
+      <property role="IQ2ns" value="2538008523766591544" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="factor" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="28VDvkf8ODT" resolve="BaseAccess" />
+    </node>
+  </node>
 </model>
 

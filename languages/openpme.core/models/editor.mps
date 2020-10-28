@@ -1535,5 +1535,37 @@
       <node concept="l2Vlx" id="6GPUbLlHb$1" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2cSOkSK1n0H">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:2cSOkSK1n0$" resolve="Gradient" />
+    <node concept="3EZMnI" id="2cSOkSK1n0J" role="2wV5jI">
+      <node concept="3F0ifn" id="2cSOkSK1n0K" role="3EZMnx">
+        <property role="3F0ifm" value="▽" />
+      </node>
+      <node concept="3F1sOY" id="2cSOkSK1n0L" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2cSOkSJWruz" resolve="operand" />
+      </node>
+      <node concept="l2Vlx" id="2cSOkSK1n0M" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2cSOkSK1n12">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:2cSOkSK1n0R" resolve="GradientWithFactor" />
+    <node concept="3EZMnI" id="2cSOkSK1n14" role="2wV5jI">
+      <node concept="3F0ifn" id="2cSOkSK1n1g" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="2cSOkSK1n1q" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2cSOkSK1n0S" resolve="factor" />
+      </node>
+      <node concept="3F0ifn" id="2cSOkSK1n15" role="3EZMnx">
+        <property role="3F0ifm" value="* ▽ )" />
+      </node>
+      <node concept="3F1sOY" id="2cSOkSK1n16" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2cSOkSJWruz" resolve="operand" />
+      </node>
+      <node concept="l2Vlx" id="2cSOkSK1n17" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
