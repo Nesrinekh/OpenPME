@@ -28,9 +28,6 @@
       <concept id="1387474872151359155" name="openpme.core.structure.CutoffRef" flags="ng" index="2q7veS">
         <reference id="1387474872151359156" name="ref" index="2q7veZ" />
       </concept>
-      <concept id="1387474872145899071" name="openpme.core.structure.UpdateCellList" flags="ng" index="2qi2cO">
-        <child id="1387474872145899092" name="cellList" index="2qi2dv" />
-      </concept>
       <concept id="1387474872146285163" name="openpme.core.structure.PropertyReference" flags="ng" index="2qjxXw">
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
       </concept>
@@ -362,11 +359,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="2qi2cO" id="4TedDNlcimt" role="oWeDG">
-            <node concept="1XiV_f" id="4TedDNlcimu" role="2qi2dv">
-              <ref role="1Xh6_M" node="4TedDNlcilV" resolve="cellList" />
             </node>
           </node>
           <node concept="2G0pd6" id="4TedDNlcno2" role="oWeDG">
