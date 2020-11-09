@@ -64,15 +64,13 @@
       <property role="IQ2ns" value="7548145485610548772" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="boundary_conditions" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="r2co:6z0p_feMdxV" resolve="BoundaryConditions" />
+      <ref role="20lvS9" to="r2co:6z0p_feMAui" resolve="TypeOfBoundary" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMfSC" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610548776" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="initial_conditions" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="r2co:6z0p_feMdxW" resolve="InitialConditions" />
+      <ref role="20lvS9" to="r2co:6z0p_feMAun" resolve="TypeOfInitialCond" />
     </node>
     <node concept="1TJgyj" id="6z0p_feMfSH" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610548781" />
@@ -99,6 +97,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="InterpolationScheme" />
       <ref role="20lvS9" to="r2co:13xhPA6MJQo" resolve="InterpolationScheme" />
+    </node>
+    <node concept="1TJgyj" id="57hfxDv_l3$" role="1TKVEi">
+      <property role="IQ2ns" value="5895561670198382820" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="neighborStructure" />
+      <ref role="20lvS9" to="r2co:57hfxDv_lsO" resolve="TypeOfNeighStructure" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Ib_GcBfL0P">

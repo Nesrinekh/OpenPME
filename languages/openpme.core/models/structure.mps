@@ -1056,5 +1056,70 @@
       <ref role="20lvS9" node="28VDvkf8ODT" resolve="BaseAccess" />
     </node>
   </node>
+  <node concept="1TIwiD" id="57hfxDvvsXv">
+    <property role="EcuMT" value="5895561670196842335" />
+    <property role="3GE5qa" value="simulation.command" />
+    <property role="TrG5h" value="Interact" />
+    <ref role="1TJDcQ" node="57hfxDvvt6Y" resolve="FieldOperation" />
+    <node concept="1TJgyj" id="57hfxDvwVo9" role="1TKVEi">
+      <property role="IQ2ns" value="5895561670197229065" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="neighbor_particle" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="57hfxDvvt3x">
+    <property role="EcuMT" value="5895561670196842721" />
+    <property role="3GE5qa" value="simulation.command" />
+    <property role="TrG5h" value="Evolve" />
+    <ref role="1TJDcQ" node="57hfxDvvt6Y" resolve="FieldOperation" />
+  </node>
+  <node concept="1TIwiD" id="57hfxDvvt6Y">
+    <property role="EcuMT" value="5895561670196842942" />
+    <property role="3GE5qa" value="simulation.command" />
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="FieldOperation" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="57hfxDvvti4" role="1TKVEi">
+      <property role="IQ2ns" value="5895561670196843652" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="container" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="57hfxDvvyeo" role="1TKVEi">
+      <property role="IQ2ns" value="5895561670196863896" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    </node>
+    <node concept="1TJgyj" id="57hfxDvwVkZ" role="1TKVEi">
+      <property role="IQ2ns" value="5895561670197228863" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="self_particle" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="57hfxDv_lsO">
+    <property role="EcuMT" value="5895561670198384436" />
+    <property role="3GE5qa" value="initialization.neighbor" />
+    <property role="TrG5h" value="TypeOfNeighStructure" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="57hfxDv_Rqc">
+    <property role="EcuMT" value="5895561670198523532" />
+    <property role="3GE5qa" value="initialization.neighbor" />
+    <property role="TrG5h" value="CellListStructure" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="57hfxDv_RsM">
+    <property role="EcuMT" value="5895561670198523698" />
+    <property role="3GE5qa" value="initialization.neighbor" />
+    <property role="TrG5h" value="VerletListStructure" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 
