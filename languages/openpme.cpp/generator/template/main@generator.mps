@@ -1155,40 +1155,6 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="1Uhwoc6CaUi" role="3acgRq">
-      <ref role="30HIoZ" to="caxt:7mV$Q_d7Dft" resolve="VariableAccess" />
-      <node concept="gft3U" id="1Uhwoc6CbJ0" role="1lVwrX">
-        <node concept="1zd1ln" id="1Uhwoc6CbJ6" role="gfFT$">
-          <node concept="1pdMLZ" id="1Uhwoc6CbOS" role="lGtFl">
-            <node concept="15lBmy" id="1Uhwoc6CbOU" role="15mYut">
-              <node concept="3clFbS" id="1Uhwoc6CbOV" role="2VODD2">
-                <node concept="3clFbF" id="1Uhwoc6CbP7" role="3cqZAp">
-                  <node concept="37vLTI" id="1Uhwoc6CcGZ" role="3clFbG">
-                    <node concept="2OqwBi" id="1Uhwoc6CdzZ" role="37vLTx">
-                      <node concept="2OqwBi" id="1Uhwoc6CcSu" role="2Oq$k0">
-                        <node concept="30H73N" id="1Uhwoc6CcH$" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="1Uhwoc6Cd3o" role="2OqNvi">
-                          <ref role="3Tt5mk" to="caxt:7mV$Q_d7Dfu" resolve="ref" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="1Uhwoc6CdWY" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="1Uhwoc6CbYH" role="37vLTJ">
-                      <node concept="3l3mFP" id="1Uhwoc6CbP6" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="1Uhwoc6Ccbm" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3aamgX" id="2v3xCXUDayn" role="3acgRq">
       <ref role="30HIoZ" to="r2co:28VDvkfrFIi" resolve="StencilMeshAccess" />
       <node concept="j$656" id="2v3xCXUDaRm" role="1lVwrX">
