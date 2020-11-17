@@ -975,7 +975,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="47KNQXwoAbL">
-    <property role="3GE5qa" value="simulation.command" />
+    <property role="3GE5qa" value="simulation.statements" />
     <ref role="WuzLi" to="r2co:6sMVU6wHppa" resolve="Interpolate" />
     <node concept="11bSqf" id="47KNQXwoAbM" role="11c4hB">
       <node concept="3clFbS" id="47KNQXwoAbN" role="2VODD2" />
