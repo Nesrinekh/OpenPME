@@ -213,6 +213,7 @@
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
       </concept>
       <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
+      <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
@@ -221,6 +222,9 @@
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <property id="7430509679011668804" name="counterVarName" index="1qytDF" />
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
+      </concept>
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+        <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
@@ -332,6 +336,10 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
+        <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -569,11 +577,6 @@
     <node concept="2rT7sh" id="57hfxDvGiWL" role="2rTMjI">
       <property role="TrG5h" value="cellListDeclaration" />
       <ref role="2rTdP9" to="r2co:1MYyjtFOOxy" resolve="Particle" />
-      <ref role="2rZz_L" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
-    </node>
-    <node concept="2rT7sh" id="57hfxDvM6ZJ" role="2rTMjI">
-      <property role="TrG5h" value="SelfParticleInteract" />
-      <ref role="2rTdP9" to="r2co:57hfxDvvsXv" resolve="Interact" />
       <ref role="2rZz_L" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
   </node>
@@ -8500,51 +8503,18 @@
           <property role="TrG5h" value="selfPosition" />
           <node concept="2qk_1K" id="57hfxDvM6VX" role="1wvloH" />
           <node concept="2rB6Is" id="57hfxDvM6X_" role="1wvlr8">
-            <node concept="1XiV_f" id="57hfxDvM6XB" role="2rB6Ih">
-              <node concept="1pdMLZ" id="57hfxDvM7f_" role="lGtFl">
-                <node concept="15lBmy" id="57hfxDvM7gj" role="15mYut">
-                  <node concept="3clFbS" id="57hfxDvM7gk" role="2VODD2">
-                    <node concept="3clFbF" id="57hfxDvM7h1" role="3cqZAp">
-                      <node concept="2OqwBi" id="57hfxDvM7Lm" role="3clFbG">
-                        <node concept="2OqwBi" id="57hfxDvM7qj" role="2Oq$k0">
-                          <node concept="3l3mFP" id="57hfxDvM7h0" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="57hfxDvM7$X" role="2OqNvi">
-                            <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
-                          </node>
+            <node concept="1XiV_f" id="3q744Ufe759" role="2rB6Ih">
+              <node concept="1ZhdrF" id="3q744Ufe75b" role="lGtFl">
+                <property role="2qtEX8" value="variableDeclaration" />
+                <property role="P3scX" value="d89a1f94-2b10-40d1-a01e-560f94e501d7/2579446515047575999/2579446515047620994" />
+                <node concept="3$xsQk" id="3q744Ufe75e" role="3$ytzL">
+                  <node concept="3clFbS" id="3q744Ufe75f" role="2VODD2">
+                    <node concept="3clFbF" id="3q744Ufe75l" role="3cqZAp">
+                      <node concept="2OqwBi" id="3q744Ufe75g" role="3clFbG">
+                        <node concept="3TrEf2" id="3q744Ufe75j" role="2OqNvi">
+                          <ref role="3Tt5mk" to="r2co:57hfxDvwVkZ" resolve="self_particle" />
                         </node>
-                        <node concept="2oxUTD" id="57hfxDvM7VN" role="2OqNvi">
-                          <node concept="2OqwBi" id="57hfxDvM894" role="2oxUTC">
-                            <node concept="1iwH7S" id="57hfxDvM7Y5" role="2Oq$k0" />
-                            <node concept="1iwH70" id="57hfxDvM8lX" role="2OqNvi">
-                              <ref role="1iwH77" node="57hfxDvM6ZJ" resolve="SelfParticleInteract" />
-                              <node concept="30H73N" id="57hfxDvM8v2" role="1iwH7V" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2xdQw9" id="57hfxDvNkIY" role="3cqZAp">
-                      <property role="2xdLsb" value="h1akgim/info" />
-                      <node concept="3cpWs3" id="57hfxDvNkMH" role="9lYJi">
-                        <node concept="30H73N" id="57hfxDvNkNx" role="3uHU7w" />
-                        <node concept="Xl_RD" id="57hfxDvNkJ0" role="3uHU7B">
-                          <property role="Xl_RC" value="node" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2xdQw9" id="57hfxDvMLFi" role="3cqZAp">
-                      <property role="2xdLsb" value="h1akgim/info" />
-                      <node concept="3cpWs3" id="57hfxDvMLJC" role="9lYJi">
-                        <node concept="Xl_RD" id="57hfxDvMLFk" role="3uHU7B">
-                          <property role="Xl_RC" value="self particle" />
-                        </node>
-                        <node concept="2OqwBi" id="57hfxDvMLYH" role="3uHU7w">
-                          <node concept="1iwH7S" id="57hfxDvMLYI" role="2Oq$k0" />
-                          <node concept="1iwH70" id="57hfxDvMLYJ" role="2OqNvi">
-                            <ref role="1iwH77" node="57hfxDvM6ZJ" resolve="SelfParticleInteract" />
-                            <node concept="30H73N" id="57hfxDvMLYK" role="1iwH7V" />
-                          </node>
-                        </node>
+                        <node concept="30H73N" id="3q744Ufe75k" role="2Oq$k0" />
                       </node>
                     </node>
                   </node>
@@ -8571,9 +8541,6 @@
         </node>
         <node concept="raruj" id="57hfxDvM4Cn" role="lGtFl" />
         <node concept="2G0pd6" id="57hfxDvM6y5" role="Gx2hZ">
-          <node concept="2ZBi8u" id="57hfxDvNSq1" role="lGtFl">
-            <ref role="2rW$FS" node="57hfxDvM6ZJ" resolve="SelfParticleInteract" />
-          </node>
           <node concept="29HgVG" id="57hfxDvM6zG" role="lGtFl">
             <node concept="3NFfHV" id="57hfxDvM6zH" role="3NFExx">
               <node concept="3clFbS" id="57hfxDvM6zI" role="2VODD2">
