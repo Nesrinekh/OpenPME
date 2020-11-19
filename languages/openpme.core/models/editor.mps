@@ -1793,5 +1793,30 @@
       <node concept="l2Vlx" id="57hfxDvAWMn" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2xYujawbBOh">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:2xYujawbBJS" resolve="ParticleDistance" />
+    <node concept="3EZMnI" id="2xYujawbBOD" role="2wV5jI">
+      <node concept="3F0ifn" id="2xYujawbBOK" role="3EZMnx">
+        <property role="3F0ifm" value="d" />
+      </node>
+      <node concept="3F0ifn" id="2xYujawbHDI" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="2xYujawbHEn" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2xYujawbH_O" resolve="self" />
+      </node>
+      <node concept="3F0ifn" id="2xYujawbHER" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="2xYujawbHFe" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2xYujawbHBe" resolve="neighbor" />
+      </node>
+      <node concept="3F0ifn" id="2xYujawbHFM" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="2xYujawbBOG" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
