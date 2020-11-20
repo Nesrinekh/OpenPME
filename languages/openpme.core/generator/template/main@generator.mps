@@ -145,7 +145,6 @@
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
       <concept id="2202684092512217962" name="openpme.expressions.structure.PlusAssignmentExpression" flags="ng" index="o2qFD" />
       <concept id="1387474872151759130" name="openpme.expressions.structure.PowerExpression" flags="ng" index="2q8Tgh" />
-      <concept id="1387474872145762371" name="openpme.expressions.structure.DoubleType" flags="ng" index="2qhxl8" />
       <concept id="8275820577561349363" name="openpme.expressions.structure.BinaryExpression" flags="ng" index="2$G184">
         <child id="8275820577561349366" name="left" index="2$G181" />
         <child id="8275820577561349370" name="right" index="2$G18d" />
@@ -8688,7 +8687,7 @@
           </node>
           <node concept="2G0pd6" id="2xYujawapQj" role="oWeDG">
             <property role="TrG5h" value="distance" />
-            <node concept="2qhxl8" id="2xYujawapV6" role="1wvloH" />
+            <node concept="2qk_1K" id="5bRIVlYDuNw" role="1wvloH" />
             <node concept="37xRux" id="2xYujawapYV" role="1wvlr8">
               <node concept="1XiV_f" id="2xYujawapZV" role="2$G181">
                 <ref role="1Xh6_M" node="57hfxDvM6HA" resolve="selfPosition" />

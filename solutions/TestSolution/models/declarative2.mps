@@ -49,9 +49,6 @@
       <concept id="1387474872142997143" name="openpme.core.structure.ParticlePositionAccess" flags="ng" index="2rB6Is">
         <child id="1387474872142997146" name="ref" index="2rB6Ih" />
       </concept>
-      <concept id="7548145485610539131" name="openpme.core.structure.BoundaryConditions" flags="ng" index="2A2bSC">
-        <child id="7548145485610641296" name="Boundary" index="2A2w73" />
-      </concept>
       <concept id="7548145485610539130" name="openpme.core.structure.Domain" flags="ng" index="2A2bSD">
         <child id="7548145485610582911" name="domain" index="2A2ukG" />
       </concept>
@@ -178,12 +175,18 @@
   </registry>
   <node concept="1GHexR" id="4TedDNlcil9">
     <property role="TrG5h" value="LJ" />
-    <node concept="1GH8rR" id="4TedDNlcila" role="1GHexQ">
-      <node concept="2A2bSE" id="4TedDNlcilb" role="2A29xc">
-        <node concept="2$GKAY" id="4TedDNlcilc" role="2A2i2r">
+    <node concept="1GH8rR" id="5bRIVlYDtKc" role="1GHexQ">
+      <node concept="2A2bSE" id="5bRIVlYDtKt" role="2A29xc">
+        <node concept="2$GKAY" id="5bRIVlYDtMa" role="2A2i2r">
           <property role="2$GKAX" value="3" />
         </node>
       </node>
+      <node concept="2A2bSH" id="5bRIVlYDtLg" role="2A29xY">
+        <node concept="2$GK$c" id="5bRIVlYDtLx" role="2A2s8W">
+          <property role="2$GK$b" value="0.3" />
+        </node>
+      </node>
+      <node concept="2A2bSI" id="5bRIVlYDtLM" role="2A29xw" />
       <node concept="2A2bSD" id="4TedDNlcild" role="2A29xM">
         <node concept="2A2uni" id="4TedDNlcile" role="2A2ukG">
           <node concept="2$GK$c" id="4TedDNlcilf" role="2A2unh">
@@ -206,15 +209,7 @@
           </node>
         </node>
       </node>
-      <node concept="2A2bSC" id="4TedDNlcill" role="2A29xR">
-        <node concept="2A2w70" id="2xYujawjC7Q" role="2A2w73" />
-      </node>
-      <node concept="2A2bSH" id="4TedDNlcilo" role="2A29xY">
-        <node concept="2$GK$c" id="4TedDNlcilp" role="2A2s8W">
-          <property role="2$GK$b" value="0.3" />
-        </node>
-      </node>
-      <node concept="2A2bSI" id="4TedDNlcilq" role="2A29xw" />
+      <node concept="2A2w70" id="5bRIVlYDtMm" role="2A29xR" />
     </node>
     <node concept="1GH8rQ" id="4TedDNlcilr" role="1GHewH">
       <node concept="2A2w6k" id="4TedDNlcils" role="2A2w7f">
@@ -286,11 +281,11 @@
           <property role="TrG5h" value="r_cut2" />
           <node concept="2qhxl8" id="4TedDNlcilR" role="1wvloH" />
           <node concept="37xRuw" id="4TedDNlcilS" role="1wvlr8">
-            <node concept="2q7veS" id="4TedDNlcilT" role="2$G181">
-              <ref role="2q7veZ" node="4TedDNlcilo" />
+            <node concept="2q7veS" id="5bRIVlYDtTq" role="2$G181">
+              <ref role="2q7veZ" node="5bRIVlYDtLg" />
             </node>
-            <node concept="2q7veS" id="4TedDNlcilU" role="2$G18d">
-              <ref role="2q7veZ" node="4TedDNlcilo" />
+            <node concept="2q7veS" id="5bRIVlYDtTt" role="2$G18d">
+              <ref role="2q7veZ" node="5bRIVlYDtLg" />
             </node>
           </node>
         </node>
@@ -658,12 +653,14 @@
                           <node concept="2$GKAY" id="57hfxDv$iRj" role="2$G18d">
                             <property role="2$GKAX" value="6" />
                           </node>
-                          <node concept="28k0ba" id="2xYujawiZlb" role="2$G181">
-                            <node concept="1XiV_f" id="2xYujawiZld" role="28ka16">
-                              <ref role="1Xh6_M" node="57hfxDv$iJ4" resolve="p_i2" />
-                            </node>
-                            <node concept="1XiV_f" id="2xYujawiZle" role="28ka3W">
-                              <ref role="1Xh6_M" node="57hfxDv$iIY" resolve="q_i2" />
+                          <node concept="2q6huI" id="5bRIVlYEdV4" role="2$G181">
+                            <node concept="28k0ba" id="2xYujawiZlb" role="2q6huW">
+                              <node concept="1XiV_f" id="2xYujawiZld" role="28ka16">
+                                <ref role="1Xh6_M" node="57hfxDv$iJ4" resolve="p_i2" />
+                              </node>
+                              <node concept="1XiV_f" id="2xYujawiZle" role="28ka3W">
+                                <ref role="1Xh6_M" node="57hfxDv$iIY" resolve="q_i2" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -676,12 +673,14 @@
                           <node concept="2$GKAY" id="57hfxDv$iRp" role="2$G18d">
                             <property role="2$GKAX" value="3" />
                           </node>
-                          <node concept="28k0ba" id="2xYujawiZmm" role="2$G181">
-                            <node concept="1XiV_f" id="2xYujawiZmo" role="28ka16">
-                              <ref role="1Xh6_M" node="57hfxDv$iJ4" resolve="p_i2" />
-                            </node>
-                            <node concept="1XiV_f" id="2xYujawiZmp" role="28ka3W">
-                              <ref role="1Xh6_M" node="57hfxDv$iIY" resolve="q_i2" />
+                          <node concept="2q6huI" id="5bRIVlYEdVf" role="2$G181">
+                            <node concept="28k0ba" id="2xYujawiZmm" role="2q6huW">
+                              <node concept="1XiV_f" id="2xYujawiZmo" role="28ka16">
+                                <ref role="1Xh6_M" node="57hfxDv$iJ4" resolve="p_i2" />
+                              </node>
+                              <node concept="1XiV_f" id="2xYujawiZmp" role="28ka3W">
+                                <ref role="1Xh6_M" node="57hfxDv$iIY" resolve="q_i2" />
+                              </node>
                             </node>
                           </node>
                         </node>
