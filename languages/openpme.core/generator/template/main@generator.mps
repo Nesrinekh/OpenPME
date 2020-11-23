@@ -622,6 +622,11 @@
       <ref role="2rTdP9" to="r2co:57hfxDvvsXv" resolve="Interact" />
       <ref role="2rZz_L" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
+    <node concept="2rT7sh" id="2GVf64qhUAe" role="2rTMjI">
+      <property role="TrG5h" value="loopNodeParticleAcess" />
+      <ref role="2rTdP9" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
+      <ref role="2rZz_L" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
   </node>
   <node concept="jVnub" id="drzFVJKILG">
     <property role="TrG5h" value="switch_Curl3D" />
@@ -6215,6 +6220,59 @@
   </node>
   <node concept="jVnub" id="2cSOkSKdmfS">
     <property role="TrG5h" value="switch_ExpressionStatement" />
+    <node concept="3aamgX" id="2GVf64qgyMw" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
+      <node concept="j$656" id="2GVf64qg$cT" role="1lVwrX">
+        <ref role="v9R2y" node="2GVf64qg$cR" resolve="reduce_ExpressionStatement_ParticleAccess" />
+      </node>
+      <node concept="30G5F_" id="2GVf64qg$mq" role="30HLyM">
+        <node concept="3clFbS" id="2GVf64qg$mr" role="2VODD2">
+          <node concept="2Gpval" id="2GVf64qg$tL" role="3cqZAp">
+            <node concept="2GrKxI" id="2GVf64qg$tM" role="2Gsz3X">
+              <property role="TrG5h" value="particleAccess" />
+            </node>
+            <node concept="2OqwBi" id="2GVf64qg$Ta" role="2GsD0m">
+              <node concept="30H73N" id="2GVf64qg$EM" role="2Oq$k0" />
+              <node concept="2Rf3mk" id="2GVf64qg_3N" role="2OqNvi">
+                <node concept="1xMEDy" id="2GVf64qg_3P" role="1xVPHs">
+                  <node concept="chp4Y" id="2GVf64qg_5k" role="ri$Ld">
+                    <ref role="cht4Q" to="r2co:7mV$Q_d7Dfn" resolve="ParticleAccess" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="2GVf64qg$tO" role="2LFqv$">
+              <node concept="3cpWs6" id="2GVf64qgCjQ" role="3cqZAp">
+                <node concept="2OqwBi" id="2GVf64qgCM2" role="3cqZAk">
+                  <node concept="2OqwBi" id="2GVf64qgCM3" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2GVf64qgCM4" role="2Oq$k0">
+                      <node concept="2GrUjf" id="2GVf64qgCM5" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="2GVf64qg$tM" resolve="particleAccess" />
+                      </node>
+                      <node concept="3TrEf2" id="2GVf64qgCM6" role="2OqNvi">
+                        <ref role="3Tt5mk" to="r2co:28VDvkf8ODU" resolve="variableReference" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="2GVf64qgCM7" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="2GVf64qgCM8" role="2OqNvi">
+                    <node concept="chp4Y" id="2GVf64qgCM9" role="cj9EA">
+                      <ref role="cht4Q" to="r2co:1MYyjtFOOxy" resolve="Particle" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="2GVf64qgDeJ" role="3cqZAp">
+            <node concept="3clFbT" id="2GVf64qgDsO" role="3cqZAk" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="2cSOkSKdmFM" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
@@ -9309,6 +9367,255 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="2GVf64qg$cR">
+    <property role="TrG5h" value="reduce_ExpressionStatement_ParticleAccess" />
+    <ref role="3gUMe" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
+    <node concept="1Rrs5m" id="2GVf64qgDw7" role="13RCb5">
+      <node concept="37xPp2" id="2GVf64qhmTM" role="oWeDG">
+        <node concept="1pdMLZ" id="2GVf64qhWMA" role="lGtFl">
+          <node concept="2kFOW8" id="2GVf64qhWNx" role="2kGFt3">
+            <node concept="3clFbS" id="2GVf64qhWNy" role="2VODD2">
+              <node concept="3cpWs8" id="2GVf64qhWPs" role="3cqZAp">
+                <node concept="3cpWsn" id="2GVf64qhWPt" role="3cpWs9">
+                  <property role="TrG5h" value="expressionStatement" />
+                  <node concept="3Tqbb2" id="2GVf64qhWPu" role="1tU5fm">
+                    <ref role="ehGHo" to="5oki:70bNw4gtx3a" resolve="ExpressionStatement" />
+                  </node>
+                  <node concept="30H73N" id="2GVf64qhWP$" role="33vP2m" />
+                </node>
+              </node>
+              <node concept="2Gpval" id="2GVf64qhWPA" role="3cqZAp">
+                <node concept="2GrKxI" id="2GVf64qhWPB" role="2Gsz3X">
+                  <property role="TrG5h" value="access" />
+                </node>
+                <node concept="2OqwBi" id="2GVf64qhWPC" role="2GsD0m">
+                  <node concept="37vLTw" id="2GVf64qhWPD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2GVf64qhWPt" resolve="expressionStatement" />
+                  </node>
+                  <node concept="2Rf3mk" id="2GVf64qhWPE" role="2OqNvi">
+                    <node concept="1xMEDy" id="2GVf64qhWPF" role="1xVPHs">
+                      <node concept="chp4Y" id="2GVf64qhWPG" role="ri$Ld">
+                        <ref role="cht4Q" to="r2co:28VDvkf8ODT" resolve="BaseAccess" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="2GVf64qhWPI" role="2LFqv$">
+                  <node concept="3clFbF" id="2GVf64qhWPJ" role="3cqZAp">
+                    <node concept="37vLTI" id="2GVf64qhWPK" role="3clFbG">
+                      <node concept="2OqwBi" id="2GVf64qhWPL" role="37vLTx">
+                        <node concept="2GrUjf" id="2GVf64qhWPM" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="2GVf64qhWPB" resolve="access" />
+                        </node>
+                        <node concept="3TrEf2" id="2GVf64qhWPN" role="2OqNvi">
+                          <ref role="3Tt5mk" to="r2co:28VDvkf8ODW" resolve="propertyReference" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2GVf64qhWPO" role="37vLTJ">
+                        <node concept="3TrEf2" id="2GVf64qhWPP" role="2OqNvi">
+                          <ref role="3Tt5mk" to="r2co:28VDvkf8ODW" resolve="propertyReference" />
+                        </node>
+                        <node concept="2GrUjf" id="2GVf64qhWPQ" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="2GVf64qhWPB" resolve="access" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="2GVf64qhWPR" role="3cqZAp">
+                    <node concept="37vLTI" id="2GVf64qhWPS" role="3clFbG">
+                      <node concept="2OqwBi" id="2GVf64qhWPT" role="37vLTx">
+                        <node concept="2OqwBi" id="2GVf64qhWPU" role="2Oq$k0">
+                          <node concept="2GrUjf" id="2GVf64qhWPV" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="2GVf64qhWPB" resolve="access" />
+                          </node>
+                          <node concept="3TrEf2" id="2GVf64qhWPW" role="2OqNvi">
+                            <ref role="3Tt5mk" to="r2co:28VDvkf8ODU" resolve="variableReference" />
+                          </node>
+                        </node>
+                        <node concept="1$rogu" id="2GVf64qhWPX" role="2OqNvi" />
+                      </node>
+                      <node concept="2OqwBi" id="2GVf64qhWPY" role="37vLTJ">
+                        <node concept="3TrEf2" id="2GVf64qhWPZ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="r2co:3t18Je0a9rx" resolve="containerReference" />
+                        </node>
+                        <node concept="2GrUjf" id="2GVf64qhWQ0" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="2GVf64qhWPB" resolve="access" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="2GVf64qhWQ1" role="3cqZAp">
+                    <node concept="37vLTI" id="2GVf64qhWQ2" role="3clFbG">
+                      <node concept="2OqwBi" id="2GVf64qhWQ3" role="37vLTJ">
+                        <node concept="2OqwBi" id="2GVf64qhWQ4" role="2Oq$k0">
+                          <node concept="2GrUjf" id="2GVf64qhWQ5" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="2GVf64qhWPB" resolve="access" />
+                          </node>
+                          <node concept="3TrEf2" id="2GVf64qhWQ6" role="2OqNvi">
+                            <ref role="3Tt5mk" to="r2co:28VDvkf8ODU" resolve="variableReference" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="2GVf64qhWQ7" role="2OqNvi">
+                          <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2GVf64qhWQ8" role="37vLTx">
+                        <node concept="1iwH7S" id="2GVf64qhWQ9" role="2Oq$k0" />
+                        <node concept="1iwH70" id="2GVf64qhWQa" role="2OqNvi">
+                          <ref role="1iwH77" node="2GVf64qhUAe" resolve="loopNodeParticleAcess" />
+                          <node concept="30H73N" id="2GVf64qhWQb" role="1iwH7V" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2Gpval" id="2GVf64qhWQc" role="3cqZAp">
+                <node concept="2GrKxI" id="2GVf64qhWQd" role="2Gsz3X">
+                  <property role="TrG5h" value="posAccess" />
+                </node>
+                <node concept="2OqwBi" id="2GVf64qhWQe" role="2GsD0m">
+                  <node concept="37vLTw" id="2GVf64qhWQf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2GVf64qhWPt" resolve="expressionStatement" />
+                  </node>
+                  <node concept="2Rf3mk" id="2GVf64qhWQg" role="2OqNvi">
+                    <node concept="1xMEDy" id="2GVf64qhWQh" role="1xVPHs">
+                      <node concept="chp4Y" id="2GVf64qhWQi" role="ri$Ld">
+                        <ref role="cht4Q" to="r2co:1d1jgI8Riqn" resolve="ParticlePositionAccess" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="2GVf64qhWQk" role="2LFqv$">
+                  <node concept="3clFbF" id="2GVf64qhWQl" role="3cqZAp">
+                    <node concept="37vLTI" id="2GVf64qhWQm" role="3clFbG">
+                      <node concept="2OqwBi" id="2GVf64qhWQn" role="37vLTJ">
+                        <node concept="2OqwBi" id="2GVf64qhWQo" role="2Oq$k0">
+                          <node concept="2GrUjf" id="2GVf64qhWQp" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="2GVf64qhWQd" resolve="posAccess" />
+                          </node>
+                          <node concept="3TrEf2" id="2GVf64qhWQq" role="2OqNvi">
+                            <ref role="3Tt5mk" to="r2co:1d1jgI8Riqq" resolve="ref" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="2GVf64qhWQr" role="2OqNvi">
+                          <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2GVf64qhWQs" role="37vLTx">
+                        <node concept="1iwH7S" id="2GVf64qhWQt" role="2Oq$k0" />
+                        <node concept="1iwH70" id="2GVf64qhWQu" role="2OqNvi">
+                          <ref role="1iwH77" node="2GVf64qhUAe" resolve="loopNodeParticleAcess" />
+                          <node concept="30H73N" id="2GVf64qhWQv" role="1iwH7V" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2GVf64qhWQw" role="3cqZAp" />
+              <node concept="3cpWs6" id="2GVf64qhWQx" role="3cqZAp">
+                <node concept="37vLTw" id="2GVf64qhWQy" role="3cqZAk">
+                  <ref role="3cqZAo" node="2GVf64qhWPt" resolve="expressionStatement" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1XiV_f" id="2GVf64qgDw8" role="Gx2hT">
+        <node concept="1ZhdrF" id="2GVf64qgD_U" role="lGtFl">
+          <property role="2qtEX8" value="variableDeclaration" />
+          <property role="P3scX" value="d89a1f94-2b10-40d1-a01e-560f94e501d7/2579446515047575999/2579446515047620994" />
+          <node concept="3$xsQk" id="2GVf64qgD_V" role="3$ytzL">
+            <node concept="3clFbS" id="2GVf64qgD_W" role="2VODD2">
+              <node concept="3clFbF" id="2GVf64qgEjy" role="3cqZAp">
+                <node concept="2OqwBi" id="2GVf64qgM4_" role="3clFbG">
+                  <node concept="2OqwBi" id="2GVf64qgLik" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2GVf64qgJ4R" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2GVf64qgESS" role="2Oq$k0">
+                        <node concept="30H73N" id="2GVf64qgEFL" role="2Oq$k0" />
+                        <node concept="2Rf3mk" id="2GVf64qgF3C" role="2OqNvi">
+                          <node concept="1xMEDy" id="2GVf64qgF3E" role="1xVPHs">
+                            <node concept="chp4Y" id="2GVf64qgGoL" role="ri$Ld">
+                              <ref role="cht4Q" to="r2co:7mV$Q_d7Dfn" resolve="ParticleAccess" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2GVf64qgKGu" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="2GVf64qgLw0" role="2OqNvi">
+                      <ref role="3Tt5mk" to="r2co:28VDvkf8ODU" resolve="variableReference" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="2GVf64qgMnq" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="raruj" id="2GVf64qgDxo" role="lGtFl" />
+      <node concept="2G0pd6" id="2GVf64qgDyB" role="Gx2hZ">
+        <property role="TrG5h" value="particleIterator" />
+        <node concept="2ZBi8u" id="2GVf64qhVUY" role="lGtFl">
+          <ref role="2rW$FS" node="2GVf64qhUAe" resolve="loopNodeParticleAcess" />
+        </node>
+      </node>
+      <node concept="1pdMLZ" id="2GVf64qi_Bf" role="lGtFl">
+        <node concept="15lBmy" id="2GVf64qi_Mz" role="15mYut">
+          <node concept="3clFbS" id="2GVf64qi_M$" role="2VODD2">
+            <node concept="3clFbF" id="2GVf64qiA2v" role="3cqZAp">
+              <node concept="37vLTI" id="2GVf64qiA2w" role="3clFbG">
+                <node concept="2OqwBi" id="2GVf64qjKoq" role="37vLTJ">
+                  <node concept="2OqwBi" id="2GVf64qiA2x" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2GVf64qiA2y" role="2Oq$k0">
+                      <node concept="3l3mFP" id="2GVf64qiA2z" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="2GVf64qiA2$" role="2OqNvi">
+                        <ref role="3Tt5mk" to="r2co:28VDvkeJS6a" resolve="node" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="2GVf64qiA2_" role="2OqNvi">
+                      <ref role="3Tt5mk" to="r2co:1Uhwoc6D_BP" resolve="container" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="2GVf64qjKIY" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="2GVf64qjL5_" role="37vLTx">
+                  <node concept="2OqwBi" id="2GVf64qiAGt" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2GVf64qiAGu" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2GVf64qiAGv" role="2Oq$k0">
+                        <node concept="30H73N" id="2GVf64qiAGw" role="2Oq$k0" />
+                        <node concept="2Rf3mk" id="2GVf64qiAGx" role="2OqNvi">
+                          <node concept="1xMEDy" id="2GVf64qiAGy" role="1xVPHs">
+                            <node concept="chp4Y" id="2GVf64qiAGz" role="ri$Ld">
+                              <ref role="cht4Q" to="r2co:7mV$Q_d7Dfn" resolve="ParticleAccess" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="2GVf64qiAG$" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="2GVf64qiAG_" role="2OqNvi">
+                      <ref role="3Tt5mk" to="r2co:28VDvkf8ODU" resolve="variableReference" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="2GVf64qjLa9" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
                   </node>
                 </node>
               </node>
