@@ -145,6 +145,7 @@
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
       <concept id="2202684092512217962" name="openpme.expressions.structure.PlusAssignmentExpression" flags="ng" index="o2qFD" />
       <concept id="1387474872151759130" name="openpme.expressions.structure.PowerExpression" flags="ng" index="2q8Tgh" />
+      <concept id="1387474872145762371" name="openpme.expressions.structure.DoubleType" flags="ng" index="2qhxl8" />
       <concept id="8275820577561349363" name="openpme.expressions.structure.BinaryExpression" flags="ng" index="2$G184">
         <child id="8275820577561349366" name="left" index="2$G181" />
         <child id="8275820577561349370" name="right" index="2$G18d" />
@@ -592,9 +593,15 @@
       </node>
     </node>
     <node concept="3aamgX" id="2xYujawj14e" role="3acgRq">
-      <ref role="30HIoZ" to="r2co:2xYujawbBJS" resolve="ParticleDistance" />
+      <ref role="30HIoZ" to="r2co:2xYujawbBJS" resolve="ParticleDifference" />
       <node concept="j$656" id="2xYujawj17z" role="1lVwrX">
-        <ref role="v9R2y" node="2xYujawj17x" resolve="reduce_ParticleDistance" />
+        <ref role="v9R2y" node="2xYujawj17x" resolve="reduce_ParticleDifference" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="2GVf64q91yr" role="3acgRq">
+      <ref role="30HIoZ" to="r2co:2GVf64q67Rc" resolve="ParticleDistanceNorm" />
+      <node concept="j$656" id="2GVf64q91DG" role="1lVwrX">
+        <ref role="v9R2y" node="2GVf64q91DE" resolve="reduce_ParticleDistanceNorm" />
       </node>
     </node>
     <node concept="1puMqW" id="57hfxDvERcW" role="1puA0r">
@@ -606,7 +613,12 @@
       <ref role="2rZz_L" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
     <node concept="2rT7sh" id="2xYujawj0T8" role="2rTMjI">
-      <property role="TrG5h" value="distanceInteract" />
+      <property role="TrG5h" value="diffInteract" />
+      <ref role="2rTdP9" to="r2co:57hfxDvvsXv" resolve="Interact" />
+      <ref role="2rZz_L" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+    <node concept="2rT7sh" id="2GVf64q7SOW" role="2rTMjI">
+      <property role="TrG5h" value="NormInteract" />
       <ref role="2rTdP9" to="r2co:57hfxDvvsXv" resolve="Interact" />
       <ref role="2rZz_L" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
@@ -8686,7 +8698,7 @@
             </node>
           </node>
           <node concept="2G0pd6" id="2xYujawapQj" role="oWeDG">
-            <property role="TrG5h" value="distance" />
+            <property role="TrG5h" value="diff" />
             <node concept="2qk_1K" id="5bRIVlYDuNw" role="1wvloH" />
             <node concept="37xRux" id="2xYujawapYV" role="1wvlr8">
               <node concept="1XiV_f" id="2xYujawapZV" role="2$G181">
@@ -8697,7 +8709,19 @@
               </node>
             </node>
             <node concept="2ZBi8u" id="2xYujawj12u" role="lGtFl">
-              <ref role="2rW$FS" node="2xYujawj0T8" resolve="distanceInteract" />
+              <ref role="2rW$FS" node="2xYujawj0T8" resolve="diffInteract" />
+            </node>
+          </node>
+          <node concept="2G0pd6" id="2GVf64q7Tm9" role="oWeDG">
+            <property role="TrG5h" value="norm" />
+            <node concept="2qhxl8" id="2GVf64q7Uii" role="1wvloH" />
+            <node concept="2q6huI" id="2GVf64q7Um9" role="1wvlr8">
+              <node concept="1XiV_f" id="2GVf64q7Unv" role="2q6huW">
+                <ref role="1Xh6_M" node="2xYujawapQj" resolve="diff" />
+              </node>
+            </node>
+            <node concept="2ZBi8u" id="2GVf64q7Urj" role="lGtFl">
+              <ref role="2rW$FS" node="2GVf64q7SOW" resolve="NormInteract" />
             </node>
           </node>
           <node concept="1GH9$S" id="2xYujawap1y" role="oWeDG">
@@ -8739,10 +8763,8 @@
                   <property role="2$GKAX" value="2" />
                 </node>
               </node>
-              <node concept="2q6huI" id="2xYujawj087" role="2$G181">
-                <node concept="1XiV_f" id="2xYujawj0a0" role="2q6huW">
-                  <ref role="1Xh6_M" node="2xYujawapQj" resolve="distance" />
-                </node>
+              <node concept="1XiV_f" id="2GVf64q7UyK" role="2$G181">
+                <ref role="1Xh6_M" node="2GVf64q7Tm9" resolve="norm" />
               </node>
             </node>
             <node concept="1wvtUh" id="2xYujawap1A" role="1wvtWw">
@@ -9231,8 +9253,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="2xYujawj17x">
-    <property role="TrG5h" value="reduce_ParticleDistance" />
-    <ref role="3gUMe" to="r2co:2xYujawbBJS" resolve="ParticleDistance" />
+    <property role="TrG5h" value="reduce_ParticleDifference" />
+    <ref role="3gUMe" to="r2co:2xYujawbBJS" resolve="ParticleDifference" />
     <node concept="1XiV_f" id="2xYujawj1bR" role="13RCb5">
       <node concept="raruj" id="2xYujawj1c_" role="lGtFl" />
       <node concept="1ZhdrF" id="2xYujawj1dD" role="lGtFl">
@@ -9244,12 +9266,45 @@
               <node concept="2OqwBi" id="2xYujawj1rR" role="3clFbG">
                 <node concept="1iwH7S" id="2xYujawj1fy" role="2Oq$k0" />
                 <node concept="1iwH70" id="2xYujawj1xC" role="2OqNvi">
-                  <ref role="1iwH77" node="2xYujawj0T8" resolve="distanceInteract" />
+                  <ref role="1iwH77" node="2xYujawj0T8" resolve="diffInteract" />
                   <node concept="2OqwBi" id="2xYujawj2om" role="1iwH7V">
                     <node concept="30H73N" id="2xYujawj1EM" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="2xYujawj2$Q" role="2OqNvi">
                       <node concept="1xMEDy" id="2xYujawj2$S" role="1xVPHs">
                         <node concept="chp4Y" id="2xYujawj2Dt" role="ri$Ld">
+                          <ref role="cht4Q" to="r2co:57hfxDvvsXv" resolve="Interact" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="2GVf64q91DE">
+    <property role="TrG5h" value="reduce_ParticleDistanceNorm" />
+    <ref role="3gUMe" to="r2co:2GVf64q67Rc" resolve="ParticleDistanceNorm" />
+    <node concept="1XiV_f" id="2GVf64q91QN" role="13RCb5">
+      <node concept="raruj" id="2GVf64q91Sx" role="lGtFl" />
+      <node concept="1ZhdrF" id="2GVf64q91Sy" role="lGtFl">
+        <property role="2qtEX8" value="variableDeclaration" />
+        <property role="P3scX" value="d89a1f94-2b10-40d1-a01e-560f94e501d7/2579446515047575999/2579446515047620994" />
+        <node concept="3$xsQk" id="2GVf64q91Sz" role="3$ytzL">
+          <node concept="3clFbS" id="2GVf64q91S$" role="2VODD2">
+            <node concept="3clFbF" id="2GVf64q91XZ" role="3cqZAp">
+              <node concept="2OqwBi" id="2GVf64q92a8" role="3clFbG">
+                <node concept="1iwH7S" id="2GVf64q91XX" role="2Oq$k0" />
+                <node concept="1iwH70" id="2GVf64q92jv" role="2OqNvi">
+                  <ref role="1iwH77" node="2GVf64q7SOW" resolve="NormInteract" />
+                  <node concept="2OqwBi" id="2GVf64q92Fb" role="1iwH7V">
+                    <node concept="30H73N" id="2GVf64q92w2" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="2GVf64q92Po" role="2OqNvi">
+                      <node concept="1xMEDy" id="2GVf64q92Pq" role="1xVPHs">
+                        <node concept="chp4Y" id="2GVf64q92Tj" role="ri$Ld">
                           <ref role="cht4Q" to="r2co:57hfxDvvsXv" resolve="Interact" />
                         </node>
                       </node>

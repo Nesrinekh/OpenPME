@@ -123,7 +123,7 @@
     <property role="3GE5qa" value="simulation.expressions" />
     <property role="TrG5h" value="distanceFactory" />
     <node concept="37WvkG" id="2xYujawbHvX" role="37WGs$">
-      <ref role="37XkoT" to="r2co:2xYujawbBJS" resolve="ParticleDistance" />
+      <ref role="37XkoT" to="r2co:2xYujawbBJS" resolve="ParticleDifference" />
       <node concept="37Y9Zx" id="2xYujawbHxa" role="37ZfLb">
         <node concept="3clFbS" id="2xYujawbHxb" role="2VODD2">
           <node concept="1X3_iC" id="2xYujawiYkt" role="lGtFl">
@@ -348,6 +348,103 @@
                 <node concept="2jxLKc" id="2xYujawbHyh" role="1tU5fm" />
               </node>
               <node concept="1r4N1M" id="2xYujawe0YI" role="JncvB" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="2GVf64q68g$">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="NormFactory" />
+    <node concept="37WvkG" id="2GVf64q68g_" role="37WGs$">
+      <ref role="37XkoT" to="r2co:2GVf64q67Rc" resolve="ParticleDistanceNorm" />
+      <node concept="37Y9Zx" id="2GVf64q68gW" role="37ZfLb">
+        <node concept="3clFbS" id="2GVf64q68gX" role="2VODD2">
+          <node concept="3cpWs8" id="2GVf64q68hj" role="3cqZAp">
+            <node concept="3cpWsn" id="2GVf64q68hk" role="3cpWs9">
+              <property role="TrG5h" value="interact" />
+              <node concept="3Tqbb2" id="2GVf64q68hl" role="1tU5fm">
+                <ref role="ehGHo" to="r2co:57hfxDvvsXv" resolve="Interact" />
+              </node>
+              <node concept="2OqwBi" id="2GVf64q68hm" role="33vP2m">
+                <node concept="1r4N1M" id="2GVf64q68hn" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="2GVf64q68ho" role="2OqNvi">
+                  <node concept="1xMEDy" id="2GVf64q68hp" role="1xVPHs">
+                    <node concept="chp4Y" id="2GVf64q68hq" role="ri$Ld">
+                      <ref role="cht4Q" to="r2co:57hfxDvvsXv" resolve="Interact" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="2GVf64q68hr" role="3cqZAp">
+            <node concept="2OqwBi" id="2GVf64q68hs" role="3clFbG">
+              <node concept="2OqwBi" id="2GVf64q68ht" role="2Oq$k0">
+                <node concept="1r4Lsj" id="2GVf64q68hu" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2GVf64q68hv" role="2OqNvi">
+                  <ref role="3Tt5mk" to="r2co:2GVf64q67Uj" resolve="self" />
+                </node>
+              </node>
+              <node concept="2DeJnY" id="2GVf64q68hw" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="2GVf64q68hx" role="3cqZAp">
+            <node concept="2OqwBi" id="2GVf64q68hy" role="3clFbG">
+              <node concept="2OqwBi" id="2GVf64q68hz" role="2Oq$k0">
+                <node concept="1r4Lsj" id="2GVf64q68h$" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2GVf64q68h_" role="2OqNvi">
+                  <ref role="3Tt5mk" to="r2co:2GVf64q67We" resolve="neighbor" />
+                </node>
+              </node>
+              <node concept="2DeJnY" id="2GVf64q68hA" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="2GVf64q68hB" role="3cqZAp">
+            <node concept="37vLTI" id="2GVf64q68hC" role="3clFbG">
+              <node concept="2OqwBi" id="2GVf64q68hD" role="37vLTx">
+                <node concept="3TrEf2" id="2GVf64q68hE" role="2OqNvi">
+                  <ref role="3Tt5mk" to="r2co:57hfxDvwVkZ" resolve="self_particle" />
+                </node>
+                <node concept="37vLTw" id="2GVf64q68hF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2GVf64q68hk" resolve="interact" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2GVf64q68hG" role="37vLTJ">
+                <node concept="2OqwBi" id="2GVf64q68hH" role="2Oq$k0">
+                  <node concept="1r4Lsj" id="2GVf64q68hI" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2GVf64q68hJ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="r2co:2GVf64q67Uj" resolve="self" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="2GVf64q68hK" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="2GVf64q68hL" role="3cqZAp">
+            <node concept="37vLTI" id="2GVf64q68hM" role="3clFbG">
+              <node concept="2OqwBi" id="2GVf64q68hN" role="37vLTx">
+                <node concept="3TrEf2" id="2GVf64q68hO" role="2OqNvi">
+                  <ref role="3Tt5mk" to="r2co:57hfxDvwVo9" resolve="neighbor_particle" />
+                </node>
+                <node concept="37vLTw" id="2GVf64q68hP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2GVf64q68hk" resolve="interact" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2GVf64q68hQ" role="37vLTJ">
+                <node concept="2OqwBi" id="2GVf64q68hR" role="2Oq$k0">
+                  <node concept="1r4Lsj" id="2GVf64q68hS" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2GVf64q68hT" role="2OqNvi">
+                    <ref role="3Tt5mk" to="r2co:2GVf64q67We" resolve="neighbor" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="2GVf64q68hU" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5oki:2fc2f1uy662" resolve="variableDeclaration" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

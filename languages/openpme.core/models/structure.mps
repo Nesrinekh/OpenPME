@@ -1189,7 +1189,7 @@
   <node concept="1TIwiD" id="2xYujawbBJS">
     <property role="EcuMT" value="2917902866925386744" />
     <property role="3GE5qa" value="simulation.expressions" />
-    <property role="TrG5h" value="ParticleDistance" />
+    <property role="TrG5h" value="ParticleDifference" />
     <property role="R4oN_" value="distance" />
     <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
     <node concept="1TJgyj" id="2xYujawbH_O" role="1TKVEi">
@@ -1201,6 +1201,26 @@
     </node>
     <node concept="1TJgyj" id="2xYujawbHBe" role="1TKVEi">
       <property role="IQ2ns" value="2917902866925410766" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="neighbor" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2GVf64q67Rc">
+    <property role="EcuMT" value="3115149955004136908" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="ParticleDistanceNorm" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="2GVf64q67Uj" role="1TKVEi">
+      <property role="IQ2ns" value="3115149955004137107" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="self" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="2GVf64q67We" role="1TKVEi">
+      <property role="IQ2ns" value="3115149955004137230" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="neighbor" />
       <property role="20lbJX" value="fLJekj4/_1" />

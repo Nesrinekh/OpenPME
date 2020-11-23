@@ -1795,10 +1795,10 @@
   </node>
   <node concept="24kQdi" id="2xYujawbBOh">
     <property role="3GE5qa" value="simulation.expressions" />
-    <ref role="1XX52x" to="r2co:2xYujawbBJS" resolve="ParticleDistance" />
+    <ref role="1XX52x" to="r2co:2xYujawbBJS" resolve="ParticleDifference" />
     <node concept="3EZMnI" id="2xYujawbBOD" role="2wV5jI">
       <node concept="3F0ifn" id="2xYujawbBOK" role="3EZMnx">
-        <property role="3F0ifm" value="d" />
+        <property role="3F0ifm" value="diff" />
       </node>
       <node concept="3F0ifn" id="2xYujawbHDI" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1816,6 +1816,31 @@
         <property role="3F0ifm" value=")" />
       </node>
       <node concept="l2Vlx" id="2xYujawbBOG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2GVf64q67XT">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:2GVf64q67Rc" resolve="ParticleDistanceNorm" />
+    <node concept="3EZMnI" id="2GVf64q67YM" role="2wV5jI">
+      <node concept="3F0ifn" id="2GVf64q67Z4" role="3EZMnx">
+        <property role="3F0ifm" value="Norm2" />
+      </node>
+      <node concept="3F0ifn" id="2GVf64q67ZQ" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="2GVf64q680E" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2GVf64q67Uj" resolve="self" />
+      </node>
+      <node concept="3F0ifn" id="2GVf64q680Z" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="2GVf64q681x" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2GVf64q67We" resolve="neighbor" />
+      </node>
+      <node concept="3F0ifn" id="2GVf64q6825" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="2GVf64q67YP" role="2iSdaV" />
     </node>
   </node>
 </model>
