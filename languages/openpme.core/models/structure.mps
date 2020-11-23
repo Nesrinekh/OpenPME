@@ -513,12 +513,14 @@
       <property role="IQ2ns" value="5895561670198661278" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="interactDef" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="57hfxDvAotf" resolve="InteractDefinition" />
     </node>
     <node concept="1TJgyj" id="57hfxDvAp4B" role="1TKVEi">
       <property role="IQ2ns" value="5895561670198661415" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="evolveDef" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="57hfxDvAoAH" resolve="EvolveDefinition" />
     </node>
     <node concept="PrWs8" id="5BkNMNhEk6H" role="PzmwI">
@@ -1115,6 +1117,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
+    <node concept="1TJgyj" id="2GVf64qkmzn" role="1TKVEi">
+      <property role="IQ2ns" value="3115149955007867095" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1d1jgI93P9F" resolve="PropertyReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="57hfxDv_lsO">
     <property role="EcuMT" value="5895561670198384436" />
@@ -1168,9 +1177,9 @@
     <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
     <node concept="1TJgyj" id="57hfxDvAW_C" role="1TKVEi">
       <property role="IQ2ns" value="5895561670198806888" />
-      <property role="20kJfa" value="refToContainerInteract" />
+      <property role="20kJfa" value="refToInteractDefinition" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5BkNMNhkShv" resolve="FieldContainer" />
+      <ref role="20lvS9" node="57hfxDvAotf" resolve="InteractDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="57hfxDvAWv5">
