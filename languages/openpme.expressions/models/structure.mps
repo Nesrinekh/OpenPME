@@ -7,7 +7,6 @@
   <imports>
     <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
     <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -401,18 +400,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="70bNw4gtDwL" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7mV$Q_d7Dft">
-    <property role="EcuMT" value="8483536403557159901" />
-    <property role="3GE5qa" value="variables" />
-    <property role="TrG5h" value="VariableAccess" />
-    <ref role="1TJDcQ" node="2cc5eidBZl2" resolve="Expression" />
-    <node concept="1TJgyj" id="7mV$Q_d7Dfu" role="1TKVEi">
-      <property role="IQ2ns" value="8483536403557159902" />
-      <property role="20kJfa" value="ref" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mV$Q_d7Dfx">

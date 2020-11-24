@@ -66,7 +66,6 @@
         <child id="7548145485610591343" name="cutoffradius_value" index="2A2s8W" />
       </concept>
       <concept id="7548145485610539133" name="openpme.core.structure.Ghost" flags="ng" index="2A2bSI" />
-      <concept id="7548145485610539132" name="openpme.core.structure.InitialConditions" flags="ng" index="2A2bSJ" />
       <concept id="7548145485610582913" name="openpme.core.structure.Box" flags="ng" index="2A2uni">
         <child id="7548145485610582929" name="y1" index="2A2un2" />
         <child id="7548145485610582935" name="z1" index="2A2un4" />
@@ -170,7 +169,6 @@
         <child id="7548145485610548787" name="ghost" index="2A29xw" />
         <child id="7548145485610548769" name="domain_size" index="2A29xM" />
         <child id="7548145485610548772" name="boundary_conditions" index="2A29xR" />
-        <child id="7548145485610548776" name="initial_conditions" index="2A29xV" />
         <child id="7548145485610548781" name="cutoff_radius" index="2A29xY" />
         <child id="2071243749762182961" name="num_particles" index="1Rr2o6" />
       </concept>
@@ -217,9 +215,8 @@
         </node>
       </node>
       <node concept="2A2bSC" id="7bpBJvmqTaI" role="2A29xR">
-        <node concept="2A2w70" id="1Uhwoc5TFC2" role="2A2w73" />
+        <node concept="2A2w70" id="2xYujawjC4P" role="2A2w73" />
       </node>
-      <node concept="2A2bSJ" id="7bpBJvmqTaJ" role="2A29xV" />
       <node concept="2A2bSH" id="7bpBJvmqTaK" role="2A29xY">
         <node concept="2$GK$c" id="1Uhwoc5WV$f" role="2A2s8W">
           <property role="2$GK$b" value="0.3" />

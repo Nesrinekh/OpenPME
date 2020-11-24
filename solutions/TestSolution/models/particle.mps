@@ -2,7 +2,6 @@
 <model ref="r:3072fcaf-5c27-4fa0-a235-1a4cc0bb3707(particle)">
   <persistence version="9" />
   <languages>
-    <use id="d5e2442b-039e-493b-b466-e933a1705c19" name="openpme.analysis" version="0" />
     <use id="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c" name="openpme.physunits" version="0" />
     <use id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions" version="2" />
     <use id="2b72d3f1-4643-4aec-8f26-2599b23e0e1b" name="openpme.base" version="0" />
@@ -108,9 +107,6 @@
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="1610830325009524963" name="dimension" index="1PL7_6" />
       </concept>
-      <concept id="2071243749762164620" name="openpme.core.structure.NumParticles" flags="ng" index="1RreUV">
-        <child id="2071243749762164621" name="num_particles" index="1RreUU" />
-      </concept>
       <concept id="2071243749762222178" name="openpme.core.structure.Particle" flags="ng" index="1Rrs5l" />
       <concept id="2071243749762222177" name="openpme.core.structure.ParticleLoop" flags="ng" index="1Rrs5m" />
     </language>
@@ -180,7 +176,6 @@
         <child id="7548145485610548772" name="boundary_conditions" index="2A29xR" />
         <child id="7548145485610548776" name="initial_conditions" index="2A29xV" />
         <child id="7548145485610548781" name="cutoff_radius" index="2A29xY" />
-        <child id="2071243749762182961" name="num_particles" index="1Rr2o6" />
       </concept>
       <concept id="5443610339528638132" name="openpme.modules.structure.Module" flags="ng" index="1GHexR">
         <child id="5443610339528638190" name="simulation" index="1GHewH" />
@@ -196,49 +191,44 @@
   </registry>
   <node concept="1GHexR" id="7bpBJvmqTaD">
     <property role="TrG5h" value="Lennard Jones" />
-    <node concept="1GH8rR" id="7bpBJvmqTaE" role="1GHexQ">
-      <node concept="2A2bSE" id="7bpBJvmqTaF" role="2A29xc">
-        <node concept="2$GKAY" id="1Uhwoc5UG3L" role="2A2i2r">
+    <node concept="1GH8rR" id="1XzwIeqf_o$" role="1GHexQ">
+      <node concept="2A2bSE" id="1XzwIeqf_oS" role="2A29xc">
+        <node concept="2$GKAY" id="1XzwIeqf_rx" role="2A2i2r">
           <property role="2$GKAX" value="3" />
         </node>
       </node>
-      <node concept="2A2bSD" id="7bpBJvmqTaG" role="2A29xM">
-        <node concept="2A2uni" id="7bpBJvmqTaH" role="2A2ukG">
-          <node concept="2$GK$c" id="1Uhwoc5SSpK" role="2A2unm">
+      <node concept="2A2bSD" id="1XzwIeqf_pc" role="2A29xM">
+        <node concept="2A2uni" id="1XzwIeqf_pw" role="2A2ukG">
+          <node concept="2$GK$c" id="1XzwIeqf_rz" role="2A2unh">
             <property role="2$GK$b" value="0.0" />
           </node>
-          <node concept="2$GK$c" id="1Uhwoc5SSpM" role="2A2unh">
+          <node concept="2$GK$c" id="1XzwIeqf_r_" role="2A2unm">
             <property role="2$GK$b" value="0.0" />
           </node>
-          <node concept="2$GK$c" id="1Uhwoc5SSpO" role="2A2unr">
+          <node concept="2$GK$c" id="1XzwIeqf_rB" role="2A2unr">
             <property role="2$GK$b" value="0.0" />
           </node>
-          <node concept="2$GK$c" id="1Uhwoc5SSpQ" role="2A2unv">
+          <node concept="2$GK$c" id="1XzwIeqf_rD" role="2A2unv">
             <property role="2$GK$b" value="1.0" />
           </node>
-          <node concept="2$GK$c" id="1Uhwoc5SSpS" role="2A2un2">
+          <node concept="2$GK$c" id="1XzwIeqf_rF" role="2A2un2">
             <property role="2$GK$b" value="1.0" />
           </node>
-          <node concept="2$GK$c" id="1Uhwoc5SSpU" role="2A2un4">
+          <node concept="2$GK$c" id="1XzwIeqf_rH" role="2A2un4">
             <property role="2$GK$b" value="1.0" />
           </node>
         </node>
       </node>
-      <node concept="2A2bSC" id="7bpBJvmqTaI" role="2A29xR">
-        <node concept="2A2w70" id="1Uhwoc5TFC2" role="2A2w73" />
+      <node concept="2A2bSC" id="1XzwIeqf_pO" role="2A29xR">
+        <node concept="2A2w70" id="1XzwIeqf_rJ" role="2A2w73" />
       </node>
-      <node concept="2A2bSJ" id="7bpBJvmqTaJ" role="2A29xV" />
-      <node concept="2A2bSH" id="7bpBJvmqTaK" role="2A29xY">
-        <node concept="2$GK$c" id="1Uhwoc5WV$f" role="2A2s8W">
+      <node concept="2A2bSJ" id="1XzwIeqf_q8" role="2A29xV" />
+      <node concept="2A2bSH" id="1XzwIeqf_qs" role="2A29xY">
+        <node concept="2$GK$c" id="1XzwIeqf_qK" role="2A2s8W">
           <property role="2$GK$b" value="0.3" />
         </node>
       </node>
-      <node concept="2A2bSI" id="7bpBJvmqTaL" role="2A29xw" />
-      <node concept="1RreUV" id="7bpBJvmqTaM" role="1Rr2o6">
-        <node concept="2$GKAY" id="7bpBJvmqTaU" role="1RreUU">
-          <property role="2$GKAX" value="1000" />
-        </node>
-      </node>
+      <node concept="2A2bSI" id="1XzwIeqf_r4" role="2A29xw" />
     </node>
     <node concept="1GH8rQ" id="7mV$Q_d6VWQ" role="1GHewH">
       <node concept="2A2w6k" id="1Uhwoc64MBy" role="2A2w7f">
@@ -310,11 +300,11 @@
           <property role="TrG5h" value="r_cut2" />
           <node concept="2qhxl8" id="1d1jgI9mSH6" role="1wvloH" />
           <node concept="37xRuw" id="1d1jgI9nCoV" role="1wvlr8">
-            <node concept="2q7veS" id="1d1jgI9nCp4" role="2$G181">
-              <ref role="2q7veZ" node="7bpBJvmqTaK" />
+            <node concept="2q7veS" id="1XzwIeqf_rL" role="2$G181">
+              <ref role="2q7veZ" node="1XzwIeqf_qs" />
             </node>
-            <node concept="2q7veS" id="1d1jgI9nCp7" role="2$G18d">
-              <ref role="2q7veZ" node="7bpBJvmqTaK" />
+            <node concept="2q7veS" id="1XzwIeqf_rO" role="2$G18d">
+              <ref role="2q7veZ" node="1XzwIeqf_qs" />
             </node>
           </node>
         </node>

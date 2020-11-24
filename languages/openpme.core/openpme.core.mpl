@@ -76,7 +76,22 @@
         <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
         <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="2" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="dfaa847b-effe-41ad-a78f-78e1b0ac41ef(openpme.core#6721469832529907355)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="37682012-a10c-48e5-9da8-231cae8f5ad3(openpme.cpp#01)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
