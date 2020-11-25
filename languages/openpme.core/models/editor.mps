@@ -27,7 +27,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -41,9 +40,6 @@
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
-      <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
-        <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
-      </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
@@ -56,9 +52,6 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
-      </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -1819,62 +1812,23 @@
         <property role="3F0ifm" value="interact" />
       </node>
       <node concept="1iCGBv" id="2GVf64qlvTQ" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:57hfxDvAW_C" resolve="refToInteractDefinition" />
+        <ref role="1NtTu8" to="r2co:2GVf64qCgBJ" resolve="refToProperty" />
         <node concept="1sVBvm" id="2GVf64qlvTS" role="1sWHZn">
-          <node concept="1iCGBv" id="2GVf64qlvVo" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:57hfxDvAoO9" resolve="interact" />
-            <node concept="1sVBvm" id="2GVf64qlvVq" role="1sWHZn">
-              <node concept="3F1sOY" id="2GVf64qlvVR" role="2wV5jI">
-                <ref role="1NtTu8" to="r2co:57hfxDvvti4" resolve="container" />
-              </node>
-            </node>
+          <node concept="3F0A7n" id="2GVf64qCgOP" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
-        </node>
-        <node concept="A1WHr" id="2GVf64qwhvi" role="3vIgyS">
-          <ref role="2ZyFGn" to="r2co:57hfxDvAWtR" resolve="CallInteract" />
         </node>
       </node>
       <node concept="3F0ifn" id="2GVf64qtJBv" role="3EZMnx">
         <property role="3F0ifm" value="," />
       </node>
       <node concept="1iCGBv" id="2GVf64qtJCt" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:57hfxDvAW_C" resolve="refToInteractDefinition" />
+        <ref role="1NtTu8" to="r2co:57hfxDvAW_C" resolve="refToContainer" />
         <node concept="1sVBvm" id="2GVf64qtJCv" role="1sWHZn">
-          <node concept="1iCGBv" id="2GVf64qtJD3" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:57hfxDvAoO9" resolve="interact" />
-            <node concept="1sVBvm" id="2GVf64qtJD5" role="1sWHZn">
-              <node concept="1iCGBv" id="2GVf64qulAx" role="2wV5jI">
-                <ref role="1NtTu8" to="r2co:57hfxDvwVkZ" resolve="self_particle" />
-                <node concept="1sVBvm" id="2GVf64qulAy" role="1sWHZn">
-                  <node concept="3F0A7n" id="2GVf64qulB8" role="2wV5jI">
-                    <property role="1Intyy" value="true" />
-                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2GVf64qtJEP" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-      </node>
-      <node concept="1iCGBv" id="2GVf64qtJFZ" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:57hfxDvAW_C" resolve="refToInteractDefinition" />
-        <node concept="1sVBvm" id="2GVf64qtJG1" role="1sWHZn">
-          <node concept="1iCGBv" id="2GVf64qtJGw" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:57hfxDvAoO9" resolve="interact" />
-            <node concept="1sVBvm" id="2GVf64qtJGy" role="1sWHZn">
-              <node concept="1iCGBv" id="2GVf64qulDs" role="2wV5jI">
-                <ref role="1NtTu8" to="r2co:57hfxDvwVo9" resolve="neighbor_particle" />
-                <node concept="1sVBvm" id="2GVf64qulDu" role="1sWHZn">
-                  <node concept="3F0A7n" id="2GVf64qulE6" role="2wV5jI">
-                    <property role="1Intyy" value="true" />
-                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
+          <node concept="3F0A7n" id="2GVf64qCgR8" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -1889,40 +1843,23 @@
         <property role="3F0ifm" value="evolve" />
       </node>
       <node concept="1iCGBv" id="57hfxDvAWQR" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:57hfxDvAWE8" resolve="refToDefintionEvolve" />
+        <ref role="1NtTu8" to="r2co:2GVf64qCh6X" resolve="refToProperty" />
         <node concept="1sVBvm" id="57hfxDvAWQT" role="1sWHZn">
-          <node concept="1iCGBv" id="2GVf64qrY5G" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:57hfxDvAoTF" resolve="evolve" />
-            <node concept="1sVBvm" id="2GVf64qrY5H" role="1sWHZn">
-              <node concept="3F1sOY" id="2GVf64qrY68" role="2wV5jI">
-                <ref role="1NtTu8" to="r2co:57hfxDvvti4" resolve="container" />
-              </node>
-            </node>
+          <node concept="3F0A7n" id="2GVf64qChcc" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
-        </node>
-        <node concept="A1WHr" id="2GVf64qCfPH" role="3vIgyS">
-          <ref role="2ZyFGn" to="r2co:57hfxDvAWv5" resolve="CallEvolve" />
         </node>
       </node>
       <node concept="3F0ifn" id="2GVf64qtJI1" role="3EZMnx">
         <property role="3F0ifm" value="," />
       </node>
       <node concept="1iCGBv" id="2GVf64qtJIO" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:57hfxDvAWE8" resolve="refToDefintionEvolve" />
+        <ref role="1NtTu8" to="r2co:57hfxDvAWE8" resolve="refToContainer" />
         <node concept="1sVBvm" id="2GVf64qtJIQ" role="1sWHZn">
-          <node concept="1iCGBv" id="2GVf64qtJK6" role="2wV5jI">
-            <ref role="1NtTu8" to="r2co:57hfxDvAoTF" resolve="evolve" />
-            <node concept="1sVBvm" id="2GVf64qtJK8" role="1sWHZn">
-              <node concept="1iCGBv" id="2GVf64qul$9" role="2wV5jI">
-                <ref role="1NtTu8" to="r2co:57hfxDvwVkZ" resolve="self_particle" />
-                <node concept="1sVBvm" id="2GVf64qul$a" role="1sWHZn">
-                  <node concept="3F0A7n" id="2GVf64qul$K" role="2wV5jI">
-                    <property role="1Intyy" value="true" />
-                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
+          <node concept="3F0A7n" id="2GVf64qChac" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -1985,7 +1922,7 @@
     <node concept="1Qtc8_" id="2GVf64quXa2" role="IW6Ez">
       <node concept="3eGOoe" id="2GVf64quXas" role="1Qtc8$" />
       <node concept="3PzhKR" id="2GVf64quXbm" role="1Qtc8A">
-        <ref role="3PzhKQ" to="r2co:57hfxDvAW_C" resolve="refToInteractDefinition" />
+        <ref role="3PzhKQ" to="r2co:57hfxDvAW_C" resolve="refToContainer" />
         <node concept="1hCUdq" id="2GVf64quXcq" role="w35GX">
           <node concept="3clFbS" id="2GVf64quXcr" role="2VODD2">
             <node concept="3clFbF" id="2GVf64quXhy" role="3cqZAp">
@@ -2038,7 +1975,7 @@
     <ref role="aqKnT" to="r2co:57hfxDvAWv5" resolve="CallEvolve" />
     <node concept="1Qtc8_" id="2GVf64qCaYK" role="IW6Ez">
       <node concept="3PzhKR" id="2GVf64qCb0h" role="1Qtc8A">
-        <ref role="3PzhKQ" to="r2co:57hfxDvAWE8" resolve="refToDefintionEvolve" />
+        <ref role="3PzhKQ" to="r2co:57hfxDvAWE8" resolve="refToContainer" />
         <node concept="1hCUdq" id="2GVf64qCb1R" role="w35GX">
           <node concept="3clFbS" id="2GVf64qCb1S" role="2VODD2">
             <node concept="3clFbF" id="2GVf64qCb6D" role="3cqZAp">
@@ -2085,6 +2022,25 @@
         </node>
       </node>
       <node concept="3eGOoe" id="2GVf64qCaZa" role="1Qtc8$" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2GVf64qDtFX">
+    <property role="3GE5qa" value="simulation.statements" />
+    <ref role="1XX52x" to="r2co:2GVf64qDtzm" resolve="CallEvolvePosition" />
+    <node concept="3EZMnI" id="2GVf64qDtGl" role="2wV5jI">
+      <node concept="3F0ifn" id="2GVf64qDtGB" role="3EZMnx">
+        <property role="3F0ifm" value="evolve position" />
+      </node>
+      <node concept="1iCGBv" id="2GVf64qDtNX" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2GVf64qDtHU" resolve="refToFieldContainer" />
+        <node concept="1sVBvm" id="2GVf64qDtNZ" role="1sWHZn">
+          <node concept="3F0A7n" id="2GVf64qDtOY" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2GVf64qDtGo" role="2iSdaV" />
     </node>
   </node>
 </model>
