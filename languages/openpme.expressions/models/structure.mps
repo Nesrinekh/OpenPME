@@ -130,7 +130,7 @@
     <node concept="1TJgyj" id="7bpBJvmqoNX" role="1TKVEi">
       <property role="IQ2ns" value="8275820577561349373" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expression" />
+      <property role="20kJfa" value="operand" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2cc5eidBZl2" resolve="Expression" />
     </node>

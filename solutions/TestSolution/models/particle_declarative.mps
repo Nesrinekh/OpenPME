@@ -70,7 +70,7 @@
         <child id="2466747692855020154" name="variableReference" index="H6eYf" />
       </concept>
       <concept id="2466747692855020152" name="openpme.core.structure.AccessInDimension" flags="ng" index="H6eYd">
-        <child id="2466747692855994900" name="ndim" index="H2oZx" />
+        <property id="8977770188092935318" name="ndim" index="4M7VX" />
         <child id="2466747692855808844" name="access" index="H5fqT" />
       </concept>
       <concept id="8483536403556912194" name="openpme.core.structure.Loop" flags="ng" index="SClWF">
@@ -659,21 +659,19 @@
               <node concept="37xRuz" id="4TedDNlcou8" role="2$G18d">
                 <node concept="37xRxu" id="4TedDNlcou9" role="2$G181">
                   <node concept="2q8Tgh" id="4TedDNlcoua" role="2$G181">
-                    <node concept="H6eYd" id="4TedDNlcoub" role="2$G181">
-                      <node concept="SDg2Y" id="4TedDNlcouc" role="H5fqT">
-                        <node concept="1XiV_f" id="4TedDNlcoCU" role="H6eYf">
-                          <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
-                        </node>
-                        <node concept="2qjxXw" id="4TedDNlcoue" role="H6eY9">
-                          <ref role="2qjxXB" node="4TedDNlcilu" resolve="velocity" />
-                        </node>
-                      </node>
-                      <node concept="2$GKAY" id="4TedDNlcouf" role="H2oZx">
-                        <property role="2$GKAX" value="0" />
-                      </node>
-                    </node>
                     <node concept="2$GKAY" id="4TedDNlcoug" role="2$G18d">
                       <property role="2$GKAX" value="2" />
+                    </node>
+                    <node concept="H6eYd" id="7MnsAHT3n6G" role="2$G181">
+                      <property role="4M7VX" value="0" />
+                      <node concept="SDg2Y" id="7MnsAHT3n6S" role="H5fqT">
+                        <node concept="1XiV_f" id="7MnsAHT3n77" role="H6eYf">
+                          <ref role="1Xh6_M" to="eszo:5BkNMNhFKT8" resolve="particles" />
+                        </node>
+                        <node concept="2qjxXw" id="7MnsAHT3n7a" role="H6eY9">
+                          <ref role="2qjxXB" to="eszo:5EGbNbOppVf" resolve="velocity" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="37xRxu" id="4TedDNlcouh" role="2$G18d">
@@ -681,17 +679,15 @@
                       <node concept="2$GKAY" id="4TedDNlcouj" role="2$G18d">
                         <property role="2$GKAX" value="2" />
                       </node>
-                      <node concept="H6eYd" id="4TedDNlcouk" role="2$G181">
-                        <node concept="SDg2Y" id="4TedDNlcoul" role="H5fqT">
-                          <node concept="1XiV_f" id="4TedDNlcoEa" role="H6eYf">
-                            <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
+                      <node concept="H6eYd" id="7MnsAHT3n7f" role="2$G181">
+                        <property role="4M7VX" value="1" />
+                        <node concept="SDg2Y" id="7MnsAHT3n7r" role="H5fqT">
+                          <node concept="1XiV_f" id="7MnsAHT3n7E" role="H6eYf">
+                            <ref role="1Xh6_M" to="eszo:5BkNMNhFKT8" resolve="particles" />
                           </node>
-                          <node concept="2qjxXw" id="4TedDNlcoun" role="H6eY9">
-                            <ref role="2qjxXB" node="4TedDNlcilu" resolve="velocity" />
+                          <node concept="2qjxXw" id="7MnsAHT3n7H" role="H6eY9">
+                            <ref role="2qjxXB" to="eszo:5EGbNbOppVf" resolve="velocity" />
                           </node>
-                        </node>
-                        <node concept="2$GKAY" id="4TedDNlcouo" role="H2oZx">
-                          <property role="2$GKAX" value="1" />
                         </node>
                       </node>
                     </node>
@@ -699,17 +695,15 @@
                       <node concept="2$GKAY" id="4TedDNlcouq" role="2$G18d">
                         <property role="2$GKAX" value="2" />
                       </node>
-                      <node concept="H6eYd" id="4TedDNlcour" role="2$G181">
-                        <node concept="SDg2Y" id="4TedDNlcous" role="H5fqT">
-                          <node concept="1XiV_f" id="4TedDNlcoF4" role="H6eYf">
-                            <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
+                      <node concept="H6eYd" id="7MnsAHT3n7M" role="2$G181">
+                        <property role="4M7VX" value="2" />
+                        <node concept="SDg2Y" id="7MnsAHT3n7Y" role="H5fqT">
+                          <node concept="1XiV_f" id="7MnsAHT3n8d" role="H6eYf">
+                            <ref role="1Xh6_M" to="eszo:5BkNMNhFKT8" resolve="particles" />
                           </node>
-                          <node concept="2qjxXw" id="4TedDNlcouu" role="H6eY9">
-                            <ref role="2qjxXB" node="4TedDNlcilu" resolve="velocity" />
+                          <node concept="2qjxXw" id="7MnsAHT3n8g" role="H6eY9">
+                            <ref role="2qjxXB" to="eszo:5EGbNbOppVf" resolve="velocity" />
                           </node>
-                        </node>
-                        <node concept="2$GKAY" id="4TedDNlcouv" role="H2oZx">
-                          <property role="2$GKAX" value="2" />
                         </node>
                       </node>
                     </node>
