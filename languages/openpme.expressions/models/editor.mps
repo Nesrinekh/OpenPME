@@ -69,7 +69,7 @@
         <property role="3F0ifm" value="(" />
       </node>
       <node concept="3F1sOY" id="7bpBJvmqoOr" role="3EZMnx">
-        <ref role="1NtTu8" to="caxt:7bpBJvmqoNX" resolve="expression" />
+        <ref role="1NtTu8" to="caxt:7bpBJvmqoNX" resolve="operand" />
       </node>
       <node concept="3F0ifn" id="7bpBJvmqoOz" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -98,14 +98,8 @@
       <node concept="PMmxH" id="7bpBJvmqpIA" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
-      <node concept="3F0ifn" id="7bpBJvmqpIF" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-      </node>
       <node concept="3F1sOY" id="7bpBJvmqpIS" role="3EZMnx">
-        <ref role="1NtTu8" to="caxt:7bpBJvmqoNX" resolve="expression" />
-      </node>
-      <node concept="3F0ifn" id="7bpBJvmqpJ2" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
+        <ref role="1NtTu8" to="caxt:7bpBJvmqoNX" resolve="operand" />
       </node>
       <node concept="l2Vlx" id="7bpBJvmqpIy" role="2iSdaV" />
     </node>

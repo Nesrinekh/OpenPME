@@ -10,6 +10,8 @@
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -47,6 +49,9 @@
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -1510,16 +1515,17 @@
       <node concept="3F1sOY" id="28VDvkfbPdv" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:28VDvkfbPdc" resolve="access" />
       </node>
-      <node concept="3F0ifn" id="28VDvkfbPd_" role="3EZMnx">
+      <node concept="3F0ifn" id="7MnsAHSnKMZ" role="3EZMnx">
         <property role="3F0ifm" value="[" />
       </node>
-      <node concept="3F1sOY" id="28VDvkfcD3A" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:28VDvkfcyCk" resolve="ndim" />
-      </node>
-      <node concept="3F0ifn" id="28VDvkfbPdT" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-      </node>
       <node concept="l2Vlx" id="28VDvkfbPdr" role="2iSdaV" />
+      <node concept="3F0A7n" id="7MnsAHSnKNn" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:7MnsAHSnKMm" resolve="ndim" />
+      </node>
+      <node concept="3F0ifn" id="7MnsAHSnKPd" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <ref role="1k5W1q" to="tp2u:hGdWaJB" resolve="RightAngleBracket" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="28VDvkfrFIr">
@@ -1681,12 +1687,14 @@
     <node concept="3EZMnI" id="2cSOkSK1n14" role="2wV5jI">
       <node concept="3F0ifn" id="2cSOkSK1n1g" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
       </node>
       <node concept="3F1sOY" id="2cSOkSK1n1q" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:2cSOkSK1n0S" resolve="factor" />
       </node>
       <node concept="3F0ifn" id="2cSOkSK1n15" role="3EZMnx">
-        <property role="3F0ifm" value="* ▽ )" />
+        <property role="3F0ifm" value="·▽)" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="3F1sOY" id="2cSOkSK1n16" role="3EZMnx">
         <ref role="1NtTu8" to="r2co:2cSOkSJWruz" resolve="operand" />

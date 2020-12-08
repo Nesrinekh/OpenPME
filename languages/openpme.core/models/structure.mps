@@ -42,6 +42,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -877,17 +878,17 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="28VDvkf8ODT" resolve="BaseAccess" />
     </node>
-    <node concept="1TJgyj" id="28VDvkfcyCk" role="1TKVEi">
-      <property role="IQ2ns" value="2466747692855994900" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ndim" />
-      <ref role="20lvS9" to="caxt:7bpBJvmqDt9" resolve="IntegerLiteral" />
+    <node concept="1TJgyi" id="7MnsAHSnKMm" role="1TKVEl">
+      <property role="IQ2nx" value="8977770188092935318" />
+      <property role="TrG5h" value="ndim" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="28VDvkf8ODT">
     <property role="EcuMT" value="2466747692855020153" />
     <property role="3GE5qa" value="simulation.expressions.access" />
     <property role="TrG5h" value="BaseAccess" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
     <node concept="1TJgyj" id="28VDvkf8ODU" role="1TKVEi">
       <property role="IQ2ns" value="2466747692855020154" />
@@ -1024,26 +1025,27 @@
     <property role="EcuMT" value="7725336631410156054" />
     <property role="3GE5qa" value="simulation.expressions" />
     <property role="TrG5h" value="Curl" />
-    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="BaseDifferentialOperator" />
+    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="DifferentialOperator" />
   </node>
   <node concept="1TIwiD" id="6GPUbLlHbzO">
     <property role="EcuMT" value="7725336631413356788" />
     <property role="3GE5qa" value="simulation.expressions" />
     <property role="TrG5h" value="Laplace" />
-    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="BaseDifferentialOperator" />
+    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="DifferentialOperator" />
   </node>
   <node concept="1TIwiD" id="2cSOkSJWruu">
     <property role="EcuMT" value="2538008523765299102" />
     <property role="3GE5qa" value="simulation.expressions" />
-    <property role="TrG5h" value="BaseDifferentialOperator" />
+    <property role="TrG5h" value="DifferentialOperator" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <ref role="1TJDcQ" to="caxt:7bpBJvmqoNM" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="2cSOkSJWruz" role="1TKVEi">
       <property role="IQ2ns" value="2538008523765299107" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="operand" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="28VDvkf8ODT" resolve="BaseAccess" />
+      <ref role="20ksaX" to="caxt:7bpBJvmqoNX" resolve="operand" />
     </node>
     <node concept="1TJgyj" id="2cSOkSJWrux" role="1TKVEi">
       <property role="IQ2ns" value="2538008523765299105" />
@@ -1056,7 +1058,7 @@
     <property role="EcuMT" value="2538008523766591524" />
     <property role="3GE5qa" value="simulation.expressions" />
     <property role="TrG5h" value="Gradient" />
-    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="BaseDifferentialOperator" />
+    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="DifferentialOperator" />
   </node>
   <node concept="1TIwiD" id="2cSOkSK1n0R">
     <property role="EcuMT" value="2538008523766591543" />
