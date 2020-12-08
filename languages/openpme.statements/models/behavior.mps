@@ -184,13 +184,6 @@
       <node concept="3clFbS" id="70bNw4gtx4m" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="70bNw4gtG_Z">
-    <property role="3GE5qa" value="loops" />
-    <ref role="13h7C2" to="5oki:70bNw4gtG_v" resolve="AbstractLoopStatement" />
-    <node concept="13hLZK" id="70bNw4gtGA0" role="13h7CW">
-      <node concept="3clFbS" id="70bNw4gtGA1" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="2fc2f1uy5SR">
     <property role="3GE5qa" value="variables" />
     <ref role="13h7C2" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />

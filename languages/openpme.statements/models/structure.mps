@@ -175,30 +175,6 @@
       <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="70bNw4gtG_u">
-    <property role="EcuMT" value="8073773260958255454" />
-    <property role="TrG5h" value="AbstractForStatement" />
-    <property role="3GE5qa" value="loops" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="70bNw4gtG_v" resolve="AbstractLoopStatement" />
-  </node>
-  <node concept="1TIwiD" id="70bNw4gtG_v">
-    <property role="EcuMT" value="8073773260958255455" />
-    <property role="3GE5qa" value="loops" />
-    <property role="TrG5h" value="AbstractLoopStatement" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
-    <node concept="PrWs8" id="70bNw4gtG_w" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="1TJgyj" id="70bNw4gtG_y" role="1TKVEi">
-      <property role="IQ2ns" value="8073773260958255458" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="70bNw4gtx2g" resolve="StatementList" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2fc2f1uxV6Z">
     <property role="EcuMT" value="2579446515047575999" />
     <property role="3GE5qa" value="variables" />
