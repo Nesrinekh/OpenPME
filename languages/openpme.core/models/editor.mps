@@ -10,7 +10,6 @@
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
@@ -1519,12 +1518,11 @@
         <property role="3F0ifm" value="[" />
       </node>
       <node concept="l2Vlx" id="28VDvkfbPdr" role="2iSdaV" />
-      <node concept="3F0A7n" id="7MnsAHSnKNn" role="3EZMnx">
-        <ref role="1NtTu8" to="r2co:7MnsAHSnKMm" resolve="ndim" />
+      <node concept="3F1sOY" id="7MnsAHTDZr4" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:7MnsAHTDZqT" resolve="ndim" />
       </node>
-      <node concept="3F0ifn" id="7MnsAHSnKPd" role="3EZMnx">
+      <node concept="3F0ifn" id="7MnsAHTDZri" role="3EZMnx">
         <property role="3F0ifm" value="]" />
-        <ref role="1k5W1q" to="tp2u:hGdWaJB" resolve="RightAngleBracket" />
       </node>
     </node>
   </node>
