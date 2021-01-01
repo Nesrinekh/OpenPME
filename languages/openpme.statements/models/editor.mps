@@ -46,8 +46,14 @@
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
       <concept id="8449131619432941427" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Super" flags="ng" index="L$LW2" />
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
+        <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -56,6 +62,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
@@ -79,6 +86,7 @@
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -421,6 +429,19 @@
     <ref role="1XX52x" to="5oki:1d1jgI9cYdU" resolve="SkipIteration" />
     <node concept="3F0ifn" id="1d1jgI9cYe5" role="2wV5jI">
       <property role="3F0ifm" value="Skip iteration" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1zc8QhKnQwd">
+    <ref role="1XX52x" to="5oki:1zc8QhKnQvW" resolve="EmptyLineStatement" />
+    <node concept="3F0ifn" id="1zc8QhKnQwf" role="2wV5jI">
+      <node concept="VPxyj" id="1zc8QhKnQx8" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="OXEIz" id="1zc8QhKnQxc" role="P5bDN">
+        <node concept="UkePV" id="1zc8QhKnQxe" role="OY2wv">
+          <ref role="Ul1FP" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
