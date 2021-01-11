@@ -66,12 +66,6 @@
       <property role="20kJfa" value="boundary_conditions" />
       <ref role="20lvS9" to="r2co:6z0p_feMAui" resolve="TypeOfBoundary" />
     </node>
-    <node concept="1TJgyj" id="6z0p_feMfSC" role="1TKVEi">
-      <property role="IQ2ns" value="7548145485610548776" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="initial_conditions" />
-      <ref role="20lvS9" to="r2co:6z0p_feMAun" resolve="TypeOfInitialCond" />
-    </node>
     <node concept="1TJgyj" id="6z0p_feMfSH" role="1TKVEi">
       <property role="IQ2ns" value="7548145485610548781" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

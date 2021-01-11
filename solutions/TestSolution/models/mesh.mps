@@ -16,7 +16,7 @@
         <child id="6473026355838427228" name="size" index="28EmXK" />
       </concept>
       <concept id="6473026355835421806" name="openpme.core.structure.Mesh" flags="ng" index="28AKH2" />
-      <concept id="2538008523765299102" name="openpme.core.structure.BaseDifferentialOperator" flags="ng" index="cMmrg">
+      <concept id="2538008523765299102" name="openpme.core.structure.DifferentialOperator" flags="ng" index="cMmrg">
         <child id="2538008523765299107" name="operand" index="cMmrH" />
       </concept>
       <concept id="2887351732023417556" name="openpme.core.structure.Euler" flags="ng" index="gNbne" />
@@ -95,6 +95,9 @@
       <concept id="8275820577561349363" name="openpme.expressions.structure.BinaryExpression" flags="ng" index="2$G184">
         <child id="8275820577561349366" name="left" index="2$G181" />
         <child id="8275820577561349370" name="right" index="2$G18d" />
+      </concept>
+      <concept id="8275820577561349362" name="openpme.expressions.structure.UnaryExpression" flags="ng" index="2$G185">
+        <child id="8275820577561349373" name="operand" index="2$G18a" />
       </concept>
       <concept id="8275820577561349375" name="openpme.expressions.structure.AssignmentExpression" flags="ng" index="2$G188" />
       <concept id="8275820577561364933" name="openpme.expressions.structure.EqualsExpression" flags="ng" index="2$G5sM" />
@@ -342,6 +345,14 @@
                             <ref role="2qjxXB" node="jnrNESxGER" resolve="Uo" />
                           </node>
                         </node>
+                        <node concept="2IY9fg" id="1tFlgMuYLBr" role="2$G18a">
+                          <node concept="1XiV_f" id="1tFlgMuYLBx" role="H6eYf">
+                            <ref role="1Xh6_M" node="jnrNESvOSt" resolve="Old" />
+                          </node>
+                          <node concept="2qjxXw" id="1tFlgMuYLB$" role="H6eY9">
+                            <ref role="2qjxXB" node="jnrNESxGER" resolve="Uo" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                     <node concept="37xRux" id="6GPUbLlGxTE" role="2$G18d">
@@ -469,6 +480,14 @@
                             <ref role="1Xh6_M" node="jnrNESvOSt" resolve="Old" />
                           </node>
                           <node concept="2qjxXw" id="2cSOkSJZ5Kb" role="H6eY9">
+                            <ref role="2qjxXB" node="jnrNESxGET" resolve="Vo" />
+                          </node>
+                        </node>
+                        <node concept="2IY9fg" id="1tFlgMuYLBB" role="2$G18a">
+                          <node concept="1XiV_f" id="1tFlgMuYLBH" role="H6eYf">
+                            <ref role="1Xh6_M" node="jnrNESvOSt" resolve="Old" />
+                          </node>
+                          <node concept="2qjxXw" id="1tFlgMuYLBK" role="H6eY9">
                             <ref role="2qjxXB" node="jnrNESxGET" resolve="Vo" />
                           </node>
                         </node>

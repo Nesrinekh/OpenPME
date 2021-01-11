@@ -222,21 +222,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="6z0p_feMfXc" role="3EZMnx">
-        <property role="3F0ifm" value="initial_conditions:" />
-        <node concept="lj46D" id="6z0p_feMg22" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="6z0p_feMg2_" role="3F10Kt">
-          <property role="Vb096" value="g1_qRwE/darkGreen" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="6z0p_feMfWI" role="3EZMnx">
-        <ref role="1NtTu8" to="3x5m:6z0p_feMfSC" resolve="initial_conditions" />
-        <node concept="ljvvj" id="6z0p_feMfYA" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="6z0p_feMfXJ" role="3EZMnx">
         <property role="3F0ifm" value="cutoff_radius:" />
         <node concept="lj46D" id="6z0p_feMg24" role="3F10Kt">
