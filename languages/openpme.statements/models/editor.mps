@@ -444,5 +444,15 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4hNYxapiq1">
+    <property role="3GE5qa" value="variables" />
+    <ref role="1XX52x" to="5oki:4hNYxapiaa" resolve="VariableDeclerationInlined" />
+    <node concept="3EZMnI" id="4hNYxapiq3" role="2wV5jI">
+      <node concept="3F0A7n" id="4hNYxapiqf" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="4hNYxapiqt" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

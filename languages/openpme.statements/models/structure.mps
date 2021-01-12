@@ -210,5 +210,11 @@
     <property role="TrG5h" value="EmptyLineStatement" />
     <ref role="1TJDcQ" node="6sMVU6wHrBz" resolve="Statement" />
   </node>
+  <node concept="1TIwiD" id="4hNYxapiaa">
+    <property role="EcuMT" value="77071265229513354" />
+    <property role="3GE5qa" value="variables" />
+    <property role="TrG5h" value="VariableDeclerationInlined" />
+    <ref role="1TJDcQ" node="aSJlMIIiSq" resolve="VariableDeclaration" />
+  </node>
 </model>
 
