@@ -129,7 +129,6 @@
       <concept id="6675447779075658713" name="openpme.core.structure.VisualizeParticles" flags="ng" index="18QAuU">
         <child id="6675447779075658714" name="ParticlesFile" index="18QAuT" />
       </concept>
-      <concept id="77071265229117434" name="openpme.core.structure.EmptyType" flags="ng" index="1bjHwi" />
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="1610830325009524963" name="dimension" index="1PL7_6" />
       </concept>
@@ -171,6 +170,7 @@
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
       </concept>
+      <concept id="77071265229513354" name="openpme.statements.structure.VariableDeclerationInlined" flags="ng" index="1btePy" />
       <concept id="8073773260958208144" name="openpme.statements.structure.StatementList" flags="ng" index="1wvtUh">
         <child id="8073773260958208154" name="statements" index="1wvtUr" />
       </concept>
@@ -260,8 +260,8 @@
               <node concept="1wvtVb" id="2GVf64qkUM_" role="eFLQ2">
                 <node concept="o2qFD" id="2GVf64qkUMQ" role="1wvtVa">
                   <node concept="SDg2Y" id="2GVf64qkUMR" role="2$G181">
-                    <node concept="1XiV_f" id="2GVf64qrX_w" role="H6eYf">
-                      <ref role="1Xh6_M" node="2GVf64qrXz$" resolve="p_velocity" />
+                    <node concept="1XiV_f" id="4hNYxapX6A" role="H6eYf">
+                      <ref role="1Xh6_M" node="4hNYxapX6v" resolve="p_velocity" />
                     </node>
                     <node concept="2qjxXw" id="2GVf64qkUMT" role="H6eY9">
                       <ref role="2qjxXB" node="4TedDNlcilu" resolve="velocity" />
@@ -277,8 +277,8 @@
                       </node>
                     </node>
                     <node concept="SDg2Y" id="2GVf64qkUMY" role="2$G18d">
-                      <node concept="1XiV_f" id="2GVf64qrX_T" role="H6eYf">
-                        <ref role="1Xh6_M" node="2GVf64qrXz$" resolve="p_velocity" />
+                      <node concept="1XiV_f" id="4hNYxapX6z" role="H6eYf">
+                        <ref role="1Xh6_M" node="4hNYxapX6v" resolve="p_velocity" />
                       </node>
                       <node concept="2qjxXw" id="2GVf64qkUN0" role="H6eY9">
                         <ref role="2qjxXB" node="4TedDNlcilw" resolve="force" />
@@ -290,9 +290,8 @@
               <node concept="1XiV_f" id="2GVf64qrXzP" role="eFeEu">
                 <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
               </node>
-              <node concept="2G0pd6" id="2GVf64qrXz$" role="ekCG_">
+              <node concept="1btePy" id="4hNYxapX6v" role="ekCG_">
                 <property role="TrG5h" value="p_velocity" />
-                <node concept="1bjHwi" id="4hNYxaphLz" role="1wvloH" />
               </node>
             </node>
           </node>
@@ -304,8 +303,8 @@
               <node concept="1wvtVb" id="2GVf64qrXSS" role="eFLQ2">
                 <node concept="o2qFD" id="2GVf64qrXUm" role="1wvtVa">
                   <node concept="2rB6Is" id="2GVf64qrXUn" role="2$G181">
-                    <node concept="1XiV_f" id="2GVf64qrXUW" role="2rB6Ih">
-                      <ref role="1Xh6_M" node="2GVf64qrXQL" resolve="p_position" />
+                    <node concept="1XiV_f" id="4hNYxapYik" role="2rB6Ih">
+                      <ref role="1Xh6_M" node="4hNYxapYig" resolve="p_position" />
                     </node>
                   </node>
                   <node concept="37xRuw" id="2GVf64qrXUp" role="2$G18d">
@@ -313,8 +312,8 @@
                       <ref role="1Xh6_M" node="4TedDNlcilA" resolve="dt" />
                     </node>
                     <node concept="SDg2Y" id="2GVf64qrXUr" role="2$G18d">
-                      <node concept="1XiV_f" id="2GVf64qrXVa" role="H6eYf">
-                        <ref role="1Xh6_M" node="2GVf64qrXQL" resolve="p_position" />
+                      <node concept="1XiV_f" id="4hNYxapYin" role="H6eYf">
+                        <ref role="1Xh6_M" node="4hNYxapYig" resolve="p_position" />
                       </node>
                       <node concept="2qjxXw" id="2GVf64qrXUt" role="H6eY9">
                         <ref role="2qjxXB" node="4TedDNlcilu" resolve="velocity" />
@@ -323,9 +322,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2G0pd6" id="2GVf64qrXQL" role="ekCG_">
+              <node concept="1btePy" id="4hNYxapYig" role="ekCG_">
                 <property role="TrG5h" value="p_position" />
-                <node concept="1bjHwi" id="4hNYxaphL_" role="1wvloH" />
               </node>
             </node>
           </node>
@@ -354,9 +352,8 @@
           </node>
           <node concept="eib_l" id="2GVf64qrXrE" role="eiaU4">
             <node concept="eFf55" id="2GVf64qrXrF" role="eibcj">
-              <node concept="2G0pd6" id="2GVf64qrXrG" role="ekCwj">
+              <node concept="1btePy" id="4hNYxapX6l" role="ekCwj">
                 <property role="TrG5h" value="q_force" />
-                <node concept="1bjHwi" id="4hNYxaphLB" role="1wvloH" />
               </node>
               <node concept="1XiV_f" id="2GVf64qrXvz" role="eFeEu">
                 <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
@@ -364,24 +361,23 @@
               <node concept="2G0pd6" id="2GVf64qXJT8" role="eFLQ2">
                 <property role="TrG5h" value="r" />
                 <node concept="L8O6H" id="2GVf64qXJUz" role="1wvlr8">
-                  <node concept="1XiV_f" id="2GVf64qXJU_" role="L8ObM">
-                    <ref role="1Xh6_M" node="2GVf64qrXrJ" resolve="p_force" />
+                  <node concept="1XiV_f" id="4hNYxapX6c" role="L8ObM">
+                    <ref role="1Xh6_M" node="4hNYxapX68" resolve="p_force" />
                   </node>
-                  <node concept="1XiV_f" id="2GVf64qXJUA" role="L8OdJ">
-                    <ref role="1Xh6_M" node="2GVf64qrXrG" resolve="q_force" />
+                  <node concept="1XiV_f" id="4hNYxapX6p" role="L8OdJ">
+                    <ref role="1Xh6_M" node="4hNYxapX6l" resolve="q_force" />
                   </node>
                 </node>
                 <node concept="2qhxl8" id="36phL3sq7mI" role="1wvloH" />
               </node>
-              <node concept="2G0pd6" id="2GVf64qrXrJ" role="ekCG_">
+              <node concept="1btePy" id="4hNYxapX68" role="ekCG_">
                 <property role="TrG5h" value="p_force" />
-                <node concept="1bjHwi" id="4hNYxaphLx" role="1wvloH" />
               </node>
               <node concept="1wvtVb" id="2GVf64qXJWA" role="eFLQ2">
                 <node concept="o2qFD" id="2GVf64qXJWB" role="1wvtVa">
                   <node concept="SDg2Y" id="2GVf64qXJWC" role="2$G181">
-                    <node concept="1XiV_f" id="2GVf64qXJWD" role="H6eYf">
-                      <ref role="1Xh6_M" node="2GVf64qrXrJ" resolve="p_force" />
+                    <node concept="1XiV_f" id="4hNYxapX6f" role="H6eYf">
+                      <ref role="1Xh6_M" node="4hNYxapX68" resolve="p_force" />
                     </node>
                     <node concept="2qjxXw" id="2GVf64qXJWE" role="H6eY9">
                       <ref role="2qjxXB" node="4TedDNlcilw" resolve="force" />
@@ -427,11 +423,11 @@
                       </node>
                     </node>
                     <node concept="28k0ba" id="2GVf64qXJWZ" role="2$G18d">
-                      <node concept="1XiV_f" id="2GVf64qXJX0" role="28ka16">
-                        <ref role="1Xh6_M" node="2GVf64qrXrJ" resolve="p_force" />
+                      <node concept="1XiV_f" id="4hNYxapX6i" role="28ka16">
+                        <ref role="1Xh6_M" node="4hNYxapX68" resolve="p_force" />
                       </node>
-                      <node concept="1XiV_f" id="2GVf64qXJX1" role="28ka3W">
-                        <ref role="1Xh6_M" node="2GVf64qrXrG" resolve="q_force" />
+                      <node concept="1XiV_f" id="4hNYxapX6s" role="28ka3W">
+                        <ref role="1Xh6_M" node="4hNYxapX6l" resolve="q_force" />
                       </node>
                     </node>
                   </node>
@@ -584,15 +580,15 @@
             <node concept="1XiV_f" id="36phL3spChQ" role="Gx2hT">
               <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
             </node>
-            <node concept="2G0pd6" id="36phL3spChT" role="Gx2hZ">
+            <node concept="1btePy" id="4hNYxapYiw" role="Gx2hZ">
               <property role="TrG5h" value="p_energy" />
             </node>
             <node concept="2G0pd6" id="36phL3spCmR" role="oWeDG">
               <property role="TrG5h" value="xp_e" />
               <node concept="2qk_1K" id="36phL3spCmZ" role="1wvloH" />
               <node concept="2rB6Is" id="36phL3spCng" role="1wvlr8">
-                <node concept="1XiV_f" id="36phL3spCnm" role="2rB6Ih">
-                  <ref role="1Xh6_M" node="36phL3spChT" resolve="p_energy" />
+                <node concept="1XiV_f" id="4hNYxapYiz" role="2rB6Ih">
+                  <ref role="1Xh6_M" node="4hNYxapYiw" resolve="p_energy" />
                 </node>
               </node>
             </node>
@@ -613,8 +609,8 @@
                 <property role="TrG5h" value="xq_e" />
                 <node concept="2qk_1K" id="36phL3spCEp" role="1wvloH" />
                 <node concept="2rB6Is" id="36phL3spCEu" role="1wvlr8">
-                  <node concept="1XiV_f" id="36phL3spCE$" role="2rB6Ih">
-                    <ref role="1Xh6_M" node="36phL3spCEf" resolve="nlist_e" />
+                  <node concept="1XiV_f" id="4hNYxapYiD" role="2rB6Ih">
+                    <ref role="1Xh6_M" node="4hNYxapYiA" resolve="nlist_e" />
                   </node>
                 </node>
               </node>
@@ -678,7 +674,7 @@
               <node concept="1XiV_f" id="36phL3spCEh" role="2qNIqH">
                 <ref role="1Xh6_M" node="36phL3spCnx" resolve="nlist" />
               </node>
-              <node concept="2G0pd6" id="36phL3spCEf" role="2qNIqI">
+              <node concept="1btePy" id="4hNYxapYiA" role="2qNIqI">
                 <property role="TrG5h" value="nlist_e" />
               </node>
             </node>
