@@ -129,6 +129,7 @@
       <concept id="6675447779075658713" name="openpme.core.structure.VisualizeParticles" flags="ng" index="18QAuU">
         <child id="6675447779075658714" name="ParticlesFile" index="18QAuT" />
       </concept>
+      <concept id="77071265229117434" name="openpme.core.structure.EmptyType" flags="ng" index="1bjHwi" />
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="1610830325009524963" name="dimension" index="1PL7_6" />
       </concept>
@@ -291,6 +292,7 @@
               </node>
               <node concept="2G0pd6" id="2GVf64qrXz$" role="ekCG_">
                 <property role="TrG5h" value="p_velocity" />
+                <node concept="1bjHwi" id="4hNYxaphLz" role="1wvloH" />
               </node>
             </node>
           </node>
@@ -323,6 +325,7 @@
               </node>
               <node concept="2G0pd6" id="2GVf64qrXQL" role="ekCG_">
                 <property role="TrG5h" value="p_position" />
+                <node concept="1bjHwi" id="4hNYxaphL_" role="1wvloH" />
               </node>
             </node>
           </node>
@@ -353,6 +356,7 @@
             <node concept="eFf55" id="2GVf64qrXrF" role="eibcj">
               <node concept="2G0pd6" id="2GVf64qrXrG" role="ekCwj">
                 <property role="TrG5h" value="q_force" />
+                <node concept="1bjHwi" id="4hNYxaphLB" role="1wvloH" />
               </node>
               <node concept="1XiV_f" id="2GVf64qrXvz" role="eFeEu">
                 <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
@@ -371,6 +375,7 @@
               </node>
               <node concept="2G0pd6" id="2GVf64qrXrJ" role="ekCG_">
                 <property role="TrG5h" value="p_force" />
+                <node concept="1bjHwi" id="4hNYxaphLx" role="1wvloH" />
               </node>
               <node concept="1wvtVb" id="2GVf64qXJWA" role="eFLQ2">
                 <node concept="o2qFD" id="2GVf64qXJWB" role="1wvtVa">
