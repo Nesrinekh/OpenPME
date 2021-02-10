@@ -22,6 +22,9 @@
         <child id="2538008523766591544" name="factor" index="jfq5Q" />
       </concept>
       <concept id="1216331824205856153" name="openpme.core.structure.MP4Interpolation" flags="ng" index="2maVF0" />
+      <concept id="6859799677638878396" name="openpme.core.structure.WriteParticles" flags="ng" index="ncWfa">
+        <child id="6859799677638878397" name="container" index="ncWfb" />
+      </concept>
       <concept id="1387474872146285163" name="openpme.core.structure.PropertyReference" flags="ng" index="2qjxXw">
         <reference id="1387474872146285164" name="property" index="2qjxXB" />
       </concept>
@@ -100,6 +103,7 @@
       </concept>
     </language>
     <language id="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" name="openpme.expressions">
+      <concept id="6859799677639627841" name="openpme.expressions.structure.IntegerType" flags="ng" index="nfBcR" />
       <concept id="2202684092512217962" name="openpme.expressions.structure.PlusAssignmentExpression" flags="ng" index="o2qFD" />
       <concept id="1387474872145762371" name="openpme.expressions.structure.DoubleType" flags="ng" index="2qhxl8" />
       <concept id="8275820577561349363" name="openpme.expressions.structure.BinaryExpression" flags="ng" index="2$G184">
@@ -110,6 +114,7 @@
         <child id="8275820577561349373" name="operand" index="2$G18a" />
       </concept>
       <concept id="8275820577561349375" name="openpme.expressions.structure.AssignmentExpression" flags="ng" index="2$G188" />
+      <concept id="8275820577561364933" name="openpme.expressions.structure.EqualsExpression" flags="ng" index="2$G5sM" />
       <concept id="8275820577561417723" name="openpme.expressions.structure.DecimalLiteral" flags="ng" index="2$GK$c">
         <property id="8275820577561417724" name="value" index="2$GK$b" />
       </concept>
@@ -123,6 +128,7 @@
         <property id="8275820577561417546" name="value" index="2$GKAX" />
       </concept>
       <concept id="7436269412207138817" name="openpme.expressions.structure.MultiplicationExpression" flags="ng" index="37xRuw" />
+      <concept id="7436269412207138819" name="openpme.expressions.structure.ModuloExpression" flags="ng" index="37xRuy" />
       <concept id="7436269412207138818" name="openpme.expressions.structure.DivisionExpression" flags="ng" index="37xRuz" />
       <concept id="7436269412207138815" name="openpme.expressions.structure.AdditionExpression" flags="ng" index="37xRxu" />
       <concept id="8073773260958242859" name="openpme.expressions.structure.ITyped" flags="ng" index="1wvloE">
@@ -133,8 +139,15 @@
       <concept id="196114789556629018" name="openpme.statements.structure.VariableDeclaration" flags="ng" index="2G0pd6">
         <child id="8073773260958243017" name="init" index="1wvlr8" />
       </concept>
+      <concept id="8073773260958208144" name="openpme.statements.structure.StatementList" flags="ng" index="1wvtUh">
+        <child id="8073773260958208154" name="statements" index="1wvtUr" />
+      </concept>
       <concept id="8073773260958208202" name="openpme.statements.structure.ExpressionStatement" flags="ng" index="1wvtVb">
         <child id="8073773260958208203" name="expression" index="1wvtVa" />
+      </concept>
+      <concept id="5443610339528609787" name="openpme.statements.structure.IfStatement" flags="ng" index="1GH9$S">
+        <child id="8073773260958208287" name="condition" index="1wvtWu" />
+        <child id="8073773260958208289" name="ifTrue" index="1wvtWw" />
       </concept>
       <concept id="2579446515047575999" name="openpme.statements.structure.VariableReference" flags="ng" index="1XiV_f">
         <reference id="2579446515047620994" name="variableDeclaration" index="1Xh6_M" />
@@ -269,6 +282,13 @@
           </node>
           <node concept="1XiV_f" id="2VozsUW1ytN" role="2l3SXC">
             <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+          </node>
+        </node>
+        <node concept="2G0pd6" id="5l2DoxVDdg3" role="rpc0u">
+          <property role="TrG5h" value="i" />
+          <node concept="nfBcR" id="5l2DoxVDdkb" role="1wvloH" />
+          <node concept="2$GKAY" id="5l2DoxVDgtP" role="1wvlr8">
+            <property role="2$GKAX" value="0" />
           </node>
         </node>
         <node concept="SCFH9" id="2VozsUW4D3X" role="rpc0u">
@@ -884,11 +904,43 @@
               <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
             </node>
           </node>
+          <node concept="1GH9$S" id="5l2DoxVDd82" role="oWeDG">
+            <node concept="2$G5sM" id="5l2DoxVDgtS" role="1wvtWu">
+              <node concept="37xRuy" id="5l2DoxVDgQw" role="2$G181">
+                <node concept="1XiV_f" id="5l2DoxVDgQD" role="2$G181">
+                  <ref role="1Xh6_M" node="5l2DoxVDdg3" resolve="i" />
+                </node>
+                <node concept="2$GKAY" id="5l2DoxVDgQG" role="2$G18d">
+                  <property role="2$GKAX" value="50" />
+                </node>
+              </node>
+              <node concept="2$GKAY" id="5l2DoxVDgu4" role="2$G18d">
+                <property role="2$GKAX" value="0" />
+              </node>
+            </node>
+            <node concept="1wvtUh" id="5l2DoxVDd86" role="1wvtWw">
+              <node concept="ncWfa" id="5l2DoxVDgue" role="1wvtUr">
+                <node concept="1XiV_f" id="5l2DoxVDgui" role="ncWfb">
+                  <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1wvtVb" id="5l2DoxVDlJv" role="oWeDG">
+            <node concept="o2qFD" id="5l2DoxVDlNv" role="1wvtVa">
+              <node concept="1XiV_f" id="5l2DoxVDlNC" role="2$G181">
+                <ref role="1Xh6_M" node="5l2DoxVDdg3" resolve="i" />
+              </node>
+              <node concept="2$GKAY" id="5l2DoxVDlNF" role="2$G18d">
+                <property role="2$GKAX" value="1" />
+              </node>
+            </node>
+          </node>
           <node concept="2$GKAY" id="vfKdi2Bn0K" role="SCFHe">
             <property role="2$GKAX" value="1" />
           </node>
           <node concept="2$GKAY" id="vfKdi2Bn0M" role="SCFH3">
-            <property role="2$GKAX" value="10" />
+            <property role="2$GKAX" value="500" />
           </node>
         </node>
         <node concept="1Rrs5l" id="5BkNMNhr9Z9" role="28AxrK">
