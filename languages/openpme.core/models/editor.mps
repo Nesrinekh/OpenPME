@@ -2063,5 +2063,30 @@
       <node concept="l2Vlx" id="4hNYxanLwb" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="goZPle1h2O">
+    <property role="3GE5qa" value="simulation.expressions.access" />
+    <ref role="1XX52x" to="r2co:goZPle1h1N" resolve="CreateNeighborListFromPC" />
+    <node concept="3EZMnI" id="goZPle1h2Q" role="2wV5jI">
+      <node concept="3F0ifn" id="goZPle1h2R" role="3EZMnx">
+        <property role="3F0ifm" value="Create neighbor list from" />
+      </node>
+      <node concept="1iCGBv" id="goZPle4iJy" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:goZPle42TU" resolve="particle" />
+        <node concept="1sVBvm" id="goZPle4iJ$" role="1sWHZn">
+          <node concept="3F0A7n" id="goZPle4iJI" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="goZPle1h2T" role="3EZMnx">
+        <property role="3F0ifm" value="at" />
+      </node>
+      <node concept="3F1sOY" id="goZPle1h2U" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:goZPle1h1P" resolve="position" />
+      </node>
+      <node concept="l2Vlx" id="goZPle1h2V" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

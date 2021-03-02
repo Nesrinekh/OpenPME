@@ -66,19 +66,12 @@
       </concept>
       <concept id="1387474872146533755" name="openpme.core.structure.PointType" flags="ng" index="2qk_1K" />
       <concept id="1387474872146957942" name="openpme.core.structure.NeighborListType" flags="ng" index="2qmdHX" />
-      <concept id="1387474872146868238" name="openpme.core.structure.CreateNeighborList" flags="ng" index="2qmnk5">
-        <child id="1387474872146868239" name="ref" index="2qmnk4" />
-        <child id="1387474872146868241" name="position" index="2qmnkq" />
-      </concept>
       <concept id="1387474872154696612" name="openpme.core.structure.NeighborhoodLoop" flags="ng" index="2qNIqJ">
         <child id="1387474872154696614" name="iterable" index="2qNIqH" />
         <child id="1387474872154696613" name="particle" index="2qNIqI" />
       </concept>
       <concept id="1387474872142997143" name="openpme.core.structure.ParticlePositionAccess" flags="ng" index="2rB6Is">
         <child id="1387474872142997146" name="ref" index="2rB6Ih" />
-      </concept>
-      <concept id="1387474872145192778" name="openpme.core.structure.CreateCellList" flags="ng" index="2rJYD1">
-        <child id="1387474872145192783" name="vector" index="2rJYD4" />
       </concept>
       <concept id="7548145485610539130" name="openpme.core.structure.Domain" flags="ng" index="2A2bSD">
         <child id="7548145485610582911" name="domain" index="2A2ukG" />
@@ -131,9 +124,12 @@
         <child id="8483536403556804647" name="start" index="SCFHe" />
       </concept>
       <concept id="8483536403557159895" name="openpme.core.structure.ParticleAccess" flags="ng" index="SDg2Y" />
-      <concept id="8483536403557160030" name="openpme.core.structure.CellListType" flags="ng" index="SDgsR" />
       <concept id="6675447779075658713" name="openpme.core.structure.VisualizeParticles" flags="ng" index="18QAuU">
         <child id="6675447779075658714" name="ParticlesFile" index="18QAuT" />
+      </concept>
+      <concept id="295266517439025267" name="openpme.core.structure.CreateNeighborListFromPC" flags="ng" index="1a7uWA">
+        <reference id="295266517439753850" name="particle" index="1a2d4J" />
+        <child id="295266517439025269" name="position" index="1a7uWw" />
       </concept>
       <concept id="2071243749762308243" name="openpme.core.structure.Property" flags="ng" index="1Rqx6$">
         <child id="1610830325009524963" name="dimension" index="1PL7_6" />
@@ -533,15 +529,6 @@
             <property role="2$GK$b" value="0.0" />
           </node>
         </node>
-        <node concept="2G0pd6" id="36phL3spCBP" role="rpc0u">
-          <property role="TrG5h" value="cellList" />
-          <node concept="SDgsR" id="36phL3spCDV" role="1wvloH" />
-          <node concept="2rJYD1" id="36phL3spCE0" role="1wvlr8">
-            <node concept="1XiV_f" id="36phL3spCE6" role="2rJYD4">
-              <ref role="1Xh6_M" node="4TedDNlcilt" resolve="particles" />
-            </node>
-          </node>
-        </node>
         <node concept="eiJ_H" id="2GVf64qsBc1" role="rpc0u">
           <ref role="LAzme" node="4TedDNlcilw" resolve="force" />
           <ref role="eiJtM" node="4TedDNlcilt" resolve="particles" />
@@ -614,11 +601,9 @@
                 <node concept="2G0pd6" id="71Cs$1hkqT4" role="oWeDG">
                   <property role="TrG5h" value="nlist" />
                   <node concept="2qmdHX" id="71Cs$1hkqT5" role="1wvloH" />
-                  <node concept="2qmnk5" id="71Cs$1hkqT6" role="1wvlr8">
-                    <node concept="1XiV_f" id="71Cs$1hkqT7" role="2qmnk4">
-                      <ref role="1Xh6_M" node="36phL3spCBP" resolve="cellList" />
-                    </node>
-                    <node concept="1XiV_f" id="71Cs$1hkqT8" role="2qmnkq">
+                  <node concept="1a7uWA" id="goZPle7bIV" role="1wvlr8">
+                    <ref role="1a2d4J" node="4TedDNlcilt" resolve="particles" />
+                    <node concept="1XiV_f" id="goZPle7bJ5" role="1a7uWw">
                       <ref role="1Xh6_M" node="71Cs$1hkqT0" resolve="xp_e" />
                     </node>
                   </node>
