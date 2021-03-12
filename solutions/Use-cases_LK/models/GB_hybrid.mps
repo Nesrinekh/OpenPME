@@ -419,6 +419,16 @@
               </node>
             </node>
           </node>
+          <node concept="1RrskY" id="5EGbNbOpnFb" role="oWeDG">
+            <ref role="2iRp7p" node="5EGbNbOpmWj" resolve="vorticity" />
+            <ref role="2iRp7j" node="5EGbNbOpmWF" resolve="vorticity_m" />
+            <node concept="1XiV_f" id="5EGbNbOpnIY" role="2l3SXJ">
+              <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
+            </node>
+            <node concept="1XiV_f" id="5EGbNbOpnIV" role="2l3SXC">
+              <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
+            </node>
+          </node>
           <node concept="1wvtVb" id="5EGbNbOofn4" role="oWeDG">
             <node concept="2$G188" id="5EGbNbOofnW" role="1wvtVa">
               <node concept="SDg2Y" id="49sT_KUowsE" role="2$G181">
@@ -845,53 +855,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="1wvtVb" id="5EGbNbOpnzK" role="oWeDG">
-            <node concept="2$G188" id="5EGbNbOpnzL" role="1wvtVa">
-              <node concept="2IY9fg" id="49sT_KUowyp" role="2$G181">
-                <node concept="1XiV_f" id="49sT_KUowyC" role="H6eYf">
-                  <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
-                </node>
-                <node concept="2qjxXw" id="49sT_KUowyF" role="H6eY9">
-                  <ref role="2qjxXB" node="5EGbNbOpmWj" resolve="vorticity" />
-                </node>
-              </node>
-              <node concept="2$GK$c" id="5EGbNbOpnzP" role="2$G18d">
-                <property role="2$GK$b" value="0.0" />
-              </node>
-            </node>
-          </node>
-          <node concept="37xRBF" id="5EGbNbOpnzQ" role="oWeDG">
-            <node concept="1XiV_f" id="5EGbNbOpnzR" role="2ISJnF">
-              <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
-            </node>
-            <node concept="1XiV_f" id="5EGbNbOpnzS" role="2ISJnD">
-              <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
-            </node>
-            <node concept="2qjxXw" id="5EGbNbOpnzT" role="2IY99A">
-              <ref role="2qjxXB" node="5EGbNbOpmWj" resolve="vorticity" />
-            </node>
-            <node concept="2qjxXw" id="5EGbNbOpnzU" role="2IY99j">
-              <ref role="2qjxXB" node="5EGbNbOpmWF" resolve="vorticity_m" />
-            </node>
-          </node>
-          <node concept="37oQBR" id="5GdpIAsul6U" role="oWeDG">
-            <node concept="1XiV_f" id="5GdpIAsul6V" role="37oQBQ">
-              <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
-            </node>
-            <node concept="2qjxXw" id="5GdpIAsul6W" role="37oQB9">
-              <ref role="2qjxXB" node="5EGbNbOpmWF" resolve="vorticity_m" />
-            </node>
-          </node>
-          <node concept="1RrskY" id="5EGbNbOpnFb" role="oWeDG">
-            <ref role="2iRp7p" node="5EGbNbOpmWj" resolve="vorticity" />
-            <ref role="2iRp7j" node="5EGbNbOpmWF" resolve="vorticity_m" />
-            <node concept="1XiV_f" id="5EGbNbOpnIY" role="2l3SXJ">
-              <ref role="1Xh6_M" node="5BkNMNhr9Z9" resolve="particles" />
-            </node>
-            <node concept="1XiV_f" id="5EGbNbOpnIV" role="2l3SXC">
-              <ref role="1Xh6_M" node="5BkNMNhv57G" resolve="vorticity_mesh" />
             </node>
           </node>
           <node concept="1GH9$S" id="5l2DoxVDd82" role="oWeDG">
