@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" />
+    <import index="lfpi" ref="r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)" />
   </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">

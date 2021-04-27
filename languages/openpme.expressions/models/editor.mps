@@ -17,6 +17,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="709996738298806197" name="jetbrains.mps.lang.editor.structure.QueryFunction_SeparatorText" flags="in" index="2o9xnK" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -252,6 +253,24 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="l2Vlx" id="1ptR2ykpw8E" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KFeDSBWcsY">
+    <ref role="1XX52x" to="caxt:6KFeDSBWcrJ" resolve="DiscretizeOperator" />
+    <node concept="3EZMnI" id="6KFeDSC2KQf" role="2wV5jI">
+      <node concept="3F0ifn" id="6KFeDSC2KQm" role="3EZMnx">
+        <property role="3F0ifm" value="discretize" />
+      </node>
+      <node concept="3F1sOY" id="6KFeDSC2KSS" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:6KFeDSC2KSQ" resolve="operator" />
+      </node>
+      <node concept="3F0ifn" id="6KFeDSC2KQ$" role="3EZMnx">
+        <property role="3F0ifm" value="using" />
+      </node>
+      <node concept="3F1sOY" id="6KFeDSC9P69" role="3EZMnx">
+        <ref role="1NtTu8" to="caxt:6KFeDSC9P66" resolve="discretizationScheme" />
+      </node>
+      <node concept="2iRfu4" id="6KFeDSC2KQi" role="2iSdaV" />
     </node>
   </node>
 </model>

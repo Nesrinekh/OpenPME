@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="openpme.cpp" uuid="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f" languageVersion="0" moduleVersion="0">
+<language namespace="openpme.cpp" uuid="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f" languageVersion="1" moduleVersion="1">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -70,10 +70,10 @@
         <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
         <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
         <module reference="dfaa847b-effe-41ad-a78f-78e1b0ac41ef(openpme.core#6721469832529907355)" version="0" />
-        <module reference="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)" version="0" />
+        <module reference="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)" version="1" />
         <module reference="37682012-a10c-48e5-9da8-231cae8f5ad3(openpme.cpp#01)" version="0" />
         <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
-        <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="2" />
+        <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="3" />
         <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
         <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
         <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="2" />
@@ -106,6 +106,7 @@
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67:jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
     <language slang="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" version="4" />
@@ -121,6 +122,8 @@
     <language slang="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" version="0" />
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="13" />
     <language slang="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" version="0" />
+    <language slang="l:90746344-04fd-4286-97d5-b46ae6a81709:jetbrains.mps.lang.migration" version="2" />
+    <language slang="l:9882f4ad-1955-46fe-8269-94189e5dbbf2:jetbrains.mps.lang.migration.util" version="0" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="2" />
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="3" />
@@ -128,6 +131,7 @@
     <language slang="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" version="0" />
     <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="17" />
+    <language slang="l:1a8554c4-eb84-43ba-8c34-6f0d90c6e75a:jetbrains.mps.lang.smodel.query" version="3" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="9" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
@@ -154,6 +158,7 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
+    <module reference="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" version="0" />
     <module reference="446c26eb-2b7b-4bf0-9b35-f83fa582753e(jetbrains.mps.lang.modelapi)" version="0" />
     <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
@@ -161,15 +166,16 @@
     <module reference="d5e2442b-039e-493b-b466-e933a1705c19(openpme.analysis)" version="0" />
     <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
     <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
-    <module reference="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)" version="0" />
+    <module reference="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)" version="1" />
     <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
-    <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="2" />
+    <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="3" />
     <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
     <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
     <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="2" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)</extendedLanguage>
+    <extendedLanguage>9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</extendedLanguage>
   </extendedLanguages>
 </language>
 

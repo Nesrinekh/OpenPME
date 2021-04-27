@@ -8,6 +8,7 @@
     <import index="r2co" ref="r:15616bdb-5f06-41a2-ba85-ee0c68a0d3dd(openpme.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dm0" ref="r:2d746074-336d-47f3-bd73-7559527fdd36(openpme.base.structure)" implicit="true" />
+    <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -458,6 +459,26 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="IntegerType" />
     <ref role="1TJDcQ" node="70bNw4gtDwI" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="6KFeDSBWcrJ">
+    <property role="EcuMT" value="7794388031044110063" />
+    <property role="TrG5h" value="DiscretizeOperator" />
+    <property role="34LRSv" value="discretize operator" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="6KFeDSC2KSQ" role="1TKVEi">
+      <property role="IQ2ns" value="7794388031045832246" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operator" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="r2co:7En2iEQdx82" resolve="Laplace2" />
+    </node>
+    <node concept="1TJgyj" id="6KFeDSC9P66" role="1TKVEi">
+      <property role="IQ2ns" value="7794388031047684486" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="discretizationScheme" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="r2co:1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
+    </node>
   </node>
 </model>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="openpme.expressions" uuid="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" languageVersion="2" moduleVersion="2">
+<language namespace="openpme.expressions" uuid="9a51a2b4-83e4-4324-8cf8-4ee101121a3a" languageVersion="3" moduleVersion="3">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -14,6 +14,9 @@
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -58,8 +61,9 @@
         <module reference="d5e2442b-039e-493b-b466-e933a1705c19(openpme.analysis)" version="0" />
         <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
         <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
+        <module reference="6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)" version="1" />
         <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
-        <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="2" />
+        <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="3" />
         <module reference="123ed661-3b92-4277-816d-72bdaa5f2163(openpme.expressions#6721469832529908661)" version="0" />
         <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
         <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
@@ -152,7 +156,7 @@
     <module reference="2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)" version="0" />
     <module reference="66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)" version="0" />
     <module reference="57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)" version="0" />
-    <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="2" />
+    <module reference="9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)" version="3" />
     <module reference="735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)" version="0" />
     <module reference="dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)" version="0" />
     <module reference="d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)" version="2" />

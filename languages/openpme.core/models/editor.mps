@@ -86,6 +86,7 @@
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -2110,6 +2111,101 @@
         <property role="3F0ifm" value="&gt;" />
       </node>
       <node concept="l2Vlx" id="5GdpIAsrwWU" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2itihj65NPK">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:2itihj65NP_" resolve="PseScheme" />
+    <node concept="3F0ifn" id="2itihj65NPM" role="2wV5jI">
+      <property role="3F0ifm" value="PSE" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6KFeDSC9P61">
+    <property role="3GE5qa" value="initialization.diffop_discretization" />
+    <ref role="1XX52x" to="r2co:6KFeDSC9P5S" resolve="PSE" />
+    <node concept="3F0ifn" id="6KFeDSC9P63" role="2wV5jI">
+      <property role="3F0ifm" value="PSE" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7En2iEQdx8b">
+    <property role="3GE5qa" value="simulation.expressions" />
+    <ref role="1XX52x" to="r2co:7En2iEQdx82" resolve="Laplace2" />
+    <node concept="3EZMnI" id="7En2iEQdx8d" role="2wV5jI">
+      <node concept="3F0ifn" id="7En2iEQdx8e" role="3EZMnx">
+        <property role="3F0ifm" value="Δ" />
+      </node>
+      <node concept="3F1sOY" id="7En2iEQdx8f" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:2cSOkSJWruz" resolve="operand" />
+      </node>
+      <node concept="l2Vlx" id="7En2iEQdx8g" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7En2iEQS7KW">
+    <property role="3GE5qa" value="simulation.statements" />
+    <ref role="1XX52x" to="r2co:7En2iEQMhQv" resolve="CalculateDerivative" />
+    <node concept="3EZMnI" id="8GU2afkHfu" role="2wV5jI">
+      <node concept="2iRkQZ" id="8GU2afkHfv" role="2iSdaV" />
+      <node concept="3EZMnI" id="8GU2afkHkn" role="3EZMnx">
+        <node concept="2iRfu4" id="8GU2afkHko" role="2iSdaV" />
+        <node concept="3F0ifn" id="7En2iEQS7L5" role="3EZMnx">
+          <property role="3F0ifm" value="calculate derivative on" />
+        </node>
+        <node concept="3F1sOY" id="8GU2afkHk$" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:56pEP6Vg7eh" resolve="operatorVariable" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="8GU2afkHlM" role="3EZMnx">
+        <node concept="VPM3Z" id="8GU2afkHlO" role="3F10Kt" />
+        <node concept="3XFhqQ" id="8GU2afzhG4" role="3EZMnx" />
+        <node concept="3F0ifn" id="8GU2afkHm9" role="3EZMnx">
+          <property role="3F0ifm" value="pos:" />
+        </node>
+        <node concept="3F1sOY" id="8GU2afkHm3" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:8GU2afkHec" resolve="positionAccess" />
+        </node>
+        <node concept="l2Vlx" id="8GU2afkHlR" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="8GU2afkHmq" role="3EZMnx">
+        <node concept="VPM3Z" id="8GU2afkHms" role="3F10Kt" />
+        <node concept="3XFhqQ" id="8GU2afzhGj" role="3EZMnx" />
+        <node concept="3F0ifn" id="8GU2afkHmu" role="3EZMnx">
+          <property role="3F0ifm" value="property:" />
+        </node>
+        <node concept="3F1sOY" id="8GU2afkHmN" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:8GU2aezocD" resolve="valueAccess" />
+        </node>
+        <node concept="l2Vlx" id="8GU2afkHmv" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="8GU2afkHnl" role="3EZMnx">
+        <node concept="VPM3Z" id="8GU2afkHnn" role="3F10Kt" />
+        <node concept="3XFhqQ" id="8GU2afzhGs" role="3EZMnx" />
+        <node concept="3F0ifn" id="8GU2afkHnO" role="3EZMnx">
+          <property role="3F0ifm" value="spacing:" />
+        </node>
+        <node concept="3F1sOY" id="8GU2afkHnI" role="3EZMnx">
+          <ref role="1NtTu8" to="r2co:8GU2aezocH" resolve="spacing" />
+        </node>
+        <node concept="l2Vlx" id="8GU2afkHnq" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7En2iERrSlV">
+    <property role="3GE5qa" value="simulation.statements" />
+    <ref role="1XX52x" to="r2co:7En2iERrSlI" resolve="InitializeDifferentialOperator" />
+    <node concept="3EZMnI" id="51STUIevt35" role="2wV5jI">
+      <node concept="3F0ifn" id="7En2iERrSm2" role="3EZMnx">
+        <property role="3F0ifm" value="initialize differential operator" />
+      </node>
+      <node concept="3F1sOY" id="51STUIeRGND" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:51STUIeRGNu" resolve="operatorVariable" />
+      </node>
+      <node concept="3F0ifn" id="51STUIeF$rI" role="3EZMnx">
+        <property role="3F0ifm" value="using" />
+      </node>
+      <node concept="3F1sOY" id="7En2iERrSma" role="3EZMnx">
+        <ref role="1NtTu8" to="r2co:7En2iERrSlL" resolve="discretizationScheme" />
+      </node>
+      <node concept="2iRfu4" id="51STUIevt38" role="2iSdaV" />
     </node>
   </node>
 </model>

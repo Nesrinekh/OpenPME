@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="lfpi" ref="r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)" implicit="true" />
+    <import index="lfpi" ref="r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">

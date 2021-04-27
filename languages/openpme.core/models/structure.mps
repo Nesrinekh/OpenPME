@@ -11,6 +11,7 @@
     <import index="5oki" ref="r:ebc5ff6c-54ad-44cc-986b-956c5e8ea76e(openpme.statements.structure)" />
     <import index="caxt" ref="r:2879ac26-cf1f-47cd-aa5d-07b180db413b(openpme.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="lfpi" ref="r:de65f5a7-a2ac-4927-934e-b920f01f5866(openpme.cpp.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1300,6 +1301,85 @@
       <property role="20kJfa" value="properties" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1d1jgI93P9F" resolve="PropertyReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2itihj65NNS">
+    <property role="EcuMT" value="2638345310280563960" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="OperatorDiscretizationScheme" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2itihj65NP_">
+    <property role="EcuMT" value="2638345310280564069" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="PseScheme" />
+    <ref role="1TJDcQ" node="2itihj65NNS" resolve="OperatorDiscretizationScheme" />
+  </node>
+  <node concept="1TIwiD" id="6KFeDSC9P5S">
+    <property role="EcuMT" value="7794388031047684472" />
+    <property role="3GE5qa" value="initialization.diffop_discretization" />
+    <property role="TrG5h" value="PSE" />
+    <ref role="1TJDcQ" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
+  </node>
+  <node concept="1TIwiD" id="7En2iEQdx82">
+    <property role="EcuMT" value="8833539273160790530" />
+    <property role="3GE5qa" value="simulation.expressions" />
+    <property role="TrG5h" value="Laplace2" />
+    <ref role="1TJDcQ" node="2cSOkSJWruu" resolve="DifferentialOperator" />
+  </node>
+  <node concept="1TIwiD" id="7En2iEQMhQv">
+    <property role="EcuMT" value="8833539273170427295" />
+    <property role="TrG5h" value="CalculateDerivative" />
+    <property role="3GE5qa" value="simulation.statements" />
+    <ref role="1TJDcQ" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    <node concept="1TJgyj" id="56pEP6Vg7eh" role="1TKVEi">
+      <property role="IQ2ns" value="5879919156031157137" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operatorVariable" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:2fc2f1uxV6Z" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="8GU2afkHec" role="1TKVEi">
+      <property role="IQ2ns" value="156755322182226828" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="positionAccess" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1d1jgI8Riqn" resolve="ParticlePositionAccess" />
+    </node>
+    <node concept="1TJgyj" id="8GU2aezocD" role="1TKVEi">
+      <property role="IQ2ns" value="156755322169295657" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="valueAccess" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7mV$Q_d7Dfn" resolve="ParticleAccess" />
+    </node>
+    <node concept="1TJgyj" id="8GU2aezocH" role="1TKVEi">
+      <property role="IQ2ns" value="156755322169295661" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="spacing" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="caxt:2cc5eidBZl2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7En2iERrSlI">
+    <property role="EcuMT" value="8833539273181332846" />
+    <property role="3GE5qa" value="simulation.statements" />
+    <property role="TrG5h" value="InitializeDifferentialOperator" />
+    <ref role="1TJDcQ" to="5oki:6sMVU6wHrBz" resolve="Statement" />
+    <node concept="1TJgyj" id="51STUIeRGNu" role="1TKVEi">
+      <property role="IQ2ns" value="5798639244261903582" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operatorVariable" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="5oki:aSJlMIIiSq" resolve="VariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7En2iERrSlL" role="1TKVEi">
+      <property role="IQ2ns" value="8833539273181332849" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="discretizationScheme" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1fud6A14e54" resolve="DiffOpDiscretizationScheme" />
     </node>
   </node>
 </model>
