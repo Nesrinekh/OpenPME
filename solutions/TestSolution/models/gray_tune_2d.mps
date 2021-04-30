@@ -254,8 +254,15 @@
                 </node>
               </node>
               <node concept="37xRxu" id="8GU2advrI5" role="2$G18d">
-                <node concept="2$GK$c" id="8GU2advrJ4" role="2$G18d">
-                  <property role="2$GK$b" value="0.2" />
+                <node concept="3cChGC" id="7qqwVmLtGMu" role="2$G18d">
+                  <node concept="SDg2Y" id="7qqwVmLtGM$" role="2$G18a">
+                    <node concept="1XiV_f" id="7qqwVmLtGMH" role="H6eYf">
+                      <ref role="1Xh6_M" node="2itihj65KmW" resolve="species" />
+                    </node>
+                    <node concept="2qjxXw" id="7qqwVmLtGMK" role="H6eY9">
+                      <ref role="2qjxXB" node="2itihj65Knc" resolve="U" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="SDg2Y" id="8GU2advrIj" role="2$G181">
                   <node concept="1XiV_f" id="8GU2advrIs" role="H6eYf">
