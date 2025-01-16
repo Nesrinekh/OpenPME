@@ -26,3 +26,7 @@ on Linux.
 # Resources
 
 Resources used in the examples are located in the /resources folder.
+
+# License
+
+This project is licensed under the ISC license.
