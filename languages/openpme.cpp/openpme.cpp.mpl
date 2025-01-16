@@ -18,6 +18,12 @@
         <dependency reexport="false">6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)</dependency>
         <dependency reexport="false">66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)</dependency>
         <dependency reexport="false">dfaa847b-effe-41ad-a78f-78e1b0ac41ef(openpme.core#6721469832529907355)</dependency>
+        <dependency reexport="false">2b72d3f1-4643-4aec-8f26-2599b23e0e1b(openpme.base)</dependency>
+        <dependency reexport="false">57ffbfb9-59e3-41dd-b18a-216e532ec8e4(openpme.ctrl)</dependency>
+        <dependency reexport="false">9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</dependency>
+        <dependency reexport="false">735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)</dependency>
+        <dependency reexport="false">dceb7451-4d93-4e8f-b5bd-ffe985cd0b6c(openpme.physunits)</dependency>
+        <dependency reexport="false">d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
@@ -98,7 +104,11 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</dependency>
+    <dependency reexport="true">9a51a2b4-83e4-4324-8cf8-4ee101121a3a(openpme.expressions)</dependency>
+    <dependency reexport="true">66673400-467e-48d2-ace0-6f708d2ef66d(openpme.core)</dependency>
+    <dependency reexport="true">6ebd153b-be95-4d8b-a7f3-f07bf7fb7d8f(openpme.cpp)</dependency>
+    <dependency reexport="true">d89a1f94-2b10-40d1-a01e-560f94e501d7(openpme.statements)</dependency>
+    <dependency reexport="true">735a5c6f-9751-4d40-91fe-215faa5468a6(openpme.modules)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
